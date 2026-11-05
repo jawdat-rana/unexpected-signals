@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+
+  # Hits the real NDW feeds once, so parser changes are checked against live
+  # data. Raw XML and parsed CSVs are uploaded for inspection.
+  live-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect one snapshot
+        env:
+          PYTHONPATH: src
+        run: python -m unexpected_signals collect --out smoke/data --sample-dir smoke/raw
+      - name: Show what was parsed
+        run: find smoke/data -name '*.csv' -exec sh -c 'echo "== $1"; head -5 "$1"; wc -l < "$1"' _ {} \;
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-smoke
+          path: smoke/
+          retention-days: 7

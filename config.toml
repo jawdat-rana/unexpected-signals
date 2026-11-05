@@ -1,0 +1,15 @@
+# Which feeds to collect and where they come from.
+# Fork this repo and edit this file to collect your own selection.
+# NDW open data is published under CC0: https://docs.ndw.nu/algemeen/data-gebruiksvoorwaarden/
+
+[bridges]
+enabled = true
+url = "https://opendata.ndw.nu/planningsfeed_brugopeningen.xml.gz"
+
+[traffic]
+enabled = true
+# DATEX II v3. The older v2.3 files (trafficspeed.xml.gz) stop on 9 February 2027.
+url = "https://opendata.ndw.nu/snelheden_en_intensiteiten_meetgegevens.xml.gz"
+# Measurement site ids to keep in full. A national summary is always stored.
+# Find ids in snelheden_en_intensiteiten_configuratie_meetlocaties.xml.gz.
+sites = []
