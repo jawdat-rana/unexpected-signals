@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written fixture shaped like a DATEX II v3 MeasuredDataPublication. -->
+<d2:payload xmlns:d2="http://datex2.eu/schema/3/d2Payload"
+            xmlns:mdp="http://datex2.eu/schema/3/measuredDataPublication"
+            xmlns:roa="http://datex2.eu/schema/3/roadTrafficData"
+            xmlns:com="http://datex2.eu/schema/3/common"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:type="mdp:MeasuredDataPublication">
+  <mdp:siteMeasurements>
+    <mdp:measurementSiteReference id="RWS01_MONIBAS_0021hrl0403ra" version="1"/>
+    <mdp:measurementTimeDefault>2026-11-05T15:45:00Z</mdp:measurementTimeDefault>
+    <mdp:physicalQuantity index="1">
+      <mdp:basicData xsi:type="roa:TrafficFlow">
+        <roa:vehicleFlow><roa:vehicleFlowRate>1200</roa:vehicleFlowRate></roa:vehicleFlow>
+      </mdp:basicData>
+    </mdp:physicalQuantity>
+    <mdp:physicalQuantity index="2">
+      <mdp:basicData xsi:type="roa:TrafficFlow">
+        <roa:vehicleFlow><roa:vehicleFlowRate>800</roa:vehicleFlowRate></roa:vehicleFlow>
+      </mdp:basicData>
+    </mdp:physicalQuantity>
+    <mdp:physicalQuantity index="3">
+      <mdp:basicData xsi:type="roa:TrafficSpeed">
+        <roa:averageVehicleSpeed><com:speed>100</com:speed></roa:averageVehicleSpeed>
+      </mdp:basicData>
+    </mdp:physicalQuantity>
+    <mdp:physicalQuantity index="4">
+      <mdp:basicData xsi:type="roa:TrafficSpeed">
+        <roa:averageVehicleSpeed><com:speed>90</com:speed></roa:averageVehicleSpeed>
+      </mdp:basicData>
+    </mdp:physicalQuantity>
+  </mdp:siteMeasurements>
+  <mdp:siteMeasurements>
+    <mdp:measurementSiteReference id="RWS01_MONIBAS_0040hrr0123ra" version="1"/>
+    <mdp:measurementTimeDefault>2026-11-05T15:45:00Z</mdp:measurementTimeDefault>
+    <mdp:physicalQuantity index="1">
+      <mdp:basicData xsi:type="roa:TrafficSpeed">
+        <roa:averageVehicleSpeed><com:speed>-1</com:speed></roa:averageVehicleSpeed>
+      </mdp:basicData>
+    </mdp:physicalQuantity>
+  </mdp:siteMeasurements>
+</d2:payload>

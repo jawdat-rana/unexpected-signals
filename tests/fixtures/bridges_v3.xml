@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written fixture shaped like a DATEX II v3 SituationPublication. -->
+<d2:payload xmlns:d2="http://datex2.eu/schema/3/d2Payload"
+            xmlns:sit="http://datex2.eu/schema/3/situation"
+            xmlns:com="http://datex2.eu/schema/3/common"
+            xmlns:loc="http://datex2.eu/schema/3/locationReferencing"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:type="sit:SituationPublication">
+  <sit:situation id="NLRWS_BRUG_1">
+    <sit:situationRecord xsi:type="sit:GeneralNetworkManagement" id="REC_1" version="3">
+      <sit:situationRecordCreationTime>2026-11-05T10:00:00Z</sit:situationRecordCreationTime>
+      <sit:situationRecordVersionTime>2026-11-05T10:05:00Z</sit:situationRecordVersionTime>
+      <sit:probabilityOfOccurrence>certain</sit:probabilityOfOccurrence>
+      <sit:validity>
+        <com:validityStatus>active</com:validityStatus>
+        <com:validityTimeSpecification>
+          <com:overallStartTime>2026-11-05T10:00:00Z</com:overallStartTime>
+          <com:overallEndTime>2026-11-05T10:12:00Z</com:overallEndTime>
+        </com:validityTimeSpecification>
+      </sit:validity>
+      <sit:locationReference xsi:type="loc:PointLocation">
+        <loc:pointByCoordinates>
+          <loc:pointCoordinates>
+            <loc:latitude>52.0901</loc:latitude>
+            <loc:longitude>5.1214</loc:longitude>
+          </loc:pointCoordinates>
+        </loc:pointByCoordinates>
+      </sit:locationReference>
+      <sit:generalNetworkManagementType>bridgeSwingInOperation</sit:generalNetworkManagementType>
+    </sit:situationRecord>
+  </sit:situation>
+  <sit:situation id="NLRWS_BRUG_2">
+    <sit:situationRecord xsi:type="sit:GeneralNetworkManagement" id="REC_2" version="1">
+      <sit:probabilityOfOccurrence>probable</sit:probabilityOfOccurrence>
+      <sit:validity>
+        <com:validityStatus>planned</com:validityStatus>
+        <com:validityTimeSpecification>
+          <com:overallStartTime>2026-11-05T14:30:00Z</com:overallStartTime>
+        </com:validityTimeSpecification>
+      </sit:validity>
+    </sit:situationRecord>
+  </sit:situation>
+</d2:payload>

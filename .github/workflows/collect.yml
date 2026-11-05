@@ -1,0 +1,79 @@
+name: collect
+
+# Takes one snapshot of each enabled feed in config.toml and commits the parsed
+# CSVs to the `data` branch. Code lives on `main`; data lives on `data`, so the
+# main history stays readable and forks get the code without the data.
+
+on:
+  schedule:
+    # Odd minutes: GitHub delays or drops more runs at the top of the hour.
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+    inputs:
+      save_sample:
+        description: "Also upload the raw XML as a workflow artifact"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check out the data branch
+        run: |
+          if git fetch --depth 1 origin data:refs/remotes/origin/data; then
+            git worktree add -B data data-branch origin/data
+          else
+            git worktree add --orphan -b data data-branch
+          fi
+
+      - name: Collect
+        id: collect
+        env:
+          PYTHONPATH: src
+        run: |
+          set +e
+          args="--out data-branch/data"
+          if [ "${{ inputs.save_sample }}" = "true" ]; then args="$args --sample-dir samples"; fi
+          python -m unexpected_signals collect $args
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push data
+        working-directory: data-branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "data: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            git push origin HEAD:data && exit 0
+            git pull --rebase origin data
+          done
+          exit 1
+
+      - name: Upload raw sample
+        if: inputs.save_sample
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-sample
+          path: samples/
+          retention-days: 7
+
+      - name: Fail if a feed failed
+        if: steps.collect.outputs.status != '0'
+        run: exit 1
