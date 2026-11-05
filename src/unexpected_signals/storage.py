@@ -43,8 +43,3 @@ def day_path(root: Path, dataset: str, stamp: str) -> Path:
     """data/<dataset>/YYYY/MM/YYYY-MM-DD.csv for an ISO timestamp."""
     day = stamp[:10]
     return root / dataset / day[:4] / day[5:7] / f"{day}.csv"
-
-
-def month_path(root: Path, dataset: str, stamp: str) -> Path:
-    """data/<dataset>/YYYY/YYYY-MM.csv for an ISO timestamp."""
-    return root / dataset / stamp[:4] / f"{stamp[:7]}.csv"

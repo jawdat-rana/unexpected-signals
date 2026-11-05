@@ -25,7 +25,7 @@ sites = ["RWS01_MONIBAS_0021hrl0403ra"]
     assert cli.main(["collect", "--config", str(config), "--out", str(out)]) == 0
     assert cli.main(["collect", "--config", str(config), "--out", str(out)]) == 0
 
-    bridges_csv = out / "bridges/2026/2026-11.csv"
+    bridges_csv = out / "bridges/2026/11/2026-11-05.csv"
     assert len(bridges_csv.read_text().splitlines()) == 3  # header + 2 records, deduplicated
     summary = out / "traffic_summary/2026/11/2026-11-05.csv"
     assert len(summary.read_text().splitlines()) == 3  # header + 2 snapshots

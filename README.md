@@ -8,8 +8,8 @@ feeds from [NDW](https://opendata.ndw.nu/), the Dutch national road traffic data
 
 | Dataset | What is stored | Where |
 | --- | --- | --- |
-| Bridge openings | One row per opening record, with first and last time it was seen | `data/bridges/YYYY/YYYY-MM.csv` |
-| Traffic summary | National totals per snapshot: sites reporting, mean speed, total flow | `data/traffic_summary/YYYY/MM/YYYY-MM-DD.csv` |
+| Bridge openings | One row per opening record, with first and last time it was seen, filed by the opening's date | `data/bridges/YYYY/MM/YYYY-MM-DD.csv` |
+| Traffic summary | National totals per snapshot: sites reporting, mean speed, and total flow (an activity index, since vehicles pass many sites) | `data/traffic_summary/YYYY/MM/YYYY-MM-DD.csv` |
 | Traffic sites | Speed and flow for the measurement sites you choose in `config.toml` | `data/traffic_sites/YYYY/MM/YYYY-MM-DD.csv` |
 
 The data lives on the [`data` branch](../../tree/data), and the code lives on `main`.
@@ -60,8 +60,8 @@ function in `cli.py`, add a section to `config.toml`, and add a fixture and test
 NDW open data is published under [CC0 1.0](https://docs.ndw.nu/algemeen/data-gebruiksvoorwaarden/),
 and attribution is appreciated. The code is MIT licensed.
 
-- The bridge feed holds current and planned openings. Repeated snapshots are
-  what turn it into a history, so `first_seen` and `last_seen` are only as accurate as the
-  snapshot interval.
+- The bridge feed holds current and planned openings. Planned openings carry
+  `probability = riskOf`. Repeated snapshots are what turn it into a history, so
+  `first_seen` and `last_seen` are only as accurate as the snapshot interval.
 - NDW reports -1 for "no data". Those values are dropped before averaging.
 - The DATEX II v2.3 traffic files stop on 9 February 2027. This repo uses v3.

@@ -6,6 +6,7 @@ import argparse
 import io
 import sys
 import tomllib
+from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -27,10 +28,19 @@ def collect_bridges(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
     if sample_dir:
         (sample_dir / "bridges.xml").write_bytes(raw)
     records = bridges.parse(io.BytesIO(raw), fetched_at)
-    path = storage.month_path(out, "bridges", fetched_at)
-    merged = bridges.merge(storage.read_rows(path), records)
-    storage.write_rows(path, bridges.COLUMNS, merged)
-    return f"bridges: {len(records)} records in snapshot, {len(merged)} rows in {path.name}"
+    # Partition by the opening's own date, so only files for recent and
+    # upcoming days change between snapshots.
+    by_day: dict[str, list[bridges.BridgeRecord]] = defaultdict(list)
+    for rec in records:
+        by_day[(rec.start_time or fetched_at)[:10]].append(rec)
+    for day, day_records in sorted(by_day.items()):
+        path = storage.day_path(out, "bridges", day)
+        storage.write_rows(
+            path, bridges.COLUMNS, bridges.merge(storage.read_rows(path), day_records)
+        )
+    probabilities = Counter(rec.probability or "unknown" for rec in records)
+    breakdown = ", ".join(f"{k}={v}" for k, v in probabilities.most_common())
+    return f"bridges: {len(records)} records over {len(by_day)} days ({breakdown})"
 
 
 def collect_traffic(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
