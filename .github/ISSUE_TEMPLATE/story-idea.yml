@@ -1,0 +1,27 @@
+name: Story idea
+description: A dataset or question that might hide an unexpected signal
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: The question
+      description: In plain words. What would be surprising?
+    validations:
+      required: true
+  - type: input
+    id: data
+    attributes:
+      label: Data source
+      description: Link, and licence if you know it
+  - type: dropdown
+    id: readiness
+    attributes:
+      label: How ready is the data?
+      options: ["Ready: download and go", "Needs work: scraping, cleaning or history", "Parked: no public feed yet"]
+  - type: textarea
+    id: caveats
+    attributes:
+      label: What could make it misleading?
+      description: Confounders, coverage gaps, changes in method

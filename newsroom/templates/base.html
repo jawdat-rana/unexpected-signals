@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$title</title>
+<meta name="description" content="$description">
+<link rel="canonical" href="$canonical">
+<meta property="og:type" content="$og_type">
+<meta property="og:title" content="$title">
+<meta property="og:description" content="$description">
+<meta property="og:url" content="$canonical">
+<meta property="og:image" content="$image">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="${root}assets/img/icon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="$site_title" href="${root}feed.xml">
+<link rel="stylesheet" href="${root}assets/css/signals.css">
+<script>try{var t=localStorage.getItem("us-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="masthead-bar">
+    <span>$edition</span>
+    <span class="masthead-date">$today</span>
+    <button class="theme-toggle" type="button" aria-label="Switch light or dark edition">Night edition</button>
+  </div>
+  <a class="nameplate" href="${root}index.html">
+    <svg class="nameplate-mark" viewBox="0 0 120 24" aria-hidden="true"><path d="M0 14 H38 l4 -2 4 2 4 -1 4 1 h6 l3 -12 4 20 3 -8 h4 l4 1 4 -1 4 1 H120"/></svg>
+    <span class="nameplate-title">$site_title</span>
+  </a>
+  <p class="tagline">$tagline</p>
+</header>
+<main id="main">
+$body
+</main>
+<footer class="colophon">
+  <p>Made by $author in the Netherlands. Every chart links to its data and code. <a href="$repo">GitHub</a> · $linkedin_link<a href="${root}feed.xml">RSS</a> · <a href="${root}style/">Style guide</a></p>
+  <p class="colophon-small">Text and charts CC BY 4.0, code MIT. Source data keeps its own licence, named on each story.</p>
+</footer>
+<script src="${root}assets/vendor/d3-7.9.0.min.js"></script>
+<script src="${root}assets/vendor/plot-0.6.16.umd.min.js"></script>
+<script type="module" src="${root}assets/js/signals.js"></script>
+</body>
+</html>

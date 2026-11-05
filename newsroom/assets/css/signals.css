@@ -1,0 +1,696 @@
+/* Unexpected Signals: a broadsheet for open data.
+ *
+ * The idea: newsprint, ink and one signal colour. Charts keep everything grey
+ * ("context") and colour only the thing the story is about ("signal").
+ * Colours are tokens, so charts (signals.js) read the same values.
+ */
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/newsreader-latin-standard-normal.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/newsreader-latin-standard-italic.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("../fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* --- Tokens ------------------------------------------------------------- */
+
+:root {
+  --paper: #f5f0e6;
+  --paper-2: #ebe4d5;
+  --ink: #1b1915;
+  --ink-2: #47433b;
+  --muted: #6b655a;
+  --rule: #d3c9b6;
+  --rule-strong: #1b1915;
+  /* Brand accent for text (kickers, links): dark enough for small type. */
+  --signal-ink: #b13319;
+  /* Chart colours. Validated for colour-blind separation on --paper. */
+  --signal: #d6452b;
+  --context: #bdb4a4;
+  --cat-1: #d6452b;
+  --cat-2: #1f6fa8;
+  --cat-3: #a07c10;
+  --grid: #e0d8c8;
+
+  --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --measure: 40rem;
+  --wide: 62rem;
+  color-scheme: light;
+}
+
+/* Night edition: its own colours, validated on the dark paper. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14130f;
+    --paper-2: #1e1c17;
+    --ink: #eee7d8;
+    --ink-2: #c9c1b1;
+    --muted: #9b9384;
+    --rule: #39352d;
+    --rule-strong: #eee7d8;
+    --signal-ink: #ff8a6b;
+    --signal: #e5532f;
+    --context: #57524a;
+    --cat-1: #e5532f;
+    --cat-2: #3f8fd0;
+    --cat-3: #b88a1c;
+    --grid: #2a2721;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14130f;
+  --paper-2: #1e1c17;
+  --ink: #eee7d8;
+  --ink-2: #c9c1b1;
+  --muted: #9b9384;
+  --rule: #39352d;
+  --rule-strong: #eee7d8;
+  --signal-ink: #ff8a6b;
+  --signal: #e5532f;
+  --context: #57524a;
+  --cat-1: #e5532f;
+  --cat-2: #3f8fd0;
+  --cat-3: #b88a1c;
+  --grid: #2a2721;
+  color-scheme: dark;
+}
+
+/* --- Base --------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--signal);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
+}
+a:hover {
+  color: var(--signal-ink);
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 1rem;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.kicker,
+.rule-label,
+.byline,
+.meta,
+.masthead-bar,
+.tagline,
+figcaption,
+.colophon {
+  font-family: var(--mono);
+}
+
+.kicker {
+  margin: 0 0 0.5rem;
+  color: var(--signal-ink);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.rule-label {
+  margin: 0 0 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 2px solid var(--rule-strong);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* --- Masthead ----------------------------------------------------------- */
+
+.masthead {
+  max-width: 72rem;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+.masthead-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.theme-toggle {
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-2);
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.nameplate {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem;
+  text-decoration: none;
+}
+.nameplate-mark {
+  width: 7.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: var(--signal);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.nameplate-title {
+  font-size: clamp(2.4rem, 8vw, 4.75rem);
+  font-weight: 800;
+  font-variation-settings: "opsz" 72;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.tagline {
+  margin: 0.75rem 0 0;
+  padding: 0.4rem 0;
+  border-top: 3px double var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+  color: var(--ink-2);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* --- Front page --------------------------------------------------------- */
+
+.front {
+  display: grid;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+@media (min-width: 52rem) {
+  .front {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  }
+  .front-side {
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--rule);
+  }
+}
+.front-stories {
+  display: grid;
+  gap: 1.5rem 2rem;
+}
+@media (min-width: 40rem) {
+  .front-stories {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-lead {
+    grid-column: 1 / -1;
+  }
+}
+.card {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  font-variation-settings: "opsz" 36;
+}
+.card h2 a {
+  text-decoration: none;
+}
+.card h2 a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--signal);
+}
+.card-lead {
+  padding-top: 0;
+  border-top: none;
+}
+.card-lead img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid var(--rule);
+}
+.card-lead h2 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  font-variation-settings: "opsz" 72;
+}
+.card-lead .dek {
+  font-size: 1.3rem;
+}
+.dek {
+  margin: 0 0 0.5rem;
+  color: var(--ink-2);
+  font-style: italic;
+  line-height: 1.4;
+}
+.meta,
+.byline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.tag-draft {
+  margin-left: 0.4rem;
+  padding: 0 0.35rem;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+}
+.front-side p,
+.front-side li {
+  font-size: 1rem;
+}
+.newsroom ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.newsroom li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--rule);
+  line-height: 1.3;
+}
+.newsroom .kicker {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* --- Story -------------------------------------------------------------- */
+
+.story {
+  max-width: var(--wide);
+  margin: 0 auto;
+}
+.story-head,
+.story-body > *,
+.story-foot,
+.back {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+.story-head {
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+.story-head h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.1rem, 6vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 72;
+  text-wrap: balance;
+}
+.story-dek {
+  margin: 0 0 1rem;
+  color: var(--ink-2);
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+.series {
+  color: var(--muted);
+}
+.series::before {
+  content: "· ";
+}
+.draft-banner {
+  max-width: var(--measure);
+  margin: 0 auto 1rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px dashed var(--signal-ink);
+  color: var(--signal-ink);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.story-body > p:first-of-type::first-letter {
+  float: left;
+  margin: 0.08em 0.1em 0 0;
+  font-size: 3.6em;
+  font-weight: 800;
+  line-height: 0.8;
+  font-variation-settings: "opsz" 72;
+}
+.story-body h2 {
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-variation-settings: "opsz" 36;
+}
+.story-body h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.story-body p,
+.story-body li {
+  text-wrap: pretty;
+}
+.story-body blockquote {
+  margin: 2rem auto;
+  padding: 0 0 0 1rem;
+  border-left: 3px solid var(--signal);
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+.story-body code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: var(--paper-2);
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+}
+.story-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+.story-body th,
+.story-body td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+}
+.story-body th {
+  border-bottom: 2px solid var(--rule-strong);
+}
+.story-body hr {
+  width: 4rem;
+  margin: 3rem auto;
+  border: none;
+  border-top: 3px double var(--rule-strong);
+}
+
+/* The big-number callout: the one finding to remember. */
+.signal-box {
+  display: grid;
+  gap: 0.25rem;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  border-top: 2px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule);
+}
+.signal-value {
+  color: var(--signal-ink);
+  font-size: clamp(2.5rem, 9vw, 4rem);
+  font-weight: 800;
+  line-height: 1;
+  font-variation-settings: "opsz" 72;
+  font-variant-numeric: lining-nums;
+}
+.signal-label {
+  color: var(--ink-2);
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+/* --- Figures ------------------------------------------------------------ */
+
+.story-body > .fig {
+  margin: 2.5rem auto;
+}
+.story-body > .fig-wide {
+  max-width: var(--wide);
+}
+.fig header {
+  max-width: var(--measure);
+}
+.fig-title {
+  margin: 0 0 0.2rem;
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.fig-subtitle {
+  margin: 0 0 0.75rem;
+  color: var(--ink-2);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.fig figcaption {
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+.chart {
+  position: relative;
+  min-height: 12rem;
+  font-family: var(--sans);
+}
+.chart svg {
+  display: block;
+  overflow: visible;
+  max-width: 100%;
+  height: auto;
+}
+.chart-error {
+  color: var(--signal-ink);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+.datawrapper {
+  display: block;
+}
+
+/* Shared chart styles, used by the D3 helpers in signals.js. */
+.chart text {
+  fill: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.chart .axis path,
+.chart .axis line {
+  stroke: var(--rule);
+}
+.chart .axis .domain {
+  display: none;
+}
+.chart .grid line {
+  stroke: var(--grid);
+}
+.chart .label-strong {
+  fill: var(--ink);
+  font-weight: 600;
+}
+.chart .annotation {
+  fill: var(--ink-2);
+  font-size: 12px;
+}
+.chart .annotation-line {
+  stroke: var(--ink-2);
+  stroke-width: 1;
+  fill: none;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  max-width: 16rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  box-shadow: 3px 3px 0 var(--rule);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.tooltip.on {
+  opacity: 1;
+}
+.tooltip strong {
+  display: block;
+  font-weight: 600;
+}
+.tooltip .muted {
+  color: var(--muted);
+}
+
+/* Table view for a chart, for screen readers and anyone who wants numbers. */
+.chart-table {
+  margin-top: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+.chart-table summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+}
+
+/* --- Story footer and colophon ------------------------------------------ */
+
+.story-foot {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+@media (min-width: 40rem) {
+  .story-foot {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.story-foot ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.licence {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+}
+.back {
+  margin-top: 2rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+.colophon {
+  max-width: 72rem;
+  margin: 4rem auto 0;
+  padding: 1rem 1rem 3rem;
+  border-top: 3px double var(--rule-strong);
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+}
+.colophon-small {
+  font-size: 0.7rem;
+}
+
+@media print {
+  .masthead-bar,
+  .theme-toggle,
+  .back {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tooltip {
+    transition: none;
+  }
+}
+
+.story-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border: 1px solid var(--rule);
+}
+
+@media (max-width: 30rem) {
+  .masthead-bar > span:first-child {
+    display: none;
+  }
+}

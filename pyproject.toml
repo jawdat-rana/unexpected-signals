@@ -8,7 +8,9 @@ license = { text = "MIT" }
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.6"]
+dev = ["pytest>=8", "ruff>=0.6", "markdown>=3.6"]
+# Only needed to build the website (newsroom/build.py).
+site = ["markdown>=3.6"]
 
 [project.scripts]
 unexpected-signals = "unexpected_signals.cli:main"
