@@ -1,0 +1,23 @@
+name: analysis
+
+# Runs the analysis scripts when they change, or by hand, and writes their
+# output to the job summary.
+
+on:
+  pull_request:
+    paths: ["analysis/**"]
+  workflow_dispatch:
+
+jobs:
+  trains-profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Profile train disruptions
+        run: |
+          python analysis/trains/profile.py | tee profile.txt
+          { echo '```'; cat profile.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
