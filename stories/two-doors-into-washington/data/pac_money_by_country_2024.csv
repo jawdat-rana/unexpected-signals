@@ -1,12 +1,12 @@
 country,pac_dollars,pacs,top_parents
-Switzerland,5520600,11,UBS; Roche; Zurich Insurance
+Switzerland,5335100,10,UBS; Roche; Zurich Insurance
 Germany,4544936,16,Deutsche Telekom; BASF; Fresenius
 United Kingdom,3434201,13,BAE Systems; Experian; GSK
 Japan,2994216,16,Toyota; Astellas; Takeda
 Canada,2246700,18,TD Bank; TC Energy; BMO
-Netherlands,1206250,6,Aegon; Airbus; Philips
-France,735250,7,Sanofi; Thales; Pernod Ricard
-Denmark,622000,3,Novo Nordisk; Maersk; Vestas
+France,1021000,8,Sanofi; Airbus; Thales
+Netherlands,787500,4,Aegon; Philips; Heineken
+Denmark,622000,3,Novo Nordisk; Maersk
 Belgium,595500,3,AB InBev; UCB; Solvay
 Spain,491773,2,Iberdrola; Santander
 South Korea,434500,1,Samsung
@@ -15,5 +15,5 @@ Italy,235500,1,Leonardo
 Israel,213000,2,Teva; Elbit Systems
 Brazil,186000,2,JBS; Embraer
 Mexico,115700,1,Cemex
-China,53250,3,WH Group; Haier; Lenovo
+China,53250,3,WH Group; Haier
 Australia,46100,1,CSL

@@ -18,6 +18,9 @@ python newsroom/build.py serve               # preview with drafts at http://loc
 ```
 
 1. **Branch.** One branch and one pull request per story.
+   Name analysis folders after the dataset or series (`analysis/train-disruptions`),
+   so one folder can feed several stories; `new` creates `analysis/<slug>` as a
+   starting point, which you can rename and point `analysis =` in `story.toml` at.
 2. **Analyse in Python.** `analysis/<slug>/prepare.py` downloads raw data into
    `analysis/<slug>/raw/` (ignored by git) and writes aggregated, chart-ready
    CSVs into `stories/<slug>/data/`. Only the small CSVs are published.
@@ -109,7 +112,7 @@ One-time setup: **Settings > Pages > Build and deployment > Source: GitHub Actio
 
 ```
 stories/<slug>/          one folder per published piece (text, charts, chart data)
-analysis/<slug>/         Python that turns raw data into the story's chart data
+analysis/<dataset>/      Python per dataset or series, e.g. money-in-politics, train-disruptions
 templates/story/         the scaffold for new stories, also rendered as the style guide
 templates/analysis/      the scaffold for prepare.py
 newsroom/                site build script, theme (CSS, fonts), chart runtime, vendored D3 and Plot

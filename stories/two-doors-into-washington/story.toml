@@ -1,12 +1,12 @@
 title = "Two doors into Washington"
 dek = "Foreign money can't fund U.S. campaigns. Countries reach Washington through their companies' PACs or through hired agents, and which door they use says a lot about their economy."
-date = 2026-11-10
+date = 2026-11-06
 section = "Money"
 series = "Money in politics, part 1"
-status = "draft"
+status = "published"
 tags = ["fec", "fara", "us-politics"]
 image = ""
-analysis = "analysis/money"
+analysis = "analysis/money-in-politics"
 
 [[sources]]
 name = "FEC bulk data: committees and contributions, 2024 cycle"

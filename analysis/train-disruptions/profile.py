@@ -4,8 +4,8 @@ Downloads the yearly CSVs (CC BY 4.0, https://www.rijdendetreinen.nl/en/open-dat
 and prints a plain-text profile: volume per year, field completeness, causes,
 timing, lines and durations. Standard library only.
 
-    python analysis/trains/profile.py            # all years
-    python analysis/trains/profile.py 2023 2024  # selected years
+    python analysis/train-disruptions/profile.py            # all years
+    python analysis/train-disruptions/profile.py 2023 2024  # selected years
 """
 
 from __future__ import annotations

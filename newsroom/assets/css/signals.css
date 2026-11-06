@@ -568,7 +568,8 @@ figcaption,
 .chart .axis line {
   stroke: var(--rule);
 }
-.chart .axis .domain {
+.chart .axis .domain,
+.chart .grid .domain {
   display: none;
 }
 .chart .grid line {

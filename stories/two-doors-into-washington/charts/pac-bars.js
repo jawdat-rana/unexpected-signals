@@ -12,7 +12,7 @@ export default function draw({ data, width, d3, theme, tooltip, table }) {
 
   const x = d3.scaleLinear([0, d3.max(rows, (d) => d.pac_dollars)], [m.left, width - m.right]).nice();
   const y = d3.scaleBand(rows.map((d) => d.country), [m.top, height - m.bottom]).paddingInner(gap / (bar + gap));
-  const money = (v) => (v >= 1e6 ? `$${d3.format(".1f")(v / 1e6)}M` : `$${d3.format(".0f")(v / 1e3)}K`);
+  const money = (v) => (v === 0 ? "$0" : v >= 1e6 ? `$${d3.format(".1f")(v / 1e6)}M` : `$${d3.format(".0f")(v / 1e3)}K`);
 
   const svg = d3.create("svg").attr("viewBox", [0, 0, width, height]).attr("width", width);
 
