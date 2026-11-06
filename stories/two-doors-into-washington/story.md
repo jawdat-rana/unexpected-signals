@@ -4,6 +4,12 @@ The U.S. midterms just ended, and "foreign money in elections" is back in the he
 
 {{ signal value="$23.7M" label="given in the 2024 cycle by 109 PACs of foreign-owned companies. UBS's U.S. PAC alone gave $2.9M." }}
 
+## Which years this covers
+
+U.S. campaign money is counted in two-year cycles. The "2024 cycle" runs from January 2023 to December 2024. The FARA counts cover the same two years, so both doors are measured over the same period.
+
+I used 2024 because it's the last complete cycle. The 2026 cycle, which includes this week's midterms, has data through 14 October so far. On that data, 106 PACs of foreign-owned companies have already given $22.0M, and Switzerland, Germany, the UK, Canada and Japan are still the top five. The final 2026 reports are due on 3 December, and I'll update this story with them.
+
 ## Two doors, two kinds of economy
 
 When you put each country on both axes, the countries don't land in one cloud. They split by which door they use.
