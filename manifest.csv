@@ -1,0 +1,16 @@
+path,url,status,bytes
+opensecrets/foreign-pacs-2016.html,https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2016,403,0
+opensecrets/foreign-pacs-2018.html,https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2018,403,0
+opensecrets/foreign-pacs-2020.html,https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2020,403,0
+opensecrets/foreign-pacs-2022.html,https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2022,403,0
+opensecrets/foreign-pacs-2024.html,https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2024,403,0
+opensecrets/foreign-pacs-2026.html,https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2026,403,0
+opensecrets/fara-landing.html,https://www.opensecrets.org/fara,403,0
+opensecrets/fara-countries.html,https://www.opensecrets.org/fara/countries,403,0
+fec/cm24.zip,https://www.fec.gov/files/bulk-downloads/2024/cm24.zip,200,883375
+fec/cm26.zip,https://www.fec.gov/files/bulk-downloads/2026/cm26.zip,200,879288
+fec/webk24.zip,https://www.fec.gov/files/bulk-downloads/2024/webk24.zip,200,469640
+fec/webk26.zip,https://www.fec.gov/files/bulk-downloads/2026/webk26.zip,200,488432
+fara/FARA_All_Registrants.csv.zip,https://efile.fara.gov/bulk/zip/FARA_All_Registrants.csv.zip,200,248291
+fara/FARA_All_ForeignPrincipals.csv.zip,https://efile.fara.gov/bulk/zip/FARA_All_ForeignPrincipals.csv.zip,200,703881
+fara/FARA_All_RegistrantDocs.csv.zip,https://efile.fara.gov/bulk/zip/FARA_All_RegistrantDocs.csv.zip,200,3249949
