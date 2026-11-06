@@ -7,7 +7,7 @@ using [Rijden de Treinen's open disruption data](https://www.rijdendetreinen.nl/
 Step 1 is a profile of the raw data:
 
 ```bash
-python analysis/trains/profile.py
+python analysis/train-disruptions/profile.py
 ```
 
 Caveats from the source: only disruptions NS communicated are included, and

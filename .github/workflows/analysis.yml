@@ -19,5 +19,5 @@ jobs:
           python-version: "3.12"
       - name: Profile train disruptions
         run: |
-          python analysis/trains/profile.py | tee profile.txt
+          python analysis/train-disruptions/profile.py | tee profile.txt
           { echo '```'; cat profile.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
