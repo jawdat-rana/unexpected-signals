@@ -1,0 +1,22 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "Headline goes here"
+# One sentence that tells the reader what they will learn.
+dek = "The template every story starts from. It uses every component, so it doubles as the style guide."
+date = 2026-11-05
+# Short label above the headline: Trains, Roads, Money, Energy, Water...
+section = "Style guide"
+# Optional: the series this belongs to, like "Money in politics, part 1".
+series = ""
+# draft: preview only (build --drafts). published: on the live site and in the feed.
+status = "draft"
+tags = []
+# Share image for LinkedIn previews, 1200 x 627, inside this folder. Optional.
+image = ""
+# Folder with the Python that made the chart data.
+analysis = ""
+
+[[sources]]
+name = "Example data, made up for this template"
+url = "https://github.com/jawdat-rana/unexpected-signals/tree/main/templates/story/data"
+licence = "CC0"

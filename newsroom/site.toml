@@ -1,0 +1,13 @@
+# Site-wide settings for the Unexpected Signals site.
+title = "Unexpected Signals"
+tagline = "Open data, read sideways"
+description = "Short investigations into open data that turned out to say more than expected. Every chart comes with its data and code."
+# Where GitHub Pages serves the site. Used for share previews and the RSS feed.
+base_url = "https://jawdat-rana.github.io/unexpected-signals/"
+author = "Jawdat Rana"
+repo = "https://github.com/jawdat-rana/unexpected-signals"
+# linkedin = "https://www.linkedin.com/in/..."
+edition = "Netherlands edition"
+# List draft titles on the front page under "In the newsroom".
+show_upcoming = true
+about = "Short investigations into open data nobody thought of as a signal, until it turned out to be one. One or two a week, each with its data and code on [GitHub](https://github.com/jawdat-rana/unexpected-signals)."

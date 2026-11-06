@@ -2,6 +2,22 @@
 
 Collecting open data that nobody thought of as a signal, until it turned out to be one.
 
+**Read the stories: <https://jawdat-rana.github.io/unexpected-signals/>**
+
+This repo is two things:
+
+1. **A publishing home.** Each analysis is a story in `stories/<slug>/`, with its
+   chart data and the Python that made it in `analysis/<slug>/`. GitHub Pages
+   builds and publishes the site on every merge. See [docs/PUBLISHING.md](docs/PUBLISHING.md).
+2. **A data collector**, described below.
+
+```bash
+python newsroom/build.py new my-story --title "A question worth asking" --section Trains
+python newsroom/build.py serve     # preview at http://localhost:8000
+```
+
+## The NDW collector
+
 This repo takes regular snapshots of Dutch open data feeds and stores them as
 small, tidy CSV files, so there is history to analyse later. It starts with two
 feeds from [NDW](https://opendata.ndw.nu/), the Dutch national road traffic data portal:
