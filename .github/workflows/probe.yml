@@ -1,0 +1,22 @@
+name: probe
+
+# One-off exploration jobs that need a real browser. Runs on PRs that touch
+# analysis/ns-stations/, or by hand.
+
+on:
+  pull_request:
+    paths: ["analysis/ns-stations/**"]
+  workflow_dispatch:
+
+jobs:
+  ns-dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && playwright install --with-deps chromium
+      - name: Record the dashboard's network requests
+        run: python analysis/ns-stations/probe.py rotterdam-centraal
