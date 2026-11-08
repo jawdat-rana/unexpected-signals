@@ -84,10 +84,21 @@ def main() -> None:
             s["Name"][:27].ljust(28), *(str(by_year[y].get(s["UrlPart"])).rjust(8) for y in YEARS)
         )
 
-    print("\n## Stations with TravelersPerDay filled, per year")
-    for y in YEARS:
-        n = sum(1 for s in data[y]["Stations"] if value(s, "TravelersPerDay") not in (None, ""))
-        print(y, n, "of", len(data[y]["Stations"]))
+    names = {s["Alias"]: s["Name"] for s in stations}
+    for y in (2019, max(YEARS)):
+        segs = data[y]["Segments"]
+        loaded = [g for g in segs if g["A"]["Travelers"] or g["B"]["Travelers"]]
+        print(f"\n## Segments {y}: {len(segs)} total, {len(loaded)} with travellers")
+        top_segs = sorted(
+            loaded, key=lambda g: g["A"]["Travelers"] + g["B"]["Travelers"], reverse=True
+        )[:15]
+        for g in top_segs:
+            a, b = g["A"], g["B"]
+            print(
+                f"{names.get(a['StationAlias'], a['StationAlias'])[:25]:25} -> "
+                f"{names.get(b['StationAlias'], b['StationAlias'])[:25]:25} "
+                f"A:{a['Travelers']:>7} B:{b['Travelers']:>7} thickness:{g['Thickness']:.2f}"
+            )
 
 
 if __name__ == "__main__":
