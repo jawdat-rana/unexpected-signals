@@ -10,7 +10,7 @@ public, versioned and reproducible from the moment it is merged.
 pip install -e ".[dev]"                      # once
 
 python newsroom/build.py new autumn-trains --title "Is autumn the worst month for trains?" --section Trains
-# -> stories/autumn-trains/      the page: story.toml, story.md, charts/, data/, post.md
+# -> stories/autumn-trains/      the page: story.toml, story.md, charts/, data/
 # -> analysis/autumn-trains/     the Python: prepare.py writes stories/autumn-trains/data/*.csv
 
 python analysis/autumn-trains/prepare.py     # raw data -> small chart CSVs
@@ -34,7 +34,8 @@ python newsroom/build.py serve               # preview with drafts at http://loc
    and in the night edition (the toggle in the masthead).
 6. **Publish.** Set `status = "published"` in `story.toml`, open the PR, merge.
    The `pages` workflow deploys in about a minute.
-7. **Post.** Use `post.md` for LinkedIn. Link the story page, not the repo.
+7. **Share.** Link the story page, not the repo. Keep social posts and other
+   personal drafts out of this repo: everything here is for readers to reuse.
 
 Drafts are never on the live site. Their titles do show under "In the
 newsroom" on the front page; set `show_upcoming = false` in
