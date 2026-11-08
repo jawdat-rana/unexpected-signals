@@ -1,0 +1,458 @@
+from_code,to_code,from_name,to_name,from_lat,from_lng,to_lat,to_lng,km,passengers,disruptions,hours,trips_hit,top_causes,main_group
+SHL,ASRA,Schiphol Airport,Amsterdam Riekerpolder,52.30887,4.76171,52.33879,4.82813,5.6,125000,460,816.9,5672704,broken down train (196h); NS strike (166h); signal failure (139h),infrastructure
+SHL,HFD,Schiphol Airport,Hoofddorp,52.30887,4.76171,52.2924,4.6978,4.7,92000,489,827.4,4229142,broken down train (190h); signal failure (138h); points failure (123h),infrastructure
+ASB,ASHD,Amsterdam Bijlmer ArenA,Amsterdam Holendrecht,52.3116,4.9477,52.29795,4.96006,1.7,118000,173,543.6,3563631,repair works (161h); NS strike (98h); defective railway track (90h),engineering work
+AC,BKL,Abcoude,Breukelen,52.2789,4.9768,52.1711,4.9906,12.0,116000,178,551.7,3555595,repair works (161h); NS strike (98h); defective railway track (94h),engineering work
+AC,ASHD,Abcoude,Amsterdam Holendrecht,52.2789,4.9768,52.29795,4.96006,2.4,117000,174,544.0,3535791,repair works (161h); NS strike (98h); defective railway track (90h),engineering work
+ASS,ASD,Amsterdam Sloterdijk,Amsterdam Centraal,52.38906,4.83814,52.3787,4.9005,4.4,129000,151,488.1,3497815,NS strike (143h); repair works (123h); defective railway track (55h),engineering work
+MAS,BKL,Maarssen,Breukelen,52.1356,5.0332,52.1711,4.9906,4.9,109000,173,559.1,3385698,repair works (161h); defective railway track (100h); NS strike (71h),infrastructure
+HFD,HFDM,Hoofddorp,Hoofddorp Midden,52.2924,4.6978,52.29157,4.69573,0.2,81000,426,718.9,3235261,broken down train (165h); NS strike (119h); signal failure (112h),infrastructure
+ASD,ASDM,Amsterdam Centraal,Amsterdam Muiderpoort,52.3787,4.9005,52.3609,4.9312,2.9,96000,234,600.3,3201736,NS strike (190h); defective railway track (122h); repair works (75h),infrastructure
+UT,UTZL,Utrecht Centraal,Utrecht Zuilen,52.09154,5.11083,52.1032,5.0897,1.9,112000,161,511.6,3183349,repair works (161h); defective railway track (80h); NS strike (71h),engineering work
+MAS,UTZL,Maarssen,Utrecht Zuilen,52.1356,5.0332,52.1032,5.0897,5.3,111000,162,513.6,3167304,repair works (161h); defective railway track (80h); NS strike (71h),engineering work
+UT,UTVR,Utrecht Centraal,Utrecht Vaartsche Rijn,52.09154,5.11083,52.07364,5.1359,2.6,115000,186,475.3,3036332,NS strike (156h); defective railway track (104h); points failure (54h),infrastructure
+ASDZ,ASRA,Amsterdam Zuid,Amsterdam Riekerpolder,52.339,4.8731,52.33879,4.82813,3.1,80000,340,616.2,2738847,broken down train (156h); NS strike (119h); damaged overhead wires (99h),infrastructure
+ASB,DVD,Amsterdam Bijlmer ArenA,Duivendrecht,52.3116,4.9477,52.3236,4.9366,1.5,76000,210,639.0,2698147,defective railway track (142h); NS strike (98h); repair works (70h),infrastructure
+RTD,RTB,Rotterdam Centraal,Rotterdam Blaak,51.9251,4.4694,51.9199,4.4892,1.5,63000,459,721.1,2523985,broken down train (155h); problem in a tunnel (135h); points failure (110h),infrastructure
+RTB,RTZ,Rotterdam Blaak,Rotterdam Zuid,51.9199,4.4892,51.9029,4.5116,2.4,62000,458,720.0,2479913,broken down train (155h); problem in a tunnel (135h); points failure (110h),infrastructure
+RTZ,RTST,Rotterdam Zuid,Rotterdam Stadion,51.9029,4.5116,51.8928,4.5201,1.3,61000,458,720.0,2439914,broken down train (155h); problem in a tunnel (135h); points failure (110h),infrastructure
+RLB,RTST,Rotterdam Lombardijen,Rotterdam Stadion,51.88,4.5308,51.8928,4.5201,1.6,61000,458,720.0,2439914,broken down train (155h); problem in a tunnel (135h); points failure (110h),infrastructure
+VST,GVM,Voorschoten,Den Haag Mariahoeve,52.1261,4.4336,52.0912,4.3699,5.8,94000,201,421.8,2202870,NS strike (95h); broken down train (76h); damaged overhead wires (65h),infrastructure
+LEDN,DVNK,Leiden Centraal,De Vink,52.16648,4.48236,52.1466,4.4561,2.8,92000,201,421.8,2156000,NS strike (95h); broken down train (76h); damaged overhead wires (65h),infrastructure
+DVNK,VST,De Vink,Voorschoten,52.1466,4.4561,52.1261,4.4336,2.7,92000,201,421.8,2156000,NS strike (95h); broken down train (76h); damaged overhead wires (65h),infrastructure
+LAA,GVM,Den Haag Laan van NOI,Den Haag Mariahoeve,52.0794,4.3434,52.0912,4.3699,2.2,92000,204,419.2,2142830,NS strike (95h); broken down train (78h); damaged overhead wires (65h),infrastructure
+RAI,DVAW,Amsterdam RAI,Duivendrecht aansluiting west,52.3373,4.8895,52.32997,4.90459,1.3,82000,219,464.7,2116874,NS strike (95h); broken down train (82h); signal failure (70h),infrastructure
+DTCP,SDM,Delft Campus,Schiedam Centrum,51.9909,4.3647,51.9216,4.4093,8.3,64000,274,585.3,2080925,broken down train (97h); points failure (82h); defective railway track (77h),infrastructure
+ASA,DVD,Amsterdam Amstel,Duivendrecht,52.3459,4.918,52.3236,4.9366,2.8,76000,154,479.4,2023934,defective railway track (120h); NS strike (95h); repair works (66h),infrastructure
+ASDZ,RAI,Amsterdam Zuid,Amsterdam RAI,52.339,4.8731,52.3373,4.8895,1.1,82000,203,440.6,2007108,NS strike (95h); broken down train (75h); damaged overhead wires (67h),infrastructure
+RSW,DT,Rijswijk,Delft,52.0396,4.3197,52.0067,4.3566,4.4,69000,258,515.2,1974931,broken down train (93h); points failure (85h); disruption elsewhere (74h),infrastructure
+RSW,GVMW,Rijswijk,Den Haag Moerwijk,52.0396,4.3197,52.0545,4.3089,1.8,68000,258,515.2,1946309,broken down train (93h); points failure (85h); disruption elsewhere (74h),infrastructure
+GV,GVMW,Den Haag HS,Den Haag Moerwijk,52.0703,4.3226,52.0545,4.3089,2.0,66000,258,515.2,1889065,broken down train (93h); points failure (85h); disruption elsewhere (74h),infrastructure
+DT,DTCP,Delft,Delft Campus,52.0067,4.3566,51.9909,4.3647,1.8,63000,261,497.4,1741011,broken down train (95h); points failure (81h); disruption elsewhere (74h),infrastructure
+NVP,HFDM,Nieuw Vennep,Hoofddorp Midden,52.2592,4.6458,52.29157,4.69573,4.9,55000,237,556.4,1700172,NS strike (119h); broken down train (85h); damaged overhead wires (68h),infrastructure
+NVP,SSH,Nieuw Vennep,Sassenheim,52.2592,4.6458,52.22079,4.5441,8.1,54000,230,549.5,1648528,NS strike (95h); broken down train (85h); damaged overhead wires (68h),infrastructure
+LEDN,SSH,Leiden Centraal,Sassenheim,52.16648,4.48236,52.22079,4.5441,7.4,53000,235,552.4,1626655,NS strike (142h); broken down train (85h); damaged overhead wires (68h),infrastructure
+SDM,RTD,Schiedam Centrum,Rotterdam Centraal,51.9216,4.4093,51.9251,4.4694,4.1,56000,262,515.5,1603771,broken down train (95h); points failure (77h); disruption elsewhere (74h),infrastructure
+ASDM,ASA,Amsterdam Muiderpoort,Amsterdam Amstel,52.3609,4.9312,52.3459,4.918,1.9,60000,152,475.0,1583312,defective railway track (120h); NS strike (95h); repair works (66h),infrastructure
+ZBM,HT,Zaltbommel,'s-Hertogenbosch,51.808,5.2631,51.69082,5.29377,13.2,49000,132,570.7,1553463,repair works (187h); NS strike (143h); defective railway track (101h),engineering work
+GDM,ZBM,Geldermalsen,Zaltbommel,51.8826,5.2717,51.808,5.2631,8.3,48000,132,570.7,1521759,repair works (187h); NS strike (143h); defective railway track (101h),engineering work
+BD,BDA,Breda,Breda aansluiting,51.5951,4.7801,51.59226,4.75681,1.6,39000,391,673.6,1459497,broken down train (124h); NS strike (115h); points failure (89h),infrastructure
+UTLN,HTN,Utrecht Lunetten,Houten,52.0659,5.1435,52.0347,5.168,3.9,63000,124,386.7,1353480,defective railway track (134h); NS strike (119h); over-running engineering works (42h),infrastructure
+UTLN,UTVR,Utrecht Lunetten,Utrecht Vaartsche Rijn,52.0659,5.1435,52.07364,5.1359,1.0,64000,124,355.0,1262169,NS strike (119h); defective railway track (102h); over-running engineering works (42h),infrastructure
+CL,HTNC,Culemborg,Houten Castellum,51.9467,5.2272,52.0173,5.1795,8.5,56000,161,404.0,1256804,NS strike (119h); defective railway track (111h); technical investigation (46h),infrastructure
+CL,GDM,Culemborg,Geldermalsen,51.9467,5.2272,51.8826,5.2717,7.8,52000,164,406.1,1173176,NS strike (119h); defective railway track (111h); technical investigation (46h),infrastructure
+HTN,HTNC,Houten,Houten Castellum,52.0347,5.168,52.0173,5.1795,2.1,59000,124,352.8,1156524,NS strike (119h); defective railway track (102h); over-running engineering works (42h),infrastructure
+UTLR,UT,Utrecht Leidsche Rijn,Utrecht Centraal,52.09861,5.06833,52.09154,5.11083,3.0,81000,103,238.1,1071475,NS strike (184h); broken down train (21h); defective railway track (20h),staff
+UTLR,UTT,Utrecht Leidsche Rijn,Utrecht Terwijde,52.09861,5.06833,52.1006,5.0404,1.9,79000,105,240.1,1053823,NS strike (184h); broken down train (21h); defective railway track (20h),staff
+WD,GDG,Woerden,Gouda Goverwelle,52.085,4.8929,52.0151,4.7413,13.0,67000,107,276.7,1029876,NS strike (139h); damaged overhead wires (35h); defective railway track (23h),staff
+VTN,UTT,Vleuten,Utrecht Terwijde,52.1029,5.0098,52.1006,5.0404,2.1,77000,105,240.1,1027144,NS strike (184h); broken down train (21h); defective railway track (20h),staff
+AMPO,MBGA,Almere Poort,Muiderberg aansluiting,52.36004,5.17455,52.31051,5.07556,8.7,43000,229,427.9,1022110,NS strike (145h); signal failure (80h); broken down train (71h),infrastructure
+WD,VTN,Woerden,Vleuten,52.085,4.8929,52.1029,5.0098,8.2,75000,106,242.7,1011091,NS strike (184h); broken down train (21h); defective railway track (20h),staff
+GD,GDG,Gouda,Gouda Goverwelle,52.0172,4.7063,52.0151,4.7413,2.4,67000,96,258.0,960381,NS strike (139h); defective railway track (34h); broken down train (17h),staff
+ASDL,ASRA,Amsterdam Lelylaan,Amsterdam Riekerpolder,52.3579,4.8339,52.33879,4.82813,2.2,46000,136,364.7,932020,points failure (68h); signal failure (63h); defective railway track (49h),infrastructure
+ALMM,AMPO,Almere Muziekwijk,Almere Poort,52.3676,5.1906,52.36004,5.17455,1.4,42000,190,389.4,908509,NS strike (121h); signal failure (70h); broken down train (59h),infrastructure
+WP,MBGA,Weesp,Muiderberg aansluiting,52.3121,5.0442,52.31051,5.07556,2.1,38000,229,427.9,903260,NS strike (145h); signal failure (80h); broken down train (71h),infrastructure
+DVD,DVAW,Duivendrecht,Duivendrecht aansluiting west,52.3236,4.9366,52.32997,4.90459,2.3,39000,192,407.9,883847,NS strike (95h); signal failure (69h); broken down train (68h),infrastructure
+ALMM,ALM,Almere Muziekwijk,Almere Centrum,52.3676,5.1906,52.3752,5.2189,2.1,40000,191,389.5,865556,NS strike (121h); signal failure (70h); broken down train (59h),infrastructure
+BDPB,BDA,Breda Prinsenbeek,Breda aansluiting,51.60522,4.72195,51.59226,4.75681,2.8,30000,334,515.2,858659,broken down train (113h); points failure (78h); problem in a tunnel (67h),infrastructure
+ASS,ASDL,Amsterdam Sloterdijk,Amsterdam Lelylaan,52.38906,4.83814,52.3579,4.8339,3.5,42000,135,364.1,849503,points failure (68h); signal failure (63h); defective railway track (49h),infrastructure
+GVC,LAA,Den Haag Centraal,Den Haag Laan van NOI,52.0813,4.324,52.0794,4.3434,1.3,36000,187,409.7,819401,NS strike (95h); broken down train (76h); damaged overhead wires (62h),infrastructure
+BTL,BET,Boxtel,Best,51.5848,5.3191,51.5095,5.3892,9.7,58000,106,251.2,809316,damaged overhead wires (55h); NS strike (47h); defective railway track (40h),infrastructure
+BET,EHS,Best,Eindhoven Strijp-S,51.5095,5.3892,51.45091,5.45633,8.0,58000,106,251.2,809316,damaged overhead wires (55h); NS strike (47h); defective railway track (40h),infrastructure
+EHS,EHV,Eindhoven Strijp-S,Eindhoven Centraal,51.45091,5.45633,51.44304,5.48089,1.9,57000,106,251.2,795362,damaged overhead wires (55h); NS strike (47h); defective railway track (40h),infrastructure
+RLB,ZBHA,Rotterdam Lombardijen,Zevenbergsehoek aansluiting,51.88,4.5308,51.61575,4.71388,32.0,26000,277,485.2,700780,broken down train (105h); points failure (76h); problem in a tunnel (66h),infrastructure
+BDPB,ZBHA,Breda Prinsenbeek,Zevenbergsehoek aansluiting,51.60522,4.72195,51.61575,4.71388,1.3,26000,277,485.2,700780,broken down train (105h); points failure (76h); problem in a tunnel (66h),infrastructure
+DVD,DMNZ,Duivendrecht,Diemen Zuid,52.3236,4.9366,52.3305,4.9562,1.5,41000,124,301.0,685616,NS strike (98h); broken down train (52h); defective railway track (42h),infrastructure
+RLB,BRD,Rotterdam Lombardijen,Barendrecht,51.88,4.5308,51.8547,4.5524,3.2,32000,170,377.1,670426,disruption elsewhere (106h); broken down train (51h); points failure (34h),logistical
+WP,DMNZ,Weesp,Diemen Zuid,52.3121,5.0442,52.3305,4.9562,6.3,40000,112,297.8,661758,NS strike (98h); broken down train (43h); defective railway track (42h),infrastructure
+UTO,UT,Utrecht Overvecht,Utrecht Centraal,52.1104,5.1252,52.09154,5.11083,2.3,73000,60,154.4,626321,NS strike (117h); broken down train (17h); defective railway track (11h),staff
+NDB,NDBA,Naarden-Bussum,Naarden-Bussum aansluiting,52.281,5.157,52.29923,5.07965,5.6,44000,154,256.2,626230,NS strike (119h); broken down train (37h); points failure (37h),staff
+BRD,ZWD,Barendrecht,Zwijndrecht,51.8547,4.5524,51.8157,4.6409,7.5,28000,170,377.1,586623,disruption elsewhere (106h); broken down train (51h); points failure (34h),logistical
+WP,NDBA,Weesp,Naarden-Bussum aansluiting,52.3121,5.0442,52.29923,5.07965,2.8,39000,154,256.2,555068,NS strike (119h); broken down train (37h); points failure (37h),staff
+ASDM,ASSP,Amsterdam Muiderpoort,Amsterdam Science Park,52.3609,4.9312,52.35252,4.94904,1.5,42000,104,237.4,553856,NS strike (119h); signal failure (29h); points failure (26h),staff
+ZWD,DDR,Zwijndrecht,Dordrecht,51.8157,4.6409,51.8076,4.6684,2.1,25000,173,381.4,529765,disruption elsewhere (106h); broken down train (51h); points failure (34h),logistical
+RTD,HFDM,Rotterdam Centraal,Hoofddorp Midden,51.9251,4.4694,52.29157,4.69573,43.6,27000,203,349.3,523995,broken down train (81h); NS strike (47h); signal failure (46h),infrastructure
+DMN,ASSP,Diemen,Amsterdam Science Park,52.3456,4.9673,52.35252,4.94904,1.5,40000,103,235.2,522657,NS strike (119h); signal failure (29h); points failure (26h),staff
+AMF,AMFS,Amersfoort Centraal,Amersfoort Schothorst,52.1535,5.3739,52.1755,5.4049,3.2,32000,98,292.6,520210,NS strike (95h); points failure (64h); broken down train (46h),infrastructure
+WP,DMN,Weesp,Diemen,52.3121,5.0442,52.3456,4.9673,6.4,40000,101,233.2,518122,NS strike (119h); signal failure (29h); points failure (24h),staff
+TBU,TB,Tilburg Universiteit,Tilburg,51.5651,5.0512,51.5604,5.0839,2.3,36000,114,245.6,491247,NS strike (95h); broken down train (34h); disruption elsewhere (29h),staff
+ZD,ASS,Zaandam,Amsterdam Sloterdijk,52.43826,4.81405,52.38906,4.83814,5.7,70000,28,126.2,490840,NS strike (71h); repair works (41h); broken down train (6h),staff
+BTL,VG,Boxtel,Vught,51.5848,5.3191,51.6557,5.2917,8.1,38000,76,227.1,479416,NS strike (119h); damaged overhead wires (51h); defective railway track (33h),staff
+VG,HT,Vught,'s-Hertogenbosch,51.6557,5.2917,51.69082,5.29377,3.9,38000,74,226.2,477459,NS strike (119h); damaged overhead wires (51h); defective railway track (33h),staff
+ASS,HWZB,Amsterdam Sloterdijk,Halfweg-Zwanenburg,52.38906,4.83814,52.386,4.74688,6.2,57000,77,148.0,468566,signal failure (32h); repair works (28h); NS strike (24h),infrastructure
+BNK,UTVR,Bunnik,Utrecht Vaartsche Rijn,52.0633,5.1957,52.07364,5.1359,4.2,52000,72,155.8,449984,points failure (52h); NS strike (37h); collision (27h),infrastructure
+HWZB,HLMS,Halfweg-Zwanenburg,Haarlem Spaarnwoude,52.386,4.74688,52.383,4.6712,5.1,55000,75,146.8,448628,signal failure (32h); repair works (28h); NS strike (24h),infrastructure
+EST,NML,Elst,Nijmegen Lent,51.917,5.8548,51.864,5.8595,5.9,38000,91,212.3,448198,NS strike (95h); repair works (29h); defective railway track (28h),staff
+TBR,TBU,Tilburg Reeshof,Tilburg Universiteit,51.5739,4.9931,51.5651,5.0512,4.1,34000,109,235.1,444013,NS strike (95h); collision (42h); disruption elsewhere (29h),staff
+BNK,DB,Bunnik,Driebergen-Zeist,52.0633,5.1957,52.0651,5.2599,4.4,51000,72,155.8,441330,points failure (52h); NS strike (37h); collision (27h),infrastructure
+HLM,HLMS,Haarlem,Haarlem Spaarnwoude,52.3881,4.6385,52.383,4.6712,2.3,53000,75,146.8,432314,signal failure (32h); repair works (28h); NS strike (24h),infrastructure
+TBR,GZ,Tilburg Reeshof,Gilze-Rijen,51.5739,4.9931,51.584,4.9246,4.9,33000,109,235.1,430954,NS strike (95h); collision (42h); disruption elsewhere (29h),staff
+AH,AHZ,Arnhem Centraal,Arnhem Zuid,51.98447,5.90122,51.9552,5.852,4.7,36000,91,214.7,429487,NS strike (95h); repair works (35h); defective railway track (28h),staff
+EST,AHZ,Elst,Arnhem Zuid,51.917,5.8548,51.9552,5.852,4.3,36000,91,214.7,429487,NS strike (95h); repair works (35h); defective railway track (28h),staff
+ALM,ALMP,Almere Centrum,Almere Parkwijk,52.3752,5.2189,52.377,5.2445,1.7,26000,151,297.1,429155,NS strike (74h); broken down train (52h); signal failure (44h),infrastructure
+NM,NML,Nijmegen,Nijmegen Lent,51.8433,5.853,51.864,5.8595,2.3,36000,91,212.3,424609,NS strike (95h); repair works (29h); defective railway track (28h),staff
+AHP,AH,Arnhem Velperpoort,Arnhem Centraal,51.9849,5.9203,51.98447,5.90122,1.3,17000,113,443.3,418687,problems with the rolling stock (133h); staffing problems (106h); NS strike (95h),staff
+ALMB,ALMP,Almere Buiten,Almere Parkwijk,52.3945,5.2783,52.377,5.2445,3.0,25000,151,297.1,412649,NS strike (74h); broken down train (52h); signal failure (44h),infrastructure
+BD,GZ,Breda,Gilze-Rijen,51.5951,4.7801,51.584,4.9246,10.1,33000,107,223.0,408871,NS strike (95h); collision (33h); disruption elsewhere (29h),staff
+BHV,UTO,Bilthoven,Utrecht Overvecht,52.1297,5.2042,52.1104,5.1252,5.8,55000,50,122.5,374239,NS strike (93h); broken down train (17h); defective railway track (11h),staff
+NDB,BSMZ,Naarden-Bussum,Bussum Zuid,52.281,5.157,52.2653,5.1631,1.8,42000,93,159.4,372032,NS strike (95h); broken down train (24h); signal failure (11h),staff
+BSMZ,HVSM,Bussum Zuid,Hilversum Media Park,52.2653,5.1631,52.2387,5.174,3.0,42000,94,158.2,369091,NS strike (95h); broken down train (24h); signal failure (11h),staff
+HVSM,HVS,Hilversum Media Park,Hilversum,52.2387,5.174,52.2264,5.1813,1.5,42000,94,158.2,369091,NS strike (95h); broken down train (24h); signal failure (11h),staff
+GD,NWK,Gouda,Nieuwerkerk a/d IJssel,52.0172,4.7063,51.9653,4.6167,8.4,40000,67,164.2,364881,NS strike (44h); signal failure (16h); defective railway track (15h),infrastructure
+DLD,BHV,Den Dolder,Bilthoven,52.1401,5.2417,52.1297,5.2042,2.8,53000,40,123.9,364757,NS strike (93h); broken down train (15h); defective railway track (11h),staff
+ALMB,ALMO,Almere Buiten,Almere Oostvaarders,52.3945,5.2783,52.40294,5.29947,1.7,22000,151,296.5,362371,NS strike (74h); broken down train (52h); signal failure (44h),infrastructure
+GV,GVC,Den Haag HS,Den Haag Centraal,52.0703,4.3226,52.0813,4.324,1.2,18000,205,361.6,361591,broken down train (85h); points failure (59h); NS strike (47h),infrastructure
+DLD,AMF,Den Dolder,Amersfoort Centraal,52.1401,5.2417,52.1535,5.3739,9.1,49000,42,131.2,357100,NS strike (93h); collision (13h); defective railway track (11h),staff
+RTA,CPS,Rotterdam Alexander,Capelle Schollevaar,51.9514,4.5519,51.9542,4.584,2.2,40000,66,159.3,354038,NS strike (44h); signal failure (16h); defective railway track (15h),infrastructure
+NWK,CPS,Nieuwerkerk a/d IJssel,Capelle Schollevaar,51.9653,4.6167,51.9542,4.584,2.6,40000,65,158.8,352985,NS strike (44h); signal failure (16h); defective railway track (15h),infrastructure
+AMF,HVL,Amersfoort Centraal,Hoevelaken,52.1535,5.3739,52.166,5.46537,6.4,22000,133,281.4,343989,NS strike (119h); broken down train (45h); points failure (39h),staff
+GD,LLZM,Gouda,Lansingerland-Zoetermeer,52.0172,4.7063,52.04147,4.51741,13.2,32000,49,176.1,312978,NS strike (93h); defective railway track (20h); broken down train (12h),staff
+KZ,ZD,Koog aan de Zaan,Zaandam,52.458,4.8059,52.43826,4.81405,2.3,42000,22,133.8,312236,NS strike (71h); repair works (41h); defective railway track (14h),staff
+RTN,RTA,Rotterdam Noord,Rotterdam Alexander,51.9421,4.4811,51.9514,4.5519,5.0,35000,65,158.9,309037,NS strike (44h); signal failure (16h); defective railway track (15h),infrastructure
+ZZS,KZ,Zaandijk Zaanse Schans,Koog aan de Zaan,52.4684,4.8053,52.458,4.8059,1.2,40000,22,133.8,297368,NS strike (71h); repair works (41h); defective railway track (14h),staff
+RTD,RTN,Rotterdam Centraal,Rotterdam Noord,51.9251,4.4694,51.9421,4.4811,2.1,34000,65,157.0,296507,NS strike (44h); signal failure (16h); defective railway track (15h),infrastructure
+HT,HTO,'s-Hertogenbosch,'s-Hertogenbosch  Oost,51.69082,5.29377,51.70051,5.31785,2.0,21000,87,249.3,290834,NS strike (95h); defective railway track (35h); broken down train (33h),staff
+AMFS,AVAT,Amersfoort Schothorst,Amersfoort Vathorst,52.1755,5.4049,52.1922,5.4334,2.7,28000,44,183.8,285955,NS strike (72h); points failure (60h); broken down train (22h),infrastructure
+TWL,APDO,Twello,Apeldoorn Osseveld,52.2388,6.1019,52.2161,6.0066,7.0,20000,85,251.3,279206,NS strike (95h); broken down train (35h); damaged overhead wires (22h),staff
+APDO,APD,Apeldoorn Osseveld,Apeldoorn,52.2161,6.0066,52.2095,5.9704,2.6,20000,85,251.3,279206,NS strike (95h); broken down train (35h); damaged overhead wires (22h),staff
+RS,HTO,Rosmalen,'s-Hertogenbosch  Oost,51.7152,5.3691,51.70051,5.31785,3.9,20000,86,248.8,276460,NS strike (95h); defective railway track (35h); broken down train (32h),staff
+WM,ZZS,Wormerveer,Zaandijk Zaanse Schans,52.4895,4.7933,52.4684,4.8053,2.5,36000,27,136.4,272781,NS strike (71h); repair works (41h); defective railway track (14h),staff
+WZ,HDE,Wezep,Harde ‘t,52.4537,6.0017,52.4091,5.8922,8.9,22000,51,221.8,271059,NS strike (96h); copper theft (89h); broken down train (24h),staff
+ZL,WZ,Zwolle,Wezep,52.5056,6.0898,52.4537,6.0017,8.3,22000,49,220.4,269338,NS strike (96h); copper theft (89h); broken down train (23h),staff
+APD,HVL,Apeldoorn,Hoevelaken,52.2095,5.9704,52.166,5.46537,34.8,22000,76,219.6,268453,NS strike (119h); broken down train (25h); points failure (21h),staff
+KMA,WM,Krommenie-Assendelft,Wormerveer,52.4951,4.7542,52.4895,4.7933,2.7,32000,31,144.3,256560,NS strike (71h); repair works (41h); defective railway track (14h),staff
+TB,HT,Tilburg,'s-Hertogenbosch,51.5604,5.0839,51.69082,5.29377,20.5,20000,81,228.8,254209,NS strike (95h); disruption elsewhere (29h); damaged overhead wires (26h),staff
+CAS,UTG,Castricum,Uitgeest,52.54548,4.65881,52.52176,4.70198,3.9,29000,59,139.6,224858,NS strike (71h); broken down train (17h); defective railway track (14h),staff
+KMA,UTG,Krommenie-Assendelft,Uitgeest,52.4951,4.7542,52.52176,4.70198,4.6,28000,30,143.7,223536,NS strike (71h); repair works (41h); defective railway track (14h),staff
+VB,YPB,Voorburg,Den Haag Ypenburg,52.0663,4.3595,52.0552,4.393,2.6,31000,47,127.8,220111,NS strike (21h); defective railway track (20h); damaged overhead wires (19h),infrastructure
+ZTMO,LLZM,Zoetermeer Oost,Lansingerland-Zoetermeer,52.0465,4.4924,52.04147,4.51741,1.8,31000,47,126.3,217459,NS strike (21h); defective railway track (20h); broken down train (12h),infrastructure
+LLS,ALMO,Lelystad Centrum,Almere Oostvaarders,52.5079,5.4728,52.40294,5.29947,16.6,19000,117,203.8,215088,NS strike (74h); broken down train (43h); signal failure (18h),staff
+GVC,VB,Den Haag Centraal,Voorburg,52.0813,4.324,52.0663,4.3595,2.9,30000,47,127.8,213011,NS strike (21h); defective railway track (20h); damaged overhead wires (19h),infrastructure
+ZTMO,ZTM,Zoetermeer Oost,Zoetermeer,52.0465,4.4924,52.0475,4.4781,1.0,32000,42,118.3,210346,NS strike (21h); defective railway track (20h); damaged overhead wires (19h),infrastructure
+O,OW,Oss,Oss West,51.7649,5.5296,51.7583,5.5068,1.7,20000,60,188.4,209322,NS strike (95h); defective railway track (35h); broken down train (19h),staff
+DB,MRN,Driebergen-Zeist,Maarn,52.0651,5.2599,52.0645,5.3704,7.6,45000,40,83.5,208840,NS strike (24h); collision (13h); points failure (11h),infrastructure
+OW,RS,Oss West,Rosmalen,51.7583,5.5068,51.7152,5.3691,10.6,20000,59,187.8,208630,NS strike (95h); defective railway track (35h); broken down train (18h),staff
+ZTM,YPB,Zoetermeer,Den Haag Ypenburg,52.0475,4.4781,52.0552,4.393,5.9,32000,44,114.5,203593,NS strike (21h); defective railway track (20h); damaged overhead wires (19h),infrastructure
+TWL,DV,Twello,Deventer,52.2388,6.1019,52.2571,6.161,4.5,20000,76,173.9,193189,broken down train (35h); NS strike (24h); damaged overhead wires (22h),infrastructure
+OT,BTL,Oisterwijk,Boxtel,51.582,5.1936,51.5848,5.3191,8.7,20000,73,170.0,188898,NS strike (71h); defective railway track (25h); collision (19h),staff
+DDR,DDZD,Dordrecht,Dordrecht Zuid,51.8076,4.6684,51.7901,4.6719,2.0,12000,137,281.9,187903,disruption elsewhere (73h); broken down train (51h); defective point (32h),infrastructure
+DDZD,ZLW,Dordrecht Zuid,Lage Zwaluwe,51.7901,4.6719,51.6905,4.6637,11.1,12000,137,281.9,187903,disruption elsewhere (73h); broken down train (51h); defective point (32h),infrastructure
+HLO,CAS,Heiloo,Castricum,52.6001,4.701,52.54548,4.65881,6.7,24000,61,139.7,186223,NS strike (71h); broken down train (17h); defective railway track (14h),staff
+PT,EML,Putten,Ermelo,52.2656,5.5759,52.3009,5.6143,4.7,24000,43,137.9,183933,NS strike (96h); broken down train (21h); collision (21h),staff
+EML,HD,Ermelo,Harderwijk,52.3009,5.6143,52.3376,5.6199,4.1,24000,43,137.9,183933,NS strike (96h); broken down train (21h); collision (21h),staff
+MRN,KLP,Maarn,Veenendaal-De Klomp,52.0645,5.3704,52.0458,5.5734,14.0,39000,35,82.3,178246,NS strike (24h); collision (13h); broken down train (9h),infrastructure
+KLP,ED,Veenendaal-De Klomp,Ede-Wageningen,52.0458,5.5734,52.02783,5.67184,7.0,39000,34,81.8,177174,NS strike (24h); collision (13h); broken down train (9h),infrastructure
+NKK,AVAT,Nijkerk,Amersfoort Vathorst,52.2224,5.4939,52.1922,5.4334,5.3,26000,38,121.5,175545,NS strike (96h); broken down train (22h); points failure (7h),staff
+RVS,O,Ravenstein,Oss,51.7945,5.6368,51.7649,5.5296,8.1,18000,52,173.3,173347,NS strike (95h); damaged overhead wires (19h); points failure (16h),staff
+WC,RVS,Wijchen,Ravenstein,51.8112,5.7302,51.7945,5.6368,6.7,18000,51,172.6,172591,NS strike (95h); damaged overhead wires (19h); points failure (16h),staff
+NM,NMGO,Nijmegen,Nijmegen Goffert,51.8433,5.853,51.82793,5.82677,2.5,20000,59,154.8,172039,NS strike (95h); damaged overhead wires (17h); points failure (16h),staff
+AMR,HLO,Alkmaar,Heiloo,52.6378,4.7409,52.6001,4.701,5.0,22000,60,140.3,171506,NS strike (71h); broken down train (18h); defective railway track (14h),staff
+NMD,NMGO,Nijmegen Dukenburg,Nijmegen Goffert,51.8239,5.7951,51.82793,5.82677,2.2,20000,54,153.4,170452,NS strike (95h); damaged overhead wires (17h); points failure (16h),staff
+NS,HD,Nunspeet,Harderwijk,52.371,5.7847,52.3376,5.6199,11.8,22000,50,138.4,169135,NS strike (96h); broken down train (22h); collision (21h),staff
+NKK,PT,Nijkerk,Putten,52.2224,5.4939,52.2656,5.5759,7.4,24000,38,121.6,162180,NS strike (96h); broken down train (21h); points failure (7h),staff
+ZL,KPNZ,Zwolle,Kampen Zuid,52.5056,6.0898,52.53327,5.91261,12.4,14000,32,206.8,160819,NS strike (95h); copper theft (89h); signal failure (18h),staff
+MP,ZL,Meppel,Zwolle,52.6919,6.1976,52.5056,6.0898,22.0,28000,51,102.5,159380,NS strike (47h); technical investigation (16h); signal and level crossing failure (14h),staff
+HIL,VH,Hillegom,Voorhout,52.3027,4.566,52.2239,4.4845,10.4,32000,66,88.2,156756,collision (28h); signal failure (16h); broken down train (9h),accidents
+NMD,WC,Nijmegen Dukenburg,Wijchen,51.8239,5.7951,51.8112,5.7302,4.7,18000,54,153.4,153406,NS strike (95h); damaged overhead wires (17h); points failure (16h),staff
+HDE,NS,Harde ‘t,Nunspeet,52.4091,5.8922,52.371,5.7847,8.4,22000,44,124.0,151513,NS strike (96h); broken down train (21h); collision (11h),staff
+ASB,DVAW,Amsterdam Bijlmer ArenA,Duivendrecht aansluiting west,52.3116,4.9477,52.32997,4.90459,3.6,43000,27,61.0,145834,system failure (16h); broken down train (14h); damaged overhead wires (8h),infrastructure
+AMF,BRN,Amersfoort Centraal,Baarn,52.1535,5.3739,52.2081,5.2822,8.7,22000,52,119.1,145605,NS strike (95h); repair works (14h); broken down train (10h),staff
+HVS,BRN,Hilversum,Baarn,52.2264,5.1813,52.2081,5.2822,7.2,22000,41,114.3,139690,NS strike (95h); repair works (10h); broken down train (9h),staff
+ED,WF,Ede-Wageningen,Wolfheze,52.02783,5.67184,52.006,5.7927,8.6,36000,49,68.9,137858,collision (12h); technical investigation (9h); broken down train (9h),infrastructure
+AH,OTB,Arnhem Centraal,Oosterbeek,51.98447,5.90122,51.9945,5.8412,4.3,36000,44,65.8,131546,collision (12h); tree on the track (10h); points failure (9h),infrastructure
+OTB,WF,Oosterbeek,Wolfheze,51.9945,5.8412,52.006,5.7927,3.6,36000,44,65.8,131546,collision (12h); tree on the track (10h); points failure (9h),infrastructure
+LEDN,VH,Leiden Centraal,Voorhout,52.16648,4.48236,52.2239,4.4845,6.4,34000,52,68.3,128966,signal failure (16h); collision (15h); broken down train (9h),infrastructure
+TB,OT,Tilburg,Oisterwijk,51.5604,5.0839,51.582,5.1936,8.0,21000,68,103.0,120137,defective railway track (25h); collision (19h); broken down train (15h),infrastructure
+HLM,HAD,Haarlem,Heemstede-Aerdenhout,52.3881,4.6385,52.3594,4.6073,3.8,32000,60,67.2,119502,collision (20h); technical investigation (9h); signal failure (7h),accidents
+HAD,HIL,Heemstede-Aerdenhout,Hillegom,52.3594,4.6073,52.3027,4.566,6.9,32000,60,67.2,119502,collision (20h); technical investigation (9h); signal failure (7h),accidents
+EHV,GP,Eindhoven Centraal,Geldrop,51.44304,5.48089,51.4201,5.5508,5.5,24000,58,85.2,113593,NS strike (24h); collision (17h); broken down train (13h),staff
+RH,VP,Rheden,Velp,52.0102,6.0313,51.995,5.98099,3.8,16000,50,125.4,111507,NS strike (95h); signal failure (11h); broken down train (10h),staff
+VP,AHPR,Velp,Arnhem Presikhaaf,51.995,5.98099,51.98772,5.94327,2.7,16000,50,125.4,111507,NS strike (95h); signal failure (11h); broken down train (10h),staff
+AHPR,AHP,Arnhem Presikhaaf,Arnhem Velperpoort,51.98772,5.94327,51.9849,5.9203,1.6,16000,50,125.4,111507,NS strike (95h); signal failure (11h); broken down train (10h),staff
+DR,RH,Dieren,Rheden,52.0447,6.1034,52.0102,6.0313,6.2,16000,50,125.4,111507,NS strike (95h); signal failure (11h); broken down train (10h),staff
+GP,HZE,Geldrop,Heeze,51.4201,5.5508,51.3853,5.5696,4.1,22000,68,89.4,109231,NS strike (24h); collision (17h); broken down train (17h),staff
+APN,LDL,Alphen aan den Rijn,Leiden Lammenschans,52.1243,4.6578,52.1467,4.4926,11.5,14000,64,137.9,107281,NS strike (48h); damaged railway bridge (21h); broken down train (15h),infrastructure
+HRN,ASN,Haren,Assen,53.1749,6.6181,52.992,6.5708,20.6,17000,33,108.6,102539,NS strike (47h); collision (23h); damaged overhead wires (16h),staff
+RM,EC,Roermond,Echt,51.1932,5.9945,51.1005,5.8789,13.1,16000,64,114.5,101777,signal failure (37h); NS strike (24h); broken down train (12h),infrastructure
+ZP,BMN,Zutphen,Brummen,52.1447,6.1942,52.0917,6.1477,6.7,14000,57,129.9,101011,NS strike (96h); broken down train (13h); damaged railway bridge (8h),staff
+BMN,DR,Brummen,Dieren,52.0917,6.1477,52.0447,6.1034,6.0,14000,57,129.9,101011,NS strike (96h); broken down train (13h); damaged railway bridge (8h),staff
+BL,HGV,Beilen,Hoogeveen,52.855,6.521,52.7336,6.4727,13.9,16000,35,113.4,100844,NS strike (47h); defective railway track (24h); signal and level crossing failure (16h),staff
+SRN,STD,Susteren,Sittard,51.0607,5.8626,51.0024,5.8595,6.5,16000,65,113.1,100573,signal failure (34h); NS strike (24h); broken down train (10h),infrastructure
+EC,SRN,Echt,Susteren,51.1005,5.8789,51.0607,5.8626,4.6,16000,63,110.9,98573,signal failure (37h); NS strike (24h); broken down train (12h),infrastructure
+HZE,MZ,Heeze,Maarheeze,51.3853,5.5696,51.30312,5.63145,10.1,20000,63,88.6,98396,NS strike (24h); collision (17h); broken down train (16h),staff
+WT,MZ,Weert,Maarheeze,51.2491,5.704,51.30312,5.63145,7.8,20000,58,86.3,95925,NS strike (24h); collision (17h); broken down train (14h),staff
+ASN,BL,Assen,Beilen,52.992,6.5708,52.855,6.521,15.6,17000,39,100.8,95158,NS strike (47h); signal and level crossing failure (16h); collision (10h),staff
+DV,DVC,Deventer,Deventer Colmschate,52.2571,6.161,52.2505,6.2155,3.8,16000,54,104.1,92524,signalling and points failure (26h); NS strike (24h); collision (13h),infrastructure
+HGV,MP,Hoogeveen,Meppel,52.7336,6.4727,52.6919,6.1976,19.1,18000,34,88.3,88288,NS strike (47h); signal and level crossing failure (16h); stranded train (9h),staff
+ETN,BDA,Etten-Leur,Breda aansluiting,51.5755,4.6374,51.59226,4.75681,8.5,8000,59,192.6,85595,NS strike (71h); repair works (46h); signal failure (16h),staff
+HON,RSN,Holten,Rijssen,52.2841,6.4214,52.3119,6.5193,7.3,14000,54,104.1,80958,signalling and points failure (26h); NS strike (24h); collision (13h),infrastructure
+HON,DVC,Holten,Deventer Colmschate,52.2841,6.4214,52.2505,6.2155,14.5,14000,54,104.1,80958,signalling and points failure (26h); NS strike (24h); collision (13h),infrastructure
+BN,HGL,Borne,Hengelo,52.2983,6.7487,52.2622,6.7936,5.0,14000,49,99.7,77511,NS strike (24h); signal failure (18h); signalling and points failure (15h),infrastructure
+AML,AMRI,Almelo,Almelo de Riet,52.3572,6.6558,52.3424,6.6663,1.8,14000,48,99.5,77425,NS strike (24h); signal failure (18h); signalling and points failure (15h),infrastructure
+AMRI,BN,Almelo de Riet,Borne,52.3424,6.6663,52.2983,6.7487,7.4,14000,48,99.5,77425,NS strike (24h); signal failure (18h); signalling and points failure (15h),infrastructure
+RSD,ODB,Roosendaal,Oudenbosch,51.5405,4.4593,51.5878,4.5331,7.3,8000,60,170.1,75597,repair works (82h); NS strike (27h); damaged overhead wires (15h),engineering work
+ZLW,ZVB,Lage Zwaluwe,Zevenbergen,51.6905,4.6637,51.6418,4.6103,6.5,8000,60,170.0,75560,repair works (82h); NS strike (27h); damaged overhead wires (15h),engineering work
+ODB,ZVB,Oudenbosch,Zevenbergen,51.5878,4.5331,51.6418,4.6103,8.0,8000,59,169.9,75510,repair works (82h); NS strike (27h); damaged overhead wires (15h),engineering work
+KPNZ,DRON,Kampen Zuid,Dronten,52.53327,5.91261,52.53433,5.72179,12.9,14000,22,90.6,70488,NS strike (95h); an emergency call (4h); collision (3h),staff
+APN,BDG,Alphen aan den Rijn,Bodegraven,52.1243,4.6578,52.0817,4.746,7.7,12000,47,103.1,68760,NS strike (48h); defective railway track (9h); signal failure (9h),staff
+RSN,WDN,Rijssen,Wierden,52.3119,6.5193,52.3615,6.5924,7.4,14000,40,87.4,67977,NS strike (24h); signalling and points failure (23h); signal failure (6h),infrastructure
+WT,RM,Weert,Roermond,51.2491,5.704,51.1932,5.9945,21.2,16000,43,76.1,67615,collision (27h); NS strike (24h); level crossing failure (6h),accidents
+BDG,WDMV,Bodegraven,Woerden Molenvliet,52.0817,4.746,52.07204,4.85768,7.7,12000,49,101.2,67459,NS strike (48h); defective railway track (9h); points failure (8h),staff
+WD,WDMV,Woerden,Woerden Molenvliet,52.085,4.8929,52.07204,4.85768,2.8,12000,49,101.2,67459,NS strike (48h); defective railway track (9h); points failure (8h),staff
+RSD,ETN,Roosendaal,Etten-Leur,51.5405,4.4593,51.5755,4.6374,12.9,6000,59,192.6,64196,NS strike (71h); repair works (46h); signal failure (16h),staff
+LEDN,LDL,Leiden Centraal,Leiden Lammenschans,52.16648,4.48236,52.1467,4.4926,2.3,12000,41,96.2,64160,NS strike (48h); points failure (10h); broken down train (10h),staff
+LLS,DRON,Lelystad Centrum,Dronten,52.5079,5.4728,52.53433,5.72179,17.1,12000,23,94.0,62699,NS strike (95h); defective railway track (6h); an emergency call (4h),staff
+WDN,AML,Wierden,Almelo,52.3615,6.5924,52.3572,6.6558,4.3,14000,28,73.6,57220,NS strike (24h); signalling and points failure (18h); points failure (7h),infrastructure
+HRN,GERP,Haren,Groningen Europapark,53.1749,6.6181,53.2062,6.5823,4.2,17000,30,60.3,56949,collision (23h); damaged overhead wires (16h); signal failure (6h),infrastructure
+STD,LUT,Sittard,Geleen-Lutterade,51.0024,5.8595,50.9753,5.825,3.9,10000,38,93.8,52121,tree on the track (26h); signal failure (20h); collision (14h),infrastructure
+LUT,BK,Geleen-Lutterade,Beek-Elsloo,50.9753,5.825,50.947,5.7859,4.2,10000,38,93.8,52121,tree on the track (26h); signal failure (20h); collision (14h),infrastructure
+BK,BDE,Beek-Elsloo,Bunde,50.947,5.7859,50.8969,5.7364,6.6,10000,38,93.8,52121,tree on the track (26h); signal failure (20h); collision (14h),infrastructure
+BDE,MT,Bunde,Maastricht,50.8969,5.7364,50.85,5.7055,5.6,10000,38,93.8,52121,tree on the track (26h); signal failure (20h); collision (14h),infrastructure
+EHV,HMBV,Eindhoven Centraal,Helmond Brandevoort,51.44304,5.48089,51.4625,5.6088,9.1,17000,45,54.4,51356,broken down train (19h); damaged overhead wires (11h); collision (10h),rolling stock
+ZD,ZDK,Zaandam,Zaandam Kogerveld,52.43826,4.81405,52.4566,4.8198,2.1,18000,25,50.4,50355,damaged overhead wires (25h); stranded train (5h); broken down train (5h),infrastructure
+HMH,HMBV,Helmond 't Hout,Helmond Brandevoort,51.4679,5.6309,51.4625,5.6088,1.6,16000,45,54.4,48335,broken down train (19h); damaged overhead wires (11h); collision (10h),rolling stock
+ZDK,PMW,Zaandam Kogerveld,Purmerend Weidevenne,52.4566,4.8198,52.49609,4.93406,8.9,17000,25,50.4,47557,damaged overhead wires (25h); stranded train (5h); broken down train (5h),infrastructure
+PMR,PMW,Purmerend,Purmerend Weidevenne,52.5038,4.9542,52.49609,4.93406,1.6,16000,25,50.4,44760,damaged overhead wires (25h); stranded train (5h); broken down train (5h),infrastructure
+OST,DV,Olst,Deventer,52.3358,6.1133,52.2571,6.161,9.3,9000,27,87.8,43883,NS strike (48h); signal failure (29h); broken down train (3h),staff
+PMO,PMR,Purmerend Overwhere,Purmerend,52.5114,4.9677,52.5038,4.9542,1.2,15000,25,52.5,43740,damaged overhead wires (25h); stranded train (8h); broken down train (5h),infrastructure
+HM,HMH,Helmond,Helmond 't Hout,51.4759,5.6617,51.4679,5.6309,2.3,14000,45,54.4,42293,broken down train (19h); damaged overhead wires (11h); collision (10h),rolling stock
+HGL,ESK,Hengelo,Enschede Kennispark,52.2622,6.7936,52.2369,6.8389,4.2,8000,41,93.1,41386,signal failure (26h); NS strike (24h); points failure (17h),infrastructure
+ES,ESK,Enschede,Enschede Kennispark,52.2224,6.8903,52.2369,6.8389,3.9,8000,41,93.1,41386,signal failure (26h); NS strike (24h); points failure (17h),infrastructure
+GN,GERP,Groningen,Groningen Europapark,53.2109,6.5637,53.2062,6.5823,1.3,14000,37,52.5,40855,collision (17h); an earlier disruption (12h); signal failure (11h),accidents
+HOR,UTO,Hollandsche Rading,Utrecht Overvecht,52.1781,5.1792,52.1104,5.1252,8.4,18000,19,38.9,38903,NS strike (24h); collision (6h); signalling and points failure (5h),staff
+SBK,SN,Spaubeek,Schinnen,50.9433,5.8496,50.9388,5.8759,1.9,4000,59,162.0,36007,staffing problems (40h); NS strike (24h); power failure (19h),staff
+STD,GLN,Sittard,Geleen Oost,51.0024,5.8595,50.9674,5.8433,4.1,4000,58,161.8,35961,staffing problems (40h); NS strike (24h); power failure (19h),staff
+GLN,SBK,Geleen Oost,Spaubeek,50.9674,5.8433,50.9433,5.8496,2.7,4000,58,161.8,35961,staffing problems (40h); NS strike (24h); power failure (19h),staff
+PMO,HN,Purmerend Overwhere,Hoorn,52.5114,4.9677,52.6451,5.0546,16.0,14000,21,45.5,35404,damaged overhead wires (18h); broken down train (7h); collision (7h),infrastructure
+KRG,KBD,Kruiningen-Yerseke,Krabbendijke,51.4653,4.0364,51.4331,4.1174,6.7,6000,60,104.6,34852,repair works (38h); broken down train (15h); collision (10h),engineering work
+KBD,RB,Krabbendijke,Rilland-Bath,51.4331,4.1174,51.4222,4.1604,3.2,6000,60,104.6,34852,repair works (38h); broken down train (15h); collision (10h),engineering work
+RB,BGN,Rilland-Bath,Bergen op Zoom,51.4222,4.1604,51.4953,4.2959,12.4,6000,60,104.6,34852,repair works (38h); broken down train (15h); collision (10h),engineering work
+HVS,HVSP,Hilversum,Hilversum Sportpark,52.2264,5.1813,52.2164,5.1873,1.2,16000,19,38.9,34580,NS strike (24h); collision (6h); signalling and points failure (5h),staff
+HVSP,HOR,Hilversum Sportpark,Hollandsche Rading,52.2164,5.1873,52.1781,5.1792,4.3,16000,19,38.9,34580,NS strike (24h); collision (6h); signalling and points failure (5h),staff
+HM,HMBH,Helmond,Helmond Brouwhuis,51.4759,5.6617,51.4713,5.7005,2.7,10000,71,59.9,33300,broken down train (32h); damaged overhead wires (11h); collision (4h),rolling stock
+BGN,RSD,Bergen op Zoom,Roosendaal,51.4953,4.2959,51.5405,4.4593,12.4,10000,49,55.5,30839,broken down train (14h); repair works (11h); signal failure (6h),rolling stock
+SN,NH,Schinnen,Nuth,50.9388,5.8759,50.9201,5.8922,2.4,4000,55,132.8,29518,staffing problems (40h); power failure (15h); points failure (15h),infrastructure
+NH,HB,Nuth,Hoensbroek,50.9201,5.8922,50.9058,5.9301,3.1,4000,55,132.8,29518,staffing problems (40h); power failure (15h); points failure (15h),infrastructure
+HRL,HB,Heerlen,Hoensbroek,50.8906,5.9754,50.9058,5.9301,3.6,4000,55,132.8,29518,staffing problems (40h); power failure (15h); points failure (15h),infrastructure
+HMBH,DN,Helmond Brouwhuis,Deurne,51.4713,5.7005,51.4564,5.7881,6.3,9000,66,58.7,29357,broken down train (30h); damaged overhead wires (11h); collision (4h),rolling stock
+WD,BKL,Woerden,Breukelen,52.085,4.8929,52.1711,4.9906,11.7,8000,23,65.4,29074,NS strike (27h); an amended timetable (14h); defective railway track (6h),staff
+GW,AKM,Grou-Jirnsum,Akkrum,53.0901,5.8223,53.0476,5.8428,4.9,8000,51,64.4,28601,damaged railway bridge (16h); broken down train (9h); collision (9h),infrastructure
+LW,GW,Leeuwarden,Grou-Jirnsum,53.1965,5.7927,53.0901,5.8223,12.0,8000,51,64.4,28601,damaged railway bridge (16h); broken down train (9h); collision (9h),infrastructure
+ZL,WH,Zwolle,Wijhe,52.5056,6.0898,52.3909,6.1416,13.2,10000,23,47.0,26105,NS strike (24h); signal failure (7h); broken down train (5h),staff
+AMRN,AMR,Alkmaar Noord,Alkmaar,52.6438,4.7639,52.6378,4.7409,1.7,14000,18,32.3,25116,signal failure (13h); damaged railway bridge (11h); broken down train (4h),accidents
+GV,LAA,Den Haag HS,Den Haag Laan van NOI,52.0703,4.3226,52.0794,4.3434,1.7,48000,12,8.6,22990,an emergency call (4h); points failure (3h); broken down train (1h),external
+HWD,AMRN,Heerhugowaard,Alkmaar Noord,52.6706,4.8241,52.6438,4.7639,5.0,12000,19,32.5,21661,signal failure (13h); damaged railway bridge (11h); broken down train (4h),accidents
+WH,OST,Wijhe,Olst,52.3909,6.1416,52.3358,6.1133,6.4,8000,23,47.0,20884,NS strike (24h); signal failure (7h); broken down train (5h),staff
+BV,DRH,Beverwijk,Driehuis,52.47855,4.65669,52.44298,4.63917,4.1,8000,27,42.3,18803,signal failure (16h); power failure (12h); broken down train (10h),infrastructure
+DRH,SPTN,Driehuis,Santpoort Noord,52.44298,4.63917,52.43358,4.63243,1.1,8000,27,42.3,18803,signal failure (16h); power failure (12h); broken down train (10h),infrastructure
+DN,HRT,Deurne,Horst-Sevenum,51.4564,5.7881,51.4271,6.0419,17.9,6000,59,51.1,17025,broken down train (24h); collision (15h); stranded train (3h),rolling stock
+GS,BZL,Goes,Kapelle-Biezelinge,51.4983,3.8907,51.4806,3.9568,5.0,6000,47,50.8,16931,broken down train (15h); damaged railway bridge (9h); signal failure (6h),infrastructure
+BZL,KRG,Kapelle-Biezelinge,Kruiningen-Yerseke,51.4806,3.9568,51.4653,4.0364,5.8,6000,46,50.6,16875,broken down train (15h); damaged railway bridge (9h); signal failure (6h),infrastructure
+HNK,HN,Hoorn Kersenboogerd,Hoorn,52.6531,5.0847,52.6451,5.0546,2.2,8000,17,35.7,15881,damaged overhead wires (18h); power failure (6h); broken down train (5h),infrastructure
+WADN,WAD,Waddinxveen Noord,Waddinxveen,52.0553,4.6484,52.0447,4.6501,1.2,4000,39,68.0,15100,signal failure (18h); power failure (16h); broken down train (10h),infrastructure
+BSKS,WADN,Boskoop Snijdelwijk,Waddinxveen Noord,52.06629,4.64643,52.0553,4.6484,1.2,4000,39,68.0,15100,signal failure (18h); power failure (16h); broken down train (10h),infrastructure
+BSKS,BSK,Boskoop Snijdelwijk,Boskoop,52.06629,4.64643,52.0765,4.6466,1.1,4000,38,67.9,15096,signal failure (18h); power failure (16h); broken down train (10h),infrastructure
+WADT,WAD,Waddinxveen Triangel,Waddinxveen,52.03439,4.64943,52.0447,4.6501,1.1,4000,38,67.9,15096,signal failure (18h); power failure (16h); broken down train (10h),infrastructure
+WADT,GD,Waddinxveen Triangel,Gouda,52.03439,4.64943,52.0172,4.7063,4.3,4000,38,67.9,15096,signal failure (18h); power failure (16h); broken down train (10h),infrastructure
+ZP,DV,Zutphen,Deventer,52.1447,6.1942,52.2571,6.161,12.7,5000,21,52.7,14630,NS strike (24h); signal failure (10h); broken down train (7h),staff
+SWK,MP,Steenwijk,Meppel,52.791,6.1167,52.6919,6.1976,12.3,10000,28,26.3,14621,collision (7h); an emergency call (4h); stranded train (3h),accidents
+BLL,HLM,Bloemendaal,Haarlem,52.40379,4.6274,52.3881,4.6385,1.9,10000,25,26.1,14484,broken down train (10h); signal failure (10h); collision (3h),infrastructure
+MDB,ARN,Middelburg,Arnemuiden,51.4952,3.6182,51.5015,3.6698,3.6,6000,48,43.3,14429,broken down train (14h); signal failure (6h); weather circumstances (5h),rolling stock
+ARN,GS,Arnemuiden,Goes,51.5015,3.6698,51.4983,3.8907,15.3,6000,48,43.3,14429,broken down train (14h); signal failure (6h); weather circumstances (5h),rolling stock
+AKM,HR,Akkrum,Heerenveen,53.0476,5.8428,52.9607,5.9155,10.8,8000,30,29.0,12895,signal failure (5h); broken down train (4h); an emergency call (4h),infrastructure
+HR,WV,Heerenveen,Wolvega,52.9607,5.9155,52.88,6.005,10.8,8000,31,28.9,12825,collision (6h); broken down train (5h); an emergency call (4h),external
+APN,BSK,Alphen aan den Rijn,Boskoop,52.1243,4.6578,52.0765,4.6466,5.4,4000,29,53.2,11816,power failure (16h); broken down train (8h); signal failure (8h),infrastructure
+ZLW,BDPB,Lage Zwaluwe,Breda Prinsenbeek,51.6905,4.6637,51.60522,4.72195,10.3,4000,57,52.3,11617,collision (10h); broken down train (9h); damaged overhead wires (8h),infrastructure
+SPTZ,BLL,Santpoort Zuid,Bloemendaal,52.4194,4.6312,52.40379,4.6274,1.8,8000,25,26.1,11587,broken down train (10h); signal failure (10h); collision (3h),infrastructure
+SPTN,SPTZ,Santpoort Noord,Santpoort Zuid,52.43358,4.63243,52.4194,4.6312,1.6,8000,24,26.0,11566,broken down train (10h); signal failure (10h); collision (3h),infrastructure
+HN,OBD,Hoorn,Obdam,52.6451,5.0546,52.678,4.9092,10.5,4000,14,51.3,11392,signal failure (20h); damaged overhead wires (20h); collision (6h),infrastructure
+OBD,HWD,Obdam,Heerhugowaard,52.678,4.9092,52.6706,4.8241,5.8,4000,13,50.7,11266,signal failure (20h); damaged overhead wires (20h); collision (6h),infrastructure
+WV,SWK,Wolvega,Steenwijk,52.88,6.005,52.791,6.1167,12.4,8000,27,22.9,10186,collision (4h); an emergency call (4h); stranded train (3h),external
+BR,VL,Blerick,Venlo,51.3722,6.1553,51.365,6.1716,1.4,4000,63,40.0,8895,broken down train (23h); an emergency call (4h); fire alarm (2h),rolling stock
+BR,HRT,Blerick,Horst-Sevenum,51.3722,6.1553,51.4271,6.0419,10.0,4000,45,33.4,7418,broken down train (19h); collision (7h); points failure (2h),rolling stock
+STZ,DLD,Soest Zuid,Den Dolder,52.1654,5.3035,52.1401,5.2417,5.1,4000,15,24.8,5504,damaged overhead wires (9h); broken down train (6h); collision (5h),infrastructure
+HDRZ,ANA,Den Helder Zuid,Anna Paulowna,52.9329,4.7643,52.8676,4.8116,7.9,4000,12,24.6,5476,damaged railway bridge (8h); signal failure (5h); damaged overhead wires (4h),infrastructure
+ANA,SGN,Anna Paulowna,Schagen,52.8676,4.8116,52.7853,4.8051,9.2,6000,11,14.3,4751,collision (6h); signal failure (3h); broken down train (2h),accidents
+SGN,HWD,Schagen,Heerhugowaard,52.7853,4.8051,52.6706,4.8241,12.8,8000,14,9.8,4356,garbage on the railway track (3h); broken down train (3h); damaged railway bridge (2h),external
+VSS,MDB,Vlissingen Souburg,Middelburg,51.4647,3.5953,51.4952,3.6182,3.7,2000,43,38.8,4312,broken down train (14h); signal failure (6h); weather circumstances (5h),rolling stock
+VS,VSS,Vlissingen,Vlissingen Souburg,51.4445,3.5953,51.4647,3.5953,2.2,1998,43,38.8,4308,broken down train (14h); signal failure (6h); weather circumstances (5h),rolling stock
+HKS,HNK,Hoogkarspel,Hoorn Kersenboogerd,52.6905,5.1824,52.6531,5.0847,7.8,6000,10,12.0,4003,power failure (6h); system failure (2h); over-running engineering works (2h),infrastructure
+MRN,VNDW,Maarn,Veenendaal West,52.0645,5.3704,52.0278,5.5329,11.8,4000,9,13.4,2986,power failure (5h); overhead wires covered with frost (3h); points failure (1h),infrastructure
+ST,STZ,Soest,Soest Zuid,52.1729,5.3103,52.1654,5.3035,1.0,1998,15,24.8,2749,damaged overhead wires (9h); broken down train (6h); collision (5h),infrastructure
+SD,ST,Soestdijk,Soest,52.1839,5.2996,52.1729,5.3103,1.4,1998,10,22.8,2533,hindrance on the railway (12h); broken down train (8h); tree on the track (2h),external
+SD,BRN,Soestdijk,Baarn,52.1839,5.2996,52.2081,5.2822,2.9,1998,10,22.8,2533,hindrance on the railway (12h); broken down train (8h); tree on the track (2h),external
+VNDW,VNDC,Veenendaal West,Veenendaal Centrum,52.0278,5.5329,52.0199,5.5489,1.4,4000,7,11.3,2507,power failure (4h); overhead wires covered with frost (3h); points failure (1h),infrastructure
+HDR,HDRZ,Den Helder,Den Helder Zuid,52.9569,4.7607,52.9329,4.7643,2.7,2000,10,22.5,2501,damaged railway bridge (6h); signal failure (5h); damaged overhead wires (4h),infrastructure
+GDM,TPSW,Geldermalsen,Tiel Passewaaij,51.8826,5.2717,51.8741,5.3926,8.4,4000,9,11.0,2452,defective railway track (4h); points failure (3h); technical investigation (1h),infrastructure
+HK,BV,Heemskerk,Beverwijk,52.4945,4.6856,52.47855,4.65669,2.6,6000,13,6.6,2206,broken down train (3h); power failure (1h); an animal on the railway track (1h),rolling stock
+UTG,HK,Uitgeest,Heemskerk,52.52176,4.70198,52.4945,4.6856,3.2,6000,13,6.6,2206,broken down train (3h); power failure (1h); an animal on the railway track (1h),rolling stock
+BKF,BKG,Bovenkarspel Flora,Bovenkarspel-Grootebroek,52.69603,5.25327,52.69506,5.23606,1.2,2000,8,17.2,1913,signal failure (5h); points failure (4h); power failure (3h),infrastructure
+EKZ,BKF,Enkhuizen,Bovenkarspel Flora,52.6996,5.2876,52.69603,5.25327,2.3,1998,8,17.2,1912,signal failure (5h); points failure (4h); power failure (3h),infrastructure
+BKG,HKS,Bovenkarspel-Grootebroek,Hoogkarspel,52.69506,5.23606,52.6905,5.1824,3.7,4000,5,8.4,1872,power failure (3h); system failure (2h); over-running engineering works (2h),infrastructure
+VNDC,RHN,Veenendaal Centrum,Rhenen,52.0199,5.5489,51.9576,5.5779,7.2,1998,9,15.3,1698,broken down train (5h); signal failure (4h); tree on the track (2h),infrastructure
+HLM,OVN,Haarlem,Overveen,52.3881,4.6385,52.391,4.6076,2.1,6000,16,5.1,1693,broken down train (2h); an earlier disruption (1h); damaged railway bridge (1h),rolling stock
+OVN,ZVT,Overveen,Zandvoort aan Zee,52.391,4.6076,52.3759,4.531,5.5,5000,15,4.8,1332,broken down train (1h); an earlier disruption (1h); damaged railway bridge (1h),rolling stock
+TL,TPSW,Tiel,Tiel Passewaaij,51.8896,5.4231,51.8741,5.3926,2.7,2000,9,11.0,1226,defective railway track (4h); points failure (3h); technical investigation (1h),infrastructure
+STV,KMW,Stavoren,Koudum-Molkwerum,52.8866,5.36,52.9028,5.4107,3.8,0,17,33.1,0,signal failure (11h); broken down train (9h); damaged railway bridge (7h),infrastructure
+KMW,HNP,Koudum-Molkwerum,Hindeloopen,52.9028,5.4107,52.9465,5.4231,4.9,0,19,37.3,0,signal failure (11h); broken down train (9h); damaged railway bridge (7h),infrastructure
+HNP,WK,Hindeloopen,Workum,52.9465,5.4231,52.9721,5.4564,3.6,0,20,37.7,0,signal failure (11h); broken down train (9h); damaged railway bridge (7h),infrastructure
+IJT,SK,IJlst,Sneek,53.0147,5.6161,53.03268,5.65192,3.1,0,24,45.1,0,damaged railway bridge (13h); signal failure (11h); broken down train (9h),infrastructure
+SK,SKND,Sneek,Sneek Noord,53.03268,5.65192,53.04051,5.66299,1.1,0,19,36.8,0,signal failure (15h); points failure (12h); an emergency call (4h),infrastructure
+MG,LW,Mantgum,Leeuwarden,53.1296,5.7132,53.1965,5.7927,9.1,0,22,41.2,0,signal failure (15h); points failure (12h); an emergency call (4h),infrastructure
+HLGH,HLG,Harlingen Haven,Harlingen,53.1749,5.4113,53.1704,5.4252,1.1,0,7,43.2,0,an emergency call (28h); collision (9h); damaged railway bridge (3h),external
+HLG,FN,Harlingen,Franeker,53.1704,5.4252,53.1824,5.5483,8.3,0,9,40.8,0,an emergency call (28h); collision (9h); signal failure (2h),external
+FN,DRP,Franeker,Dronryp,53.1824,5.5483,53.1778,5.6347,5.8,0,13,55.4,0,an emergency call (28h); points failure (11h); collision (9h),external
+DRP,DEI,Dronryp,Deinum,53.1778,5.6347,53.1888,5.7282,6.3,0,18,60.5,0,an emergency call (28h); points failure (11h); signal failure (7h),external
+DEI,LW,Deinum,Leeuwarden,53.1888,5.7282,53.1965,5.7927,4.4,0,20,61.9,0,an emergency call (28h); points failure (11h); signal failure (9h),external
+LW,LWC,Leeuwarden,Leeuwarden Camminghaburen,53.1965,5.7927,53.2022,5.8423,3.4,0,34,52.5,0,points failure (14h); an earlier disruption (13h); signal failure (9h),infrastructure
+HDG,FWD,Hurdegaryp,Feanwâlden,53.2188,5.9345,53.2348,5.9887,4.0,0,30,54.3,0,points failure (14h); an earlier disruption (12h); signal failure (9h),infrastructure
+HDG,LWC,Hurdegaryp,Leeuwarden Camminghaburen,53.2188,5.9345,53.2022,5.8423,6.4,0,34,52.5,0,points failure (14h); an earlier disruption (13h); signal failure (9h),infrastructure
+FWD,DWE,Feanwâlden,De Westereen,53.2348,5.9887,53.2488,6.0353,3.5,0,30,54.3,0,points failure (14h); an earlier disruption (12h); signal failure (9h),infrastructure
+DWE,BP,De Westereen,Buitenpost,53.2488,6.0353,53.2565,6.1447,7.3,0,30,54.3,0,points failure (14h); an earlier disruption (12h); signal failure (9h),infrastructure
+BP,GK,Buitenpost,Grijpskerk,53.2565,6.1447,53.2557,6.3098,11.0,0,36,53.0,0,points failure (15h); signal failure (11h); an earlier disruption (7h),infrastructure
+GK,ZH,Grijpskerk,Zuidhorn,53.2557,6.3098,53.2482,6.4062,6.5,0,36,53.0,0,points failure (15h); signal failure (11h); an earlier disruption (7h),infrastructure
+GN,GNN,Groningen,Groningen Noord,53.2109,6.5637,53.2301,6.5563,2.2,0,23,11.6,0,signal failure (4h); broken down train (2h); damaged railway bridge (2h),infrastructure
+GNN,SWD,Groningen Noord,Sauwerd,53.2301,6.5563,53.2917,6.5403,6.9,0,18,7.6,0,signal failure (2h); broken down train (1h); over-running engineering works (1h),rolling stock
+SWD,WSM,Sauwerd,Winsum,53.2917,6.5403,53.3297,6.5203,4.4,0,9,10.5,0,signal failure (8h); vandalism (1h); broken down train (1h),infrastructure
+SWD,BDM,Sauwerd,Bedum,53.2917,6.5403,53.3069,6.5931,3.9,0,5,5.8,0,signal failure (3h); signalling and points failure (2h); broken down train (0h),infrastructure
+WSM,BF,Winsum,Baflo,53.3297,6.5203,53.3609,6.5186,3.5,0,9,10.5,0,signal failure (8h); vandalism (1h); broken down train (1h),infrastructure
+BF,WFM,Baflo,Warffum,53.3609,6.5186,53.3904,6.5671,4.6,0,11,15.0,0,signal failure (12h); vandalism (1h); broken down train (1h),infrastructure
+WFM,UST,Warffum,Usquert,53.3904,6.5671,53.4011,6.6094,3.0,0,3,3.4,0,signal failure (2h); vandalism (1h); broken down train (0h),infrastructure
+UST,UHZ,Usquert,Uithuizen,53.4011,6.6094,53.4096,6.6749,4.4,0,7,13.8,0,signal failure (8h); collision (4h); vandalism (1h),infrastructure
+UHZ,UHM,Uithuizen,Uithuizermeeden,53.4096,6.6749,53.41395,6.72042,3.1,0,7,13.8,0,signal failure (8h); collision (4h); vandalism (1h),infrastructure
+UHM,RD,Uithuizermeeden,Roodeschool,53.41395,6.72042,53.4192,6.7606,2.7,0,8,13.6,0,signal failure (8h); collision (4h); vandalism (1h),infrastructure
+BDM,STM,Bedum,Stedum,53.3069,6.5931,53.3262,6.6876,6.6,0,6,7.7,0,signalling and points failure (4h); signal failure (3h); broken down train (0h),infrastructure
+STM,LP,Stedum,Loppersum,53.3262,6.6876,53.3347,6.7473,4.1,0,11,18.3,0,signal failure (13h); signalling and points failure (4h); level crossing failure (2h),infrastructure
+LP,APG,Loppersum,Appingedam,53.3347,6.7473,53.3258,6.862,7.7,0,10,17.4,0,signal failure (12h); signalling and points failure (4h); level crossing failure (2h),infrastructure
+APG,DZW,Appingedam,Delfzijl West,53.3258,6.862,53.3321,6.9069,3.1,0,11,21.5,0,signal failure (12h); points failure (4h); signalling and points failure (4h),infrastructure
+DZW,DZ,Delfzijl West,Delfzijl,53.3321,6.9069,53.3337,6.9241,1.2,0,11,21.5,0,signal failure (12h); points failure (4h); signalling and points failure (4h),infrastructure
+KW,MTH,Kropswolde,Martenshoek,53.1617,6.7221,53.1607,6.7403,1.2,0,17,31.1,0,signal failure (15h); signalling and points failure (5h); an earlier disruption (3h),infrastructure
+MTH,HGZ,Martenshoek,Hoogezand-Sappemeer,53.1607,6.7403,53.1598,6.7708,2.0,0,17,31.1,0,signal failure (15h); signalling and points failure (5h); an earlier disruption (3h),infrastructure
+HGZ,SPM,Hoogezand-Sappemeer,Sappemeer Oost,53.1598,6.7708,53.1589,6.7956,1.7,0,15,32.4,0,signal failure (15h); signalling and points failure (5h); an earlier disruption (3h),infrastructure
+SPM,ZB,Sappemeer Oost,Zuidbroek,53.1589,6.7956,53.1596,6.868,4.8,0,15,32.4,0,signal failure (15h); signalling and points failure (5h); an earlier disruption (3h),infrastructure
+ZB,SDA,Zuidbroek,Scheemda,53.1596,6.868,53.1655,6.9778,7.3,0,19,45.6,0,damaged railway bridge (15h); signal failure (15h); collision (6h),infrastructure
+SDA,WS,Scheemda,Winschoten,53.1655,6.9778,53.1392,7.0351,4.8,0,16,32.7,0,signal failure (16h); collision (6h); signalling and points failure (5h),infrastructure
+WS,NSCH,Winschoten,Bad Nieuweschans,53.1392,7.0351,53.1852,7.2002,12.1,0,14,17.2,0,signal failure (8h); defective railway track (4h); collision (2h),infrastructure
+NSCH,NSCG,Bad Nieuweschans,NSCG,53.1852,7.2002,53.21,7.2583,4.8,0,0,0.0,0,,
+NA,DLN,Nieuw Amsterdam,Dalen,52.7185,6.8488,52.6946,6.758,6.7,0,14,21.8,0,deployment of the fire department (7h); collision (5h); signalling and points failure (4h),external
+DLN,CO,Dalen,Coevorden,52.6946,6.758,52.6631,6.736,3.8,0,14,21.8,0,deployment of the fire department (7h); collision (5h); signalling and points failure (4h),external
+CO,GBG,Coevorden,Gramsbergen,52.6631,6.736,52.6103,6.6764,7.1,0,7,15.8,0,deployment of the fire department (7h); collision (4h); level crossing failure (2h),external
+GBG,HDB,Gramsbergen,Hardenberg,52.6103,6.6764,52.5724,6.6276,5.4,0,9,19.6,0,collision (15h); level crossing failure (2h); points failure (2h),accidents
+HDB,MRB,Hardenberg,Mariënberg,52.5724,6.6276,52.509,6.5743,7.9,0,49,210.1,0,problems with the rolling stock (164h); broken down train (21h); collision (14h),rolling stock
+MRB,OMN,Mariënberg,Ommen,52.509,6.5743,52.5099,6.4177,10.6,0,6,12.2,0,collision (4h); level crossing failure (2h); points failure (2h),infrastructure
+MRB,GDK,Mariënberg,Geerdijk,52.509,6.5743,52.4753,6.5671,3.8,0,25,67.1,0,problems with the rolling stock (40h); broken down train (10h); signalling and points failure (6h),rolling stock
+OMN,DL,Ommen,Dalfsen,52.5099,6.4177,52.4984,6.2596,10.8,0,9,33.9,0,NS strike (24h); collision (4h); level crossing failure (2h),staff
+DL,ZL,Dalfsen,Zwolle,52.4984,6.2596,52.5056,6.0898,11.5,0,7,32.9,0,NS strike (24h); collision (4h); level crossing failure (4h),staff
+ZL,HNO,Zwolle,Heino,52.5056,6.0898,52.4273,6.2214,12.5,0,19,14.8,0,signal failure (6h); power failure (3h); technical investigation (2h),infrastructure
+HNO,RAT,Heino,Raalte,52.4273,6.2214,52.391,6.2783,5.6,0,24,32.6,0,signal failure (26h); power failure (3h); garbage on the railway track (1h),infrastructure
+RAT,NVD,Raalte,Nijverdal,52.391,6.2783,52.3657,6.4702,13.3,0,17,13.9,0,signal failure (9h); an emergency call (1h); broken down train (1h),infrastructure
+ZP,LC,Zutphen,Lochem,52.1447,6.1942,52.1656,6.4261,16.0,0,23,109.6,0,NS strike (95h); problems with the rolling stock (16h); signal failure (7h),staff
+ZP,VD,Zutphen,Vorden,52.1447,6.1942,52.1072,6.317,9.4,0,18,17.1,0,signalling and points failure (7h); broken down train (5h); level crossing failure (2h),infrastructure
+WDN,NVD,Wierden,Nijverdal,52.3615,6.5924,52.3657,6.4702,8.3,0,19,25.5,0,signal failure (9h); power failure (9h); an emergency call (5h),infrastructure
+GDK,VHP,Geerdijk,Vroomshoop,52.4753,6.5671,52.4572,6.5697,2.0,0,25,67.1,0,problems with the rolling stock (40h); broken down train (10h); signalling and points failure (6h),rolling stock
+VHP,DA,Vroomshoop,Daarlerveen,52.4572,6.5697,52.4408,6.576,1.9,0,37,109.3,0,signal failure (47h); problems with the rolling stock (40h); broken down train (11h),rolling stock
+DA,VZ,Daarlerveen,Vriezenveen,52.4408,6.576,52.4011,6.6015,4.7,0,37,109.3,0,signal failure (47h); problems with the rolling stock (40h); broken down train (11h),rolling stock
+VZ,AML,Vriezenveen,Almelo,52.4011,6.6015,52.3572,6.6558,6.1,0,37,109.3,0,signal failure (47h); problems with the rolling stock (40h); broken down train (11h),rolling stock
+ODZ,HGLO,Oldenzaal,Hengelo Oost,52.3063,6.9337,52.2693,6.8205,8.7,0,76,645.7,0,problems with the rolling stock (426h); staffing problems (131h); NS strike (71h),rolling stock
+ODZ,ODZG,Oldenzaal,ODZG,52.3063,6.9337,52.3105,7.1323,13.5,0,0,0.0,0,,
+HGLO,HGL,Hengelo Oost,Hengelo,52.2693,6.8205,52.2622,6.7936,2.0,0,79,646.7,0,problems with the rolling stock (426h); staffing problems (131h); NS strike (71h),rolling stock
+DDN,GO,Delden,Goor,52.2602,6.7149,52.2303,6.586,9.4,0,20,103.7,0,NS strike (95h); problems with the rolling stock (16h); broken down train (4h),staff
+GO,LC,Goor,Lochem,52.2303,6.586,52.1656,6.4261,13.1,0,23,113.0,0,NS strike (95h); problems with the rolling stock (16h); signal failure (5h),staff
+VD,RL,Vorden,Ruurlo,52.1072,6.317,52.0811,6.4493,9.5,0,26,47.3,0,collision (20h); tree on the track (8h); broken down train (6h),accidents
+RL,LTV,Ruurlo,Lichtenvoorde-Groenlo,52.0811,6.4493,52.0125,6.5946,12.5,0,26,47.3,0,collision (20h); tree on the track (8h); broken down train (6h),accidents
+WW,ATN,Winterswijk,Aalten,51.9677,6.7155,51.9213,6.5787,10.7,0,21,28.2,0,tree on the track (7h); collision (7h); signal failure (6h),external
+ATN,VSV,Aalten,Varsseveld,51.9213,6.5787,51.9372,6.4587,8.4,0,16,12.6,0,signal failure (4h); garbage on the railway track (3h); broken down train (3h),infrastructure
+VSV,TBG,Varsseveld,Terborg,51.9372,6.4587,51.9225,6.3642,6.7,0,16,12.6,0,signal failure (4h); garbage on the railway track (3h); broken down train (3h),infrastructure
+DTC,DTCH,Doetinchem,Doetinchem De Huet,51.9586,6.2962,51.9591,6.2599,2.5,0,20,20.6,0,signal failure (12h); broken down train (5h); power failure (1h),infrastructure
+DTCH,WL,Doetinchem De Huet,Wehl,51.9591,6.2599,51.9574,6.2138,3.2,0,20,20.6,0,signal failure (12h); broken down train (5h); power failure (1h),infrastructure
+WL,DID,Wehl,Didam,51.9574,6.2138,51.9335,6.1324,6.2,0,18,24.0,0,collision (6h); points failure (5h); broken down train (4h),infrastructure
+ZV,DVN,Zevenaar,Duiven,51.9229,6.0736,51.9434,6.0146,4.6,0,68,325.4,0,problems with the rolling stock (133h); staffing problems (106h); signal failure (21h),rolling stock
+ZV,ZVG,Zevenaar,ZVG,51.9229,6.0736,51.8343,6.2541,15.8,0,0,0.0,0,,
+ZA,HMN,Zetten-Andelst,Hemmen-Dodewaard,51.9197,5.7228,51.9222,5.6737,3.4,0,14,11.0,0,signal failure (5h); broken down train (2h); collision (1h),infrastructure
+HMN,OP,Hemmen-Dodewaard,Opheusden,51.9222,5.6737,51.9262,5.6371,2.5,0,14,11.0,0,signal failure (5h); broken down train (2h); collision (1h),infrastructure
+OP,KTR,Opheusden,Kesteren,51.9262,5.6371,51.9314,5.5833,3.7,0,14,11.0,0,signal failure (5h); broken down train (2h); collision (1h),infrastructure
+NM,NMH,Nijmegen,Nijmegen Heyendaal,51.8433,5.853,51.8268,5.8675,2.1,0,35,78.2,0,problems with the rolling stock (33h); collision (14h); staffing problems (10h),rolling stock
+CK,BMR,Cuijk,Boxmeer,51.7272,5.874,51.6443,5.9395,10.3,0,29,77.1,0,problems with the rolling stock (33h); staffing problems (10h); because of a change in the timetable (7h),rolling stock
+BMR,VLB,Boxmeer,Vierlingsbeek,51.6443,5.9395,51.5919,5.9972,7.1,0,22,73.0,0,problems with the rolling stock (33h); staffing problems (10h); signal failure (8h),rolling stock
+VLB,VRY,Vierlingsbeek,Venray,51.5919,5.9972,51.5265,6.0142,7.4,0,21,72.1,0,problems with the rolling stock (33h); staffing problems (10h); signal failure (8h),rolling stock
+BNN,BNC,Barneveld Noord,Barneveld Centrum,52.1608,5.5988,52.1405,5.5895,2.3,0,54,117.6,0,problems with the rolling stock (33h); signal failure (20h); points failure (17h),rolling stock
+GDM,BSD,Geldermalsen,Beesd,51.8826,5.2717,51.8994,5.1948,5.6,0,7,5.3,0,broken down train (2h); over-running engineering works (2h); an emergency call (1h),rolling stock
+TL,KTR,Tiel,Kesteren,51.8896,5.4231,51.9314,5.5833,11.9,0,15,12.0,0,signal failure (5h); broken down train (2h); collision (1h),infrastructure
+LTN,EDC,Lunteren,Ede Centrum,52.0852,5.624,52.0434,5.6684,5.6,0,19,28.5,0,signal failure (12h); overhead wires covered with frost (5h); slippery railway tracks (4h),infrastructure
+EDC,ED,Ede Centrum,Ede-Wageningen,52.0434,5.6684,52.02783,5.67184,1.7,0,19,28.5,0,signal failure (12h); overhead wires covered with frost (5h); slippery railway tracks (4h),infrastructure
+DDR,DDRS,Dordrecht,Dordrecht Stadspolders,51.8076,4.6684,51.8021,4.7167,3.4,0,22,38.1,0,points failure (13h); broken down train (9h); overhead wires covered with frost (7h),infrastructure
+LDM,BSD,Leerdam,Beesd,51.8945,5.0935,51.8994,5.1948,7.0,0,6,5.3,0,broken down train (3h); over-running engineering works (2h); an emergency call (1h),rolling stock
+RSD,RSDG,Roosendaal,RSDG,51.5405,4.4593,51.4692,4.449,8.0,0,0,0.0,0,,
+VRY,BR,Venray,Blerick,51.5265,6.0142,51.3722,6.1553,19.7,0,20,17.4,0,signal failure (12h); broken down train (2h); over-running engineering works (2h),infrastructure
+VL,TG,Venlo,Tegelen,51.365,6.1716,51.3393,6.1434,3.5,0,63,43.0,0,broken down train (22h); stranded train (5h); points failure (5h),rolling stock
+VL,VLGR,Venlo,VLGR,51.365,6.1716,51.33407,6.19781,3.9,0,0,0.0,0,,
+TG,RV,Tegelen,Reuver,51.3393,6.1434,51.28306,6.07962,7.7,0,28,16.7,0,broken down train (6h); collision (4h); garbage on the railway track (2h),rolling stock
+RV,SM,Reuver,Swalmen,51.28306,6.07962,51.23521,6.03137,6.3,0,30,18.2,0,broken down train (5h); collision (2h); signal failure (2h),infrastructure
+SM,RM,Swalmen,Roermond,51.23521,6.03137,51.1932,5.9945,5.3,0,37,25.1,0,broken down train (6h); signal failure (6h); level crossing failure (5h),infrastructure
+MT,MTR,Maastricht,Maastricht Randwyck,50.85,5.7055,50.8378,5.7177,1.6,0,24,66.8,0,broken down train (28h); problems with the rolling stock (17h); signal failure (7h),rolling stock
+MTR,EDN,Maastricht Randwyck,Eijsden,50.8378,5.7177,50.772,5.71,7.3,0,15,55.7,0,broken down train (31h); problems with the rolling stock (17h); ice formation on the overhead wires (5h),rolling stock
+EDN,EDNG,Eijsden,EDNG,50.772,5.71,50.6896,5.7094,9.2,0,0,0.0,0,,
+VDL,KMR,Voerendaal,Klimmen-Ransdaal,50.8867,5.9296,50.86647,5.89061,3.5,0,55,1437.4,0,problems with the rolling stock (1303h); staffing problems (100h); disruption elsewhere (13h),rolling stock
+LG,EGH,Landgraaf,Eygelshoven,50.8965,6.0196,50.89003,6.04565,2.0,0,5,5.1,0,signal failure (2h); points failure (2h); broken down train (1h),infrastructure
+CVM,KRD,Chevremont,Kerkrade Centrum,50.87624,6.05957,50.8611,6.0573,1.7,0,5,5.1,0,signal failure (2h); points failure (2h); broken down train (1h),infrastructure
+KMR,SOG,Klimmen-Ransdaal,Schin op Geul,50.86647,5.89061,50.8561,5.8719,1.7,0,55,1437.4,0,problems with the rolling stock (1303h); staffing problems (100h); disruption elsewhere (13h),rolling stock
+SOG,VK,Schin op Geul,Valkenburg,50.8561,5.8719,50.8692,5.8328,3.1,0,55,1437.4,0,problems with the rolling stock (1303h); staffing problems (100h); disruption elsewhere (13h),rolling stock
+VK,SGL,Valkenburg,Houthem-St.Gerlach,50.8692,5.8328,50.8736,5.7965,2.6,0,53,1451.1,0,problems with the rolling stock (1303h); staffing problems (100h); damaged overhead wires (16h),rolling stock
+SGL,MES,Houthem-St.Gerlach,Meerssen,50.8736,5.7965,50.8827,5.7508,3.4,0,53,1451.1,0,problems with the rolling stock (1303h); staffing problems (100h); damaged overhead wires (16h),rolling stock
+KW,GERP,Kropswolde,Groningen Europapark,53.1617,6.7221,53.2062,6.5823,10.5,0,17,31.1,0,signal failure (15h); signalling and points failure (5h); an earlier disruption (3h),infrastructure
+ZB,VDM,Zuidbroek,Veendam,53.1596,6.868,53.10381,6.88505,6.3,0,14,32.1,0,over-running engineering works (19h); broken down train (4h); collision (3h),engineering work
+ES,ESDE,Enschede,Enschede De Eschmarke,52.2224,6.8903,52.2213,6.9511,4.1,0,6,27.3,0,over-running engineering works (16h); broken down train (4h); hindrance on the railway (4h),engineering work
+ESDE,GBR,Enschede De Eschmarke,Glanerbrug,52.2213,6.9511,52.219,6.9731,1.5,0,6,27.3,0,over-running engineering works (16h); broken down train (4h); hindrance on the railway (4h),engineering work
+GBR,GG,Glanerbrug,GG,52.219,6.9731,52.2152,7.0222,3.4,0,0,0.0,0,,
+LTV,WWW,Lichtenvoorde-Groenlo,Winterswijk West,52.0125,6.5946,51.9751,6.7029,8.5,0,18,20.3,0,tree on the track (8h); system failure (5h); collision (3h),external
+WW,WWW,Winterswijk,Winterswijk West,51.9677,6.7155,51.9751,6.7029,1.2,0,18,20.3,0,tree on the track (8h); system failure (5h); collision (3h),external
+NMH,MMLH,Nijmegen Heyendaal,Mook-Molenhoek,51.8268,5.8675,51.7716,5.8815,6.2,0,35,78.2,0,problems with the rolling stock (33h); collision (14h); staffing problems (10h),rolling stock
+CK,MMLH,Cuijk,Mook-Molenhoek,51.7272,5.874,51.7716,5.8815,5.0,0,26,63.9,0,problems with the rolling stock (33h); staffing problems (10h); because of a change in the timetable (7h),rolling stock
+HRL,HRLK,Heerlen,Heerlen de Kissel,50.8906,5.9754,50.891,5.9983,1.6,0,89,607.3,0,staffing problems (469h); problems with the rolling stock (64h); broken down train (25h),staff
+HRL,HRLW,Heerlen,Heerlen Woonboulevard,50.8906,5.9754,50.89608,5.95256,1.7,0,55,1437.4,0,problems with the rolling stock (1303h); staffing problems (100h); disruption elsewhere (13h),rolling stock
+VDL,HRLW,Voerendaal,Heerlen Woonboulevard,50.8867,5.9296,50.89608,5.95256,1.9,0,55,1437.4,0,problems with the rolling stock (1303h); staffing problems (100h); disruption elsewhere (13h),rolling stock
+LG,HRLK,Landgraaf,Heerlen de Kissel,50.8965,6.0196,50.891,5.9983,1.6,0,89,607.3,0,staffing problems (469h); problems with the rolling stock (64h); broken down train (25h),staff
+MBGA,NDBA,Muiderberg aansluiting,Naarden-Bussum aansluiting,52.31051,5.07556,52.29923,5.07965,1.3,4000,0,0.0,0,,
+APD,APDM,Apeldoorn,Apeldoorn De Maten,52.2095,5.9704,52.2053,6.0008,2.1,0,21,55.8,0,NS strike (24h); damaged railway bridge (9h); signal failure (6h),infrastructure
+KBK,APDM,Klarenbeek,Apeldoorn De Maten,52.1778,6.0846,52.2053,6.0008,6.5,0,21,55.8,0,NS strike (24h); damaged railway bridge (9h); signal failure (6h),infrastructure
+KBK,VEM,Klarenbeek,Voorst-Empe,52.1778,6.0846,52.1577,6.1435,4.6,0,26,63.5,0,NS strike (24h); damaged railway bridge (9h); power failure (7h),infrastructure
+ZP,VEM,Zutphen,Voorst-Empe,52.1447,6.1942,52.1577,6.1435,3.7,0,26,63.5,0,NS strike (24h); damaged railway bridge (9h); power failure (7h),infrastructure
+NA,EMNZ,Nieuw Amsterdam,Emmen Zuid,52.7185,6.8488,52.7495,6.87573,3.9,0,7,11.3,0,collision (9h); damaged overhead wires (1h); person on the railway track (1h),accidents
+DTC,GDR,Doetinchem,Gaanderen,51.9586,6.2962,51.9304,6.3493,4.8,0,17,9.9,0,signal failure (4h); broken down train (3h); an emergency call (2h),infrastructure
+TBG,GDR,Terborg,Gaanderen,51.9225,6.3642,51.9304,6.3493,1.3,0,17,9.9,0,signal failure (4h); broken down train (3h); an emergency call (2h),infrastructure
+LG,EGHM,Landgraaf,Eygelshoven Markt,50.8965,6.0196,50.8962,6.0581,2.7,0,98,686.4,0,staffing problems (469h); problems with the rolling stock (132h); broken down train (32h),staff
+EGHM,HZG,Eygelshoven Markt,HZG,50.8962,6.0581,50.8709,6.0945,3.8,0,0,0.0,0,,
+WK,IJT,Workum,IJlst,52.9721,5.4564,53.0147,5.6161,11.7,0,24,45.1,0,damaged railway bridge (13h); signal failure (11h); broken down train (9h),infrastructure
+ZH,GN,Zuidhorn,Groningen,53.2482,6.4062,53.2109,6.5637,11.3,0,40,57.8,0,points failure (26h); signal failure (11h); an earlier disruption (7h),infrastructure
+EGH,CVM,Eygelshoven,Chevremont,50.89003,6.04565,50.87624,6.05957,1.8,0,5,5.1,0,signal failure (2h); points failure (2h); broken down train (1h),infrastructure
+EST,ZA,Elst,Zetten-Andelst,51.917,5.8548,51.9197,5.7228,9.1,0,14,11.0,0,signal failure (5h); broken down train (2h); collision (1h),infrastructure
+DID,ZV,Didam,Zevenaar,51.9335,6.1324,51.9229,6.0736,4.2,0,12,15.3,0,signal failure (6h); points failure (5h); broken down train (4h),infrastructure
+AHP,WTV,Arnhem Velperpoort,Westervoort,51.9849,5.9203,51.95837,5.9775,4.9,0,67,325.1,0,problems with the rolling stock (133h); staffing problems (106h); signal failure (21h),rolling stock
+DVN,WTV,Duiven,Westervoort,51.9434,6.0146,51.95837,5.9775,3.0,0,68,325.4,0,problems with the rolling stock (133h); staffing problems (106h); signal failure (21h),rolling stock
+GR,AKL,Gorinchem,Arkel,51.8337,4.9682,51.8722,4.993,4.6,0,9,11.5,0,damaged railway bridge (6h); broken down train (2h); points failure (1h),infrastructure
+GND,HBZM,Hardinxveld-Giessendam,Hardinxveld Blauwe Zoom,51.83034,4.83624,51.82977,4.81231,1.6,0,22,38.3,0,points failure (13h); broken down train (9h); overhead wires covered with frost (7h),infrastructure
+SDT,HBZM,Sliedrecht,Hardinxveld Blauwe Zoom,51.8298,4.7779,51.82977,4.81231,2.4,0,22,38.3,0,points failure (13h); broken down train (9h); overhead wires covered with frost (7h),infrastructure
+GND,BHDV,Hardinxveld-Giessendam,Boven Hardinxveld,51.83034,4.83624,51.8317,4.86899,2.3,0,19,28.7,0,broken down train (13h); overhead wires covered with frost (7h); level crossing failure (4h),rolling stock
+GR,BHDV,Gorinchem,Boven Hardinxveld,51.8337,4.9682,51.8317,4.86899,6.8,0,20,29.3,0,broken down train (13h); overhead wires covered with frost (7h); level crossing failure (4h),rolling stock
+AKL,LDM,Arkel,Leerdam,51.8722,4.993,51.8945,5.0935,7.3,0,10,12.0,0,damaged railway bridge (6h); broken down train (2h); points failure (1h),infrastructure
+HGL,HGLG,Hengelo,Hengelo Gezondheidspark,52.2622,6.7936,52.2615,6.76563,1.9,0,29,130.2,0,NS strike (95h); signal failure (19h); problems with the rolling stock (16h),staff
+DDN,HGLG,Delden,Hengelo Gezondheidspark,52.2602,6.7149,52.2615,6.76563,3.5,0,29,130.2,0,NS strike (95h); signal failure (19h); problems with the rolling stock (16h),staff
+DDRS,SDTB,Dordrecht Stadspolders,Sliedrecht Baanhoek,51.8021,4.7167,51.81782,4.74192,2.5,0,29,47.7,0,points failure (13h); broken down train (11h); damaged railway bridge (8h),infrastructure
+SDT,SDTB,Sliedrecht,Sliedrecht Baanhoek,51.8298,4.7779,51.81782,4.74192,2.8,0,29,47.7,0,points failure (13h); broken down train (11h); damaged railway bridge (8h),infrastructure
+ZL,ZLSH,Zwolle,ZLSH,52.5056,6.0898,52.52605,6.05421,3.3,0,11,24.3,0,over-running engineering works (14h); broken down train (3h); signal failure (2h),engineering work
+SKND,MG,Sneek Noord,Mantgum,53.04051,5.66299,53.1296,5.7132,10.5,0,19,36.8,0,signal failure (15h); points failure (12h); an emergency call (4h),infrastructure
+BNN,HVL,Barneveld Noord,Hoevelaken,52.1608,5.5988,52.166,5.46537,9.1,0,58,121.6,0,problems with the rolling stock (33h); broken down train (21h); signal failure (19h),rolling stock
+BDGR,BDHSA,BDGR,Breda High Speed aansluiting,51.49107,4.73649,51.58218,4.72647,10.2,0,0,0.0,0,,
+BDA,BDHSA,Breda aansluiting,Breda High Speed aansluiting,51.59226,4.75681,51.58218,4.72647,2.4,0,0,0.0,0,,
+ZBHA,BDHSA,Zevenbergsehoek aansluiting,Breda High Speed aansluiting,51.61575,4.71388,51.58218,4.72647,3.8,0,0,0.0,0,,
+BNC,BNZ,Barneveld Centrum,Barneveld Zuid,52.1405,5.5895,52.12779,5.60377,1.7,0,43,104.7,0,problems with the rolling stock (33h); points failure (17h); signal failure (17h),rolling stock
+LTN,BNZ,Lunteren,Barneveld Zuid,52.0852,5.624,52.12779,5.60377,4.9,0,21,30.0,0,signal failure (12h); overhead wires covered with frost (5h); slippery railway tracks (4h),infrastructure
+MTN,MT,Maastricht Noord,Maastricht,50.86827,5.7308,50.85,5.7055,2.7,0,53,1451.1,0,problems with the rolling stock (1303h); staffing problems (100h); damaged overhead wires (16h),rolling stock
+MTN,MES,Maastricht Noord,Meerssen,50.86827,5.7308,50.8827,5.7508,2.1,0,53,1451.1,0,problems with the rolling stock (1303h); staffing problems (100h); damaged overhead wires (16h),rolling stock
+EMN,EMNZ,Emmen,Emmen Zuid,52.7906,6.8995,52.7495,6.87573,4.8,0,8,14.9,0,collision (9h); signal failure (4h); damaged overhead wires (1h),accidents
+HFDO,HFDM,Hoofddorp Opstel,Hoofddorp Midden,52.28464,4.69696,52.29157,4.69573,0.8,0,0,0.0,0,,
+ASD,WGM,Amsterdam Centraal,Watergraafsmeer,52.3787,4.9005,52.35953,4.94371,3.6,0,0,0.0,0,,
+ASD,ASWPLZ,Amsterdam Centraal,Amsterdam Lijnwerkplaats Zuid,52.3787,4.9005,52.39096,4.86949,2.5,0,0,0.0,0,,
+LLS,LLSO,Lelystad Centrum,Lelystad Opstel,52.5079,5.4728,52.54947,5.49984,5.0,0,0,0.0,0,,
+HNK,HNKO,Hoorn Kersenboogerd,Hoorn Kersenboogerd Opstel,52.6531,5.0847,52.65795,5.09314,0.8,0,0,0.0,0,,
+AMF,BKD,Amersfoort Centraal,Bokkeduinen,52.1535,5.3739,52.15846,5.351,1.7,0,0,0.0,0,,
