@@ -21,3 +21,7 @@ jobs:
         run: |
           python analysis/train-disruptions/profile.py | tee profile.txt
           { echo '```'; cat profile.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Frequency vs duration
+        run: |
+          python analysis/train-disruptions/longer.py | tee longer.txt
+          { echo '```'; cat longer.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
