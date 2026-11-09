@@ -84,3 +84,9 @@ def test_new_story_copies_template(tmp_path, monkeypatch):
     assert "stories/autumn-trains/data" in prepare
     with pytest.raises(ValueError):
         newsroom.new_story("Bad Slug", "t", "s")
+
+
+def test_analytics_only_when_configured():
+    assert newsroom.analytics({}) == ""
+    tag = newsroom.analytics({"goatcounter": "unexpected-signals"})
+    assert "unexpected-signals.goatcounter.com/count" in tag

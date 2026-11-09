@@ -242,7 +242,25 @@ def page(config: dict, *, root: str, title: str, description: str, body: str, pa
         linkedin_link=(
             f'<a href="{esc(config["linkedin"])}">LinkedIn</a> · ' if config.get("linkedin") else ""
         ),
+        analytics=analytics(config),
         body=body,
+    )
+
+
+def analytics(config: dict) -> str:
+    """GoatCounter page counts, only when `goatcounter` is set in site.toml.
+
+    GoatCounter sets no cookies and stores no personal data, so no consent
+    banner is needed. Empty by default, so a fork tracks nothing.
+    """
+    code = config.get("goatcounter", "")
+    if not code:
+        return ""
+    if not re.fullmatch(r"[a-z0-9-]+", code):
+        raise ValueError("goatcounter must be the site code, like 'unexpected-signals'")
+    return (
+        f'<script data-goatcounter="https://{code}.goatcounter.com/count" '
+        'async src="https://gc.zgo.at/count.js"></script>'
     )
 
 
