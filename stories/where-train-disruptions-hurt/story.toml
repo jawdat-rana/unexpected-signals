@@ -1,0 +1,26 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "The six kilometres of track that hurt the most Dutch train passengers"
+dek = "Weigh every train disruption by the people who use that stretch of track, and one place comes out on top almost every year: the line under Schiphol."
+date = 2026-11-08
+section = "Trains"
+series = "Dutch trains, part 3"
+status = "draft"
+tags = ["trains", "ns", "rijden-de-treinen", "maps"]
+image = ""
+analysis = "analysis/train-disruptions"
+
+[[sources]]
+name = "Rijden de Treinen: train disruptions, 2019–2025"
+url = "https://www.rijdendetreinen.nl/en/open-data/disruptions"
+licence = "CC BY 4.0"
+
+[[sources]]
+name = "NS annual report dashboard: passengers per station and per section of track"
+url = "https://dashboards.nsjaarverslag.nl/reizigersgedrag"
+licence = "© NS, used for analysis with attribution"
+
+[[sources]]
+name = "Natural Earth: country and lake outlines"
+url = "https://www.naturalearthdata.com/"
+licence = "Public domain"
