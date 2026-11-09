@@ -10,8 +10,10 @@ The full contribution files are too big to keep, so for each cycle this keeps:
 - fec/cmYY.zip, fec/webkYY.zip, fec/cnYY.zip (committee master, PAC
   summaries, candidate master; small, kept whole)
 - candidates_YYYY.csv: committee master rows that matched a keyword
-- pas2_YYYY.csv: committee-to-candidate contributions, independent
-  expenditures and earmarked pass-throughs (itpas2) made by those committees
+- pas2_YYYY.csv: contributions to candidates and independent expenditures
+  (itpas2) made by those committees
+- oth_YYYY.csv: other committee transactions (itoth) filed by them, which
+  is where earmarked contributions passed through a PAC show up
 - ie_YYYY.csv: rows of the independent expenditure file filed by them
 
 Usage: python analysis/money-in-politics/fetch_home_front.py OUT_DIR
@@ -47,6 +49,16 @@ KEYWORDS = re.compile(
 CM_ID, CM_NAME, CM_CONNECTED = 0, 1, 13
 PAS2_CMTE = 0
 IE_SPENDER = 2  # spe_id
+CANDIDATE_COLS = [
+    "cycle",
+    "committee_id",
+    "name",
+    "type",
+    "designation",
+    "party",
+    "connected_org",
+    "keyword",
+]
 
 HEADERS = {
     "User-Agent": "unexpected-signals research script (github.com/jawdat-rana/unexpected-signals)"
@@ -88,6 +100,7 @@ def main(out: Path) -> int:
             "webk": (f"{FEC}/{cycle}/webk{yy}.zip", out / f"fec/webk{yy}.zip"),
             "cn": (f"{FEC}/{cycle}/cn{yy}.zip", out / f"fec/cn{yy}.zip"),
             "pas2": (f"{FEC}/{cycle}/pas2{yy}.zip", tmp / f"pas2{yy}.zip"),
+            "oth": (f"{FEC}/{cycle}/oth{yy}.zip", tmp / f"oth{yy}.zip"),
             "ie": (
                 f"{FEC}/{cycle}/independent_expenditure_{cycle}.csv",
                 tmp / f"ie{cycle}.csv",
@@ -106,20 +119,25 @@ def main(out: Path) -> int:
         ids = set()
         with (out / f"candidates_{cycle}.csv").open("w", newline="") as fh:
             w = csv.writer(fh)
-            w.writerow(["cycle", "committee_id", "name", "type", "designation", "party", "connected_org", "keyword"])
+            w.writerow(CANDIDATE_COLS)
             for f in bar_rows(files["cm"][1]):
                 m = KEYWORDS.search(f"{f[CM_NAME]} | {f[CM_CONNECTED]}")
                 if m:
                     ids.add(f[CM_ID])
-                    w.writerow([cycle, f[CM_ID], f[CM_NAME], f[9], f[8], f[10], f[CM_CONNECTED], m.group(0).upper()])
+                    w.writerow(
+                        [cycle, f[CM_ID], f[CM_NAME], f[9], f[8], f[10], f[CM_CONNECTED]]
+                        + [m.group(0).upper()]
+                    )
 
-        if ok["pas2"]:
-            with (out / f"pas2_{cycle}.csv").open("w", newline="") as fh:
+        for key in ("pas2", "oth"):
+            if not ok[key]:
+                continue
+            with (out / f"{key}_{cycle}.csv").open("w", newline="") as fh:
                 w = csv.writer(fh)
-                for f in bar_rows(files["pas2"][1]):
+                for f in bar_rows(files[key][1]):
                     if f[PAS2_CMTE] in ids:
                         w.writerow(f)
-            files["pas2"][1].unlink()
+            files[key][1].unlink()
 
         if ok["ie"]:
             with (
