@@ -8,6 +8,5 @@ Not published. One folder per story:
 | `story.md` | The text, with `chart`, `datawrapper` and `signal` shortcodes |
 | `charts/*.js` | D3 or Observable Plot chart modules |
 | `data/*.csv` | Small, chart-ready data, written by `analysis/<slug>/prepare.py` |
-| `post.md` | The LinkedIn post draft |
 
 See `docs/PUBLISHING.md` for the full workflow.
