@@ -1,0 +1,36 @@
+name: money-home-fetch
+
+# Downloads and pre-filters the FEC files for "Money in politics, part 2: the
+# home front" and commits them to the `raw-money-home` branch.
+
+on:
+  push:
+    paths: ["analysis/money-in-politics/fetch_home_front.py", ".github/workflows/money-home-fetch.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download and filter sources
+        run: |
+          git worktree add --orphan -b raw-money-home raw
+          python analysis/money-in-politics/fetch_home_front.py raw
+          rm -rf raw/_tmp
+          cat raw/manifest.csv >> "$GITHUB_STEP_SUMMARY"
+      - name: Push to raw-money-home
+        working-directory: raw
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "raw: home front sources $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin HEAD:raw-money-home
