@@ -17,6 +17,11 @@ PAC summary file, webk), so small unitemized amounts are included:
   webk; their expenditures come from the independent expenditure file, with
   amended filings dropped.
 
+Contributions from one listed committee to another are subtracted from the
+giver, so no dollar is counted twice. Money a super PAC gives to other super
+PACs (United Democracy Project does this) is counted as given, but its
+election is unknown, so it never counts toward the primary line.
+
 The primary line needs the election each dollar was for, which only the
 itemized records have:
 - independent: itemized Schedule E (itpas2 24E/24A, or Form 5 rows)
@@ -41,7 +46,7 @@ HERE = Path(__file__).parent
 CYCLES = [2016, 2018, 2020, 2022, 2024, 2026]
 
 # itpas2 columns
-P_CMTE, P_PGI, P_TP, P_AMT, P_MEMO = 0, 3, 5, 14, 18
+P_CMTE, P_PGI, P_TP, P_AMT, P_OTHER, P_MEMO = 0, 3, 5, 14, 15, 18
 DIRECT = {"24K", "24Z"}
 INDEPENDENT = {"24E", "24A"}
 # webk columns
@@ -75,7 +80,9 @@ def form5_rows(path: Path, ids: set[str]):
 
 def share(itemized: dict) -> float | None:
     total = itemized[True] + itemized[False]
-    return itemized[True] / total if total > 0 else None
+    if total <= 0:
+        return None
+    return min(1.0, max(0.0, itemized[True] / total))
 
 
 def main(raw: Path, out: Path) -> int:
@@ -106,6 +113,20 @@ def main(raw: Path, out: Path) -> int:
             amt = float(r["exp_amo"] or 0)
             item_ie[r["spe_id"]][r["ele_type"][:1] == "P"] += amt
             indep[r["spe_id"]] += amt
+        # Contributions between listed committees would be counted twice.
+        internal = defaultdict(float)
+        for name in (f"pas2_{cycle}.csv", f"oth_{cycle}.csv"):
+            for f in csv.reader((raw / name).open(encoding="latin-1")):
+                if (
+                    f[P_CMTE] in ids
+                    and f[P_OTHER] in ids
+                    and f[P_TP] in DIRECT
+                    and f[P_MEMO] != "X"
+                ):
+                    internal[f[P_CMTE]] += float(f[P_AMT] or 0)
+        for cid, amt in internal.items():
+            given[cid] -= amt
+
         em = raw / f"earmarks_{cycle}.csv"
         if not em.exists():
             print(f"{cycle}: no earmark totals", file=sys.stderr)

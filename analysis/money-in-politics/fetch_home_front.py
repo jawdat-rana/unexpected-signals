@@ -45,6 +45,8 @@ KEYWORDS = re.compile(
     re.I,
 )
 
+LISTED = Path(__file__).parent / "home_front_committees.csv"
+
 # FEC bulk column positions.
 CM_ID, CM_NAME, CM_CONNECTED = 0, 1, 13
 PAS2_CMTE = 0
@@ -116,7 +118,9 @@ def main(out: Path) -> int:
         if not ok["cm"]:
             continue
 
-        ids = set()
+        # Listed committees are always kept, even if a later name change
+        # means they no longer match a keyword (RJC Victory Fund, for one).
+        ids = {r["committee_id"] for r in csv.DictReader(LISTED.open())}
         with (out / f"candidates_{cycle}.csv").open("w", newline="") as fh:
             w = csv.writer(fh)
             w.writerow(CANDIDATE_COLS)
