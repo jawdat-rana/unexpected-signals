@@ -98,6 +98,14 @@ Colours for Datawrapper (paste into the custom colour field):
 The full component set is on the [style guide page](https://jawdat-rana.github.io/unexpected-signals/style/),
 which is built from `templates/story/`, so the template and the guide can't drift apart.
 
+## Page views
+
+GitHub Pages has no visitor statistics. The site can count page views with
+[GoatCounter](https://www.goatcounter.com/): free for personal sites, open
+source, no cookies and no personal data, so no consent banner is needed.
+Sign up, then set `goatcounter = "<your code>"` in `newsroom/site.toml`.
+It is off when empty, so forks don't count into your dashboard.
+
 ## Hosting: why GitHub Pages
 
 - **Codespaces** is a cloud dev machine for editing and running this repo in a

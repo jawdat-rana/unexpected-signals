@@ -11,3 +11,7 @@ edition = "Netherlands edition"
 # List draft titles on the front page under "In the newsroom".
 show_upcoming = true
 about = "Short investigations into open data nobody thought of as a signal, until it turned out to be one. One or two a week, each with its data and code on [GitHub](https://github.com/jawdat-rana/unexpected-signals)."
+# Page view counts with GoatCounter (free, no cookies, no consent banner).
+# Sign up at https://www.goatcounter.com/signup, then put the site code here,
+# e.g. "unexpected-signals" for unexpected-signals.goatcounter.com. Empty = off.
+goatcounter = ""
