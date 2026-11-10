@@ -1,0 +1,14 @@
+title = "The home front"
+dek = "Part 1 looked at foreign money. This is the other side: Americans who give through PACs about a country abroad, a diaspora or a faith. One group grew from a small share to most of the money in two cycles, and most of it goes into primaries."
+date = 2026-11-10
+section = "Money"
+series = "Money in politics, part 2"
+status = "draft"
+tags = ["fec", "us-politics"]
+image = ""
+analysis = "analysis/money-in-politics"
+
+[[sources]]
+name = "FEC bulk data: committees, PAC summaries, contributions and independent expenditures, 2016–2026 cycles"
+url = "https://www.fec.gov/data/browse-data/?tab=bulk-data"
+licence = "Public domain"
