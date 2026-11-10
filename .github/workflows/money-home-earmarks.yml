@@ -1,0 +1,63 @@
+name: money-home-earmarks
+
+# Totals the earmarked donations that home-front PACs pass on to candidates,
+# from the FEC individual contributions files (several GB each), and adds the
+# totals (no donor names) to the `raw-money-home` branch.
+
+on:
+  push:
+    paths:
+      - "analysis/money-in-politics/fetch_earmarks.py"
+      - "analysis/money-in-politics/home_front_committees.csv"
+      - ".github/workflows/money-home-earmarks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        cycle: [2016, 2018, 2020, 2022, 2024, 2026]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download individual contributions
+        run: |
+          yy=$(printf %02d $(( ${{ matrix.cycle }} % 100 )))
+          curl -fsSL --retry 3 -o indiv.zip \
+            "https://www.fec.gov/files/bulk-downloads/${{ matrix.cycle }}/indiv${yy}.zip"
+          ls -la indiv.zip
+      - name: Total earmarks
+        run: python analysis/money-in-politics/fetch_earmarks.py indiv.zip ${{ matrix.cycle }} out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: earmarks-${{ matrix.cycle }}
+          path: out/
+
+  commit:
+    needs: cycle
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: raw-money-home
+      - uses: actions/download-artifact@v4
+        with:
+          path: art
+      - name: Push to raw-money-home
+        run: |
+          cp art/*/*.csv .
+          rm -rf art
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "raw: home front earmark totals $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin HEAD:raw-money-home
