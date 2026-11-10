@@ -48,10 +48,13 @@ from U.S. citizens or residents.
    and keeps only totals (never donor names) of donations earmarked for a
    candidate and passed on by a listed PAC (`money-home-earmarks` workflow).
 4. `home_front.py` totals each committee per cycle and per group.
+5. `home_front_story.py` writes the chart data for the story in
+   `stories/the-home-front/data/`.
 
 ```
 git worktree add raw-money-home origin/raw-money-home
 python analysis/money-in-politics/home_front.py raw-money-home out
+python analysis/money-in-politics/home_front_story.py out
 ```
 
 Method notes:
