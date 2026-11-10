@@ -39,4 +39,4 @@ Swiss, German, British and Japanese firms lead. The Netherlands is seventh, thro
 
 The FEC doesn't mark which PACs have a foreign parent, so I matched corporate PACs to a hand-made list of 195 foreign parent companies. Then I totalled each PAC's contributions to other committees by the parent's country. A company counts where it is run, not where it is registered. So Medtronic, Accenture, Chubb and CNH Industrial are left out, and Airbus counts as French. FARA clients are counted per country for 2023 and 2024. The parent list, the matches and the code are all in the repo.
 
-Part 2 looks at the other side: American donors who give to foreign-policy and diaspora PACs, counted with the same method.
+[Part 2, "The home front"](../the-home-front/) looks at the other side: American donors who give to foreign-policy, diaspora and faith-based PACs, counted with the same method.
