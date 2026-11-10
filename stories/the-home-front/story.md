@@ -48,7 +48,7 @@ Every committee and its numbers per cycle are in [the full list](data/home_front
 
 - **This is not foreign money.** These are American donors and American PACs. Comparing them with Part 1 would mix two different things.
 - **A faith is not a foreign policy.** Faith-based PACs are their own group because many of them work on domestic issues. Counting them with the country groups would suggest that their members' politics are about another country.
-- **Only PACs that say what they are about.** A PAC with a neutral name isn't counted, for any group. For pro-Israel PACs, the neutral-named ones I could find gave between $0.7M and $1.1M a cycle. That wouldn't change the picture after 2022, but it makes earlier pro-Israel totals look smaller than they were.
+- **Only PACs that say what they are about.** A PAC with a neutral name isn't counted, for any group, so every total here is a floor.
 - **PAC money only.** Lobbying, non-profits that don't report donors, and individual donations given directly to campaigns aren't here.
 - **No party split.** Most of these groups give to both parties, but showing that fairly needs a baseline of all PACs. That's for a follow-up.
 
