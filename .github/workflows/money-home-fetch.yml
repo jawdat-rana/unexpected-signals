@@ -11,6 +11,11 @@ on:
       - ".github/workflows/money-home-fetch.yml"
   workflow_dispatch:
 
+# Both raw-money-home workflows push to the same branch, so run one at a time.
+concurrency:
+  group: raw-money-home
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -40,5 +45,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
+          if git diff --cached --quiet; then echo "Data unchanged, nothing to commit"; exit 0; fi
           git commit -q -m "raw: home front sources $(date -u +%Y-%m-%dT%H:%MZ)"
           git push origin HEAD:raw-money-home
