@@ -1,0 +1,2167 @@
+group_id,group,ADM0_A3,NAME,CONTINENT,SUBREGION,area_km2,share
+1,Abazinians,RUS,Russia,Europe,Eastern Europe,270.7,1.0
+2,Abkhaz,GEO,Georgia,Asia,Western Asia,5411.2,0.9734
+2,Abkhaz,RUS,Russia,Europe,Eastern Europe,148.0,0.0266
+3,Achaguas,COL,Colombia,South America,South America,84399.0,1.0
+4,Achang,CHN,China,Asia,Eastern Asia,163.1,1.0
+5,Achinese,IDN,Indonesia,Asia,South-Eastern Asia,30786.9,1.0
+6,Acholi,UGA,Uganda,Africa,Eastern Africa,51928.3,0.9977
+6,Acholi,SDS,S. Sudan,Africa,Eastern Africa,74.7,0.0014
+6,Acholi,COD,Dem. Rep. Congo,Africa,Middle Africa,42.6,0.0008
+7,Achuale,PER,Peru,South America,South America,60403.9,0.7208
+7,Achuale,ECU,Ecuador,South America,South America,23401.3,0.2792
+9,Adyghe,RUS,Russia,Europe,Eastern Europe,2279.4,1.0
+10,Aeta and Battaks,PHL,Philippines,Asia,South-Eastern Asia,17915.1,1.0
+11,Afghanistan Arabs,AFG,Afghanistan,Asia,Southern Asia,1060.2,1.0
+12,Afghans,AFG,Afghanistan,Asia,Southern Asia,268884.6,0.6652
+12,Afghans,PAK,Pakistan,Asia,Southern Asia,123296.9,0.305
+12,Afghans,IRN,Iran,Asia,Southern Asia,11915.3,0.0295
+12,Afghans,TKM,Turkmenistan,Asia,Central Asia,123.1,0.0003
+12,Afghans,TJK,Tajikistan,Asia,Central Asia,6.2,0.0
+13,Afrikaners,ZAF,South Africa,Africa,Southern Africa,426571.6,0.8758
+13,Afrikaners,NAM,Namibia,Africa,Southern Africa,60491.2,0.1242
+14,Afshars,IRN,Iran,Asia,Southern Asia,24740.9,1.0
+15,Agau,ETH,Ethiopia,Africa,Eastern Africa,8187.6,0.8818
+15,Agau,ERI,Eritrea,Africa,Eastern Africa,1097.9,0.1182
+16,Aguatecs,GTM,Guatemala,North America,Central America,501.9,1.0
+17,Aguls,RUS,Russia,Europe,Eastern Europe,1227.8,1.0
+18,Ainu,JPN,Japan,Asia,Eastern Asia,1529.6,1.0
+19,Akamba,KEN,Kenya,Africa,Eastern Africa,56994.1,1.0
+20,Akan,GHA,Ghana,Africa,Western Africa,148687.2,0.6911
+20,Akan,CIV,Côte d'Ivoire,Africa,Western Africa,63274.5,0.2941
+20,Akan,TGO,Togo,Africa,Western Africa,3181.0,0.0148
+21,Akikuyu,KEN,Kenya,Africa,Eastern Africa,41514.1,1.0
+23,Alacaluf,CHL,Chile,South America,South America,15621.1,0.5276
+23,Alacaluf,ARG,Argentina,South America,South America,13986.3,0.4724
+24,Alas,IDN,Indonesia,Asia,South-Eastern Asia,6013.6,1.0
+25,Albanians,ALB,Albania,Europe,Southern Europe,27070.3,0.6588
+25,Albanians,KOS,Kosovo,Europe,Southern Europe,8018.9,0.1951
+25,Albanians,MKD,North Macedonia,Europe,Southern Europe,2402.3,0.0585
+25,Albanians,ITA,Italy,Europe,Southern Europe,1522.2,0.037
+25,Albanians,SRB,Serbia,Europe,Southern Europe,945.2,0.023
+25,Albanians,GRC,Greece,Europe,Southern Europe,667.5,0.0162
+25,Albanians,MNE,Montenegro,Europe,Southern Europe,355.1,0.0086
+25,Albanians,UKR,Ukraine,Europe,Eastern Europe,111.5,0.0027
+26,Aleuts,USA,United States of America,North America,Northern America,24799.1,0.949
+26,Aleuts,RUS,Russia,Europe,Eastern Europe,1333.0,0.051
+27,Algeria Arabs,DZA,Algeria,Africa,Northern Africa,1329611.3,0.9892
+27,Algeria Arabs,MAR,Morocco,Africa,Northern Africa,13095.6,0.0097
+27,Algeria Arabs,TUN,Tunisia,Africa,Northern Africa,1210.4,0.0009
+27,Algeria Arabs,LBY,Libya,Africa,Northern Africa,248.2,0.0002
+28,Algonquins,CAN,Canada,North America,Northern America,1752056.2,1.0
+29,Alors,IDN,Indonesia,Asia,South-Eastern Asia,3075.3,1.0
+30,Alsatians and Lotharingians,FRA,France,Europe,Western Europe,12783.8,0.9744
+30,Alsatians and Lotharingians,DEU,Germany,Europe,Western Europe,299.9,0.0229
+30,Alsatians and Lotharingians,CHE,Switzerland,Europe,Western Europe,18.7,0.0014
+30,Alsatians and Lotharingians,LUX,Luxembourg,Europe,Western Europe,17.0,0.0013
+31,Altayan Urlankhai,MNG,Mongolia,Asia,Eastern Asia,6296.5,0.999
+31,Altayan Urlankhai,CHN,China,Asia,Eastern Asia,6.2,0.001
+32,Altayans,RUS,Russia,Europe,Eastern Europe,73803.8,0.9953
+32,Altayans,KAZ,Kazakhstan,Asia,Central Asia,199.5,0.0027
+32,Altayans,MNG,Mongolia,Asia,Eastern Asia,141.6,0.0019
+32,Altayans,CHN,China,Asia,Eastern Asia,5.4,0.0001
+34,Amboinese,IDN,Indonesia,Asia,South-Eastern Asia,3197.1,1.0
+36,Amhara,ETH,Ethiopia,Africa,Eastern Africa,204886.3,1.0
+37,Amoipia,BRA,Brazil,South America,South America,4579.0,1.0
+38,Amusgo,MEX,Mexico,North America,Central America,888.9,1.0
+40,Andamanese,IND,India,Asia,Southern Asia,4178.7,1.0
+41,Andoa,PER,Peru,South America,South America,44996.4,0.8051
+41,Andoa,ECU,Ecuador,South America,South America,10894.3,0.1949
+44,Angas,NGA,Nigeria,Africa,Western Africa,5583.9,1.0
+45,Angoni,TZA,Tanzania,Africa,Eastern Africa,38829.5,0.901
+45,Angoni,MOZ,Mozambique,Africa,Eastern Africa,4266.6,0.099
+46,Anuak,ETH,Ethiopia,Africa,Eastern Africa,16162.7,0.9952
+46,Anuak,SDS,S. Sudan,Africa,Eastern Africa,77.9,0.0048
+48,Apaches,USA,United States of America,North America,Northern America,16867.3,1.0
+51,Apayo,PHL,Philippines,Asia,South-Eastern Asia,3864.4,1.0
+54,Arabs of Middle Asia,UZB,Uzbekistan,Asia,Central Asia,215.8,0.505
+54,Arabs of Middle Asia,TJK,Tajikistan,Asia,Central Asia,170.1,0.3981
+54,Arabs of Middle Asia,AFG,Afghanistan,Asia,Southern Asia,41.4,0.0969
+55,Arabs of Saudi Arabia,SAU,Saudi Arabia,Asia,Western Asia,1792931.9,0.7798
+55,Arabs of Saudi Arabia,OMN,Oman,Asia,Western Asia,253241.6,0.1101
+55,Arabs of Saudi Arabia,YEM,Yemen,Asia,Western Asia,207968.9,0.0905
+55,Arabs of Saudi Arabia,ARE,United Arab Emirates,Asia,Western Asia,41698.9,0.0181
+55,Arabs of Saudi Arabia,IRQ,Iraq,Asia,Western Asia,2808.4,0.0012
+55,Arabs of Saudi Arabia,KWT,Kuwait,Asia,Western Asia,230.3,0.0001
+55,Arabs of Saudi Arabia,JOR,Jordan,Asia,Western Asia,171.5,0.0001
+55,Arabs of Saudi Arabia,QAT,Qatar,Asia,Western Asia,61.5,0.0
+56,Arabs of Turkey,TUR,Turkey,Asia,Western Asia,21180.6,0.9976
+56,Arabs of Turkey,SYR,Syria,Asia,Western Asia,51.9,0.0024
+57,Arabs of UAR (Egyptians),EGY,Egypt,Africa,Northern Africa,747841.8,0.9994
+57,Arabs of UAR (Egyptians),ISR,Israel,Asia,Western Asia,412.1,0.0006
+57,Arabs of UAR (Egyptians),SDN,Sudan,Africa,Northern Africa,46.9,0.0001
+57,Arabs of UAR (Egyptians),PSX,Palestine,Asia,Western Asia,24.3,0.0
+57,Arabs of UAR (Egyptians),LBY,Libya,Africa,Northern Africa,0.1,0.0
+58,Arabs of Yemen,YEM,Yemen,Asia,Western Asia,188292.6,0.6524
+58,Arabs of Yemen,OMN,Oman,Asia,Western Asia,44599.4,0.1545
+58,Arabs of Yemen,ARE,United Arab Emirates,Asia,Western Asia,21959.9,0.0761
+58,Arabs of Yemen,KWT,Kuwait,Asia,Western Asia,16629.4,0.0576
+58,Arabs of Yemen,QAT,Qatar,Asia,Western Asia,10940.4,0.0379
+58,Arabs of Yemen,ERI,Eritrea,Africa,Eastern Africa,4438.8,0.0154
+58,Arabs of Yemen,SDN,Sudan,Africa,Northern Africa,939.5,0.0033
+58,Arabs of Yemen,BHR,Bahrain,Asia,Western Asia,597.8,0.0021
+58,Arabs of Yemen,SAU,Saudi Arabia,Asia,Western Asia,192.2,0.0007
+58,Arabs of Yemen,IRQ,Iraq,Asia,Western Asia,29.6,0.0001
+60,Arapahos,USA,United States of America,North America,Northern America,17600.0,0.8765
+60,Arapahos,CAN,Canada,North America,Northern America,2480.5,0.1235
+62,Araras,BRA,Brazil,South America,South America,22998.1,1.0
+63,Araucanians,CHL,Chile,South America,South America,81782.8,0.6173
+63,Araucanians,ARG,Argentina,South America,South America,50695.7,0.3827
+66,Argentinians,ARG,Argentina,South America,South America,2602426.8,0.9986
+66,Argentinians,SPI,Southern Patagonian Ice Field,South America,South America,1353.7,0.0005
+66,Argentinians,CHL,Chile,South America,South America,931.8,0.0004
+66,Argentinians,BRA,Brazil,South America,South America,606.0,0.0002
+66,Argentinians,PRY,Paraguay,South America,South America,388.7,0.0001
+66,Argentinians,URY,Uruguay,South America,South America,176.5,0.0001
+66,Argentinians,BOL,Bolivia,South America,South America,59.0,0.0
+66,Argentinians,BRI,Brazilian I.,South America,South America,2.6,0.0
+68,Arikem,BRA,Brazil,South America,South America,554096.3,1.0
+70,Armenians,ARM,Armenia,Asia,Western Asia,23149.7,0.5988
+70,Armenians,AZE,Azerbaijan,Asia,Western Asia,5873.3,0.1519
+70,Armenians,GEO,Georgia,Asia,Western Asia,3719.9,0.0962
+70,Armenians,IRN,Iran,Asia,Southern Asia,3288.2,0.0851
+70,Armenians,RUS,Russia,Europe,Eastern Europe,2269.2,0.0587
+70,Armenians,SYR,Syria,Asia,Western Asia,287.2,0.0074
+70,Armenians,TUR,Turkey,Asia,Western Asia,72.3,0.0019
+71,Aromani,GRC,Greece,Europe,Southern Europe,2986.2,0.496
+71,Aromani,SRB,Serbia,Europe,Southern Europe,2467.9,0.4099
+71,Aromani,ALB,Albania,Europe,Southern Europe,561.3,0.0932
+71,Aromani,BGR,Bulgaria,Europe,Eastern Europe,5.7,0.0009
+72,Aru,IDN,Indonesia,Asia,South-Eastern Asia,7020.3,1.0
+75,Arumas,BRA,Brazil,South America,South America,2071.8,1.0
+77,Assamese,IND,India,Asia,Southern Asia,71782.8,0.8484
+77,Assamese,BTN,Bhutan,Asia,Southern Asia,12777.0,0.151
+77,Assamese,MMR,Myanmar,Asia,South-Eastern Asia,50.3,0.0006
+78,Assyrians,IRQ,Iraq,Asia,Western Asia,1000.0,0.4907
+78,Assyrians,SYR,Syria,Asia,Western Asia,993.6,0.4876
+78,Assyrians,RUS,Russia,Europe,Eastern Europe,27.2,0.0133
+78,Assyrians,ARM,Armenia,Asia,Western Asia,17.0,0.0084
+80,Athapaskans,CAN,Canada,North America,Northern America,2699752.2,0.8452
+80,Athapaskans,USA,United States of America,North America,Northern America,494617.1,0.1548
+81,Atonis,IDN,Indonesia,Asia,South-Eastern Asia,10207.1,0.9382
+81,Atonis,TLS,Timor-Leste,Asia,South-Eastern Asia,672.7,0.0618
+82,Australian aborigines,AUS,Australia,Oceania,Australia and New Zealand,3550203.8,1.0
+83,Australians,AUS,Australia,Oceania,Australia and New Zealand,3946154.3,1.0
+84,Austrians,AUT,Austria,Europe,Western Europe,82087.0,0.9161
+84,Austrians,ITA,Italy,Europe,Southern Europe,6365.6,0.071
+84,Austrians,DEU,Germany,Europe,Western Europe,402.2,0.0045
+84,Austrians,CZE,Czechia,Europe,Eastern Europe,361.8,0.004
+84,Austrians,HUN,Hungary,Europe,Eastern Europe,171.0,0.0019
+84,Austrians,LIE,Liechtenstein,Europe,Western Europe,124.4,0.0014
+84,Austrians,SVK,Slovakia,Europe,Eastern Europe,38.7,0.0004
+84,Austrians,CHE,Switzerland,Europe,Western Europe,31.7,0.0004
+84,Austrians,SVN,Slovenia,Europe,Southern Europe,23.6,0.0003
+85,Avars,RUS,Russia,Europe,Eastern Europe,16166.9,0.9786
+85,Avars,AZE,Azerbaijan,Asia,Western Asia,341.8,0.0207
+85,Avars,GEO,Georgia,Asia,Western Asia,11.2,0.0007
+86,Aymara,BOL,Bolivia,South America,South America,91738.4,0.6696
+86,Aymara,PER,Peru,South America,South America,34296.0,0.2503
+86,Aymara,CHL,Chile,South America,South America,10964.7,0.08
+87,Azande,COD,Dem. Rep. Congo,Africa,Middle Africa,122841.7,0.601
+87,Azande,SDS,S. Sudan,Africa,Eastern Africa,46259.0,0.2263
+87,Azande,CAF,Central African Rep.,Africa,Middle Africa,35287.9,0.1727
+88,Azerbaijanians,IRN,Iran,Asia,Southern Asia,102390.4,0.5625
+88,Azerbaijanians,AZE,Azerbaijan,Asia,Western Asia,70390.2,0.3867
+88,Azerbaijanians,ARM,Armenia,Asia,Western Asia,4535.9,0.0249
+88,Azerbaijanians,GEO,Georgia,Asia,Western Asia,3201.5,0.0176
+88,Azerbaijanians,RUS,Russia,Europe,Eastern Europe,1465.0,0.008
+88,Azerbaijanians,TUR,Turkey,Asia,Western Asia,36.2,0.0002
+89,Aztecs,MEX,Mexico,North America,Central America,40001.7,1.0
+91,Baboa,COD,Dem. Rep. Congo,Africa,Middle Africa,76255.7,1.0
+92,Bacairis,BRA,Brazil,South America,South America,18054.0,1.0
+93,Bade,NGA,Nigeria,Africa,Western Africa,18362.0,1.0
+94,Badui,IDN,Indonesia,Asia,South-Eastern Asia,145.7,1.0
+97,Baganda,UGA,Uganda,Africa,Eastern Africa,38588.2,1.0
+98,Bagirmi,TCD,Chad,Africa,Middle Africa,190284.6,0.7373
+98,Bagirmi,CAF,Central African Rep.,Africa,Middle Africa,36941.0,0.1431
+98,Bagirmi,SDS,S. Sudan,Africa,Eastern Africa,23745.8,0.092
+98,Bagirmi,SDN,Sudan,Africa,Northern Africa,4399.2,0.017
+98,Bagirmi,CMR,Cameroon,Africa,Middle Africa,2699.2,0.0105
+99,Bagobo,PHL,Philippines,Asia,South-Eastern Asia,3001.3,1.0
+100,Baha,TZA,Tanzania,Africa,Eastern Africa,30985.7,1.0
+101,Bahama Islanders,BHS,Bahamas,North America,Caribbean,10980.8,0.9795
+101,Bahama Islanders,TCA,Turks and Caicos Is.,North America,Caribbean,215.2,0.0192
+101,Bahama Islanders,BMU,Bermuda,North America,Northern America,14.5,0.0013
+103,Bahau,IDN,Indonesia,Asia,South-Eastern Asia,11006.1,1.0
+105,Bakare,CAF,Central African Rep.,Africa,Middle Africa,1951.3,0.9707
+105,Bakare,COD,Dem. Rep. Congo,Africa,Middle Africa,58.8,0.0293
+106,Bakele,GAB,Gabon,Africa,Middle Africa,95417.6,0.9339
+106,Bakele,COG,Congo,Africa,Middle Africa,6756.9,0.0661
+107,Bakhtiaris,IRN,Iran,Asia,Southern Asia,42033.1,1.0
+108,Bakian,IDN,Indonesia,Asia,South-Eastern Asia,3550.8,1.0
+109,Bakomo,COD,Dem. Rep. Congo,Africa,Middle Africa,93251.8,0.9712
+109,Bakomo,UGA,Uganda,Africa,Eastern Africa,2636.2,0.0275
+109,Bakomo,SDS,S. Sudan,Africa,Eastern Africa,126.7,0.0013
+110,Bakongo,COD,Dem. Rep. Congo,Africa,Middle Africa,156712.3,0.4692
+110,Bakongo,AGO,Angola,Africa,Middle Africa,136027.4,0.4073
+110,Bakongo,COG,Congo,Africa,Middle Africa,39715.9,0.1189
+110,Bakongo,GAB,Gabon,Africa,Middle Africa,1536.8,0.0046
+111,Bakonjo,COD,Dem. Rep. Congo,Africa,Middle Africa,13045.2,0.9601
+111,Bakonjo,UGA,Uganda,Africa,Eastern Africa,541.9,0.0399
+112,Bakota,GAB,Gabon,Africa,Middle Africa,38850.6,0.8073
+112,Bakota,COG,Congo,Africa,Middle Africa,9274.8,0.1927
+113,Bakuba,COD,Dem. Rep. Congo,Africa,Middle Africa,50800.3,1.0
+114,Balante,GNB,Guinea-Bissau,Africa,Western Africa,11269.2,0.9476
+114,Balante,SEN,Senegal,Africa,Western Africa,582.2,0.049
+114,Balante,GIN,Guinea,Africa,Western Africa,41.5,0.0035
+115,Balinese,IDN,Indonesia,Asia,South-Eastern Asia,5914.6,1.0
+116,Balkars,RUS,Russia,Europe,Eastern Europe,5252.0,1.0
+117,Baloch,PAK,Pakistan,Asia,Southern Asia,302170.0,0.5313
+117,Baloch,IRN,Iran,Asia,Southern Asia,209188.6,0.3678
+117,Baloch,AFG,Afghanistan,Asia,Southern Asia,57308.7,0.1008
+117,Baloch,TKM,Turkmenistan,Asia,Central Asia,72.2,0.0001
+118,Balozi,ZMB,Zambia,Africa,Eastern Africa,62271.3,0.9245
+118,Balozi,AGO,Angola,Africa,Middle Africa,4414.8,0.0655
+118,Balozi,NAM,Namibia,Africa,Southern Africa,669.0,0.0099
+119,Baltis,PAK,Pakistan,Asia,Southern Asia,10598.9,0.662
+119,Baltis,IND,India,Asia,Southern Asia,5404.8,0.3376
+119,Baltis,KAS,Siachen Glacier,Asia,Southern Asia,5.1,0.0003
+119,Baltis,CHN,China,Asia,Eastern Asia,2.4,0.0002
+120,Baluba,COD,Dem. Rep. Congo,Africa,Middle Africa,439377.9,1.0
+121,Baluhya,TZA,Tanzania,Africa,Eastern Africa,20125.3,0.4601
+121,Baluhya,KEN,Kenya,Africa,Eastern Africa,18423.9,0.4212
+121,Baluhya,UGA,Uganda,Africa,Eastern Africa,5192.3,0.1187
+122,Balunda,COD,Dem. Rep. Congo,Africa,Middle Africa,123179.3,0.6448
+122,Balunda,ZMB,Zambia,Africa,Eastern Africa,44613.6,0.2335
+122,Balunda,AGO,Angola,Africa,Middle Africa,23242.2,0.1217
+124,Bambundu,AGO,Angola,Africa,Middle Africa,180650.1,0.9858
+124,Bambundu,COD,Dem. Rep. Congo,Africa,Middle Africa,2604.6,0.0142
+125,Bamileke,CMR,Cameroon,Africa,Middle Africa,17551.6,1.0
+128,Banar,VNM,Vietnam,Asia,South-Eastern Asia,6704.4,1.0
+129,Banda,CAF,Central African Rep.,Africa,Middle Africa,434402.1,0.8465
+129,Banda,CMR,Cameroon,Africa,Middle Africa,36465.9,0.0711
+129,Banda,COD,Dem. Rep. Congo,Africa,Middle Africa,26684.3,0.052
+129,Banda,SDS,S. Sudan,Africa,Eastern Africa,10219.7,0.0199
+129,Banda,SDN,Sudan,Africa,Northern Africa,3536.3,0.0069
+129,Banda,TCD,Chad,Africa,Middle Africa,1843.2,0.0036
+129,Banda,COG,Congo,Africa,Middle Africa,19.5,0.0
+131,Banggai,IDN,Indonesia,Asia,South-Eastern Asia,2037.5,1.0
+132,Baniwe,BRA,Brazil,South America,South America,260817.1,0.7211
+132,Baniwe,VEN,Venezuela,South America,South America,62807.8,0.1736
+132,Baniwe,COL,Colombia,South America,South America,23247.5,0.0643
+132,Baniwe,GUY,Guyana,South America,South America,14844.2,0.041
+133,Banjarese,IDN,Indonesia,Asia,South-Eastern Asia,56861.0,1.0
+134,Bankoya and Wambuela,AGO,Angola,Africa,Middle Africa,86889.1,0.6751
+134,Bankoya and Wambuela,ZMB,Zambia,Africa,Eastern Africa,41813.7,0.3249
+135,Bantu-speaking Pygmy tribes,CMR,Cameroon,Africa,Middle Africa,68569.3,0.3303
+135,Bantu-speaking Pygmy tribes,COG,Congo,Africa,Middle Africa,62055.5,0.299
+135,Bantu-speaking Pygmy tribes,LBR,Liberia,Africa,Western Africa,27597.2,0.133
+135,Bantu-speaking Pygmy tribes,CAF,Central African Rep.,Africa,Middle Africa,16608.5,0.08
+135,Bantu-speaking Pygmy tribes,CIV,Côte d'Ivoire,Africa,Western Africa,15555.1,0.0749
+135,Bantu-speaking Pygmy tribes,COD,Dem. Rep. Congo,Africa,Middle Africa,12128.6,0.0584
+135,Bantu-speaking Pygmy tribes,GAB,Gabon,Africa,Middle Africa,3266.4,0.0157
+135,Bantu-speaking Pygmy tribes,RWA,Rwanda,Africa,Eastern Africa,1791.1,0.0086
+137,Banyaruanda,COD,Dem. Rep. Congo,Africa,Middle Africa,34939.9,0.5019
+137,Banyaruanda,RWA,Rwanda,Africa,Eastern Africa,23342.1,0.3353
+137,Banyaruanda,UGA,Uganda,Africa,Eastern Africa,8311.1,0.1194
+137,Banyaruanda,BDI,Burundi,Africa,Eastern Africa,2988.9,0.0429
+137,Banyaruanda,TZA,Tanzania,Africa,Eastern Africa,38.4,0.0006
+138,Banyoro,UGA,Uganda,Africa,Eastern Africa,37440.5,0.5394
+138,Banyoro,TZA,Tanzania,Africa,Eastern Africa,30474.9,0.439
+138,Banyoro,COD,Dem. Rep. Congo,Africa,Middle Africa,1372.8,0.0198
+138,Banyoro,RWA,Rwanda,Africa,Eastern Africa,128.6,0.0019
+140,Barba,BEN,Benin,Africa,Western Africa,46979.2,0.7856
+140,Barba,NGA,Nigeria,Africa,Western Africa,12587.8,0.2105
+140,Barba,TGO,Togo,Africa,Western Africa,201.9,0.0034
+140,Barba,NER,Niger,Africa,Western Africa,30.1,0.0005
+140,Barba,BFA,Burkina Faso,Africa,Western Africa,0.9,0.0
+142,Barea,ERI,Eritrea,Africa,Eastern Africa,3246.2,1.0
+143,Barega,COD,Dem. Rep. Congo,Africa,Middle Africa,56532.8,1.0
+144,Bari,SDS,S. Sudan,Africa,Eastern Africa,45376.3,0.9201
+144,Bari,COD,Dem. Rep. Congo,Africa,Middle Africa,1996.9,0.0405
+144,Bari,UGA,Uganda,Africa,Eastern Africa,1945.6,0.0395
+145,Bartangs,TJK,Tajikistan,Asia,Central Asia,6136.5,0.9986
+145,Bartangs,CHN,China,Asia,Eastern Asia,8.5,0.0014
+146,Barundi,BDI,Burundi,Africa,Eastern Africa,23919.0,0.6059
+146,Barundi,TZA,Tanzania,Africa,Eastern Africa,13440.3,0.3405
+146,Barundi,COD,Dem. Rep. Congo,Africa,Middle Africa,2074.4,0.0525
+146,Barundi,RWA,Rwanda,Africa,Eastern Africa,43.2,0.0011
+148,Basakata,COD,Dem. Rep. Congo,Africa,Middle Africa,84522.5,1.0
+149,Bashkirs,RUS,Russia,Europe,Eastern Europe,67060.9,1.0
+150,Basoga,UGA,Uganda,Africa,Eastern Africa,10881.4,1.0
+151,Basques,ESP,Spain,Europe,Southern Europe,11439.7,0.8084
+151,Basques,FRA,France,Europe,Western Europe,2712.0,0.1916
+153,Basubia,BWA,Botswana,Africa,Southern Africa,4176.6,0.3095
+153,Basubia,ZMB,Zambia,Africa,Eastern Africa,3484.0,0.2582
+153,Basubia,NAM,Namibia,Africa,Southern Africa,3172.5,0.2351
+153,Basubia,ZWE,Zimbabwe,Africa,Eastern Africa,2661.4,0.1972
+154,Basuto,ZAF,South Africa,Africa,Southern Africa,69406.0,0.6975
+154,Basuto,LSO,Lesotho,Africa,Southern Africa,30103.4,0.3025
+155,Bataks,IDN,Indonesia,Asia,South-Eastern Asia,38885.8,1.0
+157,Bateke,COG,Congo,Africa,Middle Africa,82392.5,0.7037
+157,Bateke,COD,Dem. Rep. Congo,Africa,Middle Africa,25755.9,0.22
+157,Bateke,GAB,Gabon,Africa,Middle Africa,8938.3,0.0763
+159,Batins,IDN,Indonesia,Asia,South-Eastern Asia,1113.0,1.0
+161,Bats,GEO,Georgia,Asia,Western Asia,54.7,1.0
+162,Baure,BOL,Bolivia,South America,South America,7691.0,0.9961
+162,Baure,BRA,Brazil,South America,South America,30.4,0.0039
+163,Bawenda,ZAF,South Africa,Africa,Southern Africa,12659.9,0.5405
+163,Bawenda,ZWE,Zimbabwe,Africa,Eastern Africa,10762.6,0.4595
+164,Bayat,MNG,Mongolia,Asia,Eastern Asia,20974.6,0.9858
+164,Bayat,RUS,Russia,Europe,Eastern Europe,302.7,0.0142
+166,Bechuanas,ZAF,South Africa,Africa,Southern Africa,261719.0,0.6622
+166,Bechuanas,BWA,Botswana,Africa,Southern Africa,126039.7,0.3189
+166,Bechuanas,ZWE,Zimbabwe,Africa,Eastern Africa,7473.4,0.0189
+167,Beja,SDN,Sudan,Africa,Northern Africa,251925.3,0.761
+167,Beja,EGY,Egypt,Africa,Northern Africa,39968.6,0.1207
+167,Beja,ERI,Eritrea,Africa,Eastern Africa,38646.3,0.1167
+167,Beja,BRT,Bir Tawil,Africa,Northern Africa,515.3,0.0016
+168,Bemba,ZMB,Zambia,Africa,Eastern Africa,323662.2,0.7782
+168,Bemba,COD,Dem. Rep. Congo,Africa,Middle Africa,92099.2,0.2214
+168,Bemba,MWI,Malawi,Africa,Eastern Africa,168.3,0.0004
+169,Bengalis,IND,India,Asia,Southern Asia,130031.4,0.4898
+169,Bengalis,BGD,Bangladesh,Asia,Southern Asia,126853.6,0.4778
+169,Bengalis,MMR,Myanmar,Asia,South-Eastern Asia,7617.5,0.0287
+169,Bengalis,NPL,Nepal,Asia,Southern Asia,675.4,0.0025
+169,Bengalis,BTN,Bhutan,Asia,Southern Asia,312.8,0.0012
+170,Benua,IDN,Indonesia,Asia,South-Eastern Asia,238.2,1.0
+173,Berta,ETH,Ethiopia,Africa,Eastern Africa,20571.6,0.4011
+173,Berta,SDS,S. Sudan,Africa,Eastern Africa,19842.4,0.3869
+173,Berta,SDN,Sudan,Africa,Northern Africa,10874.6,0.212
+174,Bete,CIV,Côte d'Ivoire,Africa,Western Africa,37701.6,1.0
+175,Bhils,IND,India,Asia,Southern Asia,54680.2,1.0
+176,Bhotias,NPL,Nepal,Asia,Southern Asia,18793.1,0.7012
+176,Bhotias,IND,India,Asia,Southern Asia,5115.8,0.1909
+176,Bhotias,CHN,China,Asia,Eastern Asia,2892.3,0.1079
+177,Bhumij,IND,India,Asia,Southern Asia,1476.5,1.0
+178,Biafada,GNB,Guinea-Bissau,Africa,Western Africa,576.8,1.0
+179,Biharis,IND,India,Asia,Southern Asia,209117.7,0.9535
+179,Biharis,NPL,Nepal,Asia,Southern Asia,10052.1,0.0458
+179,Biharis,BGD,Bangladesh,Asia,Southern Asia,154.6,0.0007
+180,Bikol,PHL,Philippines,Asia,South-Eastern Asia,12938.8,1.0
+181,Bilaan,PHL,Philippines,Asia,South-Eastern Asia,4216.9,1.0
+183,Bima,IDN,Indonesia,Asia,South-Eastern Asia,6508.6,1.0
+184,Bini,NGA,Nigeria,Africa,Western Africa,22464.9,1.0
+185,Birom and Jerawa,NGA,Nigeria,Africa,Western Africa,13185.9,1.0
+186,Bisaya,PHL,Philippines,Asia,South-Eastern Asia,89268.9,0.9978
+186,Bisaya,MYS,Malaysia,Asia,South-Eastern Asia,195.0,0.0022
+188,Bo and So,LAO,Laos,Asia,South-Eastern Asia,14150.1,0.9692
+188,Bo and So,VNM,Vietnam,Asia,South-Eastern Asia,449.6,0.0308
+189,Bobangi and Bangala,COG,Congo,Africa,Middle Africa,65673.9,0.6245
+189,Bobangi and Bangala,COD,Dem. Rep. Congo,Africa,Middle Africa,39487.7,0.3755
+190,Bobo,BFA,Burkina Faso,Africa,Western Africa,19332.0,0.9988
+190,Bobo,MLI,Mali,Africa,Western Africa,23.7,0.0012
+191,Bolaang-Mongondou,IDN,Indonesia,Asia,South-Eastern Asia,2751.0,1.0
+192,Bolivians,BOL,Bolivia,South America,South America,324281.2,0.9991
+192,Bolivians,BRA,Brazil,South America,South America,201.7,0.0006
+192,Bolivians,PRY,Paraguay,South America,South America,34.5,0.0001
+192,Bolivians,PER,Peru,South America,South America,31.0,0.0001
+192,Bolivians,ARG,Argentina,South America,South America,28.6,0.0001
+193,Boloven,LAO,Laos,Asia,South-Eastern Asia,6124.4,0.8417
+193,Boloven,KHM,Cambodia,Asia,South-Eastern Asia,1152.0,0.1583
+195,Bontok,PHL,Philippines,Asia,South-Eastern Asia,3052.4,1.0
+197,Bora,COL,Colombia,South America,South America,75810.2,0.9381
+197,Bora,PER,Peru,South America,South America,5002.7,0.0619
+198,Bororo,BRA,Brazil,South America,South America,42707.5,0.5453
+198,Bororo,BOL,Bolivia,South America,South America,35607.4,0.4547
+199,Boruca,CRI,Costa Rica,North America,Central America,635.8,1.0
+200,Bosnians,BIH,Bosnia and Herz.,Europe,Southern Europe,14501.6,0.9661
+200,Bosnians,MNE,Montenegro,Europe,Southern Europe,202.8,0.0135
+200,Bosnians,HRV,Croatia,Europe,Southern Europe,160.7,0.0107
+200,Bosnians,SRB,Serbia,Europe,Southern Europe,145.1,0.0097
+201,Botocudos,BRA,Brazil,South America,South America,3563.8,1.0
+202,Brahui,PAK,Pakistan,Asia,Southern Asia,64952.8,0.7402
+202,Brahui,AFG,Afghanistan,Asia,Southern Asia,17043.2,0.1942
+202,Brahui,IRN,Iran,Asia,Southern Asia,5749.1,0.0655
+203,Brazilians,BRA,Brazil,South America,South America,5000319.6,0.9986
+203,Brazilians,PRY,Paraguay,South America,South America,3214.2,0.0006
+203,Brazilians,ARG,Argentina,South America,South America,2919.9,0.0006
+203,Brazilians,BOL,Bolivia,South America,South America,501.6,0.0001
+203,Brazilians,PER,Peru,South America,South America,360.3,0.0001
+203,Brazilians,URY,Uruguay,South America,South America,143.9,0.0
+203,Brazilians,COL,Colombia,South America,South America,29.8,0.0
+203,Brazilians,FRA,France,Europe,Western Europe,4.6,0.0
+204,Bretons,FRA,France,Europe,Western Europe,14069.3,1.0
+205,Bribri,PAN,Panama,North America,Central America,1287.8,0.5139
+205,Bribri,CRI,Costa Rica,North America,Central America,1218.2,0.4861
+206,Bubi,GNQ,Eq. Guinea,Africa,Middle Africa,1955.7,1.0
+207,Budukhs,AZE,Azerbaijan,Asia,Western Asia,65.0,1.0
+208,Buginese,IDN,Indonesia,Asia,South-Eastern Asia,50745.3,0.949
+208,Buginese,MYS,Malaysia,Asia,South-Eastern Asia,2726.9,0.051
+211,Bukidnon,PHL,Philippines,Asia,South-Eastern Asia,6487.3,1.0
+212,Bulgarians,BGR,Bulgaria,Europe,Eastern Europe,107210.8,0.9439
+212,Bulgarians,UKR,Ukraine,Europe,Eastern Europe,3674.6,0.0324
+212,Bulgarians,SRB,Serbia,Europe,Southern Europe,1364.0,0.012
+212,Bulgarians,KAZ,Kazakhstan,Asia,Central Asia,493.8,0.0043
+212,Bulgarians,MDA,Moldova,Europe,Eastern Europe,469.5,0.0041
+212,Bulgarians,GRC,Greece,Europe,Southern Europe,168.7,0.0015
+212,Bulgarians,ROU,Romania,Europe,Eastern Europe,139.8,0.0012
+212,Bulgarians,TUR,Turkey,Asia,Western Asia,45.4,0.0004
+212,Bulgarians,RUS,Russia,Europe,Eastern Europe,16.1,0.0001
+212,Bulgarians,MKD,North Macedonia,Europe,Southern Europe,3.7,0.0
+214,Bungku,IDN,Indonesia,Asia,South-Eastern Asia,8048.1,1.0
+216,"Bura, Bata and Tera",NGA,Nigeria,Africa,Western Africa,12136.2,0.5617
+216,"Bura, Bata and Tera",CMR,Cameroon,Africa,Middle Africa,8981.7,0.4157
+216,"Bura, Bata and Tera",TCD,Chad,Africa,Middle Africa,486.5,0.0225
+217,Burmese,MMR,Myanmar,Asia,South-Eastern Asia,279355.1,0.9586
+217,Burmese,BGD,Bangladesh,Asia,Southern Asia,8848.6,0.0304
+217,Burmese,IND,India,Asia,Southern Asia,2919.9,0.01
+217,Burmese,THA,Thailand,Asia,South-Eastern Asia,301.6,0.001
+218,Buru,IDN,Indonesia,Asia,South-Eastern Asia,6492.4,1.0
+220,Burushaskis,PAK,Pakistan,Asia,Southern Asia,5958.8,0.9982
+220,Burushaskis,AFG,Afghanistan,Asia,Southern Asia,11.0,0.0018
+221,Buryats,RUS,Russia,Europe,Eastern Europe,251701.7,0.9164
+221,Buryats,MNG,Mongolia,Asia,Eastern Asia,22971.5,0.0836
+222,Busa,NGA,Nigeria,Africa,Western Africa,7893.0,0.4052
+222,Busa,BFA,Burkina Faso,Africa,Western Africa,7806.9,0.4008
+222,Busa,BEN,Benin,Africa,Western Africa,3526.8,0.1811
+222,Busa,TGO,Togo,Africa,Western Africa,138.6,0.0071
+222,Busa,GHA,Ghana,Africa,Western Africa,113.5,0.0058
+223,Bushmen,BWA,Botswana,Africa,Southern Africa,305951.8,0.6066
+223,Bushmen,NAM,Namibia,Africa,Southern Africa,157941.5,0.3132
+223,Bushmen,AGO,Angola,Africa,Middle Africa,21598.6,0.0428
+223,Bushmen,ZAF,South Africa,Africa,Southern Africa,10147.7,0.0201
+223,Bushmen,ZWE,Zimbabwe,Africa,Eastern Africa,8720.7,0.0173
+224,Bute,CMR,Cameroon,Africa,Middle Africa,33810.9,0.9918
+224,Bute,NGA,Nigeria,Africa,Western Africa,278.4,0.0082
+225,Butung,IDN,Indonesia,Asia,South-Eastern Asia,3438.0,1.0
+226,Byelorussians,BLR,Belarus,Europe,Eastern Europe,194459.7,0.9305
+226,Byelorussians,RUS,Russia,Europe,Eastern Europe,6412.6,0.0307
+226,Byelorussians,POL,Poland,Europe,Eastern Europe,5544.4,0.0265
+226,Byelorussians,UKR,Ukraine,Europe,Eastern Europe,914.4,0.0044
+226,Byelorussians,KAZ,Kazakhstan,Asia,Central Asia,847.0,0.0041
+226,Byelorussians,LVA,Latvia,Europe,Northern Europe,635.2,0.003
+226,Byelorussians,LTU,Lithuania,Europe,Northern Europe,173.4,0.0008
+226,Byelorussians,MDA,Moldova,Europe,Eastern Europe,1.5,0.0
+226,Byelorussians,FIN,Finland,Europe,Northern Europe,1.2,0.0
+227,Cabecar,CRI,Costa Rica,North America,Central America,2467.3,1.0
+232,Caingangs,BRA,Brazil,South America,South America,25030.9,1.0
+233,Caingua,BRA,Brazil,South America,South America,58107.0,0.643
+233,Caingua,ARG,Argentina,South America,South America,16564.2,0.1833
+233,Caingua,PRY,Paraguay,South America,South America,15694.2,0.1737
+241,Caolan,VNM,Vietnam,Asia,South-Eastern Asia,1132.9,1.0
+244,Caraja,BRA,Brazil,South America,South America,31200.5,1.0
+245,Carijon,COL,Colombia,South America,South America,31124.0,0.9999
+245,Carijon,PAN,Panama,North America,Central America,1.9,0.0001
+247,Caritiana,BRA,Brazil,South America,South America,18085.5,1.0
+249,Catalans,ESP,Spain,Europe,Southern Europe,46887.5,0.915
+249,Catalans,FRA,France,Europe,Western Europe,3675.9,0.0717
+249,Catalans,AND,Andorra,Europe,Southern Europe,450.8,0.0088
+249,Catalans,ITA,Italy,Europe,Southern Europe,226.7,0.0044
+252,Catukinas,BRA,Brazil,South America,South America,206360.7,1.0
+254,Cayapo,BRA,Brazil,South America,South America,781952.5,1.0
+254,Cayapo,PRY,Paraguay,South America,South America,6.2,0.0
+255,"Cayubaba, Yuracare",BOL,Bolivia,South America,South America,110992.6,1.0
+259,Cham,VNM,Vietnam,Asia,South-Eastern Asia,3185.6,0.5542
+259,Cham,KHM,Cambodia,Asia,South-Eastern Asia,2562.6,0.4458
+261,Chamba,CMR,Cameroon,Africa,Middle Africa,49338.0,0.7061
+261,Chamba,NGA,Nigeria,Africa,Western Africa,10575.1,0.1513
+261,Chamba,TCD,Chad,Africa,Middle Africa,7979.7,0.1142
+261,Chamba,NER,Niger,Africa,Western Africa,1978.3,0.0283
+261,Chamba,CAF,Central African Rep.,Africa,Middle Africa,4.7,0.0001
+262,Chamorros,GUM,Guam,Oceania,Micronesia,424.3,0.6641
+262,Chamorros,MNP,N. Mariana Is.,Oceania,Micronesia,214.6,0.3359
+263,Chane,BOL,Bolivia,South America,South America,109425.6,0.9261
+263,Chane,BRA,Brazil,South America,South America,6776.1,0.0573
+263,Chane,PER,Peru,South America,South America,1922.0,0.0163
+263,Chane,PRY,Paraguay,South America,South America,28.3,0.0002
+263,Chane,ARG,Argentina,South America,South America,6.0,0.0001
+265,Chaonam,THA,Thailand,Asia,South-Eastern Asia,234.3,1.0
+267,Chechens,RUS,Russia,Europe,Eastern Europe,11311.6,0.9537
+267,Chechens,KAZ,Kazakhstan,Asia,Central Asia,454.9,0.0384
+267,Chechens,GEO,Georgia,Asia,Western Asia,93.8,0.0079
+269,Chiang,CHN,China,Asia,Eastern Asia,7646.7,1.0
+272,Chileans,CHL,Chile,South America,South America,432447.2,0.9555
+272,Chileans,ARG,Argentina,South America,South America,19910.2,0.044
+272,Chileans,BOL,Bolivia,South America,South America,207.3,0.0005
+272,Chileans,PER,Peru,South America,South America,1.9,0.0
+274,Chinantecs,MEX,Mexico,North America,Central America,4074.4,1.0
+275,Chinese (Han),CHN,China,Asia,Eastern Asia,4090621.2,0.9791
+275,Chinese (Han),MYS,Malaysia,Asia,South-Eastern Asia,47708.3,0.0114
+275,Chinese (Han),TWN,Taiwan,Asia,Eastern Asia,19397.1,0.0046
+275,Chinese (Han),THA,Thailand,Asia,South-Eastern Asia,8533.5,0.002
+275,Chinese (Han),IDN,Indonesia,Asia,South-Eastern Asia,4992.5,0.0012
+275,Chinese (Han),MMR,Myanmar,Asia,South-Eastern Asia,2116.4,0.0005
+275,Chinese (Han),VNM,Vietnam,Asia,South-Eastern Asia,1716.1,0.0004
+275,Chinese (Han),RUS,Russia,Europe,Eastern Europe,873.4,0.0002
+275,Chinese (Han),HKG,Hong Kong,Asia,Eastern Asia,819.3,0.0002
+275,Chinese (Han),PRK,North Korea,Asia,Eastern Asia,523.1,0.0001
+275,Chinese (Han),SGP,Singapore,Asia,South-Eastern Asia,494.6,0.0001
+275,Chinese (Han),LAO,Laos,Asia,South-Eastern Asia,27.3,0.0
+275,Chinese (Han),MAC,Macao,Asia,Eastern Asia,6.9,0.0
+280,Chocos,PAN,Panama,North America,Central America,8462.9,0.9794
+280,Chocos,COL,Colombia,South America,South America,177.9,0.0206
+282,Choli,MEX,Mexico,North America,Central America,6234.2,1.0
+283,Chontal of Oaxaca State,MEX,Mexico,North America,Central America,2425.7,1.0
+285,Chorotegi-Mange,CRI,Costa Rica,North America,Central America,557.5,0.9715
+285,Chorotegi-Mange,NIC,Nicaragua,North America,Central America,16.4,0.0285
+287,Chorti,GTM,Guatemala,North America,Central America,866.0,0.9766
+287,Chorti,HND,Honduras,North America,Central America,20.7,0.0234
+288,Chuang,CHN,China,Asia,Eastern Asia,118027.0,0.9896
+288,Chuang,VNM,Vietnam,Asia,South-Eastern Asia,1234.9,0.0104
+289,Chuj,GTM,Guatemala,North America,Central America,815.0,0.8741
+289,Chuj,MEX,Mexico,North America,Central America,117.4,0.1259
+290,Chukchi,RUS,Russia,Europe,Eastern Europe,628618.0,1.0
+291,Chuvashes,RUS,Russia,Europe,Eastern Europe,36669.4,1.0
+292,Circassians,TUR,Turkey,Asia,Western Asia,14834.5,0.7781
+292,Circassians,JOR,Jordan,Asia,Western Asia,1612.1,0.0846
+292,Circassians,RUS,Russia,Europe,Eastern Europe,970.8,0.0509
+292,Circassians,IRQ,Iraq,Asia,Western Asia,805.5,0.0422
+292,Circassians,SYR,Syria,Asia,Western Asia,738.4,0.0387
+292,Circassians,ISR,Israel,Asia,Western Asia,103.2,0.0054
+294,Cocamas,BRA,Brazil,South America,South America,8728.2,0.6695
+294,Cocamas,PER,Peru,South America,South America,4309.5,0.3305
+295,Columbians,COL,Colombia,South America,South America,551114.1,0.9987
+295,Columbians,VEN,Venezuela,South America,South America,462.3,0.0008
+295,Columbians,ECU,Ecuador,South America,South America,78.4,0.0001
+295,Columbians,BRA,Brazil,South America,South America,67.4,0.0001
+295,Columbians,PAN,Panama,North America,Central America,57.0,0.0001
+295,Columbians,PER,Peru,South America,South America,53.3,0.0001
+298,Cook Islanders or Cook,COK,Cook Is.,Oceania,Polynesia,130.3,1.0
+299,Cora,MEX,Mexico,North America,Central America,3027.8,1.0
+300,"Coreguaje, Sioni, etc.",COL,Colombia,South America,South America,57413.8,0.363
+300,"Coreguaje, Sioni, etc.",PER,Peru,South America,South America,45447.7,0.2873
+300,"Coreguaje, Sioni, etc.",BRA,Brazil,South America,South America,41543.5,0.2627
+300,"Coreguaje, Sioni, etc.",ECU,Ecuador,South America,South America,13761.9,0.087
+301,Corsicans,FRA,France,Europe,Western Europe,8547.2,1.0
+302,Costa Ricans,CRI,Costa Rica,North America,Central America,44058.3,0.9926
+302,Costa Ricans,NIC,Nicaragua,North America,Central America,174.1,0.0039
+302,Costa Ricans,PAN,Panama,North America,Central America,155.9,0.0035
+303,Cree,CAN,Canada,North America,Northern America,5600.3,1.0
+305,Croats,HRV,Croatia,Europe,Southern Europe,43764.0,0.7566
+305,Croats,BIH,Bosnia and Herz.,Europe,Southern Europe,10663.5,0.1843
+305,Croats,SRB,Serbia,Europe,Southern Europe,1123.0,0.0194
+305,Croats,SVN,Slovenia,Europe,Southern Europe,1003.6,0.0173
+305,Croats,AUT,Austria,Europe,Western Europe,416.3,0.0072
+305,Croats,HUN,Hungary,Europe,Eastern Europe,345.9,0.006
+305,Croats,ITA,Italy,Europe,Southern Europe,302.4,0.0052
+305,Croats,KOS,Kosovo,Europe,Southern Europe,111.5,0.0019
+305,Croats,MNE,Montenegro,Europe,Southern Europe,83.9,0.0015
+305,Croats,MKD,North Macedonia,Europe,Southern Europe,32.2,0.0006
+306,Cubans,CUB,Cuba,North America,Caribbean,107390.4,0.9994
+306,Cubans,USG,USNB Guantanamo Bay,North America,Caribbean,61.9,0.0006
+307,Cuicatecs,MEX,Mexico,North America,Central America,1801.6,1.0
+310,Cunas,PAN,Panama,North America,Central America,8764.4,0.9954
+310,Cunas,COL,Colombia,South America,South America,40.4,0.0046
+312,Curaçao Islanders,CUW,Curaçao,North America,Caribbean,441.2,0.5064
+312,Curaçao Islanders,NLD,Netherlands,Europe,Western Europe,264.5,0.3035
+312,Curaçao Islanders,ABW,Aruba,North America,Caribbean,165.6,0.19
+317,Custenaus,BRA,Brazil,South America,South America,5207.3,1.0
+318,Czechs,CZE,Czechia,Europe,Eastern Europe,76674.8,0.9815
+318,Czechs,POL,Poland,Europe,Eastern Europe,500.4,0.0064
+318,Czechs,DEU,Germany,Europe,Western Europe,273.9,0.0035
+318,Czechs,SVK,Slovakia,Europe,Eastern Europe,257.0,0.0033
+318,Czechs,ROU,Romania,Europe,Eastern Europe,187.0,0.0024
+318,Czechs,HRV,Croatia,Europe,Southern Europe,142.2,0.0018
+318,Czechs,AUT,Austria,Europe,Western Europe,59.6,0.0008
+318,Czechs,SRB,Serbia,Europe,Southern Europe,23.6,0.0003
+319,Dagada,TLS,Timor-Leste,Asia,South-Eastern Asia,1786.3,1.0
+320,Dagh Chufuti,RUS,Russia,Europe,Eastern Europe,25.7,0.5406
+320,Dagh Chufuti,AZE,Azerbaijan,Asia,Western Asia,21.8,0.4594
+321,Dago,TCD,Chad,Africa,Middle Africa,12499.7,0.6408
+321,Dago,SDN,Sudan,Africa,Northern Africa,5743.8,0.2945
+321,Dago,SDS,S. Sudan,Africa,Eastern Africa,1262.5,0.0647
+322,Dahurs,CHN,China,Asia,Eastern Asia,12432.1,0.9973
+322,Dahurs,KAZ,Kazakhstan,Asia,Central Asia,34.0,0.0027
+324,Danakil,ETH,Ethiopia,Africa,Eastern Africa,80733.9,0.6058
+324,Danakil,ERI,Eritrea,Africa,Eastern Africa,30800.6,0.2311
+324,Danakil,DJI,Djibouti,Africa,Eastern Africa,21627.0,0.1623
+324,Danakil,SOL,Somaliland,Africa,Eastern Africa,110.6,0.0008
+325,Danes,DNK,Denmark,Europe,Northern Europe,41326.7,0.9979
+325,Danes,DEU,Germany,Europe,Western Europe,87.0,0.0021
+326,Därbäts,MNG,Mongolia,Asia,Eastern Asia,57819.8,0.9963
+326,Därbäts,RUS,Russia,Europe,Eastern Europe,217.1,0.0037
+326,Därbäts,CHN,China,Asia,Eastern Asia,0.1,0.0
+327,Dargwa or Dargins,RUS,Russia,Europe,Eastern Europe,7205.3,1.0
+328,Darkhat,MNG,Mongolia,Asia,Eastern Asia,19971.2,0.9951
+328,Darkhat,RUS,Russia,Europe,Eastern Europe,98.2,0.0049
+332,Dinka,SDS,S. Sudan,Africa,Eastern Africa,154287.0,0.9365
+332,Dinka,SDN,Sudan,Africa,Northern Africa,10467.2,0.0635
+333,Diola,SEN,Senegal,Africa,Western Africa,6898.1,0.7736
+333,Diola,GNB,Guinea-Bissau,Africa,Western Africa,1477.0,0.1657
+333,Diola,GMB,Gambia,Africa,Western Africa,541.2,0.0607
+335,Dogon,BFA,Burkina Faso,Africa,Western Africa,3519.2,0.9566
+335,Dogon,MLI,Mali,Africa,Western Africa,159.5,0.0434
+336,Dolgans,RUS,Russia,Europe,Eastern Europe,307148.0,1.0
+337,Dominicans,DOM,Dominican Rep.,North America,Caribbean,47848.0,0.9997
+337,Dominicans,HTI,Haiti,North America,Caribbean,13.1,0.0003
+338,Duala,CMR,Cameroon,Africa,Middle Africa,44081.7,0.9664
+338,Duala,GNQ,Eq. Guinea,Africa,Middle Africa,1531.6,0.0336
+339,Dusuns,MYS,Malaysia,Asia,South-Eastern Asia,43725.9,0.984
+339,Dusuns,BRN,Brunei,Asia,South-Eastern Asia,712.2,0.016
+340,Dutch,NLD,Netherlands,Europe,Western Europe,32012.5,0.9876
+340,Dutch,DEU,Germany,Europe,Western Europe,360.5,0.0111
+340,Dutch,BEL,Belgium,Europe,Western Europe,43.0,0.0013
+341,Dutch-speaking population of Guiana,SUR,Suriname,South America,South America,104410.8,0.9976
+341,Dutch-speaking population of Guiana,FRA,France,Europe,Western Europe,137.2,0.0013
+341,Dutch-speaking population of Guiana,GUY,Guyana,South America,South America,109.6,0.001
+344,Ecuadorians,ECU,Ecuador,South America,South America,98229.6,0.9752
+344,Ecuadorians,PER,Peru,South America,South America,2333.6,0.0232
+344,Ecuadorians,COL,Colombia,South America,South America,166.4,0.0017
+345,Ede,VNM,Vietnam,Asia,South-Eastern Asia,11879.9,1.0
+348,Engganese,IDN,Indonesia,Asia,South-Eastern Asia,374.1,1.0
+349,English Canadians,CAN,Canada,North America,Northern America,2283943.0,0.9964
+349,English Canadians,USA,United States of America,North America,Northern America,8310.0,0.0036
+350,English Irish and Scotch Irish,GBR,United Kingdom,Europe,Northern Europe,14012.9,0.9884
+350,English Irish and Scotch Irish,IRL,Ireland,Europe,Northern Europe,164.2,0.0116
+351,Englishmen,GBR,United Kingdom,Europe,Northern Europe,139254.2,0.8735
+351,Englishmen,ZAF,South Africa,Africa,Southern Africa,19443.2,0.122
+351,Englishmen,IMN,Isle of Man,Europe,Northern Europe,559.7,0.0035
+351,Englishmen,JEY,Jersey,Europe,Northern Europe,112.4,0.0007
+351,Englishmen,GGY,Guernsey,Europe,Northern Europe,59.2,0.0004
+352,English-speaking population of British Honduras,BLZ,Belize,North America,Central America,8520.5,1.0
+353,English-speaking population of Guiana,GUY,Guyana,South America,South America,118108.9,0.9985
+353,English-speaking population of Guiana,SUR,Suriname,South America,South America,101.3,0.0009
+353,English-speaking population of Guiana,BRA,Brazil,South America,South America,69.8,0.0006
+353,English-speaking population of Guiana,VEN,Venezuela,South America,South America,0.4,0.0
+354,English-speaking population of the Lesser Antilles,DMA,Dominica,North America,Caribbean,715.1,0.208
+354,English-speaking population of the Lesser Antilles,LCA,Saint Lucia,North America,Caribbean,596.8,0.1736
+354,English-speaking population of the Lesser Antilles,ATG,Antigua and Barb.,North America,Caribbean,442.4,0.1287
+354,English-speaking population of the Lesser Antilles,VCT,St. Vin. and Gren.,North America,Caribbean,324.9,0.0945
+354,English-speaking population of the Lesser Antilles,GRD,Grenada,North America,Caribbean,307.9,0.0896
+354,English-speaking population of the Lesser Antilles,TTO,Trinidad and Tobago,North America,Caribbean,279.9,0.0814
+354,English-speaking population of the Lesser Antilles,VIR,U.S. Virgin Is.,North America,Caribbean,197.8,0.0575
+354,English-speaking population of the Lesser Antilles,KNA,St. Kitts and Nevis,North America,Caribbean,171.4,0.0499
+354,English-speaking population of the Lesser Antilles,FRA,France,Europe,Western Europe,147.9,0.043
+354,English-speaking population of the Lesser Antilles,MSR,Montserrat,North America,Caribbean,97.6,0.0284
+354,English-speaking population of the Lesser Antilles,VGB,British Virgin Is.,North America,Caribbean,81.8,0.0238
+354,English-speaking population of the Lesser Antilles,AIA,Anguilla,North America,Caribbean,74.3,0.0216
+355,Ens,RUS,Russia,Europe,Eastern Europe,40291.9,1.0
+357,Eskimos,CAN,Canada,North America,Northern America,654864.8,0.5899
+357,Eskimos,USA,United States of America,North America,Northern America,293323.1,0.2642
+357,Eskimos,GRL,Greenland,North America,Northern America,158147.5,0.1425
+357,Eskimos,RUS,Russia,Europe,Eastern Europe,3737.9,0.0034
+358,Estonians,EST,Estonia,Europe,Northern Europe,43460.2,0.9127
+358,Estonians,RUS,Russia,Europe,Eastern Europe,3920.2,0.0823
+358,Estonians,LVA,Latvia,Europe,Northern Europe,160.5,0.0034
+358,Estonians,KAZ,Kazakhstan,Asia,Central Asia,49.8,0.001
+358,Estonians,GEO,Georgia,Asia,Western Asia,24.6,0.0005
+360,Evenks (incl. Hamnigans),RUS,Russia,Europe,Eastern Europe,2628893.1,0.9927
+360,Evenks (incl. Hamnigans),CHN,China,Asia,Eastern Asia,18405.6,0.007
+360,Evenks (incl. Hamnigans),MNG,Mongolia,Asia,Eastern Asia,914.7,0.0003
+361,Evens,RUS,Russia,Europe,Eastern Europe,1112100.4,1.0
+362,Ewe,BEN,Benin,Africa,Western Africa,21428.2,0.4911
+362,Ewe,TGO,Togo,Africa,Western Africa,14055.9,0.3221
+362,Ewe,GHA,Ghana,Africa,Western Africa,6882.9,0.1577
+362,Ewe,NGA,Nigeria,Africa,Western Africa,1266.9,0.029
+363,Falkland Islanders,FLK,Falkland Is.,South America,South America,10620.8,1.0
+364,Fang,GAB,Gabon,Africa,Middle Africa,78692.7,0.4769
+364,Fang,CMR,Cameroon,Africa,Middle Africa,62669.2,0.3798
+364,Fang,GNQ,Eq. Guinea,Africa,Middle Africa,22459.8,0.1361
+364,Fang,STP,São Tomé and Principe,Africa,Middle Africa,1027.8,0.0062
+364,Fang,COG,Congo,Africa,Middle Africa,160.2,0.001
+365,Faroer Islanders,FRO,Faeroe Is.,Europe,Northern Europe,1163.8,1.0
+366,Fijians,FJI,Fiji,Oceania,Melanesia,11874.5,1.0
+367,Finns,FIN,Finland,Europe,Northern Europe,320810.2,0.9335
+367,Finns,USA,United States of America,North America,Northern America,15704.4,0.0457
+367,Finns,SWE,Sweden,Europe,Northern Europe,5223.4,0.0152
+367,Finns,RUS,Russia,Europe,Eastern Europe,999.2,0.0029
+367,Finns,NOR,Norway,Europe,Northern Europe,927.2,0.0027
+368,Firoz-Kohis,AFG,Afghanistan,Asia,Southern Asia,11757.4,1.0
+369,Flemings,BEL,Belgium,Europe,Western Europe,13349.0,0.9409
+369,Flemings,FRA,France,Europe,Western Europe,611.2,0.0431
+369,Flemings,NLD,Netherlands,Europe,Western Europe,226.7,0.016
+370,French,FRA,France,Europe,Western Europe,513042.2,0.9651
+370,French,USA,United States of America,North America,Northern America,7407.6,0.0139
+370,French,NCL,New Caledonia,Oceania,Melanesia,6846.9,0.0129
+370,French,ITA,Italy,Europe,Southern Europe,3376.2,0.0064
+370,French,BEL,Belgium,Europe,Western Europe,420.1,0.0008
+370,French,CHE,Switzerland,Europe,Western Europe,296.4,0.0006
+370,French,SYC,Seychelles,Seven seas (open ocean),Eastern Africa,143.5,0.0003
+370,French,ESP,Spain,Europe,Southern Europe,41.7,0.0001
+370,French,LUX,Luxembourg,Europe,Western Europe,29.3,0.0001
+370,French,MCO,Monaco,Europe,Western Europe,6.9,0.0
+370,French,DEU,Germany,Europe,Western Europe,4.2,0.0
+370,French,AND,Andorra,Europe,Southern Europe,1.5,0.0
+371,French Canadians,CAN,Canada,North America,Northern America,538709.8,0.9422
+371,French Canadians,USA,United States of America,North America,Northern America,33058.1,0.0578
+372,French Swiss,CHE,Switzerland,Europe,Western Europe,9833.7,0.9882
+372,French Swiss,FRA,France,Europe,Western Europe,114.3,0.0115
+372,French Swiss,ITA,Italy,Europe,Southern Europe,2.9,0.0003
+373,French-speaking population of Guiana,FRA,France,Europe,Western Europe,67873.6,0.9957
+373,French-speaking population of Guiana,BRA,Brazil,South America,South America,192.1,0.0028
+373,French-speaking population of Guiana,SUR,Suriname,South America,South America,104.2,0.0015
+374,French-speaking population of the Lesser Antilles,FRA,France,Europe,Western Europe,2447.5,1.0
+375,Frisians,NLD,Netherlands,Europe,Western Europe,2950.8,0.8581
+375,Frisians,DEU,Germany,Europe,Western Europe,481.8,0.1401
+375,Frisians,DNK,Denmark,Europe,Northern Europe,6.1,0.0018
+376,Fulbe,SEN,Senegal,Africa,Western Africa,78860.7,0.2076
+376,Fulbe,MLI,Mali,Africa,Western Africa,73783.8,0.1943
+376,Fulbe,GIN,Guinea,Africa,Western Africa,64627.9,0.1702
+376,Fulbe,NGA,Nigeria,Africa,Western Africa,61751.0,0.1626
+376,Fulbe,CMR,Cameroon,Africa,Middle Africa,37102.5,0.0977
+376,Fulbe,MRT,Mauritania,Africa,Western Africa,24427.4,0.0643
+376,Fulbe,BFA,Burkina Faso,Africa,Western Africa,16881.7,0.0445
+376,Fulbe,NER,Niger,Africa,Western Africa,15194.7,0.04
+376,Fulbe,GNB,Guinea-Bissau,Africa,Western Africa,3312.1,0.0087
+376,Fulbe,BEN,Benin,Africa,Western Africa,1822.1,0.0048
+376,Fulbe,TCD,Chad,Africa,Middle Africa,1051.0,0.0028
+376,Fulbe,CIV,Côte d'Ivoire,Africa,Western Africa,650.3,0.0017
+376,Fulbe,TGO,Togo,Africa,Western Africa,289.7,0.0008
+376,Fulbe,SLE,Sierra Leone,Africa,Western Africa,25.5,0.0001
+379,Gadabas,IND,India,Asia,Southern Asia,2717.5,1.0
+380,Gaddangs,PHL,Philippines,Asia,South-Eastern Asia,347.4,1.0
+381,Gaels,GBR,United Kingdom,Europe,Northern Europe,10891.4,1.0
+382,Gagauz,MDA,Moldova,Europe,Eastern Europe,895.0,0.7861
+382,Gagauz,UKR,Ukraine,Europe,Eastern Europe,156.1,0.1371
+382,Gagauz,BGR,Bulgaria,Europe,Eastern Europe,87.4,0.0768
+383,"Galelos, Lolod, Ibu (Ibo)",IDN,Indonesia,Asia,South-Eastern Asia,4111.0,1.0
+384,Galesh,IRN,Iran,Asia,Southern Asia,2003.9,1.0
+385,Galibis,BRA,Brazil,South America,South America,10568.7,0.837
+385,Galibis,SUR,Suriname,South America,South America,1975.3,0.1564
+385,Galibis,GUY,Guyana,South America,South America,78.9,0.0062
+385,Galibis,FRA,France,Europe,Western Europe,3.6,0.0003
+386,Galicians,ESP,Spain,Europe,Southern Europe,34678.1,0.9971
+386,Galicians,PRT,Portugal,Europe,Southern Europe,99.6,0.0029
+387,Galla,ETH,Ethiopia,Africa,Eastern Africa,327613.5,0.7078
+387,Galla,KEN,Kenya,Africa,Eastern Africa,135216.7,0.2922
+388,Garifs (Black Caribs),BLZ,Belize,North America,Central America,1505.1,0.9092
+388,Garifs (Black Caribs),GTM,Guatemala,North America,Central America,150.2,0.0908
+389,Garos,IND,India,Asia,Southern Asia,11222.8,0.9987
+389,Garos,BGD,Bangladesh,Asia,Southern Asia,14.7,0.0013
+391,Gayos,IDN,Indonesia,Asia,South-Eastern Asia,12128.3,1.0
+393,Gbaya,COD,Dem. Rep. Congo,Africa,Middle Africa,19859.5,1.0
+395,Georgians,GEO,Georgia,Asia,Western Asia,51091.5,0.8883
+395,Georgians,TUR,Turkey,Asia,Western Asia,4212.3,0.0732
+395,Georgians,RUS,Russia,Europe,Eastern Europe,1291.3,0.0225
+395,Georgians,IRN,Iran,Asia,Southern Asia,554.4,0.0096
+395,Georgians,AZE,Azerbaijan,Asia,Western Asia,367.8,0.0064
+396,Gere,LBR,Liberia,Africa,Western Africa,23166.7,0.63
+396,Gere,CIV,Côte d'Ivoire,Africa,Western Africa,13604.8,0.37
+397,German Swiss,CHE,Switzerland,Europe,Western Europe,23437.6,0.9853
+397,German Swiss,ITA,Italy,Europe,Southern Europe,143.0,0.006
+397,German Swiss,DEU,Germany,Europe,Western Europe,136.8,0.0058
+397,German Swiss,AUT,Austria,Europe,Western Europe,50.1,0.0021
+397,German Swiss,LIE,Liechtenstein,Europe,Western Europe,12.9,0.0005
+397,German Swiss,FRA,France,Europe,Western Europe,6.7,0.0003
+398,Germans,DEU,Germany,Europe,Western Europe,354576.5,0.7127
+398,Germans,KAZ,Kazakhstan,Asia,Central Asia,43367.9,0.0872
+398,Germans,BRA,Brazil,South America,South America,34805.7,0.07
+398,Germans,CAN,Canada,North America,Northern America,22925.1,0.0461
+398,Germans,RUS,Russia,Europe,Eastern Europe,12143.3,0.0244
+398,Germans,ROU,Romania,Europe,Eastern Europe,7189.6,0.0145
+398,Germans,PRY,Paraguay,South America,South America,6410.9,0.0129
+398,Germans,HUN,Hungary,Europe,Eastern Europe,4699.7,0.0094
+398,Germans,USA,United States of America,North America,Northern America,3879.0,0.0078
+398,Germans,CHL,Chile,South America,South America,3837.8,0.0077
+398,Germans,BEL,Belgium,Europe,Western Europe,1183.4,0.0024
+398,Germans,KGZ,Kyrgyzstan,Asia,Central Asia,692.7,0.0014
+398,Germans,CZE,Czechia,Europe,Eastern Europe,507.8,0.001
+398,Germans,AUT,Austria,Europe,Western Europe,384.9,0.0008
+398,Germans,POL,Poland,Europe,Eastern Europe,311.3,0.0006
+398,Germans,NLD,Netherlands,Europe,Western Europe,149.6,0.0003
+398,Germans,CHE,Switzerland,Europe,Western Europe,95.4,0.0002
+398,Germans,LUX,Luxembourg,Europe,Western Europe,74.2,0.0001
+398,Germans,UKR,Ukraine,Europe,Eastern Europe,71.3,0.0001
+398,Germans,DNK,Denmark,Europe,Northern Europe,59.7,0.0001
+398,Germans,SRB,Serbia,Europe,Southern Europe,56.1,0.0001
+398,Germans,FRA,France,Europe,Western Europe,53.5,0.0001
+398,Germans,ARG,Argentina,South America,South America,6.1,0.0
+398,Germans,HRV,Croatia,Europe,Southern Europe,2.3,0.0
+399,Gilaki,IRN,Iran,Asia,Southern Asia,8090.3,1.0
+403,Goajiro,COL,Colombia,South America,South America,10449.8,0.9949
+403,Goajiro,VEN,Venezuela,South America,South America,53.2,0.0051
+404,Gola,NER,Niger,Africa,Western Africa,68030.6,0.8818
+404,Gola,LBR,Liberia,Africa,Western Africa,8397.0,0.1088
+404,Gola,SLE,Sierra Leone,Africa,Western Africa,566.9,0.0073
+404,Gola,TCD,Chad,Africa,Middle Africa,156.4,0.002
+405,Gonds,IND,India,Asia,Southern Asia,64703.7,1.0
+406,Gorontalos,IDN,Indonesia,Asia,South-Eastern Asia,20424.8,1.0
+408,Greeks,GRC,Greece,Europe,Southern Europe,123416.7,0.8902
+408,Greeks,CYP,Cyprus,Asia,Western Asia,5365.3,0.0387
+408,Greeks,CYN,N. Cyprus,Asia,Western Asia,3113.2,0.0225
+408,Greeks,TUR,Turkey,Asia,Western Asia,1478.0,0.0107
+408,Greeks,ALB,Albania,Europe,Southern Europe,1402.7,0.0101
+408,Greeks,UKR,Ukraine,Europe,Eastern Europe,1352.2,0.0098
+408,Greeks,GEO,Georgia,Asia,Western Asia,652.1,0.0047
+408,Greeks,ITA,Italy,Europe,Southern Europe,568.1,0.0041
+408,Greeks,RUS,Russia,Europe,Eastern Europe,396.1,0.0029
+408,Greeks,CNM,Cyprus U.N. Buffer Zone,Asia,Western Asia,340.6,0.0025
+408,Greeks,BGR,Bulgaria,Europe,Eastern Europe,207.8,0.0015
+408,Greeks,ESB,Dhekelia,Asia,Western Asia,127.0,0.0009
+408,Greeks,ARM,Armenia,Asia,Western Asia,116.8,0.0008
+408,Greeks,MKD,North Macedonia,Europe,Southern Europe,73.6,0.0005
+408,Greeks,WSB,Akrotiri,Asia,Western Asia,29.5,0.0002
+409,Grusi,BFA,Burkina Faso,Africa,Western Africa,27646.5,0.754
+409,Grusi,GHA,Ghana,Africa,Western Africa,8916.6,0.2432
+409,Grusi,CIV,Côte d'Ivoire,Africa,Western Africa,105.6,0.0029
+412,Guana,BRA,Brazil,South America,South America,25072.9,0.8065
+412,Guana,PRY,Paraguay,South America,South America,6016.0,0.1935
+414,Guarañoco,BOL,Bolivia,South America,South America,65055.6,0.5809
+414,Guarañoco,PRY,Paraguay,South America,South America,43786.6,0.391
+414,Guarañoco,BRA,Brazil,South America,South America,3157.6,0.0282
+416,Guatemalians,GTM,Guatemala,North America,Central America,64699.2,0.9922
+416,Guatemalians,MEX,Mexico,North America,Central America,218.1,0.0033
+416,Guatemalians,BLZ,Belize,North America,Central America,170.8,0.0026
+416,Guatemalians,HND,Honduras,North America,Central America,73.1,0.0011
+416,Guatemalians,SLV,El Salvador,North America,Central America,49.7,0.0008
+417,Guato,BRA,Brazil,South America,South America,14612.4,1.0
+418,Guatuso,CRI,Costa Rica,North America,Central America,1047.1,1.0
+420,Guaymi,PAN,Panama,North America,Central America,7793.5,1.0
+421,Guayupe and Marawa,VEN,Venezuela,South America,South America,9304.0,0.5123
+421,Guayupe and Marawa,COL,Colombia,South America,South America,6391.0,0.3519
+421,Guayupe and Marawa,BRA,Brazil,South America,South America,2465.2,0.1357
+422,Gujaratis,IND,India,Asia,Southern Asia,184504.8,0.9983
+422,Gujaratis,PAK,Pakistan,Asia,Southern Asia,313.4,0.0017
+423,Gujars,PAK,Pakistan,Asia,Southern Asia,7662.2,0.5571
+423,Gujars,IND,India,Asia,Southern Asia,6092.5,0.4429
+425,Gurma,BFA,Burkina Faso,Africa,Western Africa,39463.5,0.6316
+425,Gurma,TGO,Togo,Africa,Western Africa,9878.9,0.1581
+425,Gurma,NER,Niger,Africa,Western Africa,7222.2,0.1156
+425,Gurma,GHA,Ghana,Africa,Western Africa,5787.8,0.0926
+425,Gurma,BEN,Benin,Africa,Western Africa,131.6,0.0021
+426,Gurungs,NPL,Nepal,Asia,Southern Asia,5993.3,1.0
+427,Hadzapi,TZA,Tanzania,Africa,Eastern Africa,3144.8,1.0
+428,Haida,CAN,Canada,North America,Northern America,16044.6,1.0
+429,Haitians,HTI,Haiti,North America,Caribbean,26444.0,0.9904
+429,Haitians,DOM,Dominican Rep.,North America,Caribbean,255.2,0.0096
+430,Hani,CHN,China,Asia,Eastern Asia,23949.4,0.5657
+430,Hani,LAO,Laos,Asia,South-Eastern Asia,7744.9,0.1829
+430,Hani,VNM,Vietnam,Asia,South-Eastern Asia,5536.7,0.1308
+430,Hani,MMR,Myanmar,Asia,South-Eastern Asia,5107.1,0.1206
+432,Hausa,NGA,Nigeria,Africa,Western Africa,221176.8,0.8272
+432,Hausa,NER,Niger,Africa,Western Africa,46125.0,0.1725
+432,Hausa,BEN,Benin,Africa,Western Africa,93.0,0.0003
+433,Hawaiians,USA,United States of America,North America,Northern America,5751.4,1.0
+434,Hazara-Berberi,AFG,Afghanistan,Asia,Southern Asia,82425.2,0.9565
+434,Hazara-Berberi,IRN,Iran,Asia,Southern Asia,3749.3,0.0435
+435,Hazara-Deh-i-Zainat,AFG,Afghanistan,Asia,Southern Asia,3617.5,0.9992
+435,Hazara-Deh-i-Zainat,TKM,Turkmenistan,Asia,Central Asia,3.0,0.0008
+436,Herero,NAM,Namibia,Africa,Southern Africa,206939.9,0.9225
+436,Herero,AGO,Angola,Africa,Middle Africa,17391.3,0.0775
+438,Hindi-speaking peoples of Northern India,IND,India,Asia,Southern Asia,683170.3,0.8868
+438,Hindi-speaking peoples of Northern India,GUY,Guyana,South America,South America,49515.4,0.0643
+438,Hindi-speaking peoples of Northern India,SUR,Suriname,South America,South America,25204.5,0.0327
+438,Hindi-speaking peoples of Northern India,FJI,Fiji,Oceania,Melanesia,6603.0,0.0086
+438,Hindi-speaking peoples of Northern India,NPL,Nepal,Asia,Southern Asia,5862.7,0.0076
+438,Hindi-speaking peoples of Northern India,FRA,France,Europe,Western Europe,14.7,0.0
+439,Ho,IND,India,Asia,Southern Asia,2779.8,1.0
+443,Hondurans,HND,Honduras,North America,Central America,82238.6,0.986
+443,Hondurans,NIC,Nicaragua,North America,Central America,715.0,0.0086
+443,Hondurans,SLV,El Salvador,North America,Central America,405.7,0.0049
+443,Hondurans,GTM,Guatemala,North America,Central America,46.1,0.0006
+444,Hopi,USA,United States of America,North America,Northern America,8170.1,1.0
+445,Hottentots,NAM,Namibia,Africa,Southern Africa,282415.9,0.8758
+445,Hottentots,ZAF,South Africa,Africa,Southern Africa,40017.3,0.1241
+445,Hottentots,BWA,Botswana,Africa,Southern Africa,27.0,0.0001
+451,Huave,MEX,Mexico,North America,Central America,380.3,1.0
+452,Huaztec,MEX,Mexico,North America,Central America,3490.6,1.0
+453,Hui,CHN,China,Asia,Eastern Asia,88193.1,0.9989
+453,Hui,KGZ,Kyrgyzstan,Asia,Central Asia,96.0,0.0011
+454,Huichol,MEX,Mexico,North America,Central America,4974.4,1.0
+455,Hungarians or Magyars,HUN,Hungary,Europe,Eastern Europe,91072.0,0.7077
+455,Hungarians or Magyars,ROU,Romania,Europe,Eastern Europe,20048.6,0.1558
+455,Hungarians or Magyars,SVK,Slovakia,Europe,Eastern Europe,9706.2,0.0754
+455,Hungarians or Magyars,SRB,Serbia,Europe,Southern Europe,5332.9,0.0414
+455,Hungarians or Magyars,UKR,Ukraine,Europe,Eastern Europe,1628.2,0.0127
+455,Hungarians or Magyars,HRV,Croatia,Europe,Southern Europe,583.5,0.0045
+455,Hungarians or Magyars,AUT,Austria,Europe,Western Europe,281.8,0.0022
+455,Hungarians or Magyars,SVN,Slovenia,Europe,Southern Europe,26.2,0.0002
+456,Ibanag,PHL,Philippines,Asia,South-Eastern Asia,8316.6,1.0
+457,Ibans,MYS,Malaysia,Asia,South-Eastern Asia,22162.8,0.5493
+457,Ibans,IDN,Indonesia,Asia,South-Eastern Asia,14878.9,0.3688
+457,Ibans,BRN,Brunei,Asia,South-Eastern Asia,3306.8,0.082
+458,Ibibio,NGA,Nigeria,Africa,Western Africa,12450.5,0.9963
+458,Ibibio,CMR,Cameroon,Africa,Middle Africa,46.2,0.0037
+459,Ibo,NGA,Nigeria,Africa,Western Africa,39636.3,1.0
+460,Icelanders,ISL,Iceland,Europe,Northern Europe,101214.5,1.0
+461,Ifugao,PHL,Philippines,Asia,South-Eastern Asia,1737.6,1.0
+464,Ijo,NGA,Nigeria,Africa,Western Africa,18116.4,1.0
+465,Iloko,PHL,Philippines,Asia,South-Eastern Asia,25617.7,0.8226
+465,Iloko,USA,United States of America,North America,Northern America,5491.5,0.1763
+465,Iloko,GUM,Guam,Oceania,Micronesia,34.2,0.0011
+466,Ilongot,PHL,Philippines,Asia,South-Eastern Asia,1906.8,1.0
+468,Ingushes,RUS,Russia,Europe,Eastern Europe,2494.9,0.9858
+468,Ingushes,GEO,Georgia,Asia,Western Asia,36.0,0.0142
+470,Iraku,TZA,Tanzania,Africa,Eastern Africa,15916.0,1.0
+472,Iran Arabs,IRN,Iran,Asia,Southern Asia,186212.7,0.9998
+472,Iran Arabs,IRQ,Iraq,Asia,Western Asia,42.3,0.0002
+473,Irangi,TZA,Tanzania,Africa,Eastern Africa,7162.1,1.0
+475,Iraq Arabs,IRQ,Iraq,Asia,Western Asia,374370.3,0.9876
+475,Iraq Arabs,SAU,Saudi Arabia,Asia,Western Asia,3546.6,0.0094
+475,Iraq Arabs,IRN,Iran,Asia,Southern Asia,971.1,0.0026
+475,Iraq Arabs,KWT,Kuwait,Asia,Western Asia,161.0,0.0004
+475,Iraq Arabs,JOR,Jordan,Asia,Western Asia,7.1,0.0
+475,Iraq Arabs,SYR,Syria,Asia,Western Asia,7.0,0.0
+476,Irishmen,IRL,Ireland,Europe,Northern Europe,68427.6,0.9252
+476,Irishmen,GBR,United Kingdom,Europe,Northern Europe,5531.4,0.0748
+477,Iroquois,USA,United States of America,North America,Northern America,4811.5,0.7272
+477,Iroquois,CAN,Canada,North America,Northern America,1805.0,0.2728
+479,Ishkashimis,TJK,Tajikistan,Asia,Central Asia,944.7,0.9759
+479,Ishkashimis,AFG,Afghanistan,Asia,Southern Asia,23.3,0.0241
+481,Italian Swiss,CHE,Switzerland,Europe,Western Europe,4136.9,0.9633
+481,Italian Swiss,ITA,Italy,Europe,Southern Europe,157.5,0.0367
+482,Italians,ITA,Italy,Europe,Southern Europe,286826.2,0.5935
+482,Italians,ARG,Argentina,South America,South America,160823.2,0.3328
+482,Italians,BRA,Brazil,South America,South America,29352.4,0.0607
+482,Italians,URY,Uruguay,South America,South America,3986.6,0.0082
+482,Italians,CHL,Chile,South America,South America,709.1,0.0015
+482,Italians,HRV,Croatia,Europe,Southern Europe,699.6,0.0014
+482,Italians,CHE,Switzerland,Europe,Western Europe,266.9,0.0006
+482,Italians,FRA,France,Europe,Western Europe,246.1,0.0005
+482,Italians,SVN,Slovenia,Europe,Southern Europe,175.4,0.0004
+482,Italians,AUT,Austria,Europe,Western Europe,99.1,0.0002
+482,Italians,SMR,San Marino,Europe,Southern Europe,60.3,0.0001
+482,Italians,MCO,Monaco,Europe,Western Europe,7.4,0.0
+482,Italians,VAT,Vatican,Europe,Southern Europe,0.0,0.0
+483,Itelmens,RUS,Russia,Europe,Eastern Europe,25736.8,1.0
+487,Ixil,GTM,Guatemala,North America,Central America,4909.7,0.9939
+487,Ixil,MEX,Mexico,North America,Central America,30.3,0.0061
+490,Jakun,MYS,Malaysia,Asia,South-Eastern Asia,1227.1,1.0
+491,Jalaltecs,GTM,Guatemala,North America,Central America,935.0,0.879
+491,Jalaltecs,MEX,Mexico,North America,Central America,128.8,0.121
+492,Jamaicans,JAM,Jamaica,North America,Caribbean,10847.0,0.6791
+492,Jamaicans,CRI,Costa Rica,North America,Central America,2439.0,0.1527
+492,Jamaicans,PAN,Panama,North America,Central America,1542.9,0.0966
+492,Jamaicans,NIC,Nicaragua,North America,Central America,964.1,0.0604
+492,Jamaicans,CYM,Cayman Is.,North America,Caribbean,178.4,0.0112
+493,Jamshidis,AFG,Afghanistan,Asia,Southern Asia,5999.0,0.7045
+493,Jamshidis,IRN,Iran,Asia,Southern Asia,2478.8,0.2911
+493,Jamshidis,TKM,Turkmenistan,Asia,Central Asia,37.9,0.0045
+494,Japanese,JPN,Japan,Asia,Eastern Asia,364078.2,0.9492
+494,Japanese,USA,United States of America,North America,Northern America,11722.1,0.0306
+494,Japanese,BRA,Brazil,South America,South America,7777.8,0.0203
+495,Jarai,VNM,Vietnam,Asia,South-Eastern Asia,11836.8,0.8574
+495,Jarai,KHM,Cambodia,Asia,South-Eastern Asia,1968.8,0.1426
+497,Javanese,IDN,Indonesia,Asia,South-Eastern Asia,103954.8,0.9717
+497,Javanese,SUR,Suriname,South America,South America,3032.2,0.0283
+498,Jews of Israel,ISR,Israel,Asia,Western Asia,18001.2,0.9695
+498,Jews of Israel,JOR,Jordan,Asia,Western Asia,381.8,0.0206
+498,Jews of Israel,PSX,Palestine,Asia,Western Asia,159.5,0.0086
+498,Jews of Israel,LBN,Lebanon,Asia,Western Asia,24.4,0.0013
+499,"Jhats, Awans",PAK,Pakistan,Asia,Southern Asia,174641.5,0.9972
+499,"Jhats, Awans",IND,India,Asia,Southern Asia,486.8,0.0028
+500,Joluo,KEN,Kenya,Africa,Eastern Africa,10831.2,0.7257
+500,Joluo,UGA,Uganda,Africa,Eastern Africa,2084.4,0.1397
+500,Joluo,TZA,Tanzania,Africa,Eastern Africa,2009.2,0.1346
+501,Jordan and Palestine Arabs,PSX,Palestine,Asia,Western Asia,5871.1,0.5842
+501,Jordan and Palestine Arabs,ISR,Israel,Asia,Western Asia,4120.7,0.41
+501,Jordan and Palestine Arabs,JOR,Jordan,Asia,Western Asia,58.2,0.0058
+502,Juangs,IND,India,Asia,Southern Asia,1117.9,1.0
+503,Jukun and Idoma,NGA,Nigeria,Africa,Western Africa,70382.5,0.9583
+503,Jukun and Idoma,CMR,Cameroon,Africa,Middle Africa,3059.6,0.0417
+504,Kabardians,RUS,Russia,Europe,Eastern Europe,3986.5,1.0
+505,Kabiles,DZA,Algeria,Africa,Northern Africa,8529.9,1.0
+506,Kacharis,IND,India,Asia,Southern Asia,1575.9,1.0
+507,Kachins,MMR,Myanmar,Asia,South-Eastern Asia,65895.0,0.8733
+507,Kachins,CHN,China,Asia,Eastern Asia,9393.3,0.1245
+507,Kachins,IND,India,Asia,Southern Asia,164.6,0.0022
+508,Kadayans,MYS,Malaysia,Asia,South-Eastern Asia,1917.9,0.8791
+508,Kadayans,BRN,Brunei,Asia,South-Eastern Asia,263.9,0.1209
+509,Kadugli-Krongo,SDN,Sudan,Africa,Northern Africa,730.4,1.0
+510,Kai (and Bandanese),IDN,Indonesia,Asia,South-Eastern Asia,998.4,1.0
+512,Kajars,IRN,Iran,Asia,Southern Asia,3069.3,1.0
+514,Kakchiquels,GTM,Guatemala,North America,Central America,2806.9,1.0
+516,Kalinga,PHL,Philippines,Asia,South-Eastern Asia,3179.9,1.0
+517,Kalmyks,RUS,Russia,Europe,Eastern Europe,69351.3,1.0
+518,Kambari,NGA,Nigeria,Africa,Western Africa,36055.8,1.0
+520,"Kanauri, Lahuli",IND,India,Asia,Southern Asia,2542.2,0.8983
+520,"Kanauri, Lahuli",CHN,China,Asia,Eastern Asia,231.4,0.0818
+520,"Kanauri, Lahuli",NPL,Nepal,Asia,Southern Asia,56.4,0.0199
+521,Kandh,IND,India,Asia,Southern Asia,1750.3,1.0
+522,Kankanai,PHL,Philippines,Asia,South-Eastern Asia,2428.4,1.0
+523,Kannarese,IND,India,Asia,Southern Asia,166562.4,1.0
+524,Kanuri,NGA,Nigeria,Africa,Western Africa,101364.7,0.4823
+524,Kanuri,NER,Niger,Africa,Western Africa,75982.3,0.3615
+524,Kanuri,TCD,Chad,Africa,Middle Africa,32001.9,0.1523
+524,Kanuri,CMR,Cameroon,Africa,Middle Africa,840.1,0.004
+525,Kaoshan,TWN,Taiwan,Asia,Eastern Asia,16372.3,1.0
+526,Karachays,RUS,Russia,Europe,Eastern Europe,9540.4,1.0
+531,Karakalpaks,UZB,Uzbekistan,Asia,Central Asia,22209.2,0.9999
+531,Karakalpaks,TJK,Tajikistan,Asia,Central Asia,0.9,0.0
+531,Karakalpaks,TKM,Turkmenistan,Asia,Central Asia,0.7,0.0
+532,Karamojo,UGA,Uganda,Africa,Eastern Africa,23462.6,0.9404
+532,Karamojo,KEN,Kenya,Africa,Eastern Africa,806.2,0.0323
+532,Karamojo,SDS,S. Sudan,Africa,Eastern Africa,681.2,0.0273
+533,Karapapakh,TUR,Turkey,Asia,Western Asia,2314.6,0.6618
+533,Karapapakh,IRN,Iran,Asia,Southern Asia,1002.8,0.2867
+533,Karapapakh,ARM,Armenia,Asia,Western Asia,141.4,0.0404
+533,Karapapakh,GEO,Georgia,Asia,Western Asia,38.7,0.0111
+534,Karelians,RUS,Russia,Europe,Eastern Europe,95488.3,0.9996
+534,Karelians,FIN,Finland,Europe,Northern Europe,40.2,0.0004
+535,Karen,THA,Thailand,Asia,South-Eastern Asia,57120.1,0.5085
+535,Karen,MMR,Myanmar,Asia,South-Eastern Asia,55207.4,0.4915
+536,Kashkais,IRN,Iran,Asia,Southern Asia,43771.3,1.0
+537,Kashmiris,IND,India,Asia,Southern Asia,19425.2,0.9228
+537,Kashmiris,PAK,Pakistan,Asia,Southern Asia,1626.0,0.0772
+538,Katab,NGA,Nigeria,Africa,Western Africa,9981.7,1.0
+540,Kayah,MMR,Myanmar,Asia,South-Eastern Asia,12413.2,0.9765
+540,Kayah,THA,Thailand,Asia,South-Eastern Asia,299.1,0.0235
+541,Kayans,IDN,Indonesia,Asia,South-Eastern Asia,63171.8,0.6347
+541,Kayans,MYS,Malaysia,Asia,South-Eastern Asia,36355.6,0.3653
+541,Kayans,BRN,Brunei,Asia,South-Eastern Asia,6.6,0.0001
+542,Kazakhs,KAZ,Kazakhstan,Asia,Central Asia,2310722.5,0.7859
+542,Kazakhs,CHN,China,Asia,Eastern Asia,275035.4,0.0935
+542,Kazakhs,UZB,Uzbekistan,Asia,Central Asia,253422.4,0.0862
+542,Kazakhs,RUS,Russia,Europe,Eastern Europe,73140.4,0.0249
+542,Kazakhs,MNG,Mongolia,Asia,Eastern Asia,16683.8,0.0057
+542,Kazakhs,KAB,Baikonur,Asia,Central Asia,6501.5,0.0022
+542,Kazakhs,TKM,Turkmenistan,Asia,Central Asia,2750.5,0.0009
+542,Kazakhs,KGZ,Kyrgyzstan,Asia,Central Asia,1755.4,0.0006
+542,Kazakhs,TJK,Tajikistan,Asia,Central Asia,128.2,0.0
+542,Kazakhs,AFG,Afghanistan,Asia,Southern Asia,0.1,0.0
+543,Kehlao,CHN,China,Asia,Eastern Asia,3361.1,0.9
+543,Kehlao,VNM,Vietnam,Asia,South-Eastern Asia,373.6,0.1
+544,Kekchi,GTM,Guatemala,North America,Central America,15395.6,0.9073
+544,Kekchi,BLZ,Belize,North America,Central America,1556.8,0.0917
+544,Kekchi,MEX,Mexico,North America,Central America,15.8,0.0009
+546,Kenyahs,IDN,Indonesia,Asia,South-Eastern Asia,36163.2,0.6206
+546,Kenyahs,MYS,Malaysia,Asia,South-Eastern Asia,22106.9,0.3794
+547,Kets,RUS,Russia,Europe,Eastern Europe,94707.8,1.0
+548,Khakass,RUS,Russia,Europe,Eastern Europe,47115.1,1.0
+549,Khalka-Mongols,MNG,Mongolia,Asia,Eastern Asia,1337023.7,0.9974
+549,Khalka-Mongols,CHN,China,Asia,Eastern Asia,2369.9,0.0018
+549,Khalka-Mongols,RUS,Russia,Europe,Eastern Europe,1066.5,0.0008
+551,Khamtis,IND,India,Asia,Southern Asia,1374.6,0.957
+551,Khamtis,MMR,Myanmar,Asia,South-Eastern Asia,61.8,0.043
+552,Khants,RUS,Russia,Europe,Eastern Europe,494433.5,1.0
+553,Kharias,IND,India,Asia,Southern Asia,2238.1,1.0
+554,Khasis,IND,India,Asia,Southern Asia,15014.5,0.9546
+554,Khasis,BGD,Bangladesh,Asia,Southern Asia,713.4,0.0454
+555,Khatu,VNM,Vietnam,Asia,South-Eastern Asia,3574.5,0.9984
+555,Khatu,LAO,Laos,Asia,South-Eastern Asia,5.9,0.0016
+556,Khinalugs,RUS,Russia,Europe,Eastern Europe,1454.5,0.9422
+556,Khinalugs,AZE,Azerbaijan,Asia,Western Asia,89.3,0.0578
+557,Khmers,KHM,Cambodia,Asia,South-Eastern Asia,145831.2,0.8195
+557,Khmers,THA,Thailand,Asia,South-Eastern Asia,15520.2,0.0872
+557,Khmers,VNM,Vietnam,Asia,South-Eastern Asia,15374.7,0.0864
+557,Khmers,LAO,Laos,Asia,South-Eastern Asia,1219.3,0.0069
+558,Khmu,LAO,Laos,Asia,South-Eastern Asia,31934.9,0.8086
+558,Khmu,THA,Thailand,Asia,South-Eastern Asia,7261.8,0.1839
+558,Khmu,VNM,Vietnam,Asia,South-Eastern Asia,299.1,0.0076
+559,Kho,PAK,Pakistan,Asia,Southern Asia,11894.5,0.9908
+559,Kho,AFG,Afghanistan,Asia,Southern Asia,110.1,0.0092
+561,Khoton,MNG,Mongolia,Asia,Eastern Asia,1907.2,1.0
+562,Khun,MMR,Myanmar,Asia,South-Eastern Asia,7235.8,1.0
+563,Kikapoo,MEX,Mexico,North America,Central America,4095.6,1.0
+564,Kilihui,MEX,Mexico,North America,Central America,10107.3,0.9961
+564,Kilihui,USA,United States of America,North America,Northern America,39.6,0.0039
+565,Kiratis,NPL,Nepal,Asia,Southern Asia,2812.6,0.796
+565,Kiratis,IND,India,Asia,Southern Asia,720.9,0.204
+566,Kirghis,KGZ,Kyrgyzstan,Asia,Central Asia,176052.6,0.6036
+566,Kirghis,CHN,China,Asia,Eastern Asia,74579.9,0.2557
+566,Kirghis,TJK,Tajikistan,Asia,Central Asia,32739.5,0.1122
+566,Kirghis,AFG,Afghanistan,Asia,Southern Asia,3649.0,0.0125
+566,Kirghis,UZB,Uzbekistan,Asia,Central Asia,2791.7,0.0096
+566,Kirghis,KAZ,Kazakhstan,Asia,Central Asia,1831.8,0.0063
+566,Kirghis,PAK,Pakistan,Asia,Southern Asia,41.8,0.0001
+567,"Kisars, Babars, Wetars, Leti",IDN,Indonesia,Asia,South-Eastern Asia,3708.2,1.0
+568,Kisi,SLE,Sierra Leone,Africa,Western Africa,30030.2,0.714
+568,Kisi,GIN,Guinea,Africa,Western Africa,11251.6,0.2675
+568,Kisi,LBR,Liberia,Africa,Western Africa,775.5,0.0184
+569,Kists,GEO,Georgia,Asia,Western Asia,117.6,1.0
+570,Klemantans,IDN,Indonesia,Asia,South-Eastern Asia,76674.2,0.9075
+570,Klemantans,MYS,Malaysia,Asia,South-Eastern Asia,7817.2,0.0925
+571,Koalib-Tagoi,SDN,Sudan,Africa,Northern Africa,7353.4,1.0
+572,Kodagus,IND,India,Asia,Southern Asia,2443.4,1.0
+573,Kohistanis,PAK,Pakistan,Asia,Southern Asia,6947.2,1.0
+574,Koma,ETH,Ethiopia,Africa,Eastern Africa,22119.6,0.7956
+574,Koma,SDS,S. Sudan,Africa,Eastern Africa,3527.5,0.1269
+574,Koma,SDN,Sudan,Africa,Northern Africa,2154.6,0.0775
+575,Komi,RUS,Russia,Europe,Eastern Europe,295744.0,1.0
+576,Komi-Permyaks,RUS,Russia,Europe,Eastern Europe,12497.0,1.0
+577,Koreans,PRK,North Korea,Asia,Eastern Asia,121446.7,0.4595
+577,Koreans,KOR,South Korea,Asia,Eastern Asia,95529.2,0.3614
+577,Koreans,CHN,China,Asia,Eastern Asia,43747.2,0.1655
+577,Koreans,KAZ,Kazakhstan,Asia,Central Asia,2181.6,0.0083
+577,Koreans,RUS,Russia,Europe,Eastern Europe,964.5,0.0036
+577,Koreans,UZB,Uzbekistan,Asia,Central Asia,436.8,0.0017
+578,Korkus,IND,India,Asia,Southern Asia,2461.4,1.0
+579,Koro,IDN,Indonesia,Asia,South-Eastern Asia,7936.2,1.0
+581,Koryaks,RUS,Russia,Europe,Eastern Europe,243916.6,1.0
+582,Kotoko,CMR,Cameroon,Africa,Middle Africa,11051.9,0.8376
+582,Kotoko,TCD,Chad,Africa,Middle Africa,2123.5,0.1609
+582,Kotoko,NGA,Nigeria,Africa,Western Africa,18.7,0.0014
+583,Kpelle,LBR,Liberia,Africa,Western Africa,11568.9,0.6397
+583,Kpelle,GIN,Guinea,Africa,Western Africa,6516.6,0.3603
+590,Kryz,AZE,Azerbaijan,Asia,Western Asia,157.4,1.0
+591,Kubu and Akits,IDN,Indonesia,Asia,South-Eastern Asia,2623.6,1.0
+592,Kui,THA,Thailand,Asia,South-Eastern Asia,17086.1,0.4705
+592,Kui,KHM,Cambodia,Asia,South-Eastern Asia,17067.3,0.4699
+592,Kui,LAO,Laos,Asia,South-Eastern Asia,2164.8,0.0596
+594,Kulango,CIV,Côte d'Ivoire,Africa,Western Africa,26262.3,0.8772
+594,Kulango,GHA,Ghana,Africa,Western Africa,3466.8,0.1158
+594,Kulango,BFA,Burkina Faso,Africa,Western Africa,210.7,0.007
+596,"Kumaonis, Garhwalis",IND,India,Asia,Southern Asia,70132.0,0.9697
+596,"Kumaonis, Garhwalis",NPL,Nepal,Asia,Southern Asia,2173.1,0.03
+596,"Kumaonis, Garhwalis",CHN,China,Asia,Eastern Asia,16.4,0.0002
+597,Kumuk,RUS,Russia,Europe,Eastern Europe,6547.1,1.0
+598,Kunama,ERI,Eritrea,Africa,Eastern Africa,7503.2,0.8424
+598,Kunama,ETH,Ethiopia,Africa,Eastern Africa,1403.8,0.1576
+599,Kupangs,IDN,Indonesia,Asia,South-Eastern Asia,299.6,1.0
+600,Kurds,TUR,Turkey,Asia,Western Asia,165448.9,0.4746
+600,Kurds,IRN,Iran,Asia,Southern Asia,108717.4,0.3119
+600,Kurds,IRQ,Iraq,Asia,Western Asia,58060.7,0.1666
+600,Kurds,SYR,Syria,Asia,Western Asia,14815.3,0.0425
+600,Kurds,AZE,Azerbaijan,Asia,Western Asia,722.4,0.0021
+600,Kurds,ARM,Armenia,Asia,Western Asia,485.7,0.0014
+600,Kurds,TKM,Turkmenistan,Asia,Central Asia,335.0,0.001
+601,Kusaieans,FSM,Micronesia,Oceania,Micronesia,110.5,1.0
+602,Kuyonon,PHL,Philippines,Asia,South-Eastern Asia,1727.0,1.0
+603,Kwakiutl,CAN,Canada,North America,Northern America,11586.6,1.0
+606,Lacandons,MEX,Mexico,North America,Central America,4868.6,0.7938
+606,Lacandons,GTM,Guatemala,North America,Central America,1264.4,0.2062
+607,Ladakhs,IND,India,Asia,Southern Asia,36708.3,0.9265
+607,Ladakhs,CHN,China,Asia,Eastern Asia,2777.4,0.0701
+607,Ladakhs,KAS,Siachen Glacier,Asia,Southern Asia,134.1,0.0034
+608,Lagoon tribes,CIV,Côte d'Ivoire,Africa,Western Africa,17622.6,1.0
+609,Lahu,MMR,Myanmar,Asia,South-Eastern Asia,5188.8,0.4005
+609,Lahu,CHN,China,Asia,Eastern Asia,4558.9,0.3519
+609,Lahu,LAO,Laos,Asia,South-Eastern Asia,1932.3,0.1491
+609,Lahu,THA,Thailand,Asia,South-Eastern Asia,1276.5,0.0985
+610,Laki,IDN,Indonesia,Asia,South-Eastern Asia,11294.8,1.0
+611,Laks,RUS,Russia,Europe,Eastern Europe,3210.5,1.0
+612,Lamet,LAO,Laos,Asia,South-Eastern Asia,1342.1,0.9868
+612,Lamet,THA,Thailand,Asia,South-Eastern Asia,17.9,0.0132
+613,Lampongs,IDN,Indonesia,Asia,South-Eastern Asia,24848.9,1.0
+614,Lanao,PHL,Philippines,Asia,South-Eastern Asia,6075.8,1.0
+616,Lao,THA,Thailand,Asia,South-Eastern Asia,225581.8,0.766
+616,Lao,LAO,Laos,Asia,South-Eastern Asia,59763.9,0.2029
+616,Lao,KHM,Cambodia,Asia,South-Eastern Asia,5411.2,0.0184
+616,Lao,MMR,Myanmar,Asia,South-Eastern Asia,3042.2,0.0103
+616,Lao,VNM,Vietnam,Asia,South-Eastern Asia,694.0,0.0024
+617,Laruntuks,IDN,Indonesia,Asia,South-Eastern Asia,1188.8,1.0
+618,Lati and Lakwa,VNM,Vietnam,Asia,South-Eastern Asia,837.1,0.9438
+618,Lati and Lakwa,CHN,China,Asia,Eastern Asia,49.8,0.0562
+619,Lâz,TUR,Turkey,Asia,Western Asia,5229.7,0.9773
+619,Lâz,GEO,Georgia,Asia,Western Asia,121.4,0.0227
+620,Lebanon Arabs,LBN,Lebanon,Asia,Western Asia,9845.1,0.966
+620,Lebanon Arabs,SYR,Syria,Asia,Western Asia,271.8,0.0267
+620,Lebanon Arabs,ISR,Israel,Asia,Western Asia,74.7,0.0073
+621,Lenca,HND,Honduras,North America,Central America,2794.2,0.899
+621,Lenca,SLV,El Salvador,North America,Central America,314.0,0.101
+623,Lengua,PRY,Paraguay,South America,South America,19294.0,1.0
+624,Lepchas,IND,India,Asia,Southern Asia,6369.2,0.9762
+624,Lepchas,BTN,Bhutan,Asia,Southern Asia,155.3,0.0238
+624,Lepchas,BGD,Bangladesh,Asia,Southern Asia,0.0,0.0
+625,Letts,LVA,Latvia,Europe,Northern Europe,60120.4,0.9237
+625,Letts,RUS,Russia,Europe,Eastern Europe,4556.6,0.07
+625,Letts,EST,Estonia,Europe,Northern Europe,200.2,0.0031
+625,Letts,LTU,Lithuania,Europe,Northern Europe,123.6,0.0019
+625,Letts,BLR,Belarus,Europe,Eastern Europe,86.5,0.0013
+626,Lezghians,RUS,Russia,Europe,Eastern Europe,3609.0,0.7025
+626,Lezghians,AZE,Azerbaijan,Asia,Western Asia,1528.3,0.2975
+628,Libya Arabs,LBY,Libya,Africa,Northern Africa,1103533.9,0.9793
+628,Libya Arabs,NER,Niger,Africa,Western Africa,10160.9,0.009
+628,Libya Arabs,SDN,Sudan,Africa,Northern Africa,7620.7,0.0068
+628,Libya Arabs,EGY,Egypt,Africa,Northern Africa,4947.7,0.0044
+628,Libya Arabs,DZA,Algeria,Africa,Northern Africa,339.2,0.0003
+628,Libya Arabs,TUN,Tunisia,Africa,Northern Africa,182.9,0.0002
+628,Libya Arabs,TCD,Chad,Africa,Middle Africa,95.8,0.0001
+630,Limbus,NPL,Nepal,Asia,Southern Asia,2429.8,0.7795
+630,Limbus,IND,India,Asia,Southern Asia,687.2,0.2205
+631,Lio,IDN,Indonesia,Asia,South-Eastern Asia,1540.3,1.0
+632,Lisu,CHN,China,Asia,Eastern Asia,14373.8,0.6675
+632,Lisu,MMR,Myanmar,Asia,South-Eastern Asia,7160.1,0.3325
+633,Lithuanians,LTU,Lithuania,Europe,Northern Europe,59423.7,0.9713
+633,Lithuanians,LVA,Latvia,Europe,Northern Europe,1147.7,0.0188
+633,Lithuanians,RUS,Russia,Europe,Eastern Europe,437.0,0.0071
+633,Lithuanians,BLR,Belarus,Europe,Eastern Europe,168.8,0.0028
+633,Lithuanians,POL,Poland,Europe,Eastern Europe,0.1,0.0
+634,Livonians,LVA,Latvia,Europe,Northern Europe,273.6,1.0
+635,Loba,IND,India,Asia,Southern Asia,62569.8,0.9094
+635,Loba,BTN,Bhutan,Asia,Southern Asia,5164.5,0.0751
+635,Loba,CHN,China,Asia,Eastern Asia,903.9,0.0131
+635,Loba,MMR,Myanmar,Asia,South-Eastern Asia,163.7,0.0024
+636,Lobi,MLI,Mali,Africa,Western Africa,34293.0,0.4318
+636,Lobi,BFA,Burkina Faso,Africa,Western Africa,29014.6,0.3654
+636,Lobi,GHA,Ghana,Africa,Western Africa,11967.0,0.1507
+636,Lobi,CIV,Côte d'Ivoire,Africa,Western Africa,4135.6,0.0521
+637,Loinangs,IDN,Indonesia,Asia,South-Eastern Asia,8471.4,1.0
+638,Lom,IDN,Indonesia,Asia,South-Eastern Asia,254.4,1.0
+639,Loma,LBR,Liberia,Africa,Western Africa,12117.4,0.6022
+639,Loma,GIN,Guinea,Africa,Western Africa,8004.1,0.3978
+640,Lotuko,SDS,S. Sudan,Africa,Eastern Africa,15120.6,1.0
+641,Lu,LAO,Laos,Asia,South-Eastern Asia,6137.7,0.895
+641,Lu,VNM,Vietnam,Asia,South-Eastern Asia,658.8,0.0961
+641,Lu,THA,Thailand,Asia,South-Eastern Asia,30.7,0.0045
+641,Lu,MMR,Myanmar,Asia,South-Eastern Asia,17.0,0.0025
+641,Lu,CHN,China,Asia,Eastern Asia,13.1,0.0019
+642,Lubu,IDN,Indonesia,Asia,South-Eastern Asia,1091.6,1.0
+644,Lur,IRN,Iran,Asia,Southern Asia,74602.2,0.9821
+644,Lur,IRQ,Iraq,Asia,Western Asia,1357.8,0.0179
+645,Lusatians,DEU,Germany,Europe,Western Europe,1601.6,1.0
+646,Lushei,IND,India,Asia,Southern Asia,18249.5,0.9841
+646,Lushei,MMR,Myanmar,Asia,South-Eastern Asia,295.1,0.0159
+647,Luxemburgers,LUX,Luxembourg,Europe,Western Europe,2475.7,0.9593
+647,Luxemburgers,DEU,Germany,Europe,Western Europe,81.3,0.0315
+647,Luxemburgers,BEL,Belgium,Europe,Western Europe,15.9,0.0062
+647,Luxemburgers,FRA,France,Europe,Western Europe,7.8,0.003
+649,Ma,VNM,Vietnam,Asia,South-Eastern Asia,15664.1,0.985
+649,Ma,KHM,Cambodia,Asia,South-Eastern Asia,237.9,0.015
+651,Maba (incl. Masalit),TCD,Chad,Africa,Middle Africa,20872.8,0.6006
+651,Maba (incl. Masalit),IDN,Indonesia,Asia,South-Eastern Asia,9013.6,0.2594
+651,Maba (incl. Masalit),SDN,Sudan,Africa,Northern Africa,4865.0,0.14
+653,Macapai,BRA,Brazil,South America,South America,2503.7,1.0
+654,Macassai,TLS,Timor-Leste,Asia,South-Eastern Asia,1603.0,1.0
+655,Macedonians,MKD,North Macedonia,Europe,Southern Europe,21312.0,0.8706
+655,Macedonians,GRC,Greece,Europe,Southern Europe,2729.5,0.1115
+655,Macedonians,ALB,Albania,Europe,Southern Europe,259.5,0.0106
+655,Macedonians,BGR,Bulgaria,Europe,Eastern Europe,151.0,0.0062
+655,Macedonians,SRB,Serbia,Europe,Southern Europe,27.6,0.0011
+655,Macedonians,KOS,Kosovo,Europe,Southern Europe,0.2,0.0
+656,Macu,BRA,Brazil,South America,South America,60801.4,0.8101
+656,Macu,VEN,Venezuela,South America,South America,14254.0,0.1899
+660,Madurese,IDN,Indonesia,Asia,South-Eastern Asia,19812.3,1.0
+661,Magars,NPL,Nepal,Asia,Southern Asia,3397.8,1.0
+663,Magindanao,PHL,Philippines,Asia,South-Eastern Asia,6705.3,1.0
+666,Maka,CMR,Cameroon,Africa,Middle Africa,30759.7,0.6256
+666,Maka,COG,Congo,Africa,Middle Africa,16519.4,0.336
+666,Maka,CAF,Central African Rep.,Africa,Middle Africa,1247.5,0.0254
+666,Maka,GNQ,Eq. Guinea,Africa,Middle Africa,569.8,0.0116
+666,Maka,GAB,Gabon,Africa,Middle Africa,74.9,0.0015
+667,Makassarese,IDN,Indonesia,Asia,South-Eastern Asia,5389.3,1.0
+670,Makonde,TZA,Tanzania,Africa,Eastern Africa,42126.8,0.8027
+670,Makonde,MOZ,Mozambique,Africa,Eastern Africa,10357.3,0.1973
+671,Makua,MOZ,Mozambique,Africa,Eastern Africa,280227.4,0.9391
+671,Makua,TZA,Tanzania,Africa,Eastern Africa,15570.8,0.0522
+671,Makua,MWI,Malawi,Africa,Eastern Africa,2593.8,0.0087
+672,Malagasy,MDG,Madagascar,Africa,Eastern Africa,591423.1,1.0
+673,Malavi,MOZ,Mozambique,Africa,Eastern Africa,173705.0,0.5582
+673,Malavi,MWI,Malawi,Africa,Eastern Africa,65902.3,0.2118
+673,Malavi,ZMB,Zambia,Africa,Eastern Africa,55176.9,0.1773
+673,Malavi,TZA,Tanzania,Africa,Eastern Africa,12313.9,0.0396
+673,Malavi,ZWE,Zimbabwe,Africa,Eastern Africa,4111.0,0.0132
+674,Malayalis,IND,India,Asia,Southern Asia,47267.4,1.0
+676,Malays of Malaya,MYS,Malaysia,Asia,South-Eastern Asia,102587.6,0.7355
+676,Malays of Malaya,THA,Thailand,Asia,South-Eastern Asia,35571.1,0.255
+676,Malays of Malaya,KHM,Cambodia,Asia,South-Eastern Asia,1326.8,0.0095
+678,Maler,IND,India,Asia,Southern Asia,793.2,1.0
+679,Maltese,MLT,Malta,Europe,Southern Europe,259.6,1.0
+680,Mambai,TLS,Timor-Leste,Asia,South-Eastern Asia,3826.2,1.0
+681,Mame,GTM,Guatemala,North America,Central America,7261.4,0.8199
+681,Mame,MEX,Mexico,North America,Central America,1595.6,0.1801
+684,Manchus,CHN,China,Asia,Eastern Asia,48175.6,1.0
+684,Manchus,RUS,Russia,Europe,Eastern Europe,0.6,0.0
+685,Mandara,CMR,Cameroon,Africa,Middle Africa,9329.9,0.6696
+685,Mandara,NGA,Nigeria,Africa,Western Africa,4572.1,0.3281
+685,Mandara,TCD,Chad,Africa,Middle Africa,31.2,0.0022
+686,Mandars,IDN,Indonesia,Asia,South-Eastern Asia,3631.5,1.0
+688,Mandaya,PHL,Philippines,Asia,South-Eastern Asia,6065.0,1.0
+689,Mandingo,MLI,Mali,Africa,Western Africa,231425.7,0.473
+689,Mandingo,GIN,Guinea,Africa,Western Africa,117192.2,0.2395
+689,Mandingo,SEN,Senegal,Africa,Western Africa,57500.2,0.1175
+689,Mandingo,CIV,Côte d'Ivoire,Africa,Western Africa,46271.6,0.0946
+689,Mandingo,GNB,Guinea-Bissau,Africa,Western Africa,11569.8,0.0236
+689,Mandingo,GMB,Gambia,Africa,Western Africa,9307.4,0.019
+689,Mandingo,BFA,Burkina Faso,Africa,Western Africa,8385.6,0.0171
+689,Mandingo,SLE,Sierra Leone,Africa,Western Africa,6444.5,0.0132
+689,Mandingo,MRT,Mauritania,Africa,Western Africa,959.4,0.002
+689,Mandingo,GHA,Ghana,Africa,Western Africa,220.7,0.0005
+690,Mandjak,GNB,Guinea-Bissau,Africa,Western Africa,2578.6,0.759
+690,Mandjak,SEN,Senegal,Africa,Western Africa,818.7,0.241
+693,Manggarai,IDN,Indonesia,Asia,South-Eastern Asia,6626.2,1.0
+694,Mangguangan,PHL,Philippines,Asia,South-Eastern Asia,1412.2,1.0
+695,Mangyan,PHL,Philippines,Asia,South-Eastern Asia,2886.7,1.0
+696,Manipuris,IND,India,Asia,Southern Asia,7550.4,0.9981
+696,Manipuris,MMR,Myanmar,Asia,South-Eastern Asia,14.5,0.0019
+697,Maniteneris,BRA,Brazil,South America,South America,166125.9,0.5345
+697,Maniteneris,PER,Peru,South America,South America,120001.6,0.3861
+697,Maniteneris,BOL,Bolivia,South America,South America,24670.5,0.0794
+698,Mano,CIV,Côte d'Ivoire,Africa,Western Africa,33510.4,0.8101
+698,Mano,LBR,Liberia,Africa,Western Africa,6387.3,0.1544
+698,Mano,GIN,Guinea,Africa,Western Africa,1467.6,0.0355
+699,Manobo,PHL,Philippines,Asia,South-Eastern Asia,9603.5,1.0
+700,Mansi,RUS,Russia,Europe,Eastern Europe,116007.5,1.0
+702,Maonan,CHN,China,Asia,Eastern Asia,296.4,1.0
+703,Maopitians,BRA,Brazil,South America,South America,5972.2,1.0
+704,Maoris,NZL,New Zealand,Oceania,Australia and New Zealand,18462.8,1.0
+706,Marathis,IND,India,Asia,Southern Asia,345368.0,1.0
+707,Mare,TLS,Timor-Leste,Asia,South-Eastern Asia,1526.0,0.6857
+707,Mare,IDN,Indonesia,Asia,South-Eastern Asia,699.3,0.3143
+709,Mari,RUS,Russia,Europe,Eastern Europe,21918.5,1.0
+710,"Marind-anim, Sentani",IDN,Indonesia,Asia,South-Eastern Asia,355764.4,0.9939
+710,"Marind-anim, Sentani",PNG,Papua New Guinea,Oceania,Melanesia,2183.8,0.0061
+712,Marquesans,PYF,Fr. Polynesia,Oceania,Polynesia,649.9,1.0
+713,Marshallese,MHL,Marshall Is.,Oceania,Micronesia,6.9,1.0
+714,Masa,TCD,Chad,Africa,Middle Africa,19614.2,0.7754
+714,Masa,CMR,Cameroon,Africa,Middle Africa,5681.2,0.2246
+717,Masai,KEN,Kenya,Africa,Eastern Africa,64987.2,0.5136
+717,Masai,TZA,Tanzania,Africa,Eastern Africa,61535.9,0.4864
+719,Mashona,ZWE,Zimbabwe,Africa,Eastern Africa,238987.1,0.76
+719,Mashona,MOZ,Mozambique,Africa,Eastern Africa,71703.6,0.228
+719,Mashona,BWA,Botswana,Africa,Southern Africa,3622.0,0.0115
+719,Mashona,ZMB,Zambia,Africa,Eastern Africa,126.1,0.0004
+721,Matagalpa,NIC,Nicaragua,North America,Central America,148.4,1.0
+723,Matebele,ZWE,Zimbabwe,Africa,Eastern Africa,44871.2,1.0
+724,Matlatzincans,MEX,Mexico,North America,Central America,477.9,1.0
+728,Mayas,MEX,Mexico,North America,Central America,103239.5,0.8921
+728,Mayas,BLZ,Belize,North America,Central America,12489.3,0.1079
+729,Mayo,MEX,Mexico,North America,Central America,14447.3,1.0
+730,Mayorunas,BRA,Brazil,South America,South America,146238.9,0.6103
+730,Mayorunas,PER,Peru,South America,South America,72697.7,0.3034
+730,Mayorunas,BOL,Bolivia,South America,South America,20670.0,0.0863
+732,Mazanderani,IRN,Iran,Asia,Southern Asia,20673.8,1.0
+733,Mazatecs,MEX,Mexico,North America,Central America,2361.7,1.0
+734,Mba,COD,Dem. Rep. Congo,Africa,Middle Africa,10384.7,1.0
+735,Mbum,CMR,Cameroon,Africa,Middle Africa,15867.7,0.5711
+735,Mbum,CAF,Central African Rep.,Africa,Middle Africa,11634.0,0.4187
+735,Mbum,TCD,Chad,Africa,Middle Africa,281.4,0.0101
+736,Melanaus,MYS,Malaysia,Asia,South-Eastern Asia,9460.7,0.9873
+736,Melanaus,BRN,Brunei,Asia,South-Eastern Asia,121.9,0.0127
+737,Melanesians of Banks Isls.,VUT,Vanuatu,Oceania,Melanesia,9922.9,1.0
+738,Melanesians of Bismarck Archipelago,PNG,Papua New Guinea,Oceania,Melanesia,30801.3,1.0
+739,Melanesians of New Caledonia,NCL,New Caledonia,Oceania,Melanesia,15342.1,1.0
+740,Melanesians of New Guinea,PNG,Papua New Guinea,Oceania,Melanesia,34607.8,0.9991
+740,Melanesians of New Guinea,IDN,Indonesia,Asia,South-Eastern Asia,31.6,0.0009
+741,Melanesians of Santa Cruz Isls.,SLB,Solomon Is.,Oceania,Melanesia,577.9,1.0
+742,Melanesians of Solomon Isls.,SLB,Solomon Is.,Oceania,Melanesia,22992.6,0.8937
+742,Melanesians of Solomon Isls.,PNG,Papua New Guinea,Oceania,Melanesia,2735.2,0.1063
+743,Melanesians of southern New Hebrides,VUT,Vanuatu,Oceania,Melanesia,1569.7,1.0
+744,Mende,SLE,Sierra Leone,Africa,Western Africa,20263.6,0.9244
+744,Mende,LBR,Liberia,Africa,Western Africa,1657.7,0.0756
+744,Mende,GIN,Guinea,Africa,Western Africa,0.3,0.0
+745,Mentawei,IDN,Indonesia,Asia,South-Eastern Asia,5590.9,1.0
+747,Mexicans,MEX,Mexico,North America,Central America,1639806.3,0.7632
+747,Mexicans,USA,United States of America,North America,Northern America,508510.3,0.2367
+747,Mexicans,GTM,Guatemala,North America,Central America,106.6,0.0
+747,Mexicans,BLZ,Belize,North America,Central America,73.1,0.0
+748,Miao,CHN,China,Asia,Eastern Asia,55233.5,0.6178
+748,Miao,LAO,Laos,Asia,South-Eastern Asia,18301.0,0.2047
+748,Miao,VNM,Vietnam,Asia,South-Eastern Asia,11995.0,0.1342
+748,Miao,THA,Thailand,Asia,South-Eastern Asia,3878.4,0.0434
+749,Mikirs,IND,India,Asia,Southern Asia,1555.0,1.0
+750,Minahasa,IDN,Indonesia,Asia,South-Eastern Asia,4193.3,1.0
+751,Minangkabaus,IDN,Indonesia,Asia,South-Eastern Asia,72278.2,1.0
+752,Miskitos,HND,Honduras,North America,Central America,12353.3,0.5569
+752,Miskitos,NIC,Nicaragua,North America,Central America,9827.8,0.4431
+754,Mixe,MEX,Mexico,North America,Central America,5130.8,1.0
+755,Mixtec,MEX,Mexico,North America,Central America,35983.8,1.0
+756,Mnong and Brao,KHM,Cambodia,Asia,South-Eastern Asia,23522.3,0.5769
+756,Mnong and Brao,VNM,Vietnam,Asia,South-Eastern Asia,13714.0,0.3363
+756,Mnong and Brao,LAO,Laos,Asia,South-Eastern Asia,3540.8,0.0868
+758,Mojo,BOL,Bolivia,South America,South America,9649.2,1.0
+759,Moldavians,MDA,Moldova,Europe,Eastern Europe,28410.7,0.8981
+759,Moldavians,UKR,Ukraine,Europe,Eastern Europe,2796.2,0.0884
+759,Moldavians,ROU,Romania,Europe,Eastern Europe,244.5,0.0077
+759,Moldavians,KAZ,Kazakhstan,Asia,Central Asia,113.3,0.0036
+759,Moldavians,GEO,Georgia,Asia,Western Asia,31.9,0.001
+759,Moldavians,RUS,Russia,Europe,Eastern Europe,22.9,0.0007
+759,Moldavians,ARM,Armenia,Asia,Western Asia,13.8,0.0004
+760,Mon (Talaing),MMR,Myanmar,Asia,South-Eastern Asia,13837.1,0.8787
+760,Mon (Talaing),THA,Thailand,Asia,South-Eastern Asia,1910.8,0.1213
+761,Mongo,COD,Dem. Rep. Congo,Africa,Middle Africa,550281.3,1.0
+762,Mongols of Chinese Peoples' Republic,CHN,China,Asia,Eastern Asia,1274924.5,0.9968
+762,Mongols of Chinese Peoples' Republic,MNG,Mongolia,Asia,Eastern Asia,3665.1,0.0029
+762,Mongols of Chinese Peoples' Republic,KAZ,Kazakhstan,Asia,Central Asia,239.3,0.0002
+762,Mongols of Chinese Peoples' Republic,RUS,Russia,Europe,Eastern Europe,134.1,0.0001
+763,Montagnais,CAN,Canada,North America,Northern America,279.9,1.0
+764,Montenegrins,MNE,Montenegro,Europe,Southern Europe,12157.5,0.9182
+764,Montenegrins,SRB,Serbia,Europe,Southern Europe,817.8,0.0618
+764,Montenegrins,KOS,Kosovo,Europe,Southern Europe,126.6,0.0096
+764,Montenegrins,ALB,Albania,Europe,Southern Europe,103.3,0.0078
+764,Montenegrins,BIH,Bosnia and Herz.,Europe,Southern Europe,35.0,0.0026
+765,Mordva,RUS,Russia,Europe,Eastern Europe,30189.1,1.0
+766,More (Itene),BRA,Brazil,South America,South America,60759.1,0.8182
+766,More (Itene),BOL,Bolivia,South America,South America,13504.3,0.1818
+767,Mori,IDN,Indonesia,Asia,South-Eastern Asia,17894.1,1.0
+769,Morocco Arabs,MAR,Morocco,Africa,Northern Africa,353614.3,0.9975
+769,Morocco Arabs,DZA,Algeria,Africa,Northern Africa,858.2,0.0024
+769,Morocco Arabs,ESP,Spain,Europe,Southern Europe,43.9,0.0001
+771,Moru-Mangbetu,COD,Dem. Rep. Congo,Africa,Middle Africa,89934.4,0.7692
+771,Moru-Mangbetu,SDS,S. Sudan,Africa,Eastern Africa,17797.0,0.1522
+771,Moru-Mangbetu,UGA,Uganda,Africa,Eastern Africa,9193.6,0.0786
+772,Moru-Mangbetu and Sere-Mundu-speaking Pygmy tribes,COD,Dem. Rep. Congo,Africa,Middle Africa,65773.3,1.0
+772,Moru-Mangbetu and Sere-Mundu-speaking Pygmy tribes,UGA,Uganda,Africa,Eastern Africa,2.0,0.0
+774,Mossi,BFA,Burkina Faso,Africa,Western Africa,72351.5,0.589
+774,Mossi,GHA,Ghana,Africa,Western Africa,49966.0,0.4068
+774,Mossi,TGO,Togo,Africa,Western Africa,511.9,0.0042
+774,Mossi,MLI,Mali,Africa,Western Africa,4.1,0.0
+774,Mossi,CIV,Côte d'Ivoire,Africa,Western Africa,0.1,0.0
+775,Motilones,COL,Colombia,South America,South America,11096.5,0.6078
+775,Motilones,VEN,Venezuela,South America,South America,7161.1,0.3922
+777,Mpongwe,GAB,Gabon,Africa,Middle Africa,32350.2,0.582
+777,Mpongwe,COG,Congo,Africa,Middle Africa,23232.3,0.418
+778,Mubi,TCD,Chad,Africa,Middle Africa,48744.3,1.0
+780,"Muisca, Paese, Cofan, etc.",COL,Colombia,South America,South America,167878.4,0.8945
+780,"Muisca, Paese, Cofan, etc.",VEN,Venezuela,South America,South America,11247.6,0.0599
+780,"Muisca, Paese, Cofan, etc.",ECU,Ecuador,South America,South America,8555.1,0.0456
+781,Mulao,CHN,China,Asia,Eastern Asia,931.4,1.0
+782,Mumuye,NGA,Nigeria,Africa,Western Africa,1946.7,1.0
+783,Muna,IDN,Indonesia,Asia,South-Eastern Asia,2894.9,1.0
+784,Mundas,IND,India,Asia,Southern Asia,4196.9,1.0
+786,Muong,VNM,Vietnam,Asia,South-Eastern Asia,15007.2,1.0
+787,Mura,BRA,Brazil,South America,South America,67806.7,1.0
+789,Murle,SDS,S. Sudan,Africa,Eastern Africa,37288.6,0.7821
+789,Murle,ETH,Ethiopia,Africa,Eastern Africa,10391.5,0.2179
+790,Muruts and Kelabits,MYS,Malaysia,Asia,South-Eastern Asia,23883.2,0.624
+790,Muruts and Kelabits,IDN,Indonesia,Asia,South-Eastern Asia,14391.0,0.376
+791,Muscogee,USA,United States of America,North America,Northern America,4182.6,1.0
+793,Nabaloi,PHL,Philippines,Asia,South-Eastern Asia,2010.8,1.0
+795,Nagas,IND,India,Asia,Southern Asia,18168.2,0.6932
+795,Nagas,MMR,Myanmar,Asia,South-Eastern Asia,8041.2,0.3068
+796,Nageh,IDN,Indonesia,Asia,South-Eastern Asia,2268.8,1.0
+797,Nahsi,CHN,China,Asia,Eastern Asia,12377.9,1.0
+798,Nalu,GIN,Guinea,Africa,Western Africa,2650.7,0.9585
+798,Nalu,GNB,Guinea-Bissau,Africa,Western Africa,114.8,0.0415
+799,Nambikwara,BRA,Brazil,South America,South America,159602.2,1.0
+800,Nanaians,RUS,Russia,Europe,Eastern Europe,84478.3,0.9604
+800,Nanaians,CHN,China,Asia,Eastern Asia,3483.0,0.0396
+801,Nandi,KEN,Kenya,Africa,Eastern Africa,17115.1,0.8889
+801,Nandi,UGA,Uganda,Africa,Eastern Africa,2139.9,0.1111
+803,Nauruans,NRU,Nauru,Oceania,Micronesia,24.8,1.0
+804,Navahos,USA,United States of America,North America,Northern America,66968.1,1.0
+805,Ndebele,ZAF,South Africa,Africa,Southern Africa,28297.3,0.999
+805,Ndebele,BWA,Botswana,Africa,Southern Africa,27.7,0.001
+807,Nenets,RUS,Russia,Europe,Eastern Europe,705936.4,1.0
+808,Nepalese,NPL,Nepal,Asia,Southern Asia,65248.8,0.8506
+808,Nepalese,IND,India,Asia,Southern Asia,10740.6,0.14
+808,Nepalese,CHN,China,Asia,Eastern Asia,402.4,0.0052
+808,Nepalese,BTN,Bhutan,Asia,Southern Asia,312.8,0.0041
+808,Nepalese,BGD,Bangladesh,Asia,Southern Asia,0.8,0.0
+809,New Zealanders,NZL,New Zealand,Oceania,Australia and New Zealand,261503.8,1.0
+810,Newars,NPL,Nepal,Asia,Southern Asia,3051.6,1.0
+811,Ngada,IDN,Indonesia,Asia,South-Eastern Asia,618.0,1.0
+812,Ngadju,IDN,Indonesia,Asia,South-Eastern Asia,158353.9,1.0
+813,Nganasans,RUS,Russia,Europe,Eastern Europe,314337.1,1.0
+814,Ngbandi,COD,Dem. Rep. Congo,Africa,Middle Africa,32307.7,0.9982
+814,Ngbandi,CAF,Central African Rep.,Africa,Middle Africa,58.1,0.0018
+815,Ngiri,COG,Congo,Africa,Middle Africa,34318.1,0.5853
+815,Ngiri,COD,Dem. Rep. Congo,Africa,Middle Africa,19656.2,0.3352
+815,Ngiri,CAF,Central African Rep.,Africa,Middle Africa,4661.7,0.0795
+815,Ngiri,CMR,Cameroon,Africa,Middle Africa,0.0,0.0
+816,Ngombe,COD,Dem. Rep. Congo,Africa,Middle Africa,87422.1,0.9999
+816,Ngombe,COG,Congo,Africa,Middle Africa,4.7,0.0001
+817,Niassans,IDN,Indonesia,Asia,South-Eastern Asia,5578.8,1.0
+818,Nicaraguans,NIC,Nicaragua,North America,Central America,108673.7,0.9954
+818,Nicaraguans,HND,Honduras,North America,Central America,381.6,0.0035
+818,Nicaraguans,CRI,Costa Rica,North America,Central America,115.5,0.0011
+819,Nicobarese,IND,India,Asia,Southern Asia,1515.2,1.0
+820,Niueans,NIU,Niue,Oceania,Polynesia,218.6,1.0
+821,Nivkhs,RUS,Russia,Europe,Eastern Europe,16954.7,1.0
+822,Noemfoor,IDN,Indonesia,Asia,South-Eastern Asia,4023.7,1.0
+823,Noghays,RUS,Russia,Europe,Eastern Europe,2436.8,1.0
+824,Nootka,CAN,Canada,North America,Northern America,512.8,1.0
+825,Northern Lwo,SDS,S. Sudan,Africa,Eastern Africa,47954.5,0.8773
+825,Northern Lwo,SDN,Sudan,Africa,Northern Africa,6482.5,0.1186
+825,Northern Lwo,ETH,Ethiopia,Africa,Eastern Africa,226.5,0.0041
+826,Norwegians,NOR,Norway,Europe,Northern Europe,303846.6,0.9772
+826,Norwegians,CAN,Canada,North America,Northern America,5543.0,0.0178
+826,Norwegians,FIN,Finland,Europe,Northern Europe,1138.7,0.0037
+826,Norwegians,SWE,Sweden,Europe,Northern Europe,369.3,0.0012
+826,Norwegians,RUS,Russia,Europe,Eastern Europe,32.9,0.0001
+827,Nua,MMR,Myanmar,Asia,South-Eastern Asia,7415.1,0.8221
+827,Nua,CHN,China,Asia,Eastern Asia,1604.6,0.1779
+828,Nubians,SDN,Sudan,Africa,Northern Africa,24361.4,0.7434
+828,Nubians,EGY,Egypt,Africa,Northern Africa,8410.4,0.2566
+829,Nuer,SDS,S. Sudan,Africa,Eastern Africa,80506.8,0.9233
+829,Nuer,ETH,Ethiopia,Africa,Eastern Africa,6688.7,0.0767
+830,Nung and Giai,VNM,Vietnam,Asia,South-Eastern Asia,8291.6,0.9676
+830,Nung and Giai,CHN,China,Asia,Eastern Asia,277.9,0.0324
+831,Nupe,NGA,Nigeria,Africa,Western Africa,55868.6,1.0
+832,Nuristanis,AFG,Afghanistan,Asia,Southern Asia,5610.3,0.9734
+832,Nuristanis,PAK,Pakistan,Asia,Southern Asia,153.4,0.0266
+835,Oases Berbers,DZA,Algeria,Africa,Northern Africa,22547.3,0.6344
+835,Oases Berbers,LBY,Libya,Africa,Northern Africa,11693.6,0.329
+835,Oases Berbers,MAR,Morocco,Africa,Northern Africa,838.5,0.0236
+835,Oases Berbers,TUN,Tunisia,Africa,Northern Africa,461.4,0.013
+836,Ojibway,USA,United States of America,North America,Northern America,7946.1,0.8511
+836,Ojibway,CAN,Canada,North America,Northern America,1390.5,0.1489
+837,Olcha,RUS,Russia,Europe,Eastern Europe,1586.4,1.0
+838,Olöts,MNG,Mongolia,Asia,Eastern Asia,4492.9,1.0
+840,Opata,MEX,Mexico,North America,Central America,1032.4,1.0
+841,Oraons,IND,India,Asia,Southern Asia,10853.4,0.8798
+841,Oraons,BTN,Bhutan,Asia,Southern Asia,1482.5,0.1202
+844,Oriyas,IND,India,Asia,Southern Asia,178470.7,1.0
+845,Ormuri,AFG,Afghanistan,Asia,Southern Asia,627.8,1.0
+846,Oroches,RUS,Russia,Europe,Eastern Europe,80356.0,1.0
+847,Orochons,CHN,China,Asia,Eastern Asia,38364.3,1.0
+848,Oroks,RUS,Russia,Europe,Eastern Europe,575.9,1.0
+849,Ossetes,RUS,Russia,Europe,Eastern Europe,6660.2,0.566
+849,Ossetes,GEO,Georgia,Asia,Western Asia,5106.3,0.434
+850,Otomi,MEX,Mexico,North America,Central America,19494.9,1.0
+851,Outliers (Polynesians of Melanesia),SLB,Solomon Is.,Oceania,Melanesia,602.1,0.8348
+851,Outliers (Polynesians of Melanesia),NCL,New Caledonia,Oceania,Melanesia,119.2,0.1652
+852,Ovambo,AGO,Angola,Africa,Middle Africa,102473.9,0.6112
+852,Ovambo,NAM,Namibia,Africa,Southern Africa,65186.0,0.3888
+853,Ovimbundu,AGO,Angola,Africa,Middle Africa,187928.9,1.0
+854,Oyampi,BRA,Brazil,South America,South America,25365.1,0.6852
+854,Oyampi,FRA,France,Europe,Western Europe,11655.1,0.3148
+857,Pacaja,BRA,Brazil,South America,South America,68416.3,1.0
+859,Paiconecas,BRA,Brazil,South America,South America,53233.0,0.705
+859,Paiconecas,BOL,Bolivia,South America,South America,22272.9,0.295
+861,Palaung,MMR,Myanmar,Asia,South-Eastern Asia,5883.3,0.9513
+861,Palaung,CHN,China,Asia,Eastern Asia,301.5,0.0487
+863,Palu,IDN,Indonesia,Asia,South-Eastern Asia,9569.4,1.0
+866,Pamir Tajiks,CHN,China,Asia,Eastern Asia,27175.0,0.5943
+866,Pamir Tajiks,AFG,Afghanistan,Asia,Southern Asia,16785.8,0.3671
+866,Pamir Tajiks,TJK,Tajikistan,Asia,Central Asia,1049.6,0.023
+866,Pamir Tajiks,PAK,Pakistan,Asia,Southern Asia,712.6,0.0156
+868,Pampangan,PHL,Philippines,Asia,South-Eastern Asia,2615.3,1.0
+869,Panamans,PAN,Panama,North America,Central America,45899.3,0.9994
+869,Panamans,CRI,Costa Rica,North America,Central America,26.5,0.0006
+870,Panare,VEN,Venezuela,South America,South America,268009.5,0.73
+870,Panare,GUY,Guyana,South America,South America,63427.7,0.1728
+870,Panare,BRA,Brazil,South America,South America,35690.0,0.0972
+871,Pangasinan,PHL,Philippines,Asia,South-Eastern Asia,3540.5,1.0
+872,Panjabis,IND,India,Asia,Southern Asia,81757.0,0.5499
+872,Panjabis,PAK,Pakistan,Asia,Southern Asia,66909.1,0.4501
+873,Paoan,CHN,China,Asia,Eastern Asia,754.0,1.0
+874,Papago,USA,United States of America,North America,Northern America,10534.9,0.5742
+874,Papago,MEX,Mexico,North America,Central America,7812.9,0.4258
+875,Papuans of New Britain and New Ireland,PNG,Papua New Guinea,Oceania,Melanesia,15877.8,1.0
+876,Papuans of New Guinea,PNG,Papua New Guinea,Oceania,Melanesia,367359.3,1.0
+876,Papuans of New Guinea,IDN,Indonesia,Asia,South-Eastern Asia,13.0,0.0
+877,Papuans of Solomon Isls.,PNG,Papua New Guinea,Oceania,Melanesia,6379.6,0.8497
+877,Papuans of Solomon Isls.,SLB,Solomon Is.,Oceania,Melanesia,1128.7,0.1503
+878,Parachi,AFG,Afghanistan,Asia,Southern Asia,601.0,1.0
+879,Paraguayans-Guarani,PRY,Paraguay,South America,South America,221809.4,0.9966
+879,Paraguayans-Guarani,ARG,Argentina,South America,South America,424.1,0.0019
+879,Paraguayans-Guarani,BRA,Brazil,South America,South America,333.4,0.0015
+885,Pase,BRA,Brazil,South America,South America,152115.9,0.9597
+885,Pase,COL,Colombia,South America,South America,6386.8,0.0403
+887,Pashai,AFG,Afghanistan,Asia,Southern Asia,5699.9,1.0
+893,Paya,HND,Honduras,North America,Central America,10442.7,1.0
+895,Pedi,ZAF,South Africa,Africa,Southern Africa,46263.9,0.7984
+895,Pedi,ZWE,Zimbabwe,Africa,Eastern Africa,7178.1,0.1239
+895,Pedi,BWA,Botswana,Africa,Southern Africa,4500.6,0.0777
+897,Pepel,GNB,Guinea-Bissau,Africa,Western Africa,800.0,1.0
+898,Persians,IRN,Iran,Asia,Southern Asia,675987.6,0.9949
+898,Persians,AFG,Afghanistan,Asia,Southern Asia,2080.8,0.0031
+898,Persians,IRQ,Iraq,Asia,Western Asia,1301.3,0.0019
+898,Persians,TKM,Turkmenistan,Asia,Central Asia,107.6,0.0002
+899,Peruvians,PER,Peru,South America,South America,347598.5,0.9972
+899,Peruvians,BOL,Bolivia,South America,South America,579.4,0.0017
+899,Peruvians,ECU,Ecuador,South America,South America,177.3,0.0005
+899,Peruvians,BRA,Brazil,South America,South America,123.0,0.0004
+899,Peruvians,CHL,Chile,South America,South America,87.4,0.0003
+900,Phuteng,LAO,Laos,Asia,South-Eastern Asia,11752.3,1.0
+905,Pima,USA,United States of America,North America,Northern America,2605.5,0.549
+905,Pima,MEX,Mexico,North America,Central America,2140.9,0.451
+906,Pipil,SLV,El Salvador,North America,Central America,462.9,1.0
+908,Pitcairners,NFK,Norfolk Island,Oceania,Australia and New Zealand,39.2,1.0
+909,Pocoman,GTM,Guatemala,North America,Central America,2052.9,0.9961
+909,Pocoman,SLV,El Salvador,North America,Central America,8.1,0.0039
+910,Pocomchi,GTM,Guatemala,North America,Central America,2104.2,1.0
+911,Poles,POL,Poland,Europe,Eastern Europe,310873.9,0.8888
+911,Poles,BLR,Belarus,Europe,Eastern Europe,19755.0,0.0565
+911,Poles,LTU,Lithuania,Europe,Northern Europe,7740.9,0.0221
+911,Poles,BRA,Brazil,South America,South America,4554.2,0.013
+911,Poles,KAZ,Kazakhstan,Asia,Central Asia,3705.5,0.0106
+911,Poles,UKR,Ukraine,Europe,Eastern Europe,1215.7,0.0035
+911,Poles,RUS,Russia,Europe,Eastern Europe,829.1,0.0024
+911,Poles,CZE,Czechia,Europe,Eastern Europe,673.5,0.0019
+911,Poles,LVA,Latvia,Europe,Northern Europe,210.2,0.0006
+911,Poles,ROU,Romania,Europe,Eastern Europe,123.9,0.0004
+911,Poles,SVK,Slovakia,Europe,Eastern Europe,49.8,0.0001
+911,Poles,DEU,Germany,Europe,Western Europe,38.2,0.0001
+912,Ponapeans,FSM,Micronesia,Oceania,Micronesia,333.8,1.0
+913,Popolocs of Puebla State,MEX,Mexico,North America,Central America,2089.6,1.0
+914,Popolocs of Veracruz State,MEX,Mexico,North America,Central America,2602.8,1.0
+915,Portuguese,PRT,Portugal,Europe,Southern Europe,90307.5,0.9496
+915,Portuguese,CPV,Cabo Verde,Africa,Western Africa,3703.8,0.0389
+915,Portuguese,ESP,Spain,Europe,Southern Europe,1087.2,0.0114
+916,Poso,IDN,Indonesia,Asia,South-Eastern Asia,13623.1,1.0
+918,Puerto Ricans,PRI,Puerto Rico,North America,Caribbean,8791.4,1.0
+921,Pulang,CHN,China,Asia,Eastern Asia,1810.3,0.9887
+921,Pulang,MMR,Myanmar,Asia,South-Eastern Asia,20.7,0.0113
+922,"Punans, Beketans",IDN,Indonesia,Asia,South-Eastern Asia,4221.4,0.7456
+922,"Punans, Beketans",MYS,Malaysia,Asia,South-Eastern Asia,1440.3,0.2544
+923,Puok and Ksakau,VNM,Vietnam,Asia,South-Eastern Asia,284.4,0.9966
+923,Puok and Ksakau,LAO,Laos,Asia,South-Eastern Asia,1.0,0.0034
+925,Puyi,CHN,China,Asia,Eastern Asia,27131.1,1.0
+926,Quechua,PER,Peru,South America,South America,434678.9,0.4347
+926,Quechua,BOL,Bolivia,South America,South America,318620.0,0.3186
+926,Quechua,ECU,Ecuador,South America,South America,106203.2,0.1062
+926,Quechua,ARG,Argentina,South America,South America,88265.8,0.0883
+926,Quechua,CHL,Chile,South America,South America,40088.0,0.0401
+926,Quechua,COL,Colombia,South America,South America,12167.1,0.0122
+927,Quiche,GTM,Guatemala,North America,Central America,8231.0,1.0
+929,Raglai,VNM,Vietnam,Asia,South-Eastern Asia,4286.8,1.0
+930,Rajasthanis,IND,India,Asia,Southern Asia,369132.0,0.9794
+930,Rajasthanis,PAK,Pakistan,Asia,Southern Asia,7770.3,0.0206
+932,Redjang-Lebongs,IDN,Indonesia,Asia,South-Eastern Asia,25228.1,1.0
+935,Rhaetoromanians,ITA,Italy,Europe,Southern Europe,6032.2,0.5377
+935,Rhaetoromanians,CHE,Switzerland,Europe,Western Europe,4980.8,0.444
+935,Rhaetoromanians,AUT,Austria,Europe,Western Europe,113.9,0.0102
+935,Rhaetoromanians,SVN,Slovenia,Europe,Southern Europe,83.6,0.0075
+935,Rhaetoromanians,LIE,Liechtenstein,Europe,Western Europe,8.7,0.0008
+936,"Riau, Palembang",IDN,Indonesia,Asia,South-Eastern Asia,325734.1,0.9248
+936,"Riau, Palembang",MYS,Malaysia,Asia,South-Eastern Asia,23272.3,0.0661
+936,"Riau, Palembang",BRN,Brunei,Asia,South-Eastern Asia,3215.8,0.0091
+937,Rif,MAR,Morocco,Africa,Northern Africa,6586.5,0.9631
+937,Rif,DZA,Algeria,Africa,Northern Africa,252.5,0.0369
+937,Rif,ESP,Spain,Europe,Southern Europe,0.0,0.0
+939,Roshanls,TJK,Tajikistan,Asia,Central Asia,938.3,0.9787
+939,Roshanls,AFG,Afghanistan,Asia,Southern Asia,20.5,0.0213
+940,Rotinese,IDN,Indonesia,Asia,South-Eastern Asia,3494.5,0.9849
+940,Rotinese,TLS,Timor-Leste,Asia,South-Eastern Asia,53.6,0.0151
+943,Rumanians,ROU,Romania,Europe,Eastern Europe,214922.6,0.9823
+943,Rumanians,SRB,Serbia,Europe,Southern Europe,1428.9,0.0065
+943,Rumanians,BGR,Bulgaria,Europe,Eastern Europe,1204.0,0.0055
+943,Rumanians,UKR,Ukraine,Europe,Eastern Europe,903.9,0.0041
+943,Rumanians,HUN,Hungary,Europe,Eastern Europe,189.3,0.0009
+943,Rumanians,MDA,Moldova,Europe,Eastern Europe,136.3,0.0006
+944,Russians,RUS,Russia,Europe,Eastern Europe,6801255.2,0.9319
+944,Russians,KAZ,Kazakhstan,Asia,Central Asia,424545.7,0.0582
+944,Russians,UKR,Ukraine,Europe,Eastern Europe,22484.6,0.0031
+944,Russians,CAN,Canada,North America,Northern America,17024.6,0.0023
+944,Russians,KGZ,Kyrgyzstan,Asia,Central Asia,7703.7,0.0011
+944,Russians,BRA,Brazil,South America,South America,5877.1,0.0008
+944,Russians,LVA,Latvia,Europe,Northern Europe,5091.8,0.0007
+944,Russians,AZE,Azerbaijan,Asia,Western Asia,2057.6,0.0003
+944,Russians,URY,Uruguay,South America,South America,1847.6,0.0003
+944,Russians,CHN,China,Asia,Eastern Asia,1626.0,0.0002
+944,Russians,EST,Estonia,Europe,Northern Europe,1347.2,0.0002
+944,Russians,ROU,Romania,Europe,Eastern Europe,1309.9,0.0002
+944,Russians,GEO,Georgia,Asia,Western Asia,981.7,0.0001
+944,Russians,BLR,Belarus,Europe,Eastern Europe,965.4,0.0001
+944,Russians,MDA,Moldova,Europe,Eastern Europe,706.1,0.0001
+944,Russians,LTU,Lithuania,Europe,Northern Europe,689.0,0.0001
+944,Russians,POL,Poland,Europe,Eastern Europe,633.0,0.0001
+944,Russians,ARM,Armenia,Asia,Western Asia,480.6,0.0001
+944,Russians,UZB,Uzbekistan,Asia,Central Asia,344.1,0.0
+944,Russians,MNG,Mongolia,Asia,Eastern Asia,281.7,0.0
+944,Russians,NOR,Norway,Europe,Northern Europe,272.0,0.0
+944,Russians,TKM,Turkmenistan,Asia,Central Asia,232.0,0.0
+944,Russians,TJK,Tajikistan,Asia,Central Asia,171.4,0.0
+944,Russians,FIN,Finland,Europe,Northern Europe,67.2,0.0
+944,Russians,AFG,Afghanistan,Asia,Southern Asia,15.5,0.0
+944,Russians,PRK,North Korea,Asia,Eastern Asia,5.7,0.0
+944,Russians,ARG,Argentina,South America,South America,0.3,0.0
+944,Russians,IRN,Iran,Asia,Southern Asia,0.0,0.0
+945,Rutuls,RUS,Russia,Europe,Eastern Europe,1212.4,1.0
+945,Rutuls,AZE,Azerbaijan,Asia,Western Asia,0.0,0.0
+946,Saami,RUS,Russia,Europe,Eastern Europe,97298.6,0.7824
+946,Saami,SWE,Sweden,Europe,Northern Europe,10192.2,0.082
+946,Saami,NOR,Norway,Europe,Northern Europe,8692.7,0.0699
+946,Saami,FIN,Finland,Europe,Northern Europe,8183.2,0.0658
+948,Sadang,IDN,Indonesia,Asia,South-Eastern Asia,25863.4,1.0
+951,Saho,ERI,Eritrea,Africa,Eastern Africa,1295.6,0.8943
+951,Saho,ETH,Ethiopia,Africa,Eastern Africa,153.1,0.1057
+952,Salars,CHN,China,Asia,Eastern Asia,1478.7,1.0
+953,"Salawati, Mairassi, Madiki",IDN,Indonesia,Asia,South-Eastern Asia,27186.3,1.0
+954,Salish,USA,United States of America,North America,Northern America,10731.9,0.6713
+954,Salish,CAN,Canada,North America,Northern America,5253.7,0.3287
+956,Salvadorians,SLV,El Salvador,North America,Central America,19467.0,0.9904
+956,Salvadorians,HND,Honduras,North America,Central America,140.3,0.0071
+956,Salvadorians,GTM,Guatemala,North America,Central America,48.9,0.0025
+957,Sambal,PHL,Philippines,Asia,South-Eastern Asia,2861.5,1.0
+958,Samoans,WSM,Samoa,Oceania,Polynesia,2752.1,0.9557
+958,Samoans,ASM,American Samoa,Oceania,Polynesia,127.6,0.0443
+960,Sandawe,TZA,Tanzania,Africa,Eastern Africa,4869.2,1.0
+962,Sangirese,IDN,Indonesia,Asia,South-Eastern Asia,94.9,1.0
+963,Santals,IND,India,Asia,Southern Asia,30464.7,0.9478
+963,Santals,BTN,Bhutan,Asia,Southern Asia,1640.1,0.051
+963,Santals,BGD,Bangladesh,Asia,Southern Asia,38.0,0.0012
+964,Sanu,BFA,Burkina Faso,Africa,Western Africa,9581.8,0.8011
+964,Sanu,MLI,Mali,Africa,Western Africa,2379.0,0.1989
+967,Sari-Uighurs,CHN,China,Asia,Eastern Asia,4053.2,1.0
+968,Sasaks and Bodhas,IDN,Indonesia,Asia,South-Eastern Asia,4426.6,1.0
+969,Savaras,IND,India,Asia,Southern Asia,4790.5,1.0
+970,Savu,IDN,Indonesia,Asia,South-Eastern Asia,387.9,1.0
+971,Scotsmen,GBR,United Kingdom,Europe,Northern Europe,66099.1,1.0
+972,Sea Nomads or Sea Gipsies (Orang-Laut),IDN,Indonesia,Asia,South-Eastern Asia,7059.4,0.832
+972,Sea Nomads or Sea Gipsies (Orang-Laut),MYS,Malaysia,Asia,South-Eastern Asia,1425.3,0.168
+973,Sedang,VNM,Vietnam,Asia,South-Eastern Asia,9407.9,0.7135
+973,Sedang,LAO,Laos,Asia,South-Eastern Asia,3764.1,0.2855
+973,Sedang,KHM,Cambodia,Asia,South-Eastern Asia,13.9,0.0011
+974,Selkups,RUS,Russia,Europe,Eastern Europe,174102.1,1.0
+975,Selung,MMR,Myanmar,Asia,South-Eastern Asia,1382.0,1.0
+976,Semangs,THA,Thailand,Asia,South-Eastern Asia,2032.5,0.5377
+976,Semangs,MYS,Malaysia,Asia,South-Eastern Asia,1747.3,0.4623
+978,Senoi,MYS,Malaysia,Asia,South-Eastern Asia,2343.7,1.0
+979,Senufo,CIV,Côte d'Ivoire,Africa,Western Africa,64042.9,0.6153
+979,Senufo,MLI,Mali,Africa,Western Africa,26094.2,0.2507
+979,Senufo,BFA,Burkina Faso,Africa,Western Africa,13939.3,0.1339
+980,Seran Islanders,IDN,Indonesia,Asia,South-Eastern Asia,15689.3,1.0
+982,Serbs,SRB,Serbia,Europe,Southern Europe,69135.5,0.5715
+982,Serbs,BIH,Bosnia and Herz.,Europe,Southern Europe,34412.1,0.2845
+982,Serbs,HRV,Croatia,Europe,Southern Europe,12767.1,0.1055
+982,Serbs,KOS,Kosovo,Europe,Southern Europe,2655.9,0.022
+982,Serbs,MNE,Montenegro,Europe,Southern Europe,888.8,0.0073
+982,Serbs,ROU,Romania,Europe,Eastern Europe,540.3,0.0045
+982,Serbs,HUN,Hungary,Europe,Eastern Europe,201.1,0.0017
+982,Serbs,MKD,North Macedonia,Europe,Southern Europe,149.5,0.0012
+982,Serbs,BGR,Bulgaria,Europe,Eastern Europe,133.1,0.0011
+982,Serbs,ALB,Albania,Europe,Southern Europe,91.1,0.0008
+983,Sere-Mundu,COD,Dem. Rep. Congo,Africa,Middle Africa,17691.3,0.3877
+983,Sere-Mundu,SDS,S. Sudan,Africa,Eastern Africa,11995.2,0.2629
+983,Sere-Mundu,CAF,Central African Rep.,Africa,Middle Africa,11255.9,0.2467
+983,Sere-Mundu,COG,Congo,Africa,Middle Africa,4691.6,0.1028
+984,Serer,SEN,Senegal,Africa,Western Africa,10331.8,1.0
+986,Shahseven,IRN,Iran,Asia,Southern Asia,13759.7,1.0
+988,Shan,MMR,Myanmar,Asia,South-Eastern Asia,130437.9,0.9617
+988,Shan,THA,Thailand,Asia,South-Eastern Asia,4802.1,0.0354
+988,Shan,CHN,China,Asia,Eastern Asia,370.9,0.0027
+988,Shan,LAO,Laos,Asia,South-Eastern Asia,22.1,0.0002
+990,Shawiya,DZA,Algeria,Africa,Northern Africa,3411.3,1.0
+991,She,CHN,China,Asia,Eastern Asia,8029.2,1.0
+993,Sherpas,NPL,Nepal,Asia,Southern Asia,3266.0,0.6451
+993,Sherpas,CHN,China,Asia,Eastern Asia,1796.6,0.3549
+996,Shina,PAK,Pakistan,Asia,Southern Asia,29900.8,0.9291
+996,Shina,IND,India,Asia,Southern Asia,2282.8,0.0709
+998,Shleuh,MAR,Morocco,Africa,Northern Africa,44017.9,1.0
+999,Shoa-Arabs,TCD,Chad,Africa,Middle Africa,29143.9,0.5789
+999,Shoa-Arabs,NGA,Nigeria,Africa,Western Africa,13932.1,0.2767
+999,Shoa-Arabs,CMR,Cameroon,Africa,Middle Africa,7080.7,0.1406
+999,Shoa-Arabs,SDN,Sudan,Africa,Northern Africa,187.6,0.0037
+1000,Shors,RUS,Russia,Europe,Eastern Europe,5563.5,1.0
+1001,Shoshones,USA,United States of America,North America,Northern America,30209.2,1.0
+1002,Shugnanis,TJK,Tajikistan,Asia,Central Asia,9219.1,0.9966
+1002,Shugnanis,AFG,Afghanistan,Asia,Southern Asia,23.0,0.0025
+1002,Shugnanis,CHN,China,Asia,Eastern Asia,8.5,0.0009
+1003,Shuichia,CHN,China,Asia,Eastern Asia,4074.0,1.0
+1004,Siamese,THA,Thailand,Asia,South-Eastern Asia,132246.6,0.9917
+1004,Siamese,KHM,Cambodia,Asia,South-Eastern Asia,1100.9,0.0083
+1004,Siamese,MMR,Myanmar,Asia,South-Eastern Asia,5.6,0.0
+1005,Sibo,CHN,China,Asia,Eastern Asia,3284.1,0.9998
+1005,Sibo,KAZ,Kazakhstan,Asia,Central Asia,0.7,0.0002
+1006,Sidamo,ETH,Ethiopia,Africa,Eastern Africa,119369.7,0.9951
+1006,Sidamo,KEN,Kenya,Africa,Eastern Africa,588.4,0.0049
+1007,Sikka,IDN,Indonesia,Asia,South-Eastern Asia,1438.9,1.0
+1009,Simalur,IDN,Indonesia,Asia,South-Eastern Asia,1469.1,1.0
+1010,Sindhs,PAK,Pakistan,Asia,Southern Asia,149338.9,0.9965
+1010,Sindhs,IND,India,Asia,Southern Asia,518.7,0.0035
+1011,Sinhalese,LKA,Sri Lanka,Asia,Southern Asia,52597.4,1.0
+1012,Sioux,USA,United States of America,North America,Northern America,59833.5,1.0
+1014,Slovaks,SVK,Slovakia,Europe,Eastern Europe,43835.1,0.9098
+1014,Slovaks,HUN,Hungary,Europe,Eastern Europe,1624.8,0.0337
+1014,Slovaks,SRB,Serbia,Europe,Southern Europe,1117.7,0.0232
+1014,Slovaks,CZE,Czechia,Europe,Eastern Europe,541.2,0.0112
+1014,Slovaks,ROU,Romania,Europe,Eastern Europe,494.8,0.0103
+1014,Slovaks,POL,Poland,Europe,Eastern Europe,427.1,0.0089
+1014,Slovaks,UKR,Ukraine,Europe,Eastern Europe,117.5,0.0024
+1014,Slovaks,AUT,Austria,Europe,Western Europe,23.6,0.0005
+1015,Slovenes,SVN,Slovenia,Europe,Southern Europe,19093.7,0.8972
+1015,Slovenes,AUT,Austria,Europe,Western Europe,1653.8,0.0777
+1015,Slovenes,HRV,Croatia,Europe,Southern Europe,395.5,0.0186
+1015,Slovenes,HUN,Hungary,Europe,Eastern Europe,133.0,0.0062
+1015,Slovenes,ITA,Italy,Europe,Southern Europe,5.0,0.0002
+1016,"Sobei, Yamna, Bonggo, Tobati a",IDN,Indonesia,Asia,South-Eastern Asia,5647.0,0.9918
+1016,"Sobei, Yamna, Bonggo, Tobati a",PNG,Papua New Guinea,Oceania,Melanesia,46.7,0.0082
+1018,Solor,IDN,Indonesia,Asia,South-Eastern Asia,2235.9,1.0
+1019,Somalis,SOM,Somalia,Africa,Eastern Africa,469897.9,0.4491
+1019,Somalis,ETH,Ethiopia,Africa,Eastern Africa,290766.4,0.2779
+1019,Somalis,SOL,Somaliland,Africa,Eastern Africa,166942.2,0.1596
+1019,Somalis,KEN,Kenya,Africa,Eastern Africa,118523.1,0.1133
+1019,Somalis,DJI,Djibouti,Africa,Eastern Africa,129.8,0.0001
+1020,"Somba (incl. Berba, Bilapila)",BEN,Benin,Africa,Western Africa,21014.8,0.8307
+1020,"Somba (incl. Berba, Bilapila)",TGO,Togo,Africa,Western Africa,3893.6,0.1539
+1020,"Somba (incl. Berba, Bilapila)",GHA,Ghana,Africa,Western Africa,265.3,0.0105
+1020,"Somba (incl. Berba, Bilapila)",BFA,Burkina Faso,Africa,Western Africa,125.3,0.005
+1021,Songai,NER,Niger,Africa,Western Africa,50782.0,0.4448
+1021,Songai,MLI,Mali,Africa,Western Africa,45076.9,0.3948
+1021,Songai,BFA,Burkina Faso,Africa,Western Africa,8769.3,0.0768
+1021,Songai,NGA,Nigeria,Africa,Western Africa,5092.5,0.0446
+1021,Songai,BEN,Benin,Africa,Western Africa,4459.7,0.0391
+1022,Soninke,MLI,Mali,Africa,Western Africa,55231.7,0.7085
+1022,Soninke,MRT,Mauritania,Africa,Western Africa,12025.2,0.1543
+1022,Soninke,BFA,Burkina Faso,Africa,Western Africa,6460.6,0.0829
+1022,Soninke,SEN,Senegal,Africa,Western Africa,4234.9,0.0543
+1023,Southern Lwo,SDS,S. Sudan,Africa,Eastern Africa,4060.6,0.6263
+1023,Southern Lwo,COD,Dem. Rep. Congo,Africa,Middle Africa,2246.1,0.3464
+1023,Southern Lwo,UGA,Uganda,Africa,Eastern Africa,177.3,0.0273
+1024,Spaniards,ESP,Spain,Europe,Southern Europe,427502.3,0.9997
+1024,Spaniards,PRT,Portugal,Europe,Southern Europe,72.9,0.0002
+1024,Spaniards,FRA,France,Europe,Western Europe,71.9,0.0002
+1024,Spaniards,GIB,Gibraltar,Europe,Southern Europe,3.6,0.0
+1025,Sre,VNM,Vietnam,Asia,South-Eastern Asia,1154.9,1.0
+1026,Stieng,KHM,Cambodia,Asia,South-Eastern Asia,5040.8,0.5761
+1026,Stieng,VNM,Vietnam,Asia,South-Eastern Asia,3709.1,0.4239
+1027,Subanon,PHL,Philippines,Asia,South-Eastern Asia,5811.4,1.0
+1028,Sudan Arabs,SDN,Sudan,Africa,Northern Africa,1378617.0,0.757
+1028,Sudan Arabs,TCD,Chad,Africa,Middle Africa,246124.0,0.1352
+1028,Sudan Arabs,SDS,S. Sudan,Africa,Eastern Africa,105897.8,0.0582
+1028,Sudan Arabs,CAF,Central African Rep.,Africa,Middle Africa,72440.2,0.0398
+1028,Sudan Arabs,ETH,Ethiopia,Africa,Eastern Africa,12586.0,0.0069
+1028,Sudan Arabs,ERI,Eritrea,Africa,Eastern Africa,3521.7,0.0019
+1028,Sudan Arabs,BRT,Bir Tawil,Africa,Northern Africa,1504.2,0.0008
+1028,Sudan Arabs,EGY,Egypt,Africa,Northern Africa,397.7,0.0002
+1029,Sui,LAO,Laos,Asia,South-Eastern Asia,21228.5,0.8357
+1029,Sui,VNM,Vietnam,Asia,South-Eastern Asia,2534.8,0.0998
+1029,Sui,THA,Thailand,Asia,South-Eastern Asia,1639.5,0.0645
+1030,Suk,KEN,Kenya,Africa,Eastern Africa,18235.3,0.9984
+1030,Suk,UGA,Uganda,Africa,Eastern Africa,29.4,0.0016
+1031,Sula,IDN,Indonesia,Asia,South-Eastern Asia,4396.7,1.0
+1032,Sulu-Samal,PHL,Philippines,Asia,South-Eastern Asia,9962.2,0.7907
+1032,Sulu-Samal,MYS,Malaysia,Asia,South-Eastern Asia,2636.3,0.2093
+1033,Sumbanese,IDN,Indonesia,Asia,South-Eastern Asia,10670.9,1.0
+1034,Sumbawanese,IDN,Indonesia,Asia,South-Eastern Asia,9041.9,1.0
+1035,Sumu,NIC,Nicaragua,North America,Central America,8511.1,0.6048
+1035,Sumu,HND,Honduras,North America,Central America,5561.4,0.3952
+1036,Sundanese,IDN,Indonesia,Asia,South-Eastern Asia,40597.5,1.0
+1037,Sunwars,NPL,Nepal,Asia,Southern Asia,2179.3,0.7738
+1037,Sunwars,CHN,China,Asia,Eastern Asia,637.1,0.2262
+1038,Susu,GIN,Guinea,Africa,Western Africa,38404.2,0.8705
+1038,Susu,SLE,Sierra Leone,Africa,Western Africa,3490.3,0.0791
+1038,Susu,SEN,Senegal,Africa,Western Africa,1496.1,0.0339
+1038,Susu,MLI,Mali,Africa,Western Africa,726.2,0.0165
+1039,Swahili,TZA,Tanzania,Africa,Eastern Africa,16867.5,0.4578
+1039,Swahili,KEN,Kenya,Africa,Eastern Africa,9165.2,0.2487
+1039,Swahili,MOZ,Mozambique,Africa,Eastern Africa,7589.4,0.206
+1039,Swahili,COM,Comoros,Africa,Eastern Africa,1598.3,0.0434
+1039,Swahili,SOM,Somalia,Africa,Eastern Africa,1160.7,0.0315
+1039,Swahili,FRA,France,Europe,Western Europe,360.8,0.0098
+1039,Swahili,SYC,Seychelles,Seven seas (open ocean),Eastern Africa,104.9,0.0028
+1040,Swazi,ZAF,South Africa,Africa,Southern Africa,33848.1,0.6668
+1040,Swazi,SWZ,eSwatini,Africa,Southern Africa,16755.6,0.3301
+1040,Swazi,MOZ,Mozambique,Africa,Eastern Africa,157.8,0.0031
+1041,Swedes,SWE,Sweden,Europe,Northern Europe,426767.2,0.9419
+1041,Swedes,CAN,Canada,North America,Northern America,11957.1,0.0264
+1041,Swedes,FIN,Finland,Europe,Northern Europe,6997.3,0.0154
+1041,Swedes,USA,United States of America,North America,Northern America,5294.4,0.0117
+1041,Swedes,NOR,Norway,Europe,Northern Europe,1433.5,0.0032
+1041,Swedes,ALD,Åland,Europe,Northern Europe,641.2,0.0014
+1042,Syria Arabs,SYR,Syria,Asia,Western Asia,168875.6,0.6507
+1042,Syria Arabs,JOR,Jordan,Asia,Western Asia,86630.4,0.3338
+1042,Syria Arabs,IRQ,Iraq,Asia,Western Asia,1262.5,0.0049
+1042,Syria Arabs,TUR,Turkey,Asia,Western Asia,1089.0,0.0042
+1042,Syria Arabs,ISR,Israel,Asia,Western Asia,1023.1,0.0039
+1042,Syria Arabs,SAU,Saudi Arabia,Asia,Western Asia,575.8,0.0022
+1042,Syria Arabs,LBN,Lebanon,Asia,Western Asia,60.1,0.0002
+1042,Syria Arabs,PSX,Palestine,Asia,Western Asia,20.9,0.0001
+1043,Tabasarans,RUS,Russia,Europe,Eastern Europe,856.3,1.0
+1046,Tagakoolo,PHL,Philippines,Asia,South-Eastern Asia,1622.2,1.0
+1047,Tagalog,PHL,Philippines,Asia,South-Eastern Asia,32139.5,1.0
+1048,Tagbanuwa and Palawan,PHL,Philippines,Asia,South-Eastern Asia,5771.9,1.0
+1049,Tahitians,PYF,Fr. Polynesia,Oceania,Polynesia,1305.3,1.0
+1050,Taimanis,AFG,Afghanistan,Asia,Southern Asia,22734.8,1.0
+1051,Tajiks,AFG,Afghanistan,Asia,Southern Asia,87078.5,0.5303
+1051,Tajiks,TJK,Tajikistan,Asia,Central Asia,66654.7,0.4059
+1051,Tajiks,UZB,Uzbekistan,Asia,Central Asia,8236.5,0.0502
+1051,Tajiks,IRN,Iran,Asia,Southern Asia,1346.2,0.0082
+1051,Tajiks,KGZ,Kyrgyzstan,Asia,Central Asia,843.7,0.0051
+1051,Tajiks,KAZ,Kazakhstan,Asia,Central Asia,45.3,0.0003
+1051,Tajiks,TKM,Turkmenistan,Asia,Central Asia,10.4,0.0001
+1052,Talaud,IDN,Indonesia,Asia,South-Eastern Asia,1203.6,1.0
+1053,Talyshes,IRN,Iran,Asia,Southern Asia,3124.5,0.5285
+1053,Talyshes,AZE,Azerbaijan,Asia,Western Asia,2788.1,0.4715
+1054,Tama,TCD,Chad,Africa,Middle Africa,13178.4,0.503
+1054,Tama,SDN,Sudan,Africa,Northern Africa,7934.2,0.3028
+1054,Tama,CAF,Central African Rep.,Africa,Middle Africa,5086.5,0.1941
+1055,Tamangs (Murmis),NPL,Nepal,Asia,Southern Asia,8942.7,0.9194
+1055,Tamangs (Murmis),CHN,China,Asia,Eastern Asia,540.5,0.0556
+1055,Tamangs (Murmis),IND,India,Asia,Southern Asia,243.5,0.025
+1056,Tamazight,MAR,Morocco,Africa,Northern Africa,39998.0,1.0
+1057,Tamils,IND,India,Asia,Southern Asia,144460.9,0.8153
+1057,Tamils,LKA,Sri Lanka,Asia,Southern Asia,23650.1,0.1335
+1057,Tamils,MYS,Malaysia,Asia,South-Eastern Asia,9072.6,0.0512
+1058,Tanimbar Islanders,IDN,Indonesia,Asia,South-Eastern Asia,3826.8,1.0
+1060,Tarahumara,MEX,Mexico,North America,Central America,44944.4,1.0
+1062,Tarascans,MEX,Mexico,North America,Central America,5236.6,1.0
+1064,Tatars,RUS,Russia,Europe,Eastern Europe,103892.1,0.9838
+1064,Tatars,CHN,China,Asia,Eastern Asia,696.9,0.0066
+1064,Tatars,KAZ,Kazakhstan,Asia,Central Asia,446.5,0.0042
+1064,Tatars,ROU,Romania,Europe,Eastern Europe,346.4,0.0033
+1064,Tatars,BGR,Bulgaria,Europe,Eastern Europe,97.0,0.0009
+1064,Tatars,TJK,Tajikistan,Asia,Central Asia,65.2,0.0006
+1064,Tatars,UZB,Uzbekistan,Asia,Central Asia,59.5,0.0006
+1065,Tatog,TZA,Tanzania,Africa,Eastern Africa,3953.4,1.0
+1066,Tats,AZE,Azerbaijan,Asia,Western Asia,2615.9,0.5668
+1066,Tats,IRN,Iran,Asia,Southern Asia,1964.3,0.4256
+1066,Tats,RUS,Russia,Europe,Eastern Europe,35.3,0.0077
+1067,Tay,CHN,China,Asia,Eastern Asia,28487.3,0.6031
+1067,Tay,VNM,Vietnam,Asia,South-Eastern Asia,18643.6,0.3947
+1067,Tay,MMR,Myanmar,Asia,South-Eastern Asia,59.3,0.0013
+1067,Tay,LAO,Laos,Asia,South-Eastern Asia,43.3,0.0009
+1068,Tehuelche and Óna,ARG,Argentina,South America,South America,4746.7,1.0
+1069,Telugu,IND,India,Asia,Southern Asia,321256.8,1.0
+1070,Tem,TGO,Togo,Africa,Western Africa,12453.5,0.8491
+1070,Tem,BEN,Benin,Africa,Western Africa,1384.6,0.0944
+1070,Tem,GHA,Ghana,Africa,Western Africa,827.9,0.0565
+1071,Temaini,SDN,Sudan,Africa,Northern Africa,2756.1,1.0
+1074,Tenda,GIN,Guinea,Africa,Western Africa,2821.3,0.4726
+1074,Tenda,SEN,Senegal,Africa,Western Africa,2818.3,0.4721
+1074,Tenda,GNB,Guinea-Bissau,Africa,Western Africa,330.2,0.0553
+1075,Tenetehara,BRA,Brazil,South America,South America,49568.0,1.0
+1076,Tenggerese,IDN,Indonesia,Asia,South-Eastern Asia,179.8,1.0
+1077,Tepehua,MEX,Mexico,North America,Central America,391.6,1.0
+1078,Tepehuanos,MEX,Mexico,North America,Central America,10148.5,1.0
+1080,Ternate,IDN,Indonesia,Asia,South-Eastern Asia,2703.5,1.0
+1081,Terraba,CRI,Costa Rica,North America,Central America,965.8,0.6663
+1081,Terraba,PAN,Panama,North America,Central America,483.7,0.3337
+1082,Teso,KEN,Kenya,Africa,Eastern Africa,59073.4,0.6376
+1082,Teso,SDS,S. Sudan,Africa,Eastern Africa,17257.0,0.1863
+1082,Teso,UGA,Uganda,Africa,Eastern Africa,13611.3,0.1469
+1082,Teso,ETH,Ethiopia,Africa,Eastern Africa,2702.9,0.0292
+1083,Tetum,TLS,Timor-Leste,Asia,South-Eastern Asia,4894.8,0.6718
+1083,Tetum,IDN,Indonesia,Asia,South-Eastern Asia,2391.6,0.3282
+1084,Teymurs,AFG,Afghanistan,Asia,Southern Asia,9002.5,0.5454
+1084,Teymurs,IRN,Iran,Asia,Southern Asia,7503.2,0.4546
+1086,"Thado, Mhar, Hallam, Marings,",IND,India,Asia,Southern Asia,10382.2,0.9556
+1086,"Thado, Mhar, Hallam, Marings,",MMR,Myanmar,Asia,South-Eastern Asia,482.0,0.0444
+1087,"Thai (incl. Thai Nea, Thai Pho)",VNM,Vietnam,Asia,South-Eastern Asia,36030.6,0.5043
+1087,"Thai (incl. Thai Nea, Thai Pho)",LAO,Laos,Asia,South-Eastern Asia,35415.1,0.4957
+1089,Tharu,NPL,Nepal,Asia,Southern Asia,5229.2,1.0
+1090,Tibetans,CHN,China,Asia,Eastern Asia,1604646.0,0.9888
+1090,Tibetans,IND,India,Asia,Southern Asia,15388.2,0.0095
+1090,Tibetans,BTN,Bhutan,Asia,Southern Asia,1389.0,0.0009
+1090,Tibetans,NPL,Nepal,Asia,Southern Asia,1262.9,0.0008
+1090,Tibetans,MMR,Myanmar,Asia,South-Eastern Asia,166.1,0.0001
+1091,Tibetan-speaking peoples of Bhutan,BTN,Bhutan,Asia,Southern Asia,29808.7,0.957
+1091,Tibetan-speaking peoples of Bhutan,IND,India,Asia,Southern Asia,1101.4,0.0354
+1091,Tibetan-speaking peoples of Bhutan,CHN,China,Asia,Eastern Asia,237.1,0.0076
+1093,Tigrai,ETH,Ethiopia,Africa,Eastern Africa,53927.4,0.8096
+1093,Tigrai,ERI,Eritrea,Africa,Eastern Africa,12679.8,0.1904
+1094,Tigre,ERI,Eritrea,Africa,Eastern Africa,36523.2,0.9993
+1094,Tigre,SDN,Sudan,Africa,Northern Africa,26.5,0.0007
+1095,Tikar,CMR,Cameroon,Africa,Middle Africa,21547.5,0.9881
+1095,Tikar,NGA,Nigeria,Africa,Western Africa,260.2,0.0119
+1096,Tinggian,PHL,Philippines,Asia,South-Eastern Asia,2658.8,1.0
+1097,Tippera,IND,India,Asia,Southern Asia,2821.5,0.9595
+1097,Tippera,BGD,Bangladesh,Asia,Southern Asia,119.1,0.0405
+1098,Tirahi,AFG,Afghanistan,Asia,Southern Asia,426.8,1.0
+1099,Tirio,BRA,Brazil,South America,South America,194133.6,0.83
+1099,Tirio,SUR,Suriname,South America,South America,22065.2,0.0943
+1099,Tirio,GUY,Guyana,South America,South America,14346.2,0.0613
+1099,Tirio,FRA,France,Europe,Western Europe,3361.5,0.0144
+1100,"Tirurai, Dulangan, Tagabili",PHL,Philippines,Asia,South-Eastern Asia,4135.2,1.0
+1101,Tiv,NGA,Nigeria,Africa,Western Africa,73676.0,0.8587
+1101,Tiv,CMR,Cameroon,Africa,Middle Africa,12124.1,0.1413
+1102,Tlapanecs,MEX,Mexico,North America,Central America,3676.3,1.0
+1103,Toala,IDN,Indonesia,Asia,South-Eastern Asia,173.9,1.0
+1104,Toba,ARG,Argentina,South America,South America,20951.0,0.4293
+1104,Toba,BRA,Brazil,South America,South America,17712.8,0.363
+1104,Toba,PRY,Paraguay,South America,South America,9329.7,0.1912
+1104,Toba,BOL,Bolivia,South America,South America,806.8,0.0165
+1105,Tobelo,IDN,Indonesia,Asia,South-Eastern Asia,5444.3,1.0
+1108,Tofalar,RUS,Russia,Europe,Eastern Europe,21884.9,1.0
+1109,Togo tribes,TGO,Togo,Africa,Western Africa,4430.3,0.6045
+1109,Togo tribes,GHA,Ghana,Africa,Western Africa,2898.2,0.3955
+1110,Tojolabali,MEX,Mexico,North America,Central America,5748.7,0.7461
+1110,Tojolabali,GTM,Guatemala,North America,Central America,1956.0,0.2539
+1112,Tokode,TLS,Timor-Leste,Asia,South-Eastern Asia,585.0,1.0
+1113,Tominis,IDN,Indonesia,Asia,South-Eastern Asia,10226.3,1.0
+1114,Tonga,ZMB,Zambia,Africa,Eastern Africa,136737.6,0.7906
+1114,Tonga,ZWE,Zimbabwe,Africa,Eastern Africa,36225.1,0.2094
+1115,Tongans,TON,Tonga,Oceania,Polynesia,344.6,1.0
+1117,Torgut,MNG,Mongolia,Asia,Eastern Asia,16107.3,1.0
+1119,Toromonas,BOL,Bolivia,South America,South America,13514.4,1.0
+1120,Torres Strait Islanders,AUS,Australia,Oceania,Australia and New Zealand,781.3,1.0
+1121,Torrupan,HND,Honduras,North America,Central America,153.7,1.0
+1122,Totonacos,MEX,Mexico,North America,Central America,6743.8,1.0
+1123,Trinidad Islanders,TTO,Trinidad and Tobago,North America,Caribbean,1176.3,1.0
+1126,Tsakhurs,RUS,Russia,Europe,Eastern Europe,669.7,0.7823
+1126,Tsakhurs,AZE,Azerbaijan,Asia,Western Asia,186.4,0.2177
+1127,Tseltal,MEX,Mexico,North America,Central America,15663.1,1.0
+1128,Tsimshian,CAN,Canada,North America,Northern America,12307.2,0.5038
+1128,Tsimshian,USA,United States of America,North America,Northern America,12122.6,0.4962
+1131,Tsonga,MOZ,Mozambique,Africa,Eastern Africa,166890.4,0.7511
+1131,Tsonga,ZAF,South Africa,Africa,Southern Africa,34094.0,0.1535
+1131,Tsonga,ZWE,Zimbabwe,Africa,Eastern Africa,20979.5,0.0944
+1131,Tsonga,SWZ,eSwatini,Africa,Southern Africa,217.7,0.001
+1133,Tsutujil,GTM,Guatemala,North America,Central America,1062.9,1.0
+1134,Tsuva,BRA,Brazil,South America,South America,5861.6,1.0
+1136,Tuaregs,DZA,Algeria,Africa,Northern Africa,649033.0,0.4169
+1136,Tuaregs,NER,Niger,Africa,Western Africa,597305.7,0.3837
+1136,Tuaregs,MLI,Mali,Africa,Western Africa,259397.3,0.1666
+1136,Tuaregs,LBY,Libya,Africa,Northern Africa,37962.6,0.0244
+1136,Tuaregs,BFA,Burkina Faso,Africa,Western Africa,9279.2,0.006
+1136,Tuaregs,TCD,Chad,Africa,Middle Africa,3692.0,0.0024
+1136,Tuaregs,TUN,Tunisia,Africa,Northern Africa,167.2,0.0001
+1137,Tubu,TCD,Chad,Africa,Middle Africa,685128.6,0.7965
+1137,Tubu,NER,Niger,Africa,Western Africa,150881.7,0.1754
+1137,Tubu,LBY,Libya,Africa,Northern Africa,23708.4,0.0276
+1137,Tubu,SDN,Sudan,Africa,Northern Africa,486.4,0.0006
+1139,Tuchia,CHN,China,Asia,Eastern Asia,10577.1,1.0
+1140,Tujen,CHN,China,Asia,Eastern Asia,3635.3,1.0
+1141,Tulu,IND,India,Asia,Southern Asia,5717.2,1.0
+1142,Tulung,CHN,China,Asia,Eastern Asia,913.8,0.9997
+1142,Tulung,MMR,Myanmar,Asia,South-Eastern Asia,0.3,0.0003
+1143,Tung,CHN,China,Asia,Eastern Asia,13428.8,1.0
+1144,Tunghsiang,CHN,China,Asia,Eastern Asia,956.8,1.0
+1145,Tunisia Arabs,TUN,Tunisia,Africa,Northern Africa,154370.5,0.9961
+1145,Tunisia Arabs,LBY,Libya,Africa,Northern Africa,552.4,0.0036
+1145,Tunisia Arabs,DZA,Algeria,Africa,Northern Africa,54.6,0.0004
+1148,Turkic tribes of southern and eastern Iran,IRN,Iran,Asia,Southern Asia,47075.3,0.9938
+1148,Turkic tribes of southern and eastern Iran,TKM,Turkmenistan,Asia,Central Asia,292.8,0.0062
+1149,Turkmens,TKM,Turkmenistan,Asia,Central Asia,462991.8,0.8935
+1149,Turkmens,IRN,Iran,Asia,Southern Asia,18927.9,0.0365
+1149,Turkmens,TUR,Turkey,Asia,Western Asia,11524.7,0.0222
+1149,Turkmens,AFG,Afghanistan,Asia,Southern Asia,10211.7,0.0197
+1149,Turkmens,UZB,Uzbekistan,Asia,Central Asia,9683.1,0.0187
+1149,Turkmens,IRQ,Iraq,Asia,Western Asia,2995.0,0.0058
+1149,Turkmens,SYR,Syria,Asia,Western Asia,1003.5,0.0019
+1149,Turkmens,KAZ,Kazakhstan,Asia,Central Asia,454.3,0.0009
+1149,Turkmens,RUS,Russia,Europe,Eastern Europe,356.5,0.0007
+1149,Turkmens,ARM,Armenia,Asia,Western Asia,3.7,0.0
+1150,Turks,TUR,Turkey,Asia,Western Asia,607582.8,0.9721
+1150,Turks,BGR,Bulgaria,Europe,Eastern Europe,10157.7,0.0163
+1150,Turks,CYP,Cyprus,Asia,Western Asia,2264.8,0.0036
+1150,Turks,GRC,Greece,Europe,Southern Europe,1532.8,0.0025
+1150,Turks,MKD,North Macedonia,Europe,Southern Europe,1427.7,0.0023
+1150,Turks,CYN,N. Cyprus,Asia,Western Asia,995.7,0.0016
+1150,Turks,SYR,Syria,Asia,Western Asia,485.5,0.0008
+1150,Turks,ROU,Romania,Europe,Eastern Europe,237.4,0.0004
+1150,Turks,CNM,Cyprus U.N. Buffer Zone,Asia,Western Asia,177.6,0.0003
+1150,Turks,GEO,Georgia,Asia,Western Asia,134.2,0.0002
+1150,Turks,WSB,Akrotiri,Asia,Western Asia,29.5,0.0
+1150,Turks,ARM,Armenia,Asia,Western Asia,3.7,0.0
+1151,Tuvinians,RUS,Russia,Europe,Eastern Europe,181803.4,0.9344
+1151,Tuvinians,MNG,Mongolia,Asia,Eastern Asia,12765.2,0.0656
+1153,Udeghe,RUS,Russia,Europe,Eastern Europe,81592.2,1.0
+1154,Udi,AZE,Azerbaijan,Asia,Western Asia,104.7,1.0
+1155,Udmurts,RUS,Russia,Europe,Eastern Europe,31469.7,1.0
+1156,Uighurs,CHN,China,Asia,Eastern Asia,622531.7,0.9897
+1156,Uighurs,KAZ,Kazakhstan,Asia,Central Asia,5874.0,0.0093
+1156,Uighurs,MNG,Mongolia,Asia,Eastern Asia,454.6,0.0007
+1156,Uighurs,KGZ,Kyrgyzstan,Asia,Central Asia,106.4,0.0002
+1156,Uighurs,UZB,Uzbekistan,Asia,Central Asia,15.7,0.0
+1157,Ukrainians,UKR,Ukraine,Europe,Eastern Europe,544244.7,0.7271
+1157,Ukrainians,KAZ,Kazakhstan,Asia,Central Asia,89044.4,0.119
+1157,Ukrainians,RUS,Russia,Europe,Eastern Europe,81144.1,0.1084
+1157,Ukrainians,CAN,Canada,North America,Northern America,21728.5,0.029
+1157,Ukrainians,MDA,Moldova,Europe,Eastern Europe,3325.3,0.0044
+1157,Ukrainians,SVK,Slovakia,Europe,Eastern Europe,3072.5,0.0041
+1157,Ukrainians,ROU,Romania,Europe,Eastern Europe,2576.0,0.0034
+1157,Ukrainians,BLR,Belarus,Europe,Eastern Europe,2071.4,0.0028
+1157,Ukrainians,KGZ,Kyrgyzstan,Asia,Central Asia,912.7,0.0012
+1157,Ukrainians,POL,Poland,Europe,Eastern Europe,354.6,0.0005
+1157,Ukrainians,CHN,China,Asia,Eastern Asia,1.5,0.0
+1159,Ulva,NIC,Nicaragua,North America,Central America,165.5,1.0
+1162,Uriankhai of former Shabinsky area,MNG,Mongolia,Asia,Eastern Asia,22422.1,0.9839
+1162,Uriankhai of former Shabinsky area,RUS,Russia,Europe,Eastern Europe,367.2,0.0161
+1163,Uriankhai-Monchak,MNG,Mongolia,Asia,Eastern Asia,5022.6,0.9974
+1163,Uriankhai-Monchak,CHN,China,Asia,Eastern Asia,12.9,0.0026
+1164,Uruguayans,URY,Uruguay,South America,South America,175042.2,0.9964
+1164,Uruguayans,BRA,Brazil,South America,South America,608.9,0.0035
+1164,Uruguayans,ARG,Argentina,South America,South America,22.3,0.0001
+1164,Uruguayans,BRI,Brazilian I.,South America,South America,0.2,0.0
+1165,US Americans,USA,United States of America,North America,Northern America,7340680.1,0.9993
+1165,US Americans,CAN,Canada,North America,Northern America,2767.1,0.0004
+1165,US Americans,PAN,Panama,North America,Central America,2358.7,0.0003
+1165,US Americans,GUM,Guam,Oceania,Micronesia,237.8,0.0
+1167,Uspantecs,GTM,Guatemala,North America,Central America,588.2,1.0
+1168,Utan,IDN,Indonesia,Asia,South-Eastern Asia,320.7,1.0
+1170,Uzbeks,UZB,Uzbekistan,Asia,Central Asia,134849.9,0.6205
+1170,Uzbeks,AFG,Afghanistan,Asia,Southern Asia,50476.5,0.2322
+1170,Uzbeks,TJK,Tajikistan,Asia,Central Asia,17420.3,0.0802
+1170,Uzbeks,KAZ,Kazakhstan,Asia,Central Asia,6596.0,0.0303
+1170,Uzbeks,TKM,Turkmenistan,Asia,Central Asia,3902.9,0.018
+1170,Uzbeks,KGZ,Kyrgyzstan,Asia,Central Asia,3352.3,0.0154
+1170,Uzbeks,CHN,China,Asia,Eastern Asia,740.3,0.0034
+1171,Vankieu,VNM,Vietnam,Asia,South-Eastern Asia,4621.1,0.789
+1171,Vankieu,LAO,Laos,Asia,South-Eastern Asia,1235.5,0.211
+1172,Ve,VNM,Vietnam,Asia,South-Eastern Asia,2107.1,0.9981
+1172,Ve,LAO,Laos,Asia,South-Eastern Asia,4.1,0.0019
+1173,Veddas,LKA,Sri Lanka,Asia,Southern Asia,886.3,1.0
+1174,Venezuelans,VEN,Venezuela,South America,South America,472794.3,0.9967
+1174,Venezuelans,COL,Colombia,South America,South America,1562.7,0.0033
+1174,Venezuelans,GUY,Guyana,South America,South America,3.9,0.0
+1175,Vepses,RUS,Russia,Europe,Eastern Europe,4500.4,1.0
+1176,Vietnamese,VNM,Vietnam,Asia,South-Eastern Asia,108507.2,0.9446
+1176,Vietnamese,KHM,Cambodia,Asia,South-Eastern Asia,3706.1,0.0323
+1176,Vietnamese,THA,Thailand,Asia,South-Eastern Asia,1619.6,0.0141
+1176,Vietnamese,CHN,China,Asia,Eastern Asia,1041.0,0.0091
+1177,Wa,MMR,Myanmar,Asia,South-Eastern Asia,10792.3,0.501
+1177,Wa,CHN,China,Asia,Eastern Asia,6256.8,0.2904
+1177,Wa,THA,Thailand,Asia,South-Eastern Asia,4493.2,0.2086
+1179,Waboni,KEN,Kenya,Africa,Eastern Africa,5188.5,0.9811
+1179,Waboni,SOM,Somalia,Africa,Eastern Africa,100.0,0.0189
+1180,Wachokwe,AGO,Angola,Africa,Middle Africa,267161.8,0.8891
+1180,Wachokwe,ZMB,Zambia,Africa,Eastern Africa,21169.0,0.0704
+1180,Wachokwe,COD,Dem. Rep. Congo,Africa,Middle Africa,12165.9,0.0405
+1181,Wadjagga,TZA,Tanzania,Africa,Eastern Africa,8225.5,0.8342
+1181,Wadjagga,KEN,Kenya,Africa,Eastern Africa,1634.5,0.1658
+1182,Wafipa,TZA,Tanzania,Africa,Eastern Africa,48539.0,0.5933
+1182,Wafipa,ZMB,Zambia,Africa,Eastern Africa,30403.7,0.3716
+1182,Wafipa,MWI,Malawi,Africa,Eastern Africa,2874.5,0.0351
+1183,Wagogo,TZA,Tanzania,Africa,Eastern Africa,36262.9,1.0
+1184,Wagosha,SOM,Somalia,Africa,Eastern Africa,9637.9,0.7903
+1184,Wagosha,ETH,Ethiopia,Africa,Eastern Africa,2557.5,0.2097
+1185,Wahehe,TZA,Tanzania,Africa,Eastern Africa,86429.9,1.0
+1186,Wai,SLE,Sierra Leone,Africa,Western Africa,10731.1,0.7236
+1186,Wai,LBR,Liberia,Africa,Western Africa,3540.4,0.2387
+1186,Wai,GIN,Guinea,Africa,Western Africa,539.5,0.0364
+1186,Wai,CIV,Côte d'Ivoire,Africa,Western Africa,20.1,0.0014
+1189,Wakash,CAN,Canada,North America,Northern America,15262.5,1.0
+1190,Wakinga,TZA,Tanzania,Africa,Eastern Africa,36236.1,0.8132
+1190,Wakinga,ZMB,Zambia,Africa,Eastern Africa,4499.6,0.101
+1190,Wakinga,MWI,Malawi,Africa,Eastern Africa,3778.2,0.0848
+1190,Wakinga,MOZ,Mozambique,Africa,Eastern Africa,43.8,0.001
+1191,Walloons,BEL,Belgium,Europe,Western Europe,16207.8,0.9921
+1191,Walloons,FRA,France,Europe,Western Europe,57.1,0.0035
+1191,Walloons,DEU,Germany,Europe,Western Europe,42.4,0.0026
+1191,Walloons,LUX,Luxembourg,Europe,Western Europe,29.3,0.0018
+1192,Waluchazi,AGO,Angola,Africa,Middle Africa,92693.7,0.7872
+1192,Waluchazi,ZMB,Zambia,Africa,Eastern Africa,25050.3,0.2127
+1192,Waluchazi,NAM,Namibia,Africa,Southern Africa,2.2,0.0
+1195,Wandama,IDN,Indonesia,Asia,South-Eastern Asia,5807.2,1.0
+1198,Wanyamwezi,TZA,Tanzania,Africa,Eastern Africa,217154.1,1.0
+1199,Wanyaneka,AGO,Angola,Africa,Middle Africa,98609.4,1.0
+1200,Wanyaturu,TZA,Tanzania,Africa,Eastern Africa,23149.4,1.0
+1201,Wanyika,KEN,Kenya,Africa,Eastern Africa,26210.6,0.9764
+1201,Wanyika,TZA,Tanzania,Africa,Eastern Africa,633.9,0.0236
+1202,Wapare,TZA,Tanzania,Africa,Eastern Africa,8602.9,0.9812
+1202,Wapare,KEN,Kenya,Africa,Eastern Africa,164.9,0.0188
+1205,Wapokomo,KEN,Kenya,Africa,Eastern Africa,10764.5,1.0
+1206,Waropens,IDN,Indonesia,Asia,South-Eastern Asia,7151.6,1.0
+1207,Warrau,VEN,Venezuela,South America,South America,19770.7,0.9952
+1207,Warrau,GUY,Guyana,South America,South America,94.8,0.0048
+1208,Wasagara,TZA,Tanzania,Africa,Eastern Africa,20284.2,1.0
+1210,Washambala,TZA,Tanzania,Africa,Eastern Africa,19805.8,0.9998
+1210,Washambala,KEN,Kenya,Africa,Eastern Africa,3.8,0.0002
+1211,Wateita,TZA,Tanzania,Africa,Eastern Africa,227.5,0.7209
+1211,Wateita,KEN,Kenya,Africa,Eastern Africa,88.1,0.2791
+1212,Wayao,MOZ,Mozambique,Africa,Eastern Africa,77418.4,0.5104
+1212,Wayao,TZA,Tanzania,Africa,Eastern Africa,56285.8,0.371
+1212,Wayao,MWI,Malawi,Africa,Eastern Africa,17989.2,0.1186
+1213,Wayeye,AGO,Angola,Africa,Middle Africa,36971.1,0.4707
+1213,Wayeye,BWA,Botswana,Africa,Southern Africa,26465.8,0.337
+1213,Wayeye,NAM,Namibia,Africa,Southern Africa,15097.8,0.1922
+1213,Wayeye,ZMB,Zambia,Africa,Eastern Africa,4.6,0.0001
+1214,Wazaramo,TZA,Tanzania,Africa,Eastern Africa,31027.2,1.0
+1216,Welsh,GBR,United Kingdom,Europe,Northern Europe,19792.2,1.0
+1218,West Sahara Arabs,MRT,Mauritania,Africa,Western Africa,734600.3,0.5585
+1218,West Sahara Arabs,MLI,Mali,Africa,Western Africa,300249.0,0.2283
+1218,West Sahara Arabs,MAR,Morocco,Africa,Northern Africa,177726.0,0.1351
+1218,West Sahara Arabs,SAH,W. Sahara,Africa,Northern Africa,90491.3,0.0688
+1218,West Sahara Arabs,NER,Niger,Africa,Western Africa,8719.5,0.0066
+1218,West Sahara Arabs,SEN,Senegal,Africa,Western Africa,2107.6,0.0016
+1218,West Sahara Arabs,DZA,Algeria,Africa,Northern Africa,1361.0,0.001
+1218,West Sahara Arabs,NGA,Nigeria,Africa,Western Africa,52.5,0.0
+1220,Wolof,SEN,Senegal,Africa,Western Africa,37400.8,0.9856
+1220,Wolof,GMB,Gambia,Africa,Western Africa,542.6,0.0143
+1220,Wolof,MRT,Mauritania,Africa,Western Africa,2.5,0.0001
+1222,Xosa,ZAF,South Africa,Africa,Southern Africa,174441.1,1.0
+1223,Yaghnobis,TJK,Tajikistan,Asia,Central Asia,729.0,1.0
+1224,Yakan,PHL,Philippines,Asia,South-Eastern Asia,777.2,1.0
+1225,Yakuts,RUS,Russia,Europe,Eastern Europe,2366185.9,1.0
+1226,Yamamadis,BRA,Brazil,South America,South America,52574.2,1.0
+1227,Yamana,CHL,Chile,South America,South America,2453.4,0.8513
+1227,Yamana,ARG,Argentina,South America,South America,428.5,0.1487
+1229,Yao,CHN,China,Asia,Eastern Asia,28214.0,0.5872
+1229,Yao,VNM,Vietnam,Asia,South-Eastern Asia,16049.9,0.334
+1229,Yao,LAO,Laos,Asia,South-Eastern Asia,2268.3,0.0472
+1229,Yao,THA,Thailand,Asia,South-Eastern Asia,1239.0,0.0258
+1229,Yao,MMR,Myanmar,Asia,South-Eastern Asia,279.9,0.0058
+1231,Yaqui,MEX,Mexico,North America,Central America,1970.5,1.0
+1232,Yaruro,COL,Colombia,South America,South America,199699.4,0.784
+1232,Yaruro,VEN,Venezuela,South America,South America,55024.8,0.216
+1232,Yaruro,BRA,Brazil,South America,South America,6.2,0.0
+1233,Yazghulems,TJK,Tajikistan,Asia,Central Asia,1660.5,1.0
+1233,Yazghulems,AFG,Afghanistan,Asia,Southern Asia,0.0,0.0
+1235,Yi,CHN,China,Asia,Eastern Asia,113919.3,0.991
+1235,Yi,VNM,Vietnam,Asia,South-Eastern Asia,982.3,0.0085
+1235,Yi,LAO,Laos,Asia,South-Eastern Asia,53.0,0.0005
+1235,Yi,MMR,Myanmar,Asia,South-Eastern Asia,3.8,0.0
+1236,Yoruba,NGA,Nigeria,Africa,Western Africa,115560.1,0.8335
+1236,Yoruba,BEN,Benin,Africa,Western Africa,15260.9,0.1101
+1236,Yoruba,TGO,Togo,Africa,Western Africa,7825.8,0.0564
+1237,Yuang,LAO,Laos,Asia,South-Eastern Asia,1502.2,0.9959
+1237,Yuang,MMR,Myanmar,Asia,South-Eastern Asia,6.2,0.0041
+1239,Yukaghirs,RUS,Russia,Europe,Eastern Europe,80833.4,1.0
+1240,Yukuna,COL,Colombia,South America,South America,8680.5,0.7643
+1240,Yukuna,BRA,Brazil,South America,South America,2676.4,0.2357
+1241,Yure,PER,Peru,South America,South America,133181.0,0.8299
+1241,Yure,COL,Colombia,South America,South America,22820.7,0.1422
+1241,Yure,BRA,Brazil,South America,South America,4480.1,0.0279
+1243,Zagawa,TCD,Chad,Africa,Middle Africa,46796.9,0.8159
+1243,Zagawa,SDN,Sudan,Africa,Northern Africa,10560.0,0.1841
+1244,Zakhchins,MNG,Mongolia,Asia,Eastern Asia,15338.9,1.0
+1245,Zapotecs,MEX,Mexico,North America,Central America,41910.7,1.0
+1247,Zoque,MEX,Mexico,North America,Central America,13109.5,1.0
+1248,Zulus,ZAF,South Africa,Africa,Southern Africa,118595.7,0.9704
+1248,Zulus,MOZ,Mozambique,Africa,Eastern Africa,3470.2,0.0284
+1248,Zulus,SWZ,eSwatini,Africa,Southern Africa,138.6,0.0011
+1248,Zulus,LSO,Lesotho,Africa,Southern Africa,3.1,0.0
+1249,Li,CHN,China,Asia,Eastern Asia,16100.8,1.0
+1250,Pai,CHN,China,Asia,Eastern Asia,14497.0,1.0
+1252,Indians of India and Pakistan,TTO,Trinidad and Tobago,North America,Caribbean,3446.0,0.6471
+1252,Indians of India and Pakistan,MUS,Mauritius,Seven seas (open ocean),Eastern Africa,1879.1,0.3529
+1253,Ata,PHL,Philippines,Asia,South-Eastern Asia,2943.7,1.0
+1254,Cham Re,VNM,Vietnam,Asia,South-Eastern Asia,3396.1,1.0
+1255,Jews,RUS,Russia,Europe,Eastern Europe,2827.6,0.9957
+1255,Jews,CHN,China,Asia,Eastern Asia,12.1,0.0043
+1257,Chini,MMR,Myanmar,Asia,South-Eastern Asia,47247.9,0.9946
+1257,Chini,IND,India,Asia,Southern Asia,257.6,0.0054
+1259,Mongols,AFG,Afghanistan,Asia,Southern Asia,1253.7,1.0
+1260,For,SDN,Sudan,Africa,Northern Africa,46424.2,1.0
+1263,"Ashluslay, Choroti, Mataco, Maca",PRY,Paraguay,South America,South America,73894.9,0.7221
+1263,"Ashluslay, Choroti, Mataco, Maca",ARG,Argentina,South America,South America,25024.8,0.2445
+1263,"Ashluslay, Choroti, Mataco, Maca",BOL,Bolivia,South America,South America,3411.5,0.0333
+1266,Tlinkit,USA,United States of America,North America,Northern America,57464.5,0.996
+1266,Tlinkit,CAN,Canada,North America,Northern America,231.2,0.004
+1268,Cueretu,COL,Colombia,South America,South America,9968.0,0.8427
+1268,Cueretu,BRA,Brazil,South America,South America,1860.3,0.1573
