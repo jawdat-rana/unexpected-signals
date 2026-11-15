@@ -1,0 +1,19 @@
+title = "Borders drawn through people"
+dek = "Africa's colonial borders are famous for cutting peoples in two. I put a world map of ethnic groups over today's borders to see if Africa is the exception. It isn't: South America comes second, and the border that cuts the most peoples runs between Canada and the United States."
+date = 2026-11-15
+section = "Borders"
+series = ""
+status = "draft"
+tags = ["greg", "natural-earth", "borders", "ethnic-groups", "maps"]
+image = ""
+analysis = "analysis/ethnic-borders"
+
+[[sources]]
+name = "GREG, Geo-referencing of Ethnic Groups (Weidmann, Rød and Cederman 2010), digitised from the 1964 Atlas Narodov Mira"
+url = "https://icr.ethz.ch/data/greg/"
+licence = "No licence stated; free download, citation requested. Only derived areas are published here."
+
+[[sources]]
+name = "Natural Earth 1:10m admin 0 countries"
+url = "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/"
+licence = "Public domain"
