@@ -1,0 +1,48 @@
+name: borders-overlay
+
+# Overlays the GREG ethnic-group map on today's country borders for the
+# "Borders drawn through people" story and commits the derived tables (areas
+# per group and country, no polygons) to the `raw-borders` branch.
+
+on:
+  push:
+    paths:
+      - "analysis/ethnic-borders/overlay.py"
+      - ".github/workflows/borders-overlay.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: raw-borders
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  overlay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install geopandas pyogrio shapely pyproj
+      - name: Overlay
+        run: |
+          if git fetch -q origin raw-borders; then
+            git worktree add -B raw-borders raw FETCH_HEAD
+          else
+            git worktree add --orphan -b raw-borders raw
+          fi
+          python analysis/ethnic-borders/overlay.py raw | tee -a "$GITHUB_STEP_SUMMARY"
+          rm -rf raw/_tmp
+      - name: Push to raw-borders
+        working-directory: raw
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Data unchanged, nothing to commit"; exit 0; fi
+          git commit -q -m "raw: GREG x Natural Earth overlay $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin HEAD:raw-borders

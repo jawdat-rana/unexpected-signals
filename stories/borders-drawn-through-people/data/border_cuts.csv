@@ -1,0 +1,166 @@
+border,countries,groups_cut,groups
+CAN-USA,Canada – United States of America,7,"Athapaskans, Eskimos, Tsimshian, Arapahos, Salish, Ojibway, Iroquois"
+KEN-TZA,Kenya – Tanzania,6,"Masai, Baluhya, Swahili, Joluo, Wadjagga, Wateita"
+CHN-MMR,China – Myanmar,6,"Kachins, Hani, Wa, Lisu, Lahu, Nua"
+IDN-MYS,Indonesia – Malaysia,6,"Kayans, Kenyahs, Ibans, Muruts and Kelabits, Sea Nomads or Sea Gipsies (Orang-Laut), Punans, Beketans"
+COD-COG,Dem. Rep. Congo – Congo,5,"Bakongo, Bateke, Bobangi and Bangala, Ngiri, Sere-Mundu"
+GTM-MEX,Guatemala – Mexico,5,"Mame, Tojolabali, Lacandons, Jalaltecs, Chuj"
+CMR-NGA,Cameroon – Nigeria,5,"Tiv, Chamba, Shoa-Arabs, Bura, Bata and Tera, Mandara"
+CHN-VNM,China – Vietnam,5,"Miao, Yao, Tay, Hani, Kehlao"
+LAO-VNM,Laos – Vietnam,5,"Miao, Thai (incl. Thai Nea, Thai Pho), Hani, Sedang, Vankieu"
+ERI-ETH,Eritrea – Ethiopia,5,"Danakil, Tigrai, Agau, Kunama, Saho"
+SDN-TCD,Sudan – Chad,5,"Sudan Arabs, Zagawa, Maba (incl. Masalit), Tama, Dago"
+KEN-UGA,Kenya – Uganda,4,"Teso, Baluhya, Nandi, Joluo"
+CMR-TCD,Cameroon – Chad,4,"Chamba, Shoa-Arabs, Masa, Kotoko"
+IND-NPL,India – Nepal,4,"Nepalese, Bhotias, Kiratis, Limbus"
+BRA-COL,Brazil – Colombia,4,"Coreguaje, Sioni, etc., Guayupe and Marawa, Cueretu, Yukuna"
+BRA-PER,Brazil – Peru,4,"Maniteneris, Mayorunas, Coreguaje, Sioni, etc., Cocamas"
+COD-SDS,Dem. Rep. Congo – S. Sudan,4,"Azande, Moru-Mangbetu, Sere-Mundu, Southern Lwo"
+KHM-VNM,Cambodia – Vietnam,4,"Mnong and Brao, Jarai, Stieng, Cham"
+AGO-ZMB,Angola – Zambia,3,"Balunda, Bankoya and Wambuela, Waluchazi"
+AFG-PAK,Afghanistan – Pakistan,3,"Baloch, Afghans, Brahui"
+ECU-PER,Ecuador – Peru,3,"Quechua, Achuale, Andoa"
+ETH-SDS,Ethiopia – S. Sudan,3,"Berta, Murle, Koma"
+BEN-NGA,Benin – Nigeria,3,"Yoruba, Barba, Busa"
+BOL-BRA,Bolivia – Brazil,3,"Bororo, Paiconecas, More (Itene)"
+CHN-NPL,China – Nepal,3,"Bhotias, Sherpas, Sunwars"
+IND-PAK,India – Pakistan,3,"Panjabis, Baltis, Gujars"
+AFG-IRN,Afghanistan – Iran,3,"Baloch, Teymurs, Jamshidis"
+AZE-IRN,Azerbaijan – Iran,3,"Azerbaijanians, Talyshes, Tats"
+ARG-CHL,Argentina – Chile,3,"Araucanians, Alacaluf, Yamana"
+BRA-VEN,Brazil – Venezuela,3,"Baniwe, Macu, Guayupe and Marawa"
+TZA-UGA,Tanzania – Uganda,3,"Banyoro, Baluhya, Joluo"
+NGA-TCD,Nigeria – Chad,3,"Kanuri, Chamba, Shoa-Arabs"
+ARG-PRY,Argentina – Paraguay,3,"Ashluslay, Choroti, Mataco, Maca, Caingua, Toba"
+BRA-PRY,Brazil – Paraguay,3,"Caingua, Toba, Guana"
+COL-VEN,Colombia – Venezuela,3,"Yaruro, Motilones, Guayupe and Marawa"
+AZE-RUS,Azerbaijan – Russia,3,"Lezghians, Tsakhurs, Dagh Chufuti"
+GIN-SEN,Guinea – Senegal,3,"Mandingo, Fulbe, Tenda"
+BFA-MLI,Burkina Faso – Mali,3,"Senufo, Lobi, Sanu"
+MOZ-TZA,Mozambique – Tanzania,3,"Wayao, Makonde, Swahili"
+MMR-THA,Myanmar – Thailand,3,"Karen, Wa, Mon (Talaing)"
+MEX-USA,Mexico – United States of America,3,"Mexicans, Papago, Pima"
+BWA-NAM,Botswana – Namibia,3,"Bushmen, Wayeye, Basubia"
+BFA-GHA,Burkina Faso – Ghana,3,"Mossi, Lobi, Grusi"
+CHN-LAO,China – Laos,3,"Miao, Hani, Lahu"
+GNB-SEN,Guinea-Bissau – Senegal,2,"Diola, Mandjak"
+LAO-MMR,Laos – Myanmar,2,"Hani, Lahu"
+NER-NGA,Niger – Nigeria,2,"Hausa, Kanuri"
+CIV-LBR,Côte d'Ivoire – Liberia,2,"Mano, Gere"
+ETH-KEN,Ethiopia – Kenya,2,"Somalis, Galla"
+GIN-MLI,Guinea – Mali,2,"Mandingo, Fulbe"
+COG-GAB,Congo – Gabon,2,"Mpongwe, Bakota"
+COD-ZMB,Dem. Rep. Congo – Zambia,2,"Bemba, Balunda"
+CMR-COG,Cameroon – Congo,2,"Bantu-speaking Pygmy tribes, Maka"
+CAF-TCD,Central African Rep. – Chad,2,"Bagirmi, Tama"
+BTN-IND,Bhutan – India,2,"Assamese, Oraons"
+CAF-COD,Central African Rep. – Dem. Rep. Congo,2,"Azande, Sere-Mundu"
+BOL-PER,Bolivia – Peru,2,"Quechua, Aymara"
+NAM-ZAF,Namibia – South Africa,2,"Afrikaners, Hottentots"
+CIV-GHA,Côte d'Ivoire – Ghana,2,"Akan, Kulango"
+BEN-TGO,Benin – Togo,2,"Ewe, Somba (incl. Berba, Bilapila)"
+COL-PER,Colombia – Peru,2,"Yure, Coreguaje, Sioni, etc."
+BIH-HRV,Bosnia and Herz. – Croatia,2,"Serbs, Croats"
+NER-TCD,Niger – Chad,2,"Tubu, Kanuri"
+LAO-THA,Laos – Thailand,2,"Lao, Khmu"
+CAF-SDS,Central African Rep. – S. Sudan,2,"Azande, Sere-Mundu"
+AGO-COD,Angola – Dem. Rep. Congo,2,"Bakongo, Balunda"
+ARG-BRA,Argentina – Brazil,2,"Caingua, Toba"
+SDN-SDS,Sudan – S. Sudan,2,"Northern Lwo, Berta"
+ZAF-ZWE,South Africa – Zimbabwe,2,"Pedi, Bawenda"
+AGO-NAM,Angola – Namibia,2,"Ovambo, Wayeye"
+MLI-NER,Mali – Niger,2,"Tuaregs, Songai"
+ETH-SOM,Ethiopia – Somalia,2,"Somalis, Wagosha"
+GIN-LBR,Guinea – Liberia,2,"Loma, Kpelle"
+IDN-TLS,Indonesia – Timor-Leste,2,"Tetum, Mare"
+HND-NIC,Honduras – Nicaragua,2,"Miskitos, Sumu"
+MYS-THA,Malaysia – Thailand,2,"Malays of Malaya, Semangs"
+MOZ-MWI,Mozambique – Malawi,2,"Malavi, Wayao"
+IRN-TUR,Iran – Turkey,2,"Kurds, Karapapakh"
+ZMB-ZWE,Zambia – Zimbabwe,2,"Tonga, Basubia"
+EGY-SDN,Egypt – Sudan,2,"Beja, Nubians"
+CRI-PAN,Costa Rica – Panama,2,"Bribri, Terraba"
+GHA-TGO,Ghana – Togo,2,"Ewe, Togo tribes"
+MLI-SEN,Mali – Senegal,2,"Mandingo, Fulbe"
+TZA-ZMB,Tanzania – Zambia,2,"Wafipa, Wakinga"
+MLI-MRT,Mali – Mauritania,2,"West Sahara Arabs, Soninke"
+RWA-UGA,Rwanda – Uganda,1,Banyaruanda
+COD-UGA,Dem. Rep. Congo – Uganda,1,Banyaruanda
+COD-RWA,Dem. Rep. Congo – Rwanda,1,Banyaruanda
+AGO-COG,Angola – Congo,1,Bakongo
+IRN-PAK,Iran – Pakistan,1,Baloch
+OMN-YEM,Oman – Yemen,1,Arabs of Yemen
+TJK-UZB,Tajikistan – Uzbekistan,1,Arabs of Middle Asia
+IRQ-SYR,Iraq – Syria,1,Assyrians
+ALB-KOS,Albania – Kosovo,1,Albanians
+OMN-SAU,Oman – Saudi Arabia,1,Arabs of Saudi Arabia
+ARM-AZE,Armenia – Azerbaijan,1,Armenians
+NAM-ZMB,Namibia – Zambia,1,Basubia
+LSO-ZAF,Lesotho – South Africa,1,Basuto
+BWA-ZAF,Botswana – South Africa,1,Bechuanas
+BWA-ZWE,Botswana – Zimbabwe,1,Basubia
+ETH-SDN,Ethiopia – Sudan,1,Berta
+BFA-NER,Burkina Faso – Niger,1,Gurma
+BFA-TGO,Burkina Faso – Togo,1,Gurma
+BRA-SUR,Brazil – Suriname,1,Galibis
+BOL-PRY,Bolivia – Paraguay,1,Guarañoco
+MDA-UKR,Moldova – Ukraine,1,Gagauz
+CMR-GAB,Cameroon – Gabon,1,Fang
+DEU-NLD,Germany – Netherlands,1,Frisians
+CMR-GNQ,Cameroon – Eq. Guinea,1,Fang
+GAB-GNQ,Gabon – Eq. Guinea,1,Fang
+DJI-ETH,Djibouti – Ethiopia,1,Danakil
+DJI-ERI,Djibouti – Eritrea,1,Danakil
+ERI-SDN,Eritrea – Sudan,1,Beja
+ESP-FRA,Spain – France,1,Basques
+BEN-BFA,Benin – Burkina Faso,1,Busa
+CHN-IND,China – India,1,Bhotias
+KHM-LAO,Cambodia – Laos,1,Boloven
+BDI-TZA,Burundi – Tanzania,1,Barundi
+BGD-IND,Bangladesh – India,1,Bengalis
+KOR-PRK,South Korea – North Korea,1,Koreans
+CHN-PRK,China – North Korea,1,Koreans
+KHM-THA,Cambodia – Thailand,1,Kui
+CHN-TJK,China – Tajikistan,1,Kirghis
+CHN-KGZ,China – Kyrgyzstan,1,Kirghis
+IRQ-TUR,Iraq – Turkey,1,Kurds
+MOZ-ZMB,Mozambique – Zambia,1,Malavi
+GRC-MKD,Greece – North Macedonia,1,Macedonians
+IRN-IRQ,Iran – Iraq,1,Kurds
+GIN-SLE,Guinea – Sierra Leone,1,Kisi
+KGZ-TJK,Kyrgyzstan – Tajikistan,1,Kirghis
+ISR-PSX,Israel – Palestine,1,Jordan and Palestine Arabs
+HUN-ROU,Hungary – Romania,1,Hungarians or Magyars
+BRN-MYS,Brunei – Malaysia,1,Kadayans
+BLZ-MEX,Belize – Mexico,1,Mayas
+CAF-CMR,Central African Rep. – Cameroon,1,Mbum
+MWI-ZMB,Malawi – Zambia,1,Malavi
+MOZ-ZWE,Mozambique – Zimbabwe,1,Mashona
+HND-SLV,Honduras – El Salvador,1,Lenca
+AFG-CHN,Afghanistan – China,1,Pamir Tajiks
+BRA-FRA,Brazil – France,1,Oyampi
+IND-MMR,India – Myanmar,1,Nagas
+CHE-ITA,Switzerland – Italy,1,Rhaetoromanians
+GUY-VEN,Guyana – Venezuela,1,Panare
+CIV-MLI,Côte d'Ivoire – Mali,1,Senufo
+BFA-CIV,Burkina Faso – Côte d'Ivoire,1,Senufo
+HRV-SRB,Croatia – Serbia,1,Serbs
+BIH-SRB,Bosnia and Herz. – Serbia,1,Serbs
+DZA-LBY,Algeria – Libya,1,Oases Berbers
+GEO-RUS,Georgia – Russia,1,Ossetes
+KEN-SOM,Kenya – Somalia,1,Somalis
+CAF-COG,Central African Rep. – Congo,1,Sere-Mundu
+JOR-SYR,Jordan – Syria,1,Syria Arabs
+SWZ-ZAF,eSwatini – South Africa,1,Swazi
+CAF-SDN,Central African Rep. – Sudan,1,Tama
+KEN-SDS,Kenya – S. Sudan,1,Teso
+SDS-UGA,S. Sudan – Uganda,1,Teso
+AFG-TJK,Afghanistan – Tajikistan,1,Tajiks
+MOZ-ZAF,Mozambique – South Africa,1,Tsonga
+DZA-NER,Algeria – Niger,1,Tuaregs
+RUS-UKR,Russia – Ukraine,1,Ukrainians
+DZA-MLI,Algeria – Mali,1,Tuaregs
+KAZ-RUS,Kazakhstan – Russia,1,Ukrainians
+AFG-UZB,Afghanistan – Uzbekistan,1,Uzbeks
+LBR-SLE,Liberia – Sierra Leone,1,Wai
+MWI-TZA,Malawi – Tanzania,1,Wayao
