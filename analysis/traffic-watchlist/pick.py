@@ -100,7 +100,11 @@ def main(data: Path) -> None:
         for lat, lon, openings in chosen:
             place = f"bridge {lat:.4f},{lon:.4f} ({openings} openings)"
             near = sorted(
-                (metres(lat, lon, float(s["latitude"]), float(s["longitude"])), s) for s in located
+                (
+                    (metres(lat, lon, float(s["latitude"]), float(s["longitude"])), s)
+                    for s in located
+                ),
+                key=lambda x: x[0],
             )
             for distance, site in near:
                 if distance > BRIDGE_RADIUS_M:

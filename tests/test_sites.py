@@ -25,6 +25,7 @@ def test_parses_one_row_per_site():
         ("RWS01_MONIBAS_2071hrl0100ra", None, "N207"),
         ("PFR07_101607_N354_Z", None, "N354"),
         ("PGL10_N787-02_hmp_12.5_Li_HTN2768", None, "N787"),
+        ("PNH02_X", "A325 Arnhem", "N325"),
         ("GAD02_Amstd_31_0", "Michiel de Ruijtertunnel Richting West", None),
         ("RWS01_MONICA_00D0020A1014D0050009", None, None),
     ],

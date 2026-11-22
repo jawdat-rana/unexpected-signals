@@ -50,7 +50,9 @@ def road_of(site_id: str, name: str | None) -> str | None:
     for text in (name, site_id):
         match = ROAD_IN_TEXT.search(text or "")
         if match:
-            return f"{match.group(1)}{int(match.group(2))}"
+            number = int(match.group(2))
+            # Dutch A-roads stop below 100; "A325" in a name is the N325.
+            return f"A{number}" if match.group(1) == "A" and number < 100 else f"N{number}"
     return None
 
 
