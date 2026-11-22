@@ -7,12 +7,14 @@ collapse those to one row per site per measurement time:
 - flow_veh_h: sum of the valid lane flows, in vehicles per hour
 
 Keeping every site in the country every 15 minutes would be millions of rows a
-day, so the collector stores (1) a national summary per snapshot and (2) full
-rows only for the sites listed in config.toml.
+day, so the collector stores (1) a national summary per snapshot, (2) a summary
+per motorway per snapshot and (3) full rows only for the sites listed in
+config.toml.
 """
 
 from __future__ import annotations
 
+from collections import defaultdict
 from dataclasses import asdict, dataclass, fields
 from statistics import fmean
 from typing import IO
@@ -77,6 +79,9 @@ def parse(source: IO[bytes]) -> list[SiteMeasurement]:
     return out
 
 
+ROAD_COLUMNS = ["fetched_at", "road", *SUMMARY_COLUMNS[1:]]
+
+
 def summarise(rows: list[SiteMeasurement], fetched_at: str) -> dict[str, object]:
     speeds = [r.speed_kmh for r in rows if r.speed_kmh is not None]
     flows = [r.flow_veh_h for r in rows if r.flow_veh_h is not None]
@@ -91,3 +96,24 @@ def summarise(rows: list[SiteMeasurement], fetched_at: str) -> dict[str, object]
 
 def select(rows: list[SiteMeasurement], site_ids: set[str]) -> list[dict[str, object]]:
     return [asdict(r) for r in rows if r.site_id in site_ids]
+
+
+def summarise_roads(
+    rows: list[SiteMeasurement], road_of_site: dict[str, str], fetched_at: str
+) -> list[dict[str, object]]:
+    """One summary row per road, for the sites that `road_of_site` maps to a road."""
+    by_road: dict[str, list[SiteMeasurement]] = defaultdict(list)
+    for row in rows:
+        road = road_of_site.get(row.site_id)
+        if road:
+            by_road[road].append(row)
+    out = []
+    for road in sorted(by_road, key=_road_sort_key):
+        summary = summarise(by_road[road], fetched_at)
+        out.append({"road": road, **summary})
+    return out
+
+
+def _road_sort_key(road: str) -> tuple[str, int]:
+    digits = "".join(ch for ch in road if ch.isdigit())
+    return (road[0], int(digits) if digits else 0)

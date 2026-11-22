@@ -16,6 +16,7 @@ url = "{(FIXTURES / "bridges_v3.xml").as_uri()}"
 [traffic]
 enabled = true
 url = "{(FIXTURES / "traffic_v3.xml").as_uri()}"
+catalogue_url = "{(FIXTURES / "sites_v3.xml").as_uri()}"
 sites = ["RWS01_MONIBAS_0021hrl0403ra"]
 """
     )
@@ -31,6 +32,23 @@ sites = ["RWS01_MONIBAS_0021hrl0403ra"]
     assert len(summary.read_text().splitlines()) == 3  # header + 2 snapshots
     sites = out / "traffic_sites/2026/11/2026-11-05.csv"
     assert len(sites.read_text().splitlines()) == 3
+    catalogue = out / "traffic_sites_catalogue.csv"
+    assert len(catalogue.read_text().splitlines()) == 3  # header + 2 sites
+    roads = (out / "traffic_roads/2026/11/2026-11-05.csv").read_text().splitlines()
+    assert roads[0].startswith("fetched_at,road,")
+    assert [line.split(",")[1] for line in roads[1:]] == ["A2", "A2"]  # one per snapshot
+
+
+def test_catalogue_is_reused_until_it_is_a_week_old(tmp_path: Path, monkeypatch):
+    calls = []
+    real = cli.download
+    monkeypatch.setattr(cli, "download", lambda url, retries=3: calls.append(url) or real(url))
+    cfg = {"catalogue_url": (FIXTURES / "sites_v3.xml").as_uri()}
+    cli.site_catalogue(cfg, tmp_path, "2026-11-05T00:00:00Z")
+    cli.site_catalogue(cfg, tmp_path, "2026-11-11T23:00:00Z")
+    assert len(calls) == 1
+    cli.site_catalogue(cfg, tmp_path, "2026-11-12T00:00:00Z")
+    assert len(calls) == 2
 
 
 def test_a_broken_feed_returns_non_zero(tmp_path: Path):

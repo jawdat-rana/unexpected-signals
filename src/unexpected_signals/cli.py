@@ -7,10 +7,11 @@ import io
 import sys
 import tomllib
 from collections import Counter, defaultdict
-from datetime import UTC, datetime
+from dataclasses import asdict
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
-from . import bridges, storage, traffic
+from . import bridges, sites, storage, traffic
 from .fetch import download
 
 
@@ -43,6 +44,31 @@ def collect_bridges(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
     return f"bridges: {len(records)} records over {len(by_day)} days ({breakdown})"
 
 
+def site_catalogue(cfg: dict, out: Path, fetched_at: str) -> list[dict[str, str]]:
+    """The measurement-site table, re-downloaded when it is older than a week.
+
+    Stored as data/traffic_sites_catalogue.csv with the time it was fetched in
+    a sidecar file, so it can be browsed and mapped without parsing XML.
+    """
+    url = cfg.get("catalogue_url")
+    if not url:
+        return []
+    path = out / "traffic_sites_catalogue.csv"
+    stamp = out / "traffic_sites_catalogue.fetched_at"
+    max_age = timedelta(days=cfg.get("catalogue_max_age_days", 7))
+    now = datetime.fromisoformat(fetched_at.replace("Z", "+00:00"))
+    if path.exists() and stamp.exists():
+        last = datetime.fromisoformat(stamp.read_text().strip().replace("Z", "+00:00"))
+        if now - last < max_age:
+            return storage.read_rows(path)
+    raw = download(url, retries=cfg.get("retries", 3))
+    rows = [asdict(site) for site in sites.parse(io.BytesIO(raw))]
+    rows.sort(key=lambda r: r["site_id"])
+    storage.write_rows(path, sites.COLUMNS, rows)
+    stamp.write_text(fetched_at + "\n")
+    return storage.read_rows(path)
+
+
 def collect_traffic(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
     raw = download(cfg["url"], retries=cfg.get("retries", 3))
     if sample_dir:
@@ -52,15 +78,29 @@ def collect_traffic(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
     storage.append_rows(
         storage.day_path(out, "traffic_summary", fetched_at), traffic.SUMMARY_COLUMNS, [summary]
     )
-    sites = set(cfg.get("sites", []))
+    roads = 0
+    try:
+        catalogue = site_catalogue(cfg, out, fetched_at)
+    except Exception as exc:  # the live numbers matter more than the catalogue
+        print(f"traffic: site catalogue unavailable: {exc!r}", file=sys.stderr)
+        catalogue = []
+    if catalogue:
+        road_rows = traffic.summarise_roads(rows, sites.motorway_main_lanes(catalogue), fetched_at)
+        roads = storage.append_rows(
+            storage.day_path(out, "traffic_roads", fetched_at), traffic.ROAD_COLUMNS, road_rows
+        )
+    watchlist = set(cfg.get("sites", []))
     kept = 0
-    if sites:
+    if watchlist:
         kept = storage.append_rows(
             storage.day_path(out, "traffic_sites", fetched_at),
             traffic.SITE_COLUMNS,
-            traffic.select(rows, sites),
+            traffic.select(rows, watchlist),
         )
-    return f"traffic: {len(rows)} sites reporting, {kept} configured sites kept"
+    return (
+        f"traffic: {len(rows)} sites reporting, {roads} motorways summarised, "
+        f"{kept} configured sites kept"
+    )
 
 
 COLLECTORS = {"bridges": collect_bridges, "traffic": collect_traffic}
