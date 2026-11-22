@@ -107,3 +107,53 @@ sites = [
   "RWS01_MONIBAS_0041hrr2441ra",
   "RWS01_MONIBAS_0041hrl2480ra",
 ]
+
+# ---------------------------------------------------------------------------
+# Live feeds added in November 2026. Each one only ever shows "now", so these
+# snapshots are the only history. `every_minutes` makes a feed run less often
+# than the workflow fires (every 5 minutes); its last run is kept in
+# data/_state/schedule.json.
+
+[parking]
+# RDW national parking data (SPDP): free spaces in ~320 public garages and P+R
+# sites. RDW open data; see https://www.rdw.nl/over-rdw/dienstverlening/open-data
+enabled = true
+every_minutes = 10
+url = "https://npropendata.rdw.nl/parkingdata/v2/"
+# Feeds marked limitedAccess answer 401 without an RDW account.
+include_limited_access = false
+workers = 16
+catalogue_max_age_days = 7
+
+[apple_charts]
+# Apple's own chart feeds: App Store top free apps and Apple Music most played
+# songs. Spotify's charts need a login and its API no longer serves its
+# editorial playlists, so Apple Music stands in for "the hits".
+enabled = true
+every_minutes = 120
+countries = ["nl", "be", "de", "gb", "us"]
+charts = ["apps-free", "songs"]
+size = 100
+
+[google_trending]
+# Google Trends "Trending now". The feed holds about a day; merged per trend.
+enabled = true
+every_minutes = 60
+url = "https://trends.google.com/trending/rss?geo={geo}"
+geos = ["NL", "BE", "DE", "GB", "US"]
+
+[ovfiets]
+# OV-fiets bikes available per pick-up point, via openOV's mirror of the NS
+# places API. Only https fails (old certificate), so plain http is used.
+enabled = true
+every_minutes = 10
+url = "http://fiets.openov.nl/locaties.json"
+
+[netflix_top10]
+# Netflix keeps its own full history; this mirrors only the latest week, as a
+# backup. Global list plus every country Netflix publishes.
+enabled = true
+every_minutes = 1440
+[netflix_top10.files]
+global = "https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv"
+countries = "https://www.netflix.com/tudum/top10/data/all-weeks-countries.tsv"

@@ -2,51 +2,39 @@ name: probe-new-feeds
 on:
   push:
     branches: [claude/project-thread-31so5g]
-    paths: [".github/workflows/probe.yml"]
+    paths: [".github/workflows/probe.yml", "src/**", "config.toml"]
 jobs:
   probe:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Probe
-        shell: python
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dry run (nothing is committed)
+        env:
+          PYTHONPATH: src
         run: |
-          import json, urllib.request, gzip
-          UA = {"User-Agent": "unexpected-signals/0.1 (+https://github.com/jawdat-rana/unexpected-signals)"}
-          def get(u):
-              try:
-                  r = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30)
-                  b = r.read()
-                  if b[:2] == b"\x1f\x8b": b = gzip.decompress(b)
-                  print(f"\n===== {u} -> {r.status} {len(b)} bytes {r.headers.get('content-type')}")
-                  return b
-              except Exception as e:
-                  print(f"\n===== {u} -> ERROR {e!r}")
-                  return b""
-          from concurrent.futures import ThreadPoolExecutor
+          for f in parking apple_charts google_trending ovfiets netflix_top10; do
+            time python -m unexpected_signals collect --out /tmp/out --only $f || true
+          done
+          sleep 60
+          python -m unexpected_signals collect --out /tmp/out --only parking --only ovfiets || true
+          find /tmp/out -type f -exec ls -l {} \; | awk '{print $5, $9}'
+          for f in $(find /tmp/out -name '*.csv' | grep -v netflix); do echo "== $f"; head -4 "$f"; wc -l < "$f"; done
+          head -12 /tmp/out/google_trending/*/*/*.csv | cut -c1-200
+          grep -c ',nl,apps-free,' /tmp/out/apple_charts/*/*/*.csv
+          grep ',nl,apps-free,' /tmp/out/apple_charts/*/*/*.csv | head -15
+          grep ',nl,songs,' /tmp/out/apple_charts/*/*/*.csv | head -5
+          awk -F, '$4=="True"' /tmp/out/parking/*/*/*.csv | wc -l
+          python - <<'PY'
+          import csv,glob,datetime
+          rows=list(csv.DictReader(open(glob.glob('/tmp/out/parking/*/*/*.csv')[0])))
+          now=datetime.datetime.now(datetime.UTC)
+          ages=sorted((now-datetime.datetime.fromisoformat(r['last_updated'].replace('Z','+00:00'))).total_seconds()/3600 for r in rows if r['last_updated'][:2]=='20')
+          print('parking freshness hours, quantiles:', [round(ages[int(q*(len(ages)-1))],2) for q in (0,.25,.5,.75,.9,1)], len(ages))
+          cat=list(csv.DictReader(open('/tmp/out/parking_catalogue.csv')))
           from collections import Counter
-          import time
-          d = json.loads(get("http://fiets.openov.nl/locaties.json"))
-          locs = d["locaties"]; print(len(locs), "locations", list(d.keys()))
-          k = next(iter(locs)); r = dict(locs[k]); r.pop("infoImages", None); r.pop("openingHours", None)
-          print(json.dumps(r, indent=1)[:3000])
-          fac = json.loads(get("https://npropendata.rdw.nl/parkingdata/v2/"))["ParkingFacilities"]
-          dyn = [f for f in fac if f.get("dynamicDataUrl")]
-          print(Counter(f.get("limitedAccess") for f in dyn))
-          def fetch(f):
-              try:
-                  r = urllib.request.urlopen(urllib.request.Request(f["dynamicDataUrl"], headers=UA), timeout=20)
-                  return ("ok", json.loads(r.read()))
-              except Exception as e:
-                  return (repr(e)[:40], None)
-          t=time.time()
-          with ThreadPoolExecutor(16) as ex: res = list(ex.map(fetch, dyn))
-          print("fetched in", round(time.time()-t,1), "s", Counter(r[0] for r in res))
-          now=time.time()
-          ages=[now-r[1]["parkingFacilityDynamicInformation"]["facilityActualStatus"].get("lastUpdated",0) for r in res if r[0]=="ok"]
-          ages.sort(); print("age quantiles h", [round(ages[int(q*(len(ages)-1))]/3600,1) for q in (0,.25,.5,.75,.9,1)])
-          okf=[f for f,r in zip(dyn,res) if r[0]=="ok"]
-          print(json.dumps(okf[0])[:500])
-          st=json.loads(get(okf[0]["staticDataUrl"]))["parkingFacilityInformation"]
-          print(list(st.keys()))
-          print(json.dumps({k:v for k,v in st.items() if k not in ("operator","contactPersons","openingTimes","tariffs","paymentMethods")}, indent=1)[:2500])
+          print(Counter(c['city'] for c in cat).most_common(20))
+          PY
