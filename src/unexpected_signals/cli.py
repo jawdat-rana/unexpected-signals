@@ -95,7 +95,7 @@ def collect_traffic(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
         kept = storage.append_rows(
             storage.day_path(out, "traffic_sites", fetched_at),
             traffic.SITE_COLUMNS,
-            traffic.select(rows, watchlist),
+            traffic.select(rows, watchlist, fetched_at),
         )
     return (
         f"traffic: {len(rows)} sites reporting, {roads} motorways summarised, "
