@@ -1,34 +1,37 @@
 name: ndw-sites-probe
-# Temporary: prints the structure of NDW's measurement-site file so the site
-# catalogue parser can be written. Removed before merge.
+# Temporary: checks the site catalogue parser against the live NDW file.
+# Removed before merge.
 on:
   push:
     branches: [claude/project-thread-wudcqc]
-    paths: [.github/workflows/ndw-sites-probe.yml]
+    paths: [.github/workflows/ndw-sites-probe.yml, src/unexpected_signals/sites.py]
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          for f in snelheden_en_intensiteiten_configuratie_meetlocaties.xml.gz measurement_current.xml.gz measurement.xml.gz; do
-            echo "=== $f"; curl -sSI "https://opendata.ndw.nu/$f" | head -5
-          done
-          curl -sSL -o cfg.xml.gz https://opendata.ndw.nu/snelheden_en_intensiteiten_configuratie_meetlocaties.xml.gz
-          ls -la cfg.xml.gz; gunzip -f cfg.xml.gz; ls -la cfg.xml
-          python3 - <<'PY'
-          import xml.etree.ElementTree as ET, collections, re
-          loc=lambda t:t.rsplit('}',1)[-1]
-          raw=open('cfg.xml','rb').read()
-          print(raw[:1500].decode('utf-8','replace'))
-          tags=collections.Counter(); n=0; shown=0
-          for ev,el in ET.iterparse('cfg.xml',events=('end',)):
-              tags[loc(el.tag)]+=1
-              if loc(el.tag) in ('measurementSiteRecord','measurementSite','MeasurementSite'):
-                  n+=1
-                  if shown<3 and (n in (1,5000,12000)):
-                      shown+=1
-                      s=ET.tostring(el,encoding='unicode'); s=re.sub(r'xmlns(:\w+)?="[^"]*"','',s)
-                      print('----- record',n,len(s)); print(s[:6000])
-                  el.clear()
-          print('records',n); print(tags.most_common(80))
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - env:
+          PYTHONPATH: src
+        run: |
+          python - <<'PY'
+          import io, time, collections, csv, sys
+          from unexpected_signals import sites
+          from unexpected_signals.fetch import download
+          t=time.time()
+          raw=download("https://opendata.ndw.nu/snelheden_en_intensiteiten_configuratie_meetlocaties.xml.gz")
+          rows=sites.parse(io.BytesIO(raw)); print('parsed',len(rows),'in',round(time.time()-t),'s')
+          print('no road',sum(r.road is None for r in rows))
+          roads=collections.Counter(r.road for r in rows)
+          print('A roads',sorted(((k,v) for k,v in roads.items() if k and k[0]=='A'),key=lambda x:int(x[0][1:])))
+          print('N roads',len([k for k in roads if k and k[0]=='N']), roads.most_common(40))
+          print('prefixes',collections.Counter(r.site_id.split('_')[0] for r in rows).most_common(40))
+          print('carriageway',collections.Counter(r.carriageway for r in rows).most_common(10))
+          import random; random.seed(1)
+          for r in random.sample(rows,40): print(r)
+          nr=[r for r in rows if r.road is None]
+          for r in random.sample(nr,min(40,len(nr))): print('NOROAD',r)
+          w=csv.writer(sys.stdout)
           PY
