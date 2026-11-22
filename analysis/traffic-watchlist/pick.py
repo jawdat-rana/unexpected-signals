@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import csv
 import math
+import re
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime
@@ -28,20 +29,26 @@ BORDERS = [
     ("A12 Babberich (DE)", "A12", 51.905, 6.120),
     ("A77 Gennep (DE)", "A77", 51.690, 6.005),
     ("A67 Venlo (DE)", "A67", 51.390, 6.205),
-    ("A74 Venlo (DE)", "A74", 51.355, 6.210),
     ("A76 Bocholtz (DE)", "A76", 50.860, 6.015),
     ("A2 Eijsden (BE)", "A2", 50.775, 5.705),
     ("A67 Budel (BE)", "A67", 51.285, 5.440),
+    ("A58 Sluiskil tunnel side (BE)", "N62", 51.235, 3.800),
     ("A16 Hazeldonk (BE)", "A16", 51.495, 4.745),
     ("A4 Hoogerheide (BE)", "A4", 51.420, 4.320),
-    ("A58 Sas van Gent area (BE)", "N62", 51.235, 3.800),
 ]
 BORDER_RADIUS_M = 8000
-BORDER_PER_CROSSING = 4  # nearest sensors, usually two per direction
+PER_DIRECTION = 2  # nearest sensors in each direction of travel
 
-BRIDGE_RADIUS_M = 300
-BRIDGE_COUNT = 12  # busiest bridges by weekday rush-hour openings
-LIVE_BRIDGE_COUNT = 6  # bridges most often seen opening in the live records
+BRIDGE_RADIUS_M = 400
+BRIDGE_COUNT = 10  # busiest bridges by weekday rush-hour openings that have sensors
+LIVE_BRIDGE_COUNT = 5  # bridges most often seen opening live that have sensors
+SIDE = re.compile(r"hr([lr])|_([LR])P$|([LR])$")
+
+
+def side_of(site_id: str) -> str:
+    """'l' or 'r' for the carriageway a sensor is on, '?' when the id doesn't say."""
+    match = SIDE.search(site_id)
+    return next((g.lower() for g in match.groups() if g), "?") if match else "?"
 
 
 def metres(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -72,9 +79,7 @@ def bridges(data: Path) -> tuple[list[tuple[float, float, int]], list[tuple[floa
             live[key] += 1
         elif start.weekday() < 5 and local_hour in (7, 8, 16, 17):
             rush[key] += 1
-    top = [(*k, n) for k, n in rush.most_common(BRIDGE_COUNT)]
-    top_live = [(*k, n) for k, n in live.most_common(LIVE_BRIDGE_COUNT)]
-    return top, top_live
+    return [(*k, n) for k, n in rush.most_common()], [(*k, n) for k, n in live.most_common()]
 
 
 def main(data: Path) -> None:
@@ -96,29 +101,41 @@ def main(data: Path) -> None:
             }
 
     rush, live = bridges(data)
-    for group, chosen in (("bridge_rush_hour", rush), ("bridge_live", live)):
+    main_lanes = [s for s in located if s["carriageway"] == "mainCarriageway"]
+    for group, chosen, wanted in (
+        ("bridge_rush_hour", rush, BRIDGE_COUNT),
+        ("bridge_live", live, LIVE_BRIDGE_COUNT),
+    ):
+        found = 0
         for lat, lon, openings in chosen:
+            if found == wanted:
+                break
+            near = [
+                (metres(lat, lon, float(s["latitude"]), float(s["longitude"])), s)
+                for s in main_lanes
+            ]
+            near = [(d, s) for d, s in near if d <= BRIDGE_RADIUS_M]
+            if not near:
+                continue
+            found += 1
             place = f"bridge {lat:.4f},{lon:.4f} ({openings} openings)"
-            near = sorted(
-                (
-                    (metres(lat, lon, float(s["latitude"]), float(s["longitude"])), s)
-                    for s in located
-                ),
-                key=lambda x: x[0],
-            )
-            for distance, site in near:
-                if distance > BRIDGE_RADIUS_M:
-                    break
+            for distance, site in sorted(near, key=lambda x: x[0]):
                 add(site, group, place, distance)
 
     for place, road, lat, lon in BORDERS:
-        on_road = [
-            (metres(lat, lon, float(s["latitude"]), float(s["longitude"])), s)
-            for s in located
-            if s["road"] == road and s["carriageway"] == "mainCarriageway"
-        ]
-        for distance, site in sorted(on_road, key=lambda x: x[0])[:BORDER_PER_CROSSING]:
-            if distance <= BORDER_RADIUS_M:
+        on_road = sorted(
+            (
+                (metres(lat, lon, float(s["latitude"]), float(s["longitude"])), s)
+                for s in main_lanes
+                if s["road"] == road
+            ),
+            key=lambda x: x[0],
+        )
+        per_side: Counter[str] = Counter()
+        for distance, site in on_road:
+            side = side_of(site["site_id"])
+            if distance <= BORDER_RADIUS_M and per_side[side] < PER_DIRECTION:
+                per_side[side] += 1
                 add(site, "border", place, distance)
 
     rows = list(picked.values())
