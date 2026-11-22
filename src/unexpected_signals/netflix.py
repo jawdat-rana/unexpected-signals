@@ -16,14 +16,15 @@ import io
 def latest_week(raw: bytes) -> tuple[str, list[str], list[dict[str, str]]]:
     """The newest week in a Netflix TSV: (week, columns, rows of that week)."""
     text = raw.decode("utf-8-sig", errors="replace")
-    if text and not text.endswith("\n"):
+    cut = bool(text) and not text.endswith("\n")
+    if cut:
         text = text[: text.rfind("\n") + 1]  # drop a line cut off mid-download
     reader = csv.DictReader(io.StringIO(text), delimiter="\t")
     rows = list(reader)
     if not rows:
         return "", list(reader.fieldnames or []), []
     week = max(r["week"] for r in rows)
-    if rows[-1]["week"] == week:
+    if cut and rows[-1]["week"] == week:
         # The cut came inside the newest week, so it may be incomplete.
         raise ValueError(f"download ended inside the newest week ({week})")
     return week, list(reader.fieldnames or []), [r for r in rows if r["week"] == week]
