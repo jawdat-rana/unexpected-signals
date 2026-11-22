@@ -101,7 +101,12 @@ def main(data: Path) -> None:
             }
 
     rush, live = bridges(data)
-    main_lanes = [s for s in located if s["carriageway"] == "mainCarriageway"]
+    # MONICA ids are per-lane duplicates of the MONIBAS site at the same spot.
+    main_lanes = [
+        s
+        for s in located
+        if s["carriageway"] == "mainCarriageway" and "_MONICA_" not in s["site_id"]
+    ]
     for group, chosen, wanted in (
         ("bridge_rush_hour", rush, BRIDGE_COUNT),
         ("bridge_live", live, LIVE_BRIDGE_COUNT),

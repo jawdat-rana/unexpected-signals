@@ -26,7 +26,9 @@ feeds from [NDW](https://opendata.ndw.nu/), the Dutch national road traffic data
 | --- | --- | --- |
 | Bridge openings | One row per opening record, with first and last time it was seen, filed by the opening's date | `data/bridges/YYYY/MM/YYYY-MM-DD.csv` |
 | Traffic summary | National totals per snapshot: sites reporting, mean speed, and total flow (an activity index, since vehicles pass many sites) | `data/traffic_summary/YYYY/MM/YYYY-MM-DD.csv` |
+| Traffic per motorway | The same totals per motorway (A1, A2, ...) per snapshot, main carriageway only | `data/traffic_roads/YYYY/MM/YYYY-MM-DD.csv` |
 | Traffic sites | Speed and flow for the measurement sites you choose in `config.toml` | `data/traffic_sites/YYYY/MM/YYYY-MM-DD.csv` |
+| Site catalogue | Every measurement site with its road, lanes and location, refreshed weekly | `data/traffic_sites_catalogue.csv` |
 
 The data lives on the [`data` branch](../../tree/data), and the code lives on `main`.
 

@@ -1,0 +1,89 @@
+site_id,group,place,road,carriageway,distance_m,latitude,longitude
+GEO0B_R_RWSTI358454,bridge_rush_hour,"bridge 52.8129,4.7387 (130 openings)",,mainCarriageway,120,52.81346,4.737143
+PNH02_TI882L,bridge_rush_hour,"bridge 52.8129,4.7387 (130 openings)",N249,mainCarriageway,126,52.81239,4.74035
+PNH02_TI882R,bridge_rush_hour,"bridge 52.8129,4.7387 (130 openings)",N249,mainCarriageway,126,52.81239,4.74035
+GEO0B_R_RWSTI358453,bridge_rush_hour,"bridge 52.8129,4.7387 (130 openings)",,mainCarriageway,344,52.81129,4.73436
+GEO0B_R_RWSTI358160,bridge_rush_hour,"bridge 52.7539,4.6820 (129 openings)",,mainCarriageway,84,52.7546,4.6814
+GEO0B_R_RWSTI358161,bridge_rush_hour,"bridge 52.7539,4.6820 (129 openings)",,mainCarriageway,85,52.75458,4.68132
+PNH02_TI888L,bridge_rush_hour,"bridge 52.7077,4.7163 (121 openings)",,mainCarriageway,55,52.70772,4.717075
+PNH02_TI888R,bridge_rush_hour,"bridge 52.7077,4.7163 (121 openings)",,mainCarriageway,55,52.70772,4.717075
+PNH02_TI887L,bridge_rush_hour,"bridge 52.7077,4.7163 (121 openings)",,mainCarriageway,286,52.70866,4.712335
+PNH02_TI887R,bridge_rush_hour,"bridge 52.7077,4.7163 (121 openings)",,mainCarriageway,286,52.70866,4.712335
+GZS01_ZND_TI1004-A,bridge_rush_hour,"bridge 52.4278,4.8344 (93 openings)",,mainCarriageway,231,52.427006,4.831244
+RWS01_MONIBAS_0091hrl0308ra,bridge_rush_hour,"bridge 52.3117,4.8153 (61 openings)",A9,mainCarriageway,168,52.31137,4.81769
+RWS01_MONIBAS_0091hrr0308ra,bridge_rush_hour,"bridge 52.3117,4.8153 (61 openings)",A9,mainCarriageway,203,52.31128,4.81819
+RWS01_MONIBAS_0091hrl0313ra,bridge_rush_hour,"bridge 52.3117,4.8153 (61 openings)",A9,mainCarriageway,327,52.31435,4.81321
+PNH02_TI864L,bridge_rush_hour,"bridge 52.3117,4.8153 (61 openings)",A9,mainCarriageway,396,52.31412,4.811
+PNH02_TI864R,bridge_rush_hour,"bridge 52.3117,4.8153 (61 openings)",A9,mainCarriageway,396,52.31412,4.811
+GEO0K_K_RWSTI358624,bridge_rush_hour,"bridge 52.9129,4.7951 (59 openings)",,mainCarriageway,116,52.91373,4.793956
+GEO0B_R_RWSTI358623,bridge_rush_hour,"bridge 52.9129,4.7951 (59 openings)",,mainCarriageway,160,52.911922,4.793364
+GEO0K_K_RWSTI358601,bridge_rush_hour,"bridge 52.9129,4.7951 (59 openings)",,mainCarriageway,170,52.913357,4.792629
+GEO0K_K_RWSTI358630,bridge_rush_hour,"bridge 52.9129,4.7951 (59 openings)",,mainCarriageway,171,52.91345,4.79267
+GEO0B_R_RWSTI358599,bridge_rush_hour,"bridge 52.9129,4.7951 (59 openings)",,mainCarriageway,298,52.9136,4.79077
+RWS01_MONIBAS_0091hrr0314ra,bridge_rush_hour,"bridge 52.3125,4.8159 (59 openings)",A9,mainCarriageway,368,52.31511,4.81259
+RWS01_MONIBAS_0101hrl0208ra,bridge_rush_hour,"bridge 52.3372,4.8470 (59 openings)",A10,mainCarriageway,32,52.33719,4.84654
+RWS01_MONIBAS_0101hrr0207ra,bridge_rush_hour,"bridge 52.3372,4.8470 (59 openings)",A10,mainCarriageway,102,52.33808,4.84739
+RWS01_MONIBAS_0101hrr0207rb,bridge_rush_hour,"bridge 52.3372,4.8470 (59 openings)",A10,mainCarriageway,102,52.33808,4.84739
+RWS01_MONIBAS_0101hrl0205ra,bridge_rush_hour,"bridge 52.3372,4.8470 (59 openings)",A10,mainCarriageway,289,52.33743,4.85124
+RWS01_MONIBAS_0041hrr0002ra,bridge_rush_hour,"bridge 52.3372,4.8470 (59 openings)",A4,mainCarriageway,376,52.33851,4.84191
+RWS01_MONIBAS_0101hrr0204ra,bridge_rush_hour,"bridge 52.3372,4.8470 (59 openings)",A10,mainCarriageway,378,52.33841,4.85221
+GEO0B_R_RWSTI650,bridge_rush_hour,"bridge 52.2242,4.5524 (58 openings)",,mainCarriageway,174,52.2249,4.55462
+PNH02_TI738L,bridge_rush_hour,"bridge 52.9464,4.7869 (57 openings)",,mainCarriageway,296,52.947586,4.782933
+PNH02_TI738R,bridge_rush_hour,"bridge 52.9464,4.7869 (57 openings)",,mainCarriageway,296,52.947586,4.782933
+GEO0C_Z_RWSTI356703,bridge_live,"bridge 51.2938,3.8354 (34 openings)",,mainCarriageway,375,51.294605,3.840666
+PGR08_G185_Rijksweg_O_HTN2234,bridge_live,"bridge 53.2276,6.5918 (14 openings)",N46,mainCarriageway,285,53.226173,6.595288
+PGR08_G185_Rijksweg_W_HTN2234,bridge_live,"bridge 53.2276,6.5918 (14 openings)",N46,mainCarriageway,291,53.226154,6.595374
+RWS01_MONIBAS_0151hrl0466ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,64,51.8707,4.33114
+RWS01_MONIBAS_0151hrr0466ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,76,51.87061,4.33137
+RWS01_MONIBAS_0151hrl0467ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,130,51.87115,4.33303
+RWS01_MONIBAS_0151hrr0467ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,160,51.87114,4.33347
+RWS01_MONIBAS_0151hrl0464ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,168,51.87036,4.3292
+RWS01_MONIBAS_0151hrr0464ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,170,51.87024,4.32934
+RWS01_MONIBAS_0151hrl0468ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,225,51.8715,4.33441
+RWS01_MONIBAS_0151hrr0468ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,242,51.87144,4.33467
+RWS01_MONIBAS_0151hrr0463ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,271,51.87005,4.32775
+RWS01_MONIBAS_0151hrl0463ra,bridge_live,"bridge 51.8713,4.3312 (13 openings)",A15,mainCarriageway,271,51.87017,4.32763
+PFL01_TI18,bridge_live,"bridge 52.5272,5.4340 (7 openings)",,mainCarriageway,167,52.52708,5.43649
+PFL01_TI17,bridge_live,"bridge 52.5272,5.4340 (7 openings)",,mainCarriageway,170,52.527046,5.436527
+RWS01_MONIBAS_0071hrl2516ra,border,A7 Nieuweschans (DE),A7,mainCarriageway,1083,53.17697,7.20419
+RWS01_MONIBAS_0071hrr2516ra,border,A7 Nieuweschans (DE),A7,mainCarriageway,1094,53.17685,7.2042
+RWS01_MONIBAS_0071hrl2465ra,border,A7 Nieuweschans (DE),A7,mainCarriageway,4762,53.15819,7.13929
+RWS01_MONIBAS_0071hrr2465ra,border,A7 Nieuweschans (DE),A7,mainCarriageway,4763,53.15808,7.13941
+RWS01_MONIBAS_0011hrr1774ra,border,A1 De Lutte (DE),A1,mainCarriageway,987,52.31158,7.03026
+RWS01_MONIBAS_0011hrl1774ra,border,A1 De Lutte (DE),A1,mainCarriageway,999,52.3117,7.0302
+RWS01_MONIBAS_0011hrr1758ra,border,A1 De Lutte (DE),A1,mainCarriageway,2316,52.30902,7.00658
+RWS01_MONIBAS_0011hrl1758ra,border,A1 De Lutte (DE),A1,mainCarriageway,2320,52.30913,7.00655
+POV07_N73_Hmp_4.725_Li_HTN395,border,A1 De Lutte (DE),A1,mainCarriageway,3033,52.315216,6.998626
+POV07_N73_Hmp_4.725_Re_HTN395,border,A1 De Lutte (DE),A1,mainCarriageway,3033,52.315216,6.998626
+RWS01_MONIBAS_0351hrl0760ra,border,A35 Glanerbrug (DE),A35,mainCarriageway,2579,52.19528,6.95509
+RWS01_MONIBAS_0351hrr0760ra,border,A35 Glanerbrug (DE),A35,mainCarriageway,2579,52.19528,6.95509
+RWS01_MONIBAS_0351hrl0728ra,border,A35 Glanerbrug (DE),A35,mainCarriageway,4582,52.2027,6.91082
+RWS01_MONIBAS_0351hrr0728ra,border,A35 Glanerbrug (DE),A35,mainCarriageway,4582,52.2027,6.91082
+RWS01_MONIBAS_0121hrr1472ra,border,A12 Babberich (DE),A12,mainCarriageway,1668,51.91649,6.13564
+RWS01_MONIBAS_0121hrr1470ra,border,A12 Babberich (DE),A12,mainCarriageway,1669,51.91731,6.13391
+RWS01_MONIBAS_0121hrl1470ra,border,A12 Babberich (DE),A12,mainCarriageway,1684,51.91745,6.13399
+RWS01_MONIBAS_0121hrl1473ra,border,A12 Babberich (DE),A12,mainCarriageway,1688,51.91606,6.13685
+PLB02_271550_RP,border,A77 Gennep (DE),A77,mainCarriageway,1863,51.680725,5.982491
+PLB02_271550_LP,border,A77 Gennep (DE),A77,mainCarriageway,1889,51.680992,5.981773
+RWS01_MONIBAS_0771hrl0103ra,border,A77 Gennep (DE),A77,mainCarriageway,2066,51.67512,6.02294
+RWS01_MONIBAS_0771hrr0103ra,border,A77 Gennep (DE),A77,mainCarriageway,2078,51.67501,6.023
+RWS01_MONIBAS_0671hrl0737ra,border,A67 Venlo (DE),A67,mainCarriageway,437,51.38961,6.19874
+RWS01_MONIBAS_0671hrr0737ra,border,A67 Venlo (DE),A67,mainCarriageway,443,51.38954,6.19866
+RWS01_MONIBAS_0671hrl0720ra,border,A67 Venlo (DE),A67,mainCarriageway,2088,51.39552,6.17623
+PLB02_271060_RP,border,A67 Venlo (DE),A67,mainCarriageway,2218,51.39339,6.1735
+PLB02_281200_LP,border,A76 Bocholtz (DE),A76,mainCarriageway,2523,50.837322,6.01391
+PLB02_281200_RP,border,A76 Bocholtz (DE),A76,mainCarriageway,2638,50.836308,6.01308
+PLB02_281170_LP,border,A76 Bocholtz (DE),A76,mainCarriageway,4327,50.825397,5.9868
+PLB02_281170_RP,border,A76 Bocholtz (DE),A76,mainCarriageway,4334,50.825314,5.986842
+RWS01_MONIBAS_0021hrl2703ra,border,A2 Eijsden (BE),A2,mainCarriageway,1344,50.76967,5.72216
+RWS01_MONIBAS_0021hrr2701ra,border,A2 Eijsden (BE),A2,mainCarriageway,1367,50.77076,5.72324
+RWS01_MONIBAS_0021hrr2676ra,border,A2 Eijsden (BE),A2,mainCarriageway,2422,50.79211,5.72631
+RWS01_MONIBAS_0021hrl2676ra,border,A2 Eijsden (BE),A2,mainCarriageway,2435,50.79212,5.72659
+RWS01_MONIBAS_0161hrr0685ra,border,A16 Hazeldonk (BE),A16,mainCarriageway,2635,51.5187,4.74532
+RWS01_MONIBAS_0161hrl0685ra,border,A16 Hazeldonk (BE),A16,mainCarriageway,2677,51.51907,4.7456
+RWS01_MONIBAS_0161hrl0681ra,border,A16 Hazeldonk (BE),A16,mainCarriageway,3029,51.52224,4.74544
+RWS01_MONIBAS_0161hrr0681ra,border,A16 Hazeldonk (BE),A16,mainCarriageway,3038,51.52232,4.74513
+RWS01_MONIBAS_0041hrl2413ra,border,A4 Hoogerheide (BE),A4,mainCarriageway,2349,51.4398,4.30817
+RWS01_MONIBAS_0041hrr2413ra,border,A4 Hoogerheide (BE),A4,mainCarriageway,2367,51.43993,4.308
+RWS01_MONIBAS_0041hrr2441ra,border,A4 Hoogerheide (BE),A4,mainCarriageway,3157,51.42821,4.27642
+RWS01_MONIBAS_0041hrl2480ra,border,A4 Hoogerheide (BE),A4,mainCarriageway,3485,51.39479,4.29015
