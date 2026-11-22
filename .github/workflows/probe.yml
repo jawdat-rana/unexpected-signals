@@ -1,0 +1,48 @@
+name: probe-new-feeds
+on:
+  push:
+    branches: [claude/project-thread-31so5g]
+    paths: [".github/workflows/probe.yml"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe
+        shell: python
+        run: |
+          import json, urllib.request, gzip
+          UA = {"User-Agent": "unexpected-signals/0.1 (+https://github.com/jawdat-rana/unexpected-signals)"}
+          def get(u):
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30)
+                  b = r.read()
+                  if b[:2] == b"\x1f\x8b": b = gzip.decompress(b)
+                  print(f"\n===== {u} -> {r.status} {len(b)} bytes {r.headers.get('content-type')}")
+                  return b
+              except Exception as e:
+                  print(f"\n===== {u} -> ERROR {e!r}")
+                  return b""
+          b = get("https://npropendata.rdw.nl/parkingdata/v2/")
+          if b:
+              d = json.loads(b); print(list(d.keys()))
+              fac = d.get("ParkingFacilities", [])
+              print(len(fac), "facilities"); print(json.dumps(fac[:2], indent=1)[:1500])
+              dyn = [f for f in fac if f.get("dynamicDataUrl")]
+              print(len(dyn), "with dynamicDataUrl")
+              from collections import Counter
+              print(Counter(urllib.parse.urlparse(f["dynamicDataUrl"]).netloc for f in dyn).most_common(15))
+              for f in dyn[:2]:
+                  x = get(f["dynamicDataUrl"]); print(x[:1500].decode("utf-8", "replace"))
+              if fac:
+                  x = get(fac[0]["staticDataUrl"]); print(x[:2500].decode("utf-8", "replace"))
+          for u in ["https://rss.marketingtools.apple.com/api/v2/nl/apps/top-free/10/apps.json",
+                    "https://rss.marketingtools.apple.com/api/v2/nl/music/most-played/10/songs.json"]:
+              x = get(u); print(x[:1500].decode("utf-8", "replace"))
+          x = get("https://trends.google.com/trending/rss?geo=NL"); print(x[:3000].decode("utf-8", "replace"))
+          for u in ["http://fiets.openov.nl/locaties.json", "https://fiets.openov.nl/locaties.json",
+                    "https://gateway.apiportal.ns.nl/places-api/v2/ovfiets"]:
+              x = get(u); print(x[:1500].decode("utf-8", "replace"))
+          for u in ["https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv",
+                    "https://www.netflix.com/tudum/top10/data/all-weeks-countries.tsv"]:
+              x = get(u); t = x.decode("utf-8", "replace").splitlines(); print(t[:4], len(t), "lines")
