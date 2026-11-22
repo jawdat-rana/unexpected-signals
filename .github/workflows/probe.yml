@@ -16,7 +16,7 @@ jobs:
         env:
           PYTHONPATH: src
         run: |
-          time python -m unexpected_signals collect --out /tmp/out --only netflix_top10
-          time python -m unexpected_signals collect --out /tmp/out --only apple_charts
-          ls -l /tmp/out/netflix_top10/*/
-          head -5 /tmp/out/netflix_top10/global/*.csv
+          time python -m unexpected_signals collect --out /tmp/out
+          time python -m unexpected_signals collect --out /tmp/out
+          cat /tmp/out/_state/schedule.json
+          du -sh /tmp/out/*

@@ -176,16 +176,24 @@ def collect_parking(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
 
 
 def collect_charts(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
-    rows, failed = [], []
-    for country in cfg.get("countries", ["nl"]):
-        for chart in cfg.get("charts", ["apps-free"]):
-            url = charts.url(country, chart, cfg.get("size", 100), cfg.get("base", charts.BASE))
-            try:
-                payload = json.loads(download(url, retries=cfg.get("retries", 3)))
-            except Exception as exc:
-                failed.append(f"{country}/{chart}: {exc!r}")
-                continue
-            rows += charts.parse(payload, country, chart, fetched_at)
+    # Apple answers each chart slowly (5-10 s), so they are fetched in parallel.
+    jobs = [
+        (c, ch) for c in cfg.get("countries", ["nl"]) for ch in cfg.get("charts", ["apps-free"])
+    ]
+
+    def fetch(job: tuple[str, str]) -> list[dict] | str:
+        country, chart = job
+        url = charts.url(country, chart, cfg.get("size", 100), cfg.get("base", charts.BASE))
+        try:
+            payload = json.loads(download(url, retries=cfg.get("retries", 3)))
+        except Exception as exc:
+            return f"{country}/{chart}: {exc!r}"
+        return charts.parse(payload, country, chart, fetched_at)
+
+    with ThreadPoolExecutor(cfg.get("workers", 8)) as pool:
+        results = list(pool.map(fetch, jobs))
+    rows = [row for r in results if isinstance(r, list) for row in r]
+    failed = [r for r in results if isinstance(r, str)]
     storage.append_rows(storage.day_path(out, "apple_charts", fetched_at), charts.COLUMNS, rows)
     if failed:
         raise RuntimeError(f"{len(rows)} rows saved, but these failed: {failed}")
