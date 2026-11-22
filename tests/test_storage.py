@@ -14,3 +14,10 @@ def test_append_writes_header_once(tmp_path: Path):
     storage.append_rows(path, ["a", "b"], [{"a": 2, "b": 3}])
     assert path.read_text().splitlines() == ["a,b", "1,", "2,3"]
     assert storage.read_rows(path) == [{"a": "1", "b": ""}, {"a": "2", "b": "3"}]
+
+
+def test_append_with_new_columns_rewrites_the_header(tmp_path):
+    path = tmp_path / "day.csv"
+    storage.append_rows(path, ["a"], [{"a": 1}])
+    storage.append_rows(path, ["t", "a"], [{"t": "x", "a": 2}])
+    assert path.read_text().splitlines() == ["t,a", ",1", "x,2"]

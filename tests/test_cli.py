@@ -30,8 +30,9 @@ sites = ["RWS01_MONIBAS_0021hrl0403ra"]
     assert len(bridges_csv.read_text().splitlines()) == 3  # header + 2 records, deduplicated
     summary = out / "traffic_summary/2026/11/2026-11-05.csv"
     assert len(summary.read_text().splitlines()) == 3  # header + 2 snapshots
-    sites = out / "traffic_sites/2026/11/2026-11-05.csv"
-    assert len(sites.read_text().splitlines()) == 3
+    sites = (out / "traffic_sites/2026/11/2026-11-05.csv").read_text().splitlines()
+    assert len(sites) == 3
+    assert sites[1].startswith("2026-11-05T15:52:00Z,RWS01_MONIBAS_0021hrl0403ra,")
     catalogue = out / "traffic_sites_catalogue.csv"
     assert len(catalogue.read_text().splitlines()) == 3  # header + 2 sites
     roads = (out / "traffic_roads/2026/11/2026-11-05.csv").read_text().splitlines()

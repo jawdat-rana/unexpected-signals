@@ -27,6 +27,13 @@ def write_rows(path: Path, columns: list[str], rows: Iterable[dict[str, object]]
 
 def append_rows(path: Path, columns: list[str], rows: Iterable[dict[str, object]]) -> int:
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        with path.open(newline="", encoding="utf-8") as fh:
+            header = next(csv.reader(fh), [])
+        if header != columns:
+            # The columns changed since this file was started: rewrite it with
+            # the new header, leaving new columns empty in the old rows.
+            write_rows(path, columns, read_rows(path))
     new_file = not path.exists()
     count = 0
     with path.open("a", newline="", encoding="utf-8") as fh:

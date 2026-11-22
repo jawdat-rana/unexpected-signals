@@ -32,7 +32,9 @@ class SiteMeasurement:
     lanes_with_flow: int
 
 
-SITE_COLUMNS = [f.name for f in fields(SiteMeasurement)]
+# fetched_at ties each row to its snapshot: NDW's per-site measurement time is
+# often missing in the live feed.
+SITE_COLUMNS = ["fetched_at", *(f.name for f in fields(SiteMeasurement))]
 SUMMARY_COLUMNS = [
     "fetched_at",
     "sites_reporting",
@@ -94,8 +96,10 @@ def summarise(rows: list[SiteMeasurement], fetched_at: str) -> dict[str, object]
     }
 
 
-def select(rows: list[SiteMeasurement], site_ids: set[str]) -> list[dict[str, object]]:
-    return [asdict(r) for r in rows if r.site_id in site_ids]
+def select(
+    rows: list[SiteMeasurement], site_ids: set[str], fetched_at: str | None = None
+) -> list[dict[str, object]]:
+    return [{"fetched_at": fetched_at, **asdict(r)} for r in rows if r.site_id in site_ids]
 
 
 def summarise_roads(
