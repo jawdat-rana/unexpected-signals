@@ -187,7 +187,7 @@ every_minutes = 10
 url = "{index}"
 [apple_charts]
 enabled = true
-every_minutes = 120
+every_minutes = 180
 base = "{apple_base}"
 countries = ["nl"]
 charts = ["apps-free"]
@@ -217,7 +217,7 @@ global = "{nf}"
     catalogue = lines(out / "parking_catalogue.csv")
     assert catalogue[1] == "p1,Forum,Groningen,Groningen,53.2,6.5,340,garage,Groningen,False"
 
-    # Apple charts every 120 min: only the first run is due.
+    # Apple charts every 180 min: only the first run is due.
     assert len(lines(out / "apple_charts/2026/11/2026-11-22.csv")) == 3
     # Trends run every time but merge into one row per trend, filed by start day.
     assert len(lines(out / "google_trending/2026/11/2026-11-22.csv")) == 2

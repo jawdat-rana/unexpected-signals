@@ -130,7 +130,7 @@ catalogue_max_age_days = 7
 # songs. Spotify's charts need a login and its API no longer serves its
 # editorial playlists, so Apple Music stands in for "the hits".
 enabled = true
-every_minutes = 120
+every_minutes = 180
 countries = ["nl", "be", "de", "gb", "us"]
 charts = ["apps-free", "songs"]
 size = 100
