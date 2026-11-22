@@ -23,26 +23,30 @@ jobs:
               except Exception as e:
                   print(f"\n===== {u} -> ERROR {e!r}")
                   return b""
-          b = get("https://npropendata.rdw.nl/parkingdata/v2/")
-          if b:
-              d = json.loads(b); print(list(d.keys()))
-              fac = d.get("ParkingFacilities", [])
-              print(len(fac), "facilities"); print(json.dumps(fac[:2], indent=1)[:1500])
-              dyn = [f for f in fac if f.get("dynamicDataUrl")]
-              print(len(dyn), "with dynamicDataUrl")
-              from collections import Counter
-              print(Counter(urllib.parse.urlparse(f["dynamicDataUrl"]).netloc for f in dyn).most_common(15))
-              for f in dyn[:2]:
-                  x = get(f["dynamicDataUrl"]); print(x[:1500].decode("utf-8", "replace"))
-              if fac:
-                  x = get(fac[0]["staticDataUrl"]); print(x[:2500].decode("utf-8", "replace"))
-          for u in ["https://rss.marketingtools.apple.com/api/v2/nl/apps/top-free/10/apps.json",
-                    "https://rss.marketingtools.apple.com/api/v2/nl/music/most-played/10/songs.json"]:
-              x = get(u); print(x[:1500].decode("utf-8", "replace"))
-          x = get("https://trends.google.com/trending/rss?geo=NL"); print(x[:3000].decode("utf-8", "replace"))
-          for u in ["http://fiets.openov.nl/locaties.json", "https://fiets.openov.nl/locaties.json",
-                    "https://gateway.apiportal.ns.nl/places-api/v2/ovfiets"]:
-              x = get(u); print(x[:1500].decode("utf-8", "replace"))
-          for u in ["https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv",
-                    "https://www.netflix.com/tudum/top10/data/all-weeks-countries.tsv"]:
-              x = get(u); t = x.decode("utf-8", "replace").splitlines(); print(t[:4], len(t), "lines")
+          from concurrent.futures import ThreadPoolExecutor
+          from collections import Counter
+          import time
+          d = json.loads(get("http://fiets.openov.nl/locaties.json"))
+          locs = d["locaties"]; print(len(locs), "locations", list(d.keys()))
+          k = next(iter(locs)); r = dict(locs[k]); r.pop("infoImages", None); r.pop("openingHours", None)
+          print(json.dumps(r, indent=1)[:3000])
+          fac = json.loads(get("https://npropendata.rdw.nl/parkingdata/v2/"))["ParkingFacilities"]
+          dyn = [f for f in fac if f.get("dynamicDataUrl")]
+          print(Counter(f.get("limitedAccess") for f in dyn))
+          def fetch(f):
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(f["dynamicDataUrl"], headers=UA), timeout=20)
+                  return ("ok", json.loads(r.read()))
+              except Exception as e:
+                  return (repr(e)[:40], None)
+          t=time.time()
+          with ThreadPoolExecutor(16) as ex: res = list(ex.map(fetch, dyn))
+          print("fetched in", round(time.time()-t,1), "s", Counter(r[0] for r in res))
+          now=time.time()
+          ages=[now-r[1]["parkingFacilityDynamicInformation"]["facilityActualStatus"].get("lastUpdated",0) for r in res if r[0]=="ok"]
+          ages.sort(); print("age quantiles h", [round(ages[int(q*(len(ages)-1))]/3600,1) for q in (0,.25,.5,.75,.9,1)])
+          okf=[f for f,r in zip(dyn,res) if r[0]=="ok"]
+          print(json.dumps(okf[0])[:500])
+          st=json.loads(get(okf[0]["staticDataUrl"]))["parkingFacilityInformation"]
+          print(list(st.keys()))
+          print(json.dumps({k:v for k,v in st.items() if k not in ("operator","contactPersons","openingTimes","tariffs","paymentMethods")}, indent=1)[:2500])
