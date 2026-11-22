@@ -1,10 +1,10 @@
 name: ndw-sites-probe
-# Temporary: checks the site catalogue parser against the live NDW file.
-# Removed before merge.
+# Temporary: builds the site catalogue from live NDW data and runs the
+# watchlist picker on it. Removed before merge.
 on:
   push:
     branches: [claude/project-thread-wudcqc]
-    paths: [.github/workflows/ndw-sites-probe.yml, src/unexpected_signals/sites.py]
+    paths: [.github/workflows/ndw-sites-probe.yml, src/unexpected_signals/*.py, analysis/traffic-watchlist/*]
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -13,25 +13,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: |
+          git fetch --depth 1 origin data
+          git worktree add data-branch FETCH_HEAD
       - env:
           PYTHONPATH: src
         run: |
+          sed -i 's/^\[traffic\]/[traffic]\ncatalogue_url = "https:\/\/opendata.ndw.nu\/snelheden_en_intensiteiten_configuratie_meetlocaties.xml.gz"/' config.toml
+          python -m unexpected_signals collect --only traffic --out data-branch/data
           python - <<'PY'
-          import io, time, collections, csv, sys
-          from unexpected_signals import sites
-          from unexpected_signals.fetch import download
-          t=time.time()
-          raw=download("https://opendata.ndw.nu/snelheden_en_intensiteiten_configuratie_meetlocaties.xml.gz")
-          rows=sites.parse(io.BytesIO(raw)); print('parsed',len(rows),'in',round(time.time()-t),'s')
-          print('no road',sum(r.road is None for r in rows))
-          roads=collections.Counter(r.road for r in rows)
-          print('A roads',sorted(((k,v) for k,v in roads.items() if k and k[0]=='A'),key=lambda x:int(x[0][1:])))
-          print('N roads',len([k for k in roads if k and k[0]=='N']), roads.most_common(40))
-          print('prefixes',collections.Counter(r.site_id.split('_')[0] for r in rows).most_common(40))
-          print('carriageway',collections.Counter(r.carriageway for r in rows).most_common(10))
-          import random; random.seed(1)
-          for r in random.sample(rows,40): print(r)
-          nr=[r for r in rows if r.road is None]
-          for r in random.sample(nr,min(40,len(nr))): print('NOROAD',r)
-          w=csv.writer(sys.stdout)
+          import csv, collections
+          rows=list(csv.DictReader(open('data-branch/data/traffic_sites_catalogue.csv')))
+          print('catalogue',len(rows),'with road',sum(bool(r['road']) for r in rows))
+          print(collections.Counter(r['road'][:1] for r in rows))
           PY
+          tail -n 50 data-branch/data/traffic_roads/*/*/*.csv
+          python analysis/traffic-watchlist/pick.py data-branch/data
+          cat analysis/traffic-watchlist/watchlist.csv

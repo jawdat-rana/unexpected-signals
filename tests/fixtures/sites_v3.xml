@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-written fixture shaped like NDW's DATEX II v3 MeasurementSiteTablePublication. -->
+<mc:messageContainer xmlns:mc="http://datex2.eu/schema/3/messageContainer"
+                     xmlns:roa="http://datex2.eu/schema/3/roadTrafficData"
+                     xmlns:loc="http://datex2.eu/schema/3/locationReferencing"
+                     xmlns:com="http://datex2.eu/schema/3/common"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <mc:payload xsi:type="roa:MeasurementSiteTablePublication">
+    <roa:measurementSiteTable id="NDW01_AVG_TRAFFICFLOWTRAFFICSPEED" version="latest">
+      <roa:measurementSite id="RWS01_MONIBAS_0021hrl0403ra" version="3">
+        <roa:measurementSiteName><com:values><com:value lang="nl">0021hrl0403ra</com:value></com:values></roa:measurementSiteName>
+        <roa:measurementSiteNumberOfLanes>2</roa:measurementSiteNumberOfLanes>
+        <roa:measurementSiteLocation>
+          <loc:supplementaryPositionalDescription><loc:carriageway><loc:carriageway>mainCarriageway</loc:carriageway></loc:carriageway></loc:supplementaryPositionalDescription>
+          <loc:pointByCoordinates><loc:pointCoordinates><loc:latitude>52.2</loc:latitude><loc:longitude>4.9</loc:longitude></loc:pointCoordinates></loc:pointByCoordinates>
+        </roa:measurementSiteLocation>
+      </roa:measurementSite>
+      <roa:measurementSite id="PZH01_MST_0047_01" version="14">
+        <roa:measurementSiteName><com:values><com:value lang="nl">N208 km 5.645 Li</com:value></com:values></roa:measurementSiteName>
+        <roa:measurementSiteNumberOfLanes>1</roa:measurementSiteNumberOfLanes>
+        <roa:measurementSiteLocation>
+          <loc:supplementaryPositionalDescription><loc:carriageway><loc:carriageway>mainCarriageway</loc:carriageway></loc:carriageway></loc:supplementaryPositionalDescription>
+          <loc:pointByCoordinates><loc:pointCoordinates><loc:latitude>52.3</loc:latitude><loc:longitude>4.6</loc:longitude></loc:pointCoordinates></loc:pointByCoordinates>
+        </roa:measurementSiteLocation>
+      </roa:measurementSite>
+    </roa:measurementSiteTable>
+  </mc:payload>
+</mc:messageContainer>
