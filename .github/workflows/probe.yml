@@ -16,7 +16,5 @@ jobs:
         env:
           PYTHONPATH: src
         run: |
-          time python -m unexpected_signals collect --out /tmp/out
-          time python -m unexpected_signals collect --out /tmp/out
-          cat /tmp/out/_state/schedule.json
-          du -sh /tmp/out/*
+          for i in 1 2 3; do python -m unexpected_signals collect --out /tmp/out --only netflix_top10; done
+          wc -l /tmp/out/netflix_top10/*/*.csv

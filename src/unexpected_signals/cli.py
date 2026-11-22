@@ -243,7 +243,8 @@ def collect_netflix(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
     notes, failed = [], []
     for kind, url in cfg.get("files", {}).items():
         try:
-            week, columns, rows = netflix.latest_week(download(url, retries=cfg.get("retries", 3)))
+            raw = download(url, retries=cfg.get("retries", 3), allow_partial=True)
+            week, columns, rows = netflix.latest_week(raw)
         except Exception as exc:
             failed.append(f"{kind}: {exc!r}")
             continue

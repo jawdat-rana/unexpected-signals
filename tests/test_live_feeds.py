@@ -229,3 +229,22 @@ global = "{nf}"
     schedule = state.load(out, "schedule")
     assert schedule["apple_charts"] == "2026-11-22T21:00:00Z"
     assert schedule["parking"] == "2026-11-22T21:15:00Z"
+
+
+def test_netflix_partial_download_keeps_newest_week():
+    raw = (
+        b"week\tcategory\tweekly_rank\tshow_title\n"
+        b"2026-11-15\tFilms\t1\tNew\n"
+        b"2026-11-08\tFilms\t1\tOld\n"
+        b"2026-11-08\tFil"
+    )
+    week, _, rows = netflix.latest_week(raw)
+    assert week == "2026-11-15" and [r["show_title"] for r in rows] == ["New"]
+
+
+def test_netflix_cut_inside_newest_week_is_an_error():
+    import pytest
+
+    raw = b"week\tcategory\tweekly_rank\tshow_title\n2026-11-15\tFilms\t1\tNew\n2026-11-15\tFi"
+    with pytest.raises(ValueError):
+        netflix.latest_week(raw)
