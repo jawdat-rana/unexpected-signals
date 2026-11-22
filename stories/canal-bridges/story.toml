@@ -1,0 +1,21 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "On one North Holland canal, the bridges set aside three hours a day for boats"
+dek = "The 25 bridges between Den Helder and Zaanstad follow a timetable with about 31 openings a day each, including the rush hours and the middle of the night."
+date = 2026-11-23
+section = "Bridges"
+series = "Bridges and roads"
+status = "draft"
+tags = ["ndw", "bridges", "shipping", "north-holland", "maps"]
+image = ""
+analysis = "analysis/ndw-bridges"
+
+[[sources]]
+name = "NDW open data: planned bridge openings (planningsfeed brugopeningen)"
+url = "https://opendata.ndw.nu/"
+licence = "CC0"
+
+[[sources]]
+name = "Natural Earth: country and lake outlines"
+url = "https://www.naturalearthdata.com/"
+licence = "Public domain"
