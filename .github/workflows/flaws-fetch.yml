@@ -1,0 +1,50 @@
+name: flaws-fetch
+
+# Downloads the CVE List, CISA's exploited-flaws catalogue, Microsoft's monthly
+# security update guides and NCSC-NL advisories for the "Black October" story,
+# and commits compact CSVs to the `raw-flaws` branch.
+
+on:
+  push:
+    paths:
+      - "analysis/software-flaws/fetch_raw.py"
+      - ".github/workflows/flaws-fetch.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: raw-flaws
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git fetch -q origin raw-flaws; then
+            git worktree add -B raw-flaws raw FETCH_HEAD
+          else
+            git worktree add --orphan -b raw-flaws raw
+          fi
+          python analysis/software-flaws/fetch_raw.py raw
+          rm -rf raw/_tmp
+          cat raw/manifest.csv >> "$GITHUB_STEP_SUMMARY"
+      - name: Push to raw-flaws
+        working-directory: raw
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Data unchanged, nothing to commit"; exit 0; fi
+          git commit -q -m "raw: software flaws sources $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin HEAD:raw-flaws
