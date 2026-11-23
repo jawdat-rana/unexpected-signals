@@ -6,35 +6,21 @@ on:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - run: npm i playwright@1.48.2 && npx playwright install --with-deps chromium > /dev/null
       - name: Probe
+        shell: python
         run: |
-          cat > p.js <<'JS'
-          const { chromium } = require('playwright');
-          (async () => {
-            const b = await chromium.launch();
-            const p = await b.newPage({ locale: 'en-US' });
-            p.on('response', async r => {
-              const u = r.url();
-              const ct = r.headers()['content-type'] || '';
-              if (ct.includes('json') && !u.includes('monitor') && !u.includes('slardar') && !u.includes('mcs')) {
-                let t = ''; try { t = await r.text(); } catch (e) {}
-                console.log('API', r.status(), u.slice(0, 250)); console.log(t.slice(0, 400));
-              }
-            });
-            for (const cc of ['NL']) {
-              await p.goto(`https://ads.tiktok.com/creative/creativeCenter/trends?countryCode=${cc}&period=7&tab=music`, { waitUntil: 'networkidle', timeout: 60000 }).catch(e => console.log('goto', e.message));
-              await p.waitForTimeout(20000);
-              console.log('URL', p.url());
-              const txt = await p.evaluate(() => document.title + ' || ' + document.body.innerText.slice(0, 2500) + ' || ' + document.body.innerHTML.length);
-              console.log('TEXT', cc, txt.replace(/\n+/g, ' | '));
-            }
-            await b.close();
-          })();
-          JS
-          node p.js
+          import urllib.request, gzip
+          H = {"User-Agent": "unexpected-signals/0.1 (+https://github.com/jawdat-rana/unexpected-signals)"}
+          for u in ["https://www.shazam.com/services/charts/csv/top-200/netherlands",
+                    "https://www.shazam.com/services/charts/csv/top-200/world",
+                    "https://www.shazam.com/charts/top-200/netherlands",
+                    "https://www.billboard.com/charts/tiktok-billboard-top-50/"]:
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u, headers=H), timeout=30); b = r.read()
+                  if b[:2] == b"\x1f\x8b": b = gzip.decompress(b)
+                  t = b.decode("utf-8", "replace")
+                  print(f"\n===== {u} -> {r.status} {len(b)} {r.headers.get('content-type')}"); print(t[:900])
+              except Exception as e:
+                  print(f"\n===== {u} -> ERROR {e!r}")
