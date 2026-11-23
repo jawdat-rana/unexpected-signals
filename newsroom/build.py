@@ -38,6 +38,8 @@ ROOT = Path(__file__).resolve().parent.parent
 NEWSROOM = ROOT / "newsroom"
 STORIES = ROOT / "stories"
 TEMPLATES = ROOT / "templates"
+# Site-wide pages, like "How this is made": one Markdown file each, built at /<name>/.
+PAGES = NEWSROOM / "pages"
 OUT = ROOT / "_site"
 
 # Files in a story folder that are sources, not part of the published page.
@@ -364,6 +366,18 @@ def story_html(config: dict, story: Story, *, root: str) -> str:
     )
 
 
+def site_page(path: Path) -> tuple[str, str, str]:
+    """A page from newsroom/pages: its title (the # heading), description
+    (the first paragraph) and body HTML."""
+    text = path.read_text(encoding="utf-8")
+    head, _, rest = text.partition("\n")
+    if not head.startswith("# "):
+        raise ValueError(f"{path.name} must start with a '# Title' line")
+    title = head[2:].strip()
+    first = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", rest.strip().split("\n\n")[0])
+    return title, first, render_body(rest)
+
+
 def card(story: Story, *, root: str, lead: bool = False) -> str:
     cls = "card card-lead" if lead else "card"
     image = (
@@ -488,6 +502,20 @@ def build(out: Path = OUT, drafts: bool = False, today: dt.date | None = None) -
             path="style/",
         ),  # fmt: skip
     )
+
+    for source in sorted(PAGES.glob("*.md")):
+        title, description, body = site_page(source)
+        write(
+            f"{source.stem}/index.html",
+            page(
+                config,
+                root="../",
+                title=f"{title} · {config['title']}",
+                description=description,
+                body=template("page.html").substitute(title=esc(title), body=body, root="../"),
+                path=f"{source.stem}/",
+            ),  # fmt: skip
+        )
 
     write(
         "index.html",
