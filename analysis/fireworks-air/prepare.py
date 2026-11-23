@@ -27,8 +27,8 @@ decides how high the dust gets.
 from __future__ import annotations
 
 import csv
-import math
 import datetime as dt
+import math
 import statistics
 import sys
 from collections import defaultdict
@@ -134,13 +134,22 @@ def main(raw: Path, out: Path) -> None:
     names = {}
     path = raw / "nl_locations.csv"
     if path.exists():
-        lines = [l for l in path.read_text(encoding="utf-8", errors="replace").splitlines() if not l.startswith("#")]
+        lines = [
+            line
+            for line in path.read_text(encoding="utf-8", errors="replace").splitlines()
+            if not line.startswith("#")
+        ]
         for row in csv.DictReader(lines, delimiter=";"):
             names[row["meetlocatie_id"]] = {
                 "name": row["meetlocatie_naam"],
                 "municipality": row["meetlocatie_plaatsnaam"],
             }
-    names.update({s["id"]: {"name": s["name"], "municipality": s["city"]} for s in read(raw / "de_stations.csv")})
+    names.update(
+        {
+            s["id"]: {"name": s["name"], "municipality": s["city"]}
+            for s in read(raw / "de_stations.csv")
+        }
+    )
 
     years = sorted(int(p.stem) for p in (raw / "nl").glob("*.csv"))
     nights, stations, profile = [], [], []
@@ -217,7 +226,9 @@ def main(raw: Path, out: Path) -> None:
     write(out / "nights.csv", nights)
     write(out / "profile.csv", profile)
     write(HERE / "stations_by_year.csv", stations)
-    print(f"{len(nights)} country-years, {len(stations)} station-years, {len(profile)} profile rows")
+    print(
+        f"{len(nights)} country-years, {len(stations)} station-years, {len(profile)} profile rows"
+    )
     for row in nights:
         print(
             f"{row['season']} {row['country']} {row['formula']:5} {row['status']:12} "
@@ -235,13 +246,18 @@ def add_wind_model(nights: list[dict]) -> None:
     """
     for formula in ("PM25", "PM10"):
         rows = [n for n in nights if n["country"] == "NL" and n["formula"] == formula]
-        fit = [n for n in rows if n["status"] == "sold" and n["wind_ms"] != "" and n["median_excess"] > 0]
+        fit = [
+            n
+            for n in rows
+            if n["status"] == "sold" and n["wind_ms"] != "" and n["median_excess"] > 0
+        ]
         xs = [n["wind_ms"] for n in fit]
         ys = [math.log(n["median_excess"]) for n in fit]
         mx, my = statistics.fmean(xs), statistics.fmean(ys)
-        b = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sum((x - mx) ** 2 for x in xs)
+        sxy = sum((x - mx) * (y - my) for x, y in zip(xs, ys, strict=True))
+        b = sxy / sum((x - mx) ** 2 for x in xs)
         a = my - b * mx
-        residuals = [y - (a + b * x) for x, y in zip(xs, ys)]
+        residuals = [y - (a + b * x) for x, y in zip(xs, ys, strict=True)]
         r2 = 1 - sum(e * e for e in residuals) / sum((y - my) ** 2 for y in ys)
         print(
             f"wind model {formula}: excess x{math.exp(b):.2f} per extra m/s, R2 {r2:.2f}, "

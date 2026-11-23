@@ -142,7 +142,13 @@ def read_bulk(path: str, rows: dict[int, list], label: str) -> int | None:
                 continue
             formula = cells[columns["component"]].replace(".", "")
             rows[season].append(
-                [cells[columns["meetlocatie_id"]], formula, f"{when:%Y-%m-%d %H:%M:%S}", value, label]
+                [
+                    cells[columns["meetlocatie_id"]],
+                    formula,
+                    f"{when:%Y-%m-%d %H:%M:%S}",
+                    value,
+                    label,
+                ]
             )
             kept += 1
     return kept
@@ -242,7 +248,11 @@ def fetch_nl(out: Path, seasons: list[int]) -> list[list]:
                 rows[season] += fetch_nl_api(season, formula, stations, part)
     for season in seasons:
         data = sorted(rows.get(season, []))
-        write(out / "nl" / f"{season}.csv", ["station", "formula", "time_utc", "value", "source"], data)
+        write(
+            out / "nl" / f"{season}.csv",
+            ["station", "formula", "time_utc", "value", "source"],
+            data,
+        )
         series = len({(r[0], r[1]) for r in data})
         sources = ",".join(sorted({r[4] for r in data}))
         print(f"| NL | {season} | {len(data):,} | {series} station-series ({sources}) |")
@@ -267,7 +277,8 @@ def de_stations() -> list[dict]:
     index = {name: i for i, name in enumerate(reply.get("indices", []))}
     rows = []
     for sid, cells in reply.get("data", {}).items():
-        def cell(key, fallback):
+
+        def cell(key, fallback, cells=cells):
             i = index.get(key, fallback)
             return cells[i] if i is not None and i < len(cells) else ""
 
@@ -322,7 +333,9 @@ def fetch_de(out: Path, years: list[int]) -> list[list]:
             time.sleep(1)
         rows.sort()
         write(out / "de" / f"{year}.csv", ["station", "formula", "time_utc", "value"], rows)
-        print(f"| DE | {year} | {len(rows):,} | {len({(r[0], r[1]) for r in rows})} station-series |")
+        print(
+            f"| DE | {year} | {len(rows):,} | {len({(r[0], r[1]) for r in rows})} station-series |"
+        )
         manifest.append(["umweltbundesamt", year, len(rows), ""])
     return manifest
 
@@ -358,7 +371,7 @@ def fetch_knmi(out: Path, years: list[int]) -> list[list]:
             # Hour HH covers (HH-1):00 to HH:00 UT; label it by its start.
             when = dt.datetime.strptime(day, "%Y%m%d") + dt.timedelta(hours=int(hour) - 1)
 
-            def tenth(key):
+            def tenth(key, cells=cells):
                 v = cells.get(key, "")
                 return "" if v in ("", None) else round(int(v) / 10, 1)
 
@@ -378,8 +391,6 @@ def fetch_knmi(out: Path, years: list[int]) -> list[list]:
         print(f"| KNMI | {year} | {len(rows):,} | {len({r[0] for r in rows})} stations |")
         manifest.append(["knmi", year, len(rows), ""])
     return manifest
-
-
 
 
 def write(path: Path, header: list[str], rows: list) -> None:
@@ -424,7 +435,11 @@ def main(out: Path, first: int) -> None:
     old = read_rows(out / "manifest.csv")
     fetched = {(m[0], str(m[1])) for m in manifest}
     keep = [r for r in old if (r[0], r[1]) not in fetched] + manifest
-    write(out / "manifest.csv", ["source", "season", "rows", "note"], sorted(keep, key=lambda r: (r[0], str(r[1]))))
+    write(
+        out / "manifest.csv",
+        ["source", "season", "rows", "note"],
+        sorted(keep, key=lambda r: (r[0], str(r[1]))),
+    )
     print(f"\nFetched at {NOW:%Y-%m-%d %H:%M} UTC")
 
 
