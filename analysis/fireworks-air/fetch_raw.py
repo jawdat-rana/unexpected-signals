@@ -37,7 +37,6 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 HEADERS = {
@@ -50,6 +49,9 @@ KNMI = "https://www.daggegevens.knmi.nl/klimatologie/uurgegevens"
 FORMULAS = ["PM10", "PM25"]
 UBA_COMPONENTS = {"PM10": 1, "PM25": 9}  # UBA component ids
 UBA_HOURLY = 2  # scope: one-hour average
+PAUSE = 0.25  # seconds between Luchtmeetnet calls; it answers 429 when rushed
+SHOWN = False
+DEADLINE = time.monotonic() + 75 * 60  # stop early and keep what we have
 NOW = dt.datetime.now(dt.UTC).replace(tzinfo=None)
 
 
@@ -58,7 +60,7 @@ def window(year: int) -> tuple[dt.datetime, dt.datetime]:
     return dt.datetime(year, 12, 28), dt.datetime(year + 1, 1, 3, 23)
 
 
-def get(url: str, data: bytes | None = None, retries: int = 4) -> bytes | None:
+def get(url: str, data: bytes | None = None, retries: int = 8) -> bytes | None:
     for attempt in range(retries):
         try:
             request = urllib.request.Request(url, data=data, headers=HEADERS)
@@ -68,6 +70,11 @@ def get(url: str, data: bytes | None = None, retries: int = 4) -> bytes | None:
             if error.code in (400, 404, 422):
                 print(f"HTTP {error.code} {url[:160]}", file=sys.stderr)
                 return None
+            if error.code == 429 and attempt < retries - 1:
+                wait = int(error.headers.get("Retry-After") or 30)
+                print(f"429, waiting {wait}s ({dict(error.headers)})", file=sys.stderr)
+                time.sleep(min(wait, 300))
+                continue
             if attempt == retries - 1:
                 raise
         except Exception:
@@ -107,8 +114,11 @@ def lml_stations() -> list[dict]:
             "components": " ".join(data.get("components") or []),
         }
 
-    with ThreadPoolExecutor(4) as pool:
-        return list(pool.map(detail, numbers))
+    rows = []
+    for number in numbers:
+        rows.append(detail(number))
+        time.sleep(PAUSE)
+    return rows
 
 
 def lml_series(number: str, formula: str, start: dt.datetime, end: dt.datetime) -> list[list]:
@@ -126,6 +136,11 @@ def lml_series(number: str, formula: str, start: dt.datetime, end: dt.datetime) 
             }
         )
         reply = get_json(f"{LML}/measurements?{query}")
+        time.sleep(PAUSE)
+        global SHOWN
+        if not SHOWN and reply and reply.get("data"):
+            SHOWN = True
+            print(f"First reply: pagination {reply.get('pagination')}", file=sys.stderr)
         if not reply:
             return rows
         for m in reply.get("data", []):
@@ -140,6 +155,9 @@ def fetch_nl(out: Path, years: list[int], stations: list[dict]) -> list[list]:
     pm = [s for s in stations if any(f in s["components"].split() for f in FORMULAS)]
     manifest = []
     for year in years:
+        if time.monotonic() > DEADLINE:
+            print(f"Out of time before NL {year}; the next run continues from here.")
+            break
         start, end = window(year)
         jobs = [
             (s["number"], f)
@@ -147,9 +165,7 @@ def fetch_nl(out: Path, years: list[int], stations: list[dict]) -> list[list]:
             for f in FORMULAS
             if f in s["components"].split()
         ]
-        with ThreadPoolExecutor(4) as pool:
-            results = list(pool.map(lambda j: lml_series(j[0], j[1], start, end), jobs))
-        rows = sorted(r for part in results for r in part)
+        rows = sorted(r for j in jobs for r in lml_series(j[0], j[1], start, end))
         write(out / "nl" / f"{year}.csv", ["station", "formula", "time_utc", "value"], rows)
         with_data = len({(r[0], r[1]) for r in rows})
         print(f"| NL | {year} | {len(rows):,} | {with_data} station-series of {len(jobs)} |")
