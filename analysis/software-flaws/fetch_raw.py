@@ -26,7 +26,7 @@ import sys
 import time
 import urllib.request
 import zipfile
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 HEADERS = {
@@ -62,7 +62,7 @@ def log(source: str, status: str, rows: int = 0, note: str = "") -> None:
             "status": status,
             "rows": rows,
             "note": note,
-            "fetched_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+            "fetched_utc": datetime.now(UTC).strftime("%Y-%m-%dT%H:%MZ"),
         }
     )
     print(f"[{source}] {status} rows={rows} {note}", flush=True)
@@ -131,7 +131,11 @@ def cve_row(rec: dict) -> dict | None:
             vendor = a["vendor"]
             break
     credits = " | ".join(c.get("value", "") for c in cna.get("credits", []) or [])
-    desc = " ".join(d.get("value", "") for d in cna.get("descriptions", []) or [] if d.get("lang", "en").startswith("en"))
+    desc = " ".join(
+        d.get("value", "")
+        for d in cna.get("descriptions", []) or []
+        if d.get("lang", "en").startswith("en")
+    )
     hit = AI_TERMS.search(credits) or AI_TERMS.search(desc)
     return {
         "cve": meta.get("cveId", ""),
@@ -150,16 +154,36 @@ def cve_row(rec: dict) -> dict | None:
 
 
 CVE_COLS = [
-    "cve", "published", "reserved", "assigner", "vendor", "score", "cvss_version",
-    "score_source", "cwe", "ai_term", "ai_in", "credits",
+    "cve",
+    "published",
+    "reserved",
+    "assigner",
+    "vendor",
+    "score",
+    "cvss_version",
+    "score_source",
+    "cwe",
+    "ai_term",
+    "ai_in",
+    "credits",
 ]
 
 
 def fetch_cves(out: Path, tmp: Path) -> None:
     tmp.mkdir(parents=True, exist_ok=True)
     subprocess.run(
-        ["gh", "release", "download", "--repo", "CVEProject/cvelistV5",
-         "--pattern", "*_all_CVEs_at_midnight.zip*", "--dir", str(tmp), "--clobber"],
+        [
+            "gh",
+            "release",
+            "download",
+            "--repo",
+            "CVEProject/cvelistV5",
+            "--pattern",
+            "*_all_CVEs_at_midnight.zip*",
+            "--dir",
+            str(tmp),
+            "--clobber",
+        ],
         check=True,
     )
     outer = next(tmp.glob("*all_CVEs_at_midnight*"))
@@ -192,8 +216,14 @@ def fetch_cves(out: Path, tmp: Path) -> None:
 
 
 KEV_COLS = [
-    "cveID", "vendorProject", "product", "vulnerabilityName", "dateAdded",
-    "dueDate", "knownRansomwareCampaignUse", "cwes",
+    "cveID",
+    "vendorProject",
+    "product",
+    "vulnerabilityName",
+    "dateAdded",
+    "dueDate",
+    "knownRansomwareCampaignUse",
+    "cwes",
 ]
 
 
@@ -216,7 +246,17 @@ def fetch_kev(out: Path) -> None:
 
 # --- Microsoft security update guide (CVRF) -----------------------------------
 
-MSRC_COLS = ["doc", "release", "cve", "title", "cna", "exploited", "publicly_disclosed", "score", "tags"]
+MSRC_COLS = [
+    "doc",
+    "release",
+    "cve",
+    "title",
+    "cna",
+    "exploited",
+    "publicly_disclosed",
+    "score",
+    "tags",
+]
 
 
 def msrc_rows(doc_id: str, doc: dict) -> list[dict]:
@@ -232,7 +272,11 @@ def msrc_rows(doc_id: str, doc: dict) -> list[dict]:
             m = re.search(r"Publicly Disclosed:(\w+)", desc)
             if m and not disclosed:
                 disclosed = m.group(1)
-        scores = [s.get("BaseScore") for s in v.get("CVSSScoreSets", []) or [] if s.get("BaseScore") is not None]
+        scores = [
+            s.get("BaseScore")
+            for s in v.get("CVSSScoreSets", []) or []
+            if s.get("BaseScore") is not None
+        ]
         tags, cna = [], ""
         for n in v.get("Notes", []) or []:
             if n.get("Type") == 7 and n.get("Title") == "Tag":
@@ -266,8 +310,12 @@ def fetch_msrc(out: Path) -> None:
             failed.append(doc_id)
             print(f"msrc {doc_id}: {exc}")
     write(out / "msrc.csv", rows, MSRC_COLS)
-    log("msrc-cvrf", "ok" if not failed else "partial", len(rows),
-        f"{len(docs)} monthly guides" + (f"; failed {','.join(failed)}" if failed else ""))
+    log(
+        "msrc-cvrf",
+        "ok" if not failed else "partial",
+        len(rows),
+        f"{len(docs)} monthly guides" + (f"; failed {','.join(failed)}" if failed else ""),
+    )
 
 
 # --- NCSC-NL advisories (CSAF) ------------------------------------------------

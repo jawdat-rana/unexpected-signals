@@ -42,10 +42,27 @@ LAST_FULL = "2026-10"  # last complete month in the data (fetched 23 Nov 2026)
 # Terms from fetch_raw.AI_TERMS that, in credits, reliably mean an AI system or
 # AI security team. "artificial intelligence" matched a company name; dropped.
 AI_CREDIT = {
-    "claude", "anthropic", "openai", "aisle", "big sleep", "naptime", "xbow",
-    "depthfirst", "zeropath", "codemender", "aardvark", "ai agent", "llm",
-    "large language model", "ai-assisted", "ai assisted", "atlantis",
-    "buttercup", "cyber reasoning system", "gpt-5", "gpt-6",
+    "claude",
+    "anthropic",
+    "openai",
+    "aisle",
+    "big sleep",
+    "naptime",
+    "xbow",
+    "depthfirst",
+    "zeropath",
+    "codemender",
+    "aardvark",
+    "ai agent",
+    "llm",
+    "large language model",
+    "ai-assisted",
+    "ai assisted",
+    "atlantis",
+    "buttercup",
+    "cyber reasoning system",
+    "gpt-5",
+    "gpt-6",
 }
 
 
@@ -116,8 +133,22 @@ def main() -> None:
     avg_k = statistics.mean(exploited[m] for m in base)
     idx = []
     for m in months("2024-01", LAST_FULL):
-        idx.append({"month": m, "series": "Flaws published", "index": round(published[m] / avg_c * 100, 1), "count": published[m]})
-        idx.append({"month": m, "series": "Flaws exploited", "index": round(exploited[m] / avg_k * 100, 1), "count": exploited[m]})
+        idx.append(
+            {
+                "month": m,
+                "series": "Flaws published",
+                "index": round(published[m] / avg_c * 100, 1),
+                "count": published[m],
+            }
+        )
+        idx.append(
+            {
+                "month": m,
+                "series": "Flaws exploited",
+                "index": round(exploited[m] / avg_k * 100, 1),
+                "count": exploited[m],
+            }
+        )
     write_csv("found_vs_exploited.csv", idx)
 
     # How fast a flaw lands in KEV after its CVE is published, per year added.
@@ -128,7 +159,9 @@ def main() -> None:
         p = pub.get(k["cveID"])
         if not p:
             continue
-        by_year[k["dateAdded"][:4]].append((date.fromisoformat(k["dateAdded"]) - date.fromisoformat(p)).days)
+        by_year[k["dateAdded"][:4]].append(
+            (date.fromisoformat(k["dateAdded"]) - date.fromisoformat(p)).days
+        )
     for year in sorted(by_year):
         if year < "2023":
             continue  # 2021-22: CISA was loading years of older, known flaws
@@ -158,7 +191,11 @@ def main() -> None:
     print(f"Oct 2025 {o25} -> Oct 2026 {o26} CVEs ({o26 / o25:.1f}x)")
     print(f"KEV Oct 2025 {exploited['2025-10']} -> Oct 2026 {exploited['2026-10']}")
     print(f"Microsoft Oct 2025 {microsoft['2025-10']} -> Oct 2026 {microsoft['2026-10']}")
-    print(f"Microsoft exploited-at-release Jan-Oct 2025 {sum(ms_exploited[m] for m in months('2025-01','2025-10'))} -> 2026 {sum(ms_exploited[m] for m in months('2026-01','2026-10'))}")
+    print(
+        "Microsoft exploited-at-release Jan-Oct 2025 "
+        f"{sum(ms_exploited[m] for m in months('2025-01', '2025-10'))} -> 2026 "
+        f"{sum(ms_exploited[m] for m in months('2026-01', '2026-10'))}"
+    )
     print(f"AI-credited Oct 2025 {ai['2025-10']} -> Oct 2026 {ai['2026-10']}")
     ytd25 = sum(published[m] for m in months("2025-01", "2025-10"))
     ytd26 = sum(published[m] for m in months("2026-01", "2026-10"))
