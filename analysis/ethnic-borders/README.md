@@ -6,7 +6,7 @@ Which peoples do today's borders split? Used by the story
 1. `overlay.py` downloads GREG (a digitised version of the 1964 Atlas Narodov
    Mira, 927 groups) and Natural Earth 1:10m countries. It measures each
    group's homeland area per country in an equal-area projection. GitHub
-   Actions runs it (`borders-overlay` workflow) and commits the derived tables,
+   Actions runs it (`fetch` workflow, `name=borders`) and commits the derived tables,
    not the GREG polygons, to the `raw-borders` branch.
 2. `story_data.py` decides which groups are split, groups them into regions,
    finds the land borders that cut them, and writes the chart data and a light

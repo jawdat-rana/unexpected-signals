@@ -4,7 +4,7 @@ How countries reach U.S. politics: through their companies' U.S. PACs, or throug
 registered foreign agents under FARA.
 
 1. `fetch_raw.py` downloads FEC and FARA bulk files. GitHub Actions runs it
-   (`money-fetch` workflow) and commits the files to the `raw-money` branch.
+   (`fetch` workflow, `name=money`) and commits the files to the `raw-money` branch.
 2. `foreign_pacs.py` finds corporate PACs whose parent is foreign, using the
    hand-made list in `foreign_parents.csv`, and totals their contributions to
    other committees by country. Every matched PAC is written out for checking.
@@ -38,7 +38,7 @@ from U.S. citizens or residents.
 1. `fetch_home_front.py` downloads the FEC committee, PAC summary and
    candidate files for 2016–2026, and keeps the contributions and independent
    expenditures of every committee whose name matches a wide keyword list
-   (`money-home-fetch` workflow, `raw-money-home` branch).
+   (`fetch` workflow, `name=money-home`, `raw-money-home` branch).
 2. `home_front_committees.csv` is the hand-checked list of committees that
    count, with their group. Rule: the committee's name or stated purpose is
    about a foreign country, a diaspora community, or a faith community

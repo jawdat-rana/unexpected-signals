@@ -18,7 +18,7 @@ NS changed systems in 2017, so timing comparisons start in 2017.
 Where do disruptions hurt the most passengers? `fetch_raw.py` downloads the
 Rijden de Treinen disruptions and the NS annual report dashboard JSON
 (passengers per section of track, `https://dashboards.nsjaarverslag.nl/api/dashboard/<year>`).
-The `trains-fetch` workflow runs it and commits the files to the `raw-trains`
+The `fetch` workflow (`name=trains`) runs it and commits the files to the `raw-trains`
 branch, for machines that can't reach those hosts.
 
 ```bash

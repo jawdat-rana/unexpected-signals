@@ -1,0 +1,10 @@
+# Raw-data fetches for this dataset, run by the `fetch` workflow
+# (see .github/scripts/fetch_plan.py). Re-run by hand: gh workflow run fetch -f name=borders
+
+[[fetch]]
+name = "borders"
+run = "python -u analysis/ethnic-borders/overlay.py raw"
+watch = ["analysis/ethnic-borders/overlay.py"]
+keep = true
+timeout = 60
+pip = ["geopandas", "pyogrio", "shapely", "pyproj"]

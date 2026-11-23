@@ -3,7 +3,7 @@
 Data for [The ice we lost](../../stories/the-ice-we-lost/).
 
 1. `fetch_raw.py` downloads KNMI daily temperatures (TG, TN, TX) for every
-   station. The `ice-fetch` workflow runs it and commits the result to the
+   station. The `fetch` workflow (`name=ice`) runs it and commits the result to the
    `raw-ice` branch; run the workflow by hand to add the latest days.
 2. `prepare.py RAW_DIR` reads a checkout of `raw-ice` and writes the story CSVs:
    Hellmann cold sum, ice days and coldest 15-day mean per winter, using KNMI's

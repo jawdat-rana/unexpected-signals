@@ -1,0 +1,8 @@
+# Raw-data fetches for this dataset, run by the `fetch` workflow
+# (see .github/scripts/fetch_plan.py). Re-run by hand: gh workflow run fetch -f name=trains
+
+[[fetch]]
+name = "trains"
+run = "python -u analysis/train-disruptions/fetch_raw.py raw"
+watch = ["analysis/train-disruptions/fetch_raw.py"]
+timeout = 15

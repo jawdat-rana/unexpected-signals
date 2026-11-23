@@ -1,0 +1,81 @@
+name: probe
+
+# Fetches one URL from GitHub's runners and keeps the reply, for checking a new
+# feed that can't be reached from elsewhere. Run it by hand from the Actions tab
+# (or `gh workflow run probe -f url=...`); no temporary workflow needed.
+# Shows the status, headers and start of the body in the run summary, and keeps
+# the full reply as an artifact for 7 days.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL to fetch"
+        required: true
+      method:
+        description: "HTTP method"
+        type: choice
+        options: [GET, POST, HEAD]
+        default: GET
+      body:
+        description: "Request body, for POST (sent as is)"
+        required: false
+      headers:
+        description: "Extra headers, separated by ' ;; ', like 'Accept: application/json ;; X-Key: 1'"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Fetch
+        env:
+          URL: ${{ inputs.url }}
+          METHOD: ${{ inputs.method }}
+          BODY: ${{ inputs.body }}
+          HEADERS: ${{ inputs.headers }}
+        run: |
+          mkdir probe
+          args=(-sS -L --compressed --max-time 300 --max-filesize 500000000
+                -X "$METHOD" -D probe/headers.txt -o probe/body
+                -w '%{http_code} %{content_type} %{size_download} bytes %{time_total}s\n'
+                -A "unexpected-signals-probe")
+          if [ -n "$HEADERS" ]; then
+            while IFS= read -r h; do
+              h="$(echo "$h" | sed 's/^ *//; s/ *$//')"
+              [ -n "$h" ] && args+=(-H "$h")
+            done < <(echo "$HEADERS" | sed 's/ ;; /\n/g')
+          fi
+          [ -n "$BODY" ] && args+=(--data-binary "$BODY")
+          set +e
+          result=$(curl "${args[@]}" "$URL")
+          code=$?
+          set -e
+          {
+            echo "## $METHOD $URL"
+            echo
+            echo "curl exit $code: \`$result\`"
+            echo
+            echo '```'
+            cat probe/headers.txt 2>/dev/null || true
+            echo '```'
+            if [ -s probe/body ]; then
+              echo
+              echo "First 60 lines of the body:"
+              echo
+              echo '```'
+              head -c 20000 probe/body | head -n 60
+              echo
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: probe
+          path: probe/
+          retention-days: 7

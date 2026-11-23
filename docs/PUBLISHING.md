@@ -160,6 +160,23 @@ It is off when empty, so forks don't count into your dashboard.
 
 One-time setup: **Settings > Pages > Build and deployment > Source: GitHub Actions**.
 
+## Raw data and helper workflows
+
+Many sources can only be reached from GitHub's runners, so raw downloads run
+in Actions and land on a `raw-<name>` branch, never on `main`.
+
+- **fetch.** Describe a download in `analysis/<dataset>/fetch.toml` (name, the
+  command, which files trigger a re-run). Pushing a change to those files runs
+  it; `gh workflow run fetch -f name=<name>` runs it by hand. The format is at
+  the top of `.github/scripts/fetch_plan.py`.
+- **probe.** Before writing a collector, check what a URL returns from GitHub:
+  `gh workflow run probe -f url=https://...` (method, body and headers are
+  optional). The status, headers and first lines go to the run summary; the
+  full reply is kept for 7 days. No temporary workflows on `main`.
+- **health.** Every Monday morning, a report on each collector: last success,
+  rows per day and gaps between runs. If a feed has gone quiet, it opens an
+  issue labelled `collector-health`, or comments on the open one.
+
 ## Repo layout
 
 ```

@@ -4,7 +4,7 @@ CBS StatLine tables on housing tenure, household wealth and migration, used by
 the story `stories/who-owns-the-netherlands`.
 
 - `tables.txt` lists the tables and how each is filtered.
-- `fetch_raw.py` downloads them (the `housing-fetch` workflow runs it and
+- `fetch_raw.py` downloads them (the `fetch` workflow, `name=housing`, runs it and
   commits the result to the `raw-housing` branch).
 - `prepare.py RAW_DIR` writes the story's chart CSVs.
 
