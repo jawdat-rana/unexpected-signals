@@ -1,0 +1,43 @@
+source,season,rows,note
+knmi,2012,9216,
+knmi,2013,9216,
+knmi,2014,9216,
+knmi,2015,9216,
+knmi,2016,8832,
+knmi,2017,9024,
+knmi,2018,9024,
+knmi,2019,9024,
+knmi,2020,8928,
+knmi,2021,8832,
+knmi,2022,8832,
+knmi,2023,8832,
+knmi,2024,8832,
+knmi,2025,8832,
+luchtmeetnet,2012,12896,81 series; validated
+luchtmeetnet,2013,15995,126 series; validated
+luchtmeetnet,2014,21534,136 series; validated
+luchtmeetnet,2015,22419,140 series; validated
+luchtmeetnet,2016,22408,135 series; validated
+luchtmeetnet,2017,21911,133 series; validated
+luchtmeetnet,2018,21466,129 series; validated
+luchtmeetnet,2019,21652,133 series; validated
+luchtmeetnet,2020,22404,138 series; validated
+luchtmeetnet,2021,22822,138 series; validated
+luchtmeetnet,2022,22478,142 series; validated
+luchtmeetnet,2023,23317,148 series; validated
+luchtmeetnet,2024,23809,150 series; validated
+luchtmeetnet,2025,17772,"139 series; current,validated"
+umweltbundesamt,2012,0,
+umweltbundesamt,2013,0,
+umweltbundesamt,2014,0,
+umweltbundesamt,2015,34844,
+umweltbundesamt,2016,80866,
+umweltbundesamt,2017,84571,
+umweltbundesamt,2018,89561,
+umweltbundesamt,2019,95944,
+umweltbundesamt,2020,98838,
+umweltbundesamt,2021,104651,
+umweltbundesamt,2022,107031,
+umweltbundesamt,2023,110120,
+umweltbundesamt,2024,115910,
+umweltbundesamt,2025,115658,

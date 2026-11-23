@@ -1,0 +1,527 @@
+id,code,name,city,type,setting,lon,lat
+7,DEBB007,"Elsterwerda, 1992-2020",Elsterwerda,background,suburban area,13.5268,51.4627
+21,DEBB021,Potsdam-Zentrum,Potsdam,background,urban area,13.0602,52.4014
+28,DEBB029,Schwedt (Oder),Schwedt/Oder,industry,suburban area,14.2851,53.0643
+31,DEBB032,Eisenhüttenstadt,Eisenhüttenstadt,industry,suburban area,14.6382,52.1463
+42,DEBB044,"Cottbus, Bahnhofstr.",Cottbus,traffic,urban area,14.3280,51.7566
+43,DEBB045,"Frankfurt (Oder), Leipziger Str.",Frankfurt (Oder),traffic,urban area,14.5386,52.3373
+46,DEBB048,Neuruppin,Neuruppin,background,suburban area,12.8095,52.9319
+47,DEBB049,"Brandenburg, Neuendorfer Str.",Brandenburg,traffic,urban area,12.5486,52.4094
+51,DEBB053,Hasenholz (Buckow),Buckow,background,rural regional,14.0152,52.5639
+52,DEBB054,"Potsdam, Zeppelinstr.",Potsdam,traffic,urban area,13.0375,52.3939
+53,DEBB055,Brandenburg a.d. Havel,Brandenburg,background,suburban area,12.5523,52.4204
+58,DEBB060,"Eberswalde, Breite Straße",Eberswalde,traffic,urban area,13.8222,52.8325
+61,DEBB063,Wittenberge,Wittenberge,background,suburban area,11.7385,52.9988
+62,DEBB064,Cottbus,Cottbus,background,urban area,14.3345,51.7468
+63,DEBB065,Lütte (Belzig),"Amt Belzig, Gemeinde Lütte",background,rural regional,12.5614,52.1942
+64,DEBB066,Spreewald,Neu Zauche,background,rural regional,14.0569,51.8975
+65,DEBB067,Nauen,Nauen,background,suburban area,12.8853,52.6085
+66,DEBB068,"Bernau, Lohmühlenstr.",Bernau,traffic,urban area,13.5823,52.6777
+71,DEBB073,"Potsdam, Großbeerenstr.",Potsdam-Babelsberg,traffic,urban area,13.0943,52.3890
+73,DEBB075,"Potsdam, Groß Glienicke",Potsdam,background,suburban area,13.1237,52.4842
+81,DEBB083,Spremberg,Spremberg,background,suburban area,14.3764,51.5645
+84,DEBB086,Blankenfelde-Mahlow,Mahlow,background,suburban area,13.4243,52.3497
+85,DEBB087,"Cottbus, W.-Külz-Str.",Cottbus,traffic,urban area,14.3255,51.7541
+90,DEBB092,Frankfurt (Oder),Frankfurt (Oder),background,suburban area,14.5260,52.3347
+97,DEBB099,"Herzfelde, Hauptstr.",Herzfelde,traffic,suburban area,13.8483,52.4819
+107,DEBB109,"Luckenwalde, 2019-2024",Luckenwalde,background,urban area,13.1749,52.0897
+121,DEBE010,Berlin Wedding,Berlin,background,urban area,13.3493,52.5430
+129,DEBE018,Berlin Schöneberg,Berlin,background,urban area,13.3488,52.4858
+138,DEBE027,Berlin Marienfelde,Berlin,background,rural near town,13.3681,52.3984
+143,DEBE032,Berlin Grunewald (3.5 m),Berlin,background,rural near town,13.2251,52.4732
+145,DEBE034,Berlin Neukölln,Berlin,background,urban area,13.4308,52.4895
+158,DEBE051,Berlin Buch,Berlin,background,suburban area,13.4831,52.6442
+163,DEBE056,Berlin Friedrichshagen,Berlin,background,rural near town,13.6471,52.4477
+168,DEBE061,Berlin Schildhornstraße,Berlin,traffic,urban area,13.3183,52.4636
+169,DEBE062,Berlin Frohnau (3.5 m),Berlin,background,rural near town,13.2961,52.6533
+170,DEBE063,Berlin Silbersteinstraße 1,Berlin,traffic,urban area,13.4417,52.4675
+171,DEBE064,Berlin Karl-Marx-Straße,Berlin,traffic,urban area,13.4340,52.4817
+172,DEBE065,Berlin Frankfurter Allee,Berlin,traffic,urban area,13.4699,52.5141
+173,DEBE066,Berlin Karlshorst,Berlin,background,urban area,13.5295,52.4853
+174,DEBE067,Berlin Hardenbergplatz,Berlin,traffic,urban area,13.3330,52.5066
+175,DEBE068,Berlin Mitte,Berlin,background,urban area,13.4188,52.5136
+176,DEBE069,Berlin Mariendorfer Damm 148,Berlin,traffic,urban area,13.3877,52.4381
+215,DEBW004,Eggenstein,Eggenstein,background,suburban area,8.4067,49.0766
+216,DEBW005,Mannheim-Nord,Mannheim,background,suburban area,8.4653,49.5441
+220,DEBW009,Heidelberg,Heidelberg,background,urban area,8.6767,49.4195
+221,DEBW010,Wiesloch,Wiesloch,background,suburban area,8.7001,49.3007
+224,DEBW013,Stuttgart-Bad Cannstatt,Stuttgart,background,urban area,9.2297,48.8088
+226,DEBW015,Heilbronn,Heilbronn,background,urban area,9.2248,49.1655
+228,DEBW019,Ulm,Ulm,background,urban area,9.9790,48.3968
+231,DEBW022,Kehl,Kehl,background,suburban area,7.8023,48.5782
+232,DEBW023,Weil am Rhein,Weil am Rhein,background,suburban area,7.6333,47.5882
+233,DEBW024,Ludwigsburg,Ludwigsburg,background,suburban area,9.1728,48.8992
+236,DEBW027,Reutlingen,Reutlingen,background,urban area,9.2073,48.4889
+238,DEBW029,Aalen,Aalen,background,suburban area,10.0963,48.8479
+240,DEBW031,Schwarzwald-Süd,Münstertal,background,rural regional,7.7645,47.8099
+242,DEBW033,Pforzheim,Pforzheim,background,urban area,8.6655,48.8890
+247,DEBW038,Friedrichshafen,Friedrichshafen,background,urban area,9.4857,47.6601
+248,DEBW039,Villingen-Schwenningen,Villingen-Schwenningen,background,suburban area,8.4636,48.0487
+251,DEBW042,Bernhausen,Bernhausen,background,suburban area,9.2294,48.6775
+254,DEBW046,Biberach,Biberach,background,suburban area,9.8003,48.0899
+260,DEBW052,Konstanz,Konstanz,background,urban area,9.1693,47.6644
+264,DEBW056,Schwäbisch Hall,Schwäbisch Hall,background,suburban area,9.7332,49.1079
+267,DEBW059,Tauberbischofsheim,Tauberbischofsheim,background,suburban area,9.6579,49.6348
+276,DEBW073,Neuenburg,Neuenburg,background,suburban area,7.5680,47.8190
+279,DEBW076,Baden-Baden,Baden-Baden,background,suburban area,8.2202,48.7731
+282,DEBW080,Karlsruhe Reinhold-Frank-Straße,Karlsruhe,traffic,urban area,8.3872,49.0080
+283,DEBW081,Karlsruhe-Nordwest,Karlsruhe,background,urban area,8.3556,49.0286
+286,DEBW084,Freiburg,Freiburg,background,urban area,7.8321,48.0015
+289,DEBW087,Schwäbische Alb,Erpfingen,background,rural regional,9.2076,48.3458
+299,DEBW098,Mannheim Friedrichsring,Mannheim,traffic,urban area,8.4720,49.4926
+300,DEBW099,Stuttgart Arnulf-Klett-Platz,Stuttgart,traffic,urban area,9.1807,48.7831
+308,DEBW107,Tübingen,Tübingen,background,suburban area,9.0512,48.5077
+313,DEBW112,Gärtringen,Gärtringen,background,suburban area,8.9044,48.6456
+317,DEBW116,Stuttgart Hohenheimer Straße,Stuttgart,traffic,urban area,9.1845,48.7687
+318,DEBW117,Ludwigsburg Friedrichstraße,Ludwigsburg,traffic,urban area,9.1900,48.8892
+319,DEBW118,Stuttgart Am Neckartor,Stuttgart,traffic,urban area,9.1910,48.7881
+321,DEBW120,Leonberg Grabenstraße,Leonberg,traffic,urban area,9.0165,48.8010
+323,DEBW122,Freiburg Schwarzwaldstraße,Freiburg,traffic,urban area,7.8599,47.9882
+326,DEBW125,Pfinztal Karlsruher Straße,Berghausen,traffic,suburban area,8.5263,49.0037
+337,DEBW136,Tübingen Mühlstraße,Tübingen,traffic,urban area,9.0580,48.5202
+338,DEBW137,Tübingen Jesinger Hauptstraße,Tübingen,traffic,rural near town,8.9794,48.5264
+343,DEBW142,Markgröningen Grabenstraße,Markgröningen,traffic,suburban area,9.0814,48.9029
+348,DEBW147,Reutlingen Lederstraße-Ost,Reutlingen,traffic,urban area,9.2108,48.4893
+353,DEBW152,Heilbronn Weinsberger Straße-Ost,Heilbronn,traffic,urban area,9.2259,49.1460
+357,DEBW156,Schramberg Oberndorfer Straße,Schramberg,traffic,urban area,8.3906,48.2292
+420,DEBW219,Backnang Eugen-Adolff-Straße,Backnang,traffic,urban area,9.4370,48.9450
+421,DEBW220,Esslingen Grabbrunnenstraße,Esslingen am Neckar,traffic,urban area,9.3145,48.7416
+422,DEBW221,Konstanz Theodor-Heuss-Straße,Konstanz Petershausen,traffic,urban area,9.1813,47.6691
+423,DEBW222,Kuchen Hauptstraße,Kuchen,traffic,rural area,9.7980,48.6367
+424,DEBW223,Leinfelden-Echterdingen Hauptstraße,Leinfelden-Echterdingen,traffic,urban area,9.1673,48.6900
+427,DEBW226,Friedrichshafen Maybachstraße,Friedrichshafen,traffic,urban area,9.4670,47.6567
+435,DEBY001,Ansbach/Residenzstraße,Ansbach,traffic,urban area,10.5723,49.3049
+436,DEBY002,Arzberg/Egerstraße,Arzberg,background,suburban area,12.1887,50.0582
+438,DEBY004,Kleinwallstadt/Hofstetter Straße,Kleinwallstadt,background,suburban area,9.1715,49.8694
+439,DEBY005,Aschaffenburg/Bussardweg,Aschaffenburg,background,suburban area,9.1180,49.9915
+440,DEBY006,Augsburg/Königsplatz,Augsburg,traffic,urban area,10.8950,48.3646
+441,DEBY007,Augsburg/Bourges-Platz,Augsburg,background,urban area,10.8884,48.3766
+443,DEBY009,Bamberg/Löwenbrücke,Bamberg,background,urban area,10.8877,49.8983
+446,DEBY012,Burghausen/Marktler Straße,Burghausen,background,suburban area,12.8293,48.1772
+447,DEBY013,Mehring/Sportplatz,Mehring,background,rural regional,12.7814,48.1828
+448,DEBY014,Coburg/Lossaustraße,Coburg,traffic,urban area,10.9593,50.2606
+454,DEBY020,Hof/LfU,Hof,background,suburban area,11.8975,50.3206
+455,DEBY021,Ingolstadt/Rechbergstraße,Ingolstadt,traffic,urban area,11.4288,48.7694
+460,DEBY026,Vohburg a.d. Donau/Alter Wöhrer Weg,Vohburg a.d. Donau,background,suburban area,11.6383,48.7671
+462,DEBY028,Kelheim/Regensburger Straße,Kelheim,traffic,urban area,11.8792,48.9095
+464,DEBY030,Saal a.d. Donau/Regensburger Straße,Saal a.d. Donau,background,suburban area,11.9488,48.9042
+465,DEBY031,Kempten (Allgäu)/Westendstraße,Kempten (Allgäu),background,suburban area,10.3066,47.7251
+466,DEBY032,Kulmbach/Konrad-Adenauer-Straße,Kulmbach,background,urban area,11.4426,50.1031
+467,DEBY033,Landshut/Podewilsstraße,Landshut,traffic,urban area,12.1571,48.5398
+469,DEBY035,Lindau (Bodensee)/Friedrichshafener Straße,Lindau (Bodensee),traffic,urban area,9.6889,47.5575
+471,DEBY037,München/Stachus,München,traffic,urban area,11.5649,48.1373
+473,DEBY039,München/Lothstraße,München,background,urban area,11.5547,48.1545
+481,DEBY047,Naila/Selbitzer Berg,Naila,background,rural near town,11.7216,50.3232
+483,DEBY049,Neustadt a.d. Donau/Eining,"Neustadt a.d. Donau, Gde.teil Eining",background,rural regional,11.7778,48.8532
+486,DEBY052,Neu-Ulm/Gabelsbergerstraße,Neu-Ulm,background,urban area,10.0083,48.3971
+487,DEBY053,Nürnberg/Bahnhof,Nürnberg,traffic,urban area,11.0884,49.4459
+490,DEBY056,Fürth/Theresienstraße,Fürth,traffic,urban area,10.9847,49.4722
+492,DEBY058,Nürnberg/Muggenhof,"Nürnberg, Stadtteil Muggenhof",background,urban area,11.0248,49.4622
+496,DEBY062,Regen/Bodenmaiser Straße,Regen,background,suburban area,13.1289,48.9724
+497,DEBY063,Regensburg/Rathaus,Regensburg,traffic,urban area,12.1016,49.0152
+501,DEBY067,Schwandorf/Wackersdorfer Straße,Schwandorf,background,suburban area,12.1281,49.3220
+502,DEBY068,Schweinfurt/Obertor,Schweinfurt,background,urban area,10.2321,50.0484
+506,DEBY072,Tiefenbach/Altenschneeberg,"Tiefenbach, Gde.teil Altenschneeberg",background,rural regional,12.5489,49.4385
+509,DEBY075,Weiden i.d.OPf./Nikolaistraße,Weiden i.d.OPf.,background,urban area,12.1594,49.6790
+511,DEBY077,Würzburg/Kopfklinik,Würzburg,background,suburban area,9.9564,49.8047
+513,DEBY079,Bad Reichenhall/Kirchholzstraße,"Bad Reichenhall,Kirchholzstraße",background,urban area,12.8912,47.7334
+522,DEBY088,Trostberg/Schwimmbadstraße,Trostberg,background,suburban area,12.5382,48.0217
+523,DEBY089,München/Johanneskirchen,"München, Stadtteil Johanneskirchen",background,suburban area,11.6480,48.1732
+527,DEBY093,Sulzbach-Rosenberg/Lohe,Sulzbach-Rosenberg,background,suburban area,11.7863,49.4880
+528,DEBY099,Augsburg/LfU,Augsburg,background,suburban area,10.9031,48.3260
+529,DEBY109,Andechs/Rothenfeld,"Andechs, Gde.teil Rothenfeld",background,rural regional,11.2202,47.9688
+530,DEBY110,Augsburg/Karlstraße,Augsburg,traffic,urban area,10.8962,48.3702
+531,DEBY111,Bayreuth/Hohenzollernring,Bayreuth,traffic,urban area,11.5701,49.9436
+533,DEBY113,Erlangen/Kraepelinstraße,Erlangen,background,suburban area,10.9635,49.6059
+535,DEBY115,München/Landshuter Allee,München,traffic,urban area,11.5365,48.1496
+538,DEBY118,Passau/Stelzhamerstraße,Passau,background,urban area,13.4220,48.5736
+539,DEBY119,Würzburg/Stadtring Süd,Würzburg,traffic,urban area,9.9477,49.7905
+540,DEBY120,Nürnberg/Von-der-Tann-Straße,Nürnberg,traffic,urban area,11.0361,49.4405
+541,DEBY121,Oberaudorf/Inntal-Autobahn,Oberaudorf,traffic,rural near town,12.1883,47.6485
+542,DEBY122,Bad Hindelang/Unterjoch,"Bad Hindelang, Gde.teil Unterjoch",background,rural regional,10.4366,47.5411
+544,DEBY124,Burgbernheim/Grüne Au,Burgbernheim,background,rural regional,10.3250,49.4441
+607,DEBY187,Oettingen/Goethestraße,Oettingen,background,suburban area,10.5977,48.9522
+608,DEBY188,Schwabach/Angerstraße,Schwabach,background,urban area,11.0279,49.3227
+609,DEBY189,München/Allach,München,background,suburban area,11.4645,48.1817
+615,DEBY196,Garmisch-Partenkirchen/Wasserwerk,Garmisch-Partenkirchen,background,rural near town,11.0574,47.4770
+616,DEHB001,Bremen-Mitte,Bremen,background,urban area,8.8158,53.0772
+617,DEHB002,Bremen-Ost,Bremen,background,urban area,8.9170,53.0600
+619,DEHB004,Bremen-Nord,Bremen,background,urban area,8.6255,53.1809
+620,DEHB005,Bremerhaven-Hansastraße,Bremerhaven,background,urban area,8.5694,53.5625
+621,DEHB006,Bremen-Dobben,Bremen,traffic,urban area,8.8252,53.0787
+626,DEHB011,Bremerhaven-Cherbourger Straße,Bremerhaven,traffic,urban area,8.5988,53.5853
+627,DEHB012,Bremen-Oslebshausen,Bremen,background,urban area,8.7351,53.1317
+628,DEHB013,Bremen-Hasenbüren,Bremen,industry,rural regional,8.6951,53.1177
+629,DEHE001,Darmstadt,Darmstadt,background,urban area,8.6646,49.8723
+633,DEHE005,Frankfurt-Höchst,Frankfurt,background,urban area,8.5425,50.1018
+636,DEHE008,Frankfurt Ost,Frankfurt,background,urban area,8.7463,50.1253
+639,DEHE011,Hanau,Hanau,background,urban area,8.9216,50.1358
+641,DEHE013,Kassel Mitte,Kassel,background,urban area,9.4834,51.3142
+646,DEHE018,Raunheim,Raunheim,background,urban area,8.4515,50.0103
+648,DEHE020,Wetzlar,Wetzlar,background,urban area,8.5006,50.5672
+650,DEHE022,Wiesbaden Süd,Wiesbaden,background,urban area,8.2449,50.0503
+652,DEHE024,Witzenhausen/Wald,Witzenhausen/Wald,background,rural area,9.7746,51.2918
+654,DEHE026,Spessart,Jossgrund,background,rural regional,9.3994,50.1644
+656,DEHE028,Fürth/Odenwald,Fürth/Odenwald,background,rural area,8.8173,49.6535
+658,DEHE030,Marburg,Marburg,background,urban area,8.7693,50.8043
+660,DEHE032,Bebra,Bebra,background,urban area,9.8003,50.9700
+665,DEHE037,Wiesbaden Ringkirche,Wiesbaden,traffic,urban area,8.2303,50.0772
+667,DEHE039,Burg Herzberg,Breitenbach/Herzberg,background,rural area,9.4594,50.7704
+668,DEHE040,Darmstadt Hügelstraße,Darmstadt,traffic,urban area,8.6537,49.8695
+669,DEHE041,Frankfurt Friedberger Landstraße,Frankfurt,traffic,urban area,8.6919,50.1246
+670,DEHE042,Linden,Linden,background,rural area,8.6844,50.5330
+671,DEHE043,Riedstadt,Riedstadt,background,rural near town,8.5168,49.8252
+672,DEHE044,Limburg,Limburg,background,urban area,8.0610,50.3832
+673,DEHE045,Michelstadt,Michelstadt,background,urban area,9.0020,49.6725
+674,DEHE046,Bad Arolsen,Bad Arolsen/Kohlgrund,background,rural area,8.9282,51.4309
+677,DEHE049,Kassel Fünffensterstraße,Kassel,traffic,urban area,9.4911,51.3121
+678,DEHE050,Zierenberg,Zierenberg,background,rural area,9.2712,51.3608
+679,DEHE051,Wasserkuppe,Wasserkuppe,background,rural area,9.9359,50.4977
+680,DEHE052,Kleiner Feldberg,Glashütten,background,rural area,8.4461,50.2219
+686,DEHE058,Fulda-Mitte,Fulda,background,urban area,9.6822,50.5493
+687,DEHE059,Fulda Petersberger Straße,Fulda,traffic,urban area,9.6849,50.5500
+688,DEHE060,Kellerwald,Edertal-Hemfurth,background,rural regional,9.0318,51.1548
+689,DEHE061,Gießen Westanlage,Gießen,traffic,urban area,8.6686,50.5841
+690,DEHE062,Marburg Universitätsstraße,Marburg,traffic,urban area,8.7705,50.8072
+691,DEHE063,Heppenheim Lehrstraße,Heppenheim,traffic,urban area,8.6420,49.6432
+723,DEHE095,Wetzlar Im Köhlersgarten,Wetzlar,industry,suburban area,8.4920,50.5754
+740,DEHE112,Wiesbaden Schiersteiner Straße,Wiesbaden,traffic,urban area,8.2289,50.0721
+744,DEHE116,Offenbach Untere Grenzstraße,Offenbach,traffic,urban area,8.7849,50.1015
+759,DEHE131,Limburg Schiede,Limburg,traffic,urban area,8.0599,50.3864
+762,DEHE134,Fulda Zentral,Fulda,background,urban area,9.6802,50.5464
+763,DEHE135,Frankfurt-Schwanheim,Frankfurt am Main,background,suburban area,8.5763,50.0755
+784,DEHH008,Hamburg Sternschanze,Hamburg,background,urban area,9.9679,53.5641
+791,DEHH015,Hamburg Veddel,Hamburg,industry,urban area,10.0212,53.5233
+792,DEHH016,Hamburg Billbrook,Hamburg,industry,urban area,10.0817,53.5290
+797,DEHH021,Hamburg Tatenberg,Hamburg,background,suburban area,10.0836,53.4877
+802,DEHH026,Hamburg Stresemannstraße,Hamburg,traffic,urban area,9.9572,53.5606
+809,DEHH033,Hamburg Flughafen Nord,Hamburg,background,urban area,9.9980,53.6383
+823,DEHH047,Hamburg Bramfeld,Hamburg,background,suburban area,10.1106,53.6307
+825,DEHH049,Hamburg Blankenese-Baursberg,Hamburg,background,suburban area,9.7862,53.5681
+826,DEHH050,Hamburg Neugraben,Hamburg,background,suburban area,9.8572,53.4809
+835,DEHH059,Hamburg Wilhelmsburg,Hamburg,background,urban area,9.9906,53.5079
+840,DEHH064,Hamburg Kieler Straße,Hamburg,traffic,urban area,9.9446,53.5644
+844,DEHH068,Hamburg Habichtstraße,Hamburg,traffic,urban area,10.0539,53.5923
+846,DEHH070,Hamburg Max-Brauer-Allee II (Straße),Hamburg,traffic,urban area,9.9430,53.5557
+848,DEHH072,Hamburg Finkenwerder West,Hamburg,industry,urban area,9.8441,53.5360
+849,DEHH073,Hamburg Finkenwerder Airbus,Hamburg,industry,rural near town,9.8327,53.5321
+850,DEHH074,Hamburg Billstedt,Hamburg,background,urban area,10.1028,53.5385
+855,DEHH079,Hamburg Altona Elbhang,Hamburg,background,urban area,9.9448,53.5453
+857,DEHH081,Hamburg Hafen,Hamburg,background,urban area,9.9816,53.5292
+860,DEMV003,Neubrandenburg,Neubrandenburg,traffic,urban area,13.2664,53.5598
+861,DEMV004,Gülzow,Gülzow,background,rural area,12.0647,53.8178
+864,DEMV007,Rostock-Stuthof,Rostock-Stuthof,background,suburban area,12.1741,54.1616
+865,DEMV012,Löcknitz,Mewegen,background,rural area,14.2574,53.5205
+866,DEMV017,Göhlen,Göhlen,background,rural area,11.3733,53.3074
+868,DEMV019,Güstrow,Güstrow,background,urban area,12.1755,53.7818
+869,DEMV020,Rostock Am Strande,Rostock,traffic,urban area,12.1420,54.0923
+870,DEMV021,Rostock-Warnemünde,Rostock-Warnemünde,background,urban area,12.0800,54.1713
+871,DEMV022,Rostock-Holbeinplatz,Rostock,traffic,urban area,12.0996,54.0926
+872,DEMV023,Schwerin-Obotritenring,Schwerin,traffic,urban area,11.3983,53.6318
+873,DEMV024,Leizen,"Minzow, OT Woldzegarten",background,rural area,12.4639,53.3963
+874,DEMV025,Stralsund-Knieperdamm,Stralsund,traffic,urban area,13.0810,54.3192
+875,DEMV026,Garz,Garz,background,rural area,13.3421,54.3235
+876,DEMV027,Wolgast-Oberwallstraße,Wolgast,traffic,urban area,13.7793,54.0532
+877,DEMV028,Wismar,Wismar,background,urban area,11.4760,53.9023
+880,DEMV031,Rostock-Hohe Düne,Rostock - Warnemünde,industry,urban area,12.0979,54.1773
+907,DEMV058,Neubrandenburg Woldegker Straße,Neubrandenburg,traffic,urban area,13.2679,53.5588
+911,DENI011,Braunschweig,Braunschweig,background,suburban area,10.4736,52.2269
+914,DENI016,Oker/Harlingerode,Goslar,background,suburban area,10.4813,51.9016
+916,DENI020,Wolfsburg,Wolfsburg,background,suburban area,10.8164,52.4408
+922,DENI028,Eichsfeld,Duderstadt,background,suburban area,10.2385,51.5076
+923,DENI029,Ostfriesland,Emden,background,suburban area,7.2073,53.3624
+924,DENI031,Jadebusen,Wilhelmshaven,background,rural area,8.0906,53.5962
+926,DENI038,Osnabrück,Osnabrück,background,urban area,8.0529,52.2553
+929,DENI041,Weserbergland,Rinteln,background,suburban area,9.0626,52.1702
+930,DENI042,Göttingen,Göttingen,background,suburban area,9.9498,51.5511
+931,DENI043,Emsland,Lingen,background,suburban area,7.3175,52.4986
+932,DENI048,Hannover Verkehr,Hannover,traffic,urban area,9.7155,52.3595
+935,DENI051,Wurmberg,Braunlage,background,rural area,10.6125,51.7582
+936,DENI052,Allertal,Walsrode,background,rural area,9.6230,52.8294
+937,DENI053,Südoldenburg,Bösel,industry,suburban area,7.9426,52.9980
+938,DENI054,Hannover,Hannover,background,urban area,9.7061,52.3629
+942,DENI058,Ostfries. Inseln,Norderney,background,rural area,7.2140,53.7153
+943,DENI059,Elbmündung,Cuxhaven,background,rural area,8.8012,53.8302
+944,DENI060,Wendland,Lüchow,background,rural area,11.1671,52.9570
+946,DENI062,Lüneburger Heide,Lüneburg,background,suburban area,10.4565,53.2470
+947,DENI063,Altes Land,Jork,background,rural area,9.6850,53.5242
+948,DENI066,Hildesheim Verkehr,Hildesheim,traffic,urban area,9.9502,52.1508
+949,DENI067,Osnabrück-Verkehr,Osnabrück,traffic,urban area,8.0415,52.2703
+950,DENI068,Göttingen-Verkehr,Göttingen,traffic,urban area,9.9283,51.5302
+952,DENI070,Salzgitter-Drütte,Salzgitter,industry,rural area,10.4559,52.1537
+953,DENI071,Barbis-Verkehr,Bad Lauterberg,traffic,suburban area,10.4228,51.6137
+957,DENI075,Braunschweig-Verkehr,Braunschweig,traffic,urban area,10.5406,52.2667
+959,DENI077,Solling-Süd,"Uslar, OT Schönhagen",background,rural area,9.5546,51.7088
+1025,DENI143,Oldenburg Heiligengeistwall,Oldenburg,traffic,urban area,8.2121,53.1428
+1039,DENI157,Wolfsburg Heßlinger Straße,Wolfsburg,traffic,urban area,10.7937,52.4279
+1057,DENW002,Datteln-Hagem,Datteln,background,suburban area,7.3314,51.6414
+1061,DENW006,Lünen-Niederaden,Lünen,background,suburban area,7.5698,51.5922
+1063,DENW008,Dortmund-Eving,Dortmund,background,urban area,7.4574,51.5369
+1065,DENW010,Unna-Königsborn,Unna,background,suburban area,7.6938,51.5475
+1070,DENW015,Marl-Sickingmühle,Marl,background,suburban area,7.1227,51.6990
+1076,DENW021,Bottrop-Welheim,Bottrop,industry,urban area,6.9769,51.5260
+1077,DENW022,Gelsenkirchen-Bismarck,Gelsenkirchen,background,suburban area,7.1019,51.5336
+1079,DENW024,Essen-Vogelheim,Essen,background,urban area,6.9810,51.4965
+1084,DENW029,Hattingen-Blankenstein,Hattingen,background,suburban area,7.2085,51.4030
+1085,DENW030,Wesel-Feldmark,Wesel,background,suburban area,6.6297,51.6729
+1089,DENW034,Duisburg-Walsum,Duisburg,industry,urban area,6.7484,51.5240
+1093,DENW038,Mülheim-Styrum,Mülheim,background,urban area,6.8651,51.4535
+1095,DENW040,Duisburg-Buchholz,Duisburg,background,suburban area,6.7630,51.3853
+1097,DENW042,Krefeld-Linn,Krefeld,background,urban area,6.6402,51.3377
+1098,DENW043,Essen-Ost Steeler Straße,Essen,traffic,urban area,7.0305,51.4512
+1108,DENW053,Köln-Chorweiler,Köln,background,urban area,6.8846,51.0193
+1113,DENW058,Hürth,Hürth,industry,suburban area,6.8738,50.8762
+1114,DENW059,Köln-Rodenkirchen,Köln,background,suburban area,6.9851,50.8899
+1117,DENW062,Bonn-Auerberg,Bonn,background,suburban area,7.0826,50.7536
+1119,DENW064,Simmerath (Eifel),Simmerath,background,rural regional,6.2810,50.6532
+1120,DENW065,Netphen Rothaargebirge,Netphen,background,rural regional,8.1919,50.9303
+1121,DENW066,Nettetal-Kaldenkirchen,Nettetal,background,rural near town,6.1958,51.3269
+1122,DENW067,Bielefeld-Ost,Bielefeld,background,urban area,8.5484,52.0232
+1123,DENW068,Soest-Ost,Soest,background,rural near town,8.1480,51.5707
+1126,DENW071,Düsseldorf-Lörick,Düsseldorf,background,urban area,6.7324,51.2492
+1129,DENW074,Niederzier,Niederzier,industry,rural near town,6.4693,50.8835
+1133,DENW078,Ratingen-Tiefenbroich,Ratingen,background,suburban area,6.8199,51.3034
+1134,DENW079,Leverkusen-Manfort,Leverkusen,background,suburban area,7.0050,51.0289
+1135,DENW080,Solingen-Wald,Solingen,background,suburban area,7.0526,51.1838
+1136,DENW081,Borken-Gemen,Borken,background,rural near town,6.8745,51.8620
+1137,DENW082,Düsseldorf Corneliusstraße,Düsseldorf,traffic,urban area,6.7825,51.2132
+1139,DENW094,Aachen-Burtscheid,Aachen,background,urban area,6.0938,50.7547
+1140,DENW095,Münster-Geist,Münster,background,urban area,7.6116,51.9365
+1141,DENW096,Mönchengladbach-Rheydt,Mönchengladbach,background,suburban area,6.4256,51.1546
+1145,DENW100,Mönchengladbach Düsseldorfer Straße,Mönchengladbach,traffic,urban area,6.4589,51.1700
+1146,DENW101,Dortmund Steinstraße,Dortmund,traffic,urban area,7.4642,51.5196
+1150,DENW105,Duisburg-Ehingen,Duisburg-Ehingen,industry,urban area,6.7002,51.3687
+1157,DENW112,Duisburg Kardinal-Galen-Straße,Duisburg,traffic,urban area,6.7719,51.4377
+1159,DENW114,Wuppertal-Langerfeld,Wuppertal,background,urban area,7.2319,51.2776
+1161,DENW116,Krefeld (Hafen),Krefeld,industry,suburban area,6.6702,51.3426
+1175,DENW131,Duisburg Kiebitzmühlenstraße,Duisburg,industry,urban area,6.7470,51.5061
+1177,DENW133,Hagen Graf-von-Galen-Ring,Hagen,traffic,urban area,7.4636,51.3628
+1178,DENW134,Essen Gladbecker Straße,Essen,traffic,urban area,7.0053,51.4779
+1180,DENW136,Dortmund Brackeler Straße,Dortmund,traffic,urban area,7.4836,51.5235
+1222,DENW179,Schwerte,Schwerte,background,urban area,7.5822,51.4488
+1223,DENW180,Grevenbroich-Gustorf,Grevenbroich,industry,suburban area,6.5594,51.0638
+1224,DENW181,Warstein,Warstein,industry,urban area,8.3608,51.4430
+1225,DENW182,Elsdorf-Berrendorf,Elsdorf,industry,rural near town,6.5822,50.9271
+1231,DENW188,Oberhausen Mülheimer Straße 117,Oberhausen,traffic,urban area,6.8636,51.4749
+1232,DENW189,Wuppertal Gathe,Wuppertal,traffic,urban area,7.1474,51.2607
+1243,DENW200,Bielefeld Detmolder Straße,Bielefeld,traffic,urban area,8.5528,52.0056
+1249,DENW206,Solingen Konrad-Adenauer-Straße,Solingen,traffic,urban area,7.0841,51.1762
+1250,DENW207,Aachen Wilhelmstraße,Aachen,traffic,urban area,6.0958,50.7731
+1251,DENW208,Gelsenkirchen Kurt-Schumacher-Straße,Gelsenkirchen,traffic,urban area,7.0846,51.5279
+1254,DENW211,Köln Clevischer Ring,Köln,traffic,urban area,7.0046,50.9628
+1255,DENW212,Köln Turiner Straße,Köln,traffic,urban area,6.9576,50.9473
+1288,DENW245,Stolberg Heinrich-Böll-Platz,Stolberg,industry,urban area,6.2326,50.7648
+1289,DENW246,Lünen Viktoriastraße,Lünen,industry,urban area,7.5230,51.6085
+1290,DENW247,Essen-Schuir (LANUV),Essen,background,suburban area,6.9656,51.4068
+1297,DENW254,Duisburg Bergstraße 48,Duisburg,industry,urban area,6.7523,51.4679
+1302,DENW259,Mönchengladbach Friedrich-Ebert-Straße,Mönchengladbach,traffic,urban area,6.4399,51.1694
+1303,DENW260,Münster Weseler Straße,Münster,traffic,urban area,7.6194,51.9533
+1344,DENW301,Mülheim Hofackerstraße 46-48,Mülheim,industry,urban area,6.8477,51.4315
+1350,DENW307,Kamp-Lintfort Eyller-Berg-Straße,Kamp-Lintfort,industry,suburban area,6.5273,51.4818
+1372,DENW329,Jackerath,Jackerath,industry,rural area,6.4515,51.0338
+1380,DENW337,Jüchen-Hochneukirch,Jüchen,industry,rural near town,6.4695,51.0976
+1381,DENW338,Duisburg-Bruckhausen,Duisburg,industry,urban area,6.7354,51.4855
+1394,DENW351,Gelsenkirchen Grothusstraße,Gelsenkirchen,traffic,urban area,7.0604,51.5243
+1397,DENW355,Leverkusen Gustav-Heinemann-Straße,Leverkusen,traffic,urban area,7.0109,51.0315
+1398,DENW356,Lüdenscheid Lennestraße,Lüdenscheid,traffic,urban area,7.6431,51.2276
+1401,DENW359,Mönchengladbach-Wanlo,Mönchengladbach,industry,rural near town,6.4158,51.0970
+1409,DENW367,Gladbeck Goethestraße,Gladbeck,traffic,urban area,6.9909,51.5681
+1415,DENW374,Recklinghausen-Hochlarmark,Recklinghausen,industry,urban area,7.1864,51.5609
+1416,DENW375,Witten-Mitte,Witten,industry,urban area,7.3336,51.4331
+1419,DENW378,Lünen Frydagstraße,Lünen,industry,urban area,7.4734,51.6131
+1422,DENW381,Neuss (Rheinhafen),Neuss,background,urban area,6.7041,51.2196
+1423,DENW382,Duisburg (Rheinhafen),Duisburg,background,urban area,6.7275,51.4607
+1424,DENW383,Bielefeld Herforder Straße,Bielefeld,traffic,urban area,8.5341,52.0242
+1438,DERP001,Ludwigshafen-Oppau,Ludwigshafen,background,urban area,8.4023,49.5150
+1440,DERP003,Ludwigshafen-Mundenheim,Ludwigshafen,industry,urban area,8.4259,49.4555
+1444,DERP007,Mainz-Mombach,Mainz,background,urban area,8.2168,50.0176
+1446,DERP009,Mainz-Zitadelle,Mainz,background,urban area,8.2740,49.9950
+1447,DERP010,Mainz-Parcusstraße,Mainz,traffic,urban area,8.2611,50.0010
+1448,DERP011,Mainz-Rheinallee,Mainz,traffic,urban area,8.2658,50.0099
+1449,DERP012,Mainz-Große Langgasse,Mainz,traffic,urban area,8.2689,49.9991
+1450,DERP013,Westpfalz-Dunzweiler,Dunzweiler,background,rural area,7.2935,49.4231
+1451,DERP014,Hunsrück-Leisel,Leisel,background,rural area,7.1934,49.7409
+1452,DERP015,Westeifel Wascheid,Wascheid,background,rural area,6.3781,50.2665
+1453,DERP016,Westerwald-Herdorf,Herdorf,background,rural area,7.9735,50.7668
+1454,DERP017,Pfälzerwald-Hortenkopf,Hortenkopf/Weissenberg,background,rural area,7.8264,49.2703
+1456,DERP019,Kaiserslautern-Rathausplatz,Kaiserslautern,background,urban area,7.7673,49.4460
+1457,DERP020,Trier-Ostallee,Trier,traffic,urban area,6.6467,49.7542
+1458,DERP021,Neuwied-Hafenstraße,Neuwied,background,urban area,7.4814,50.4247
+1459,DERP022,Bad Kreuznach-Bosenheimer Straße,Bad Kreuznach,background,urban area,7.8662,49.8412
+1460,DERP023,Worms-Hagenstraße,Worms,traffic,urban area,8.3648,49.6288
+1461,DERP024,Koblenz-Friedrich-Ebert-Ring,Koblenz,background,urban area,7.5966,50.3544
+1462,DERP025,Wörth-Marktplatz,Wörth,background,urban area,8.2535,49.0523
+1463,DERP026,Frankenthal-Europaring,Frankenthal,traffic,urban area,8.3553,49.5333
+1465,DERP028,Westerwald-Neuhäusel,Neuhäusel,background,rural area,7.7299,50.4243
+1475,DERP041,Ludwigshafen-Heinigstraße,Ludwigshafen,traffic,urban area,8.4439,49.4785
+1477,DERP043,Braubach,Braubach,industry,rural area,7.6521,50.2751
+1479,DERP045,Koblenz-Hohenfelder Straße,Koblenz,traffic,urban area,7.5922,50.3594
+1480,DERP046,Neuwied-Hermannstraße,Neuwied,traffic,urban area,7.4607,50.4314
+1481,DERP047,Trier-Pfalzel,Trier,background,suburban area,6.6903,49.7840
+1487,DERP053,Speyer-Nord,Speyer,background,suburban area,8.4230,49.3511
+1494,DERP060,Pirmasens-Innenstadt,Pirmasens,background,urban area,7.6146,49.1920
+1498,DESL001,Berus,Überherrn,background,rural area,6.6871,49.2639
+1499,DESL002,Bexbach Schule,Bexbach,background,suburban area,7.2634,49.3620
+1500,DESL003,Dillingen City,Dillingen,industry,urban area,6.7335,49.3579
+1503,DESL006,Lauterbach,Völklingen,background,suburban area,6.7449,49.1836
+1507,DESL010,Saarbrücken-Burbach,Saarbrücken,background,urban area,6.9488,49.2442
+1508,DESL011,Saarbrücken-Eschberg,Saarbrücken,background,urban area,7.0363,49.2372
+1509,DESL012,Saarbrücken-City,Saarbrücken,background,urban area,6.9876,49.2335
+1510,DESL013,Saarlouis-Fraulautern,Saarlouis,background,suburban area,6.7536,49.3226
+1514,DESL017,Völklingen-City Stadionstr.,Völklingen,background,urban area,6.8677,49.2543
+1515,DESL018,Sulzbach,Sulzbach,background,urban area,7.0617,49.2994
+1516,DESL019,Biringen,Rehlingen-Siersburg,background,rural regional,6.5520,49.4169
+1517,DESL020,Saarbrücken-Verkehr,Saarbrücken,traffic,urban area,7.0032,49.2307
+1527,DESL030,Ottweiler,Ottweiler,traffic,urban area,7.1656,49.3995
+1528,DESH001,Altendeich,Altendeich,background,rural regional,9.5859,53.6706
+1533,DESH006,Schleswig,Schleswig,background,suburban area,9.5494,54.5273
+1535,DESH008,Bornhöved,Ruhwinkel,background,rural regional,10.2406,54.0932
+1540,DESH013,Fehmarn,Fehmarn,background,rural regional,11.2160,54.4130
+1541,DESH014,St.-Peter-Ording,St. Peter Ording,background,rural regional,8.6035,54.3278
+1542,DESH015,Itzehoe,Itzehoe,background,urban area,9.5303,53.9244
+1543,DESH016,Barsbüttel,Barsbüttel,background,suburban area,10.2149,53.5706
+1549,DESH022,Flensburg,Flensburg,traffic,urban area,9.4381,54.7814
+1550,DESH023,Lübeck-St. Jürgen,Lübeck,background,urban area,10.6959,53.8355
+1552,DESH025,Itzehoe Lindenstr.,Itzehoe,traffic,urban area,9.5118,53.9280
+1554,DESH027,Kiel-Bahnhofstr. Verk.,Kiel,traffic,urban area,10.1352,54.3047
+1555,DESH028,Ratzeburg,Ratzeburg,traffic,urban area,10.7758,53.6989
+1557,DESH030,Norderstedt,Norderstedt,traffic,urban area,9.9973,53.6820
+1560,DESH033,Kiel-Max-Planck-Str.,Kiel,background,urban area,10.1166,54.3097
+1562,DESH035,Brunsbüttel-Cuxhavener Straße,Brunsbüttel,background,urban area,9.1569,53.8961
+1579,DESH052,Kiel-Theodor-Heuss-Ring,Kiel,traffic,urban area,10.1224,54.3042
+1580,DESH053,Lübeck Moislinger Allee,Lübeck,traffic,urban area,10.6733,53.8622
+1582,DESH055,Lübeck Fackenburger Allee,Lübeck,traffic,urban area,10.6649,53.8745
+1583,DESH056,Eggebek,Eggebek,background,rural regional,9.3637,54.6167
+1584,DESH057,Kiel-Bremerskamp,Kiel,background,urban area,10.1056,54.3476
+1585,DESH058,Lauenburg-Murjahnstraße,Lauenburg,background,urban area,10.5405,53.3823
+1589,DESN001,Annaberg-Buchholz,Annaberg-Buchholz,background,urban area,12.9973,50.5709
+1592,DESN004,Bautzen,Bautzen,background,urban area,14.4438,51.1757
+1594,DESN006,Borna,Borna,traffic,urban area,12.4931,51.1250
+1599,DESN011,Chemnitz-Mitte,Chemnitz,background,urban area,12.9173,50.8325
+1605,DESN017,Freiberg,Freiberg,background,urban area,13.3468,50.9163
+1607,DESN019,Glauchau,Glauchau,background,urban area,12.5421,50.8260
+1608,DESN020,Görlitz,Görlitz,traffic,urban area,14.9740,51.1558
+1612,DESN024,Klingenthal,Klingenthal,background,urban area,12.4687,50.3548
+1613,DESN025,Leipzig-Mitte,Leipzig,traffic,urban area,12.3772,51.3442
+1633,DESN045,Zittau-Ost,Zittau,background,suburban area,14.8228,50.8924
+1637,DESN049,Carlsfeld,Carlsfeld,background,rural secluded,12.6111,50.4313
+1639,DESN051,Radebeul-Wahnsdorf,Radebeul,background,rural near town,13.6750,51.1195
+1640,DESN052,Zinnwald,Zinnwald,background,rural regional,13.7515,50.7315
+1641,DESN053,Fichtelberg,Oberwiesenthal,background,rural secluded,12.9535,50.4285
+1647,DESN059,Leipzig-West,Leipzig,background,suburban area,12.2974,51.3179
+1649,DESN061,Dresden-Nord,Dresden,traffic,urban area,13.7414,51.0649
+1662,DESN074,Schwartenberg,Neuhausen,background,rural regional,13.4651,50.6591
+1663,DESN075,Plauen-Süd,Plauen,traffic,urban area,12.1381,50.4861
+1664,DESN076,Collmberg,Collm,background,rural secluded,13.0094,51.3038
+1665,DESN077,Leipzig Lützner Str.,Leipzig,traffic,urban area,12.3347,51.3359
+1667,DESN079,Niesky,Sproitz,background,rural regional,14.7497,51.2854
+1668,DESN080,Schkeuditz,Schkeuditz,background,rural near town,12.2341,51.3961
+1669,DESN081,Plauen-DWD,Plauen,background,suburban area,12.1304,50.4818
+1670,DESN082,Leipzig-Thekla,Leipzig,background,suburban area,12.4257,51.3760
+1671,DESN083,Chemnitz-Leipziger Str.,Chemnitz,traffic,urban area,12.9034,50.8457
+1672,DESN084,Dresden-Bergstr.,Dresden,traffic,urban area,13.7316,51.0263
+1679,DESN091,Zwickau-Werdauer Str.,Zwickau,traffic,urban area,12.4866,50.7204
+1680,DESN092,Dresden-Winckelmannstr.,Dresden,background,urban area,13.7302,51.0361
+1681,DESN093,Brockau,Netzschkau OT Brockau,background,rural regional,12.2111,50.6081
+1692,DESN104,Chemnitz Hans-Link-Straße,Chemnitz,background,urban area,12.9594,50.8552
+1719,DEST002,Burg,Burg,background,suburban area,11.8648,52.2684
+1726,DEST011,Wernigerode/Bahnhof,Wernigerode,background,urban area,10.7901,51.8394
+1730,DEST015,Bitterfeld/Wolfen,Greppin,industry,suburban area,12.3029,51.6512
+1741,DEST028,Zeitz,Zeitz,background,urban area,12.1413,51.0546
+1742,DEST029,Bernburg,Bernburg,background,suburban area,11.7390,51.8035
+1749,DEST039,Brocken,Schierke,background,rural secluded,10.6183,51.7986
+1751,DEST044,Halberstadt,Halberstadt,background,urban area,11.0574,51.8970
+1752,DEST050,Halle/Nord,Halle/Saale,background,urban area,11.9791,51.4962
+1758,DEST066,Wittenberg/Bahnstrasse,Wittenberg,background,urban area,12.6637,51.8709
+1767,DEST075,Halle/Merseburger Strasse,Halle/Saale,traffic,urban area,11.9834,51.4752
+1769,DEST077,Magdeburg/West,Magdeburg,background,urban area,11.6115,52.1279
+1776,DEST089,Zartau/Waldstation,Klötze,background,rural regional,11.1723,52.5931
+1777,DEST090,Leuna,Leuna,industry,suburban area,12.0321,51.3214
+1778,DEST091,Dessau Albrechtsplatz,Dessau,traffic,urban area,12.2448,51.8406
+1779,DEST092,Wittenberg/Dessauer Strasse,Lutherstadt Wittenberg,traffic,urban area,12.5983,51.8675
+1782,DEST095,Aschersleben,Aschersleben,traffic,urban area,11.4495,51.7595
+1785,DEST098,Unterharz / Friedrichsbrunn,Friedrichsbrunn,background,rural regional,11.0434,51.6624
+1788,DEST101,Halberstadt/Friedenstrasse,Halberstadt,traffic,urban area,11.0559,51.8895
+1789,DEST102,Halle/Paracelsusstr.,Halle/Saale,traffic,urban area,11.9813,51.4948
+1790,DEST103,Magdeburg Schleinufer,Magdeburg,traffic,urban area,11.6327,52.1208
+1791,DEST104,Domäne Bobbe,Dornbock (Bobbe),background,rural area,11.8914,51.8373
+1792,DEST105,Stendal Stadtsee,Stendal,background,urban area,11.8503,52.6021
+1793,DEST106,Goldene Aue (Roßla),Roßla,background,rural area,11.0911,51.4561
+1795,DEST108,Weißenfels/Am Krug,Weißenfels,traffic,urban area,11.9610,51.1972
+1798,DEST112,Magdeburg/Guericke-Stra.,Magdeburg,traffic,urban area,11.6319,52.1317
+1819,DEST133,Halle/Riebeckplatz,Halle/Saale,traffic,urban area,11.9839,51.4758
+1824,DETH005,Saalfeld,Saalfeld,background,urban area,11.3689,50.6512
+1828,DETH009,Gera Friedericistr.,Gera,background,urban area,12.0749,50.8779
+1830,DETH011,Altenburg Theaterplatz,Altenburg,background,urban area,12.4376,50.9878
+1832,DETH013,Eisenach Werneburgstr.,Eisenach,background,urban area,10.3172,50.9783
+1837,DETH018,Nordhausen,Nordhausen,background,urban area,10.7914,51.4972
+1839,DETH020,Erfurt Krämpferstr.,Erfurt,background,urban area,11.0379,50.9795
+1845,DETH026,Dreißigacker,Dreißigacker,background,rural regional,10.3753,50.5618
+1846,DETH027,Neuhaus,Neuhaus,background,rural secluded,11.1346,50.5000
+1854,DETH036,Greiz Mollbergstr.,Greiz,background,urban area,12.2052,50.6559
+1858,DETH040,Großer Eisenberg,Schmiedefeld,background,rural secluded,10.7871,50.6192
+1859,DETH041,Jena Dammstr.,Jena,background,urban area,11.5971,50.9335
+1860,DETH042,Possen,Sondershausen,background,rural secluded,10.8672,51.3333
+1861,DETH043,Erfurt Bergstr.,Erfurt,traffic,urban area,11.0194,50.9849
+1878,DETH060,Zella-Mehlis,Zella-Mehlis,background,urban area,10.6686,50.6532
+1879,DETH061,Hummelshain,Hummelshain,background,rural secluded,11.6612,50.7916
+1890,DETH072,Suhl F.-König-Str,Suhl,traffic,urban area,10.6931,50.6115
+1899,DETH081,Erfurt Heinrichstr,Erfurt,traffic,urban area,11.0104,50.9723
+1901,DETH083,Weimar Steubenstr.,Weimar,traffic,urban area,11.3261,50.9775
+1909,DETH091,Mühlhausen Wanfrieder Str,Mühlhausen,traffic,urban area,10.4484,51.2052
+1910,DETH093,Weimar Schwanseestr.,Weimar,background,urban area,11.3210,50.9822
+1912,DETH095,Mühlhausen Bastmarkt,Mühlhausen,background,urban area,10.4510,51.2079
+1934,DETH117,Erfurt Bautzener Weg,Erfurt,background,suburban area,11.0566,50.9931
+1945,DEUB001,Westerland,Westerland,background,rural area,8.3080,54.9231
+1948,DEUB004,Schauinsland,Oberried-Hofsgrund,background,rural regional,7.9040,47.9129
+1949,DEUB005,Waldhof,Lüder-Langenbrügge,background,rural area,10.7561,52.8009
+1972,DEUB028,Zingst,Zingst,background,rural area,12.7250,54.4368
+1973,DEUB029,Schmücke,Gehlberg,background,rural area,10.7694,50.6546
+1974,DEUB030,Neuglobsow,Neuglobsow,background,rural regional,13.0323,53.1423
+1988,DEUB044,Zugspitze Schneefernerhaus,Zugspitze,background,rural secluded,10.9807,47.4144
+1990,DEUB046,Forellenbach,Sankt Oswald,background,rural secluded,13.4206,48.9476
+2113,DEBB110,Dallgow-Döberitz,Dallgow-Döberitz,background,suburban area,13.0488,52.5395
+9404,DENW397,Düsseldorf-Eller,Düsseldorf,background,urban area,6.8175,51.2012
+9406,DEHE150,Frankfurt-Niedwald,Frankfurt am Main,background,urban area,8.5945,50.1135
+9480,DEBE125,Berlin Leipziger Straße (MC),Berlin,traffic,urban area,13.3824,52.5098
+9488,DENW405,Wesel-Obrighoven,Wesel,background,rural near town,6.6551,51.6735
+9523,DEBW241,Ludwigsburg Schlossstraße,Ludwigsburg,traffic,urban area,9.1937,48.8982
+9525,DEBY198,Ingolstadt/Münchener Str.,Ingolstadt,traffic,urban area,11.4346,48.7426
+9528,DEBY199,Neustadt a.d. Aisch/An der Weißen Marter,Neustadt a.d. Aisch,background,urban area,10.6254,49.5785
+9529,DEST134,Dessau/Roßlau,Roßlau,traffic,urban area,12.2387,51.8858
+9530,DENW415,Oberhausen Duisburger Straße,Oberhausen,traffic,urban area,6.8425,51.4784
+9531,DEBW242,Stuttgart Pragstraße,Stuttgart,traffic,urban area,9.2016,48.8078
+9533,DEMV059,Schwerin Obotr. West,Schwerin,traffic,urban area,11.3979,53.6305
+9535,DEBB111,Elsterwerda,Elsterwerda,background,urban area,13.5225,51.4565
+9544,DEHE159,Frankfurt-Riedberg,Frankfurt am Main,background,urban area,8.6349,50.1730
+9545,DEHE160,Mörfelden,Mörfelden,background,urban area,8.5659,49.9650
+9546,DEHE161,Flörsheim,Flörsheim,background,urban area,8.4287,50.0190
+9552,DEHE164,Aßlar-Klein-Altenstädten,Aßlar-Klein-Altenstädten,background,urban area,8.4632,50.5782
+9556,DEBE126,Berlin Karl-Marx-Straße II,Berlin,traffic,urban area,13.4297,52.4838
+9557,DESN130,Liebschützberg,Liebschützberg,background,rural secluded,13.1322,51.3526
+9565,DEBY200,Passau/Angerstr.,Passau,traffic,urban area,13.4694,48.5766
+9566,DEBW245,Pforzheim Luisenstraße,Pforzheim,traffic,urban area,8.6962,48.8937
+9568,DEBB112,Wildau,Wildau,background,suburban area,13.6212,52.3240
+9570,DENW424,Stolberg Aachener Straße,Stolberg,industry,urban area,6.2279,50.7615
+9571,DENW425,Stolberg Brauereistraße,Stolberg,industry,urban area,6.2297,50.7633
+9572,DENW426,Stolberg Kranensterz,Stolberg,industry,urban area,6.2262,50.7604
+9585,DEHE170,Neu-Isenburg,Neu-Isenburg,background,urban area,8.6896,50.0526
+9589,DENW430,Düsseldorf Merowingerstraße,Düsseldorf,traffic,urban area,6.7763,51.2026
+9592,DEMV060,Neubrandenburg Südstadt,Neubrandenburg,background,urban area,13.2682,53.5461
+9593,DERP111,Mainz-Hechtsheim,Mainz,background,suburban area,8.2782,49.9581
+9595,DENW431,Düsseldorf-Lohausen,Düsseldorf,background,urban area,6.7443,51.2774
+9600,DENW432,Stolberg Rathausstraße,Stolberg,industry,urban area,6.2295,50.7706
+9601,DENW433,Strempt Friedhof,Mechernich,industry,rural area,6.6228,50.5824
+9602,DENW434,Gelsenkirchen Zentraldeponie Emscherbruch,Gelsenkirchen,industry,urban area,7.1334,51.5643
+10347,DEBE127,Berlin Silbersteinstraße 5,Berlin,traffic,urban area,13.4412,52.4675
+10348,DEHH082,Hamburg Niendorf,Hamburg,background,suburban area,9.9614,53.6222
+10351,DESH062,Norderstedt Bekwisch,Norderstedt,background,urban area,9.9906,53.6760
+10388,DEST144,Magdeburg City-Tunnel,Magdeburg,traffic,urban area,11.6306,52.1312
+10465,DEBB126,"Oranienburg, Bernauer Str.",Oranienburg,traffic,urban area,13.2405,52.7557
+10466,DEHH083,Hamburg Bergstedt,Hamburg,background,suburban area,10.1164,53.6828
+10468,DEHB014,Bremen-Nordstraße,Bremen,traffic,urban area,8.7756,53.0994
+10469,DEBB127,Luckenwalde,Luckenwalde,background,suburban area,13.1794,52.0891
+10470,DEBW249,Stuttgart Hauptstätter Straße,Stuttgart,traffic,urban area,9.1709,48.7662
+10471,DENW437,Kreuzau Leversbach,Kreuzau,industry,rural area,6.4649,50.7171
+10472,DEHE175,Rimberg,Breitenbach am Herzberg,background,rural area,9.4612,50.7972
+10559,DENW447,Mönchengladbach Korschenbroicher Straße,Mönchengladbach,traffic,urban area,6.4451,51.1919
