@@ -1,0 +1,45 @@
+name: probe-tiktok
+on:
+  push:
+    branches: [claude/project-thread-31so5g]
+    paths: [".github/workflows/probe.yml"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe
+        shell: python
+        run: |
+          import json, re, urllib.request, gzip
+          H = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+               "Accept-Language": "en-US,en;q=0.9"}
+          def get(u, h=H):
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u, headers=h), timeout=30)
+                  b = r.read()
+                  if b[:2] == b"\x1f\x8b": b = gzip.decompress(b)
+                  print(f"\n===== {u} -> {r.status} {len(b)} {r.headers.get('content-type')}")
+                  return b.decode("utf-8", "replace")
+              except Exception as e:
+                  print(f"\n===== {u} -> ERROR {e!r}"); return ""
+          for cc in ["NL", "US"]:
+              t = get(f"https://ads.tiktok.com/business/creativecenter/inspiration/popular/music/pc/en?countryCode={cc}&period=7")
+              m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', t, re.S)
+              if m:
+                  d = json.loads(m.group(1))
+                  def walk(o, path=""):
+                      if isinstance(o, dict):
+                          for k, v in o.items(): walk(v, path + "/" + k)
+                      elif isinstance(o, list) and o and isinstance(o[0], dict) and len(o) >= 5:
+                          print("LIST", path, len(o), json.dumps(o[0])[:600])
+                  walk(d)
+                  pp = d.get("props", {}).get("pageProps", {})
+                  print("pageProps keys", list(pp.keys())[:30])
+                  s = json.dumps(pp)
+                  for key in ["countryList", "country_list"]:
+                      i = s.find(key); print(key, s[i:i+800] if i >= 0 else "none")
+              else:
+                  print("no NEXT_DATA; head:", t[:500])
+          get("https://ads.tiktok.com/creative_radar_api/v1/popular_trend/sound/rank_list?period=7&page=1&limit=20&rank_type=popular&new_on_board=false&commercial_music=false&country_code=NL")
+          print(get("https://ads.tiktok.com/creative_radar_api/v1/popular_trend/sound/rank_list?period=7&page=1&limit=20&rank_type=popular&new_on_board=false&commercial_music=false&country_code=NL")[:800])
