@@ -18,6 +18,9 @@ catalogue_url = "https://opendata.ndw.nu/snelheden_en_intensiteiten_configuratie
 # motorway border crossings, picked by analysis/traffic-watchlist/pick.py;
 # see watchlist.csv there for which is which.
 sites = [
+  # Spijkenisserbrug, Groene Kruisweg, both sides of the bridge (added by hand).
+  "GRT02_MORO_2085_2",
+  "GRT02_MORO_2092_2",
   "GEO0B_R_RWSTI358454",
   "PNH02_TI882L",
   "PNH02_TI882R",
