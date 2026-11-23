@@ -8,6 +8,11 @@ This script turns them into a static site in ``_site/``, ready for GitHub Pages.
     python newsroom/build.py build            # published stories only, like the live site
     python newsroom/build.py build --drafts   # include drafts, for previewing
     python newsroom/build.py serve            # build with drafts and serve on localhost:8000
+    python newsroom/build.py schedule         # the newsroom list: dates and blockers
+
+A story goes live when ``status = "published"``, or when ``status = "ready"``, its
+``date`` has come and nothing blocks it (see ``blockers``). A daily scheduled run
+of the pages workflow rebuilds the site, so a ready story appears on its date.
 
 Needs Python 3.11+ and the ``markdown`` package (``pip install -e ".[site]"``).
 """
@@ -37,7 +42,10 @@ OUT = ROOT / "_site"
 
 # Files in a story folder that are sources, not part of the published page.
 PRIVATE = {"story.toml", "story.md", "post.md", "README.md"}
-STATUSES = {"draft", "published"}
+STATUSES = {"draft", "ready", "published"}
+# Marks in story.md that mean the text isn't finished: ⟨…⟩ placeholders for
+# numbers still to come, TODO/TBD notes, and the <!-- DRAFT --> banner comment.
+UNFINISHED = re.compile(r"⟨[^⟩]*⟩|\bTODO\b|\bTBD\b|<!--\s*DRAFT")
 WORDS_PER_MINUTE = 230
 
 
@@ -58,6 +66,8 @@ class Story:
     series: str = ""
     issue: int = 0
     url: str = ""
+    open: list[str] = field(default_factory=list)
+    after: str = ""
 
     @property
     def minutes(self) -> int:
@@ -90,15 +100,41 @@ def load_story(folder: Path, url: str | None = None) -> Story:
         sources=meta.get("sources", []),
         series=meta.get("series", ""),
         url=url or f"stories/{folder.name}/",
+        open=list(meta.get("open", [])),
+        after=meta.get("after", ""),
     )
 
 
-def load_stories() -> list[Story]:
+def blockers(story: Story, live: set[str] = frozenset()) -> list[str]:
+    """What stops a story from going live: open questions and actions listed in
+    ``open = [...]`` in story.toml, unfinished marks in story.md, and a story
+    named in ``after = "slug"`` that isn't live yet."""
+    found = [f"open: {item}" for item in story.open]
+    marks = UNFINISHED.findall(story.body_md)
+    if marks:
+        found.append(f"unfinished text: {len(marks)} mark(s) like {marks[0]!r} in story.md")
+    if story.after and story.after not in live:
+        found.append(f"waits for {story.after} to go live")
+    return found
+
+
+def go_live(stories: list[Story], today: dt.date) -> None:
+    """Turn ready stories whose date has come and that have no blockers into
+    published ones. Runs in date order, so ``after`` can chain stories."""
+    live = {s.slug for s in stories if s.status == "published"}
+    for story in sorted(stories, key=lambda s: s.date):
+        if story.status == "ready" and story.date <= today and not blockers(story, live):
+            story.status = "published"
+            live.add(story.slug)
+
+
+def load_stories(today: dt.date | None = None) -> list[Story]:
     stories = [
         load_story(folder)
         for folder in sorted(STORIES.iterdir() if STORIES.exists() else [])
         if folder.is_dir() and (folder / "story.toml").exists()
     ]
+    go_live(stories, today or dt.date.today())
     # Issue numbers count published stories in date order, like a paper's issues.
     published = sorted((s for s in stories if s.status == "published"), key=lambda s: s.date)
     for number, story in enumerate(published, start=1):
@@ -279,7 +315,11 @@ def story_html(config: dict, story: Story, *, root: str) -> str:
     )
     src = story.folder.relative_to(ROOT).as_posix() if story.folder.is_relative_to(ROOT) else ""
     story_src = f'<li><a href="{esc(repo)}/tree/main/{esc(src)}">This page</a></li>' if src else ""
-    issue = f"No. {story.issue}" if story.issue else {"draft": "Draft"}.get(story.status, "Guide")
+    issue = (
+        f"No. {story.issue}"
+        if story.issue
+        else {"draft": "Draft", "ready": "Scheduled"}.get(story.status, "Guide")
+    )
     series = f'<span class="series">{esc(story.series)}</span>' if story.series else ""
     banner = (
         '<p class="draft-banner">Draft: not on the live site yet</p>'
@@ -311,7 +351,8 @@ def card(story: Story, *, root: str, lead: bool = False) -> str:
         if lead and story.image
         else ""
     )
-    draft = ' <span class="tag-draft">Draft</span>' if story.status == "draft" else ""
+    label = {"draft": "Draft", "ready": "Scheduled"}.get(story.status)
+    draft = f' <span class="tag-draft">{label}</span>' if label else ""
     return (
         f'<article class="{cls}">{image}'
         f'<p class="kicker">{esc(story.section)}{draft}</p>'
@@ -375,11 +416,11 @@ def copy_assets(source: Path, target: Path) -> None:
             shutil.copy2(path, dest)
 
 
-def build(out: Path = OUT, drafts: bool = False) -> list[Story]:
+def build(out: Path = OUT, drafts: bool = False, today: dt.date | None = None) -> list[Story]:
     config = tomllib.loads((NEWSROOM / "site.toml").read_text(encoding="utf-8"))
-    stories = load_stories()
+    stories = load_stories(today)
     shown = [s for s in stories if s.status == "published" or drafts]
-    upcoming = [s for s in stories if s.status == "draft" and not drafts]
+    upcoming = [s for s in stories if s.status != "published" and not drafts]
 
     if out.exists():
         shutil.rmtree(out)
@@ -443,6 +484,27 @@ def build(out: Path = OUT, drafts: bool = False) -> list[Story]:
     return shown
 
 
+# --- Schedule -----------------------------------------------------------------
+
+
+def schedule(today: dt.date | None = None) -> str:
+    """The newsroom list as a Markdown table, soonest first."""
+    today = today or dt.date.today()
+    stories = load_stories(today)
+    live = {s.slug for s in stories if s.status == "published"}
+    rows = ["| Date | Story | Status | What's left |", "| --- | --- | --- | --- |"]
+    for s in sorted(stories, key=lambda s: (s.status == "published", s.date)):
+        left = blockers(s, live) if s.status != "published" else []
+        if s.status == "draft":
+            left = ["status is draft: set ready once it's signed off", *left]
+        elif s.status == "ready" and not left:
+            left = [f"goes live on {long_date(s.date)}"]
+        status = "live" if s.status == "published" else s.status
+        title = s.title.replace("|", "\\|")
+        rows.append(f"| {s.date.isoformat()} | {title} | {status} | {'; '.join(left)} |")
+    return "\n".join(rows) + "\n"
+
+
 # --- New story ----------------------------------------------------------------
 
 
@@ -485,6 +547,9 @@ def main(argv: list[str] | None = None) -> int:
     commands = parser.add_subparsers(dest="command", required=True)
     b = commands.add_parser("build", help="build the site into _site/")
     b.add_argument("--drafts", action="store_true", help="include draft stories")
+    b.add_argument("--today", type=dt.date.fromisoformat, help="pretend it's this date")
+    sc = commands.add_parser("schedule", help="list stories, publish dates and blockers")
+    sc.add_argument("--today", type=dt.date.fromisoformat, help="pretend it's this date")
     s = commands.add_parser("serve", help="build with drafts and serve locally")
     s.add_argument("--port", type=int, default=8000)
     n = commands.add_parser("new", help="start a new story from the template")
@@ -497,8 +562,10 @@ def main(argv: list[str] | None = None) -> int:
         target = new_story(args.slug, args.title, args.section)
         print(f"Created {target.relative_to(ROOT)} and analysis/{args.slug}/prepare.py")
     elif args.command == "build":
-        shown = build(drafts=args.drafts)
+        shown = build(drafts=args.drafts, today=args.today)
         print(f"Built {len(shown)} stories into {OUT.relative_to(ROOT)}/")
+    elif args.command == "schedule":
+        print(schedule(args.today), end="")
     else:
         build(drafts=True)
         serve(args.port)

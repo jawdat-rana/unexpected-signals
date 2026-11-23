@@ -8,8 +8,16 @@ date = 2026-11-05
 section = "Style guide"
 # Optional: the series this belongs to, like "Money in politics, part 1".
 series = ""
-# draft: preview only (build --drafts). published: on the live site and in the feed.
+# The date the story goes live, or went live.
+# draft: being written, preview only (build --drafts).
+# ready: signed off. Goes live by itself on `date`, unless `open` has items,
+#        story.md still has ⟨…⟩ / TODO marks, or the story in `after` isn't live.
+# published: live now.
 status = "draft"
+# Open questions or actions that must be settled first. Empty the list when done.
+open = []
+# Optional: slug of a story that must go live first, like "boats-go-first".
+after = ""
 tags = []
 # Share image for LinkedIn previews, 1200 x 627, inside this folder. Optional.
 image = ""
