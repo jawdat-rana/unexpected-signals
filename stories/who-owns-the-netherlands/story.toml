@@ -1,0 +1,29 @@
+title = "Who owns the Netherlands' homes"
+dek = "Province averages say richer places own fewer of their homes. Town by town, it's the other way round. And the skilled migrants blamed for the housing shortage are a small group that lands hard on a handful of cities."
+date = 2026-11-23
+section = "Housing"
+series = ""
+status = "draft"
+tags = ["cbs", "housing", "migration"]
+image = ""
+analysis = "analysis/who-owns-homes"
+
+[[sources]]
+name = "CBS StatLine 82900NED: dwellings by ownership and landlord type, by region, 2012–2025"
+url = "https://opendata.cbs.nl/#/CBS/nl/dataset/82900NED/table"
+licence = "CC BY 4.0"
+
+[[sources]]
+name = "CBS StatLine 86379NED: household wealth by region (regional classification 2026)"
+url = "https://www.cbs.nl/nl-nl/cijfers/detail/86379NED"
+licence = "CC BY 4.0"
+
+[[sources]]
+name = "CBS StatLine 84809NED: non-EU/EFTA immigrants by migration motive and later socio-economic position"
+url = "https://www.cbs.nl/nl-nl/cijfers/detail/84809NED"
+licence = "CC BY 4.0"
+
+[[sources]]
+name = "CBS StatLine 85451NED: immigration and emigration by nationality, by region"
+url = "https://www.cbs.nl/nl-nl/cijfers/detail/85451NED"
+licence = "CC BY 4.0"

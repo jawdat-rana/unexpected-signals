@@ -71,9 +71,10 @@ def filter_observations(folder: Path, keep: set[str], regio: tuple[str, ...]) ->
             print(f"  no total found for {column}; keeping all", flush=True)
     print(f"  fixed to totals: {wanted}", flush=True)
     kept = total = 0
-    with source.open(encoding="utf-8-sig") as src, gzip.open(
-        folder / "Observations.csv.gz", "wt", encoding="utf-8", newline=""
-    ) as dst:
+    with (
+        source.open(encoding="utf-8-sig") as src,
+        gzip.open(folder / "Observations.csv.gz", "wt", encoding="utf-8", newline="") as dst,
+    ):
         reader = csv.DictReader(src, delimiter=";")
         writer = csv.DictWriter(dst, fieldnames=reader.fieldnames, delimiter=";")
         writer.writeheader()
