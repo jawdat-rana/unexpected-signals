@@ -1,26 +1,23 @@
-name: probe-tiktok
+name: probe-shazam
 on:
   push:
     branches: [claude/project-thread-31so5g]
-    paths: [".github/workflows/probe.yml"]
+    paths: [".github/workflows/probe.yml", "src/**", "config.toml"]
 jobs:
   probe:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Probe
-        shell: python
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dry run (nothing is committed)
+        env:
+          PYTHONPATH: src
         run: |
-          import urllib.request, gzip
-          H = {"User-Agent": "unexpected-signals/0.1 (+https://github.com/jawdat-rana/unexpected-signals)"}
-          for u in ["https://www.shazam.com/services/charts/csv/top-200/netherlands",
-                    "https://www.shazam.com/services/charts/csv/top-200/world",
-                    "https://www.shazam.com/charts/top-200/netherlands",
-                    "https://www.billboard.com/charts/tiktok-billboard-top-50/"]:
-              try:
-                  r = urllib.request.urlopen(urllib.request.Request(u, headers=H), timeout=30); b = r.read()
-                  if b[:2] == b"\x1f\x8b": b = gzip.decompress(b)
-                  t = b.decode("utf-8", "replace")
-                  print(f"\n===== {u} -> {r.status} {len(b)} {r.headers.get('content-type')}"); print(t[:900])
-              except Exception as e:
-                  print(f"\n===== {u} -> ERROR {e!r}")
+          python -m unexpected_signals collect --out /tmp/out --only shazam
+          f=$(ls /tmp/out/shazam/*/*/*.csv); ls -l $f
+          for c in netherlands belgium germany united-kingdom united-states world; do echo "== $c"; grep ",$c," $f | head -4; done
+          for u in amsterdam rotterdam; do curl -s -o /dev/null -w "city $u %{http_code}\n" https://www.shazam.com/services/charts/csv/top-200/netherlands/$u; done
+          curl -s https://www.shazam.com/services/charts/csv/top-50/netherlands/amsterdam | head -6

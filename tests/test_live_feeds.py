@@ -208,3 +208,34 @@ url = "{ov}"
     schedule = state.load(out, "schedule")
     assert schedule["apple_charts"] == "2026-11-22T21:00:00Z"
     assert schedule["parking"] == "2026-11-22T21:15:00Z"
+
+
+SHAZAM_CSV = (
+    '﻿\n"Monday, 23 November 2026 [performance over the past 7 days]"\n'
+    'Rank,Artist,Title\n1,"Justice & Tame Impala","Flower In A Hurricane"\n'
+    '2,"Isabèl Usher & Kraantje Pappie","Spijt Komt Later"\n'
+).encode()
+
+
+def test_shazam_parse_reads_chart_date():
+    from unexpected_signals import shazam
+
+    day, rows = shazam.parse(SHAZAM_CSV, "netherlands", "2026-11-24T01:00:00Z")
+    assert day == "2026-11-23"
+    assert [(r["rank"], r["title"]) for r in rows] == [
+        ("1", "Flower In A Hurricane"),
+        ("2", "Spijt Komt Later"),
+    ]
+
+
+def test_shazam_refetch_replaces_rows(tmp_path: Path):
+    write(tmp_path / "src/netherlands", SHAZAM_CSV)
+    config = tmp_path / "config.toml"
+    config.write_text(
+        f'[shazam]\nenabled = true\nbase = "{(tmp_path / "src").as_uri()}/"\n'
+        'charts = ["netherlands"]\n'
+    )
+    out = tmp_path / "data"
+    for _ in range(2):
+        assert cli.main(["collect", "--config", str(config), "--out", str(out)]) == 0
+    assert len(lines(out / "shazam/2026/11/2026-11-23.csv")) == 3
