@@ -1,0 +1,83 @@
+Identifier;Title;Description;Modified;ReleaseDate;ModificationDate;Language;TemporalCoverage;Authority;Catalog;Publisher;ContactPoint;Version;VersionNotes;VersionReason;Frequency;Status;ObservationCount;ObservationsModified;DatasetType;GraphTypes;License;Source;Summary;LongDescription
+86379NED;"Vermogen van huishoudens; huishoudenskenmerken, regio (indeling 2026)";"Deze tabel bevat gegevens over het vermogen van huishoudens naar kenmerken als samenstelling van het huishouden en leeftijd van de hoofdkostwinner, voornaamste inkomensbron, woonsituatie, inkomensgroep, vermogensgroep en vermogensklasse. De gegevens zijn beschikbaar naar diverse regionale indelingen gebaseerd op de gemeentelijke indeling per 1 januari 2026.
+
+Gegevens beschikbaar vanaf: 2006.
+De gegevens betreffen de stand van het vermogen per 1 januari.
+
+Status van de cijfers:
+De cijfers over 2006 tot en met 2024 zijn definitief. De cijfers over 2025 zijn voorlopig.
+
+Wijzigingen per 11 november 2026:
+De cijfers naar vermogensgroepen in 2023 waren ten onrechte niet gevuld. Dit is aangepast.
+
+Wanneer komen er nieuwe cijfers?
+Nieuwe cijfers over 2026 komen in het najaar van 2027 beschikbaar, en zullen verschijnen in een nieuwe tabel.
+
+";2026-11-11T00:00:00+01:00;2026-11-11T00:00:00+01:00;2026-11-11T00:00:00+01:00;nl;2006-2025;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;CBS;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;infoservice@cbs.nl;202611110000;De cijfers naar vermogensgroepen in 2023 waren ten onrechte niet gevuld. Dit is aangepast.;Correctie;Eenmalig;Regulier;1995697;2026-11-11T00:00:00+01:00;Numeric;Table,Bar,Line,Map;https://creativecommons.org/licenses/by/4.0/;CBS.;"Vermogen, huishouden, bezittingen, schulden
+Samenstelling huishoudens, leeftijd, inkomen, woning";"INHOUDSOPGAVE
+
+1. Toelichting
+2. Definities en verklaring van symbolen
+3. Koppelingen naar relevante tabellen en artikelen
+4. Bronnen en methoden
+5. Meer informatie
+
+1. TOELICHTING
+
+Deze tabel bevat gegevens over het vermogen van huishoudens naar kenmerken als samenstelling van het huishouden en leeftijd van de hoofdkostwinner, voornaamste inkomensbron, woonsituatie, inkomensgroep, vermogensgroep en vermogensklasse. De gegevens zijn beschikbaar naar diverse regionale indelingen gebaseerd op de gemeentelijke indeling per 1 januari 2026.
+
+Gegevens beschikbaar vanaf: 2006.
+De gegevens betreffen de stand van het vermogen per 1 januari.
+
+Status van de cijfers:
+De cijfers over 2006 tot en met 2024 zijn definitief. De cijfers over 2025 zijn voorlopig.
+
+Wijzigingen per 11 november 2026:
+De cijfers naar vermogensgroepen in 2023 waren ten onrechte niet gevuld. Dit is aangepast.
+
+Wanneer komen er nieuwe cijfers?
+Nieuwe cijfers over 2026 komen in het najaar van 2027 beschikbaar, en zullen verschijnen in een nieuwe tabel.
+
+2. DEFINITIES EN VERKLARING VAN SYMBOLEN
+
+Definities:
+
+Vermogen
+Het saldo van bezittingen en schulden.
+Bezittingen worden gevormd door bank- en spaartegoeden, effecten, de eigen woning, overig onroerend goed, ondernemingsvermogen, aanmerkelijk belang en de overige bezittingen. De schulden omvatten onder meer schulden ten behoeve van een eigen woning en consumptief krediet.
+
+Verklaring van symbolen:
+
+niets (blanco) : het cijfer kan op logische gronden niet voorkomen
+. : het cijfer is onbekend, onvoldoende betrouwbaar of geheim
+* : voorlopige cijfers
+** : nader voorlopige cijfers
+
+De cijfers zijn afgerond. Hierdoor kan het voorkomen, dat de som van de detailgegevens afwijkt van het totaal.
+
+3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN
+
+Relevante tabellen:
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83834NED'>Vermogen huishoudens; bestanddelen</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83835NED'>Vermogen huishoudens; vermogensklassen</a>
+
+Deze tabel is de opvolger van:
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/86160NED'>Vermogen van huishoudens; huishoudenskenmerken, regio (indeling 2025)</a>
+
+Relevante artikelen:
+<a href='https://www.cbs.nl/nl-nl/publicatie/2024/27/materiele-welvaart-in-nederland-2024'>Materiële welvaart in Nederland</a>
+
+Meer informatie is te vinden op de themapagina <a href='https://www.cbs.nl/nl-nl/arbeid-en-inkomen/inkomen-en-bestedingen'>Inkomen en bestedingen</a>.
+
+4. BRONNEN EN METHODEN
+
+De onderzoeksmethode van deze tabel is te vinden in de onderzoeksbeschrijving <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/integraal-inkomens-en-vermogensonderzoek'>Integraal inkomens- en vermogensonderzoek</a>.
+
+5. MEER INFORMATIE
+
+<a href='https://www.cbs.nl/nl-nl/over-ons/contact/infoservice'>Infoservice</a>
+
+Copyright (c) Centraal Bureau voor de Statistiek, Den Haag/Heerlen
+Verveelvoudiging is toegestaan, mits CBS als bron wordt vermeld.
+
+"

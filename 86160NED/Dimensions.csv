@@ -1,0 +1,4 @@
+Identifier;Title;Description;MapYear;ReleasePolicy;Kind;ContainsGroups;ContainsCodes;CodesUrl;GroupsUrl
+KenmerkenVanHuishoudens;Kenmerken van huishoudens;;;;Dimension;True;True;KenmerkenVanHuishoudensCodes.csv;KenmerkenVanHuishoudensGroups.csv
+RegioS;Regio's;;2025;;GeoDimension;True;True;RegioSCodes.csv;RegioSGroups.csv
+Perioden;Perioden;;;True;TimeDimension;True;True;PeriodenCodes.csv;PeriodenGroups.csv

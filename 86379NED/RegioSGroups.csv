@@ -1,0 +1,31 @@
+Id;Index;Title;Description;ParentId;DimensionId
+NL;0;Nederland;;;RegioS
+LD;1;Landsdelen;;;RegioS
+PV;2;Provincies;;;RegioS
+CRPV;3;COROP gebieden per provincie;;;RegioS
+CRPV20;4;Groningen (PV);;CRPV;RegioS
+CRPV21;5;Fryslân (PV);;CRPV;RegioS
+CRPV22;6;Drenthe (PV);;CRPV;RegioS
+CRPV23;7;Overijssel (PV);;CRPV;RegioS
+CRPV24;8;Flevoland (PV);;CRPV;RegioS
+CRPV25;9;Gelderland (PV);;CRPV;RegioS
+CRPV26;10;Utrecht (PV);;CRPV;RegioS
+CRPV27;11;Noord-Holland (PV);;CRPV;RegioS
+CRPV28;12;Zuid-Holland (PV);;CRPV;RegioS
+CRPV29;13;Zeeland (PV);;CRPV;RegioS
+CRPV30;14;Noord-Brabant (PV);;CRPV;RegioS
+CRPV31;15;Limburg (PV);;CRPV;RegioS
+GMPV;16;Gemeenten per provincie;;;RegioS
+GMPV20;17;Groningen (PV);;GMPV;RegioS
+GMPV21;18;Fryslân (PV);;GMPV;RegioS
+GMPV22;19;Drenthe (PV);;GMPV;RegioS
+GMPV23;20;Overijssel (PV);;GMPV;RegioS
+GMPV24;21;Flevoland (PV);;GMPV;RegioS
+GMPV25;22;Gelderland (PV);;GMPV;RegioS
+GMPV26;23;Utrecht (PV);;GMPV;RegioS
+GMPV27;24;Noord-Holland (PV);;GMPV;RegioS
+GMPV28;25;Zuid-Holland (PV);;GMPV;RegioS
+GMPV29;26;Zeeland (PV);;GMPV;RegioS
+GMPV30;27;Noord-Brabant (PV);;GMPV;RegioS
+GMPV31;28;Limburg (PV);;GMPV;RegioS
+AM;29;Arbeidsmarktregio’s;;;RegioS

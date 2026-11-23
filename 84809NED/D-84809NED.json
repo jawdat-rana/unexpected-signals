@@ -1,0 +1,1286 @@
+{
+  "Identifier": "84809NED",
+  "Title": "Immigranten niet EU/EFTA; migratiemotief, sociaaleconomische categorie",
+  "Description": "Deze tabel bevat cijfers over immigranten met een nationaliteit van een land buiten de EU of EFTA die naar Nederland zijn gekomen. \r\nDe gegevens zijn uitgesplitst naar geslacht, leeftijdsgroep, migratiemotief, nationaliteit, sociaaleconomische categorie en verblijfsduur.\r\nHet migratiemotief van immigranten uit niet-EU/EFTA-landen is gebaseerd op de vergunning aan de immigrant door de Immigratie- en Naturalisatiedienst (IND).\r\n\r\nIn deze tabel zijn alleen immigranten opgenomen die op het moment van immigratie de nationaliteit hadden van landen die op dat moment niet tot de Europese Unie (EU) of de European Free Trade Association (EFTA). Immigranten van buiten de EU/EFTA hebben een verblijfsvergunning van de IND nodig.\r\nImmigranten uit landen die in de periode 1999-2025 tot de EU of EFTA zijn toegetreden, zijn in deze tabel opgenomen als het jaar van immigratie voor het jaar van toetreding ligt.\r\nHoewel het Verenigd Koninkrijk vanaf 31 januari 2020 de Europese Unie heeft verlaten, bleef door een terugtrekkingsakkoord vrij verkeer van personen mogelijk tot en met 31 december 2020. In deze tabel zijn immigranten uit het Verenigd Koninkrijk daarom pas vanaf 1 januari 2021 opgenomen.   \r\n\r\nIn deze tabel wordt voor alle niet-EU/EFTA-immigranten elk jaar na hun binnenkomst in Nederland gekeken of ze nog in Nederland wonen en tot wat voor sociaaleconomische categorie zij behoren. Dit gebeurt steeds op dezelfde datum. Dus voor iemand die in Nederland is komen wonen op 12 februari 1999, wordt op 12 februari 2000 gekeken of deze persoon er nog is en wordt informatie gegeven over zijn/haar sociaaleconomische categorie. De selectie Verblijfsduur toont voor alle jaren het oorspronkelijke aantal immigranten dat in het jaar van immigratie naar Nederland kwam. Via de selectie Sociaaleconomische categorie is te zien of iemand nog aanwezig is en wat zijn/haar belangrijkste inkomensbron is. \r\n\r\nDe variabele Migratiemotief is uitgebreid met een categorie ‘Tijdelijke bescherming’. Hieronder vallen personen die na de start van de oorlog in Oekraïne op 24 februari 2022 naar Nederland zijn gevlucht en hier bescherming hebben aangevraagd. Zij hoeven niet de officiële asielprocedure van de IND te doorlopen maar vallen onder de Europese Richtlijn Tijdelijke Bescherming. \r\nZie ook:\r\nIND-proces voor vluchtelingen uit Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN) \r\nRichtlijn Tijdelijke Bescherming Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN)  \r\n\r\nBinnen de statistiek migratiemotieven hanteert het CBS bij de immigratie van niet EU/EFTA-onderdanen een onderscheid van arbeidsmigratie in twee subcategorieën: kennis en overige arbeidsmigratie. Tot en met de update in 2021 bestempelde het CBS alleen de IND-kennismigrantenregeling als kennismigratie, alle overige regelingen op het gebied van arbeidsmigratie werden als overige arbeidsmigratie getypeerd. \r\nVanaf de update in 2022 worden ook de andere regelingen die met de kennismigrantenregeling samenhangen getypeerd als kennis. Hieronder vallen bijvoorbeeld ook de regelingen voor zelfstandigen, wetenschappelijk onderzoekers en potentiële kennismigranten. Dit betekent dat met ingang van de update in 2022 voor alle verslagjaren in deze tabel de onderverdeling van arbeidsmigranten in kennis en overige arbeidsmigranten is aangepast. Hierdoor zijn de cijfers over deze twee typen arbeidsmigranten vanaf de update in 2022 niet zonder meer vergelijkbaar met cijfers die tot en met de update in 2021 zijn gepubliceerd. \r\n\r\nGegevens beschikbaar vanaf: 1999\r\n\r\nStatus van de cijfers: \r\nDe cijfers in deze tabel zijn voorlopig.\r\nIn de cijfers over de voorgaande perioden is later bekend geworden informatie verwerkt. Hierdoor zijn kleine afwijkingen met eerder gepubliceerde cijfers mogelijk.\r\n\r\nWijzigingen per 30 juni 2026:\r\nDe voorlopige cijfers over 2025 zijn toegevoegd.\r\nAan de immigratiejaren 1999 tot en met 2024 is een extra verblijfsduur toegevoegd;\r\n\r\nWanneer komen er nieuwe cijfers?\r\nDe cijfers over 2026 verschijnen in juni 2027.\r\n\r\n",
+  "Modified": "2026-06-30T00:00:00+02:00",
+  "ReleaseDate": "2026-06-30T00:00:00+02:00",
+  "ModificationDate": "2026-06-30T00:00:00+02:00",
+  "Language": "nl",
+  "TemporalCoverage": "1999 - 2025",
+  "Authority": "https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek",
+  "Catalog": "CBS",
+  "Publisher": "https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek",
+  "ContactPoint": "infoservice@cbs.nl",
+  "Version": "202606300000",
+  "VersionNotes": "",
+  "VersionReason": "Actualisering bijzonder",
+  "Frequency": "Per jaar",
+  "Provenance": [
+    {
+      "Title": "Statistiek migratiemotieven",
+      "Url": "https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/statistiek-migratiemotieven"
+    },
+    {
+      "Title": "Bevolkingsstatistiek",
+      "Url": "https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/bevolkingsstatistiek"
+    },
+    {
+      "Title": "Stelsel van Sociaal-statistische Bestanden (SSB)",
+      "Url": "https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksomschrijvingen/stelsel-van-sociaal-statistische-bestanden--ssb--"
+    }
+  ],
+  "Status": "Regulier",
+  "ObservationCount": 57139992,
+  "ObservationsModified": "2026-06-30T00:00:00+02:00",
+  "DatasetType": "Numeric",
+  "RelatedSources": [
+    {
+      "Title": "Immigranten (EU/EFTA); afgeleid migratiedoel, sociaaleconomische categorie",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84808ned"
+    },
+    {
+      "Title": "Bevolking op 31 december, immigranten EU/EFTA, afgeleid migratiedoel",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85905NED"
+    },
+    {
+      "Title": "Bevolking op 31 december, immigranten niet-EU/EFTA, migratiemotief",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85904NED"
+    },
+    {
+      "Title": "Werknemers op 31 december; immigranten EU/EFTA, afgeleid migratiedoel",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85912NED"
+    },
+    {
+      "Title": "Werknemers op 31 december, immigranten niet-EU/EFTA, migratiemotief",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85910NED"
+    },
+    {
+      "Title": "Migratie; land van herkomst / vestiging, geboorteland, geslacht; 1995-2022",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/60032"
+    },
+    {
+      "Title": "Immi- en emigratie; nationaliteit, leeftijd en geslacht, 1995-2022",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84484ned"
+    },
+    {
+      "Title": "Immi- en emigratie; leeftijd (31 dec.), burg staat, geboorteland; 1995-2022",
+      "Url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/03742"
+    },
+    {
+      "Title": "Arbeidsmigrant met werkende partner blijft steeds vaker in Nederland",
+      "Url": "https://www.cbs.nl/nl-nl/nieuws/2025/02/arbeidsmigrant-met-werkende-partner-blijft-steeds-vaker-in-nederland"
+    },
+    {
+      "Title": "Meeste gezinsmigranten blijven in Nederland wonen",
+      "Url": "https://www.cbs.nl/nl-nl/nieuws/2024/44/meeste-gezinsmigranten-blijven-in-nederland-wonen"
+    },
+    {
+      "Title": "Richtlijn Tijdelijke Bescherming Oekraïne | IND",
+      "Url": "https://ind.nl/nl/oekraine/richtlijn-tijdelijke-bescherming-oekraine"
+    },
+    {
+      "Title": "Nareizigers | IND",
+      "Url": "https://ind.nl/nl/verblijfsvergunningen/asiel/nareizigers"
+    },
+    {
+      "Title": "Verblijfsvergunning voor partner aanvragen | IND",
+      "Url": "https://ind.nl/nl/verblijfsvergunningen/familie-en-partner/verblijfsvergunning-voor-partner-aanvragen"
+    },
+    {
+      "Title": "Bevolking",
+      "Url": "https://www.cbs.nl/nl-nl/maatschappij/bevolking"
+    },
+    {
+      "Title": "Arbeid en sociale zekerheid",
+      "Url": "https://www.cbs.nl/nl-nl/arbeid-en-inkomen/arbeid-en-sociale-zekerheid"
+    },
+    {
+      "Title": "Asiel, migratie en integratie",
+      "Url": "https://www.cbs.nl/nl-nl/dossier/dossier-asiel-migratie-en-integratie"
+    }
+  ],
+  "GraphTypes": "Table,Bar,Line",
+  "MeasureGroups": [],
+  "Measures": [
+    {
+      "Identifier": "M004023",
+      "Index": 7,
+      "Title": "Immigranten (exclusief EU/EFTA)",
+      "Description": "Immigrant:\r\nVestiging van een persoon vanuit het buitenland in Nederland. \r\nOm als immigrant te kunnen worden geteld dient deze persoon ingeschreven te worden in de gemeentelijke bevolkingsregisters. \r\n\r\nEuropese Unie (EU): \r\nSamenwerkingsverband van Europese staten.\r\nDe Europese Unie bestaat uit de volgende landen: \r\nVanaf 1-1-1958: België, Bondsrepubliek Duitsland, Frankrijk, Italië, Luxemburg en Nederland. \r\nToegetreden op 1-1-1973: Denemarken, Ierland en Verenigd Koninkrijk. \r\nToegetreden op 1-1-1981: Griekenland. \r\nToegetreden op 1-1-1986: Portugal en Spanje. \r\nToegetreden op 1-1-1995: Oostenrijk, Finland en Zweden. \r\nToegetreden op 1-5-2004: Cyprus, Estland, Hongarije, Letland, Litouwen, Malta, Polen, Slowakije, Slovenië en Tsjechië. \r\nToegetreden op 1-1-2007: Bulgarije, Roemenië. \r\nToegetreden op 1-7-2013: Kroatië.\r\nVerlaten op 31-01-2020:  Verenigd Koninkrijk.\r\n\r\nEFTA:\r\nEuropese Vrijhandelsassociatie (EVA). \r\nDe Europese Vrijhandelsassociatie is een samenwerkingsverband tussen Liechtenstein, Noorwegen, IJsland en Zwitserland. \r\nDe associatie is beter bekend onder de Engelstalige afkorting EFTA.\r\n\r\n",
+      "MeasureGroupId": null,
+      "DataType": "Long",
+      "Unit": "aantal",
+      "Decimals": 0,
+      "PresentationType": null
+    }
+  ],
+  "Dimensions": [
+    {
+      "Identifier": "Geslacht",
+      "Title": "Geslacht",
+      "Description": "",
+      "MapYear": null,
+      "ReleasePolicy": null,
+      "Kind": "Dimension",
+      "DimensionGroups": [],
+      "CodeList": [
+        {
+          "Identifier": "T001038",
+          "Index": 1,
+          "Title": "Totaal mannen en vrouwen",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "3000",
+          "Index": 2,
+          "Title": "Mannen",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "4000",
+          "Index": 3,
+          "Title": "Vrouwen",
+          "Description": "",
+          "DimensionGroupId": null
+        }
+      ]
+    },
+    {
+      "Identifier": "Leeftijd",
+      "Title": "Leeftijd",
+      "Description": "",
+      "MapYear": null,
+      "ReleasePolicy": null,
+      "Kind": "Dimension",
+      "DimensionGroups": [
+        {
+          "Id": "0",
+          "Index": 0,
+          "Title": "Leeftijdsgroepen",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "1",
+          "Index": 1,
+          "Title": "Totalen",
+          "Description": "",
+          "ParentId": "0"
+        },
+        {
+          "Id": "2",
+          "Index": 2,
+          "Title": "Leeftijdsgroepen",
+          "Description": "",
+          "ParentId": "0"
+        }
+      ],
+      "CodeList": [
+        {
+          "Identifier": "10000",
+          "Index": 1,
+          "Title": "Totaal",
+          "Description": "",
+          "DimensionGroupId": "1"
+        },
+        {
+          "Identifier": "A049126",
+          "Index": 2,
+          "Title": "0 tot 18 jaar",
+          "Description": "",
+          "DimensionGroupId": "2"
+        },
+        {
+          "Identifier": "53107",
+          "Index": 3,
+          "Title": "18 tot 30 jaar",
+          "Description": "",
+          "DimensionGroupId": "2"
+        },
+        {
+          "Identifier": "60400",
+          "Index": 4,
+          "Title": "30 tot 40 jaar",
+          "Description": "",
+          "DimensionGroupId": "2"
+        },
+        {
+          "Identifier": "21000",
+          "Index": 5,
+          "Title": "40 jaar of ouder",
+          "Description": "",
+          "DimensionGroupId": "2"
+        },
+        {
+          "Identifier": "52052",
+          "Index": 6,
+          "Title": "15 tot 75 jaar",
+          "Description": "",
+          "DimensionGroupId": "1"
+        }
+      ]
+    },
+    {
+      "Identifier": "Migratiemotief",
+      "Title": "Migratiemotief",
+      "Description": "",
+      "MapYear": null,
+      "ReleasePolicy": null,
+      "Kind": "Dimension",
+      "DimensionGroups": [
+        {
+          "Id": "3",
+          "Index": 0,
+          "Title": "Totaal",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "4",
+          "Index": 1,
+          "Title": "Totaal",
+          "Description": "",
+          "ParentId": "3"
+        },
+        {
+          "Id": "5",
+          "Index": 2,
+          "Title": "Arbeid",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "6",
+          "Index": 3,
+          "Title": "Arbeid",
+          "Description": "",
+          "ParentId": "5"
+        },
+        {
+          "Id": "7",
+          "Index": 4,
+          "Title": "Asiel",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "8",
+          "Index": 5,
+          "Title": "Asiel",
+          "Description": "",
+          "ParentId": "7"
+        },
+        {
+          "Id": "9",
+          "Index": 6,
+          "Title": "Gezinsmigratie",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "10",
+          "Index": 7,
+          "Title": "Gezin: totaal",
+          "Description": "",
+          "ParentId": "9"
+        },
+        {
+          "Id": "11",
+          "Index": 8,
+          "Title": "Gezin: vorming / hereniging",
+          "Description": "",
+          "ParentId": "9"
+        },
+        {
+          "Id": "12",
+          "Index": 9,
+          "Title": "Gezin: meegekomen naar migratiemotief",
+          "Description": "",
+          "ParentId": "9"
+        },
+        {
+          "Id": "13",
+          "Index": 10,
+          "Title": "Studie",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "14",
+          "Index": 11,
+          "Title": "Studie",
+          "Description": "",
+          "ParentId": "13"
+        },
+        {
+          "Id": "15",
+          "Index": 12,
+          "Title": "Tijdelijke bescherming",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "16",
+          "Index": 13,
+          "Title": "Tijdelijke bescherming",
+          "Description": "",
+          "ParentId": "15"
+        },
+        {
+          "Id": "17",
+          "Index": 14,
+          "Title": "Overige redenen",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "18",
+          "Index": 15,
+          "Title": "Overige redenen",
+          "Description": "",
+          "ParentId": "17"
+        }
+      ],
+      "CodeList": [
+        {
+          "Identifier": "T001056",
+          "Index": 1,
+          "Title": "Totaal",
+          "Description": "Persoon die niet de Nederlandse nationaliteit bezit en niet op grond van een wettelijke bepaling als Nederlander moet worden behandeld. \r\nNiet inbegrepen zijn: \r\n- niet-Nederlandse diplomaten en niet-Nederlandse NAVO militairen die in Nederland wonen \r\n- asielzoekers die korter dan zes maanden in de centrale opvang in Nederland verblijven en nog geen verblijfsvergunning hebben gekregen.",
+          "DimensionGroupId": "4"
+        },
+        {
+          "Identifier": "A009232",
+          "Index": 2,
+          "Title": "Arbeid: totaal",
+          "Description": "Immigratie van niet-Nederlanders met als doel in Nederland te gaan werken. Het kan hierbij bijvoorbeeld gaan om arbeid in loondienst of arbeid als zelfstandige.",
+          "DimensionGroupId": "6"
+        },
+        {
+          "Identifier": "A049128",
+          "Index": 3,
+          "Title": "Arbeid: kennismigrant",
+          "Description": "Immigratie van niet-Nederlanders met als doel in Nederland te gaan werken. Het kan hierbij bijvoorbeeld gaan om arbeid in loondienst of arbeid als zelfstandige.",
+          "DimensionGroupId": "6"
+        },
+        {
+          "Identifier": "A049129",
+          "Index": 4,
+          "Title": "Arbeid: overig",
+          "Description": "Immigratie van niet-Nederlanders met als doel in Nederland te gaan werken. Het kan hierbij bijvoorbeeld gaan om arbeid in loondienst of arbeid als zelfstandige.",
+          "DimensionGroupId": "6"
+        },
+        {
+          "Identifier": "A009234",
+          "Index": 5,
+          "Title": "Gezin: totaal",
+          "Description": "Deze tabel biedt twee afzonderlijke detailleringen van gezinsmigratie:\r\n1) naar gezinsvormers/gezinsherenigers en\r\n2) naar gezinsleden die zich voegen bij een persoon die gelijktijdig naar Nederland is geïmmigreerd of al in Nederland woonde (de meegekomen gezinsleden). \r\nBeide detailleringen zijn afzonderlijk van elkaar bepaald. Dat betekent dat de som van de afzonderlijke detailleringen optelt tot het totaal aantal gezinsmigranten van buiten de EU/EFTA. \r\n\r\nOnder gezinshereniging wordt de vestiging in Nederland verstaan van personen uit gezinnen die al vóór de immigratie bestonden, waarbij één of meer gezinsleden bij gezinsleden gaan wonen die eerder naar Nederland zijn gekomen. \r\nHet kan hierbij bijvoorbeeld gaan om \r\n- huwelijks(partners), \r\n- minderjarige kinderen (niet gehuwd, \r\n- geen geregistreerd partner) of \r\n- ouders die bij hun kinderen gaan wonen. \r\n \r\nAan andere familieleden dan de echtgenoot, partner of minderjarige kinderen kan een verblijfsvergunning in het kader van verruimde gezinshereniging worden verstrekt. \r\nEen belangrijke voorwaarde voor verruimde gezinshereniging is dat deze familieleden al in het land van herkomst tot het gezin behoorden en dat achterlating van deze familieleden naar het oordeel van de staatssecretaris van Justitie van een onevenredige hardheid zou zijn. \r\nGezinshereniging volgt vaak op arbeidsmigratie of asielmigratie. \r\n\r\nGezinsvorming betreft de vestiging in Nederland van personen die hier komen om te trouwen, een partnerschap af te sluiten, of te gaan samenwonen met een al in Nederland wonende partner, met wie betrokkene nooit eerder in Nederland heeft samengewoond. \r\nMeegekomen gezinsleden zijn gezinsleden (bijvoorbeeld van een arbeidsmigrant) die zich voegen bij een persoon die gelijktijdig of eerder naar Nederland is gekomen of in Nederland is geboren.\r\n",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A049130",
+          "Index": 6,
+          "Title": "Gezin: gezinsvorming",
+          "Description": "",
+          "DimensionGroupId": "11"
+        },
+        {
+          "Identifier": "A049131",
+          "Index": 7,
+          "Title": "Gezin: gezinshereniging",
+          "Description": "",
+          "DimensionGroupId": "11"
+        },
+        {
+          "Identifier": "A052714",
+          "Index": 8,
+          "Title": "Gezin: meegekomen met arbeid",
+          "Description": "Gezinsmigranten (gezinsherenigers of gezinsvormers) die zich bij een immigrant voegen die gelijktijdig of eerder naar Nederland is gekomen (de referent). De referent is vanwege motief arbeid naar Nederland gekomen. \r\nHet gaat om ouders, kinderen en partners van arbeidsmigranten, zij vormen bij aanvang van de migratie van de gezinsmigrant samen een huishouden.\r\n",
+          "DimensionGroupId": "12"
+        },
+        {
+          "Identifier": "A052715",
+          "Index": 9,
+          "Title": "Gezin: meegekomen met studie",
+          "Description": "Gezinsmigranten (gezinsherenigers of gezinsvormers) die zich bij een immigrant voegen die gelijktijdig of eerder naar Nederland is gekomen (de referent). De referent is vanwege motief studie naar Nederland gekomen. \r\nHet gaat om ouders, kinderen en partners van studiemigranten, zij vormen bij aanvang van de migratie van de gezinsmigrant samen een huishouden.\r\n\r\n",
+          "DimensionGroupId": "12"
+        },
+        {
+          "Identifier": "A052716",
+          "Index": 10,
+          "Title": "Gezin: meegekomen met asiel",
+          "Description": "Gezinsmigranten (gezinsherenigers of gezinsvormers) die zich bij een immigrant voegen die gelijktijdig of eerder naar Nederland is gekomen (de referent). De referent is vanwege motief asiel naar Nederland gekomen, de referent kan ook een nareizeger zijn. \r\nHet gaat om ouders, kinderen en partners van asielmigranten, zij vormen bij aanvang van de migratie van de gezinsmigrant samen een huishouden.\r\n\r\n",
+          "DimensionGroupId": "12"
+        },
+        {
+          "Identifier": "A052717",
+          "Index": 11,
+          "Title": "Gezin: overig",
+          "Description": "Gezinsmigranten (gezinsherenigers of gezinsvormers) die niet zijn meegekomen met een arbeids-, studie- of asielmigrant. Het kan hierbij gaan om een referent die gelijktijdig of eerder vanwege een ander motief naar Nederland is gekomen of om een referent die geen migratiemotief heeft. Dat laatste is het geval voor immigranten die vóór 1999 naar Nederland zijn geïmmigreerd en voor personen die in Nederland zijn geboren.",
+          "DimensionGroupId": "12"
+        },
+        {
+          "Identifier": "A009233",
+          "Index": 12,
+          "Title": "Asiel: totaal",
+          "Description": "Een asielzoeker, statushouder, uitgenodigde vluchteling of nareiziger die is opgenomen in het gemeentelijk bevolkingsregister.\r\n\r\nNiet iedereen die een asielverzoek indient wordt tot Nederland toegelaten en als immigrant in de gemeentelijke bevolkingsregisters ingeschreven. \r\nAsielmigranten die mogen blijven worden meestal pas enige tijd na indiening van hun asielverzoek ingeschreven in de gemeentelijke bevolkingsregisters. \r\nInschrijving in het gemeentelijke bevolkingsregister vindt plaats op het moment dat de asielzoeker een verblijfstitel krijgt. Ook asielzoekers die langer dan een half jaar in een centrale opvangvoorziening verblijven komen in aanmerking voor inschrijving in de gemeentelijke bevolkingsregisters. \r\n\r\nGezinsleden van asielmigranten die géén gebruikmaken van de nareisregeling kunnen in aanmerking komen voor reguliere gezinshereniging (Verblijfsvergunning voor partner aanvragen | IND). In de CBS-cijfers over migratiemotieven vallen ze onder de categorie Gezinsmigratie.\r\n\r\n",
+          "DimensionGroupId": "8"
+        },
+        {
+          "Identifier": "A052712",
+          "Index": 13,
+          "Title": "Asiel (exclusief nareis)",
+          "Description": "Een asielzoeker, statushouder of uitgenodigde vluchteling die is opgenomen in het gemeentelijk bevolkingsregister.\r\n\r\nNiet iedereen die een asielverzoek indient wordt tot Nederland toegelaten en als immigrant in de gemeentelijke bevolkingsregisters ingeschreven. Asielmigranten die in Nederland mogen blijven worden meestal pas enige tijd na indiening van hun asielverzoek ingeschreven in de gemeentelijke bevolkingsregisters. Inschrijving in het gemeentelijke bevolkingsregister vindt plaats op het moment dat de asielzoeker een verblijfsvergunning krijgt. Ook asielzoekers die langer dan een half jaar in een centrale opvangvoorziening verblijven komen in aanmerking voor inschrijving in de gemeentelijke bevolkingsregisters. Nareizigers vallen niet onder deze groep, zie daarvoor 'Asiel: nareis'.\r\n\r\n\r\n",
+          "DimensionGroupId": "8"
+        },
+        {
+          "Identifier": "A052713",
+          "Index": 14,
+          "Title": "Asiel: nareis",
+          "Description": "Gezinslid van een asielmigrant die gebruikmaakt van de zogenoemde nareisregeling (Nareizigers | IND). \r\nDeze gezinsleden ontvangen vervolgens een afgeleide asielvergunning. \r\n\r\nGezinsleden van asielmigranten die géén gebruikmaken van de nareisregeling kunnen in aanmerking komen voor reguliere gezinshereniging (Verblijfsvergunning voor partner aanvragen | IND). In de CBS-cijfers over migratiemotieven vallen ze onder de categorie Gezinsmigratie.\r\n\r\n",
+          "DimensionGroupId": "8"
+        },
+        {
+          "Identifier": "A009235",
+          "Index": 15,
+          "Title": "Studie",
+          "Description": "Immigratie van niet-Nederlanders met als doel in Nederland een studie te gaan volgen aan een instelling voor voortgezet onderwijs, beroepsonderwijs of hoger onderwijs / universiteit. \r\nBelangrijkste voorwaarden zijn dat de student (voorlopig) is ingeschreven aan een door de Nederlandse overheid aangewezen onderwijsinstelling en dat de studie een dagopleiding betreft.",
+          "DimensionGroupId": "14"
+        },
+        {
+          "Identifier": "A052135",
+          "Index": 16,
+          "Title": "Tijdelijke bescherming",
+          "Description": "",
+          "DimensionGroupId": "16"
+        },
+        {
+          "Identifier": "A009238",
+          "Index": 17,
+          "Title": "Overige migratiemotieven",
+          "Description": "Het gaat hierbij om bijvoorbeeld economisch niet-actieven en mensen die naar Nederland komen voor een medische behandeling.",
+          "DimensionGroupId": "18"
+        }
+      ]
+    },
+    {
+      "Identifier": "SociaaleconomischeCategorie",
+      "Title": "Sociaaleconomische categorie",
+      "Description": "",
+      "MapYear": null,
+      "ReleasePolicy": null,
+      "Kind": "Dimension",
+      "DimensionGroups": [],
+      "CodeList": [
+        {
+          "Identifier": "T001083",
+          "Index": 1,
+          "Title": "Totaal",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "2016850",
+          "Index": 2,
+          "Title": "Werknemer en zelfstandige",
+          "Description": "Persoon met hoofdzakelijk inkomen uit arbeid of inkomen uit onderneming.\r\n\r\nDe inkomenspositie van een persoon is bepaald aan de hand van de bron van het inkomen dat een persoon op het peilmoment heeft. ",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "2017150",
+          "Index": 3,
+          "Title": "Uitkerings- en pensioenontvanger",
+          "Description": "Persoon met als voornaamste inkomensbron een sociale zekerheidsuitkering (in het kader van werkloosheid, arbeidsongeschiktheid, bijstand of overige sociale voorzieningen) of  pensioen.\r\n\r\nDe inkomenspositie van een persoon is bepaald aan de hand van de bron van het inkomen dat een persoon op het peilmoment heeft. ",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "2017570",
+          "Index": 4,
+          "Title": "(School)kind of student",
+          "Description": "Persoon van 0 tot en met 4 jaar die nog niet schoolgaand is of een persoon die ingeschreven staat bij een onderwijsinstelling als voltijdsonderwijsvolgende. Als een persoon voltijdonderwijs volgt en daarbij een inkomen boven de lage inkomensgrens heeft, wordt deze persoon ingedeeld naar die voornaamste inkomensbron. Ze worden dan niet meegeteld als scholier/student.",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "2017550",
+          "Index": 5,
+          "Title": "Overige (zonder inkomen)",
+          "Description": "Een persoon die geen persoonlijk inkomen heeft en geen voltijdsonderwijs volgt.\r\n\r\nDe inkomenspositie van een persoon is bepaald aan de hand van de bron van het inkomen dat een persoon op het peilmoment heeft. ",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "2820723",
+          "Index": 6,
+          "Title": "Nog niet bekend",
+          "Description": "Nog niet bekend, persoon wel in Nederland aanwezig\r\n\r\nDe sociaal economische categorie van de persoon is (nog) onbekend.",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "2017578",
+          "Index": 7,
+          "Title": "Niet meer aanwezig in Nederland",
+          "Description": "De immigrant is niet meer aanwezig in Nederland. ",
+          "DimensionGroupId": null
+        }
+      ]
+    },
+    {
+      "Identifier": "Nationaliteit",
+      "Title": "Nationaliteit",
+      "Description": "",
+      "MapYear": null,
+      "ReleasePolicy": null,
+      "Kind": "Dimension",
+      "DimensionGroups": [
+        {
+          "Id": "19",
+          "Index": 0,
+          "Title": "Totalen",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "20",
+          "Index": 1,
+          "Title": "Totaal",
+          "Description": "",
+          "ParentId": "19"
+        },
+        {
+          "Id": "21",
+          "Index": 2,
+          "Title": "Werelddelen",
+          "Description": "",
+          "ParentId": "19"
+        },
+        {
+          "Id": "22",
+          "Index": 3,
+          "Title": "Per nationaliteit",
+          "Description": "",
+          "ParentId": null
+        },
+        {
+          "Id": "23",
+          "Index": 4,
+          "Title": "Per nationaliteit",
+          "Description": "",
+          "ParentId": "22"
+        }
+      ],
+      "CodeList": [
+        {
+          "Identifier": "T001059",
+          "Index": 1,
+          "Title": "Totaal",
+          "Description": "Inclusief Nederlands en zonder / onbekend. \r\n\r\nNederlands: \r\nNederlands en behandeld als Nederlander. \r\n\r\nBehandeld als Nederlander: \r\nBijvoorbeeld Molukkers die, op grond van de Faciliteitenwet Molukkers, waarin wordt bepaald dat zij - als ze niet het Nederlanderschap bezitten (maar Indonesiër of staatloos zijn) - worden behandeld als waren zij Nederlander. Ze zijn dus geen vreemdelingen in de zin van de Vreemdelingenwet maar ook geen Nederlander in de zin van de Rijkswet op het Nederlanderschap. Wel kunnen ze een normaal Nederlands paspoort verkrijgen. \r\n\r\nZonder / onbekend: \r\nPersonen die door geen enkele staat als onderdaan worden beschouwd of van wie de nationaliteit niet kan worden vastgesteld.",
+          "DimensionGroupId": "20"
+        },
+        {
+          "Identifier": "NAT9269",
+          "Index": 2,
+          "Title": "Afrika",
+          "Description": "",
+          "DimensionGroupId": "21"
+        },
+        {
+          "Identifier": "NAT9270",
+          "Index": 3,
+          "Title": "Amerika",
+          "Description": "",
+          "DimensionGroupId": "21"
+        },
+        {
+          "Identifier": "NAT9271",
+          "Index": 4,
+          "Title": "Azië",
+          "Description": "",
+          "DimensionGroupId": "21"
+        },
+        {
+          "Identifier": "NAT9272",
+          "Index": 5,
+          "Title": "Europa (exclusief Nederlands)",
+          "Description": "Inclusief personen 'Behandeld als Nederlander'.\r\nBijvoorbeeld Molukkers die, op grond van de Faciliteitenwet Molukkers, worden behandeld als waren zij Nederlander indien ze niet het Nederlanderschap bezitten (maar Indonesiër of staatloos zijn). Ze zijn dus geen vreemdelingen in de zin van de Vreemdelingenwet maar ook geen Nederlander in de zin van de Rijkswet op het Nederlanderschap. Wel kunnen ze een normaal Nederlands paspoort verkrijgen.",
+          "DimensionGroupId": "21"
+        },
+        {
+          "Identifier": "NAT9274",
+          "Index": 6,
+          "Title": "Oceanië",
+          "Description": "",
+          "DimensionGroupId": "21"
+        },
+        {
+          "Identifier": "NAT9278",
+          "Index": 7,
+          "Title": "Afghaans",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9281",
+          "Index": 8,
+          "Title": "Amerikaans",
+          "Description": "Amerikaans burger en Amerikaans onderdaan.",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9287",
+          "Index": 9,
+          "Title": "Australisch",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9300",
+          "Index": 10,
+          "Title": "Braziliaans",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9301",
+          "Index": 11,
+          "Title": "Brits",
+          "Description": "Sinds 31 januari 2020 heeft het Verenigd Koninkrijk de Europese Unie verlaten. Voor het gehele jaar 2020 is Verenigd Koninkrijk nog beschouwd als EU land. In deze tabel zijn cijfers over personen afkomstig uit het Verenigd Koninkrijk vanaf 2021 beschikbaar.\r\n\r\nBrits:\r\nBrits burger, Brits onderdaan, Brits overzees burger, Burger Britse afhankelijke gebieden en British National (overseas).\r\n\r\nEuropese Unie: \r\nSamenwerkingsverband van Europese staten. ",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9303",
+          "Index": 12,
+          "Title": "Bulgaars",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9307",
+          "Index": 13,
+          "Title": "Canadees",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9310",
+          "Index": 14,
+          "Title": "Chinees",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9326",
+          "Index": 15,
+          "Title": "Eritrees",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9330",
+          "Index": 16,
+          "Title": "Filippijns",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9345",
+          "Index": 17,
+          "Title": "Hongaars",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9348",
+          "Index": 18,
+          "Title": "Indiaas",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9349",
+          "Index": 19,
+          "Title": "Indonesisch",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9350",
+          "Index": 20,
+          "Title": "Iraaks",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9351",
+          "Index": 21,
+          "Title": "Iraans",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9356",
+          "Index": 22,
+          "Title": "Japans",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9372",
+          "Index": 23,
+          "Title": "Lets",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9377",
+          "Index": 24,
+          "Title": "Litouws",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9387",
+          "Index": 25,
+          "Title": "Marokkaans",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9406",
+          "Index": 26,
+          "Title": "Oekraïens",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9415",
+          "Index": 27,
+          "Title": "Pools",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9417",
+          "Index": 28,
+          "Title": "Roemeens",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9418",
+          "Index": 29,
+          "Title": "Russisch",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9436",
+          "Index": 30,
+          "Title": "Slowaaks",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9438",
+          "Index": 31,
+          "Title": "Somalisch",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9442",
+          "Index": 32,
+          "Title": "Surinaams",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9444",
+          "Index": 33,
+          "Title": "Syrisch",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9458",
+          "Index": 34,
+          "Title": "Turks",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9470",
+          "Index": 35,
+          "Title": "Zuid-Afrikaans",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9471",
+          "Index": 36,
+          "Title": "Zuid-Koreaans",
+          "Description": "",
+          "DimensionGroupId": "23"
+        },
+        {
+          "Identifier": "NAT9480",
+          "Index": 37,
+          "Title": "Staatloos / onbekend",
+          "Description": "Personen die door geen enkele staat als onderdaan worden beschouwd of van wie de nationaliteit niet kan worden vastgesteld.",
+          "DimensionGroupId": "20"
+        },
+        {
+          "Identifier": "NAT9999",
+          "Index": 38,
+          "Title": "Overige nationaliteiten",
+          "Description": "Overige niet elders genoemde nationaliteiten.",
+          "DimensionGroupId": "23"
+        }
+      ]
+    },
+    {
+      "Identifier": "Verblijfsduur",
+      "Title": "Verblijfsduur",
+      "Description": "",
+      "MapYear": null,
+      "ReleasePolicy": null,
+      "Kind": "Dimension",
+      "DimensionGroups": [],
+      "CodeList": [
+        {
+          "Identifier": "A027954",
+          "Index": 1,
+          "Title": "1 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027955",
+          "Index": 2,
+          "Title": "2 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027956",
+          "Index": 3,
+          "Title": "3 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027957",
+          "Index": 4,
+          "Title": "4 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027958",
+          "Index": 5,
+          "Title": "5 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027959",
+          "Index": 6,
+          "Title": "6 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027960",
+          "Index": 7,
+          "Title": "7 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027961",
+          "Index": 8,
+          "Title": "8 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027962",
+          "Index": 9,
+          "Title": "9 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027963",
+          "Index": 10,
+          "Title": "10 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027964",
+          "Index": 11,
+          "Title": "11 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027965",
+          "Index": 12,
+          "Title": "12 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027966",
+          "Index": 13,
+          "Title": "13 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027967",
+          "Index": 14,
+          "Title": "14 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027968",
+          "Index": 15,
+          "Title": "15 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027969",
+          "Index": 16,
+          "Title": "16 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027970",
+          "Index": 17,
+          "Title": "17 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027971",
+          "Index": 18,
+          "Title": "18 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027972",
+          "Index": 19,
+          "Title": "19 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027973",
+          "Index": 20,
+          "Title": "20 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027974",
+          "Index": 21,
+          "Title": "21 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027975",
+          "Index": 22,
+          "Title": "22 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027976",
+          "Index": 23,
+          "Title": "23 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027977",
+          "Index": 24,
+          "Title": "24 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027978",
+          "Index": 25,
+          "Title": "25 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        },
+        {
+          "Identifier": "A027979",
+          "Index": 26,
+          "Title": "26 jaar",
+          "Description": "",
+          "DimensionGroupId": null
+        }
+      ]
+    },
+    {
+      "CodeList": [
+        {
+          "Status": "Definitief",
+          "Identifier": "1999JJ00",
+          "Index": 1,
+          "Title": "1999 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2000JJ00",
+          "Index": 2,
+          "Title": "2000 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2001JJ00",
+          "Index": 3,
+          "Title": "2001",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2002JJ00",
+          "Index": 4,
+          "Title": "2002 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2003JJ00",
+          "Index": 5,
+          "Title": "2003",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2004JJ00",
+          "Index": 6,
+          "Title": "2004 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2005JJ00",
+          "Index": 7,
+          "Title": "2005 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2006JJ00",
+          "Index": 8,
+          "Title": "2006",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2007JJ00",
+          "Index": 9,
+          "Title": "2007 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2008JJ00",
+          "Index": 10,
+          "Title": "2008",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2009JJ00",
+          "Index": 11,
+          "Title": "2009",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2010JJ00",
+          "Index": 12,
+          "Title": "2010 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2011JJ00",
+          "Index": 13,
+          "Title": "2011",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2012JJ00",
+          "Index": 14,
+          "Title": "2012 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2013JJ00",
+          "Index": 15,
+          "Title": "2013 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2014JJ00",
+          "Index": 16,
+          "Title": "2014 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2015JJ00",
+          "Index": 17,
+          "Title": "2015 ",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2016JJ00",
+          "Index": 18,
+          "Title": "2016",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2017JJ00",
+          "Index": 19,
+          "Title": "2017",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2018JJ00",
+          "Index": 20,
+          "Title": "2018",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2019JJ00",
+          "Index": 21,
+          "Title": "2019",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2020JJ00",
+          "Index": 22,
+          "Title": "2020",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2021JJ00",
+          "Index": 23,
+          "Title": "2021",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2022JJ00",
+          "Index": 24,
+          "Title": "2022",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2023JJ00",
+          "Index": 25,
+          "Title": "2023",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2024JJ00",
+          "Index": 26,
+          "Title": "2024",
+          "Description": "",
+          "DimensionGroupId": "0"
+        },
+        {
+          "Status": "Definitief",
+          "Identifier": "2025JJ00",
+          "Index": 27,
+          "Title": "2025",
+          "Description": "",
+          "DimensionGroupId": "0"
+        }
+      ],
+      "Identifier": "JaarVanImmigratie",
+      "Title": "Jaar van immigratie",
+      "Description": "",
+      "MapYear": null,
+      "ReleasePolicy": true,
+      "Kind": "TimeDimension",
+      "DimensionGroups": [
+        {
+          "Id": "0",
+          "Index": 0,
+          "Title": "Jaren",
+          "Description": null,
+          "ParentId": null
+        }
+      ]
+    }
+  ],
+  "Distributions": [
+    {
+      "Format": "csv",
+      "MediaType": "csv",
+      "Language": "nl"
+    },
+    {
+      "Format": "odata",
+      "MediaType": "odata",
+      "Language": "nl"
+    }
+  ],
+  "License": "https://creativecommons.org/licenses/by/4.0/",
+  "Source": "CBS.",
+  "Summary": "Immigranten met een niet EU/EFTA nationaliteit naar geslacht, leeftijd,\nverblijfsduur, migratiemotief en sociaaleconomische categorie",
+  "LongDescription": "INHOUDSOPGAVE\r\n\r\n1. Toelichting\r\n2. Definities en verklaring van symbolen\r\n3. Koppelingen naar relevante tabellen en artikelen\r\n4. Bronnen en methoden\r\n5. Meer informatie \r\n\r\n1. TOELICHTING\r\n\r\nDeze tabel bevat cijfers over immigranten met een nationaliteit van een land buiten de EU of EFTA die naar Nederland zijn gekomen. \r\nDe gegevens zijn uitgesplitst naar geslacht, leeftijdsgroep, migratiemotief, nationaliteit, sociaaleconomische categorie en verblijfsduur.\r\nHet migratiemotief van immigranten uit niet-EU/EFTA-landen is gebaseerd op de vergunning aan de immigrant door de Immigratie- en Naturalisatiedienst (IND).\r\n\r\nIn deze tabel zijn alleen immigranten opgenomen die op het moment van immigratie de nationaliteit hadden van landen die op dat moment niet tot de Europese Unie (EU) of de European Free Trade Association (EFTA). Immigranten van buiten de EU/EFTA hebben een verblijfsvergunning van de IND nodig.\r\nImmigranten uit landen die in de periode 1999-2025 tot de EU of EFTA zijn toegetreden, zijn in deze tabel opgenomen als het jaar van immigratie voor het jaar van toetreding ligt.\r\nHoewel het Verenigd Koninkrijk vanaf 31 januari 2020 de Europese Unie heeft verlaten, bleef door een terugtrekkingsakkoord vrij verkeer van personen mogelijk tot en met 31 december 2020. In deze tabel zijn immigranten uit het Verenigd Koninkrijk daarom pas vanaf 1 januari 2021 opgenomen.   \r\n\r\nIn deze tabel wordt voor alle niet-EU/EFTA-immigranten elk jaar na hun binnenkomst in Nederland gekeken of ze nog in Nederland wonen en tot wat voor sociaaleconomische categorie zij behoren. Dit gebeurt steeds op dezelfde datum. Dus voor iemand die in Nederland is komen wonen op 12 februari 1999, wordt op 12 februari 2000 gekeken of deze persoon er nog is en wordt informatie gegeven over zijn/haar sociaaleconomische categorie. De selectie Verblijfsduur toont voor alle jaren het oorspronkelijke aantal immigranten dat in het jaar van immigratie naar Nederland kwam. Via de selectie Sociaaleconomische categorie is te zien of iemand nog aanwezig is en wat zijn/haar belangrijkste inkomensbron is. \r\n\r\nDe variabele Migratiemotief is uitgebreid met een categorie ‘Tijdelijke bescherming’. Hieronder vallen personen die na de start van de oorlog in Oekraïne op 24 februari 2022 naar Nederland zijn gevlucht en hier bescherming hebben aangevraagd. Zij hoeven niet de officiële asielprocedure van de IND te doorlopen maar vallen onder de Europese Richtlijn Tijdelijke Bescherming. \r\nZie ook:\r\nIND-proces voor vluchtelingen uit Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN) \r\nRichtlijn Tijdelijke Bescherming Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN)  \r\n\r\nBinnen de statistiek migratiemotieven hanteert het CBS bij de immigratie van niet EU/EFTA-onderdanen een onderscheid van arbeidsmigratie in twee subcategorieën: kennis en overige arbeidsmigratie. Tot en met de update in 2021 bestempelde het CBS alleen de IND-kennismigrantenregeling als kennismigratie, alle overige regelingen op het gebied van arbeidsmigratie werden als overige arbeidsmigratie getypeerd. \r\nVanaf de update in 2022 worden ook de andere regelingen die met de kennismigrantenregeling samenhangen getypeerd als kennis. Hieronder vallen bijvoorbeeld ook de regelingen voor zelfstandigen, wetenschappelijk onderzoekers en potentiële kennismigranten. Dit betekent dat met ingang van de update in 2022 voor alle verslagjaren in deze tabel de onderverdeling van arbeidsmigranten in kennis en overige arbeidsmigranten is aangepast. Hierdoor zijn de cijfers over deze twee typen arbeidsmigranten vanaf de update in 2022 niet zonder meer vergelijkbaar met cijfers die tot en met de update in 2021 zijn gepubliceerd. \r\n\r\nGegevens beschikbaar vanaf: 1999\r\n\r\nStatus van de cijfers: \r\nDe cijfers in deze tabel zijn voorlopig.\r\nIn de cijfers over de voorgaande perioden is later bekend geworden informatie verwerkt. Hierdoor zijn kleine afwijkingen met eerder gepubliceerde cijfers mogelijk.\r\n\r\nWijzigingen per 30 juni 2026:\r\nDe voorlopige cijfers over 2025 zijn toegevoegd.\r\nAan de immigratiejaren 1999 tot en met 2024 is een extra verblijfsduur toegevoegd;\r\n\r\nWanneer komen er nieuwe cijfers?\r\nDe cijfers over 2026 verschijnen in juni 2027.\r\n\r\n2. DEFINITIES EN VERKLARING VAN SYMBOLEN\r\n\r\nDefinities:\r\n\r\nAsiel\r\nIn deze tabel worden ook nareizigers tot de asielmigranten gerekend. \r\nNareizigers zijn gezinsleden van asielmigranten die gebruikmaken van de zogenoemde nareisregeling (Nareizigers / IND). Zie paragraaf 3.\r\nDeze gezinsleden ontvangen vervolgens een afgeleide asielvergunning. \r\nGezinsleden van asielmigranten die géén gebruikmaken van de nareisregeling kunnen in aanmerking komen voor reguliere gezinshereniging (Verblijfsvergunning voor partner aanvragen | IND). Zie paragraaf 3. In de CBS-cijfers over migratiemotieven vallen ze onder de categorie ‘Gezin’ / ‘Gezinshereniging’.\r\n\r\nEuropese Unie (EU) \r\nSamenwerkingsverband van Europese staten.\r\nDe Europese Unie bestaat uit de volgende landen: \r\nVanaf 1-1-1958: België, Bondsrepubliek Duitsland, Frankrijk, Italië, Luxemburg en Nederland. \r\nToegetreden op 1-1-1973: Denemarken, Ierland en Verenigd Koninkrijk. \r\nToegetreden op 1-1-1981: Griekenland. \r\nToegetreden op 1-1-1986: Portugal en Spanje. \r\nToegetreden op 1-1-1995: Oostenrijk, Finland en Zweden. \r\nToegetreden op 1-5-2004: Cyprus, Estland, Hongarije, Letland, Litouwen, Malta, Polen, Slowakije, Slovenië en Tsjechië. \r\nToegetreden op 1-1-2007: Bulgarije, Roemenië. \r\nToegetreden op 1-7-2013: Kroatië.\r\nVerlaten op 31-01-2020: Verenigd Koninkrijk.\r\n\r\nEFTA\r\nEuropese Vrijhandelsassociatie (EVA). \r\nDe Europese Vrijhandelsassociatie is een samenwerkingsverband tussen Liechtenstein, Noorwegen, IJsland en Zwitserland. \r\nDe associatie is beter bekend onder de Engelstalige afkorting EFTA.\r\n\r\nImmigrant\r\nVestiging van een persoon vanuit het buitenland in Nederland. \r\nOm als immigrant te kunnen worden geteld dient deze persoon ingeschreven te worden in de gemeentelijke bevolkingsregisters. \r\n\r\nJaar van immigratie\r\nJaar waarin de immigrant werd ingeschreven in de gemeentelijke bevolkingsregisters. \r\nDit kan afwijken van het jaar waarin een persoon een verblijfsvergunning van de IND ontving of het jaar waarin een persoon naar Nederland afreisde.\r\n\r\nLeeftijd\r\nHet aantal gehele jaren dat op het moment van immigratie van een persoon is verstreken sinds zijn of haar geboortedatum.\r\nDe leeftijd blijft gelijk over de gehele periode. \r\n\r\nMigratiemotief\r\nDe reden waarom een persoon naar een ander land verhuist.\r\nBron voor het migratiemotief is de eerst verleende vergunning aan de immigrant, deze informatie is afkomstig van de Immigratie- en Naturalisatiedienst (IND) van het ministerie van Justitie en Veiligheid. Bij de IND wordt per immigrant maar één migratiemotief vastgelegd. \r\nDeze tabel bevat het motief van de eerste migratiebeweging vanaf 1999. Als een persoon een tweede keer naar Nederland immigreert met een ander motief, komt deze persoon tweemaal in de tabel voor met hetzelfde (eerste) migratiemotief.\r\n\r\nNationaliteit\r\nHet wettelijk onderdaan zijn van een bepaalde staat (staatsburgerschap). \r\nIn deze tabel betreft het de nationaliteit op het moment van immigratie. De nationaliteit blijft gelijk over de gehele periode. \r\nPersonen kunnen meerdere nationaliteiten hebben. Om dubbeltellingen te voorkomen wordt in statistische overzichten aan personen die meerdere nationaliteiten hebben, slechts één nationaliteit toegekend. Daartoe worden prioriteringsregels gesteld. Die komen erop neer dat iemand met de Nederlandse nationaliteit in de statistiek steeds Nederlander is. \r\nVoor mensen die niet de Nederlandse nationaliteit bezitten, geldt de volgorde: nationaliteit van één van de Benelux-landen, nationaliteit van een staat binnen de Europese Unie, andere Europese nationaliteit, niet-Europese nationaliteit. Personen die geen nationaliteit hebben, zijn staatloos.\r\n\r\nSociaaleconomische categorie\r\nDe voornaamste sociaaleconomische activiteit vastgesteld op basis van de inkomensbron op het peilmoment.\r\n\r\nVerblijfsduur\r\nDe verblijfsduur geeft weer hoeveel hele jaren de persoon in Nederland is gevestigd.\r\nVerblijfsduur toont voor alle jaren het oorspronkelijke aantal immigranten dat in het jaar van immigratie naar Nederland kwam. \r\n\r\nVerklaring van symbolen:\r\n\r\nniets (blanco) : het cijfer kan op logische gronden niet voorkomen\r\n. : het cijfer is onbekend, onvoldoende betrouwbaar of geheim\r\n* : voorlopige cijfers\r\n** : nader voorlopige cijfers\r\n\r\nDe cijfers zijn afgerond op vijftallen. Hierdoor kan het voorkomen, dat de som van de detailgegevens afwijkt van het totaal.\r\n\r\n3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN\r\n\r\nRelevante tabellen:\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84808ned'>Immigranten (EU/EFTA); afgeleid migratiedoel, sociaaleconomische categorie</a>\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85905NED'>Bevolking op 31 december, immigranten EU/EFTA, afgeleid migratiedoel</a>\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85904NED'>Bevolking op 31 december, immigranten niet-EU/EFTA, migratiemotief</a>\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85912NED'>Werknemers op 31 december; immigranten EU/EFTA, afgeleid migratiedoel</a>\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85910NED'>Werknemers op 31 december, immigranten niet-EU/EFTA, migratiemotief</a>\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/60032'>Migratie; land van herkomst / vestiging, geboorteland, geslacht; 1995-2022</a>\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84484ned'>Immi- en emigratie; nationaliteit, leeftijd en geslacht, 1995-2022</a>\r\n<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/03742'>Immi- en emigratie; leeftijd (31 dec.), burg staat, geboorteland; 1995-2022</a>\r\n\r\nRelevante artikelen:\r\n<a href='https://www.cbs.nl/nl-nl/nieuws/2025/02/arbeidsmigrant-met-werkende-partner-blijft-steeds-vaker-in-nederland'>Arbeidsmigrant met werkende partner blijft steeds vaker in Nederland</a>\r\n<a href='https://www.cbs.nl/nl-nl/nieuws/2024/44/meeste-gezinsmigranten-blijven-in-nederland-wonen'>Meeste gezinsmigranten blijven in Nederland wonen</a>\r\n<a href='https://ind.nl/nl/oekraine/richtlijn-tijdelijke-bescherming-oekraine'>Richtlijn Tijdelijke Bescherming Oekraïne | IND</a>\r\n<a href='https://ind.nl/nl/verblijfsvergunningen/asiel/nareizigers'>Nareizigers | IND</a>\r\n<a href='https://ind.nl/nl/verblijfsvergunningen/familie-en-partner/verblijfsvergunning-voor-partner-aanvragen'>Verblijfsvergunning voor partner aanvragen | IND</a>\r\n\r\nMeer informatie is te vinden op de themapagina's <a href='https://www.cbs.nl/nl-nl/maatschappij/bevolking'>Bevolking</a> en <a href='https://www.cbs.nl/nl-nl/arbeid-en-inkomen/arbeid-en-sociale-zekerheid'>Arbeid en sociale zekerheid</a> en in het dossier <a href='https://www.cbs.nl/nl-nl/dossier/dossier-asiel-migratie-en-integratie'>Asiel, migratie en integratie</a>.\r\n\r\n4. BRONNEN EN METHODEN\r\n\r\nDe onderzoeksmethode van deze tabel is te vinden in de onderzoeksbeschrijving <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/statistiek-migratiemotieven'>Statistiek migratiemotieven</a>.\r\n\r\nOverige van toepassing zijnde onderzoeksbeschrijvingen:\r\n<a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/bevolkingsstatistiek'>Bevolkingsstatistiek</a>\r\n<a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksomschrijvingen/stelsel-van-sociaal-statistische-bestanden--ssb--'>Stelsel van Sociaal-statistische Bestanden (SSB)</a>\r\n\r\n</a>5. MEER INFORMATIE\r\n\r\n<a href='https://www.cbs.nl/nl-nl/over-ons/contact/infoservice'>Infoservice</a>\r\n\r\nCopyright (c) Centraal Bureau voor de Statistiek, Den Haag/Heerlen \r\nVerveelvoudiging is toegestaan, mits het CBS als bron wordt vermeld."
+}

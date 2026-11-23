@@ -1,0 +1,12 @@
+Id;Index;Title;Description;ParentId;DimensionId
+0;0;Hoofdgroepen;;;Nationaliteit
+1;1;Totaal;;0;Nationaliteit
+2;2;Totaal werelddelen;;0;Nationaliteit
+3;3;Europese Unie;;0;Nationaliteit
+4;4;Nationaliteiten per werelddeel;;;Nationaliteit
+5;5;Afrika;;4;Nationaliteit
+6;6;Amerika;;4;Nationaliteit
+7;7;Azië;;4;Nationaliteit
+8;8;Europa;;4;Nationaliteit
+9;9;Oceanië;;4;Nationaliteit
+10;10;Staatloos / onbekend;;4;Nationaliteit

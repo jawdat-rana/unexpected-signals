@@ -1,0 +1,8 @@
+Identifier;Title;Description;MapYear;ReleasePolicy;Kind;ContainsGroups;ContainsCodes;CodesUrl;GroupsUrl
+Geslacht;Geslacht;;;;Dimension;False;True;GeslachtCodes.csv;
+Leeftijd;Leeftijd;;;;Dimension;True;True;LeeftijdCodes.csv;LeeftijdGroups.csv
+Migratiemotief;Migratiemotief;;;;Dimension;True;True;MigratiemotiefCodes.csv;MigratiemotiefGroups.csv
+SociaaleconomischeCategorie;Sociaaleconomische categorie;;;;Dimension;False;True;SociaaleconomischeCategorieCodes.csv;
+Nationaliteit;Nationaliteit;;;;Dimension;True;True;NationaliteitCodes.csv;NationaliteitGroups.csv
+Verblijfsduur;Verblijfsduur;;;;Dimension;False;True;VerblijfsduurCodes.csv;
+JaarVanImmigratie;Jaar van immigratie;;;True;TimeDimension;True;True;JaarVanImmigratieCodes.csv;JaarVanImmigratieGroups.csv

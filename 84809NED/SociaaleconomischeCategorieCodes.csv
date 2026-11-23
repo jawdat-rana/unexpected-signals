@@ -1,0 +1,16 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+T001083;;SociaaleconomischeCategorie;1;Totaal;
+2016850;;SociaaleconomischeCategorie;2;Werknemer en zelfstandige;"Persoon met hoofdzakelijk inkomen uit arbeid of inkomen uit onderneming.
+
+De inkomenspositie van een persoon is bepaald aan de hand van de bron van het inkomen dat een persoon op het peilmoment heeft. "
+2017150;;SociaaleconomischeCategorie;3;Uitkerings- en pensioenontvanger;"Persoon met als voornaamste inkomensbron een sociale zekerheidsuitkering (in het kader van werkloosheid, arbeidsongeschiktheid, bijstand of overige sociale voorzieningen) of  pensioen.
+
+De inkomenspositie van een persoon is bepaald aan de hand van de bron van het inkomen dat een persoon op het peilmoment heeft. "
+2017570;;SociaaleconomischeCategorie;4;(School)kind of student;Persoon van 0 tot en met 4 jaar die nog niet schoolgaand is of een persoon die ingeschreven staat bij een onderwijsinstelling als voltijdsonderwijsvolgende. Als een persoon voltijdonderwijs volgt en daarbij een inkomen boven de lage inkomensgrens heeft, wordt deze persoon ingedeeld naar die voornaamste inkomensbron. Ze worden dan niet meegeteld als scholier/student.
+2017550;;SociaaleconomischeCategorie;5;Overige (zonder inkomen);"Een persoon die geen persoonlijk inkomen heeft en geen voltijdsonderwijs volgt.
+
+De inkomenspositie van een persoon is bepaald aan de hand van de bron van het inkomen dat een persoon op het peilmoment heeft. "
+2820723;;SociaaleconomischeCategorie;6;Nog niet bekend;"Nog niet bekend, persoon wel in Nederland aanwezig
+
+De sociaal economische categorie van de persoon is (nog) onbekend."
+2017578;;SociaaleconomischeCategorie;7;Niet meer aanwezig in Nederland;De immigrant is niet meer aanwezig in Nederland. 

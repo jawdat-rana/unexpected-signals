@@ -1,0 +1,68 @@
+Identifier;MeasureGroupId;Index;Title;Description;DataType;Unit;Decimals;PresentationType
+M000167;;5;Immigratie;"Vestiging van personen vanuit het buitenland in Nederland. 
+Om als immigrant te kunnen worden geteld dienen deze personen ingeschreven te worden in de gemeentelijke bevolkingsregisters.
+Men wordt ingeschreven als men verwacht minimaal vier maanden in Nederland te blijven. 
+";Long;aantal;0;Absolute
+M000168;;6;Emigratie inclusief administratieve c...;"Emigratie inclusief het saldo van de administratieve correcties.
+Cijfers over emigratie inclusief het saldo van de administratieve correcties geven een beter beeld van de werkelijke emigratie dan cijfers over emigratie exclusief deze correcties.
+
+Emigratie:
+Vertrek van personen naar het buitenland.
+Verwijdering van een persoon uit het gemeentelijk bevolkingsregisters vindt plaats als de verwachte verblijfsduur in het buitenland ten minste acht maanden bedraagt. 
+Het gaat hier steeds om de aan de gemeente gemelde emigratie.
+
+Saldo administratieve correcties:
+Administratieve opnemingen minus administratieve afvoeringen.
+
+Administratieve opneming:
+Opneming van een persoon in de bevolkingsregisters van een gemeente op verzoek van de betrokkene. Deze opneming is niet het gevolg van geboorte, immigratie of vestiging van die persoon vanuit een andere gemeente in Nederland. 
+Een administratieve opneming is meestal een hervestiging van een persoon die eerder administratief is afgevoerd en die verklaart nooit uit Nederland te zijn weggeweest.
+
+Administratieve afvoering:
+Verwijdering van een persoon uit het gemeentelijke bevolkingsregister van een gemeente nadat de gemeente heeft vastgesteld dat de verblijfplaats van deze persoon niet bekend is, deze persoon niet bereikbaar is en waarschijnlijk geen inwoner meer is van een Nederlandse gemeente.
+Een administratieve afvoering is meestal het gevolg van het vertrek van een persoon naar het buitenland zonder dat deze de gemeente hiervan op de hoogte heeft gesteld.
+
+";Long;aantal;0;Absolute
+M000244;;7;Migratiesaldo inclusief administratie...;"Migratiesaldo inclusief het saldo van de administratieve correcties.
+Cijfers over het migratiesaldo inclusief het saldo van de administratieve correcties geven een beter beeld van het werkelijke migratiesaldo dan cijfers over het migratiesaldo exclusief deze correcties.
+
+Migratiesaldo:
+Personen die zich in Nederland vestigen min inwoners die Nederland verlaten om zich buiten Nederland te vestigen. 
+
+Saldo administratieve correcties:
+Administratieve opnemingen in de gemeentelijke bevolkingsregisters min de administratieve afvoeringen uit de gemeentelijke bevolkingsregisters.
+
+Administratieve opneming:
+Opneming van een persoon in de bevolkingsregisters van een gemeente op verzoek van de betrokkene. Deze opneming is niet het gevolg van geboorte, immigratie of vestiging van die persoon vanuit een andere gemeente in Nederland. 
+Een administratieve opneming is meestal een hervestiging van een persoon die eerder administratief is afgevoerd en die verklaart nooit uit Nederland te zijn weggeweest.
+
+Administratieve afvoering:
+Verwijdering van een persoon uit het gemeentelijke bevolkingsregister van een gemeente nadat de gemeente heeft vastgesteld dat de verblijfplaats van deze persoon niet bekend is, deze persoon niet bereikbaar is en waarschijnlijk geen inwoner meer is van een Nederlandse gemeente.
+Een administratieve afvoering is meestal het gevolg van het vertrek van een persoon naar het buitenland zonder dat deze de gemeente hiervan op de hoogte heeft gesteld.
+
+
+
+";Long;aantal;0;Absolute
+M000094;;8;Administratieve opnemingen;"Opneming van een persoon in de bevolkingsregisters van een gemeente op verzoek van de betrokkene. Deze opneming is niet het gevolg van geboorte, immigratie of vestiging van die persoon vanuit een andere gemeente in Nederland. 
+Een administratieve opneming is meestal een hervestiging van een persoon die eerder administratief is afgevoerd en die verklaart nooit uit Nederland te zijn weggeweest.
+";Long;aantal;0;Absolute
+M000092;;9;Administratieve afvoeringen;"Verwijdering van een persoon uit het gemeentelijke bevolkingsregister van een gemeente nadat de gemeente heeft vastgesteld dat de verblijfplaats van deze persoon niet bekend is, deze persoon niet bereikbaar is en waarschijnlijk geen inwoner meer is van een Nederlandse gemeente.
+Een administratieve afvoering is meestal het gevolg van het vertrek van een persoon naar het buitenland zonder dat deze de gemeente hiervan op de hoogte heeft gesteld.
+
+
+
+";Long;aantal;0;Absolute
+M000140;;10;Saldo administratieve correcties;"Administratieve opnemingen in de gemeentelijke bevolkingsregisters min de administratieve afvoeringen uit de gemeentelijke bevolkingsregisters.
+
+Administratieve opneming:
+Opneming van een persoon in de bevolkingsregisters van een gemeente op verzoek van de betrokkene. Deze opneming is niet het gevolg van geboorte, immigratie of vestiging van die persoon vanuit een andere gemeente in Nederland. 
+Een administratieve opneming is meestal een hervestiging van een persoon die eerder administratief is afgevoerd en die verklaart nooit uit Nederland te zijn weggeweest.
+
+Administratieve afvoering:
+Verwijdering van een persoon uit het gemeentelijke bevolkingsregister van een gemeente nadat de gemeente heeft vastgesteld dat de verblijfplaats van deze persoon niet bekend is, deze persoon niet bereikbaar is en waarschijnlijk geen inwoner meer is van een Nederlandse gemeente.
+Een administratieve afvoering is meestal het gevolg van het vertrek van een persoon naar het buitenland zonder dat deze de gemeente hiervan op de hoogte heeft gesteld.
+
+
+
+
+";Long;aantal;0;Absolute

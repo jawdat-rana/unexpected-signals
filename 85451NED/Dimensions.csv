@@ -1,0 +1,6 @@
+Identifier;Title;Description;MapYear;ReleasePolicy;Kind;ContainsGroups;ContainsCodes;CodesUrl;GroupsUrl
+Geslacht;Geslacht;;;;Dimension;False;True;GeslachtCodes.csv;
+Leeftijd;Leeftijd;;;;Dimension;False;True;LeeftijdCodes.csv;
+Nationaliteit;Nationaliteit;;;;Dimension;True;True;NationaliteitCodes.csv;NationaliteitGroups.csv
+RegioS;Regio's;;2021;;GeoDimension;True;True;RegioSCodes.csv;RegioSGroups.csv
+Perioden;Perioden;;;False;TimeDimension;True;True;PeriodenCodes.csv;PeriodenGroups.csv

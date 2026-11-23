@@ -1,0 +1,135 @@
+Identifier;Title;Description;Modified;ReleaseDate;ModificationDate;Language;TemporalCoverage;Authority;Catalog;Publisher;ContactPoint;Version;VersionNotes;VersionReason;Frequency;Status;ObservationCount;ObservationsModified;DatasetType;GraphTypes;License;Source;Summary;LongDescription
+82900NED;"Voorraad woningen; eigendom, type verhuurder, bewoning, regio, 2012-2025";"Deze tabel bevat gegevens over het eigendom van de voorraad woningen op 1 januari, samengesteld uit verschillende bronnen. Deze tabel geeft inzicht in het eigendom van de woningvoorraad naar koop- en huurwoningen. Huurwoningen worden verder onderverdeeld naar woningen in eigendom van woningcorporaties en woningen in eigendom van overige verhuurders. Daarnaast geeft deze tabel inzicht in de status van bewoning; onderverdeeld naar aantal bewoonde- en niet bewoonde woningen. De gegevens worden verder uitgesplitst naar landsdelen, provincies, COROP-gebieden en gemeenten.
+
+Gegevens beschikbaar van: peildatum 1 januari van 2012 tot en met 2025. 
+
+Status van de cijfers: 
+Definitief. 
+
+Wijzigingen per 17 augustus 2026:
+Geen, deze tabel is stopgezet na de publicatie van de cijfers over 2025. Deze tabel is opgevolgd door drie nieuwe tabellen (zie paragraaf 3).
+
+Wijziging per 9 november 2023 voor het jaar 2023 en correcties voor 2019 t/m 2022:
+In 2023 is geconstateerd dat de afleiding van huurwoningen in bezit van woningcorporaties voor de jaren 2019 t/m 2022 niet altijd correct is verlopen, waardoor bij enkele gemeenten in specifieke jaren het aantal huurwoningen in bezit van woningcorporaties is onderschat en het aantal huurwoningen in bezit van overige verhuurders is overschat. De cijfers van 2019 t/m 2022 zijn nu gecorrigeerd. 
+
+Wanneer komen er nieuwe cijfers?
+Niet meer van toepassing.
+
+
+
+";2026-08-17T00:00:00+02:00;2026-08-17T00:00:00+02:00;2026-08-17T00:00:00+02:00;nl;2012-2025;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;CBS;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;infoservice@cbs.nl;202608170000;;Stopgezet;Stopgezet;Gediscontinueerd;125496;2026-08-17T00:00:00+02:00;Numeric;Table,Bar,Line,Map;https://creativecommons.org/licenses/by/4.0/;CBS.;"Koopwoningen,huurwoningen; in bezit woningcorporatie, overige verhuurders
+Status bewoning; regio";"INHOUDSOPGAVE
+1. Toelichting
+2. Definities en verklaring van symbolen
+3. Koppelingen naar relevante tabellen en artikelen
+4. Bronnen en methoden
+5. Meer informatie 
+
+1. TOELICHTING
+Deze tabel bevat gegevens over het eigendom van de voorraad woningen op 1 januari, samengesteld uit verschillende bronnen. Deze tabel geeft inzicht in het eigendom van de woningvoorraad naar koop- en huurwoningen. Huurwoningen worden verder onderverdeeld naar woningen in eigendom van woningcorporaties en woningen in eigendom van overige verhuurders. Daarnaast geeft deze tabel inzicht in de status van bewoning; onderverdeeld naar aantal bewoonde- en niet bewoonde woningen. De gegevens worden verder uitgesplitst naar landsdelen, provincies, COROP-gebieden en gemeenten.
+
+Gegevens beschikbaar van: peildatum 1 januari van 2012 tot en met 2025. 
+
+Status van de cijfers: 
+Definitief. 
+
+Wijzigingen per 17 augustus 2026:
+Geen, deze tabel is stopgezet na de publicatie van de cijfers over 2025. Deze tabel is opgevolgd door drie nieuwe tabellen (zie paragraaf 3).
+
+Wijziging per 9 november 2023 voor het jaar 2023 en correcties voor 2019 t/m 2022:
+In 2023 is geconstateerd dat de afleiding van huurwoningen in bezit van woningcorporaties voor de jaren 2019 t/m 2022 niet altijd correct is verlopen, waardoor bij enkele gemeenten in specifieke jaren het aantal huurwoningen in bezit van woningcorporaties is onderschat en het aantal huurwoningen in bezit van overige verhuurders is overschat. De cijfers van 2019 t/m 2022 zijn nu gecorrigeerd. 
+
+Wanneer komen er nieuwe cijfers?
+Niet meer van toepassing.
+
+
+
+2. DEFINITIES EN VERKLARING VAN SYMBOLEN
+
+Definities:
+
+Woning
+De kleinste binnen één of meer panden gelegen en voor woondoeleinden geschikte eenheid van gebruik, ontsloten via een eigen toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte. Voorbeelden zijn vrijstaande woningen, eengezinswoningen, flat- of portiekwoningen, studentenhuizen. Alle verblijfsobjecten in de Basisregistratie Adressen en Gebouwen (BAG) met minimaal een woonfunctie en eventueel een of meer andere gebruiksfuncties worden als woning aangemerkt.
+
+Koopwoning
+Woningen die eigendom zijn van de (toekomstige) bewoner(s) of in gebruik zijn als tweede woning. Of waarbij de officiële partner van een overleden eigenaar in de woning woont.
+
+Huurwoning
+Woningen die niet bewoond worden door de eigenaar van de woning of niet in gebruik zijn als tweede woning. Hierbij gaat het om woningen waarvan het aannemelijk is dat de woning bestemd is voor de huurmarkt.
+
+Eigendom woningcorporaties
+Huurwoningen in eigendom van 'toegelaten instellingen volkshuisvesting'. Het betreft het aantal huurwoningen waarvan is vastgesteld dat de eigenaar een toegelaten instelling is. Het betreft niet het aantal sociale huurwoningen, omdat er alleen is vastgesteld wie de eigenaar is en er niet is gekeken naar de hoogte van de huurprijs. Toegelaten instellingen: woningbouwvereniging, woningstichting, woningcorporatie. Sociale huurwoningen: woningen met een huur onder de liberalisatiegrens.
+
+Eigendom overige verhuurders
+Een huurwoning in eigendom van onder andere bedrijven, particulieren en institutionele beleggers. Huurwoningen waarvan het eigendom wel kon worden vastgesteld, maar de eigenaar niet, vallen hier ook onder. Bedrijven: alle instellingen met een bedrijfsmatig karakter zoals bv's en nv's, zelfstandige ondernemers, makelaars en vastgoedhandelsmaatschappijen. Particulieren: alle natuurlijke personen. Institutionele beleggers: pensioenfondsen, beurs-, beleggings- en verzekeringsmaatschappijen.
+
+Eigendom onbekend
+Woningen waarvan het eigendom niet afgeleid kon worden op basis van diverse registraties zoals de Landelijke Voorziening WOZ (LV-WOZ), Basisregistratie Personen (BRP) en de Basisregistratie Kadaster (BRK).
+
+Bewoonde woningen
+Woningen waar op de peildatum 1 januari minimaal 1 persoon stond ingeschreven in de Gemeentelijke Basisadministratie persoonsgegevens (GBA), en vanaf 2014 de Basisregistratie Personen (BRP).
+
+Niet bewoonde woningen
+Woningen waar op de peildatum 1 januari niemand stond ingeschreven in de Gemeentelijke Basisadministratie persoonsgegevens (GBA), en vanaf 2014 de Basisregistratie Personen (BRP).
+
+Verklaring symbolen:
+
+niets (blanco)	: het cijfer kan op logische gronden niet voorkomen
+. 		: het cijfer is onbekend, onvoldoende betrouwbaar of geheim
+*		: voorlopige cijfers
+
+
+3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN
+
+Deze tabel is vanaf augustus 2026 stopgezet. We verwijzen naar de tabellen <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/86286NED'>Voorraad woningen; eigendom, type eigenaar, status van bewoning, regio</a>, <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/86287NED'>Voorraad huurwoningen; type eigenaar, portefeuille verhuurder, regio</a> en <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/86288NED'>Eigenaren huurwoningen; type eigenaar, portefeuille verhuurder</a>. Deze tabellen vervangen deze tabel, die per augustus 2026 is stopgezet, en bevatten meer informatie over de woningvoorraad, het type eigenaar, de voorraad huurwoningen en de eigenaren van huurwoningen.
+
+Gegevens over de woningvoorraad en -mutaties vanaf 2012 zijn te vinden in de tabel <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/81955NED'>Voorraad woningen en niet-woningen; mutaties, gebruiksfunctie, regio</a>.
+De cijfers in de tabel Voorraad woningen en niet-woningen komen nagenoeg overeen met de cijfers in de huidige tabel. De verschillen worden veroorzaakt door verschillende methodieken bij het bepalen van de gemeentecode van een woning.
+
+Gegevens over eigendom van de woningvoorraad op buurt- en postcodeniveau zijn te vinden in de volgende tabellen: <a href='https://www.cbs.nl/nl-nl/maatwerk/2023/51/woningvoorraad-mutaties-en-statusontwikkelingen-in-2022'>Woningvoorraad, mutaties en statusontwikkelingen in 2022</a>. 
+
+Gegevens over kenmerken van de woningvoorraad vanaf 1 januari 2012 zijn te vinden in de tabellen <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/82550NED'>Voorraad woningen; gemiddeld oppervlak, woningtype, bouwjaarklasse, regio</a> en <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83704NED'>Voorraad woningen; woningtype, oppervlakteklasse, regio</a>.
+
+Gegevens over eigendom van de woningvoorraad gebaseerd op het woningregister over de periode 2006 t/m 2012 zijn te vinden in de tabel <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/71446ned/table?ts=1571918761335'>Woningvoorraad naar eigendom; regio, 2006-2012</a>.
+
+Andere tabellen over woningen zijn te vinden op StatLine onder<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=82147'> Wonen, woningen en gebouwen</a>.
+
+De tabel over <a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85058NED'>Bewoonde woonruimten; soort woonruimte, regio</a> geeft inzicht in het aantal bewoonde woningen, niet-woningen en stand- en ligplaatsen in Nederland, maar ook bewoonde objecten die buiten deze registratie vallen. Er treden kleine verschillen op met de tabel bewoonde woningen vanwege twee redenen: 
+
+a)	Bij de tabel Bewoonde woonruimten wordt de stand van de bewoning op 31 december vastgesteld en bij de tabel Eigendom van de woningvoorraad gaat het om de stand van de bewoning op 1 januari.
+b)	De tabel Bewoonde woonruimten is afgerond op vijftallen en de tabel Eigendom van de woningvoorraad bevat geen afrondingen.
+
+Verschil tussen niet-bewoonde en leegstaande woningen.
+Deze tabel bevat gegevens over niet-bewoonde woningen. Niet-bewoonde woningen staat hier niet gelijk aan leegstand. Woningen kunnen ook op een andere manier gebruikt worden dan bewoning. Een verblijfsobject behorend tot de woningvoorraad volgens de BAG, staat administratief leeg als hier volgens de BRP geen persoon staat ingeschreven, én als er volgens het WOZ-register geen gebruiker is, én als er geen sprake is van inschrijving als bedrijf in het Handelsregister. Gegevens over administratieve leegstand zijn te vinden via de <a href='https://www.cbs.nl/nl-nl/maatwerk/2022/50/landelijke-monitor-leegstand-2022'>Landelijke monitor leegstand 2022</a>.
+
+Relevante artikelen:
+
+Meer informatie is te vinden op de pagina Bouwen en wonen.
+
+4. BRONNEN EN METHODEN
+
+De woningvoorraad wordt bepaald op basis van de Basisregistratie Adressen en Gebouwen (BAG). Voor de bepaling van het eigendom wordt gebruik gemaakt van de Basisregistratie Kadaster (BRK), de Landelijke Voorziening WOZ (LV-WOZ) en de Basisregistratie Personen (BRP). Voor de bepaling of de eigenaar een woningcorporatie is wordt gebruik gemaakt van gegevens afkomstig van de Autoriteit woningcorporaties (AW).
+
+De onderzoeksmethode van deze tabel is te vinden in de <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/eigendom-woningvoorraad'>Onderzoeksbeschrijving Eigendom woningvoorraad</a>.
+
+De onderzoeksmethode van de voorraad is te vinden in de <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/voorraad-woningen-en-niet-woningen'>Onderzoeksbeschrijving Voorraad woningen en niet-woningen</a>.
+
+De methoden voor het samenstellen van statistieken over (veranderingen in) de voorraad woningen en niet-woningen en de toegepaste correctiemethode voor dubbeltellingen zijn te vinden bij <a href='https://www.cbs.nl/nl-nl/deelnemers-enquetes/decentrale-overheden/vastgoed-overheden/basisregistraties-adressen-en-gebouwen--bag--'>Basisregistraties Adressen en Gebouwen.</a>
+   
+Aangepaste methode overleden eigenaren bij voorraadcijfers op 1-1-2018.
+Bij het bepalen van het eigendom van de voorraadstand 1-1-2018 is een aanpassing gedaan voor de onterechte registratie van overleden eigenaren. In het geval van overleden eigenaren werden woningen soms onterecht als huurwoning getypeerd, aangezien er iemand anders woont dan de geregistreerde eigenaar. Deze aanpassing is alleen doorgevoerd in de standgegevens van de woningvoorraad per 1-1-2018. Dit betekent, dat er een vertekening zit in de eigendomsverschuivingen tussen 1-1-2017 en 1-1-2018. In de voorraad woningen per 1-1-2018 zaten ruim 98 duizend objecten waarvan de eigenaar was overleden. Deze objecten werden door de methode aanvankelijk allemaal als huurwoning getypeerd. Door de aanpassing zijn daarvan ruim 63 duizend woningen alsnog getypeerd als koopwoning. Dit geeft in de eigendomsverschuivingen een vertekening van huurwoningen naar koopwoningen. 
+
+Nieuwe methode overleden eigenaren bij voorraadcijfers op 1-1-2019 en de jaren daarna.
+Ook bij de nieuwe methode waarmee cijfers zijn gemaakt vanaf het jaar 2019 is er rekening gehouden met overleden eigenaren. Hierbij is een nog iets nauwkeuriger aanpassing doorgevoerd dan in 2018. Hierbij is vastgesteld of de officiële partner nog in de woning woont. In die situaties wordt de woning als koopwoning getypeerd.
+
+Overige informatie over de vastgoedstatistieken is te vinden bij <a href='https://www.cbs.nl/nl-nl/deelnemers-enquetes/decentrale-overheden/overzicht/vastgoed'>vastgoed</a>.
+.
+
+5. MEER INFORMATIE
+
+<a href='https://www.cbs.nl/nl-nl/over-ons/contact/infoservice'>Infoservice</a>
+
+Copyright (c) Centraal Bureau voor de Statistiek, Den Haag/Heerlen 
+Verveelvoudiging is toegestaan, mits CBS als bron wordt vermeld.
+
+"

@@ -1,0 +1,11 @@
+Identifier;MeasureGroupId;Index;Title;Description;DataType;Unit;Decimals;PresentationType
+1050010_1;;3;Particuliere huishoudens;"Aantal particuliere huishoudens met vermogen per 1 januari van het verslagjaar.
+Een particulier huishouden bestaat uit één of meer personen die samen een woonruimte bewonen en zichzelf niet-bedrijfsmatig voorzien van de dagelijkse behoeften.";Double;x 1 000;1;Absolute
+1050010_2;;4;Particuliere huishoudens relatief ;Het percentage huishoudens met het geselecteerde kenmerk. De percentages tellen op tot 100% per regio. ;Long;%;0;Relative
+M006782;;5;Totaal vermogen;"Totale som van het vermogen van particuliere huishoudens.
+Vermogen is het saldo van bezittingen en schulden. Bezittingen worden gevormd door bank- en spaartegoeden, effecten, de eigen woning, overig onroerend goed, ondernemingsvermogen, aanmerkelijk belang en de overige bezittingen. De schulden omvatten onder meer schulden ten behoeve van een eigen woning en consumptief krediet.";Double;mld euro;1;Relative
+M006767;;6;Gemiddeld vermogen;"Gemiddeld vermogen van particuliere huishoudens.
+Vermogen is het saldo van bezittingen en schulden. Bezittingen worden gevormd door bank- en spaartegoeden, effecten, de eigen woning, overig onroerend goed, ondernemingsvermogen, aanmerkelijk belang en de overige bezittingen. De schulden omvatten onder meer schulden ten behoeve van een eigen woning en consumptief krediet.";Double;1 000 euro;1;Relative
+M000939;;7;Mediaan vermogen;"Mediaan vermogen van particuliere huishoudens.
+De mediaan is het middelste getal wanneer alle getalen van laag naar hoog worden gesorteerd.
+Vermogen is het saldo van bezittingen en schulden. Bezittingen worden gevormd door bank- en spaartegoeden, effecten, de eigen woning, overig onroerend goed, ondernemingsvermogen, aanmerkelijk belang en de overige bezittingen. De schulden omvatten onder meer schulden ten behoeve van een eigen woning en consumptief krediet.";Double;1 000 euro;1;Relative

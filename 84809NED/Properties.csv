@@ -1,0 +1,176 @@
+Identifier;Title;Description;Modified;ReleaseDate;ModificationDate;Language;TemporalCoverage;Authority;Catalog;Publisher;ContactPoint;Version;VersionNotes;VersionReason;Frequency;Status;ObservationCount;ObservationsModified;DatasetType;GraphTypes;License;Source;Summary;LongDescription
+84809NED;"Immigranten niet EU/EFTA; migratiemotief, sociaaleconomische categorie";"Deze tabel bevat cijfers over immigranten met een nationaliteit van een land buiten de EU of EFTA die naar Nederland zijn gekomen. 
+De gegevens zijn uitgesplitst naar geslacht, leeftijdsgroep, migratiemotief, nationaliteit, sociaaleconomische categorie en verblijfsduur.
+Het migratiemotief van immigranten uit niet-EU/EFTA-landen is gebaseerd op de vergunning aan de immigrant door de Immigratie- en Naturalisatiedienst (IND).
+
+In deze tabel zijn alleen immigranten opgenomen die op het moment van immigratie de nationaliteit hadden van landen die op dat moment niet tot de Europese Unie (EU) of de European Free Trade Association (EFTA). Immigranten van buiten de EU/EFTA hebben een verblijfsvergunning van de IND nodig.
+Immigranten uit landen die in de periode 1999-2025 tot de EU of EFTA zijn toegetreden, zijn in deze tabel opgenomen als het jaar van immigratie voor het jaar van toetreding ligt.
+Hoewel het Verenigd Koninkrijk vanaf 31 januari 2020 de Europese Unie heeft verlaten, bleef door een terugtrekkingsakkoord vrij verkeer van personen mogelijk tot en met 31 december 2020. In deze tabel zijn immigranten uit het Verenigd Koninkrijk daarom pas vanaf 1 januari 2021 opgenomen.   
+
+In deze tabel wordt voor alle niet-EU/EFTA-immigranten elk jaar na hun binnenkomst in Nederland gekeken of ze nog in Nederland wonen en tot wat voor sociaaleconomische categorie zij behoren. Dit gebeurt steeds op dezelfde datum. Dus voor iemand die in Nederland is komen wonen op 12 februari 1999, wordt op 12 februari 2000 gekeken of deze persoon er nog is en wordt informatie gegeven over zijn/haar sociaaleconomische categorie. De selectie Verblijfsduur toont voor alle jaren het oorspronkelijke aantal immigranten dat in het jaar van immigratie naar Nederland kwam. Via de selectie Sociaaleconomische categorie is te zien of iemand nog aanwezig is en wat zijn/haar belangrijkste inkomensbron is. 
+
+De variabele Migratiemotief is uitgebreid met een categorie ‘Tijdelijke bescherming’. Hieronder vallen personen die na de start van de oorlog in Oekraïne op 24 februari 2022 naar Nederland zijn gevlucht en hier bescherming hebben aangevraagd. Zij hoeven niet de officiële asielprocedure van de IND te doorlopen maar vallen onder de Europese Richtlijn Tijdelijke Bescherming. 
+Zie ook:
+IND-proces voor vluchtelingen uit Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN) 
+Richtlijn Tijdelijke Bescherming Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN)  
+
+Binnen de statistiek migratiemotieven hanteert het CBS bij de immigratie van niet EU/EFTA-onderdanen een onderscheid van arbeidsmigratie in twee subcategorieën: kennis en overige arbeidsmigratie. Tot en met de update in 2021 bestempelde het CBS alleen de IND-kennismigrantenregeling als kennismigratie, alle overige regelingen op het gebied van arbeidsmigratie werden als overige arbeidsmigratie getypeerd. 
+Vanaf de update in 2022 worden ook de andere regelingen die met de kennismigrantenregeling samenhangen getypeerd als kennis. Hieronder vallen bijvoorbeeld ook de regelingen voor zelfstandigen, wetenschappelijk onderzoekers en potentiële kennismigranten. Dit betekent dat met ingang van de update in 2022 voor alle verslagjaren in deze tabel de onderverdeling van arbeidsmigranten in kennis en overige arbeidsmigranten is aangepast. Hierdoor zijn de cijfers over deze twee typen arbeidsmigranten vanaf de update in 2022 niet zonder meer vergelijkbaar met cijfers die tot en met de update in 2021 zijn gepubliceerd. 
+
+Gegevens beschikbaar vanaf: 1999
+
+Status van de cijfers: 
+De cijfers in deze tabel zijn voorlopig.
+In de cijfers over de voorgaande perioden is later bekend geworden informatie verwerkt. Hierdoor zijn kleine afwijkingen met eerder gepubliceerde cijfers mogelijk.
+
+Wijzigingen per 30 juni 2026:
+De voorlopige cijfers over 2025 zijn toegevoegd.
+Aan de immigratiejaren 1999 tot en met 2024 is een extra verblijfsduur toegevoegd;
+
+Wanneer komen er nieuwe cijfers?
+De cijfers over 2026 verschijnen in juni 2027.
+
+";2026-06-30T00:00:00+02:00;2026-06-30T00:00:00+02:00;2026-06-30T00:00:00+02:00;nl;1999 - 2025;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;CBS;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;infoservice@cbs.nl;202606300000;;Actualisering bijzonder;Per jaar;Regulier;57139992;2026-06-30T00:00:00+02:00;Numeric;Table,Bar,Line;https://creativecommons.org/licenses/by/4.0/;CBS.;"Immigranten met een niet EU/EFTA nationaliteit naar geslacht, leeftijd,
+verblijfsduur, migratiemotief en sociaaleconomische categorie";"INHOUDSOPGAVE
+
+1. Toelichting
+2. Definities en verklaring van symbolen
+3. Koppelingen naar relevante tabellen en artikelen
+4. Bronnen en methoden
+5. Meer informatie 
+
+1. TOELICHTING
+
+Deze tabel bevat cijfers over immigranten met een nationaliteit van een land buiten de EU of EFTA die naar Nederland zijn gekomen. 
+De gegevens zijn uitgesplitst naar geslacht, leeftijdsgroep, migratiemotief, nationaliteit, sociaaleconomische categorie en verblijfsduur.
+Het migratiemotief van immigranten uit niet-EU/EFTA-landen is gebaseerd op de vergunning aan de immigrant door de Immigratie- en Naturalisatiedienst (IND).
+
+In deze tabel zijn alleen immigranten opgenomen die op het moment van immigratie de nationaliteit hadden van landen die op dat moment niet tot de Europese Unie (EU) of de European Free Trade Association (EFTA). Immigranten van buiten de EU/EFTA hebben een verblijfsvergunning van de IND nodig.
+Immigranten uit landen die in de periode 1999-2025 tot de EU of EFTA zijn toegetreden, zijn in deze tabel opgenomen als het jaar van immigratie voor het jaar van toetreding ligt.
+Hoewel het Verenigd Koninkrijk vanaf 31 januari 2020 de Europese Unie heeft verlaten, bleef door een terugtrekkingsakkoord vrij verkeer van personen mogelijk tot en met 31 december 2020. In deze tabel zijn immigranten uit het Verenigd Koninkrijk daarom pas vanaf 1 januari 2021 opgenomen.   
+
+In deze tabel wordt voor alle niet-EU/EFTA-immigranten elk jaar na hun binnenkomst in Nederland gekeken of ze nog in Nederland wonen en tot wat voor sociaaleconomische categorie zij behoren. Dit gebeurt steeds op dezelfde datum. Dus voor iemand die in Nederland is komen wonen op 12 februari 1999, wordt op 12 februari 2000 gekeken of deze persoon er nog is en wordt informatie gegeven over zijn/haar sociaaleconomische categorie. De selectie Verblijfsduur toont voor alle jaren het oorspronkelijke aantal immigranten dat in het jaar van immigratie naar Nederland kwam. Via de selectie Sociaaleconomische categorie is te zien of iemand nog aanwezig is en wat zijn/haar belangrijkste inkomensbron is. 
+
+De variabele Migratiemotief is uitgebreid met een categorie ‘Tijdelijke bescherming’. Hieronder vallen personen die na de start van de oorlog in Oekraïne op 24 februari 2022 naar Nederland zijn gevlucht en hier bescherming hebben aangevraagd. Zij hoeven niet de officiële asielprocedure van de IND te doorlopen maar vallen onder de Europese Richtlijn Tijdelijke Bescherming. 
+Zie ook:
+IND-proces voor vluchtelingen uit Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN) 
+Richtlijn Tijdelijke Bescherming Oekraïne (IND) (link beschikbaar onder paragraaf 3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN)  
+
+Binnen de statistiek migratiemotieven hanteert het CBS bij de immigratie van niet EU/EFTA-onderdanen een onderscheid van arbeidsmigratie in twee subcategorieën: kennis en overige arbeidsmigratie. Tot en met de update in 2021 bestempelde het CBS alleen de IND-kennismigrantenregeling als kennismigratie, alle overige regelingen op het gebied van arbeidsmigratie werden als overige arbeidsmigratie getypeerd. 
+Vanaf de update in 2022 worden ook de andere regelingen die met de kennismigrantenregeling samenhangen getypeerd als kennis. Hieronder vallen bijvoorbeeld ook de regelingen voor zelfstandigen, wetenschappelijk onderzoekers en potentiële kennismigranten. Dit betekent dat met ingang van de update in 2022 voor alle verslagjaren in deze tabel de onderverdeling van arbeidsmigranten in kennis en overige arbeidsmigranten is aangepast. Hierdoor zijn de cijfers over deze twee typen arbeidsmigranten vanaf de update in 2022 niet zonder meer vergelijkbaar met cijfers die tot en met de update in 2021 zijn gepubliceerd. 
+
+Gegevens beschikbaar vanaf: 1999
+
+Status van de cijfers: 
+De cijfers in deze tabel zijn voorlopig.
+In de cijfers over de voorgaande perioden is later bekend geworden informatie verwerkt. Hierdoor zijn kleine afwijkingen met eerder gepubliceerde cijfers mogelijk.
+
+Wijzigingen per 30 juni 2026:
+De voorlopige cijfers over 2025 zijn toegevoegd.
+Aan de immigratiejaren 1999 tot en met 2024 is een extra verblijfsduur toegevoegd;
+
+Wanneer komen er nieuwe cijfers?
+De cijfers over 2026 verschijnen in juni 2027.
+
+2. DEFINITIES EN VERKLARING VAN SYMBOLEN
+
+Definities:
+
+Asiel
+In deze tabel worden ook nareizigers tot de asielmigranten gerekend. 
+Nareizigers zijn gezinsleden van asielmigranten die gebruikmaken van de zogenoemde nareisregeling (Nareizigers / IND). Zie paragraaf 3.
+Deze gezinsleden ontvangen vervolgens een afgeleide asielvergunning. 
+Gezinsleden van asielmigranten die géén gebruikmaken van de nareisregeling kunnen in aanmerking komen voor reguliere gezinshereniging (Verblijfsvergunning voor partner aanvragen | IND). Zie paragraaf 3. In de CBS-cijfers over migratiemotieven vallen ze onder de categorie ‘Gezin’ / ‘Gezinshereniging’.
+
+Europese Unie (EU) 
+Samenwerkingsverband van Europese staten.
+De Europese Unie bestaat uit de volgende landen: 
+Vanaf 1-1-1958: België, Bondsrepubliek Duitsland, Frankrijk, Italië, Luxemburg en Nederland. 
+Toegetreden op 1-1-1973: Denemarken, Ierland en Verenigd Koninkrijk. 
+Toegetreden op 1-1-1981: Griekenland. 
+Toegetreden op 1-1-1986: Portugal en Spanje. 
+Toegetreden op 1-1-1995: Oostenrijk, Finland en Zweden. 
+Toegetreden op 1-5-2004: Cyprus, Estland, Hongarije, Letland, Litouwen, Malta, Polen, Slowakije, Slovenië en Tsjechië. 
+Toegetreden op 1-1-2007: Bulgarije, Roemenië. 
+Toegetreden op 1-7-2013: Kroatië.
+Verlaten op 31-01-2020: Verenigd Koninkrijk.
+
+EFTA
+Europese Vrijhandelsassociatie (EVA). 
+De Europese Vrijhandelsassociatie is een samenwerkingsverband tussen Liechtenstein, Noorwegen, IJsland en Zwitserland. 
+De associatie is beter bekend onder de Engelstalige afkorting EFTA.
+
+Immigrant
+Vestiging van een persoon vanuit het buitenland in Nederland. 
+Om als immigrant te kunnen worden geteld dient deze persoon ingeschreven te worden in de gemeentelijke bevolkingsregisters. 
+
+Jaar van immigratie
+Jaar waarin de immigrant werd ingeschreven in de gemeentelijke bevolkingsregisters. 
+Dit kan afwijken van het jaar waarin een persoon een verblijfsvergunning van de IND ontving of het jaar waarin een persoon naar Nederland afreisde.
+
+Leeftijd
+Het aantal gehele jaren dat op het moment van immigratie van een persoon is verstreken sinds zijn of haar geboortedatum.
+De leeftijd blijft gelijk over de gehele periode. 
+
+Migratiemotief
+De reden waarom een persoon naar een ander land verhuist.
+Bron voor het migratiemotief is de eerst verleende vergunning aan de immigrant, deze informatie is afkomstig van de Immigratie- en Naturalisatiedienst (IND) van het ministerie van Justitie en Veiligheid. Bij de IND wordt per immigrant maar één migratiemotief vastgelegd. 
+Deze tabel bevat het motief van de eerste migratiebeweging vanaf 1999. Als een persoon een tweede keer naar Nederland immigreert met een ander motief, komt deze persoon tweemaal in de tabel voor met hetzelfde (eerste) migratiemotief.
+
+Nationaliteit
+Het wettelijk onderdaan zijn van een bepaalde staat (staatsburgerschap). 
+In deze tabel betreft het de nationaliteit op het moment van immigratie. De nationaliteit blijft gelijk over de gehele periode. 
+Personen kunnen meerdere nationaliteiten hebben. Om dubbeltellingen te voorkomen wordt in statistische overzichten aan personen die meerdere nationaliteiten hebben, slechts één nationaliteit toegekend. Daartoe worden prioriteringsregels gesteld. Die komen erop neer dat iemand met de Nederlandse nationaliteit in de statistiek steeds Nederlander is. 
+Voor mensen die niet de Nederlandse nationaliteit bezitten, geldt de volgorde: nationaliteit van één van de Benelux-landen, nationaliteit van een staat binnen de Europese Unie, andere Europese nationaliteit, niet-Europese nationaliteit. Personen die geen nationaliteit hebben, zijn staatloos.
+
+Sociaaleconomische categorie
+De voornaamste sociaaleconomische activiteit vastgesteld op basis van de inkomensbron op het peilmoment.
+
+Verblijfsduur
+De verblijfsduur geeft weer hoeveel hele jaren de persoon in Nederland is gevestigd.
+Verblijfsduur toont voor alle jaren het oorspronkelijke aantal immigranten dat in het jaar van immigratie naar Nederland kwam. 
+
+Verklaring van symbolen:
+
+niets (blanco) : het cijfer kan op logische gronden niet voorkomen
+. : het cijfer is onbekend, onvoldoende betrouwbaar of geheim
+* : voorlopige cijfers
+** : nader voorlopige cijfers
+
+De cijfers zijn afgerond op vijftallen. Hierdoor kan het voorkomen, dat de som van de detailgegevens afwijkt van het totaal.
+
+3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN
+
+Relevante tabellen:
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84808ned'>Immigranten (EU/EFTA); afgeleid migratiedoel, sociaaleconomische categorie</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85905NED'>Bevolking op 31 december, immigranten EU/EFTA, afgeleid migratiedoel</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85904NED'>Bevolking op 31 december, immigranten niet-EU/EFTA, migratiemotief</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85912NED'>Werknemers op 31 december; immigranten EU/EFTA, afgeleid migratiedoel</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85910NED'>Werknemers op 31 december, immigranten niet-EU/EFTA, migratiemotief</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/60032'>Migratie; land van herkomst / vestiging, geboorteland, geslacht; 1995-2022</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84484ned'>Immi- en emigratie; nationaliteit, leeftijd en geslacht, 1995-2022</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/dataset/03742'>Immi- en emigratie; leeftijd (31 dec.), burg staat, geboorteland; 1995-2022</a>
+
+Relevante artikelen:
+<a href='https://www.cbs.nl/nl-nl/nieuws/2025/02/arbeidsmigrant-met-werkende-partner-blijft-steeds-vaker-in-nederland'>Arbeidsmigrant met werkende partner blijft steeds vaker in Nederland</a>
+<a href='https://www.cbs.nl/nl-nl/nieuws/2024/44/meeste-gezinsmigranten-blijven-in-nederland-wonen'>Meeste gezinsmigranten blijven in Nederland wonen</a>
+<a href='https://ind.nl/nl/oekraine/richtlijn-tijdelijke-bescherming-oekraine'>Richtlijn Tijdelijke Bescherming Oekraïne | IND</a>
+<a href='https://ind.nl/nl/verblijfsvergunningen/asiel/nareizigers'>Nareizigers | IND</a>
+<a href='https://ind.nl/nl/verblijfsvergunningen/familie-en-partner/verblijfsvergunning-voor-partner-aanvragen'>Verblijfsvergunning voor partner aanvragen | IND</a>
+
+Meer informatie is te vinden op de themapagina's <a href='https://www.cbs.nl/nl-nl/maatschappij/bevolking'>Bevolking</a> en <a href='https://www.cbs.nl/nl-nl/arbeid-en-inkomen/arbeid-en-sociale-zekerheid'>Arbeid en sociale zekerheid</a> en in het dossier <a href='https://www.cbs.nl/nl-nl/dossier/dossier-asiel-migratie-en-integratie'>Asiel, migratie en integratie</a>.
+
+4. BRONNEN EN METHODEN
+
+De onderzoeksmethode van deze tabel is te vinden in de onderzoeksbeschrijving <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/statistiek-migratiemotieven'>Statistiek migratiemotieven</a>.
+
+Overige van toepassing zijnde onderzoeksbeschrijvingen:
+<a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/bevolkingsstatistiek'>Bevolkingsstatistiek</a>
+<a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksomschrijvingen/stelsel-van-sociaal-statistische-bestanden--ssb--'>Stelsel van Sociaal-statistische Bestanden (SSB)</a>
+
+</a>5. MEER INFORMATIE
+
+<a href='https://www.cbs.nl/nl-nl/over-ons/contact/infoservice'>Infoservice</a>
+
+Copyright (c) Centraal Bureau voor de Statistiek, Den Haag/Heerlen 
+Verveelvoudiging is toegestaan, mits het CBS als bron wordt vermeld."

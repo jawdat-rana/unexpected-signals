@@ -1,0 +1,66 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+T001056;4;Migratiemotief;1;Totaal;"Persoon die niet de Nederlandse nationaliteit bezit en niet op grond van een wettelijke bepaling als Nederlander moet worden behandeld. 
+Niet inbegrepen zijn: 
+- niet-Nederlandse diplomaten en niet-Nederlandse NAVO militairen die in Nederland wonen 
+- asielzoekers die korter dan zes maanden in de centrale opvang in Nederland verblijven en nog geen verblijfsvergunning hebben gekregen."
+A009232;6;Migratiemotief;2;Arbeid: totaal;Immigratie van niet-Nederlanders met als doel in Nederland te gaan werken. Het kan hierbij bijvoorbeeld gaan om arbeid in loondienst of arbeid als zelfstandige.
+A049128;6;Migratiemotief;3;Arbeid: kennismigrant;Immigratie van niet-Nederlanders met als doel in Nederland te gaan werken. Het kan hierbij bijvoorbeeld gaan om arbeid in loondienst of arbeid als zelfstandige.
+A049129;6;Migratiemotief;4;Arbeid: overig;Immigratie van niet-Nederlanders met als doel in Nederland te gaan werken. Het kan hierbij bijvoorbeeld gaan om arbeid in loondienst of arbeid als zelfstandige.
+A009234;;Migratiemotief;5;Gezin: totaal;"Deze tabel biedt twee afzonderlijke detailleringen van gezinsmigratie:
+1) naar gezinsvormers/gezinsherenigers en
+2) naar gezinsleden die zich voegen bij een persoon die gelijktijdig naar Nederland is geïmmigreerd of al in Nederland woonde (de meegekomen gezinsleden). 
+Beide detailleringen zijn afzonderlijk van elkaar bepaald. Dat betekent dat de som van de afzonderlijke detailleringen optelt tot het totaal aantal gezinsmigranten van buiten de EU/EFTA. 
+
+Onder gezinshereniging wordt de vestiging in Nederland verstaan van personen uit gezinnen die al vóór de immigratie bestonden, waarbij één of meer gezinsleden bij gezinsleden gaan wonen die eerder naar Nederland zijn gekomen. 
+Het kan hierbij bijvoorbeeld gaan om 
+- huwelijks(partners), 
+- minderjarige kinderen (niet gehuwd, 
+- geen geregistreerd partner) of 
+- ouders die bij hun kinderen gaan wonen. 
+ 
+Aan andere familieleden dan de echtgenoot, partner of minderjarige kinderen kan een verblijfsvergunning in het kader van verruimde gezinshereniging worden verstrekt. 
+Een belangrijke voorwaarde voor verruimde gezinshereniging is dat deze familieleden al in het land van herkomst tot het gezin behoorden en dat achterlating van deze familieleden naar het oordeel van de staatssecretaris van Justitie van een onevenredige hardheid zou zijn. 
+Gezinshereniging volgt vaak op arbeidsmigratie of asielmigratie. 
+
+Gezinsvorming betreft de vestiging in Nederland van personen die hier komen om te trouwen, een partnerschap af te sluiten, of te gaan samenwonen met een al in Nederland wonende partner, met wie betrokkene nooit eerder in Nederland heeft samengewoond. 
+Meegekomen gezinsleden zijn gezinsleden (bijvoorbeeld van een arbeidsmigrant) die zich voegen bij een persoon die gelijktijdig of eerder naar Nederland is gekomen of in Nederland is geboren.
+"
+A049130;11;Migratiemotief;6;Gezin: gezinsvorming;
+A049131;11;Migratiemotief;7;Gezin: gezinshereniging;
+A052714;12;Migratiemotief;8;Gezin: meegekomen met arbeid;"Gezinsmigranten (gezinsherenigers of gezinsvormers) die zich bij een immigrant voegen die gelijktijdig of eerder naar Nederland is gekomen (de referent). De referent is vanwege motief arbeid naar Nederland gekomen. 
+Het gaat om ouders, kinderen en partners van arbeidsmigranten, zij vormen bij aanvang van de migratie van de gezinsmigrant samen een huishouden.
+"
+A052715;12;Migratiemotief;9;Gezin: meegekomen met studie;"Gezinsmigranten (gezinsherenigers of gezinsvormers) die zich bij een immigrant voegen die gelijktijdig of eerder naar Nederland is gekomen (de referent). De referent is vanwege motief studie naar Nederland gekomen. 
+Het gaat om ouders, kinderen en partners van studiemigranten, zij vormen bij aanvang van de migratie van de gezinsmigrant samen een huishouden.
+
+"
+A052716;12;Migratiemotief;10;Gezin: meegekomen met asiel;"Gezinsmigranten (gezinsherenigers of gezinsvormers) die zich bij een immigrant voegen die gelijktijdig of eerder naar Nederland is gekomen (de referent). De referent is vanwege motief asiel naar Nederland gekomen, de referent kan ook een nareizeger zijn. 
+Het gaat om ouders, kinderen en partners van asielmigranten, zij vormen bij aanvang van de migratie van de gezinsmigrant samen een huishouden.
+
+"
+A052717;12;Migratiemotief;11;Gezin: overig;Gezinsmigranten (gezinsherenigers of gezinsvormers) die niet zijn meegekomen met een arbeids-, studie- of asielmigrant. Het kan hierbij gaan om een referent die gelijktijdig of eerder vanwege een ander motief naar Nederland is gekomen of om een referent die geen migratiemotief heeft. Dat laatste is het geval voor immigranten die vóór 1999 naar Nederland zijn geïmmigreerd en voor personen die in Nederland zijn geboren.
+A009233;8;Migratiemotief;12;Asiel: totaal;"Een asielzoeker, statushouder, uitgenodigde vluchteling of nareiziger die is opgenomen in het gemeentelijk bevolkingsregister.
+
+Niet iedereen die een asielverzoek indient wordt tot Nederland toegelaten en als immigrant in de gemeentelijke bevolkingsregisters ingeschreven. 
+Asielmigranten die mogen blijven worden meestal pas enige tijd na indiening van hun asielverzoek ingeschreven in de gemeentelijke bevolkingsregisters. 
+Inschrijving in het gemeentelijke bevolkingsregister vindt plaats op het moment dat de asielzoeker een verblijfstitel krijgt. Ook asielzoekers die langer dan een half jaar in een centrale opvangvoorziening verblijven komen in aanmerking voor inschrijving in de gemeentelijke bevolkingsregisters. 
+
+Gezinsleden van asielmigranten die géén gebruikmaken van de nareisregeling kunnen in aanmerking komen voor reguliere gezinshereniging (Verblijfsvergunning voor partner aanvragen | IND). In de CBS-cijfers over migratiemotieven vallen ze onder de categorie Gezinsmigratie.
+
+"
+A052712;8;Migratiemotief;13;Asiel (exclusief nareis);"Een asielzoeker, statushouder of uitgenodigde vluchteling die is opgenomen in het gemeentelijk bevolkingsregister.
+
+Niet iedereen die een asielverzoek indient wordt tot Nederland toegelaten en als immigrant in de gemeentelijke bevolkingsregisters ingeschreven. Asielmigranten die in Nederland mogen blijven worden meestal pas enige tijd na indiening van hun asielverzoek ingeschreven in de gemeentelijke bevolkingsregisters. Inschrijving in het gemeentelijke bevolkingsregister vindt plaats op het moment dat de asielzoeker een verblijfsvergunning krijgt. Ook asielzoekers die langer dan een half jaar in een centrale opvangvoorziening verblijven komen in aanmerking voor inschrijving in de gemeentelijke bevolkingsregisters. Nareizigers vallen niet onder deze groep, zie daarvoor 'Asiel: nareis'.
+
+
+"
+A052713;8;Migratiemotief;14;Asiel: nareis;"Gezinslid van een asielmigrant die gebruikmaakt van de zogenoemde nareisregeling (Nareizigers | IND). 
+Deze gezinsleden ontvangen vervolgens een afgeleide asielvergunning. 
+
+Gezinsleden van asielmigranten die géén gebruikmaken van de nareisregeling kunnen in aanmerking komen voor reguliere gezinshereniging (Verblijfsvergunning voor partner aanvragen | IND). In de CBS-cijfers over migratiemotieven vallen ze onder de categorie Gezinsmigratie.
+
+"
+A009235;14;Migratiemotief;15;Studie;"Immigratie van niet-Nederlanders met als doel in Nederland een studie te gaan volgen aan een instelling voor voortgezet onderwijs, beroepsonderwijs of hoger onderwijs / universiteit. 
+Belangrijkste voorwaarden zijn dat de student (voorlopig) is ingeschreven aan een door de Nederlandse overheid aangewezen onderwijsinstelling en dat de studie een dagopleiding betreft."
+A052135;16;Migratiemotief;16;Tijdelijke bescherming;
+A009238;18;Migratiemotief;17;Overige migratiemotieven;Het gaat hierbij om bijvoorbeeld economisch niet-actieven en mensen die naar Nederland komen voor een medische behandeling.

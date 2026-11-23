@@ -1,0 +1,1176 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+NL01;NL;RegioS;1;Nederland;
+LD01;LD;RegioS;2;Noord-Nederland (LD);"LD = Landsdeel
+
+Noord-Nederland: Groningen, Fryslân, Drenthe
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen.
+"
+LD02;LD;RegioS;3;Oost-Nederland (LD);"LD = Landsdeel
+
+Oost-Nederland: Overijssel, Flevoland, Gelderland
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen.
+"
+LD03;LD;RegioS;4;West-Nederland (LD);"LD = Landsdeel
+
+West-Nederland: Utrecht, Noord-Holland, Zuid-Holland, Zeeland
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen.
+"
+LD04;LD;RegioS;5;Zuid-Nederland (LD);"LD = Landsdeel
+
+Zuid-Nederland: Noord-Brabant, Limburg
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen.
+"
+LD99;LD;RegioS;6;Niet in te delen (Nederland) (LD);"LD = Landsdeel
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen.
+
+Niet in te delen (Nederland): Toedeling aan Nederland, maar door een gebrek aan informatie of door onjuiste informatie is een toedeling aan een bepaald landsdeel niet altijd mogelijk.
+"
+PV20;PV;RegioS;7;Groningen (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV21;PV;RegioS;8;Fryslân (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV22;PV;RegioS;9;Drenthe (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV23;PV;RegioS;10;Overijssel (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV24;PV;RegioS;11;Flevoland (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV25;PV;RegioS;12;Gelderland (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV26;PV;RegioS;13;Utrecht (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV27;PV;RegioS;14;Noord-Holland (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV28;PV;RegioS;15;Zuid-Holland (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV29;PV;RegioS;16;Zeeland (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV30;PV;RegioS;17;Noord-Brabant (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV31;PV;RegioS;18;Limburg (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+"
+PV99;PV;RegioS;19;Niet in te delen (Nederland) (PV);"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies.
+
+Niet in te delen (Nederland): Toedeling aan Nederland, maar door een gebrek aan informatie of door onjuiste informatie is een toedeling aan een bepaalde provincie niet altijd mogelijk.
+"
+CR01;CRPV20;RegioS;20;Oost-Groningen (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR02;CRPV20;RegioS;21;Delfzijl en omgeving (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR03;CRPV20;RegioS;22;Overig Groningen (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR04;CRPV21;RegioS;23;Noord-Friesland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR05;CRPV21;RegioS;24;Zuidwest-Friesland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR06;CRPV21;RegioS;25;Zuidoost-Friesland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR07;CRPV22;RegioS;26;Noord-Drenthe (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR08;CRPV22;RegioS;27;Zuidoost-Drenthe (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR09;CRPV22;RegioS;28;Zuidwest-Drenthe (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR10;CRPV23;RegioS;29;Noord-Overijssel (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR11;CRPV23;RegioS;30;Zuidwest-Overijssel (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR12;CRPV23;RegioS;31;Twente (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR13;CRPV25;RegioS;32;Veluwe (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR14;CRPV25;RegioS;33;Achterhoek (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR15;CRPV25;RegioS;34;Arnhem/Nijmegen (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR16;CRPV25;RegioS;35;Zuidwest-Gelderland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR17;CRPV26;RegioS;36;Utrecht (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR18;CRPV27;RegioS;37;Kop van Noord-Holland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR19;CRPV27;RegioS;38;Alkmaar en omgeving (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR20;CRPV27;RegioS;39;IJmond (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR21;CRPV27;RegioS;40;Agglomeratie Haarlem (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR22;CRPV27;RegioS;41;Zaanstreek (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR23;CRPV27;RegioS;42;Groot-Amsterdam (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR24;CRPV27;RegioS;43;Het Gooi en Vechtstreek (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR25;CRPV28;RegioS;44;Agglomeratie Leiden en Bollenstreek (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR26;CRPV28;RegioS;45;Agglomeratie 's-Gravenhage (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR27;CRPV28;RegioS;46;Delft en Westland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR28;CRPV28;RegioS;47;Oost-Zuid-Holland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR29;CRPV28;RegioS;48;Groot-Rijnmond (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR30;CRPV28;RegioS;49;Zuidoost-Zuid-Holland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR31;CRPV29;RegioS;50;Zeeuwsch-Vlaanderen (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR32;CRPV29;RegioS;51;Overig Zeeland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR33;CRPV30;RegioS;52;West-Noord-Brabant (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR34;CRPV30;RegioS;53;Midden-Noord-Brabant (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR35;CRPV30;RegioS;54;Noordoost-Noord-Brabant (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR36;CRPV30;RegioS;55;Zuidoost-Noord-Brabant (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR37;CRPV31;RegioS;56;Noord-Limburg (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR38;CRPV31;RegioS;57;Midden-Limburg (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR39;CRPV31;RegioS;58;Zuid-Limburg (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR40;CRPV24;RegioS;59;Flevoland (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+"
+CR99;OVERIG;RegioS;60;Niet in te delen (Nederland) (CR);"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden.
+
+Niet in te delen (Nederland): Toedeling aan Nederland, maar door een gebrek aan informatie of door onjuiste informatie is een toedeling aan een bepaald COROP-gebied niet altijd mogelijk.
+"
+GM1680;GMPV22;RegioS;61;Aa en Hunze;"Ontstaan per 01-01-1998
+"
+GM0358;GMPV27;RegioS;62;Aalsmeer;"Begindatum voor 1830
+"
+GM0197;GMPV25;RegioS;63;Aalten;"Gemeentelijke herindeling per 01-01-2005
+Begindatum voor 1830
+"
+GM0059;GMPV21;RegioS;64;Achtkarspelen;"Begindatum voor 1830
+"
+GM0482;GMPV28;RegioS;65;Alblasserdam;"Begindatum voor 1830
+"
+GM0613;GMPV28;RegioS;66;Albrandswaard;"Ontstaan per 01-01-1985
+"
+GM0361;GMPV27;RegioS;67;Alkmaar;"Gemeentelijke herindeling per 01-01-2015
+Begindatum voor 1830
+"
+GM0141;GMPV23;RegioS;68;Almelo;"Begindatum 01-12-1913
+"
+GM0034;GMPV24;RegioS;69;Almere;"Ontstaan per 01-01-1984
+"
+GM0484;GMPV28;RegioS;70;Alphen aan den Rijn;"Gemeentelijke herindeling per 01-01-2014
+Naamswijziging per 01-01-1918
+"
+GM1723;GMPV30;RegioS;71;Alphen-Chaam;"Ontstaan per 01-01-1997
+"
+GM1959;GMPV30;RegioS;72;Altena;"Ontstaan per 01-01-2019
+"
+GM0060;GMPV21;RegioS;73;Ameland;"Begindatum voor 1830
+"
+GM0307;GMPV26;RegioS;74;Amersfoort;"Begindatum voor 1830
+"
+GM0362;GMPV27;RegioS;75;Amstelveen;"Naamswijziging per 01-01-1964
+"
+GM0363;GMPV27;RegioS;76;Amsterdam;"Gemeentelijke herindeling per 24-03-2022
+Begindatum voor 1830
+"
+GM0200;GMPV25;RegioS;77;Apeldoorn;"Begindatum voor 1830
+"
+GM0202;GMPV25;RegioS;78;Arnhem;"Begindatum voor 1830
+"
+GM0106;GMPV22;RegioS;79;Assen;"Begindatum voor 1830
+"
+GM0743;GMPV30;RegioS;80;Asten;"Begindatum voor 1830
+"
+GM0744;GMPV30;RegioS;81;Baarle-Nassau;"Begindatum voor 1830
+"
+GM0308;GMPV26;RegioS;82;Baarn;"Begindatum voor 1830
+"
+GM0489;GMPV28;RegioS;83;Barendrecht;"Naamswijziging per 10-12-1886
+"
+GM0203;GMPV25;RegioS;84;Barneveld;"Begindatum voor 1830
+"
+GM0888;GMPV31;RegioS;85;Beek (L.);"Begindatum 02-01-1839
+"
+GM1954;GMPV31;RegioS;86;Beekdaelen;"Ontstaan per 01-01-2019
+"
+GM0889;GMPV31;RegioS;87;Beesel;"Begindatum 02-01-1839
+"
+GM1945;GMPV25;RegioS;88;Berg en Dal;"Naamswijziging per 01-01-2016
+"
+GM1724;GMPV30;RegioS;89;Bergeijk;"Naamswijziging per 25-09-1998
+"
+GM0893;GMPV31;RegioS;90;Bergen (L.);"Begindatum 02-01-1839
+"
+GM0373;GMPV27;RegioS;91;Bergen (NH.);"Gemeentelijke herindeling per 01-01-2001
+Begindatum voor 1830
+"
+GM0748;GMPV30;RegioS;92;Bergen op Zoom;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM1859;GMPV25;RegioS;93;Berkelland;"Ontstaan per 01-01-2005
+"
+GM1721;GMPV30;RegioS;94;Bernheze;"Naamswijziging per 28-01-1995
+"
+GM0753;GMPV30;RegioS;95;Best;"Begindatum voor 1830
+"
+GM0209;GMPV25;RegioS;96;Beuningen;"Begindatum voor 1830
+"
+GM0375;GMPV27;RegioS;97;Beverwijk;"Begindatum voor 1830
+"
+GM0310;GMPV26;RegioS;98;De Bilt;"Gemeentelijke herindeling per 01-01-2001
+Begindatum voor 1830
+"
+GM1728;GMPV30;RegioS;99;Bladel;"Ontstaan per 01-01-1997
+"
+GM0376;GMPV27;RegioS;100;Blaricum;"Begindatum voor 1830
+"
+GM0377;GMPV27;RegioS;101;Bloemendaal;"Gemeentelijke herindeling per 01-01-2009
+Begindatum voor 1830
+"
+GM1901;GMPV28;RegioS;102;Bodegraven-Reeuwijk;"Ontstaan per 01-01-2011
+"
+GM0755;GMPV30;RegioS;103;Boekel;"Begindatum voor 1830
+"
+GM1681;GMPV22;RegioS;104;Borger-Odoorn;"Ontstaan per 01-01-1998
+"
+GM0147;GMPV23;RegioS;105;Borne;"Begindatum voor 1830
+"
+GM0654;GMPV29;RegioS;106;Borsele;"Naamswijziging per 01-01-1970
+"
+GM0757;GMPV30;RegioS;107;Boxtel;"Gemeentelijke herindeling per 01-01-2021
+Gemeentelijke herindeling per 01-01-1996
+Begindatum voor 1830
+"
+GM0758;GMPV30;RegioS;108;Breda;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM1876;GMPV25;RegioS;109;Bronckhorst;"Ontstaan per 01-01-2005
+"
+GM0213;GMPV25;RegioS;110;Brummen;"Begindatum voor 1830
+"
+GM0899;GMPV31;RegioS;111;Brunssum;"Begindatum 02-01-1839
+"
+GM0312;GMPV26;RegioS;112;Bunnik;"Begindatum voor 1830
+"
+GM0313;GMPV26;RegioS;113;Bunschoten;"Begindatum voor 1830
+"
+GM0214;GMPV25;RegioS;114;Buren;"Gemeentelijke herindeling per 01-01-1999
+Begindatum voor 1830
+"
+GM0502;GMPV28;RegioS;115;Capelle aan den IJssel;"Begindatum voor 1830
+"
+GM0383;GMPV27;RegioS;116;Castricum;"Gemeentelijke herindeling per 01-01-2002
+Begindatum voor 1830
+"
+GM0109;GMPV22;RegioS;117;Coevorden;"Gemeentelijke herindeling per 01-01-1998
+Begindatum voor 1830
+"
+GM1706;GMPV30;RegioS;118;Cranendonck;"Naamswijziging per 28-01-1998
+"
+GM0216;GMPV25;RegioS;119;Culemborg;"Begindatum voor 1830
+"
+GM0148;GMPV23;RegioS;120;Dalfsen;"Gemeentelijke herindeling per 01-01-2001
+Begindatum voor 1830
+"
+GM1891;GMPV21;RegioS;121;Dantumadiel;"Naamswijziging per 01-01-2009
+"
+GM0503;GMPV28;RegioS;122;Delft;"Begindatum voor 1830
+"
+GM0762;GMPV30;RegioS;123;Deurne;"Naamswijziging per 01-01-1926
+"
+GM0150;GMPV23;RegioS;124;Deventer;"Gemeentelijke herindeling per 01-01-2005
+Gemeentelijke herindeling per 01-01-1999
+Begindatum voor 1830
+"
+GM0384;GMPV27;RegioS;125;Diemen;"Begindatum voor 1830
+"
+GM1980;GMPV27;RegioS;126;Dijk en Waard;"Ontstaan per 01-01-2022
+"
+GM1774;GMPV23;RegioS;127;Dinkelland;"Naamswijziging per 01-06-2002
+"
+GM0221;GMPV25;RegioS;128;Doesburg;"Begindatum voor 1830
+"
+GM0222;GMPV25;RegioS;129;Doetinchem;"Gemeentelijke herindeling per 01-01-2005
+Begindatum 01-01-1920
+"
+GM0766;GMPV30;RegioS;130;Dongen;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0505;GMPV28;RegioS;131;Dordrecht;"Begindatum voor 1830
+"
+GM0498;GMPV27;RegioS;132;Drechterland;"Gemeentelijke herindeling per 01-01-2006
+Naamswijziging per 01-01-1980
+"
+GM1719;GMPV30;RegioS;133;Drimmelen;"Naamswijziging per 25-04-1998
+"
+GM0303;GMPV24;RegioS;134;Dronten;"Ontstaan per 01-01-1972
+"
+GM0225;GMPV25;RegioS;135;Druten;"Begindatum voor 1830
+"
+GM0226;GMPV25;RegioS;136;Duiven;"Begindatum voor 1830
+"
+GM1711;GMPV31;RegioS;137;Echt-Susteren;"Ontstaan per 01-01-2003
+"
+GM0385;GMPV27;RegioS;138;Edam-Volendam;"Gemeentelijke herindeling per 01-01-2016
+Naamswijziging per 01-01-1975
+"
+GM0228;GMPV25;RegioS;139;Ede;"Begindatum voor 1830
+"
+GM0317;GMPV26;RegioS;140;Eemnes;"Begindatum voor 1830
+"
+GM1979;GMPV20;RegioS;141;Eemsdelta;"Ontstaan per 01-01-2021
+"
+GM0770;GMPV30;RegioS;142;Eersel;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM1903;GMPV31;RegioS;143;Eijsden-Margraten;"Ontstaan per 01-01-2011
+"
+GM0772;GMPV30;RegioS;144;Eindhoven;"Begindatum voor 1830
+"
+GM0230;GMPV25;RegioS;145;Elburg;"Begindatum voor 1830
+"
+GM0114;GMPV22;RegioS;146;Emmen;"Gemeentelijke herindeling per 01-01-1998
+Begindatum voor 1830
+"
+GM0388;GMPV27;RegioS;147;Enkhuizen;"Begindatum voor 1830
+"
+GM0153;GMPV23;RegioS;148;Enschede;"Begindatum voor 1830
+"
+GM0232;GMPV25;RegioS;149;Epe;"Begindatum voor 1830
+"
+GM0233;GMPV25;RegioS;150;Ermelo;"Begindatum voor 1830
+"
+GM0777;GMPV30;RegioS;151;Etten-Leur;"Naamswijziging per 01-01-1968
+"
+GM1940;GMPV21;RegioS;152;De Fryske Marren;"Naamswijziging per 01-07-2015
+"
+GM0779;GMPV30;RegioS;153;Geertruidenberg;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM1771;GMPV30;RegioS;154;Geldrop-Mierlo;"Ontstaan per 01-01-2004
+"
+GM1652;GMPV30;RegioS;155;Gemert-Bakel;"Ontstaan per 01-01-1997
+"
+GM0907;GMPV31;RegioS;156;Gennep;"Begindatum 02-01-1839
+"
+GM0784;GMPV30;RegioS;157;Gilze en Rijen;"Begindatum voor 1830
+"
+GM1924;GMPV28;RegioS;158;Goeree-Overflakkee;"Ontstaan per 01-01-2013
+"
+GM0664;GMPV29;RegioS;159;Goes;"Begindatum voor 1830
+"
+GM0785;GMPV30;RegioS;160;Goirle;"Begindatum voor 1830
+"
+GM1942;GMPV27;RegioS;161;Gooise Meren;"Ontstaan per 01-01-2016
+"
+GM0512;GMPV28;RegioS;162;Gorinchem;"Begindatum voor 1830
+"
+GM0513;GMPV28;RegioS;163;Gouda;"Begindatum voor 1830
+"
+GM0518;GMPV28;RegioS;164;'s-Gravenhage (gemeente);"Begindatum voor 1830
+"
+GM0014;GMPV20;RegioS;165;Groningen (gemeente);"Gemeentelijke herindeling per 01-01-2019
+Begindatum voor 1830
+"
+GM1729;GMPV31;RegioS;166;Gulpen-Wittem;"Ontstaan per 01-01-1999
+"
+GM0158;GMPV23;RegioS;167;Haaksbergen;"Begindatum voor 1830
+"
+GM0392;GMPV27;RegioS;168;Haarlem;"Begindatum voor 1830
+"
+GM0394;GMPV27;RegioS;169;Haarlemmermeer;"Gemeentelijke herindeling per 01-01-2019
+Begindatum 16-11-1855
+"
+GM1655;GMPV30;RegioS;170;Halderberge;"Ontstaan per 01-01-1997
+"
+GM0160;GMPV23;RegioS;171;Hardenberg;"Gemeentelijke herindeling per 01-01-2001
+Ontstaan per 01-05-1941
+"
+GM0243;GMPV25;RegioS;172;Harderwijk;"Begindatum voor 1830
+"
+GM0523;GMPV28;RegioS;173;Hardinxveld-Giessendam;"Ontstaan per 01-01-1957
+"
+GM0072;GMPV21;RegioS;174;Harlingen;"Begindatum voor 1830
+"
+GM0244;GMPV25;RegioS;175;Hattem;"Begindatum voor 1830
+"
+GM0396;GMPV27;RegioS;176;Heemskerk;"Begindatum voor 1830
+"
+GM0397;GMPV27;RegioS;177;Heemstede;"Begindatum voor 1830
+"
+GM0246;GMPV25;RegioS;178;Heerde;"Begindatum voor 1830
+"
+GM0074;GMPV21;RegioS;179;Heerenveen;"Gemeentelijke herindeling per 01-01-2014
+Begindatum 01-07-1934
+"
+GM0917;GMPV31;RegioS;180;Heerlen;"Begindatum 02-01-1839
+"
+GM1658;GMPV30;RegioS;181;Heeze-Leende;"Ontstaan per 01-01-1997
+"
+GM0399;GMPV27;RegioS;182;Heiloo;"Begindatum voor 1830
+"
+GM0400;GMPV27;RegioS;183;Den Helder;"Begindatum voor 1830
+"
+GM0163;GMPV23;RegioS;184;Hellendoorn;"Begindatum voor 1830
+"
+GM0794;GMPV30;RegioS;185;Helmond;"Begindatum voor 1830
+"
+GM0531;GMPV28;RegioS;186;Hendrik-Ido-Ambacht;"Begindatum voor 1830
+"
+GM0164;GMPV23;RegioS;187;Hengelo (O.);"Begindatum voor 1830
+"
+GM0796;GMPV30;RegioS;188;'s-Hertogenbosch;"Gemeentelijke herindeling per 01-01-2015
+Gemeentelijke herindeling per 01-01-1996
+Begindatum voor 1830
+"
+GM0252;GMPV25;RegioS;189;Heumen;"Begindatum voor 1830
+"
+GM0797;GMPV30;RegioS;190;Heusden;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0534;GMPV28;RegioS;191;Hillegom;"Begindatum voor 1830
+"
+GM0798;GMPV30;RegioS;192;Hilvarenbeek;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0402;GMPV27;RegioS;193;Hilversum;"Begindatum voor 1830
+"
+GM1963;GMPV28;RegioS;194;Hoeksche Waard;"Ontstaan per 01-01-2019
+"
+GM1735;GMPV23;RegioS;195;Hof van Twente;"Ontstaan per 01-01-2001
+"
+GM1966;GMPV20;RegioS;196;Het Hogeland;"Ontstaan per 01-01-2019
+"
+GM1911;GMPV27;RegioS;197;Hollands Kroon;"Ontstaan per 01-01-2012
+"
+GM0118;GMPV22;RegioS;198;Hoogeveen;"Begindatum voor 1830
+"
+GM0405;GMPV27;RegioS;199;Hoorn;"Begindatum voor 1830
+"
+GM1507;GMPV31;RegioS;200;Horst aan de Maas;"Gemeentelijke herindeling per 01-01-2010
+Ontstaan per 01-01-2001
+"
+GM0321;GMPV26;RegioS;201;Houten;"Begindatum voor 1830
+"
+GM0406;GMPV27;RegioS;202;Huizen;"Begindatum voor 1830
+"
+GM0677;GMPV29;RegioS;203;Hulst;"Gemeentelijke herindeling per 01-01-2003
+Begindatum voor 1830
+"
+GM0353;GMPV26;RegioS;204;IJsselstein;"Begindatum voor 1830
+"
+GM1884;GMPV28;RegioS;205;Kaag en Braassem;"Ontstaan per 01-01-2009
+"
+GM0166;GMPV23;RegioS;206;Kampen;"Gemeentelijke herindeling per 01-01-2001
+Begindatum voor 1830
+"
+GM0678;GMPV29;RegioS;207;Kapelle;"Begindatum voor 1830
+"
+GM0537;GMPV28;RegioS;208;Katwijk;"Gemeentelijke herindeling per 01-01-2006
+Begindatum voor 1830
+"
+GM0928;GMPV31;RegioS;209;Kerkrade;"Begindatum 02-01-1839
+"
+GM1598;GMPV27;RegioS;210;Koggenland;"Ontstaan per 01-01-2007
+"
+GM0542;GMPV28;RegioS;211;Krimpen aan den IJssel;"Begindatum voor 1830
+"
+GM1931;GMPV28;RegioS;212;Krimpenerwaard;"Ontstaan per 01-01-2015
+"
+GM1659;GMPV30;RegioS;213;Laarbeek;"Ontstaan per 01-01-1997
+"
+GM1982;GMPV30;RegioS;214;Land van Cuijk;"Ontstaan per 01-01-2022
+"
+GM0882;GMPV31;RegioS;215;Landgraaf;"Ontstaan per 01-01-1982
+"
+GM0415;GMPV27;RegioS;216;Landsmeer;"Gemeentelijke herindeling per 01-01-1991
+Begindatum voor 1830
+"
+GM1621;GMPV28;RegioS;217;Lansingerland;"Ontstaan per 01-01-2007
+"
+GM0417;GMPV27;RegioS;218;Laren (NH.);"Begindatum voor 1830
+"
+GM0080;GMPV21;RegioS;219;Leeuwarden;"Gemeentelijke herindeling per 01-01-2018
+Gemeentelijke herindeling per 01-01-2014
+Begindatum voor 1830
+"
+GM0546;GMPV28;RegioS;220;Leiden;"Begindatum voor 1830
+"
+GM0547;GMPV28;RegioS;221;Leiderdorp;"Begindatum voor 1830
+"
+GM1916;GMPV28;RegioS;222;Leidschendam-Voorburg;"Ontstaan per 01-01-2002
+"
+GM0995;GMPV24;RegioS;223;Lelystad;"Ontstaan per 01-01-1980
+"
+GM1640;GMPV31;RegioS;224;Leudal;"Ontstaan per 01-01-2007
+"
+GM0327;GMPV26;RegioS;225;Leusden;"Begindatum voor 1830
+"
+GM1705;GMPV25;RegioS;226;Lingewaard;"Naamswijziging per 01-01-2003
+"
+GM0553;GMPV28;RegioS;227;Lisse;"Begindatum voor 1830
+"
+GM0262;GMPV25;RegioS;228;Lochem;"Gemeentelijke herindeling per 01-01-2005
+Begindatum voor 1830
+"
+GM0809;GMPV30;RegioS;229;Loon op Zand;"Begindatum voor 1830
+"
+GM0331;GMPV26;RegioS;230;Lopik;"Begindatum voor 1830
+"
+GM0168;GMPV23;RegioS;231;Losser;"Begindatum voor 1830
+"
+GM0263;GMPV25;RegioS;232;Maasdriel;"Gemeentelijke herindeling per 01-01-1999
+Naamswijziging per 01-08-1944
+"
+GM1641;GMPV31;RegioS;233;Maasgouw;"Ontstaan per 01-01-2007
+"
+GM1991;GMPV30;RegioS;234;Maashorst;"Ontstaan per 01-01-2022
+"
+GM0556;GMPV28;RegioS;235;Maassluis;"Begindatum voor 1830
+"
+GM0935;GMPV31;RegioS;236;Maastricht;"Begindatum voor 1830
+"
+GM0420;GMPV27;RegioS;237;Medemblik;"Gemeentelijke herindeling per 01-01-2011
+Gemeentelijke herindeling per 01-01-2007
+Begindatum voor 1830
+"
+GM0938;GMPV31;RegioS;238;Meerssen;"Begindatum 02-01-1839
+"
+GM1948;GMPV30;RegioS;239;Meierijstad;"Ontstaan per 01-01-2017
+"
+GM0119;GMPV22;RegioS;240;Meppel;"Gemeentelijke herindeling per 01-01-1998
+Begindatum voor 1830
+"
+GM0687;GMPV29;RegioS;241;Middelburg (Z.);"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM1842;GMPV28;RegioS;242;Midden-Delfland;"Ontstaan per 01-01-2004
+"
+GM1731;GMPV22;RegioS;243;Midden-Drenthe;"Naamswijziging per 01-01-2000
+"
+GM1952;GMPV20;RegioS;244;Midden-Groningen;"Ontstaan per 01-01-2018
+"
+GM1709;GMPV30;RegioS;245;Moerdijk;"Naamswijziging per 04-04-1998
+"
+GM1978;GMPV28;RegioS;246;Molenlanden;"Ontstaan per 01-01-2019
+"
+GM1955;GMPV25;RegioS;247;Montferland;"Ontstaan per 01-01-2005
+"
+GM0335;GMPV26;RegioS;248;Montfoort;"Begindatum voor 1830
+"
+GM0944;GMPV31;RegioS;249;Mook en Middelaar;"Begindatum 02-01-1839
+"
+GM1740;GMPV25;RegioS;250;Neder-Betuwe;"Naamswijziging per 01-04-2003
+"
+GM0946;GMPV31;RegioS;251;Nederweert;"Begindatum 02-01-1839
+"
+GM0356;GMPV26;RegioS;252;Nieuwegein;"Ontstaan per 01-07-1971
+"
+GM0569;GMPV28;RegioS;253;Nieuwkoop;"Gemeentelijke herindeling per 01-01-2007
+Begindatum voor 1830
+"
+GM0267;GMPV25;RegioS;254;Nijkerk;"Gemeentelijke herindeling per 01-01-2000
+Begindatum voor 1830
+"
+GM0268;GMPV25;RegioS;255;Nijmegen;"Begindatum voor 1830
+"
+GM1930;GMPV28;RegioS;256;Nissewaard;"Ontstaan per 01-01-2015
+"
+GM1970;GMPV21;RegioS;257;Noardeast-Fryslân;"Ontstaan per 01-01-2019
+"
+GM1695;GMPV29;RegioS;258;Noord-Beveland;"Ontstaan per 01-01-1995
+"
+GM1699;GMPV22;RegioS;259;Noordenveld;"Ontstaan per 01-01-1998
+"
+GM0171;GMPV24;RegioS;260;Noordoostpolder;"Provinciale wijziging per 01-01-1986
+Naamswijziging per 01-07-1962
+"
+GM0575;GMPV28;RegioS;261;Noordwijk;"Gemeentelijke herindeling per 01-01-2019
+Begindatum voor 1830
+"
+GM0820;GMPV30;RegioS;262;Nuenen, Gerwen en Nederwetten;"Begindatum voor 1830
+"
+GM0302;GMPV25;RegioS;263;Nunspeet;"Ontstaan per 01-01-1972
+"
+GM0579;GMPV28;RegioS;264;Oegstgeest;"Begindatum voor 1830
+"
+GM0823;GMPV30;RegioS;265;Oirschot;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0824;GMPV30;RegioS;266;Oisterwijk;"Gemeentelijke herindeling per 01-01-2021
+Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM1895;GMPV20;RegioS;267;Oldambt;"Ontstaan per 01-01-2010
+"
+GM0269;GMPV25;RegioS;268;Oldebroek;"Begindatum voor 1830
+"
+GM0173;GMPV23;RegioS;269;Oldenzaal;"Begindatum voor 1830
+"
+GM1773;GMPV23;RegioS;270;Olst-Wijhe;"Naamswijziging per 26-03-2002
+"
+GM0175;GMPV23;RegioS;271;Ommen;"Begindatum 01-05-1923
+"
+GM1586;GMPV25;RegioS;272;Oost Gelre;"Naamswijziging per 19-05-2006
+"
+GM0826;GMPV30;RegioS;273;Oosterhout;"Begindatum voor 1830
+"
+GM0085;GMPV21;RegioS;274;Ooststellingwerf;"Begindatum voor 1830
+"
+GM0431;GMPV27;RegioS;275;Oostzaan;"Begindatum voor 1830
+"
+GM0432;GMPV27;RegioS;276;Opmeer;"Begindatum voor 1830
+"
+GM0086;GMPV21;RegioS;277;Opsterland;"Begindatum voor 1830
+"
+GM0828;GMPV30;RegioS;278;Oss;"Gemeentelijke herindeling per 01-01-2015
+Gemeentelijke herindeling per 01-01-2011
+Gemeentelijke herindeling per 01-01-2003
+Gemeentelijke herindeling per 01-01-1994
+Begindatum voor 1830
+"
+GM1509;GMPV25;RegioS;279;Oude IJsselstreek;"Ontstaan per 01-01-2005
+"
+GM0437;GMPV27;RegioS;280;Ouder-Amstel;"Begindatum voor 1830
+"
+GM0589;GMPV26;RegioS;281;Oudewater;"Provinciale wijziging per 01-09-1970
+Begindatum voor 1830
+"
+GM1734;GMPV25;RegioS;282;Overbetuwe;"Ontstaan per 01-01-2001
+"
+GM0590;GMPV28;RegioS;283;Papendrecht;"Begindatum voor 1830
+"
+GM1894;GMPV31;RegioS;284;Peel en Maas;"Ontstaan per 01-01-2010
+"
+GM0765;GMPV20;RegioS;285;Pekela;"Ontstaan per 01-01-1990
+"
+GM1926;GMPV28;RegioS;286;Pijnacker-Nootdorp;"Ontstaan per 01-01-2002
+"
+GM0439;GMPV27;RegioS;287;Purmerend;"Gemeentelijke herindeling per 01-01-2022
+Begindatum voor 1830
+"
+GM0273;GMPV25;RegioS;288;Putten;"Begindatum voor 1830
+"
+GM0177;GMPV23;RegioS;289;Raalte;"Gemeentelijke herindeling per 01-01-2001
+Begindatum voor 1830
+"
+GM0703;GMPV29;RegioS;290;Reimerswaal;"Ontstaan per 01-01-1970
+"
+GM0274;GMPV25;RegioS;291;Renkum;"Begindatum voor 1830
+"
+GM0339;GMPV26;RegioS;292;Renswoude;"Begindatum voor 1830
+"
+GM1667;GMPV30;RegioS;293;Reusel-De Mierden;"Ontstaan per 01-01-1997
+"
+GM0275;GMPV25;RegioS;294;Rheden;"Begindatum voor 1830
+"
+GM0340;GMPV26;RegioS;295;Rhenen;"Begindatum voor 1830
+"
+GM0597;GMPV28;RegioS;296;Ridderkerk;"Begindatum voor 1830
+"
+GM1742;GMPV23;RegioS;297;Rijssen-Holten;"Naamswijziging per 15-03-2003
+"
+GM0603;GMPV28;RegioS;298;Rijswijk (ZH.);"Begindatum voor 1830
+"
+GM1669;GMPV31;RegioS;299;Roerdalen;"Gemeentelijke herindeling per 01-01-2007
+Naamswijziging per 01-01-1993
+"
+GM0957;GMPV31;RegioS;300;Roermond;"Gemeentelijke herindeling per 01-01-2007
+Gemeentelijke herindeling per 01-01-1991
+Begindatum 02-01-1839
+"
+GM0736;GMPV26;RegioS;301;De Ronde Venen;"Gemeentelijke herindeling per 01-01-2011
+Ontstaan per 01-01-1989
+"
+GM1674;GMPV30;RegioS;302;Roosendaal;"Ontstaan per 01-01-1997
+"
+GM0599;GMPV28;RegioS;303;Rotterdam;"Begindatum voor 1830
+"
+GM0277;GMPV25;RegioS;304;Rozendaal;"Begindatum voor 1830
+"
+GM0840;GMPV30;RegioS;305;Rucphen;"Begindatum voor 1830
+"
+GM0441;GMPV27;RegioS;306;Schagen;"Gemeentelijke herindeling per 01-01-2013
+Begindatum voor 1830
+"
+GM0279;GMPV25;RegioS;307;Scherpenzeel;"Begindatum voor 1830
+"
+GM0606;GMPV28;RegioS;308;Schiedam;"Begindatum voor 1830
+"
+GM0088;GMPV21;RegioS;309;Schiermonnikoog;"Begindatum voor 1830
+"
+GM1676;GMPV29;RegioS;310;Schouwen-Duiveland;"Ontstaan per 01-01-1997
+"
+GM0965;GMPV31;RegioS;311;Simpelveld;"Begindatum 02-01-1839
+"
+GM0845;GMPV30;RegioS;312;Sint-Michielsgestel;"Gemeentelijke herindeling per 01-01-1996
+Begindatum voor 1830
+"
+GM1883;GMPV31;RegioS;313;Sittard-Geleen;"Ontstaan per 01-01-2001
+"
+GM0610;GMPV28;RegioS;314;Sliedrecht;"Begindatum voor 1830
+"
+GM1714;GMPV29;RegioS;315;Sluis;"Ontstaan per 01-01-2003
+"
+GM0090;GMPV21;RegioS;316;Smallingerland;"Begindatum voor 1830
+"
+GM0342;GMPV26;RegioS;317;Soest;"Begindatum voor 1830
+"
+GM0847;GMPV30;RegioS;318;Someren;"Begindatum voor 1830
+"
+GM0848;GMPV30;RegioS;319;Son en Breugel;"Begindatum voor 1830
+"
+GM0037;GMPV20;RegioS;320;Stadskanaal;"Ontstaan per 01-01-1969
+"
+GM0180;GMPV23;RegioS;321;Staphorst;"Begindatum voor 1830
+"
+GM0532;GMPV27;RegioS;322;Stede Broec;"Ontstaan per 01-01-1979
+"
+GM0851;GMPV30;RegioS;323;Steenbergen;"Gemeentelijke herindeling per 01-01-1997
+Naamswijziging per 25-06-1962
+"
+GM1708;GMPV23;RegioS;324;Steenwijkerland;"Naamswijziging per 01-01-2003
+"
+GM0971;GMPV31;RegioS;325;Stein (L.);"Begindatum 02-01-1839
+"
+GM1904;GMPV26;RegioS;326;Stichtse Vecht;"Ontstaan per 01-01-2011
+"
+GM1900;GMPV21;RegioS;327;Súdwest-Fryslân;"Gemeentelijke herindeling per 01-01-2018
+Ontstaan per 01-01-2011
+"
+GM0715;GMPV29;RegioS;328;Terneuzen;"Gemeentelijke herindeling per 01-01-2003
+Begindatum voor 1830
+"
+GM0093;GMPV21;RegioS;329;Terschelling;"Provinciale wijziging per 01-09-1942
+Begindatum voor 1830
+"
+GM0448;GMPV27;RegioS;330;Texel;"Begindatum voor 1830
+"
+GM1525;GMPV28;RegioS;331;Teylingen;"Ontstaan per 01-01-2006
+"
+GM0716;GMPV29;RegioS;332;Tholen;"Gemeentelijke herindeling per 01-01-1995
+Begindatum voor 1830
+"
+GM0281;GMPV25;RegioS;333;Tiel;"Begindatum voor 1830
+"
+GM0855;GMPV30;RegioS;334;Tilburg;"Gemeentelijke herindeling per 01-01-2021
+Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0183;GMPV23;RegioS;335;Tubbergen;"Begindatum voor 1830
+"
+GM1700;GMPV23;RegioS;336;Twenterand;"Naamswijziging per 01-06-2002
+"
+GM1730;GMPV22;RegioS;337;Tynaarlo;"Naamswijziging per 01-12-1999
+"
+GM0737;GMPV21;RegioS;338;Tytsjerksteradiel;"Naamswijziging per 01-01-1989
+"
+GM0450;GMPV27;RegioS;339;Uitgeest;"Begindatum voor 1830
+"
+GM0451;GMPV27;RegioS;340;Uithoorn;"Begindatum voor 1830
+"
+GM0184;GMPV24;RegioS;341;Urk;"Provinciale wijziging per 01-01-1986
+Begindatum voor 1830
+"
+GM0344;GMPV26;RegioS;342;Utrecht (gemeente);"Gemeentelijke herindeling per 01-01-2001
+Begindatum voor 1830
+"
+GM1581;GMPV26;RegioS;343;Utrechtse Heuvelrug;"Ontstaan per 01-01-2006
+"
+GM0981;GMPV31;RegioS;344;Vaals;"Begindatum 02-01-1839
+"
+GM0994;GMPV31;RegioS;345;Valkenburg aan de Geul;"Ontstaan per 01-01-1982
+"
+GM0858;GMPV30;RegioS;346;Valkenswaard;"Begindatum voor 1830
+"
+GM0047;GMPV20;RegioS;347;Veendam;"Begindatum voor 1830
+"
+GM0345;GMPV26;RegioS;348;Veenendaal;"Begindatum voor 1830
+"
+GM0717;GMPV29;RegioS;349;Veere;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0861;GMPV30;RegioS;350;Veldhoven;"Naamswijziging per 01-05-1921
+"
+GM0453;GMPV27;RegioS;351;Velsen;"Begindatum voor 1830
+"
+GM0983;GMPV31;RegioS;352;Venlo;"Gemeentelijke herindeling per 01-01-2010
+Gemeentelijke herindeling per 01-01-2001
+Begindatum 02-01-1839
+"
+GM0984;GMPV31;RegioS;353;Venray;"Begindatum 02-01-1839
+"
+GM1961;GMPV26;RegioS;354;Vijfheerenlanden;"Provinciale wijziging per 01-01-2019
+Ontstaan per 01-01-2019
+"
+GM0622;GMPV28;RegioS;355;Vlaardingen;"Begindatum voor 1830
+"
+GM0096;GMPV21;RegioS;356;Vlieland;"Provinciale wijziging per 01-09-1942
+Begindatum voor 1830
+"
+GM0718;GMPV29;RegioS;357;Vlissingen;"Begindatum voor 1830
+"
+GM0986;GMPV31;RegioS;358;Voerendaal;"Begindatum 02-01-1839
+"
+GM1992;GMPV28;RegioS;359;Voorne aan Zee;"Ontstaan per 01-01-2023
+"
+GM0626;GMPV28;RegioS;360;Voorschoten;"Begindatum voor 1830
+"
+GM0285;GMPV25;RegioS;361;Voorst;"Begindatum voor 1830
+"
+GM0865;GMPV30;RegioS;362;Vught;"Gemeentelijke herindeling per 01-01-2021
+Begindatum voor 1830
+"
+GM1949;GMPV21;RegioS;363;Waadhoeke;"Ontstaan per 01-01-2018
+"
+GM0866;GMPV30;RegioS;364;Waalre;"Begindatum voor 1830
+"
+GM0867;GMPV30;RegioS;365;Waalwijk;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0627;GMPV28;RegioS;366;Waddinxveen;"Begindatum 01-07-1870
+"
+GM0289;GMPV25;RegioS;367;Wageningen;"Begindatum voor 1830
+"
+GM0629;GMPV28;RegioS;368;Wassenaar;"Begindatum voor 1830
+"
+GM0852;GMPV27;RegioS;369;Waterland;"Ontstaan per 01-01-1991
+"
+GM0988;GMPV31;RegioS;370;Weert;"Gemeentelijke herindeling per 01-01-1998
+Begindatum 02-01-1839
+"
+GM1960;GMPV25;RegioS;371;West Betuwe;"Ontstaan per 01-01-2019
+"
+GM0668;GMPV25;RegioS;372;West Maas en Waal;"Naamswijziging per 01-07-1985
+"
+GM1969;GMPV20;RegioS;373;Westerkwartier;"Ontstaan per 01-01-2019
+"
+GM1701;GMPV22;RegioS;374;Westerveld;"Ontstaan per 01-01-1998
+"
+GM0293;GMPV25;RegioS;375;Westervoort;"Begindatum voor 1830
+"
+GM1950;GMPV20;RegioS;376;Westerwolde;"Ontstaan per 01-01-2018
+"
+GM1783;GMPV28;RegioS;377;Westland;"Ontstaan per 01-01-2004
+"
+GM0098;GMPV21;RegioS;378;Weststellingwerf;"Begindatum voor 1830
+"
+GM0189;GMPV23;RegioS;379;Wierden;"Begindatum voor 1830
+"
+GM0296;GMPV25;RegioS;380;Wijchen;"Begindatum voor 1830
+"
+GM1696;GMPV27;RegioS;381;Wijdemeren;"Ontstaan per 01-01-2002
+"
+GM0352;GMPV26;RegioS;382;Wijk bij Duurstede;"Gemeentelijke herindeling per 01-01-1996
+Begindatum voor 1830
+"
+GM0294;GMPV25;RegioS;383;Winterswijk;"Begindatum voor 1830
+"
+GM0873;GMPV30;RegioS;384;Woensdrecht;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0632;GMPV26;RegioS;385;Woerden;"Gemeentelijke herindeling per 01-01-2001
+Provinciale wijziging per 01-01-1989
+Begindatum voor 1830
+"
+GM1690;GMPV22;RegioS;386;De Wolden;"Ontstaan per 01-01-1998
+"
+GM0880;GMPV27;RegioS;387;Wormerland;"Ontstaan per 01-01-1991
+"
+GM0351;GMPV26;RegioS;388;Woudenberg;"Begindatum voor 1830
+"
+GM0479;GMPV27;RegioS;389;Zaanstad;"Ontstaan per 01-01-1974
+"
+GM0297;GMPV25;RegioS;390;Zaltbommel;"Gemeentelijke herindeling per 01-01-1999
+Begindatum voor 1830
+"
+GM0473;GMPV27;RegioS;391;Zandvoort;"Begindatum voor 1830
+"
+GM0050;GMPV24;RegioS;392;Zeewolde;"Ontstaan per 01-01-1984
+"
+GM0355;GMPV26;RegioS;393;Zeist;"Begindatum voor 1830
+"
+GM0299;GMPV25;RegioS;394;Zevenaar;"Gemeentelijke herindeling per 01-01-2018
+Gemeentelijke herindeling per 01-01-2005
+Begindatum voor 1830
+"
+GM0637;GMPV28;RegioS;395;Zoetermeer;"Begindatum voor 1830
+"
+GM0638;GMPV28;RegioS;396;Zoeterwoude;"Begindatum voor 1830
+"
+GM1892;GMPV28;RegioS;397;Zuidplas;"Ontstaan per 01-01-2010
+"
+GM0879;GMPV30;RegioS;398;Zundert;"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830
+"
+GM0301;GMPV25;RegioS;399;Zutphen;"Gemeentelijke herindeling per 01-01-2005
+Begindatum voor 1830
+"
+GM1896;GMPV23;RegioS;400;Zwartewaterland;"Ontstaan per 01-01-2001
+"
+GM0642;GMPV28;RegioS;401;Zwijndrecht;"Gemeentelijke herindeling per 01-01-2003
+Begindatum voor 1830
+"
+GM0193;GMPV23;RegioS;402;Zwolle;"Begindatum voor 1830
+"
+GM0000;OVERIG;RegioS;403;Niet in te delen (Nederland);"Niet in te delen (Nederland): Toedeling aan Nederland, maar door een gebrek aan informatie of door onjuiste informatie is een toedeling aan een bepaalde gemeente niet altijd mogelijk.
+"
+AM01;AM;RegioS;404;Groningen (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM02;AM;RegioS;405;Friesland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM03;AM;RegioS;406;Drenthe (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM05;AM;RegioS;407;Twente (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM06;AM;RegioS;408;Veluwe Stedendriehoek (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM07;AM;RegioS;409;Midden-Gelderland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM08;AM;RegioS;410;Rijk van Nijmegen (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM09;AM;RegioS;411;Achterhoek (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM10;AM;RegioS;412;Rivierenland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM11;AM;RegioS;413;Flevoland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM12;AM;RegioS;414;Gooi en Vechtstreek (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM13;AM;RegioS;415;Midden-Utrecht (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM14;AM;RegioS;416;Amersfoort (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM15;AM;RegioS;417;Noord-Holland Noord (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM17;AM;RegioS;418;Zaanstreek/Waterland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM18;AM;RegioS;419;Groot Amsterdam (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM19;AM;RegioS;420;Holland Rijnland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM20;AM;RegioS;421;Midden-Holland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM21;AM;RegioS;422;Haaglanden (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM22;AM;RegioS;423;Rijnmond (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM23;AM;RegioS;424;Drechtsteden (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM24;AM;RegioS;425;Zeeland (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM25;AM;RegioS;426;West-Brabant (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM26;AM;RegioS;427;Midden-Brabant (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM27;AM;RegioS;428;Noordoost-Brabant (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM28;AM;RegioS;429;Zuidoost-Brabant (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM29;AM;RegioS;430;Noord-Limburg (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM30;AM;RegioS;431;Zuid-Limburg (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM32;AM;RegioS;432;Helmond-De Peel (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM33;AM;RegioS;433;Midden-Limburg (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM34;AM;RegioS;434;Zuid-Holland Centraal (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM35;AM;RegioS;435;Gorinchem (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM36;AM;RegioS;436;Regio Zwolle (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM37;AM;RegioS;437;Zuid-Kennemerland en IJmond (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM38;AM;RegioS;438;FoodValley (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+"
+AM99;AM;RegioS;439;Niet in te delen (AM);"AM = Arbeidsmarktregio
+
+Een indeling in regio's van waaruit gemeenten en het Uitvoeringsinstituut Werknemersverzekeringen (UWV) de dienstverlening aan werkgevers en werkzoekenden vormgeven. Het is een regionaal niveau tussen gemeenten en provincies in. Deze indeling is van onderop, door gemeenten zelf, tot stand gekomen.
+
+Niet in te delen: door een gebrek aan informatie of door onjuiste informatie is een toedeling aan een bepaalde arbeidsmarktregio niet altijd mogelijk.
+"

@@ -1,0 +1,10 @@
+Id;Index;Title;Description;ParentId;DimensionId
+0;0;Kenmerken van huishoudens;;;KenmerkenVanHuishoudens
+1;1;Totaal;;0;KenmerkenVanHuishoudens
+2;2;Samenstelling huishouden;;0;KenmerkenVanHuishoudens
+3;3;Hoofdkostwinner: leeftijd;;0;KenmerkenVanHuishoudens
+4;4;Voornaamste inkomstenbron;;0;KenmerkenVanHuishoudens
+5;5;Woningbezit: huur-of koopwoning;;0;KenmerkenVanHuishoudens
+6;6;Gestandaardiseerd inkomen 20% groepen;;0;KenmerkenVanHuishoudens
+7;7;Vermogen 20% groepen;;0;KenmerkenVanHuishoudens
+8;8;Vermogensklassen;;0;KenmerkenVanHuishoudens

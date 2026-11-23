@@ -1,0 +1,17 @@
+Id;Index;Title;Description;ParentId;DimensionId
+3;0;Totaal;;;Migratiemotief
+4;1;Totaal;;3;Migratiemotief
+5;2;Arbeid;;;Migratiemotief
+6;3;Arbeid;;5;Migratiemotief
+7;4;Asiel;;;Migratiemotief
+8;5;Asiel;;7;Migratiemotief
+9;6;Gezinsmigratie;;;Migratiemotief
+10;7;Gezin: totaal;;9;Migratiemotief
+11;8;Gezin: vorming / hereniging;;9;Migratiemotief
+12;9;Gezin: meegekomen naar migratiemotief;;9;Migratiemotief
+13;10;Studie;;;Migratiemotief
+14;11;Studie;;13;Migratiemotief
+15;12;Tijdelijke bescherming;;;Migratiemotief
+16;13;Tijdelijke bescherming;;15;Migratiemotief
+17;14;Overige redenen;;;Migratiemotief
+18;15;Overige redenen;;17;Migratiemotief

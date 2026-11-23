@@ -1,0 +1,14 @@
+Identifier;MeasureGroupId;Index;Title;Description;DataType;Unit;Decimals;PresentationType
+T001258;;3;Totale woningvoorraad;Woningvoorraad op 1 januari;Long;aantal;0;Absolute
+A028868;;4;Koopwoningen;Woningen die eigendom zijn van de (toekomstige) bewoner(s) of in gebruik zijn als tweede woning. Of waarbij de officiële partner van een overleden eigenaar in de woning woont.;Long;aantal;0;Absolute
+A028867_2;A028867_1;6;Totaal huurwoningen;Woningen die niet bewoond worden door de eigenaar van de woning of niet in gebruik zijn als tweede woning. Hierbij gaat het om woningen waarvan het aannemelijk is dat de woning bestemd is voor de huurmarkt.;Long;aantal;0;Absolute
+A047047;A028867_1;7;Eigendom woningcorporatie;"Huurwoningen in eigendom van 'toegelaten instellingen volkshuisvesting'. Het betreft het aantal huurwoningen waarvan is vastgesteld dat de eigenaar een toegelaten instelling is. Het betreft niet het aantal sociale huurwoningen, omdat er alleen is vastgesteld wie de eigenaar is en er niet is gekeken naar de hoogte van de huurprijs.
+Toegelaten instellingen: woningbouwvereniging, woningstichting, woningcorporatie. 
+Sociale huurwoningen: woningen met een huur onder de liberalisatiegrens.
+";Long;aantal;0;Absolute
+A047048;A028867_1;8;Eigendom overige verhuurders;"Een huurwoning in eigendom van onder andere bedrijven, particulieren en institutionele beleggers. Huurwoningen waarvan het eigendom wel kon worden vastgesteld, maar de eigenaar niet, vallen hier ook onder. 
+Bedrijven: alle instellingen met een bedrijfsmatig karakter zoals bv's en nv's, zelfstandige ondernemers, makelaars en vastgoedhandelsmaatschappijen.
+Particulieren: alle natuurlijke personen.
+Institutionele beleggers: pensioenfondsen, beurs-, beleggings- en verzekeringsmaatschappijen.
+";Long;aantal;0;Absolute
+A048262;;9;Eigendom onbekend;Woningen waarvan het eigendom niet afgeleid kon worden op basis van diverse registraties zoals het WOZ-register, Personenregister en het woningbestand Kadaster.;Long;aantal;0;Absolute

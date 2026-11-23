@@ -1,0 +1,109 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+T001059;1;Nationaliteit;1;Totaal;"Inclusief Nederlands en zonder / onbekend. 
+
+Nederlands: 
+Nederlands en behandeld als Nederlander. 
+
+Behandeld als Nederlander: 
+Bijvoorbeeld Molukkers die, op grond van de Faciliteitenwet Molukkers, waarin wordt bepaald dat zij - als ze niet het Nederlanderschap bezitten (maar Indonesiër of staatloos zijn) - worden behandeld als waren zij Nederlander. Ze zijn dus geen vreemdelingen in de zin van de Vreemdelingenwet maar ook geen Nederlander in de zin van de Rijkswet op het Nederlanderschap. Wel kunnen ze een normaal Nederlands paspoort verkrijgen. 
+
+Zonder / onbekend: 
+Personen die door geen enkele staat als onderdaan worden beschouwd of van wie de nationaliteit niet kan worden vastgesteld."
+NAT9267;8;Nationaliteit;2;Nederlands;"Nederlands en behandeld als Nederlander. 
+
+Behandeld als Nederlander: Bijvoorbeeld Molukkers die, op grond van de Faciliteitenwet Molukkers, waarin wordt bepaald dat zij - als ze niet het Nederlanderschap bezitten (maar Indonesiër of staatloos zijn) - worden behandeld als waren zij Nederlander. Ze zijn dus geen vreemdelingen in de zin van de Vreemdelingenwet maar ook geen Nederlander in de zin van de Rijkswet op het Nederlanderschap. Wel kunnen ze een normaal Nederlands paspoort verkrijgen."
+NAT9489;1;Nationaliteit;3;Totaal niet-Nederlandse nationaliteit;"Persoon die niet de Nederlandse nationaliteit bezit en niet op grond van een wettelijke bepaling als Nederlander moet worden behandeld. 
+Niet inbegrepen zijn:
+- niet-Nederlandse diplomaten en niet-Nederlandse NAVO militairen die in Nederland wonen;
+- asielzoekers die korter dan zes maanden in de centrale opvang in Nederland verblijven en nog geen verblijfsvergunning hebben gekregen."
+NAT9269;2;Nationaliteit;4;Afrika;
+NAT9270;2;Nationaliteit;5;Amerika;
+NAT9271;2;Nationaliteit;6;Azië;
+NAT9272;2;Nationaliteit;7;Europa (exclusief Nederlands);"Inclusief personen 'Behandeld als Nederlander'.
+Bijvoorbeeld Molukkers die, op grond van de Faciliteitenwet Molukkers, worden behandeld als waren zij Nederlander indien ze niet het Nederlanderschap bezitten (maar Indonesiër of staatloos zijn). Ze zijn dus geen vreemdelingen in de zin van de Vreemdelingenwet maar ook geen Nederlander in de zin van de Rijkswet op het Nederlanderschap. Wel kunnen ze een normaal Nederlands paspoort verkrijgen."
+NAT9515;2;Nationaliteit;8;Buiten-Europa;
+NAT9274;2;Nationaliteit;9;Oceanië;
+NAT9275;3;Nationaliteit;10;Europese Unie (exclusief Nederlands);"Europese Unie: 
+Samenwerkingsverband van Europese staten.
+
+De Europese Unie bestaat uit de volgende landen, exclusief Nederland: 
+Vanaf 1-1-1958: België, Bondsrepubliek Duitsland, Frankrijk, Italië en Luxemburg. 
+Toegetreden op 1-1-1973: Denemarken, Ierland en Verenigd Koninkrijk. 
+Toegetreden op 1-1-1981: Griekenland.
+Toegetreden op 1-1-1986: Portugal en Spanje. 
+Toegetreden op 1-1-1995: Oostenrijk, Finland en Zweden. 
+Toegetreden op 1-5-2004: Cyprus, Estland, Hongarije, Letland, Litouwen, Malta, Polen, Slowakije, Slovenië en Tsjechië. 
+Toegetreden op 1-1-2007: Bulgarije, Roemenië. 
+Toegetreden op 1-7-2013: Kroatië.
+Verlaten op 31-1-2020: Verenigd Koninkrijk."
+NAT9277;3;Nationaliteit;11;Midden- en Oost-Europese nat. in de EU;"Midden- en Oost-Europese nationaliteiten in de Europese Unie. 
+
+Midden- en Oost-Europese landen in de Europese Unie: 
+Toegetreden op 1-5-2004: Estland, Hongarije, Letland, Litouwen, Polen, Slowakije, Slovenië en Tsjechië. 
+Toegetreden op 1-1-2007: Bulgarije, Roemenië. 
+Toegetreden op 1-7-2013: Kroatië.
+
+Europese Unie: 
+Samenwerkingsverband tussen Europese lidstaten."
+NAT9481;3;Nationaliteit;12;GIPS-Nationaliteiten in de EU;"GIPS-nationaliteiten in de Europese Unie
+
+GIPS-landen: 
+Griekenland, Italië, Portugal en Spanje. 
+
+Europese Unie: 
+Samenwerkingsverband tussen Europese lidstaten."
+NAT9517;2;Nationaliteit;13;Afrika (exclusief Marokkaans);
+NAT9519;2;Nationaliteit;14;Azië (exclusief Indonesisch en Turks);
+NAT9518;2;Nationaliteit;15;Amerika en Oceanië (exclusief Surinaams);
+NAT9278;7;Nationaliteit;16;Afghaans;
+NAT9281;6;Nationaliteit;17;Amerikaans;Amerikaans burger en Amerikaans onderdaan.
+NAT9287;9;Nationaliteit;18;Australisch;
+NAT9292;8;Nationaliteit;19;Belgisch;
+NAT9294;7;Nationaliteit;20;Bengalees;
+NAT9300;6;Nationaliteit;21;Braziliaans;
+NAT9301;8;Nationaliteit;22;Brits;Brits burger, Brits onderdaan, Brits overzees burger, Burger Britse afhankelijke gebieden en British National (overseas).
+NAT9303;8;Nationaliteit;23;Bulgaars;
+NAT9307;6;Nationaliteit;24;Canadees;
+NAT9310;7;Nationaliteit;25;Chinees;
+NAT9311;6;Nationaliteit;26;Colombiaans;
+NAT9322;8;Nationaliteit;27;Burger van Bondsrepubliek Duitsland;Burger Bondsrepubliek Duitsland en Oost-duits.
+NAT9324;5;Nationaliteit;28;Egyptisch;
+NAT9326;5;Nationaliteit;29;Eritrees;
+NAT9330;7;Nationaliteit;30;Filippijns;
+NAT9331;8;Nationaliteit;31;Fins;
+NAT9332;8;Nationaliteit;32;Frans;
+NAT9338;8;Nationaliteit;33;Grieks;
+NAT9345;8;Nationaliteit;34;Hongaars;
+NAT9346;8;Nationaliteit;35;Iers;
+NAT9348;7;Nationaliteit;36;Indiaas;
+NAT9349;7;Nationaliteit;37;Indonesisch;
+NAT9350;7;Nationaliteit;38;Iraaks;
+NAT9351;7;Nationaliteit;39;Iraans;
+NAT9353;8;Nationaliteit;40;Italiaans;
+NAT9356;7;Nationaliteit;41;Japans;
+NAT9357;7;Nationaliteit;42;Jemenitisch;Jemenitisch, Noordjemenitisch en Zuid-Jemenitisch.
+NAT9368;8;Nationaliteit;43;Kroatisch;
+NAT9372;8;Nationaliteit;44;Lets;
+NAT9377;8;Nationaliteit;45;Litouws;
+NAT9387;5;Nationaliteit;46;Marokkaans;
+NAT9390;6;Nationaliteit;47;Mexicaans;
+NAT9403;5;Nationaliteit;48;Nigeriaans;
+NAT9406;8;Nationaliteit;49;Oekraïens;
+NAT9410;7;Nationaliteit;50;Pakistaans;
+NAT9415;8;Nationaliteit;51;Pools;
+NAT9416;8;Nationaliteit;52;Portugees;
+NAT9417;8;Nationaliteit;53;Roemeens;
+NAT9418;8;Nationaliteit;54;Russisch;
+NAT9436;8;Nationaliteit;55;Slowaaks;
+NAT9438;5;Nationaliteit;56;Somalisch;
+NAT9440;8;Nationaliteit;57;Spaans;
+NAT9442;6;Nationaliteit;58;Surinaams;
+NAT9444;7;Nationaliteit;59;Syrisch;
+NAT9446;7;Nationaliteit;60;Taiwanees;
+NAT9454;8;Nationaliteit;61;Tsjechisch;
+NAT9458;7;Nationaliteit;62;Turks;
+NAT9466;7;Nationaliteit;63;Vietnamees;
+NAT9470;5;Nationaliteit;64;Zuid-Afrikaans;
+NAT9471;7;Nationaliteit;65;Zuid-Koreaans;
+NAT9473;8;Nationaliteit;66;Zweeds;
+NAT9480;10;Nationaliteit;67;Staatloos / onbekend;Personen die door geen enkele staat als onderdaan worden beschouwd of van wie de nationaliteit niet kan worden vastgesteld.

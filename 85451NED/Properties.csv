@@ -1,0 +1,134 @@
+Identifier;Title;Description;Modified;ReleaseDate;ModificationDate;Language;TemporalCoverage;Authority;Catalog;Publisher;ContactPoint;Version;VersionNotes;VersionReason;Frequency;Status;ObservationCount;ObservationsModified;DatasetType;GraphTypes;License;Source;Summary;LongDescription
+85451NED;"Immi- en emigratie; geslacht, leeftijd, nationaliteit, regio";"Deze tabel bevat cijfers over immigratie en emigratie van personen naar en vanuit Nederland. De cijfers van de emigratie zijn inclusief het saldo van de administratieve correcties. Cijfers over emigratie inclusief het saldo van de administratieve correcties geven een beter beeld van de werkelijke emigratie dan cijfers over emigratie exclusief deze correcties. Tevens zijn de cijfers over de administratieve correcties (administratieve opnemingen en administratieve afvoeringen) opgenomen in de tabel.
+
+In de tabel worden de volgende gegevens onderscheiden:
+- Immi- en emigratie (inclusief administratieve correcties) naar geslacht, leeftijd (op 31 december; 5 jaargroepen 0-50 jaar en ouder), nationaliteit en regio.
+- Administratieve opnemingen en afvoeringen naar geslacht, leeftijd (op 31 december; 5 jaargroepen 0-50 jaar en ouder), nationaliteit en regio.
+
+In deze tabel zijn de gegevens met betrekking tot immigratie uit een land beschikbaar als er 1000 of meer personen naar Nederland immigreren, op ongeacht welke periode in deze tabel.
+
+Gegevens beschikbaar vanaf: 2010.
+
+Status van de cijfers:
+De cijfers in deze tabel zijn definitief.
+
+Wijzigingen per 17 augustus 2026:
+Definitieve cijfers over 2025 zijn toegevoegd.
+
+Wanneer komen er nieuwe cijfers?
+In het derde kwartaal van 2027 worden de definitieve cijfers over 2026 in deze publicatie opgenomen.
+
+";2026-08-17T00:00:00+02:00;2026-08-17T00:00:00+02:00;2026-08-17T00:00:00+02:00;nl;2010-2025;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;CBS;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;infoservice@cbs.nl;202608170000;;Actualisering;Per jaar;Regulier;120378096;2026-08-17T00:00:00+02:00;Numeric;Table,Bar,Line,Map;https://creativecommons.org/licenses/by/4.0/;CBS.;"Immigratie, emigratie, migratiesaldo, opnemingen, afvoeringen, saldo corr
+-afvoeringen, -correcties, geslacht, leeftijd, nationaliteit, regio";"INHOUDSOPGAVE
+
+1. Toelichting
+2. Definities en verklaring van symbolen
+3. Koppelingen naar relevante tabellen en artikelen
+4. Bronnen en methoden
+5. Meer informatie
+
+1. TOELICHTING
+
+Deze tabel bevat cijfers over immigratie en emigratie van personen naar en vanuit Nederland. De cijfers van de emigratie zijn inclusief het saldo van de administratieve correcties. Cijfers over emigratie inclusief het saldo van de administratieve correcties geven een beter beeld van de werkelijke emigratie dan cijfers over emigratie exclusief deze correcties. Tevens zijn de cijfers over de administratieve correcties (administratieve opnemingen en administratieve afvoeringen) opgenomen in de tabel.
+
+In de tabel worden de volgende gegevens onderscheiden:
+- Immi- en emigratie (inclusief administratieve correcties) naar geslacht, leeftijd (op 31 december; 5 jaargroepen 0-50 jaar en ouder), nationaliteit en regio.
+- Administratieve opnemingen en afvoeringen naar geslacht, leeftijd (op 31 december; 5 jaargroepen 0-50 jaar en ouder), nationaliteit en regio.
+
+In deze tabel zijn de gegevens met betrekking tot immigratie uit een land beschikbaar als er 1000 of meer personen naar Nederland immigreren, op ongeacht welke periode in deze tabel.
+
+Gegevens beschikbaar vanaf: 2010.
+
+Status van de cijfers:
+De cijfers in deze tabel zijn definitief.
+
+Wijzigingen per 17 augustus 2026:
+Definitieve cijfers over 2025 zijn toegevoegd.
+
+Wanneer komen er nieuwe cijfers?
+In het derde kwartaal van 2027 worden de definitieve cijfers over 2026 in deze publicatie opgenomen.
+
+2. DEFINITIES EN VERKLARING VAN SYMBOLEN
+
+Definities:
+
+Administratieve correctie
+Opneming van een persoon in het gemeentelijke bevolkingsregister of afvoering van een persoon uit het gemeentelijke bevolkingsregister die niet het gevolg is van geboorte, sterfte, vestiging, vertrek of gemeentegrenswijziging.
+
+Emigratie
+Vertrek van personen naar het buitenland.
+Men wordt uit het bevolkingsregister afgevoerd wanneer de verwachte verblijfsduur in het buitenland ten minste acht maanden bedraagt.
+Het gaat hier steeds om de aan de gemeente gemelde emigratie.
+
+Immigratie
+Vestiging van personen vanuit het buitenland in Nederland.
+Om als immigrant te kunnen worden geteld dienen deze personen ingeschreven te worden in de gemeentelijke bevolkingsregisters. Men wordt ingeschreven als men verwacht minimaal vier maanden in Nederland te blijven.
+
+Leeftijd
+Het aantal gehele jaren dat op 31 december van het jaar van migratie is verstreken sinds de geboortedatum van de persoon.
+Te bereken als jaar van migratie min geboortejaar.
+
+Nationaliteit
+Het wettelijk onderdaan zijn van een bepaalde staat (staatsburgerschap).
+Personen kunnen meerdere nationaliteiten hebben. Om dubbeltellingen te voorkomen wordt in statistische overzichten aan personen die meerdere nationaliteiten hebben, slechts één nationaliteit toegekend.
+Daartoe worden prioriteringsregels gesteld. Die komen erop neer dat iemand met de Nederlandse nationaliteit in de statistiek steeds Nederlander is.
+Voor mensen die niet de Nederlandse nationaliteit bezitten, geldt de volgorde: nationaliteit van één van de Benelux-landen, nationaliteit van een staat binnen de Europese Unie, andere Europese nationaliteit, niet-Europese nationaliteit. Personen die geen nationaliteit hebben, zijn staatloos.
+
+Verklaring van symbolen:
+
+niets (blanco) : het cijfer kan op logische gronden niet voorkomen
+. : het cijfer is onbekend, onvoldoende betrouwbaar of geheim
+* : voorlopige cijfers
+** : nader voorlopige cijfers
+
+3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN
+
+Relevante tabellen:
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/84974NED'>Immi- en emigratie; geslacht, leeftijd, nationaliteit en regio, 2010-2021</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/37946ned'>Immi- en emigratie; nationaliteit, leeftijd (31 dec) en geslacht; 1972-2018</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/83474ned'>Bevolkingsontwikkeling; maand en jaar</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/83482ned'>Bevolking op eerste vd maand; geslacht, lft, migratieachtergrond; 2016-2023</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/85721ned'>Bevolking op de eerste van de maand; geslacht, leeftijd, herkomstland</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/03742'>Immi- en emigratie; leeftijd (31 dec.), burg staat, geboorteland; 1995-2022</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/85469ned'>Immi- en emigratie; leeftijd (31 dec.), burgerlijke staat, geboorteland</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/60032'>Migratie; land van herkomst / vestiging, geboorteland, geslacht; 1995-2022</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/85671ned'>Migratie; land vertrek / bestemming, geboorteland en geslacht</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/60056ned'>Immi- en emigratie naar diverse kenmerken, regio; 1988-2019</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/85468ned'>Immigratie en emigratie; geslacht, leeftijd, geboorteland, regio</a>
+
+Relevant artikel:
+In 2022 is het CBS over gegaan op een nieuwe indeling van de bevolking naar herkomst. Voortaan is meer bepalend waar iemand zelf geboren is, naast waar iemands ouders geboren zijn. Voor meer informatie hierover, zie <a href='https://www.cbs.nl/nl-nl/longread/statistische-trends/2022/nieuwe-indeling-bevolking-naar-herkomst'>Nieuwe indeling bevolking naar herkomst</a>.
+
+Informatie over gebieden in Nederland is te vinden in <a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=4450'>Gebieden in Nederland</a>.
+
+Algemene informatie over de bevolking is te vinden op de themapagina <a href='https://www.cbs.nl/nl-nl/maatschappij/bevolking'>Bevolking</a>.
+
+4. BRONNEN EN METHODEN
+
+Verwerking grenswijziging Rotterdam en Rozenburg in 2010
+Per 18 maart 2010 is de gemeente Rozenburg opgeheven en in zijn geheel overgegaan naar de gemeente Rotterdam.
+Voor de overzichtelijkheid zijn de cijfers van Rozenburg voor geheel 2010 bij Rotterdam geteld.
+
+Verwerking grenswijziging Amsterdam en Weesp in 2022
+Per 24 maart 2022 is de gemeente Weesp opgeheven en in zijn geheel overgegaan naar de gemeente Amsterdam. Voor de overzichtelijkheid zijn de cijfers van Weesp voor geheel 2022 bij Amsterdam geteld.
+De gemeenten Weesp en Amsterdam liggen niet in hetzelfde COROP gebied waardoor de grenswijziging ook betrekking heeft op de COROP gebieden Groot-Amsterdam (CR23) en Het Gooi en Vechtstreek (CR24).
+
+Buitenlandse migratiecijfers
+Door een verbetering in het productieproces vindt er een kleine verschuiving plaats in de cijfers van de buitenlandse migratie. Met ingang van 2010 zijn de volgende wijzigingen doorgevoerd:
+- administratieve opnemingen die voorafgegaan worden door emigratie worden nu beschouwd als immigratie;
+- administratieve afvoeringen die gevolgd worden door immigratie worden nu beschouwd als emigratie.
+Door de verbetering in het productieproces is het saldo overige correcties sterk verminderd vanaf 2010.
+
+Nagekomen berichten
+Vanaf verslagjaar 2010 worden méér nagekomen berichten meegeteld. Voor een beschrijving van nagekomen berichten en de gevolgen voor de cijfers in de tabel zie de Korte onderzoeksbeschrijving <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/bevolkingsstatistiek'>Bevolkingsstatistiek</a>.
+
+De onderzoeksmethode van deze tabel is te vinden in de onderzoeksbeschrijving <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/bevolkingsstatistiek'>Bevolkingsstatistiek</a>.
+
+De gegevens in de tabel zijn vanaf 2014 samengesteld met behulp van het <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/stelsel-van-sociaal-statistische-bestanden--ssb--'>Stelsel van Sociaal-statistische Bestanden (SSB)</a>.
+
+5. MEER INFORMATIE
+
+<a href='https://www.cbs.nl/nl-nl/over-ons/contact/infoservice'>Infoservice</a>
+
+Copyright (c) Centraal Bureau voor de Statistiek, Den Haag/Heerlen
+Verveelvoudiging is toegestaan, mits het CBS als bron wordt vermeld."

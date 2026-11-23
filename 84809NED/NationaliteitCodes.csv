@@ -1,0 +1,55 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+T001059;20;Nationaliteit;1;Totaal;"Inclusief Nederlands en zonder / onbekend. 
+
+Nederlands: 
+Nederlands en behandeld als Nederlander. 
+
+Behandeld als Nederlander: 
+Bijvoorbeeld Molukkers die, op grond van de Faciliteitenwet Molukkers, waarin wordt bepaald dat zij - als ze niet het Nederlanderschap bezitten (maar Indonesiër of staatloos zijn) - worden behandeld als waren zij Nederlander. Ze zijn dus geen vreemdelingen in de zin van de Vreemdelingenwet maar ook geen Nederlander in de zin van de Rijkswet op het Nederlanderschap. Wel kunnen ze een normaal Nederlands paspoort verkrijgen. 
+
+Zonder / onbekend: 
+Personen die door geen enkele staat als onderdaan worden beschouwd of van wie de nationaliteit niet kan worden vastgesteld."
+NAT9269;21;Nationaliteit;2;Afrika;
+NAT9270;21;Nationaliteit;3;Amerika;
+NAT9271;21;Nationaliteit;4;Azië;
+NAT9272;21;Nationaliteit;5;Europa (exclusief Nederlands);"Inclusief personen 'Behandeld als Nederlander'.
+Bijvoorbeeld Molukkers die, op grond van de Faciliteitenwet Molukkers, worden behandeld als waren zij Nederlander indien ze niet het Nederlanderschap bezitten (maar Indonesiër of staatloos zijn). Ze zijn dus geen vreemdelingen in de zin van de Vreemdelingenwet maar ook geen Nederlander in de zin van de Rijkswet op het Nederlanderschap. Wel kunnen ze een normaal Nederlands paspoort verkrijgen."
+NAT9274;21;Nationaliteit;6;Oceanië;
+NAT9278;23;Nationaliteit;7;Afghaans;
+NAT9281;23;Nationaliteit;8;Amerikaans;Amerikaans burger en Amerikaans onderdaan.
+NAT9287;23;Nationaliteit;9;Australisch;
+NAT9300;23;Nationaliteit;10;Braziliaans;
+NAT9301;23;Nationaliteit;11;Brits;"Sinds 31 januari 2020 heeft het Verenigd Koninkrijk de Europese Unie verlaten. Voor het gehele jaar 2020 is Verenigd Koninkrijk nog beschouwd als EU land. In deze tabel zijn cijfers over personen afkomstig uit het Verenigd Koninkrijk vanaf 2021 beschikbaar.
+
+Brits:
+Brits burger, Brits onderdaan, Brits overzees burger, Burger Britse afhankelijke gebieden en British National (overseas).
+
+Europese Unie: 
+Samenwerkingsverband van Europese staten. "
+NAT9303;23;Nationaliteit;12;Bulgaars;
+NAT9307;23;Nationaliteit;13;Canadees;
+NAT9310;23;Nationaliteit;14;Chinees;
+NAT9326;23;Nationaliteit;15;Eritrees;
+NAT9330;23;Nationaliteit;16;Filippijns;
+NAT9345;23;Nationaliteit;17;Hongaars;
+NAT9348;23;Nationaliteit;18;Indiaas;
+NAT9349;23;Nationaliteit;19;Indonesisch;
+NAT9350;23;Nationaliteit;20;Iraaks;
+NAT9351;23;Nationaliteit;21;Iraans;
+NAT9356;23;Nationaliteit;22;Japans;
+NAT9372;23;Nationaliteit;23;Lets;
+NAT9377;23;Nationaliteit;24;Litouws;
+NAT9387;23;Nationaliteit;25;Marokkaans;
+NAT9406;23;Nationaliteit;26;Oekraïens;
+NAT9415;23;Nationaliteit;27;Pools;
+NAT9417;23;Nationaliteit;28;Roemeens;
+NAT9418;23;Nationaliteit;29;Russisch;
+NAT9436;23;Nationaliteit;30;Slowaaks;
+NAT9438;23;Nationaliteit;31;Somalisch;
+NAT9442;23;Nationaliteit;32;Surinaams;
+NAT9444;23;Nationaliteit;33;Syrisch;
+NAT9458;23;Nationaliteit;34;Turks;
+NAT9470;23;Nationaliteit;35;Zuid-Afrikaans;
+NAT9471;23;Nationaliteit;36;Zuid-Koreaans;
+NAT9480;20;Nationaliteit;37;Staatloos / onbekend;Personen die door geen enkele staat als onderdaan worden beschouwd of van wie de nationaliteit niet kan worden vastgesteld.
+NAT9999;23;Nationaliteit;38;Overige nationaliteiten;Overige niet elders genoemde nationaliteiten.

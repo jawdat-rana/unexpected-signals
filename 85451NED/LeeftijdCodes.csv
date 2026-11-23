@@ -1,0 +1,13 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+10000;;Leeftijd;1;Totaal;
+70100;;Leeftijd;2;0 tot 5 jaar;
+70200;;Leeftijd;3;5 tot 10 jaar;
+70300;;Leeftijd;4;10 tot 15 jaar;
+70400;;Leeftijd;5;15 tot 20 jaar;
+70500;;Leeftijd;6;20 tot 25 jaar;
+70600;;Leeftijd;7;25 tot 30 jaar;
+70700;;Leeftijd;8;30 tot 35 jaar;
+70800;;Leeftijd;9;35 tot 40 jaar;
+70900;;Leeftijd;10;40 tot 45 jaar;
+71000;;Leeftijd;11;45 tot 50 jaar;
+21300;;Leeftijd;12;50 jaar of ouder;

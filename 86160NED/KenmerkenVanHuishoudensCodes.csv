@@ -1,0 +1,178 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+1050010;1;KenmerkenVanHuishoudens;1;Particuliere huishoudens;Eén of meer personen die samen een woonruimte bewonen en zichzelf, dus niet-bedrijfsmatig, voorzien in de dagelijkse levensbehoeften.
+1050015;2;KenmerkenVanHuishoudens;2;Type: Eenpersoonshuishouden;"Particulier huishouden bestaande uit één persoon.
+
+Tot eenpersoonshuishoudens, ook wel alleenstaanden genoemd, worden ook personen gerekend die met anderen op eenzelfde adres wonen maar een eigen huishouding voeren. Alleenstaanden worden in alle burgerlijke staten aangetroffen; zo kunnen gehuwden na het stuklopen van hun relatie (in afwachting van een scheiding) alleen wonen."
+1016010;2;KenmerkenVanHuishoudens;3;Type: Meerpersoonshuishouden;Een particulier huishouden bestaande uit twee of meer personen.
+1050190;2;KenmerkenVanHuishoudens;4;Type: Eenoudergezin;Particulier huishouden bestaande uit één ouder met één of meer thuiswonende kinderen.
+1050055;2;KenmerkenVanHuishoudens;5;Type: Paar, totaal;"Meerpersoonshuishouden bestaande uit een paar met of zonder thuiswonend(e) kind(eren)
+
+
+
+Meerpersoonshuishouden:
+
+Een particulier huishouden bestaande uit twee of meer personen.
+
+
+
+Paar:
+
+Twee op basis van huwelijk, partnerschapsregistratie of samenwoonrelatie bij elkaar behorende personen.
+
+
+
+Thuiswonend kind:
+
+Persoon ongeacht leeftijd of burgerlijke staat die een kind-ouder relatie heeft met één of twee tot het huishouden behorende ouders.
+
+Onder thuiswonende kinderen worden ook begrepen adoptie- en stiefkinderen maar geen pleegkinderen."
+1016090;2;KenmerkenVanHuishoudens;6;Type: Paar, met kind(eren);"Meerpersoonshuishouden bestaande uit een paar met (een) thuiswonend(e) kind(eren)
+
+
+
+Meerpersoonshuishouden:
+
+Een particulier huishouden bestaande uit twee of meer personen.
+
+
+
+Paar:
+
+Twee op basis van huwelijk, partnerschapsregistratie of samenwoonrelatie bij elkaar behorende personen.
+
+
+
+Thuiswonend kind:
+
+Persoon ongeacht leeftijd of burgerlijke staat die een kind-ouder relatie heeft met één of twee tot het huishouden behorende ouders.
+
+Onder thuiswonende kinderen worden ook begrepen adoptie- en stiefkinderen maar geen pleegkinderen."
+1017780;2;KenmerkenVanHuishoudens;7;Type: Paar, zonder kind;"Meerpersoonshuishouden bestaande uit een paar zonder thuiswonend(e) kind(eren)
+
+
+
+Meerpersoonshuishouden:
+
+Een particulier huishouden bestaande uit twee of meer personen.
+
+
+
+Paar:
+
+Twee op basis van huwelijk, partnerschapsregistratie of samenwoonrelatie bij elkaar behorende personen.
+
+
+
+Thuiswonend kind:
+
+Persoon ongeacht leeftijd of burgerlijke staat die een kind-ouder relatie heeft met één of twee tot het huishouden behorende ouders.
+
+Onder thuiswonende kinderen worden ook begrepen adoptie- en stiefkinderen maar geen pleegkinderen."
+1050220;2;KenmerkenVanHuishoudens;8;Type: Meerpersoonshuishouden, overig;"Meerpersoonshuishouden dat uitsluitend bestaat uit overige leden.
+
+
+
+Meerpersoonshuishouden:
+
+Een particulier huishouden bestaande uit twee of meer personen.
+
+
+
+Overig lid van een huishouden:
+
+Persoon die anders dan als partner, ouder in een eenouderhuishouden of als thuiswonend kind deel uitmaakt van een particulier huishouden. 
+
+Te denken valt hier bijvoorbeeld aan twee broers (zussen) die samen een huishouden vormen."
+A025340;3;KenmerkenVanHuishoudens;9;Hoofdkostwinner: tot 25 jaar;De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.
+A025343;3;KenmerkenVanHuishoudens;10;Hoofdkostwinner: 25 tot 45 jaar;De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.
+A025351;3;KenmerkenVanHuishoudens;11;Hoofdkostwinner: 45 tot 65 jaar;De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.
+A025359;3;KenmerkenVanHuishoudens;12;Hoofdkostwinner: 65 jaar of ouder;De hoofdkostwinner is de persoon in het huishouden met de belangrijkste sociaaleconomische positie.
+1013400;4;KenmerkenVanHuishoudens;13;Bron: Inkomen als werknemer;Huishoudens waarvoor het loon van werknemer de voornaamste inkomensbron vormt.
+1013601;4;KenmerkenVanHuishoudens;14;Bron: Inkomen als zelfstandige (totaal);Huishoudens waarvoor het inkomen als zelfstandig ondernemer, directeur-grootaandeelhouder en overig zelfstandige de voornaamste inkomensbron vormt.
+1013650;4;KenmerkenVanHuishoudens;15;Bron: Overdrachtsinkomen;Huishoudens waarvoor een uitkering, pensioen of studiefinanciering de voornaamste inkomensbron vormt.
+1013700;4;KenmerkenVanHuishoudens;16;Bron: Uitkering inkomensverzekering;Huishoudens waarvoor een uitkering inkomensverzekering wegens werkloosheid, ziekte, arbeidsongeschiktheid en pensioen de voornaamste inkomensbron vormt.
+1013750;4;KenmerkenVanHuishoudens;17;Bron: Uitkering werkloosheid;Huishoudens waarvoor een uitkering inkomensverzekering wegens werkloosheid de voornaamste inkomensbron vormt.
+1013800;4;KenmerkenVanHuishoudens;18;Bron: Uitkering arbeidsongeschiktheid;Huishoudens waarvoor een uitkering inkomensverzekering wegens ziekte of arbeidsongeschiktheid de voornaamste inkomensbron vormt.
+1013850;4;KenmerkenVanHuishoudens;19;Bron: Uitkering pensioen;Huishoudens waarvoor een uitkering inkomensverzekering wegens pensioen of inkomen uit vermogen de voornaamste inkomensbron vormt.
+1013900;4;KenmerkenVanHuishoudens;20;Bron: Uitkering sociale voorziening;Huishoudens waarvoor een uitkering sociale voorziening (bijstand en overige uitkering sociale voorziening) de voornaamste inkomensbron vormt.
+1014050;4;KenmerkenVanHuishoudens;21;Bron: Studiefinanciering;Huishoudens waarvoor studiefinanciering de voornaamste inkomensbron vormt.
+1014800;5;KenmerkenVanHuishoudens;22;Woningbezit: eigen woning;"Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.
+"
+1014850;5;KenmerkenVanHuishoudens;23;Woningbezit: huurwoning;"Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.
+"
+1014900;5;KenmerkenVanHuishoudens;24;Woningbezit: huurwoning met huurtoeslag;Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.
+1014950;5;KenmerkenVanHuishoudens;25;Woningbezit: huurwoning geen huurtoeslag;"Een huishouden woont in een eigen woning of in een gehuurde woning. Van de huishoudens die een woning huren, is bepaald of zij wel of geen huurtoeslag ontvangen hebben.
+"
+1014752;6;KenmerkenVanHuishoudens;26;Gestandaardiseerd inkomen: 1e 20%-groep;"Het gestandaardiseerd inkomen is het besteedbaar inkomen gecorrigeerd voor verschillen in grootte en samenstelling van het huishouden.
+
+De huishoudens zijn naar hoogte van hun gestandaardiseerd inkomen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De inkomensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1014753;6;KenmerkenVanHuishoudens;27;Gestandaardiseerd inkomen: 2e 20%-groep;"Het gestandaardiseerd inkomen is het besteedbaar inkomen gecorrigeerd voor verschillen in grootte en samenstelling van het huishouden.
+
+De huishoudens zijn naar hoogte van hun gestandaardiseerd inkomen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De inkomensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1014754;6;KenmerkenVanHuishoudens;28;Gestandaardiseerd inkomen: 3e 20%-groep;"Het gestandaardiseerd inkomen is het besteedbaar inkomen gecorrigeerd voor verschillen in grootte en samenstelling van het huishouden.
+
+De huishoudens zijn naar hoogte van hun gestandaardiseerd inkomen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De inkomensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1014755;6;KenmerkenVanHuishoudens;29;Gestandaardiseerd inkomen: 4e 20%-groep;"Het gestandaardiseerd inkomen is het besteedbaar inkomen gecorrigeerd voor verschillen in grootte en samenstelling van het huishouden.
+
+De huishoudens zijn naar hoogte van hun gestandaardiseerd inkomen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De inkomensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1014756;6;KenmerkenVanHuishoudens;30;Gestandaardiseerd inkomen: 5e 20%-groep;"Het gestandaardiseerd inkomen is het besteedbaar inkomen gecorrigeerd voor verschillen in grootte en samenstelling van het huishouden.
+
+De huishoudens zijn naar hoogte van hun gestandaardiseerd inkomen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De inkomensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1021200;7;KenmerkenVanHuishoudens;31;Vermogen: 1e 20%-groep;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet.
+De huishoudens zijn naar hoogte van hun vermogen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De vermogensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1021210;7;KenmerkenVanHuishoudens;32;Vermogen: 2e 20%-groep;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet.
+De huishoudens zijn naar hoogte van hun vermogen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De vermogensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1021220;7;KenmerkenVanHuishoudens;33;Vermogen: 3e 20%-groep;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet.
+De huishoudens zijn naar hoogte van hun vermogen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De vermogensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1021230;7;KenmerkenVanHuishoudens;34;Vermogen: 4e 20%-groep;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet.
+De huishoudens zijn naar hoogte van hun vermogen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De vermogensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+1021240;7;KenmerkenVanHuishoudens;35;Vermogen: 5e 20%-groep;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet.
+De huishoudens zijn naar hoogte van hun vermogen in vijf groepen (kwintielen) met een gelijk aantal huishoudens verdeeld. De vermogensgrenzen tussen deze vijf 20%-groepen verschillen van jaar tot jaar."
+3000911;8;KenmerkenVanHuishoudens;36;Vermogen: tot -5 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet.
+"
+3000874;8;KenmerkenVanHuishoudens;37;Vermogen: -5 000 tot 0 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+3000912;8;KenmerkenVanHuishoudens;38;Vermogen: 0 tot 1 000 euro;"Vermogen is het saldo van bezittingen en schulden.
+ 
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet.
+"
+3000913;8;KenmerkenVanHuishoudens;39;Vermogen: 1 000 tot 5 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021320;8;KenmerkenVanHuishoudens;40;Vermogen: 5 000 tot 10 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021330;8;KenmerkenVanHuishoudens;41;Vermogen: 10 000 tot 20 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021340;8;KenmerkenVanHuishoudens;42;Vermogen: 20 000 tot 50 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021350;8;KenmerkenVanHuishoudens;43;Vermogen: 50 000 tot 100 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021360;8;KenmerkenVanHuishoudens;44;Vermogen: 100 000 tot 200 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021370;8;KenmerkenVanHuishoudens;45;Vermogen: 200 000 tot 500 000 euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021380;8;KenmerkenVanHuishoudens;46;Vermogen: 500 000 tot 1 miljoen euro;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."
+1021390;8;KenmerkenVanHuishoudens;47;Vermogen: 1 miljoen euro of meer;"Vermogen is het saldo van bezittingen en schulden. 
+
+De bezittingen bestaan vooral uit banktegoeden, effecten, onroerend goed (waaronder de eigen woning) en ondernemingsvermogen. De schulden omvatten onder meer de schuld ten behoeve van een eigen woning en consumptief krediet."

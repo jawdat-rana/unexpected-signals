@@ -1,0 +1,6 @@
+Id;Index;Title;Description;ParentId;DimensionId
+19;0;Totalen;;;Nationaliteit
+20;1;Totaal;;19;Nationaliteit
+21;2;Werelddelen;;19;Nationaliteit
+22;3;Per nationaliteit;;;Nationaliteit
+23;4;Per nationaliteit;;22;Nationaliteit

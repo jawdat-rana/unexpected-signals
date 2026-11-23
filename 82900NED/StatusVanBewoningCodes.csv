@@ -1,0 +1,4 @@
+Identifier;DimensionGroupId;DimensionId;Index;Title;Description
+T001235;;StatusVanBewoning;1;Totaal;Totale voorraad woningen op peildatum
+A028725;;StatusVanBewoning;2;Bewoonde woningen;Woningen waar op de peildatum 1 januari minimaal 1 persoon stond ingeschreven in de Gemeentelijke Basisadministratie persoonsgegevens (GBA), en vanaf 2014 de Basisregistratie Personen (BRP).
+A028726;;StatusVanBewoning;3;Niet bewoonde woningen;Woningen waar op de peildatum 1 januari niemand stond ingeschreven in de Gemeentelijke Basisadministratie persoonsgegevens (GBA), en vanaf 2014 de Basisregistratie Personen (BRP).
