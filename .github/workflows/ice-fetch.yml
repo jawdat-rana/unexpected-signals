@@ -1,0 +1,39 @@
+name: ice-fetch
+
+# Downloads KNMI daily temperatures for every station (CC0) for the natural-ice
+# story and commits slim CSVs to the `raw-ice` branch, so the analysis can run
+# anywhere without re-fetching. Re-run by hand to add the latest days.
+
+on:
+  push:
+    paths: ["analysis/natural-ice/fetch_raw.py", ".github/workflows/ice-fetch.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: raw-ice
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download KNMI daily data
+        run: |
+          git worktree add --orphan -b raw-ice raw
+          python analysis/natural-ice/fetch_raw.py raw | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Push to raw-ice
+        working-directory: raw
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "raw: KNMI daily temperatures $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin HEAD:raw-ice
