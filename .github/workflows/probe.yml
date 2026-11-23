@@ -21,16 +21,17 @@ jobs:
             const p = await b.newPage({ locale: 'en-US' });
             p.on('response', async r => {
               const u = r.url();
-              if (u.includes('creative_radar_api') || u.includes('popular_trend')) {
+              const ct = r.headers()['content-type'] || '';
+              if (ct.includes('json') && !u.includes('monitor') && !u.includes('slardar') && !u.includes('mcs')) {
                 let t = ''; try { t = await r.text(); } catch (e) {}
-                console.log('API', r.status(), u.slice(0, 250)); console.log(t.slice(0, 1500));
+                console.log('API', r.status(), u.slice(0, 250)); console.log(t.slice(0, 400));
               }
             });
-            for (const cc of ['NL', 'US']) {
-              await p.goto(`https://ads.tiktok.com/business/creativecenter/inspiration/popular/music/pc/en?countryCode=${cc}&period=7`, { waitUntil: 'networkidle', timeout: 60000 }).catch(e => console.log('goto', e.message));
-              await p.waitForTimeout(8000);
+            for (const cc of ['NL']) {
+              await p.goto(`https://ads.tiktok.com/creative/creativeCenter/trends?countryCode=${cc}&period=7&tab=music`, { waitUntil: 'networkidle', timeout: 60000 }).catch(e => console.log('goto', e.message));
+              await p.waitForTimeout(20000);
               console.log('URL', p.url());
-              const txt = await p.evaluate(() => document.body.innerText.slice(0, 1500));
+              const txt = await p.evaluate(() => document.title + ' || ' + document.body.innerText.slice(0, 2500) + ' || ' + document.body.innerHTML.length);
               console.log('TEXT', cc, txt.replace(/\n+/g, ' | '));
             }
             await b.close();
