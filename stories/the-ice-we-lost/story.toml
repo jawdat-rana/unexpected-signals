@@ -1,0 +1,36 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "The ice we lost"
+dek = "De Bilt hasn't had a cold winter in 29 years. Before 1997 the longest wait was 10. What 125 winters of KNMI data say about skating on natural ice, from Friesland to Limburg."
+date = 2026-12-01
+section = "Winter"
+series = ""
+status = "draft"
+tags = ["knmi", "climate", "skating", "elfstedentocht", "maps"]
+image = ""
+analysis = "analysis/natural-ice"
+
+[[sources]]
+name = "KNMI daily weather data per station (daggegevens)"
+url = "https://www.daggegevens.knmi.nl/"
+licence = "CC0 (bron: KNMI)"
+
+[[sources]]
+name = "KNMI: Hellmann cold sums since 1902 in De Bilt"
+url = "https://www.knmi.nl/nederland-nu/klimatologie/lijsten/hellmann"
+licence = "CC0 (bron: KNMI)"
+
+[[sources]]
+name = "KNMI: Kans op een Elfstedentocht in een veranderend klimaat (February 2019)"
+url = "https://www.knmi.nl/kennis-en-datacentrum/achtergrond/kans-op-elfstedentocht-in-een-veranderend-klimaat"
+licence = "CC0 (bron: KNMI)"
+
+[[sources]]
+name = "KNMI: IJsdikte en schaatsijs"
+url = "https://www.knmi.nl/kennis-en-datacentrum/uitleg/ijsdikte-en-schaatsijs"
+licence = "CC0 (bron: KNMI)"
+
+[[sources]]
+name = "Natural Earth: country and lake outlines"
+url = "https://www.naturalearthdata.com/"
+licence = "Public domain"
