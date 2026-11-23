@@ -10,3 +10,10 @@ watch = ["analysis/fireworks-air/fetch_raw.py"]
 keep = true
 timeout = 90
 summary = "manifest.csv"
+
+# One-off check of the API path used for the newest week (prints only).
+[[fetch]]
+name = "fireworks-apicheck"
+run = "python -u analysis/fireworks-air/check_api.py"
+watch = ["analysis/fireworks-air/check_api.py"]
+timeout = 15
