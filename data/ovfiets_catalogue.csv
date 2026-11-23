@@ -1,0 +1,302 @@
+location,station,name,city,latitude,longitude
+488,RTN,Rotterdam Noord Pop up,Rotterdam,51.94156,4.481287
+60,RTN,Rotterdam Noord Pop up,Rotterdam,51.94156,4.481287
+Apg001,APG,Appingedam,Appingedam,53.325703,6.86249
+Arn002,ARN,Arnemuiden,Arnemuiden,51.501444,3.669552
+Bd003,BD,Breda Centrum,Breda,51.59502,4.779437
+Bmr001,BMR,Boxmeer,Boxmeer,51.645239,5.938698
+Btl003,BSLC,Veghel,Veghel,51.614573,5.545731
+Co002,CO,Coevorden,Coevorden,52.663203,6.736003
+Cps003,CPS,OV-fiets Capelle Schollevaar,Capelle aan den IJssel,51.954338,4.584497
+DRON001,DRON,Dronten,Dronten,52.534775,5.721272
+Dz001,DZ,Delfzijl,Delfzijl,53.333643,6.923376
+GR002 ,BSLC,Sleeuwijk Tol West,,51.80099,4.930693
+Gnn001,GNN,Groningen Noord,Groningen,53.230122,6.556761
+Gp001,GP,Geldrop,Geldrop,51.420056,5.550968
+HRN002,HRN,Haren,Haren,53.175165,6.617819
+Hde001,HDE,'t Harde,'t Harde,52.408791,5.89185
+Hgz001,HGZ,Hoogezand Sappemeer,Hoogezand,53.159868,6.770894
+Hto001,HTO,'s-Hertogenbosch Oost,'s-Hertogenbosch,51.700711,5.318865
+Kpnz002,KPNZ,Kampen Zuid,Kampen,52.533439,5.913045
+Mmlh002,MMLH,Mook-Molenhoek,Mook-Molenhoek,51.766328,5.879019
+Mth002,MTH,Martenshoek,Martenshoek,53.160543,6.740036
+Ns001,NS,Nunspeet,Nunspeet,52.37102,5.784352
+Ot001,OT,Oisterwijk,Oisterwijk,51.582096,5.194357
+Ow002,BSLC,Uden,Uden,51.660336,5.617622
+Rtd003,BSLC,Rotterdam Fietspunt Wilhelminakade Prinsendam,Rotterdam,51.907233,4.490302
+Rtd004,BSLC,Rotterdam Fietspunt Marconiplein,Rotterdam,51.913304,4.432742
+Rtn002,RTN,Rotterdam Noord,Rotterdam Noord,51.942494,4.481715
+Rtn003,RTN,Rotterdam Noord Pop up,Rotterdam,51.94156,4.481287
+Rvs001,RVS,Ravenstein,Ravenstein,51.79464,5.637462
+UTVR001,UTVR,Utrecht Vaartsche Rijn Oosterkade,Utrecht,52.078023,5.122392
+Vdm001,VDM,Veendam,Veendam,53.104346,6.885426
+Vg001,VG,Vught,Vught,51.650022,5.292163
+Vss002,VSS,Vlissingen Souburg,Oost Souburg,51.464953,3.595486
+WM002,WM,Wormerveer,Wormerveer,52.489166,4.793222
+Wsm001,WSM,Winsum,Winsum,53.329479,6.520013
+ZD002,ZD,Zaandam,Zaandam,52.438795,4.815877
+Zh001,ZH,Zuidhorn,Zuidhorn,53.248372,6.406436
+Zlw001,ZLW,Lage Zwaluwe,Zevenbergschen Hoek,51.690151,4.662549
+Zvb001,ZVB,Zevenbergen,Zevenbergen,51.641542,4.610095
+ac002,AC,Abcoude,,52.278386,4.97704
+ah001,AH,Arnhem Centrum,Arnhem,51.984,5.9013
+ah003,AH,OV-ebike Arnhem Centrum,Arnhem,51.9834,5.90139
+alm001,ALM,Almere Centrum Landdrostdreef,Almere,52.37453,5.22016
+amf001,AMF,Amersfoort Centraal,Amersfoort,52.15293,5.37481
+amf002,AMF,Amersfoort Mondriaanplein,Amersfoort,52.15446,5.37339
+amfs001,AMFS,Amersfoort Schothorst,Amersfoort,52.1746,5.40462
+aml002,AML,Almelo,Almelo,52.35614,6.65732
+amr001,AMR,Alkmaar,Alkmaar,52.63753,4.73985
+amrn002,AMRN,Alkmaar Noord,Alkmaar,52.64396,4.76371
+ana001,ANA,Anna Paulowna,Anna Paulowna,52.867532,4.81149
+apd001,APD,Apeldoorn,Apeldoorn,52.209578,5.9692
+apn001,APN,Alphen aan den Rijn,Alphen aan Den Rijn,52.12492,4.65789
+asa001,ASA,Amsterdam Amstel,Amsterdam,52.34701,4.91875
+asb002,ASB,Amsterdam Bijlmer ArenA,Amsterdam,52.311914,4.948114
+asd002,ASD,Amsterdam Centraal Oost,Amsterdam,52.37785,4.902062
+asd008,ASD,Amsterdam Centraal IJzijde West,Amsterdam,52.380095,4.898784
+asd009,BSLC,Amsterdam Noord,Amsterdam,52.402374,4.931019
+asd010,ASD,Amsterdam Centraal Stationsplein ,,52.378482,4.897678
+asdl001,ASDL,Amsterdam Lelyplein,Amsterdam,52.35864,4.8339
+asdm001,ASDM,Amsterdam Muiderpoort,Amsterdam,52.3604,4.93093
+asdz001,ASDZ,Amsterdam Zuid Zuidplein,Amsterdam,52.340294,4.873381
+asdz003,ASDZ,Amsterdam Zuid Mahlerplein,Amsterdam,52.336448,4.873438
+asn001,ASN,Assen,Assen,52.99185,6.570329
+ass001,ASS,Amsterdam Sloterdijk,Amsterdam,52.38903,4.83707
+atn001,ATN,Aalten,Aalten,51.92161,6.57929
+avat001,AVAT,Amersfoort Vathorst,Hooglanderveen,52.19183,5.43284
+bd002,BD,Breda Belcrum,Breda,51.596338,4.77892
+bdg001,BDG,Bodegraven,,52.08154,4.746583
+bdpb001,BDPB,Breda Prinsenbeek,Breda,51.605909,4.721607
+bet001,BET,Best,Best,51.50841,5.38957
+bgn002,BGN,Bergen op Zoom,Bergen op Zoom,51.49517,4.29575
+bhv002,BHV,Bilthoven,Bilthoven,52.12949,5.20514
+bkg001,BKG,Bovenkarspel-Grootebroek,Bovenkarspel,52.695217,5.235676
+bkl001,BKL,Breukelen,Breukelen,52.170482,4.991444
+bl001,BL,Beilen,Beilen,52.854446,6.520869
+bll001,BLL,Bloemendaal,Bloemendaal,52.40441,4.6273
+bmn001,BMN,Brummen,Brummen,52.090938,6.147173
+bn001,BN,Borne,Borne,52.298523,6.747655
+bnc001,BNC,Barneveld Centrum,Barneveld,52.140099,5.589972
+bnk001,BNK,Bunnik,Bunnik,52.063375,5.195902
+bnn001,BNN,Barneveld Noord,Barneveld,52.1615,5.598161
+brd002,BRD,Barendrecht,Barendrecht,51.853419,4.554166
+brn002,BRN,Baarn,Baarn,52.20787,5.28219
+bsd001,BSD,Beesd,Beesd,51.899378,5.195893
+bsk001,BSK,Boskoop,Boskoop,52.076348,4.646671
+bsmz001,BSMZ,Bussum Zuid,Bussum,52.265823,5.163116
+btl001,BTL,Boxtel,Boxtel,51.58515,5.318988
+btl004,BTL,Boxtel - Kluis,Boxtel,51.584637,5.319527
+bv002,BV,Beverwijk,Beverwijk,52.47875,4.65448
+cas002,CAS,Castricum,Castricum,52.54554,4.65954
+ck001,CK,Cuijk,Cuijk,51.72659,5.87423
+cl003,CL,Culemborg,Culemborg,51.94704,5.22713
+db001,DB,Driebergen-Zeist,Driebergen-Zeist,52.065057,5.259785
+db002,BSLC,Zeist,Zeist,52.08909,5.24928
+db003,DB,OV-ebike Driebergen-Zeist,Driebergen-Zeist,52.065057,5.2599
+ddn001,DDN,Delden,Delden,52.26013,6.714307
+ddr001,DDR,Dordrecht,Dordrecht,51.80781,4.66785
+did001,DID,Didam,Didam,51.93345,6.132408
+dl001,DL,Dalfsen,Dalfsen,52.498276,6.259923
+dld001,DLD,Den Dolder,Den Dolder,52.14002,5.24177
+dmn001,DMN,Diemen,Diemen,52.344851,4.967989
+dmnz001,DMNZ,Diemen Zuid,Diemen,52.33042,4.95566
+dn001,DN,Deurne,Deurne,51.45666,5.78722
+dr001,DR,Dieren,Dieren,52.044821,6.10249
+drh001,DRH,Driehuis,Driehuis ,52.44301,4.63908
+dt002,DT,"Delft, Fietsenstalling",Delft,52.006473,4.35744
+dtc001,DTC,Doetinchem,Doetinchem,51.958253,6.296645
+dtch001,DTCH,Doetinchem de Huet,Doetinchem,51.95929,6.25961
+dtz001,DTZ,Delft Zuid,Delft,51.99038,4.36439
+dv001,DV,Deventer,Deventer,52.25645,6.160837
+dv003,BSLC,Deventer Boerhavelaan,Deventer,52.2685,6.175444
+dvc001,DVC,Deventer Colmschate,Deventer,52.25051,6.21552
+dvd001,DVD,Duivendrecht,Duivendrecht,52.32369,4.93629
+dvn001,DVN,Duiven ,Duiven,51.94356,6.01459
+dvnk001,DVNK,Leiden de Vink,Leiden,52.14708,4.45593
+ec001,EC,Echt,Echt,51.099873,5.878368
+ed004,ED,Ede-Wageningen Zuidzijde,Eindhoven,52.026909,5.671663
+ed901,BSLC,Otterlo,Otterlo,52.103597,5.770395
+ehs001,EHS,Eindhoven Strijp-S,Eindhoven,51.450113,5.456891
+ehv002,EHV,Eindhoven Centraal centrumzijde ,Eindhoven,51.442199,5.480273
+ehv003,EHV,Eindhoven Centraal noordzijde,Eindhoven,51.443676,5.480101
+ehv004,EHV,Eindhoven Centraal Stationshal,Eindhoven,51.443672,5.480109
+ekz001,EKZ,Enkhuizen,Enkhuizen,52.69996,5.28904
+eml001,EML,Ermelo,Ermelo,52.300583,5.614362
+emn001,EMN,Emmen,Emmen,52.78953,6.89916
+es003,ES,Enschede,Enschede,52.22169,6.88984
+est001,EST,Elst,Elst,51.917073,5.855326
+etn001,ETN,Etten-Leur,Etten-Leur,51.574939,4.636251
+gd001,GD,Gouda,Gouda,52.01803,4.705
+gdg001,GDG,Gouda Goverwelle,Gouda,52.014613,4.742138
+gdm001,GDM,Geldermalsen,Gelderrmalsen,51.881767,5.270973
+gerp002,GERP,Openbare fietsenstalling gemeente Groningen : Fietsenstalling Europapark,Groningen,53.20479,6.58617
+gn001,GN,Groningen,Groningen,53.21155,6.5665
+gn004,GN,OV-ebike Groningen,Groningen,53.21155,6.5666
+go001,GO,Goor,Goor,52.23042,6.583929
+gr001,GR,Gorinchem,Gorinchem,51.833437,4.966969
+gs003,GS,Goes,Goes,51.49874,3.88823
+gv001,GV,Den Haag HS,'s-Gravenhage ,52.069582,4.320696
+gvc021,GVC,Den Haag Centraal Koningin Julianaplein,Den Haag,52.08129,4.323001
+gvc901,BSLC,Nootdorp,Nootdorp,52.04758,4.415059
+gvm001,GVM,Den Haag Mariahoeve,'s-Gravenhage ,52.090284,4.3694
+gz001,GZ,Gilze Rijen,Rijen,51.584055,4.924392
+had003,HAD,Heemstede-Aerdenhout,Heemstede,52.35899,4.60547
+hd001,HD,Harderwijk,Harderwijk,52.3377,5.619034
+hdb001,HDB,Hardenberg,Hardenberg,52.57583,6.621944
+hdr002,HDR,Den Helder,Den Helder,52.95674,4.76071
+hdrz001,HDRZ,Den Helder Zuid,Den Helder,52.932506,4.764533
+hfd002,HFD,Hoofddorp,Hoofddorp,52.2933,4.69816
+hgl002,HGL,Hengelo,Hengelo,52.26239,6.7936
+hglg001,HGLG,Hengelo Gezondheidspark,Hengelo,52.261809,6.768326
+hgv003,HGV,Hoogeveen,Hoogeveen,52.73309,6.47358
+hil001,HIL,Hillegom,Hillegom,52.302857,4.566106
+hk001,HK,Heemskerk,Heemskerk,52.494358,4.685522
+hks001,HKS,Hoogkarspel,Hoogkarspel,52.690376,5.182278
+hlm002,HLM,Haarlem Fiets Inn,Haarlem,52.38763,4.63832
+hlms001,HLMS,Haarlem Spaarnwoude,Haarlem,52.38213,4.670836
+hlo001,HLO,Heiloo,Heiloo,52.600105,4.700795
+hm001,HM,Helmond,Helmond,51.4761,5.661
+hmbh001,HMBH,Helmond Brouwhuis,Helmond,51.47072,5.701876
+hmbv001,HMBV,Helmond Brandevoort,Helmond,51.46274,5.60881
+hmh001,HMH,Helmond 't Hout,Helmond,51.468092,5.630949
+hn001,HN,Hoorn,Hoorn,52.64469,5.05501
+hnk001,HNK,Hoorn Kersenboogerd,Hoorn,52.653593,5.085789
+hon001,HON,Holten,Holten,52.283957,6.420916
+hor001,HOR,Hollandse Rading OV-fiets ,Hollandsche Rading,52.17815,5.17915
+hr002,HR,Heerenveen,Heerenveen,52.96098,5.91617
+hrl002,HRL,Heerlen,Heerlen,50.890641,5.973457
+hrt001,HRT,Horst Sevenum,Sevenum,51.4276,6.0408
+ht001,HT,s-Hertogenbosch,'s-Hertogenbosch,51.690526,5.295283
+ht002,BSLC,Waalwijk,Waalwijk,51.686951,5.071715
+htn001,HTN,Houten,Houten,52.03487,5.16663
+htnc001,HTNC,Houten Castellum,Houten,52.01759,5.18015
+hvs001,HVS,Hilversum,Hilversum,52.22626,5.18076
+hvsp001,HVSP,Hilversum Sportpark ,Hilversum,52.21633,5.18768
+hwd003,HWD,Heerhugowaard,Heerhugowaard,52.66929,4.82352
+hwzb001,HWZB,Halfweg Zwanenburg,Halfweg,52.386119,4.745359
+hze001,HZE,Heeze-Leende,Heeze-Leende,51.385103,5.569811
+klp001,KLP,Veenendaal-De klomp,,52.045557,5.573761
+kma001,KMA,Krommenie-Assendelft,Assendelft,52.494988,4.755957
+kpn003,KPN,Kampen,Kampen,52.56016,5.92167
+krd001,KRD,Kerkrade Centrum,Kerkrade,50.860941,6.057447
+ktr001,KTR,OV-fiets Kesteren,Kesteren,51.931591,5.583727
+laa001,LAA,Den Haag Laan van NOI,Den Haag,52.07847,4.34398
+lc001,LC,Lochem,Lochem,52.16652,6.42582
+ledn001,LEDN,"Leiden Centraal,Uitgang LUMC",Leiden,52.165578,4.48155
+ledn002,LEDN,"Leiden Centraal, Centrumzijde",Leiden,52.16557,4.48259
+lg001,LG,Landgraaf,Landgraaf,50.896264,6.019981
+lls003,LLS,Lelystad Centrum,Lelystad,52.50801,5.47328
+lw001,LW,Leeuwarden,Leeuwarden,53.19678,5.79636
+mas003,MAS,Maarssen,Maarssen,52.135651,5.03139
+mdb002,MDB,Middelburg,Middelburg,51.49517,3.61768
+mes001,MES,Meerssen,Meerssen,50.882753,5.750357
+mp002,MP,Meppel,Meppel,52.69232,6.19411
+mss001,BSLC,Maassluis,Maassluis,51.9168,4.2534
+mt001,MT,OV-fiets - Maastricht,Maastricht,50.8497,5.7046
+mt003,MT,OV-ebike Maastricht,Maastricht,50.8497,5.7045
+mtn001,MTN,Maastricht Noord,Maastricht,50.871155,5.717754
+mtr001,MTR,Maastricht Randwyck,Maastricht,50.837552,5.718918
+mz001,MZ,Maarheeze,Maarheeze,51.303797,5.630193
+ndb003,NDB,Naarden-Bussum,Bussum,52.28132,5.15793
+nkk001,NKK,Nijkerk,Nijkerk,52.22233,5.4934
+nm001,NM,Nijmegen,Nijmegen,51.842825,5.853375
+nmgo001,NMGO,Nijmegen Goffert,Nijmegen,51.827584,5.822425
+nmh001,NMH,Nijmegen Heyendaal,Nijmegen,51.826458,5.868115
+nvd001,NVD,Hellendoorn/Nijverdal OV-fiets Carrousel,Hellendoorn,52.36599,6.469563
+o002,O,Oss,Oss,51.76537,5.53079
+obd001,OBD,Obdam,Obdam,52.677967,4.909418
+odb001,ODB,Oudenbosch,Oudenbosch,51.588055,4.533494
+odz001,ODZ,Oldenzaal,Oldenzaal,52.306438,6.934339
+omn001,OMN,Ommen,Ommen,52.509885,6.417791
+ost001,OST,Olst,Olst,52.335821,6.113231
+ovn001,OVN,Overveen,Overveen,52.390924,4.608202
+ow001,OW,Oss West,Oss,51.758646,5.507076
+pmo001,PMO,Purmerend Overwhere,Purmerend,52.51107,4.967149
+pmr001,PMR,Purmerend,Purmerend,52.503751,4.954667
+pt001,PT,Putten,Putten,52.265094,5.576082
+rai001,RAI,Amsterdam RAI,Amsterdam,52.33725,4.89075
+rat001,RAT,Raalte,Raalte,52.39069,6.27817
+rh001,RH,Rheden,Rheden,52.009869,6.030578
+rhn001,RHN,Rhenen,Rhenen,51.957599,5.578209
+rlb001,RLB,Rotterdam Lombardijen,Rotterdam,51.88073,4.531314
+rm001,RM,Roermond,Roermond,51.192425,5.99353
+rs001,RS,Rosmalen,Rosmalen,51.715439,5.369477
+rsd002,RSD,Roosendaal,Roosendaal,51.54078,4.46115
+rsn001,RSN,Rijssen,Rijssen,52.311246,6.519122
+rsw002,RSW,Rijswijk,Rijswijk,52.03988,4.31965
+rta001,RTA,Rotterdam Alexander,Rotterdam,51.951985,4.552063
+rtb001,RTB,Rotterdam Blaak,Rotterdam,51.920017,4.488638
+rtd001,RTD,Rotterdam Centraal,Rotterdam,51.923421,4.469738
+rtd906,BSLC,Pijnacker,Pijnacker,52.019488,4.437386
+rtd907,BSLC,Pijnacker Zuid,Pijnacker,52.00517,4.446053
+rv001,RV,Reuver,Reuver,51.283199,6.079383
+sd001,SD,Soestdijk,Soest,52.183744,5.299849
+sdm002,SDM,Schiedam,Schiedam,51.921491,4.40774
+sdt001,SDT,Sliedrecht,Sliedrecht,51.829686,4.777269
+sgn001,SGN,Schagen,Schagen,52.78558,4.80506
+shl001,SHL,Schiphol,Luchthaven Schiphol,52.309265,4.759774
+sk001,SK,Sneek,Sneek,53.032708,5.652365
+sptn001,SPTN,Santpoort Noord,Santpoort-Noord,52.433767,4.633007
+sptz001,SPTZ,Santpoort Zuid,Santpoort-Zuid,52.419138,4.631457
+std002,STD,Sittard,Sittard,51.00126,5.85969
+stz001,STZ,Soest Zuid,Soest,52.16506,5.303182
+swk002,SWK,Steenwijk,Steenwijk,52.79051,6.11712
+tb002,TB,Tilburg Centraal Noord,Tilburg,51.56099,5.086718
+tb003,TB,Tilburg Centraal Zuid,Tilburg,51.5602,5.086418
+tbg001,TBG,Terborg,Terborg,51.922847,6.363685
+tbr001,TBR,Tilburg Reeshof,Tilburg,51.573442,4.993904
+tbu001,TBU,Tilburg West Universiteit,Tilburg,51.56519,5.052541
+tl003,TL,Tiel,Tiel,51.88973,5.42399
+ut007,BSLC,Utrecht P+R Westraven,Utrecht,52.05745,5.10406
+ut016,UT,Utrecht Centraal Jaarbeursplein,Utrecht,52.08895,5.10756
+ut020,UT,Utrecht Centraal Stationsplein,Utrecht,52.090746,5.110702
+ut021,UT,Utrecht Centraal Knoop,Utrecht,52.087374,5.109469
+ut901,BSLC,IJsselstijn UT,IJsselstein,52.01661,5.03918
+ut903,BSLC,Utrecht Rijnsweerd,Utrecht,52.092506,5.152792
+ut904,BSLC,Utrecht P+R Papendorp,Utrecht,52.07164,5.07869
+ut905,BSLC,Vianen OV-fiets ,Vianen,51.9891,5.08497
+ut906,BSLC,P + R Utrecht Science Park (De Uithof),Utrecht,52.08481,5.17314
+utg001,UTG,Uitgeest,Uitgeest,52.521939,4.702788
+utl001,UTLN,Utrecht Lunetten,Utrecht,52.06604,5.143176
+utlr001,UTLR,Utrecht Leidsche Rijn,Utrecht,52.09918,5.06476
+uto002,UTO,Utrecht Overvecht,Utrecht,52.109965,5.123593
+utt001,UTT,Utrecht Terwijde,Vleuten,52.100027,5.044109
+utzl001,UTZL,Utrecht Zuilen,Utrecht,52.102943,5.089436
+vb002,VB,Voorburg,Voorburg,52.06676,4.35956
+vh001,VH,Voorhout,Voorhout,52.2237,4.4842
+vhp001,VHP,Vroomshoop,Vroomshoop,52.457294,6.569981
+vk001,VK,Valkenburg,Valkenburg,50.868919,5.833232
+vl001,VL,Venlo,Venlo,51.365024,6.171608
+vlb001,VLB,Vierlingsbeek,Vierlingsbeek,51.592165,5.99734
+vndc002,VNDC,Veenendaal Centrum,Veenendaal,52.019787,5.549334
+vndw001,VNDW,Veenendaal West,Veenendaal west,52.028414,5.531225
+vp001,VP,Velp,Velp,51.995078,5.980713
+vry001,VRY,Venray,Venray,51.52736,6.01351
+vs001,VS,Vlissingen,Vlissingen,51.44385,3.59536
+vst001,VST,Voorschoten,Voorschoten,52.126074,4.434178
+vsv001,VSV,Varsseveld,Varsseveld,51.937305,6.458526
+vtn001,VTN,Vleuten,Vleuten,52.102677,5.007495
+vz001,VZ,Vriezenveen,Vriezenveen,52.40276,6.60034
+wc001,WC,Wijchen,Wijchen,51.811556,5.729842
+wd001,WD,Woerden,Woerden,52.08536,4.89283
+wf001,WF,Wolfheze,Wolfheze,52.005491,5.792359
+wh001,WH,Wijhe,Wijhe,52.391352,6.141081
+wm002,WM,Wormerveer,Wormerveer,52.489166,4.792222
+wp001,WP,Weesp,Weesp,52.31266,5.04215
+wp901,WP,Muiden P&R,Muiden,52.32876,5.05091
+ws001,WS,Winschoten,Winschoten,53.139314,7.035409
+wt003,WT,Weert,Weert,51.2493,5.70558
+wtv001,WTV,Westervoort,Westervoort,51.962695,5.969124
+ww001,WW,Winterswijk,Winterswijk,51.968415,6.714602
+ypb001,YPB,OV-fiets Den Haag Ypenburg,Den Haag Ypenburg,52.055471,4.389355
+zbm002,ZBM,Zaltbommel,Zaltbommel,51.80812,5.26288
+zl003,ZL,Zwolle Hanzeland,Zwolle,52.503322,6.089361
+zl004,ZL,Zwolle,Zwolle,52.505809,6.090895
+zp001,ZP,Zutphen,Zutphen,52.14475,6.19585
+ztm002,ZTM,Zoetermeer Centrum West,Zoetermeer,52.06024,4.48739
+ztm003,ZTM,Zoetermeer Driemanspolder,Zoetermeer,52.04909,4.47663
+ztmo001,ZTMO,Zoetermeer Oost,Zoetermeer,52.04661,4.49133
+zv001,ZV,Zevenaar,Zevenaar,51.923197,6.072686
+zvt001,ZVT,Zandvoort,Zandvoort,52.375859,4.531626
+zwd003,ZWD,Zwijndrecht,Zwijndrecht,51.81608,4.64041
