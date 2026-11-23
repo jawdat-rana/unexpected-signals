@@ -1,0 +1,29 @@
+title = "Black October: four times the flaws, not four times the attacks"
+dek = "Software makers published four times as many security flaws in October 2026 as a year earlier, many found with AI. The number of flaws attackers actually used barely moved. The patching did, and that is what broke things in November."
+date = 2026-11-23
+section = "Tech"
+series = ""
+status = "draft"
+tags = ["cybersecurity", "cve", "ai"]
+image = ""
+analysis = "analysis/software-flaws"
+
+[[sources]]
+name = "CVE List (cvelistV5), all published CVE records, snapshot of 23 November 2026"
+url = "https://github.com/CVEProject/cvelistV5"
+licence = "CVE Terms of Use (free to use, attribute CVE)"
+
+[[sources]]
+name = "CISA Known Exploited Vulnerabilities catalogue"
+url = "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+licence = "Public domain (US government work)"
+
+[[sources]]
+name = "Microsoft Security Update Guide, monthly CVRF documents"
+url = "https://api.msrc.microsoft.com/cvrf/v3.0/updates"
+licence = "Microsoft; counts only"
+
+[[sources]]
+name = "NCSC-NL security advisories (CSAF)"
+url = "https://advisories.ncsc.nl/"
+licence = "Public advisories, NCSC-NL"
