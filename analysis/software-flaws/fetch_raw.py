@@ -33,7 +33,11 @@ HEADERS = {
     "User-Agent": "unexpected-signals research script (github.com/jawdat-rana/unexpected-signals)",
     "Accept": "application/json",
 }
-KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.csv"
+KEV_URLS = [
+    "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    # CISA's own mirror, used if the website refuses the runner.
+    "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
+]
 MSRC = "https://api.msrc.microsoft.com/cvrf/v3.0"
 NCSC_META = "https://advisories.ncsc.nl/.well-known/csaf/provider-metadata.json"
 
@@ -187,11 +191,27 @@ def fetch_cves(out: Path, tmp: Path) -> None:
 # --- CISA KEV -----------------------------------------------------------------
 
 
+KEV_COLS = [
+    "cveID", "vendorProject", "product", "vulnerabilityName", "dateAdded",
+    "dueDate", "knownRansomwareCampaignUse", "cwes",
+]
+
+
 def fetch_kev(out: Path) -> None:
-    raw = get(KEV_URL)
-    (out / "kev.csv").write_bytes(raw)
-    n = sum(1 for _ in csv.reader(io.StringIO(raw.decode("utf-8")))) - 1
-    log("cisa-kev", "ok", n, KEV_URL)
+    errors = []
+    for url in KEV_URLS:
+        try:
+            data = json.loads(get(url))
+            break
+        except Exception as exc:  # noqa: BLE001 - try the mirror
+            errors.append(f"{url}: {exc}")
+    else:
+        raise RuntimeError("; ".join(errors))
+    rows = data["vulnerabilities"]
+    for r in rows:
+        r["cwes"] = " ".join(r.get("cwes") or [])
+    write(out / "kev.csv", rows, KEV_COLS)
+    log("cisa-kev", "ok", len(rows), f"{url} (catalog {data.get('catalogVersion', '')})")
 
 
 # --- Microsoft security update guide (CVRF) -----------------------------------
