@@ -1,0 +1,41 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "Why Dutch bridges still let the boats go first"
+dek = "A ship can't brake like a car, the tide doesn't wait and the freight is huge. An explainer, with a week of live data on how often the bridges open."
+date = 2026-11-30
+section = "Bridges"
+series = "Bridges and roads"
+status = "draft"
+tags = ["ndw", "bridges", "shipping", "explainer", "maps"]
+image = ""
+analysis = "analysis/ndw-bridges"
+
+[[sources]]
+name = "NDW open data: bridge openings"
+url = "https://opendata.ndw.nu/"
+licence = "CC0"
+
+[[sources]]
+name = "Rijkswaterstaat: 'Een schip kan je niet zomaar even stilzetten' (16 October 2025)"
+url = "https://www.rijkswaterstaat.nl/nieuws/archief/2025/10/een-schip-kan-je-niet-zomaar-even-stilzetten"
+licence = "Quoted with attribution"
+
+[[sources]]
+name = "AutoRAI: 'Daarom gaan bruggen open tijdens de spits' (21 November 2017)"
+url = "https://autorai.nl/daarom-gaan-bruggen-open-tijdens-spits/"
+licence = "Quoted with attribution"
+
+[[sources]]
+name = "CBS: inland shipping freight, 2024"
+url = "https://www.cbs.nl/nl-nl/nieuws/2025/20/binnenvaart-vervoert-meer-goederen-in-2024"
+licence = "CC BY 4.0"
+
+[[sources]]
+name = "UN/LOCODE place codes (UNECE)"
+url = "https://unece.org/trade/cefact/unlocode-code-list-country-and-territory"
+licence = "Public"
+
+[[sources]]
+name = "Natural Earth: country and lake outlines"
+url = "https://www.naturalearthdata.com/"
+licence = "Public domain"
