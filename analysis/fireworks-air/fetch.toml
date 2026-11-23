@@ -1,10 +1,12 @@
 # Raw-data fetches for this dataset, run by the `fetch` workflow
-# (see .github/scripts/fetch_plan.py). Run by hand on 1 January to add the
+# (see .github/scripts/fetch_plan.py). Run by hand on 3 January to add the
 # night that just passed: gh workflow run fetch -f name=fireworks
 
 [[fetch]]
 name = "fireworks"
-run = "python -u analysis/fireworks-air/explore.py"
-watch = ["analysis/fireworks-air/fetch_raw.py", "analysis/fireworks-air/explore.py"]
+run = "python -u analysis/fireworks-air/fetch_raw.py raw"
+watch = ["analysis/fireworks-air/fetch_raw.py"]
+# Keep earlier seasons; the script only refetches unvalidated or newest ones.
 keep = true
-timeout = 10
+timeout = 90
+summary = "manifest.csv"

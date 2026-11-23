@@ -1,57 +1,66 @@
 """Download hourly fine dust and wind around every New Year's Eve since 2012.
 
-For each turn of the year Y -> Y+1 we keep one week, 28 December 00:00 UTC to
-3 January 23:00 UTC, so every night can be compared with the quiet days
-around it. Three open sources:
+For each turn of the year Y -> Y+1 ("season" Y) we keep one week, 28 December
+00:00 UTC to 3 January 23:00 UTC, so the night itself can be compared with the
+quiet nights around it. Sources:
 
-- RIVM Luchtmeetnet open API (NL, every station measuring PM10 or PM2.5).
-  Open data, cite "RIVM Luchtmeetnet". Recent hours are unvalidated.
-- Umweltbundesamt air data API v3 (Germany, which has no consumer ban): hourly
-  PM10 and PM2.5 for all stations. Cite "Umweltbundesamt".
-- KNMI hourly observations (uurgegevens) for every station: wind speed and
-  direction, temperature. CC0, "bron: KNMI".
+- RIVM Luchtmeetnet bulk files (data.rivm.nl/data/luchtmeetnet): validated
+  hourly PM10 and PM2.5 per station per year ("Vastgesteld-jaar"), and monthly
+  files for the current year ("Actueel-jaar", published about six weeks after
+  the month ends). Cite "RIVM Luchtmeetnet".
+- Luchtmeetnet open API (api.luchtmeetnet.nl) for the newest week, which is in
+  no bulk file yet. Unvalidated. It rate-limits hard, so it is used only for
+  that week and only for stations that reported the season before.
+- Umweltbundesamt air data API v3 (Germany): hourly PM10 and PM2.5 for all
+  stations. Cite "Umweltbundesamt".
+- KNMI hourly observations (uurgegevens) for every station: wind and
+  temperature. CC0, "bron: KNMI".
 
 Standard library only. Runs in GitHub Actions (these hosts are not reachable
 from every environment) and writes into OUT_DIR:
 
-    nl_stations.csv                 number,name,municipality,type,lon,lat,components
-    nl/<Y>.csv                      station,formula,time_utc,value     (ug/m3)
+    nl_locations.csv                RIVM's station metadata file, as published
+    nl/<Y>.csv                      station,formula,time_utc,value,source
     de_stations.csv                 id,code,name,city,type,setting,lon,lat
-    de/<Y>.csv                      station,formula,time_utc,value     (ug/m3)
+    de/<Y>.csv                      station,formula,time_utc,value
     knmi/<Y>.csv                    stn,time_utc,dd,fh,ff,t   (deg, m/s, m/s, deg C)
     manifest.csv                    source,year,rows,note
 
+time_utc is the start of the hour. Values are ug/m3.
+
     python analysis/fireworks-air/fetch_raw.py OUT_DIR [FIRST_YEAR]
 
-Re-running refetches only years whose window had not finished last time,
-plus the newest year, so the run on 1 January adds the night that just passed.
+Re-running fetches only seasons that are missing or not finished, plus the
+newest one, so a run on 2 or 3 January adds the night that just passed.
 """
 
 from __future__ import annotations
 
 import csv
 import datetime as dt
+import io
 import json
 import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections import defaultdict
 from pathlib import Path
 
 HEADERS = {
     "User-Agent": "unexpected-signals (github.com/jawdat-rana/unexpected-signals)",
-    "Accept": "application/json",
+    "Accept": "application/json, text/csv, */*",
 }
+BULK = "https://data.rivm.nl/data/luchtmeetnet"
 LML = "https://api.luchtmeetnet.nl/open_api"
 UBA = "https://www.umweltbundesamt.de/api/air_data/v3"
 KNMI = "https://www.daggegevens.knmi.nl/klimatologie/uurgegevens"
 FORMULAS = ["PM10", "PM25"]
+BULK_NAME = {"PM10": "PM10", "PM25": "PM25"}
 UBA_COMPONENTS = {"PM10": 1, "PM25": 9}  # UBA component ids
 UBA_HOURLY = 2  # scope: one-hour average
-PAUSE = 0.25  # seconds between Luchtmeetnet calls; it answers 429 when rushed
-SHOWN = False
-DEADLINE = time.monotonic() + 75 * 60  # stop early and keep what we have
+API_PAUSE = 1.5  # seconds between Luchtmeetnet API calls
 NOW = dt.datetime.now(dt.UTC).replace(tzinfo=None)
 
 
@@ -60,20 +69,18 @@ def window(year: int) -> tuple[dt.datetime, dt.datetime]:
     return dt.datetime(year, 12, 28), dt.datetime(year + 1, 1, 3, 23)
 
 
-def get(url: str, data: bytes | None = None, retries: int = 8) -> bytes | None:
+def get(url: str, data: bytes | None = None, retries: int = 6) -> bytes | None:
     for attempt in range(retries):
         try:
             request = urllib.request.Request(url, data=data, headers=HEADERS)
-            with urllib.request.urlopen(request, timeout=120) as response:
+            with urllib.request.urlopen(request, timeout=300) as response:
                 return response.read()
         except urllib.error.HTTPError as error:
             if error.code in (400, 404, 422):
-                print(f"HTTP {error.code} {url[:160]}", file=sys.stderr)
                 return None
             if error.code == 429 and attempt < retries - 1:
-                wait = int(error.headers.get("Retry-After") or 30)
-                print(f"429, waiting {wait}s ({dict(error.headers)})", file=sys.stderr)
-                time.sleep(min(wait, 300))
+                print(f"429 from {url[:60]}, waiting 120s", file=sys.stderr)
+                time.sleep(120)
                 continue
             if attempt == retries - 1:
                 raise
@@ -89,36 +96,84 @@ def get_json(url: str):
     return None if payload is None else json.loads(payload)
 
 
-# --- Luchtmeetnet -----------------------------------------------------------
+# --- Luchtmeetnet bulk files -------------------------------------------------
 
 
-def lml_stations() -> list[dict]:
-    numbers, page = [], 1
-    while True:
-        reply = get_json(f"{LML}/stations?page={page}&order_by=number")
-        numbers += [s["number"] for s in reply["data"]]
-        if page >= reply["pagination"]["last_page"]:
-            break
-        page += 1
+def in_window(when: dt.datetime) -> int | None:
+    """Season a UTC hour belongs to, or None if it's outside every window."""
+    if when.month == 12 and when.day >= 28:
+        return when.year
+    if when.month == 1 and when.day <= 3:
+        return when.year - 1
+    return None
 
-    def detail(number: str) -> dict:
-        data = get_json(f"{LML}/stations/{number}")["data"]
-        lon, lat = (data.get("geometry") or {}).get("coordinates", ["", ""])[:2]
-        return {
-            "number": number,
-            "name": data.get("location", ""),
-            "municipality": data.get("municipality") or "",
-            "type": data.get("type") or "",
-            "lon": lon,
-            "lat": lat,
-            "components": " ".join(data.get("components") or []),
-        }
 
-    rows = []
-    for number in numbers:
-        rows.append(detail(number))
-        time.sleep(PAUSE)
-    return rows
+def read_bulk(path: str, rows: dict[int, list], label: str) -> int | None:
+    """Stream one RIVM bulk CSV and keep the hourly rows inside a window.
+
+    Returns the number of rows kept, or None if the file doesn't exist.
+    """
+    request = urllib.request.Request(f"{BULK}/{path}", headers=HEADERS)
+    try:
+        response = urllib.request.urlopen(request, timeout=600)
+    except urllib.error.HTTPError as error:
+        if error.code == 404:
+            return None
+        raise
+    kept, columns = 0, None
+    with response:
+        for raw in io.TextIOWrapper(response, encoding="utf-8", errors="replace"):
+            if raw.startswith("#"):
+                continue
+            cells = raw.rstrip("\r\n").split(";")
+            if columns is None:
+                columns = {name: i for i, name in enumerate(cells)}
+                continue
+            if cells[columns["meetduur"]] != "uur":
+                continue
+            begin = cells[columns["begindatumtijd"]]
+            # Cheap filter on the local date before parsing.
+            if begin[5:7] not in ("12", "01"):
+                continue
+            when = dt.datetime.fromisoformat(begin).astimezone(dt.UTC).replace(tzinfo=None)
+            season = in_window(when)
+            value = cells[columns["waarde"]]
+            if season is None or value == "":
+                continue
+            formula = cells[columns["component"]].replace(".", "")
+            rows[season].append(
+                [cells[columns["meetlocatie_id"]], formula, f"{when:%Y-%m-%d %H:%M:%S}", value, label]
+            )
+            kept += 1
+    return kept
+
+
+def fetch_nl_bulk(seasons: list[int]) -> tuple[dict[int, list], set]:
+    """Rows per season from the bulk files, and the (season, month) pairs covered."""
+    rows: dict[int, list] = defaultdict(list)
+    covered = set()
+    years = sorted({y for s in seasons for y in (s, s + 1)})
+    for year in years:
+        for formula in FORMULAS:
+            name = BULK_NAME[formula]
+            kept = read_bulk(f"Vastgesteld-jaar/{year}/{year}_{name}.csv", rows, "validated")
+            source = "validated"
+            if kept is None:
+                kept_dec = read_bulk(f"Actueel-jaar/{year}_12_{name}.csv", rows, "current")
+                kept_jan = read_bulk(f"Actueel-jaar/{year}_01_{name}.csv", rows, "current")
+                if kept_dec is not None:
+                    covered.add((year, 12, formula))
+                if kept_jan is not None:
+                    covered.add((year, 1, formula))
+                source = f"current months: dec={kept_dec} jan={kept_jan}"
+                kept = (kept_dec or 0) + (kept_jan or 0)
+            else:
+                covered |= {(year, 12, formula), (year, 1, formula)}
+            print(f"| bulk | {year} {formula} | {kept:,} | {source} |")
+    return rows, covered
+
+
+# --- Luchtmeetnet API, for the newest days -----------------------------------
 
 
 def lml_series(number: str, formula: str, start: dt.datetime, end: dt.datetime) -> list[list]:
@@ -136,41 +191,70 @@ def lml_series(number: str, formula: str, start: dt.datetime, end: dt.datetime) 
             }
         )
         reply = get_json(f"{LML}/measurements?{query}")
-        time.sleep(PAUSE)
-        global SHOWN
-        if not SHOWN and reply and reply.get("data"):
-            SHOWN = True
-            print(f"First reply: pagination {reply.get('pagination')}", file=sys.stderr)
+        time.sleep(API_PAUSE)
         if not reply:
             return rows
         for m in reply.get("data", []):
-            stamp = m["timestamp_measured"][:19]  # 2026-01-01T00:00:00+00:00
-            rows.append([number, formula, stamp.replace("T", " "), m["value"]])
+            # The API stamps the END of the hour; store the start, like the bulk files.
+            end_of_hour = dt.datetime.fromisoformat(m["timestamp_measured"]).astimezone(dt.UTC)
+            when = end_of_hour.replace(tzinfo=None) - dt.timedelta(hours=1)
+            rows.append([number, formula, f"{when:%Y-%m-%d %H:%M:%S}", m["value"], "api"])
         if page >= (reply.get("pagination") or {}).get("last_page", 1):
             return rows
         page += 1
 
 
-def fetch_nl(out: Path, years: list[int], stations: list[dict]) -> list[list]:
-    pm = [s for s in stations if any(f in s["components"].split() for f in FORMULAS)]
+def fetch_nl_api(season: int, formula: str, stations: list[str], part: str) -> list[list]:
+    start, end = window(season)
+    if part == "dec":
+        end = dt.datetime(season, 12, 31, 23)
+    else:
+        start = dt.datetime(season + 1, 1, 1)
+    end = min(end, NOW)
+    if start >= end:
+        return []
+    rows = []
+    for number in stations:
+        rows += lml_series(number, formula, start, end)
+    print(f"| api | {season} {formula} {part} | {len(rows):,} | {len(stations)} stations asked |")
+    return rows
+
+
+def fetch_nl(out: Path, seasons: list[int]) -> list[list]:
+    payload = get(f"{BULK}/Metadata/luchtmeetnet_meetlocaties.csv")
+    if payload:
+        (out / "nl_locations.csv").write_bytes(payload)
+    rows, covered = fetch_nl_bulk(seasons)
     manifest = []
-    for year in years:
-        if time.monotonic() > DEADLINE:
-            print(f"Out of time before NL {year}; the next run continues from here.")
-            break
-        start, end = window(year)
-        jobs = [
-            (s["number"], f)
-            for s in pm
-            for f in FORMULAS
-            if f in s["components"].split()
-        ]
-        rows = sorted(r for j in jobs for r in lml_series(j[0], j[1], start, end))
-        write(out / "nl" / f"{year}.csv", ["station", "formula", "time_utc", "value"], rows)
-        with_data = len({(r[0], r[1]) for r in rows})
-        print(f"| NL | {year} | {len(rows):,} | {with_data} station-series of {len(jobs)} |")
-        manifest.append(["luchtmeetnet", year, len(rows), f"{with_data}/{len(jobs)} series"])
+    for season in seasons:
+        for formula in FORMULAS:
+            missing = []
+            if (season, 12, formula) not in covered:
+                missing.append("dec")
+            if (season + 1, 1, formula) not in covered:
+                missing.append("jan")
+            if not missing:
+                continue
+            # Ask only stations that reported this formula the season before.
+            before = read_rows(out / "nl" / f"{season - 1}.csv") or rows.get(season - 1, [])
+            stations = sorted({r[0] for r in before if r[1] == formula})
+            for part in missing:
+                rows[season] += fetch_nl_api(season, formula, stations, part)
+    for season in seasons:
+        data = sorted(rows.get(season, []))
+        write(out / "nl" / f"{season}.csv", ["station", "formula", "time_utc", "value", "source"], data)
+        series = len({(r[0], r[1]) for r in data})
+        sources = ",".join(sorted({r[4] for r in data}))
+        print(f"| NL | {season} | {len(data):,} | {series} station-series ({sources}) |")
+        manifest.append(["luchtmeetnet", season, len(data), f"{series} series; {sources}"])
     return manifest
+
+
+def read_rows(path: Path) -> list[list]:
+    if not path.exists():
+        return []
+    with open(path, newline="") as handle:
+        return list(csv.reader(handle))[1:]
 
 
 # --- Umweltbundesamt --------------------------------------------------------
@@ -296,7 +380,6 @@ def fetch_knmi(out: Path, years: list[int]) -> list[list]:
     return manifest
 
 
-# --- main -------------------------------------------------------------------
 
 
 def write(path: Path, header: list[str], rows: list) -> None:
@@ -307,50 +390,42 @@ def write(path: Path, header: list[str], rows: list) -> None:
         writer.writerows(rows)
 
 
-def years_to_fetch(out: Path, first: int) -> list[int]:
+def seasons_to_fetch(out: Path, first: int) -> list[int]:
     last = NOW.year if NOW >= window(NOW.year)[0] else NOW.year - 1
-    years = []
-    for year in range(first, last + 1):
-        done = window(year)[1] + dt.timedelta(days=2) < NOW  # allow late hours
-        have = (out / "nl" / f"{year}.csv").exists()
-        if not (done and have) or year == last:
-            years.append(year)
-    return years
+    seasons = []
+    for season in range(first, last + 1):
+        have = out / "nl" / f"{season}.csv"
+        if not _validated(have) or season == last:
+            seasons.append(season)
+    return seasons
+
+
+def _validated(path: Path) -> bool:
+    """True when every row of a stored season came from a validated file."""
+    rows = read_rows(path)
+    return bool(rows) and all(r[4] == "validated" for r in rows)
 
 
 def main(out: Path, first: int) -> None:
     out.mkdir(parents=True, exist_ok=True)
-    years = years_to_fetch(out, first)
-    print(f"Years to fetch: {years}\n")
-    print("| source | year | rows | coverage |\n| --- | --- | --- | --- |")
-
-    stations = lml_stations()
-    write(
-        out / "nl_stations.csv",
-        ["number", "name", "municipality", "type", "lon", "lat", "components"],
-        [list(s.values()) for s in stations],
-    )
-    manifest = fetch_nl(out, years, stations)
-
+    seasons = seasons_to_fetch(out, first)
+    print(f"Seasons to fetch: {seasons}\n")
+    print("| source | season | rows | coverage |\n| --- | --- | --- | --- |")
+    manifest = fetch_nl(out, seasons)
     try:
         de = de_stations()
         if de:
             write(out / "de_stations.csv", list(de[0].keys()), [list(s.values()) for s in de])
-        manifest += fetch_de(out, years)
-    except Exception as error:  # noqa: BLE001 - Germany is the control, not the story
+        manifest += fetch_de(out, seasons)
+    except Exception as error:  # noqa: BLE001 - Germany is the comparison, not the story
         print(f"UBA failed: {error}", file=sys.stderr)
+    manifest += fetch_knmi(out, seasons)
 
-    manifest += fetch_knmi(out, years)
-
-    old = out / "manifest.csv"
-    keep = []
-    if old.exists():
-        with open(old) as handle:
-            keep = [r for r in csv.reader(handle)][1:]
+    old = read_rows(out / "manifest.csv")
     fetched = {(m[0], str(m[1])) for m in manifest}
-    keep = [r for r in keep if (r[0], r[1]) not in fetched] + manifest
-    write(old, ["source", "year", "rows", "note"], sorted(keep, key=lambda r: (r[0], str(r[1]))))
-    print(f"\n{len(stations)} Luchtmeetnet stations, fetched at {NOW:%Y-%m-%d %H:%M} UTC")
+    keep = [r for r in old if (r[0], r[1]) not in fetched] + manifest
+    write(out / "manifest.csv", ["source", "season", "rows", "note"], sorted(keep, key=lambda r: (r[0], str(r[1]))))
+    print(f"\nFetched at {NOW:%Y-%m-%d %H:%M} UTC")
 
 
 if __name__ == "__main__":
