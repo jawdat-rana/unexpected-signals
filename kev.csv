@@ -3,7 +3,7 @@ CVE-2026-129448,Apache,Roller,Apache Roller Deserialization of Untrusted Data Vu
 CVE-2026-123890,Broadcom,VMware vCenter,VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability,2026-11-20,2026-11-23,Unknown,CWE-288
 CVE-2025-42884,SAP,NetWeaver,SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability,2026-11-20,2026-11-23,Unknown,CWE-943
 CVE-2026-76466,Cisco,Expressway Series,Cisco Expressway Series Use of Hard-coded Credentials Vulnerability,2026-11-20,2026-11-23,Unknown,CWE-798
-CVE-2024-10441,Synology,DiskStation Manager (DSM),Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability,2026-11-18,2026-11-21,Unknown,CWE-116
+CVE-2024-10441,Synology,DiskStation Manager (DSM),Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability,2026-11-18,2026-11-21,Known,CWE-116
 CVE-2026-40217,BerriAI,LiteLLM,BerriAI LiteLLM Unprotected Alternate Channel Vulnerability,2026-11-18,2026-12-02,Unknown,CWE-420
 CVE-2026-90817,Vanderbilt University,Research Electronic Data Capture (REDCap),Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability,2026-11-18,2026-11-21,Unknown,CWE-73 CWE-94
 CVE-2026-90436,Apache,Axis,Apache Axis Unsafe Reflection Vulnerability,2026-11-18,2026-11-21,Unknown,CWE-470
