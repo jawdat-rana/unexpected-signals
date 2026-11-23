@@ -1,6 +1,7 @@
 location,station,name,city,latitude,longitude
 488,RTN,Rotterdam Noord Pop up,Rotterdam,51.94156,4.481287
 60,RTN,Rotterdam Noord Pop up,Rotterdam,51.94156,4.481287
+AHPR002,AHPR,OV-fiets Anrhem Presikhaaf,Arnhem,51.987676,5.942606
 Ahpr001,AHPR,OV-fiets Anrhem Presikhaaf,Arnhem,51.987676,5.942606
 Ahpr002,AHPR,Anrhem Presikhaaf,,,
 Apg001,APG,Appingedam,Appingedam,53.325703,6.86249
@@ -114,6 +115,7 @@ dv001,DV,Deventer,Deventer,52.25645,6.160837
 dv003,BSLC,Deventer Boerhavelaan,Deventer,52.2685,6.175444
 dvc001,DVC,Deventer Colmschate,Deventer,52.25051,6.21552
 dvd001,DVD,Duivendrecht,Duivendrecht,52.32369,4.93629
+dvd002,DVD,Duivendrecht,Duivendrecht,52.32369,4.93629
 dvn001,DVN,Duiven ,Duiven,51.94356,6.01459
 dvnk001,DVNK,Leiden de Vink,Leiden,52.14708,4.45593
 ec001,EC,Echt,Echt,51.099873,5.878368
