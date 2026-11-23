@@ -19,7 +19,7 @@ python newsroom/build.py serve     # preview at http://localhost:8000
 ## The NDW collector
 
 This repo takes regular snapshots of Dutch open data feeds and stores them as
-small, tidy CSV files, so there is history to analyse later. It starts with two
+small, tidy CSV files, so there is history to analyse later. It started with two
 feeds from [NDW](https://opendata.ndw.nu/), the Dutch national road traffic data portal:
 
 | Dataset | What is stored | Where |
@@ -30,12 +30,24 @@ feeds from [NDW](https://opendata.ndw.nu/), the Dutch national road traffic data
 | Traffic sites | Speed and flow for the measurement sites you choose in `config.toml` | `data/traffic_sites/YYYY/MM/YYYY-MM-DD.csv` |
 | Site catalogue | Every measurement site with its road, lanes and location, refreshed weekly | `data/traffic_sites_catalogue.csv` |
 
+Since November 2026 it also saves four other live feeds that only ever show "now":
+
+| Dataset | What is stored | How often | Where |
+| --- | --- | --- | --- |
+| Parking garages ([RDW](https://npropendata.rdw.nl/parkingdata/v2/)) | Free spaces, capacity, open and full, for the ~320 public garages and P+R sites with live data. A row is stored only when a garage's status changed. | 10 min | `data/parking/YYYY/MM/YYYY-MM-DD.csv`, `data/parking_catalogue.csv` |
+| Apple charts | App Store top 100 free apps and Apple Music top 100 songs, for NL, BE, DE, GB and US | 3 hours | `data/apple_charts/YYYY/MM/YYYY-MM-DD.csv` |
+| Google Trends "Trending now" | One row per trending search (country, title, start time, traffic band, top news link), with first and last time seen | 1 hour | `data/google_trending/YYYY/MM/YYYY-MM-DD.csv` |
+| OV-fiets | Bikes available per pick-up point (~300). A row is stored only when the count changed. | 10 min | `data/ovfiets/YYYY/MM/YYYY-MM-DD.csv`, `data/ovfiets_catalogue.csv` |
+
+For the "changed only" feeds, carry the last row forward to get the value at any moment.
+`data/_state/` holds when each feed last ran and the last values seen.
+
 The data lives on the [`data` branch](../../tree/data), and the code lives on `main`.
 
 ## How it works
 
 ```
-GitHub Actions (every 15 min)
+GitHub Actions (every 5 min, started by cron-job.org)
   -> download feed (.xml.gz)
   -> stream-parse DATEX II, matching on element names, not namespaces
   -> collapse to one row per record or site
@@ -83,3 +95,22 @@ and attribution is appreciated. The code is MIT licensed.
   `first_seen` and `last_seen` are only as accurate as the snapshot interval.
 - NDW reports -1 for "no data". Those values are dropped before averaging.
 - The DATEX II v2.3 traffic files stop on 9 February 2027. This repo uses v3.
+- RDW parking data is RDW open data. About a quarter of the live garages have not
+  updated in days or longer, so filter on `last_updated` before using a garage.
+  Garages marked limited access need an RDW account and are skipped.
+- OV-fiets counts come from [openOV](http://fiets.openov.nl/)'s mirror of the NS
+  places API. The data is NS's; credit NS. Some pop-up locations have stale counts (see `feed_time`).
+- Apple chart feeds and Google Trends have no open licence. Quote ranks and
+  titles as facts with a credit, and don't republish app icons or artwork.
+- Netflix Top 10 is not collected: Netflix publishes its full weekly history at netflix.com/tudum/top10.
+- Spotify is not collected: its charts need a login and its API no longer
+  serves Spotify's own playlists. Apple Music stands in for "the hits".
+
+### How big does the data get?
+
+Parsed CSVs, all feeds together, are roughly 3 to 4 MB a day before git
+compresses them, and git packs repetitive CSVs well. Expect the repository to
+grow by about 20 to 30 MB a month. GitHub is comfortable with repositories up to
+about 1 GB, so this is fine for a few years. If the `data` branch gets past that,
+move finished months to compressed files elsewhere (a GitHub release or Zenodo)
+and start the branch fresh. To get only the code: `git clone --single-branch https://github.com/jawdat-rana/unexpected-signals`.

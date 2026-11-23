@@ -13,7 +13,8 @@ def download(url: str, retries: int = 3, timeout: int = 60) -> bytes:
     last_error: Exception | None = None
     for attempt in range(retries):
         try:
-            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            headers = {"User-Agent": USER_AGENT, "Accept-Encoding": "gzip"}
+            request = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 payload = response.read()
             return gzip.decompress(payload) if payload[:2] == b"\x1f\x8b" else payload
