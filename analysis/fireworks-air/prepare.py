@@ -27,6 +27,7 @@ decides how high the dust gets.
 from __future__ import annotations
 
 import csv
+import math
 import datetime as dt
 import statistics
 import sys
@@ -130,7 +131,15 @@ def r(value, digits=0):
 
 def main(raw: Path, out: Path) -> None:
     out.mkdir(parents=True, exist_ok=True)
-    names = {s["number"]: s for s in read(raw / "nl_stations.csv")}
+    names = {}
+    path = raw / "nl_locations.csv"
+    if path.exists():
+        lines = [l for l in path.read_text(encoding="utf-8", errors="replace").splitlines() if not l.startswith("#")]
+        for row in csv.DictReader(lines, delimiter=";"):
+            names[row["meetlocatie_id"]] = {
+                "name": row["meetlocatie_naam"],
+                "municipality": row["meetlocatie_plaatsnaam"],
+            }
     names.update({s["id"]: {"name": s["name"], "municipality": s["city"]} for s in read(raw / "de_stations.csv")})
 
     years = sorted(int(p.stem) for p in (raw / "nl").glob("*.csv"))
@@ -201,6 +210,10 @@ def main(raw: Path, out: Path) -> None:
                                 }
                             )
 
+    add_wind_model(nights)
+    sales = {row["season"]: row for row in read(HERE / "sales.csv")}
+    for n in nights:
+        n["sales_eur_m"] = sales.get(n["season"], {}).get("sales_eur_m", "")
     write(out / "nights.csv", nights)
     write(out / "profile.csv", profile)
     write(HERE / "stations_by_year.csv", stations)
@@ -211,6 +224,38 @@ def main(raw: Path, out: Path) -> None:
             f"n={row['stations']:3} excess={row['median_excess']:>5} x{row['median_ratio']:<4} "
             f"peak={row['max_peak']:>5} ({row['max_peak_station']}) wind={row['wind_ms']}"
         )
+
+
+def add_wind_model(nights: list[dict]) -> None:
+    """Expected excess for the night's wind, fitted on the Dutch years with sales.
+
+    log(excess) = a + b * wind, least squares, per pollutant. `vs_expected` is
+    the actual excess divided by the expected one: 1.0 is a normal night for
+    that wind, 0.5 half the dust you'd expect.
+    """
+    for formula in ("PM25", "PM10"):
+        rows = [n for n in nights if n["country"] == "NL" and n["formula"] == formula]
+        fit = [n for n in rows if n["status"] == "sold" and n["wind_ms"] != "" and n["median_excess"] > 0]
+        xs = [n["wind_ms"] for n in fit]
+        ys = [math.log(n["median_excess"]) for n in fit]
+        mx, my = statistics.fmean(xs), statistics.fmean(ys)
+        b = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sum((x - mx) ** 2 for x in xs)
+        a = my - b * mx
+        residuals = [y - (a + b * x) for x, y in zip(xs, ys)]
+        r2 = 1 - sum(e * e for e in residuals) / sum((y - my) ** 2 for y in ys)
+        print(
+            f"wind model {formula}: excess x{math.exp(b):.2f} per extra m/s, R2 {r2:.2f}, "
+            f"residual sd {statistics.stdev(residuals):.2f} (log), fitted on {len(fit)} years"
+        )
+        for n in rows:
+            if n["wind_ms"] == "":
+                continue
+            expected = math.exp(a + b * n["wind_ms"])
+            n["expected_excess"] = round(expected)
+            n["vs_expected"] = round(n["median_excess"] / expected, 2)
+    for n in nights:
+        n.setdefault("expected_excess", "")
+        n.setdefault("vs_expected", "")
 
 
 def write(path: Path, rows: list[dict]) -> None:
