@@ -28,11 +28,11 @@ from pathlib import Path
 STORY = Path(__file__).resolve().parents[2] / "stories" / "the-ice-we-lost" / "data"
 DE_BILT = 260
 EARLY = range(1951, 1989)  # winters 1951 to 1988
-LATE = range(1989, 2027)   # winters 1989 to 2026, the same 38 winters
-COLD = 100                 # KNMI: Hellmann above 100 is a cold winter
-POTENTIAL = -4.2           # KNMI 2019: coldest 15-day mean below this
-MIN_DAYS = 145             # of 151 (152 in leap years) Nov-Mar days
-MIN_WINTERS = 25           # per period, for a station to be on the map
+LATE = range(1989, 2027)  # winters 1989 to 2026, the same 38 winters
+COLD = 100  # KNMI: Hellmann above 100 is a cold winter
+POTENTIAL = -4.2  # KNMI 2019: coldest 15-day mean below this
+MIN_DAYS = 145  # of 151 (152 in leap years) Nov-Mar days
+MIN_WINTERS = 25  # per period, for a station to be on the map
 # Elfstedentochten held, by winter (KNMI, Koninklijke Vereniging De Friesche Elf Steden)
 HELD = {1909, 1912, 1917, 1929, 1933, 1940, 1941, 1942, 1947, 1954, 1956, 1963, 1985, 1986, 1997}
 
@@ -54,7 +54,9 @@ def load(path: Path) -> dict[int, list[tuple[date, float, float | None]]]:
             day = date.fromisoformat(row["date"])
             winter = winter_of(day)
             if winter is not None:
-                winters[winter].append((day, float(row["tg"]), float(row["tx"]) if row["tx"] else None))
+                winters[winter].append(
+                    (day, float(row["tg"]), float(row["tx"]) if row["tx"] else None)
+                )
     return winters
 
 
@@ -95,12 +97,16 @@ def main(raw: Path) -> None:
     rows = []
     for winter in sorted(bilt):
         m = bilt[winter]
-        rows.append({
-            "winter": winter, "hellmann": m["hellmann"], "tg15n": m["tg15n"],
-            "ice_days": m["ice_days"],
-            "potential": int(m["tg15n"] is not None and m["tg15n"] < POTENTIAL),
-            "held": int(winter in HELD),
-        })
+        rows.append(
+            {
+                "winter": winter,
+                "hellmann": m["hellmann"],
+                "tg15n": m["tg15n"],
+                "ice_days": m["ice_days"],
+                "potential": int(m["tg15n"] is not None and m["tg15n"] < POTENTIAL),
+                "held": int(winter in HELD),
+            }
+        )
     write(STORY / "debilt_winters.csv", rows)
 
     # De Bilt per 25-year block
@@ -109,13 +115,16 @@ def main(raw: Path) -> None:
         block = [r for r in rows if start <= r["winter"] < start + 25]
         if not block:
             continue
-        blocks.append({
-            "period": f"{start}-{block[-1]['winter']}", "winters": len(block),
-            "avg_hellmann": round(sum(r["hellmann"] for r in block) / len(block), 1),
-            "cold_winters": sum(r["hellmann"] > COLD for r in block),
-            "potential": sum(r["potential"] for r in block),
-            "held": sum(r["held"] for r in block),
-        })
+        blocks.append(
+            {
+                "period": f"{start}-{block[-1]['winter']}",
+                "winters": len(block),
+                "avg_hellmann": round(sum(r["hellmann"] for r in block) / len(block), 1),
+                "cold_winters": sum(r["hellmann"] > COLD for r in block),
+                "potential": sum(r["potential"] for r in block),
+                "held": sum(r["held"] for r in block),
+            }
+        )
     write(STORY / "debilt_periods.csv", blocks)
 
     # Every station with enough winters in both periods
@@ -126,16 +135,26 @@ def main(raw: Path) -> None:
         if len(early) < MIN_WINTERS or len(late) < MIN_WINTERS:
             continue
         s = stations[stn]
-        table.append({
-            "stn": stn, "name": s["name"].title(), "lon": s["lon"], "lat": s["lat"],
-            "winters_early": len(early), "winters_late": len(late),
-            "cold_early": share([m["hellmann"] > COLD for m in early]),
-            "cold_late": share([m["hellmann"] > COLD for m in late]),
-            "potential_early": share([m["tg15n"] is not None and m["tg15n"] < POTENTIAL for m in early]),
-            "potential_late": share([m["tg15n"] is not None and m["tg15n"] < POTENTIAL for m in late]),
-            "ice_days_early": round(sum(m["ice_days"] for m in early) / len(early), 1),
-            "ice_days_late": round(sum(m["ice_days"] for m in late) / len(late), 1),
-        })
+        table.append(
+            {
+                "stn": stn,
+                "name": s["name"].title(),
+                "lon": s["lon"],
+                "lat": s["lat"],
+                "winters_early": len(early),
+                "winters_late": len(late),
+                "cold_early": share([m["hellmann"] > COLD for m in early]),
+                "cold_late": share([m["hellmann"] > COLD for m in late]),
+                "potential_early": share(
+                    [m["tg15n"] is not None and m["tg15n"] < POTENTIAL for m in early]
+                ),
+                "potential_late": share(
+                    [m["tg15n"] is not None and m["tg15n"] < POTENTIAL for m in late]
+                ),
+                "ice_days_early": round(sum(m["ice_days"] for m in early) / len(early), 1),
+                "ice_days_late": round(sum(m["ice_days"] for m in late) / len(late), 1),
+            }
+        )
     table.sort(key=lambda r: -float(r["lat"]))
     write(STORY / "stations.csv", table)
 

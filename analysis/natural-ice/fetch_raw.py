@@ -34,13 +34,61 @@ HEADERS = {"User-Agent": "unexpected-signals (github.com/jawdat-rana/unexpected-
 
 # Every station number KNMI has used for daily data; missing ones are skipped.
 STATIONS = [
-    209, 210, 215, 225, 235, 240, 242, 248, 249, 251, 257, 258, 260, 265, 267,
-    269, 270, 273, 275, 277, 278, 279, 280, 283, 285, 286, 290, 308, 310, 311,
-    312, 313, 315, 316, 319, 323, 324, 330, 331, 340, 343, 344, 348, 350, 356,
-    370, 375, 377, 380, 391,
+    209,
+    210,
+    215,
+    225,
+    235,
+    240,
+    242,
+    248,
+    249,
+    251,
+    257,
+    258,
+    260,
+    265,
+    267,
+    269,
+    270,
+    273,
+    275,
+    277,
+    278,
+    279,
+    280,
+    283,
+    285,
+    286,
+    290,
+    308,
+    310,
+    311,
+    312,
+    313,
+    315,
+    316,
+    319,
+    323,
+    324,
+    330,
+    331,
+    340,
+    343,
+    344,
+    348,
+    350,
+    356,
+    370,
+    375,
+    377,
+    380,
+    391,
 ]
 
-HEADER_STATION = re.compile(r"^#?\s*(\d{3}):?\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(.+?)\s*$")
+HEADER_STATION = re.compile(
+    r"^#?\s*(\d{3}):?\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(.+?)\s*$"
+)
 
 
 def get(url: str, data: bytes | None = None, retries: int = 3) -> bytes | None:
@@ -84,13 +132,17 @@ def parse(text: str, stn: int) -> tuple[dict | None, list[list[str]]]:
             continue
         if columns is None or not line.strip() or line.startswith("#"):
             continue
-        cells = dict(zip(columns, line.split(",")))
+        cells = dict(zip(columns, line.split(","), strict=False))
         date = cells.get("YYYYMMDD", "").strip()
         if not date.isdigit():
             continue
         rows.append(
-            [f"{date[:4]}-{date[4:6]}-{date[6:]}", tenths(cells.get("TG", "")),
-             tenths(cells.get("TN", "")), tenths(cells.get("TX", ""))]
+            [
+                f"{date[:4]}-{date[4:6]}-{date[6:]}",
+                tenths(cells.get("TG", "")),
+                tenths(cells.get("TN", "")),
+                tenths(cells.get("TX", "")),
+            ]
         )
     return meta, rows
 
@@ -104,7 +156,9 @@ def download(stn: int) -> str | None:
         payload = get(API_URL, data=form)
         if payload and b"YYYYMMDD" in payload and b"," in payload.split(b"YYYYMMDD")[1][:200]:
             return payload.decode("latin-1")
-        print(f"{stn}: script interface gave {len(payload or b'')} bytes, trying zip", file=sys.stderr)
+        print(
+            f"{stn}: script interface gave {len(payload or b'')} bytes, trying zip", file=sys.stderr
+        )
     except Exception as error:  # noqa: BLE001 - fall back to the zip
         print(f"{stn}: script interface failed ({error}), trying zip", file=sys.stderr)
     payload = get(ZIP_URL.format(stn=stn))
