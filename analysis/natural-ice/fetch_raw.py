@@ -1,7 +1,8 @@
 """Download KNMI daily weather for every station and keep the temperatures.
 
-KNMI publishes one zip per station with all daily observations since the
-station opened (De Bilt since 1901). We keep only the date and the daily mean,
+KNMI serves all daily observations of a station since it opened (De Bilt
+since 1901) through its daggegevens script interface, with the old per-station
+zip files as a fallback. We keep only the date and the daily mean,
 minimum and maximum temperature, which is all the ice story needs, plus the
 station name and position from the file header. KNMI data is CC0 ("bron: KNMI").
 
@@ -22,10 +23,12 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import zipfile
 from pathlib import Path
 
+API_URL = "https://www.daggegevens.knmi.nl/klimatologie/daggegevens"
 ZIP_URL = "https://cdn.knmi.nl/knmi/map/page/klimatologie/gegevens/daggegevens/etmgeg_{stn}.zip"
 HEADERS = {"User-Agent": "unexpected-signals (github.com/jawdat-rana/unexpected-signals)"}
 
@@ -40,10 +43,10 @@ STATIONS = [
 HEADER_STATION = re.compile(r"^#?\s*(\d{3}):?\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(.+?)\s*$")
 
 
-def get(url: str, retries: int = 3) -> bytes | None:
+def get(url: str, data: bytes | None = None, retries: int = 3) -> bytes | None:
     for attempt in range(retries):
         try:
-            request = urllib.request.Request(url, headers=HEADERS)
+            request = urllib.request.Request(url, data=data, headers=HEADERS)
             with urllib.request.urlopen(request, timeout=180) as response:
                 return response.read()
         except urllib.error.HTTPError as error:
@@ -92,20 +95,41 @@ def parse(text: str, stn: int) -> tuple[dict | None, list[list[str]]]:
     return meta, rows
 
 
+def download(stn: int) -> str | None:
+    """Return the station's daily file as text, or None if KNMI has no data."""
+    form = urllib.parse.urlencode(
+        {"stns": stn, "vars": "TG:TN:TX", "start": "19010101", "end": time.strftime("%Y%m%d")}
+    ).encode()
+    try:
+        payload = get(API_URL, data=form)
+        if payload and b"YYYYMMDD" in payload and b"," in payload.split(b"YYYYMMDD")[1][:200]:
+            return payload.decode("latin-1")
+        print(f"{stn}: script interface gave {len(payload or b'')} bytes, trying zip", file=sys.stderr)
+    except Exception as error:  # noqa: BLE001 - fall back to the zip
+        print(f"{stn}: script interface failed ({error}), trying zip", file=sys.stderr)
+    payload = get(ZIP_URL.format(stn=stn))
+    if payload is None:
+        return None
+    if not payload.startswith(b"PK"):
+        print(f"{stn}: zip URL returned {payload[:200]!r}", file=sys.stderr)
+        return None
+    with zipfile.ZipFile(io.BytesIO(payload)) as archive:
+        name = next(n for n in archive.namelist() if n.lower().endswith(".txt"))
+        return archive.read(name).decode("latin-1")
+
+
 def main(out: Path) -> None:
     (out / "daily").mkdir(parents=True, exist_ok=True)
     stations = []
     print("| station | name | first day | last day | days |\n| --- | --- | --- | --- | --- |")
     for stn in STATIONS:
-        payload = get(ZIP_URL.format(stn=stn))
-        if payload is None:
+        text = download(stn)
+        if text is None:
             continue
-        with zipfile.ZipFile(io.BytesIO(payload)) as archive:
-            name = next(n for n in archive.namelist() if n.lower().endswith(".txt"))
-            text = archive.read(name).decode("latin-1")
         meta, rows = parse(text, stn)
         if not rows:
-            print(f"| {stn} | (no rows) | | | 0 |")
+            print(f"| {stn} | (no rows) | | | 0 |", file=sys.stderr)
+            print(text[:600], file=sys.stderr)
             continue
         meta = meta or {"stn": stn, "lon": "", "lat": "", "alt": "", "name": ""}
         stations.append(meta)

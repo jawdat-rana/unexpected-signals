@@ -28,6 +28,7 @@ jobs:
       - name: Download KNMI daily data
         run: |
           git worktree add --orphan -b raw-ice raw
+          set -o pipefail
           python analysis/natural-ice/fetch_raw.py raw | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Push to raw-ice
         working-directory: raw
