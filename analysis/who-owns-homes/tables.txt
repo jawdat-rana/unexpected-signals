@@ -1,0 +1,6 @@
+# CBS StatLine table IDs to download, with optional filters (see fetch_raw.py)
+82900NED                                                # Dwellings by ownership and landlord type, by region, 2012 onwards
+86379NED keep=KenmerkenVanHuishoudens regio=GM,PV,NL    # Household wealth by region (indeling 2026), incl. millionaires
+86160NED keep=KenmerkenVanHuishoudens regio=GM,PV,NL    # Household wealth by region (indeling 2025)
+84809NED keep=Migratiemotief,Nationaliteit,JaarVanImmigratie,SociaaleconomischeCategorie,Verblijfsduur  # Non-EU/EFTA immigrants by motive
+85451NED keep=Nationaliteit regio=GM,PV,NL              # Immigration and emigration by nationality, by region

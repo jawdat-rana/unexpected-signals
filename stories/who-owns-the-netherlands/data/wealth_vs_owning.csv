@@ -1,0 +1,356 @@
+code,name,own_pct,millionaire_pct,dwellings,province,year,level
+GM0014,Groningen,37.0,4.0,125028,Groningen,2025,municipality
+GM0034,Almere,60.0,3.0,94045,Flevoland,2025,municipality
+GM0037,Stadskanaal,61.0,3.0,15190,Groningen,2025,municipality
+GM0047,Veendam,65.0,2.0,13169,Groningen,2025,municipality
+GM0050,Zeewolde,65.0,7.0,9858,Flevoland,2025,municipality
+GM0059,Achtkarspelen,64.0,4.0,12416,Fryslân,2025,municipality
+GM0060,Ameland,64.0,10.0,1913,Fryslân,2025,municipality
+GM0072,Harlingen,57.0,4.0,8124,Fryslân,2025,municipality
+GM0074,Heerenveen,60.0,5.0,24447,Fryslân,2025,municipality
+GM0080,Leeuwarden,50.0,3.0,65879,Fryslân,2025,municipality
+GM0085,Ooststellingwerf,66.0,5.0,11506,Fryslân,2025,municipality
+GM0086,Opsterland,71.0,6.0,13509,Fryslân,2025,municipality
+GM0088,Schiermonnikoog,48.0,13.0,615,Fryslân,2025,municipality
+GM0090,Smallingerland,61.0,3.0,26564,Fryslân,2025,municipality
+GM0093,Terschelling,54.0,12.0,2360,Fryslân,2025,municipality
+GM0096,Vlieland,33.0,9.0,643,Fryslân,2025,municipality
+GM0098,Weststellingwerf,64.0,6.0,12042,Fryslân,2025,municipality
+GM0106,Assen,60.0,3.0,33401,Drenthe,2025,municipality
+GM0109,Coevorden,70.0,5.0,15919,Drenthe,2025,municipality
+GM0114,Emmen,63.0,3.0,50710,Drenthe,2025,municipality
+GM0118,Hoogeveen,63.0,3.0,25911,Drenthe,2025,municipality
+GM0119,Meppel,58.0,4.0,16783,Drenthe,2025,municipality
+GM0141,Almelo,56.0,3.0,34709,Overijssel,2025,municipality
+GM0147,Borne,71.0,6.0,10535,Overijssel,2025,municipality
+GM0148,Dalfsen,74.0,10.0,12599,Overijssel,2025,municipality
+GM0150,Deventer,55.0,5.0,48140,Overijssel,2025,municipality
+GM0153,Enschede,47.0,3.0,77688,Overijssel,2025,municipality
+GM0158,Haaksbergen,72.0,7.0,10753,Overijssel,2025,municipality
+GM0160,Hardenberg,71.0,6.0,26307,Overijssel,2025,municipality
+GM0163,Hellendoorn,73.0,6.0,15194,Overijssel,2025,municipality
+GM0164,Hengelo (O.),57.0,3.0,40426,Overijssel,2025,municipality
+GM0166,Kampen,63.0,5.0,23734,Overijssel,2025,municipality
+GM0168,Losser,71.0,7.0,10210,Overijssel,2025,municipality
+GM0171,Noordoostpolder,64.0,7.0,21364,Flevoland,2025,municipality
+GM0173,Oldenzaal,64.0,5.0,14974,Overijssel,2025,municipality
+GM0175,Ommen,70.0,10.0,7934,Overijssel,2025,municipality
+GM0177,Raalte,69.0,8.0,16573,Overijssel,2025,municipality
+GM0180,Staphorst,75.0,12.0,6279,Overijssel,2025,municipality
+GM0183,Tubbergen,75.0,12.0,8940,Overijssel,2025,municipality
+GM0184,Urk,79.0,6.0,7213,Flevoland,2025,municipality
+GM0189,Wierden,73.0,10.0,10369,Overijssel,2025,municipality
+GM0193,Zwolle,52.0,4.0,61693,Overijssel,2025,municipality
+GM0197,Aalten,73.0,6.0,12346,Gelderland,2025,municipality
+GM0200,Apeldoorn,60.0,6.0,75994,Gelderland,2025,municipality
+GM0202,Arnhem,42.0,4.0,81530,Gelderland,2025,municipality
+GM0203,Barneveld,69.0,12.0,24446,Gelderland,2025,municipality
+GM0209,Beuningen,70.0,7.0,11556,Gelderland,2025,municipality
+GM0213,Brummen,65.0,8.0,9871,Gelderland,2025,municipality
+GM0214,Buren,71.0,11.0,11258,Gelderland,2025,municipality
+GM0216,Culemborg,64.0,6.0,13398,Gelderland,2025,municipality
+GM0221,Doesburg,54.0,3.0,5456,Gelderland,2025,municipality
+GM0222,Doetinchem,60.0,4.0,27376,Gelderland,2025,municipality
+GM0225,Druten,67.0,5.0,8752,Gelderland,2025,municipality
+GM0226,Duiven,67.0,4.0,10937,Gelderland,2025,municipality
+GM0228,Ede,64.0,9.0,52756,Gelderland,2025,municipality
+GM0230,Elburg,66.0,5.0,9841,Gelderland,2025,municipality
+GM0232,Epe,66.0,11.0,15005,Gelderland,2025,municipality
+GM0233,Ermelo,63.0,9.0,12149,Gelderland,2025,municipality
+GM0243,Harderwijk,60.0,5.0,22045,Gelderland,2025,municipality
+GM0244,Hattem,68.0,9.0,5558,Gelderland,2025,municipality
+GM0246,Heerde,70.0,9.0,8334,Gelderland,2025,municipality
+GM0252,Heumen,71.0,10.0,7497,Gelderland,2025,municipality
+GM0262,Lochem,71.0,14.0,15659,Gelderland,2025,municipality
+GM0263,Maasdriel,66.0,9.0,10544,Gelderland,2025,municipality
+GM0267,Nijkerk,69.0,10.0,18382,Gelderland,2025,municipality
+GM0268,Nijmegen,38.0,4.0,87822,Gelderland,2025,municipality
+GM0269,Oldebroek,70.0,6.0,9745,Gelderland,2025,municipality
+GM0273,Putten,67.0,14.0,10336,Gelderland,2025,municipality
+GM0274,Renkum,64.0,10.0,15217,Gelderland,2025,municipality
+GM0275,Rheden,55.0,6.0,21377,Gelderland,2025,municipality
+GM0277,Rozendaal,82.0,32.0,709,Gelderland,2025,municipality
+GM0279,Scherpenzeel,72.0,8.0,4265,Gelderland,2025,municipality
+GM0281,Tiel,55.0,4.0,18752,Gelderland,2025,municipality
+GM0285,Voorst,69.0,11.0,10929,Gelderland,2025,municipality
+GM0289,Wageningen,35.0,6.0,19040,Gelderland,2025,municipality
+GM0293,Westervoort,60.0,3.0,6838,Gelderland,2025,municipality
+GM0294,Winterswijk,71.0,6.0,13515,Gelderland,2025,municipality
+GM0296,Wijchen,68.0,6.0,18807,Gelderland,2025,municipality
+GM0297,Zaltbommel,64.0,8.0,12323,Gelderland,2025,municipality
+GM0299,Zevenaar,65.0,4.0,20924,Gelderland,2025,municipality
+GM0301,Zutphen,58.0,4.0,23653,Gelderland,2025,municipality
+GM0302,Nunspeet,66.0,9.0,11822,Gelderland,2025,municipality
+GM0303,Dronten,65.0,6.0,18702,Flevoland,2025,municipality
+GM0307,Amersfoort,57.0,7.0,72367,Utrecht,2025,municipality
+GM0308,Baarn,65.0,13.0,11947,Utrecht,2025,municipality
+GM0310,De Bilt,62.0,20.0,20000,Utrecht,2025,municipality
+GM0312,Bunnik,71.0,15.0,6867,Utrecht,2025,municipality
+GM0313,Bunschoten,74.0,8.0,8985,Utrecht,2025,municipality
+GM0317,Eemnes,72.0,14.0,4375,Utrecht,2025,municipality
+GM0321,Houten,67.0,11.0,21551,Utrecht,2025,municipality
+GM0327,Leusden,70.0,9.0,13848,Utrecht,2025,municipality
+GM0331,Lopik,74.0,14.0,5954,Utrecht,2025,municipality
+GM0335,Montfoort,74.0,12.0,5825,Utrecht,2025,municipality
+GM0339,Renswoude,71.0,14.0,2236,Utrecht,2025,municipality
+GM0340,Rhenen,64.0,11.0,8426,Utrecht,2025,municipality
+GM0342,Soest,65.0,11.0,21532,Utrecht,2025,municipality
+GM0344,Utrecht,40.0,7.0,168736,Utrecht,2025,municipality
+GM0345,Veenendaal,59.0,5.0,30164,Utrecht,2025,municipality
+GM0351,Woudenberg,70.0,10.0,5744,Utrecht,2025,municipality
+GM0352,Wijk bij Duurstede,70.0,9.0,10437,Utrecht,2025,municipality
+GM0353,IJsselstein,65.0,8.0,14585,Utrecht,2025,municipality
+GM0355,Zeist,53.0,15.0,30260,Utrecht,2025,municipality
+GM0356,Nieuwegein,58.0,3.0,31374,Utrecht,2025,municipality
+GM0358,Aalsmeer,62.0,12.0,13731,Noord-Holland,2025,municipality
+GM0361,Alkmaar,58.0,5.0,54739,Noord-Holland,2025,municipality
+GM0362,Amstelveen,46.0,13.0,43578,Noord-Holland,2025,municipality
+GM0363,Amsterdam,30.0,7.0,486769,Noord-Holland,2025,municipality
+GM0373,Bergen (NH.),69.0,22.0,15550,Noord-Holland,2025,municipality
+GM0375,Beverwijk,54.0,3.0,20154,Noord-Holland,2025,municipality
+GM0376,Blaricum,69.0,28.0,5379,Noord-Holland,2025,municipality
+GM0377,Bloemendaal,72.0,38.0,10389,Noord-Holland,2025,municipality
+GM0383,Castricum,75.0,13.0,16672,Noord-Holland,2025,municipality
+GM0384,Diemen,40.0,6.0,16115,Noord-Holland,2025,municipality
+GM0385,Edam-Volendam,78.0,10.0,16009,Noord-Holland,2025,municipality
+GM0388,Enkhuizen,62.0,4.0,8989,Noord-Holland,2025,municipality
+GM0392,Haarlem,52.0,9.0,80430,Noord-Holland,2025,municipality
+GM0394,Haarlemmermeer,65.0,8.0,68125,Noord-Holland,2025,municipality
+GM0396,Heemskerk,61.0,6.0,18025,Noord-Holland,2025,municipality
+GM0397,Heemstede,69.0,28.0,12841,Noord-Holland,2025,municipality
+GM0399,Heiloo,74.0,14.0,11293,Noord-Holland,2025,municipality
+GM0400,Den Helder,57.0,2.0,28808,Noord-Holland,2025,municipality
+GM0402,Hilversum,53.0,10.0,43894,Noord-Holland,2025,municipality
+GM0405,Hoorn,61.0,4.0,34994,Noord-Holland,2025,municipality
+GM0406,Huizen,60.0,10.0,19209,Noord-Holland,2025,municipality
+GM0415,Landsmeer,65.0,16.0,4958,Noord-Holland,2025,municipality
+GM0417,Laren (NH.),71.0,37.0,5509,Noord-Holland,2025,municipality
+GM0420,Medemblik,68.0,8.0,19593,Noord-Holland,2025,municipality
+GM0431,Oostzaan,66.0,11.0,4171,Noord-Holland,2025,municipality
+GM0432,Opmeer,71.0,8.0,5296,Noord-Holland,2025,municipality
+GM0437,Ouder-Amstel,54.0,16.0,6362,Noord-Holland,2025,municipality
+GM0439,Purmerend,60.0,5.0,43479,Noord-Holland,2025,municipality
+GM0441,Schagen,69.0,7.0,21822,Noord-Holland,2025,municipality
+GM0448,Texel,64.0,11.0,7144,Noord-Holland,2025,municipality
+GM0450,Uitgeest,72.0,8.0,5832,Noord-Holland,2025,municipality
+GM0451,Uithoorn,58.0,7.0,13801,Noord-Holland,2025,municipality
+GM0453,Velsen,57.0,6.0,32231,Noord-Holland,2025,municipality
+GM0473,Zandvoort,56.0,12.0,9882,Noord-Holland,2025,municipality
+GM0479,Zaanstad,53.0,4.0,72329,Noord-Holland,2025,municipality
+GM0482,Alblasserdam,61.0,5.0,8493,Zuid-Holland,2025,municipality
+GM0484,Alphen aan den Rijn,64.0,7.0,51069,Zuid-Holland,2025,municipality
+GM0489,Barendrecht,70.0,8.0,19676,Zuid-Holland,2025,municipality
+GM0498,Drechterland,73.0,10.0,8738,Noord-Holland,2025,municipality
+GM0502,Capelle aan den IJssel,53.0,4.0,31893,Zuid-Holland,2025,municipality
+GM0503,Delft,33.0,5.0,54594,Zuid-Holland,2025,municipality
+GM0505,Dordrecht,58.0,4.0,57537,Zuid-Holland,2025,municipality
+GM0512,Gorinchem,52.0,5.0,18237,Zuid-Holland,2025,municipality
+GM0513,Gouda,56.0,4.0,35205,Zuid-Holland,2025,municipality
+GM0518,'s-Gravenhage,41.0,6.0,274171,Zuid-Holland,2025,municipality
+GM0523,Hardinxveld-Giessendam,67.0,6.0,7744,Zuid-Holland,2025,municipality
+GM0531,Hendrik-Ido-Ambacht,72.0,7.0,12963,Zuid-Holland,2025,municipality
+GM0532,Stede Broec,70.0,5.0,9515,Noord-Holland,2025,municipality
+GM0534,Hillegom,68.0,7.0,10329,Zuid-Holland,2025,municipality
+GM0537,Katwijk,65.0,7.0,27845,Zuid-Holland,2025,municipality
+GM0542,Krimpen aan den IJssel,60.0,6.0,12730,Zuid-Holland,2025,municipality
+GM0546,Leiden,37.0,6.0,65079,Zuid-Holland,2025,municipality
+GM0547,Leiderdorp,64.0,8.0,12698,Zuid-Holland,2025,municipality
+GM0553,Lisse,63.0,7.0,10637,Zuid-Holland,2025,municipality
+GM0556,Maassluis,56.0,3.0,16664,Zuid-Holland,2025,municipality
+GM0569,Nieuwkoop,72.0,12.0,11931,Zuid-Holland,2025,municipality
+GM0575,Noordwijk,63.0,12.0,21279,Zuid-Holland,2025,municipality
+GM0579,Oegstgeest,73.0,19.0,11286,Zuid-Holland,2025,municipality
+GM0589,Oudewater,68.0,13.0,4575,Utrecht,2025,municipality
+GM0590,Papendrecht,66.0,5.0,14553,Zuid-Holland,2025,municipality
+GM0597,Ridderkerk,58.0,4.0,21966,Zuid-Holland,2025,municipality
+GM0599,Rotterdam,34.0,4.0,328408,Zuid-Holland,2025,municipality
+GM0603,Rijswijk (ZH.),49.0,5.0,29310,Zuid-Holland,2025,municipality
+GM0606,Schiedam,49.0,3.0,38420,Zuid-Holland,2025,municipality
+GM0610,Sliedrecht,60.0,4.0,11420,Zuid-Holland,2025,municipality
+GM0613,Albrandswaard,70.0,9.0,10797,Zuid-Holland,2025,municipality
+GM0622,Vlaardingen,48.0,2.0,37117,Zuid-Holland,2025,municipality
+GM0626,Voorschoten,66.0,14.0,11650,Zuid-Holland,2025,municipality
+GM0627,Waddinxveen,65.0,6.0,14206,Zuid-Holland,2025,municipality
+GM0629,Wassenaar,59.0,26.0,12461,Zuid-Holland,2025,municipality
+GM0632,Woerden,66.0,10.0,23206,Utrecht,2025,municipality
+GM0637,Zoetermeer,56.0,3.0,58212,Zuid-Holland,2025,municipality
+GM0638,Zoeterwoude,66.0,11.0,4578,Zuid-Holland,2025,municipality
+GM0642,Zwijndrecht,58.0,4.0,20758,Zuid-Holland,2025,municipality
+GM0654,Borsele,74.0,7.0,10120,Zeeland,2025,municipality
+GM0664,Goes,61.0,6.0,19353,Zeeland,2025,municipality
+GM0668,West Maas en Waal,72.0,8.0,8896,Gelderland,2025,municipality
+GM0677,Hulst,76.0,7.0,13719,Zeeland,2025,municipality
+GM0678,Kapelle,76.0,8.0,5546,Zeeland,2025,municipality
+GM0687,Middelburg (Z.),62.0,4.0,24858,Zeeland,2025,municipality
+GM0703,Reimerswaal,69.0,6.0,9466,Zeeland,2025,municipality
+GM0715,Terneuzen,69.0,4.0,27865,Zeeland,2025,municipality
+GM0716,Tholen,72.0,5.0,11414,Zeeland,2025,municipality
+GM0717,Veere,80.0,15.0,11163,Zeeland,2025,municipality
+GM0718,Vlissingen,57.0,3.0,23995,Zeeland,2025,municipality
+GM0736,De Ronde Venen,66.0,15.0,19070,Utrecht,2025,municipality
+GM0737,Tytsjerksteradiel,72.0,5.0,14377,Fryslân,2025,municipality
+GM0743,Asten,70.0,11.0,7436,Noord-Brabant,2025,municipality
+GM0744,Baarle-Nassau,69.0,11.0,3086,Noord-Brabant,2025,municipality
+GM0748,Bergen op Zoom,59.0,4.0,32056,Noord-Brabant,2025,municipality
+GM0753,Best,70.0,9.0,13650,Noord-Brabant,2025,municipality
+GM0755,Boekel,75.0,12.0,4671,Noord-Brabant,2025,municipality
+GM0757,Boxtel,62.0,7.0,15042,Noord-Brabant,2025,municipality
+GM0758,Breda,53.0,7.0,88201,Noord-Brabant,2025,municipality
+GM0762,Deurne,66.0,9.0,14500,Noord-Brabant,2025,municipality
+GM0765,Pekela,64.0,2.0,5797,Groningen,2025,municipality
+GM0766,Dongen,69.0,6.0,11988,Noord-Brabant,2025,municipality
+GM0770,Eersel,74.0,13.0,8888,Noord-Brabant,2025,municipality
+GM0772,Eindhoven,42.0,5.0,121191,Noord-Brabant,2025,municipality
+GM0777,Etten-Leur,64.0,5.0,20354,Noord-Brabant,2025,municipality
+GM0779,Geertruidenberg,64.0,5.0,10147,Noord-Brabant,2025,municipality
+GM0784,Gilze en Rijen,65.0,6.0,11801,Noord-Brabant,2025,municipality
+GM0785,Goirle,72.0,8.0,10735,Noord-Brabant,2025,municipality
+GM0794,Helmond,54.0,4.0,43549,Noord-Brabant,2025,municipality
+GM0796,'s-Hertogenbosch,52.0,6.0,76845,Noord-Brabant,2025,municipality
+GM0797,Heusden,67.0,8.0,20055,Noord-Brabant,2025,municipality
+GM0798,Hilvarenbeek,77.0,13.0,7171,Noord-Brabant,2025,municipality
+GM0809,Loon op Zand,66.0,8.0,10678,Noord-Brabant,2025,municipality
+GM0820,"Nuenen, Gerwen en Nederwetten",75.0,13.0,10806,Noord-Brabant,2025,municipality
+GM0823,Oirschot,77.0,14.0,8544,Noord-Brabant,2025,municipality
+GM0824,Oisterwijk,69.0,14.0,14501,Noord-Brabant,2025,municipality
+GM0826,Oosterhout,61.0,6.0,26528,Noord-Brabant,2025,municipality
+GM0828,Oss,61.0,6.0,42395,Noord-Brabant,2025,municipality
+GM0840,Rucphen,66.0,7.0,10307,Noord-Brabant,2025,municipality
+GM0845,Sint-Michielsgestel,75.0,12.0,12684,Noord-Brabant,2025,municipality
+GM0847,Someren,73.0,10.0,8585,Noord-Brabant,2025,municipality
+GM0848,Son en Breugel,74.0,12.0,7652,Noord-Brabant,2025,municipality
+GM0851,Steenbergen,68.0,7.0,10969,Noord-Brabant,2025,municipality
+GM0852,Waterland,67.0,12.0,7510,Noord-Holland,2025,municipality
+GM0855,Tilburg,47.0,3.0,107237,Noord-Brabant,2025,municipality
+GM0858,Valkenswaard,61.0,7.0,15353,Noord-Brabant,2025,municipality
+GM0861,Veldhoven,66.0,9.0,21138,Noord-Brabant,2025,municipality
+GM0865,Vught,65.0,16.0,14176,Noord-Brabant,2025,municipality
+GM0866,Waalre,75.0,15.0,8116,Noord-Brabant,2025,municipality
+GM0867,Waalwijk,58.0,5.0,22783,Noord-Brabant,2025,municipality
+GM0873,Woensdrecht,73.0,6.0,10216,Noord-Brabant,2025,municipality
+GM0879,Zundert,73.0,13.0,10129,Noord-Brabant,2025,municipality
+GM0880,Wormerland,63.0,8.0,7277,Noord-Holland,2025,municipality
+GM0882,Landgraaf,64.0,2.0,18291,Limburg,2025,municipality
+GM0888,Beek (L.),68.0,4.0,7581,Limburg,2025,municipality
+GM0889,Beesel,67.0,4.0,6218,Limburg,2025,municipality
+GM0893,Bergen (L.),72.0,5.0,5887,Limburg,2025,municipality
+GM0899,Brunssum,63.0,2.0,14527,Limburg,2025,municipality
+GM0907,Gennep,65.0,6.0,7832,Limburg,2025,municipality
+GM0917,Heerlen,48.0,2.0,46795,Limburg,2025,municipality
+GM0928,Kerkrade,54.0,1.0,24035,Limburg,2025,municipality
+GM0935,Maastricht,38.0,4.0,66249,Limburg,2025,municipality
+GM0938,Meerssen,73.0,7.0,8717,Limburg,2025,municipality
+GM0944,Mook en Middelaar,73.0,12.0,3785,Limburg,2025,municipality
+GM0946,Nederweert,69.0,9.0,7696,Limburg,2025,municipality
+GM0957,Roermond,54.0,4.0,29894,Limburg,2025,municipality
+GM0965,Simpelveld,67.0,4.0,5162,Limburg,2025,municipality
+GM0971,Stein (L.),73.0,3.0,11886,Limburg,2025,municipality
+GM0981,Vaals,50.0,4.0,5875,Limburg,2025,municipality
+GM0983,Venlo,58.0,3.0,49137,Limburg,2025,municipality
+GM0984,Venray,62.0,6.0,19995,Limburg,2025,municipality
+GM0986,Voerendaal,72.0,6.0,5883,Limburg,2025,municipality
+GM0988,Weert,65.0,6.0,23912,Limburg,2025,municipality
+GM0994,Valkenburg aan de Geul,61.0,7.0,8400,Limburg,2025,municipality
+GM0995,Lelystad,60.0,3.0,36017,Flevoland,2025,municipality
+GM1507,Horst aan de Maas,72.0,7.0,18910,Limburg,2025,municipality
+GM1509,Oude IJsselstreek,67.0,5.0,17755,Gelderland,2025,municipality
+GM1525,Teylingen,67.0,11.0,16812,Zuid-Holland,2025,municipality
+GM1581,Utrechtse Heuvelrug,65.0,15.0,22489,Utrecht,2025,municipality
+GM1586,Oost Gelre,76.0,5.0,13367,Gelderland,2025,municipality
+GM1598,Koggenland,77.0,9.0,9907,Noord-Holland,2025,municipality
+GM1621,Lansingerland,73.0,11.0,25791,Zuid-Holland,2025,municipality
+GM1640,Leudal,78.0,7.0,16412,Limburg,2025,municipality
+GM1641,Maasgouw,76.0,5.0,11323,Limburg,2025,municipality
+GM1652,Gemert-Bakel,67.0,8.0,13239,Noord-Brabant,2025,municipality
+GM1655,Halderberge,66.0,7.0,13932,Noord-Brabant,2025,municipality
+GM1658,Heeze-Leende,77.0,14.0,7321,Noord-Brabant,2025,municipality
+GM1659,Laarbeek,70.0,9.0,10038,Noord-Brabant,2025,municipality
+GM1667,Reusel-De Mierden,77.0,11.0,5944,Noord-Brabant,2025,municipality
+GM1669,Roerdalen,75.0,5.0,9866,Limburg,2025,municipality
+GM1674,Roosendaal,61.0,4.0,35981,Noord-Brabant,2025,municipality
+GM1676,Schouwen-Duiveland,68.0,11.0,16929,Zeeland,2025,municipality
+GM1680,Aa en Hunze,75.0,8.0,11555,Drenthe,2025,municipality
+GM1681,Borger-Odoorn,72.0,5.0,11628,Drenthe,2025,municipality
+GM1690,De Wolden,76.0,10.0,10604,Drenthe,2025,municipality
+GM1695,Noord-Beveland,76.0,7.0,4868,Zeeland,2025,municipality
+GM1696,Wijdemeren,69.0,16.0,10980,Noord-Holland,2025,municipality
+GM1699,Noordenveld,73.0,8.0,15140,Drenthe,2025,municipality
+GM1700,Twenterand,68.0,5.0,14192,Overijssel,2025,municipality
+GM1701,Westerveld,75.0,10.0,8898,Drenthe,2025,municipality
+GM1705,Lingewaard,73.0,6.0,20569,Gelderland,2025,municipality
+GM1706,Cranendonck,74.0,9.0,9272,Noord-Brabant,2025,municipality
+GM1708,Steenwijkerland,65.0,6.0,20632,Overijssel,2025,municipality
+GM1709,Moerdijk,66.0,6.0,17118,Noord-Brabant,2025,municipality
+GM1711,Echt-Susteren,72.0,5.0,15141,Limburg,2025,municipality
+GM1714,Sluis,69.0,10.0,14158,Zeeland,2025,municipality
+GM1719,Drimmelen,70.0,8.0,12370,Noord-Brabant,2025,municipality
+GM1721,Bernheze,71.0,12.0,13658,Noord-Brabant,2025,municipality
+GM1723,Alphen-Chaam,77.0,15.0,4619,Noord-Brabant,2025,municipality
+GM1724,Bergeijk,77.0,14.0,8431,Noord-Brabant,2025,municipality
+GM1728,Bladel,74.0,10.0,9228,Noord-Brabant,2025,municipality
+GM1729,Gulpen-Wittem,68.0,8.0,6936,Limburg,2025,municipality
+GM1730,Tynaarlo,77.0,11.0,14910,Drenthe,2025,municipality
+GM1731,Midden-Drenthe,70.0,7.0,14849,Drenthe,2025,municipality
+GM1734,Overbetuwe,68.0,7.0,20703,Gelderland,2025,municipality
+GM1735,Hof van Twente,68.0,9.0,15711,Overijssel,2025,municipality
+GM1740,Neder-Betuwe,63.0,7.0,9356,Gelderland,2025,municipality
+GM1742,Rijssen-Holten,71.0,7.0,15310,Overijssel,2025,municipality
+GM1771,Geldrop-Mierlo,65.0,7.0,18586,Noord-Brabant,2025,municipality
+GM1773,Olst-Wijhe,70.0,8.0,8267,Overijssel,2025,municipality
+GM1774,Dinkelland,76.0,12.0,11366,Overijssel,2025,municipality
+GM1783,Westland,65.0,11.0,48147,Zuid-Holland,2025,municipality
+GM1842,Midden-Delfland,72.0,15.0,8145,Zuid-Holland,2025,municipality
+GM1859,Berkelland,69.0,8.0,20015,Gelderland,2025,municipality
+GM1876,Bronckhorst,71.0,12.0,16499,Gelderland,2025,municipality
+GM1883,Sittard-Geleen,60.0,3.0,47306,Limburg,2025,municipality
+GM1884,Kaag en Braassem,65.0,11.0,12787,Zuid-Holland,2025,municipality
+GM1891,Dantumadiel,64.0,4.0,8298,Fryslân,2025,municipality
+GM1892,Zuidplas,69.0,9.0,19670,Zuid-Holland,2025,municipality
+GM1894,Peel en Maas,69.0,7.0,19196,Limburg,2025,municipality
+GM1895,Oldambt,64.0,3.0,19336,Groningen,2025,municipality
+GM1896,Zwartewaterland,72.0,7.0,9305,Overijssel,2025,municipality
+GM1900,Súdwest-Fryslân,65.0,6.0,43118,Fryslân,2025,municipality
+GM1901,Bodegraven-Reeuwijk,70.0,12.0,15273,Zuid-Holland,2025,municipality
+GM1903,Eijsden-Margraten,77.0,9.0,11727,Limburg,2025,municipality
+GM1904,Stichtse Vecht,65.0,12.0,29351,Utrecht,2025,municipality
+GM1911,Hollands Kroon,67.0,8.0,21697,Noord-Holland,2025,municipality
+GM1916,Leidschendam-Voorburg,58.0,10.0,37861,Zuid-Holland,2025,municipality
+GM1924,Goeree-Overflakkee,67.0,7.0,22997,Zuid-Holland,2025,municipality
+GM1926,Pijnacker-Nootdorp,71.0,12.0,22893,Zuid-Holland,2025,municipality
+GM1930,Nissewaard,60.0,2.0,40514,Zuid-Holland,2025,municipality
+GM1931,Krimpenerwaard,66.0,9.0,24661,Zuid-Holland,2025,municipality
+GM1940,De Fryske Marren,69.0,7.0,23886,Fryslân,2025,municipality
+GM1942,Gooise Meren,65.0,19.0,27944,Noord-Holland,2025,municipality
+GM1945,Berg en Dal,61.0,7.0,16345,Gelderland,2025,municipality
+GM1948,Meierijstad,68.0,9.0,36823,Noord-Brabant,2025,municipality
+GM1949,Waadhoeke,68.0,4.0,21596,Fryslân,2025,municipality
+GM1950,Westerwolde,69.0,5.0,12050,Groningen,2025,municipality
+GM1952,Midden-Groningen,62.0,4.0,28833,Groningen,2025,municipality
+GM1954,Beekdaelen,74.0,5.0,16915,Limburg,2025,municipality
+GM1955,Montferland,66.0,5.0,16344,Gelderland,2025,municipality
+GM1959,Altena,67.0,8.0,23642,Noord-Brabant,2025,municipality
+GM1960,West Betuwe,71.0,11.0,21792,Gelderland,2025,municipality
+GM1961,Vijfheerenlanden,63.0,7.0,26158,Utrecht,2025,municipality
+GM1963,Hoeksche Waard,71.0,7.0,39954,Zuid-Holland,2025,municipality
+GM1966,Het Hogeland,68.0,5.0,22964,Groningen,2025,municipality
+GM1969,Westerkwartier,73.0,5.0,28232,Groningen,2025,municipality
+GM1970,Noardeast-Fryslân,66.0,5.0,21001,Fryslân,2025,municipality
+GM1978,Molenlanden,70.0,13.0,18111,Zuid-Holland,2025,municipality
+GM1979,Eemsdelta,61.0,3.0,23649,Groningen,2025,municipality
+GM1980,Dijk en Waard,71.0,5.0,38398,Noord-Holland,2025,municipality
+GM1982,Land van Cuijk,68.0,7.0,40717,Noord-Brabant,2025,municipality
+GM1991,Maashorst,65.0,8.0,26571,Noord-Brabant,2025,municipality
+GM1992,Voorne aan Zee,67.0,7.0,33926,Zuid-Holland,2025,municipality
+NL01,Nederland,56.0,7.0,8274478,Nederland,2025,country
+PV20,Groningen,52.0,4.0,294248,Groningen,2025,province
+PV21,Fryslân,62.0,5.0,312294,Fryslân,2025,province
+PV22,Drenthe,67.0,5.0,230308,Drenthe,2025,province
+PV23,Overijssel,61.0,6.0,531840,Overijssel,2025,province
+PV24,Flevoland,62.0,4.0,187199,Flevoland,2025,province
+PV25,Gelderland,60.0,7.0,958405,Gelderland,2025,province
+PV26,Utrecht,56.0,9.0,620062,Utrecht,2025,province
+PV27,Noord-Holland,50.0,8.0,1420068,Noord-Holland,2025,province
+PV28,Zuid-Holland,52.0,6.0,1773458,Zuid-Holland,2025,province
+PV29,Zeeland,67.0,6.0,193454,Zeeland,2025,province
+PV30,Noord-Brabant,60.0,7.0,1201653,Noord-Brabant,2025,province
+PV31,Limburg,60.0,4.0,551489,Limburg,2025,province
