@@ -1,6 +1,8 @@
-In the middle of November the internet seemed to fall over every other day. Microsoft 365 went down for a day, US airspace closed for hours, AWS stumbled, and Chase and United had bad afternoons. People suspected an attack. Every company involved said it wasn't one, and the causes that have been published point the other way: a faulty update, new hardware, a software bug.
+In the middle of November the internet seemed to fall over every other day. Microsoft 365 went down for a day, US airspace closed for hours, AWS stumbled, and Chase and United had bad afternoons. People suspected an attack. Every company involved said it wasn't one. Microsoft and Apple pointed to their own updates, the FAA to new network hardware, Chase to a bug in on-site hardware. AWS and United haven't published a cause.
 
 That came straight after what security people call "Black October": a month of big flaws in PHP, Linux, GitLab and Oracle, several found with the help of AI, a poisoned AI library on PyPI, and a record Microsoft update. So the question is simple. Is there more danger out there, or just more to fix?
+
+This story started with a [short by ZAUEY](https://youtube.com/shorts/3cVrXgG2rYA) arguing that the outages came from patching, not hackers: AI got good at finding bugs, companies are racing to fix them, and rushed fixes break things. I checked that against the public records of every software flaw published since 2019. The data backs half of it.
 
 {{ signal value="4×" label="as many software security flaws were published in October 2026 as in October 2025: 17,050 against 4,274. The number added to the US list of flaws attackers are known to use went from 31 to 36." }}
 
@@ -20,7 +22,7 @@ CVE records can credit who found the flaw. Since the summer, more of them name a
 
 {{ chart src="charts/ai.js" data="data/monthly.csv" title="Flaws credited to AI went from a handful to hundreds a month" subtitle="Published CVEs whose credits name an AI system or AI research team, per month, January 2025 to October 2026" source="CVE List, own text match on the credits field" note="A floor, not a total: most CVE records don't say how a flaw was found." }}
 
-That is still under 2% of all flaws, so AI credits alone don't explain a fourfold rise. The rise comes from almost every direction at once. VulnCheck, which assigns numbers for many smaller projects, went from 158 in October 2025 to 2,473. GitHub's advisories went from 272 to 1,536, Oracle from 78 to 1,078. Many of these teams now run AI tools over code without always saying so in the credits.
+That is still under 2% of all flaws, so AI credits alone don't explain a fourfold rise. The rise comes from almost every direction at once. VulnCheck, which assigns numbers for many smaller projects, went from 158 in October 2025 to 2,473. GitHub's advisories went from 272 to 1,536, Oracle from 78 to 1,078. Many of these teams now run AI tools over code without always saying so in the credits. So AI is part of the story, but the credits don't show it is most of it.
 
 ## Microsoft: eight times the fixes, the same number of attacks
 
@@ -37,6 +39,8 @@ The attacks that do happen come fast. Of the flaws CISA added in 2026, 60% were 
 {{ chart src="charts/speed.js" data="data/exploit_speed.csv" title="Six in ten exploited flaws are now used within a month" subtitle="Share of flaws added to CISA's catalogue within 30 days of their CVE being published, by year added" source="CVE List; CISA Known Exploited Vulnerabilities catalogue" note="* 2026 up to 20 November. 2021 and 2022 left out: CISA was then adding years of older flaws in bulk." }}
 
 That is the squeeze IT teams are in. There are four times as many fixes to install, and the few that matter have to go in within days. A company can't test thousands of changes a month the way it tested hundreds. Installing them fast means more changes that go wrong. Installing them slowly means a window for the few flaws that attackers jump on. Microsoft's own outage on 12 November was traced to a defect in an update to its network gateways, made back in July.
+
+But the choice is narrower than "patch fast or get hacked". Exploited flaws grew far more slowly than published ones, and Microsoft's count of flaws already under attack didn't grow at all. The flaws that need to go in within days are a small, listed set: CISA publishes them, and most security teams already track that list. Everything else can be tested at a normal pace.
 
 ## In the Netherlands
 
