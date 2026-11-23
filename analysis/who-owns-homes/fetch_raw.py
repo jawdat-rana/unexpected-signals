@@ -62,7 +62,7 @@ def filter_observations(folder: Path, keep: set[str], regio: tuple[str, ...]) ->
     wanted: dict[str, str] = {}
     for column in header:
         codes = folder / f"{column}Codes.csv"
-        if not codes.exists() or column in keep or column == "RegioS" or column == "Perioden":
+        if not codes.exists() or column in keep or column in {"RegioS", "Perioden", "Measure"}:
             continue
         code = total_code(codes)
         if code:
