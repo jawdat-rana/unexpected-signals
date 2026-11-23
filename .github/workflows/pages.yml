@@ -2,6 +2,8 @@ name: pages
 
 # Builds the site from stories/ and publishes it to GitHub Pages.
 # Pull requests build too (with drafts), so a broken story fails before merge.
+# A daily run puts "ready" stories live on their date (see newsroom/build.py)
+# and writes the newsroom list to the run summary.
 # One-time setup: Settings > Pages > Source: GitHub Actions.
 
 on:
@@ -9,6 +11,10 @@ on:
     branches: [main]
   pull_request:
     paths: ["stories/**", "templates/**", "newsroom/**", ".github/workflows/pages.yml"]
+  schedule:
+    # 05:17 UTC is 06:17 in Amsterdam in winter (07:17 in summer). GitHub can
+    # start scheduled runs late, so this aims well before the morning.
+    - cron: "17 5 * * *"
   workflow_dispatch:
 
 permissions:
@@ -36,6 +42,13 @@ jobs:
           else
             python newsroom/build.py build
           fi
+      - name: Newsroom list
+        run: |
+          {
+            echo "## Newsroom, $(date -u +%F)"
+            echo
+            python newsroom/build.py schedule
+          } >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

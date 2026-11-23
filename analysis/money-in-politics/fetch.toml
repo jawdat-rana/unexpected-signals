@@ -1,0 +1,24 @@
+# Raw-data fetches for this dataset, run by the `fetch` workflow
+# (see .github/scripts/fetch_plan.py). Re-run by hand, for example:
+# gh workflow run fetch -f name=money-home
+# The earmark totals need a matrix over FEC cycles, so they keep their own
+# workflow (money-home-earmarks), which also writes to raw-money-home.
+
+[[fetch]]
+name = "money"
+run = "python -u analysis/money-in-politics/fetch_raw.py raw"
+watch = ["analysis/money-in-politics/fetch_raw.py"]
+timeout = 15
+summary = "manifest.csv"
+
+[[fetch]]
+name = "money-home"
+run = "python -u analysis/money-in-politics/fetch_home_front.py raw"
+watch = [
+  "analysis/money-in-politics/fetch_home_front.py",
+  "analysis/money-in-politics/home_front_committees.csv",
+]
+# Keep the earmark totals that money-home-earmarks adds to the branch.
+keep = true
+timeout = 90
+summary = "manifest.csv"

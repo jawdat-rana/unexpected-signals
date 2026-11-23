@@ -32,14 +32,57 @@ python newsroom/build.py serve               # preview with drafts at http://loc
    - **Datawrapper**: when a point-and-click chart or map is faster. Embed by id.
 5. **Preview.** `python newsroom/build.py serve`. Check the page on a phone width
    and in the night edition (the toggle in the masthead).
-6. **Publish.** Set `status = "published"` in `story.toml`, open the PR, merge.
-   The `pages` workflow deploys in about a minute.
+6. **Publish.** Either publish now: set `status = "published"`, open the PR,
+   merge, and the `pages` workflow deploys in about a minute. Or schedule it:
+   set `status = "ready"` and `date` to the day it should go live, and merge.
+   See [Scheduling](#scheduling) below.
 7. **Share.** Link the story page, not the repo. Keep social posts and other
    personal drafts out of this repo: everything here is for readers to reuse.
 
 Drafts are never on the live site. Their titles do show under "In the
 newsroom" on the front page; set `show_upcoming = false` in
 `newsroom/site.toml` to hide them.
+
+## Scheduling
+
+Merge drafts early and let the date do the publishing. A story moves through
+three statuses in `story.toml`:
+
+| Status | Meaning |
+| --- | --- |
+| `draft` | Being written. Listed under "In the newsroom", never on the live site. |
+| `ready` | Signed off. Goes live by itself on `date`, if nothing blocks it. |
+| `published` | Live. |
+
+A `ready` story stays off the site, even after its date, while any of these is true:
+
+- `open = [...]` in `story.toml` lists an open question or action. Empty it when settled.
+- `story.md` still has `⟨…⟩` placeholders, `TODO`/`TBD`, or a `<!-- DRAFT` comment.
+- `after = "other-slug"` names a story that isn't live yet, so a series keeps its order.
+
+The `pages` workflow runs every morning (about 06:15 Amsterdam time) and
+rebuilds the site, so ready stories appear on their date without a commit.
+Their `story.toml` keeps saying `ready`; switch it to `published` whenever
+convenient. Each run also writes the newsroom list to the run's summary page.
+To see it locally:
+
+```bash
+python newsroom/build.py schedule                    # what goes live when, and what blocks it
+python newsroom/build.py build --today 2026-12-01    # the site as it will look on that day
+```
+
+## Updating a published story
+
+Keep `date` as the day it first went live. Add `updated` with the day of the
+change and, if readers should know what changed, `update_note`:
+
+```toml
+updated = 2026-12-14
+update_note = "Final 2026 numbers from the post-general FEC reports."
+```
+
+The byline then reads "Updated 14 December 2026", and the note sits in a box
+above the text.
 
 ## Shortcodes
 
@@ -116,6 +159,23 @@ It is off when empty, so forks don't count into your dashboard.
   be added later in Settings > Pages.
 
 One-time setup: **Settings > Pages > Build and deployment > Source: GitHub Actions**.
+
+## Raw data and helper workflows
+
+Many sources can only be reached from GitHub's runners, so raw downloads run
+in Actions and land on a `raw-<name>` branch, never on `main`.
+
+- **fetch.** Describe a download in `analysis/<dataset>/fetch.toml` (name, the
+  command, which files trigger a re-run). Pushing a change to those files runs
+  it; `gh workflow run fetch -f name=<name>` runs it by hand. The format is at
+  the top of `.github/scripts/fetch_plan.py`.
+- **probe.** Before writing a collector, check what a URL returns from GitHub:
+  `gh workflow run probe -f url=https://...` (method, body and headers are
+  optional). The status, headers and first lines go to the run summary; the
+  full reply is kept for 7 days. No temporary workflows on `main`.
+- **health.** Every Monday morning, a report on each collector: last success,
+  rows per day and gaps between runs. If a feed has gone quiet, it opens an
+  issue labelled `collector-health`, or comments on the open one.
 
 ## Repo layout
 

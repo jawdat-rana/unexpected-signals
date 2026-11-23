@@ -2,10 +2,11 @@
 
 title = "Why Dutch bridges still let the boats go first"
 dek = "A ship can't brake like a car, the tide doesn't wait and the freight is huge. An explainer, with a week of live data on how often the bridges open."
-date = 2026-11-30
+date = 2026-12-03
 section = "Bridges"
 series = "Bridges and roads"
 status = "draft"
+open = ["Fill the live-data numbers from the week 23–29 November (analysis/ndw-bridges/live.py)"]
 tags = ["ndw", "bridges", "shipping", "explainer", "maps"]
 image = ""
 analysis = "analysis/ndw-bridges"

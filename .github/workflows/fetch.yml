@@ -1,0 +1,102 @@
+name: fetch
+
+# Downloads raw sources for the analyses and commits them to a `raw-<name>`
+# branch each, so an analysis can run anywhere without re-fetching. The fetches
+# are listed in analysis/<dataset>/fetch.toml (see .github/scripts/fetch_plan.py).
+#
+# - By hand: Actions > fetch > Run workflow, or `gh workflow run fetch -f name=ice`.
+# - On push (any branch): re-runs the fetches whose `watch` files changed.
+
+on:
+  push:
+    paths: ["analysis/**"]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Fetch to run, as named in a fetch.toml (trains, ice, housing, money, ...)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: plan
+        env:
+          NAME: ${{ inputs.name }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            matrix=$(python .github/scripts/fetch_plan.py --name "$NAME")
+          else
+            # A new branch has no "before": compare with where it left main.
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
+               || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+              BEFORE=$(git merge-base origin/main HEAD)
+            fi
+            git diff --name-only "$BEFORE" HEAD > changed.txt
+            matrix=$(python .github/scripts/fetch_plan.py --changed changed.txt)
+          fi
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+          echo "Fetches to run: $matrix" >> "$GITHUB_STEP_SUMMARY"
+
+  fetch:
+    needs: plan
+    if: needs.plan.outputs.matrix != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: ${{ matrix.timeout }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    # One run per raw branch at a time; money-home-earmarks uses the same group.
+    concurrency:
+      group: raw-${{ matrix.name }}
+      cancel-in-progress: false
+    env:
+      BRANCH: raw-${{ matrix.name }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install packages
+        if: matrix.pip != ''
+        run: pip install ${{ matrix.pip }}
+      - name: Check out ${{ env.BRANCH }}
+        run: |
+          if [ "${{ matrix.keep }}" = "true" ] && git fetch -q origin "$BRANCH"; then
+            git worktree add -B "$BRANCH" raw FETCH_HEAD
+          else
+            git worktree add --orphan -b "$BRANCH" raw
+          fi
+      - name: Fetch
+        env:
+          RUN: ${{ matrix.run }}
+          SUMMARY: ${{ matrix.summary }}
+        run: |
+          set -o pipefail
+          echo "## $BRANCH" >> "$GITHUB_STEP_SUMMARY"
+          bash -c "$RUN" | tee -a "$GITHUB_STEP_SUMMARY"
+          rm -rf raw/_tmp
+          if [ -n "$SUMMARY" ] && [ -f "raw/$SUMMARY" ]; then cat "raw/$SUMMARY" >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Push to ${{ env.BRANCH }}
+        working-directory: raw
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Data unchanged, nothing to commit"; exit 0; fi
+          git commit -q -m "raw: ${{ matrix.name }} $(date -u +%Y-%m-%dT%H:%MZ)"
+          if [ "${{ matrix.keep }}" = "true" ]; then
+            git push origin "HEAD:$BRANCH"
+          else
+            git push -f origin "HEAD:$BRANCH"
+          fi

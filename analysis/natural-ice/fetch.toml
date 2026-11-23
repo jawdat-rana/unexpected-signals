@@ -1,0 +1,9 @@
+# Raw-data fetches for this dataset, run by the `fetch` workflow
+# (see .github/scripts/fetch_plan.py). Re-run by hand to add the latest days:
+# gh workflow run fetch -f name=ice
+
+[[fetch]]
+name = "ice"
+run = "python -u analysis/natural-ice/fetch_raw.py raw"
+watch = ["analysis/natural-ice/fetch_raw.py"]
+timeout = 20

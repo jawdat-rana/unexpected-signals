@@ -1,0 +1,67 @@
+name: health
+
+# Weekly check that every collector still delivers. Writes a report to the run
+# summary (last success per feed, rows per day, gaps between collect runs) and
+# opens an issue labelled `collector-health` when a feed has gone quiet, or
+# comments on the open one. Also runs on demand.
+
+on:
+  schedule:
+    - cron: "23 6 * * 1" # Mondays, about 07:23 in Amsterdam
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check out the data branch
+        run: |
+          git fetch --depth 1 origin data:refs/remotes/origin/data
+          git worktree add data-branch origin/data
+      - name: List collect runs of the last 7 days
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          echo "[" > runs.json
+          for page in $(seq 1 30); do
+            gh api "repos/${{ github.repository }}/actions/workflows/collect.yml/runs?per_page=100&page=$page&created=>=$since" > page.json
+            [ "$page" -gt 1 ] && echo "," >> runs.json
+            cat page.json >> runs.json
+            [ "$(jq '.workflow_runs | length' page.json)" -lt 100 ] && break
+          done
+          echo "]" >> runs.json
+      - name: Report
+        id: report
+        env:
+          PYTHONPATH: src
+        run: |
+          set +e
+          python -m unexpected_signals health --data data-branch/data --runs runs.json > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Open or update the health issue
+        if: steps.report.outputs.status == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create collector-health --color d6452b --description "A collector went quiet" 2>/dev/null || true
+          number=$(gh issue list --label collector-health --state open --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body-file report.md
+          else
+            gh issue create --title "Collector went quiet" --label collector-health --body-file report.md
+          fi
+      - name: Fail on other errors
+        if: steps.report.outputs.status != '0' && steps.report.outputs.status != '2'
+        run: exit 1

@@ -1,0 +1,8 @@
+# Raw-data fetches for this dataset, run by the `fetch` workflow
+# (see .github/scripts/fetch_plan.py). Re-run by hand: gh workflow run fetch -f name=housing
+
+[[fetch]]
+name = "housing"
+run = "python -u analysis/who-owns-homes/fetch_raw.py raw"
+watch = ["analysis/who-owns-homes/fetch_raw.py", "analysis/who-owns-homes/tables.txt"]
+timeout = 20

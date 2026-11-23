@@ -90,3 +90,82 @@ def test_analytics_only_when_configured():
     assert newsroom.analytics({}) == ""
     tag = newsroom.analytics({"goatcounter": "unexpected-signals"})
     assert "unexpected-signals.goatcounter.com/count" in tag
+
+
+def _story(stories, slug, date, status="ready", extra="", body="Body."):
+    folder = stories / slug
+    folder.mkdir(parents=True)
+    (folder / "story.md").write_text(body)
+    (folder / "story.toml").write_text(
+        f'title = "Title {slug}"\ndek = "Dek"\ndate = {date}\n'
+        f'section = "Test"\nstatus = "{status}"\n{extra}'
+    )
+
+
+def test_ready_stories_go_live_on_their_date(tmp_path, monkeypatch):
+    import datetime as dt
+
+    stories = tmp_path / "stories"
+    _story(stories, "due", "2026-12-01")
+    _story(stories, "later", "2026-12-08")
+    _story(stories, "asks", "2026-12-01", extra='open = ["Check the 2024 total"]\n')
+    _story(stories, "unfinished", "2026-12-01", body="About ⟨N⟩ a day.")
+    _story(stories, "drafty", "2026-12-01", status="draft")
+    _story(stories, "chained", "2026-12-01", extra='after = "asks"\n')
+    monkeypatch.setattr(newsroom, "STORIES", stories)
+
+    before = {s.slug: s.status for s in newsroom.load_stories(dt.date(2026, 11, 30))}
+    assert before["due"] == "ready"
+
+    on_the_day = {s.slug: s.status for s in newsroom.load_stories(dt.date(2026, 12, 1))}
+    assert on_the_day == {
+        "due": "published",
+        "later": "ready",
+        "asks": "ready",
+        "unfinished": "ready",
+        "drafty": "draft",
+        "chained": "ready",
+    }
+
+    out = tmp_path / "_site"
+    newsroom.build(out, today=dt.date(2026, 12, 1))
+    assert (out / "stories/due/index.html").exists()
+    assert not (out / "stories/asks").exists()
+    assert "Title asks" in (out / "index.html").read_text()
+
+    listing = newsroom.schedule(dt.date(2026, 12, 1))
+    assert "open: Check the 2024 total" in listing
+    assert "waits for asks to go live" in listing
+    assert "unfinished text" in listing
+
+
+def test_after_chains_follow_the_dates(tmp_path, monkeypatch):
+    import datetime as dt
+
+    stories = tmp_path / "stories"
+    _story(stories, "first", "2026-12-03")
+    _story(stories, "second", "2026-12-08", extra='after = "first"\n')
+    monkeypatch.setattr(newsroom, "STORIES", stories)
+    status = {s.slug: s.status for s in newsroom.load_stories(dt.date(2026, 12, 8))}
+    assert status == {"first": "published", "second": "published"}
+
+
+def test_updated_date_shows_in_byline_and_note(tmp_path, monkeypatch):
+    import datetime as dt
+
+    stories = tmp_path / "stories"
+    _story(
+        stories,
+        "money",
+        "2026-11-06",
+        status="published",
+        extra='updated = 2026-12-14\nupdate_note = "Final *2026* numbers."\n',
+        body="First paragraph.",
+    )
+    monkeypatch.setattr(newsroom, "STORIES", stories)
+    out = tmp_path / "_site"
+    newsroom.build(out, today=dt.date(2026, 12, 14))
+    page = (out / "stories/money/index.html").read_text()
+    assert 'Updated <time datetime="2026-12-14">14 December 2026</time>' in page
+    assert '<aside class="update-note"><strong>Update, 14 December 2026:</strong>' in page
+    assert "<em>2026</em>" in page
