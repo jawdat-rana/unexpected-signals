@@ -13,7 +13,18 @@ from dataclasses import asdict
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
-from . import bridges, charts, ovfiets, parking, sites, state, storage, traffic, trends
+from . import (
+    bridges,
+    charts,
+    ovfiets,
+    parking,
+    shazam,
+    sites,
+    state,
+    storage,
+    traffic,
+    trends,
+)
 from .fetch import download
 
 
@@ -239,6 +250,27 @@ def collect_ovfiets(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
     )
 
 
+def collect_shazam(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
+    notes, failed = [], []
+    for chart in cfg.get("charts", ["netherlands"]):
+        try:
+            raw = download(cfg.get("base", shazam.BASE) + chart, retries=cfg.get("retries", 3))
+            chart_date, rows = shazam.parse(raw, chart, fetched_at)
+            if not rows:
+                raise ValueError("no rows in the chart")
+        except Exception as exc:
+            failed.append(f"{chart}: {exc!r}")
+            continue
+        path = storage.day_path(out, "shazam", chart_date)
+        storage.write_rows(
+            path, shazam.COLUMNS, shazam.replace_chart(storage.read_rows(path), chart, rows)
+        )
+        notes.append(f"{chart} {chart_date} ({len(rows)})")
+    if failed:
+        raise RuntimeError(f"saved {notes}, but these failed: {failed}")
+    return "shazam: " + ", ".join(notes)
+
+
 COLLECTORS = {
     "bridges": collect_bridges,
     "traffic": collect_traffic,
@@ -246,6 +278,7 @@ COLLECTORS = {
     "apple_charts": collect_charts,
     "google_trending": collect_trends,
     "ovfiets": collect_ovfiets,
+    "shazam": collect_shazam,
 }
 
 

@@ -152,3 +152,11 @@ enabled = true
 every_minutes = 10
 url = "http://fiets.openov.nl/locaties.json"
 
+
+[shazam]
+# Shazam top 200 per country (last 7 days, replaced daily). People Shazam a
+# song they hear somewhere else, often a TikTok video, so this is the stand-in
+# for TikTok's own song chart, which needs a login. One file per chart day.
+enabled = true
+every_minutes = 360
+charts = ["netherlands", "belgium", "germany", "united-kingdom", "united-states", "world"]
