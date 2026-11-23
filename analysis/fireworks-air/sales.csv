@@ -1,0 +1,11 @@
+season,sales_eur_m,status,source
+2008/09,74,sold,"BPN via Hart van Nederland, 31 Dec 2019 (the record before 2019)"
+2018/19,70,sold,"BPN via Hart van Nederland, 31 Dec 2019 (""vorig jaar"")"
+2019/20,77,sold,"BPN via Hart van Nederland, 31 Dec 2019"
+2020/21,0,covid ban,"National sales ban (covid), Verbond van Verzekeraars"
+2021/22,0,covid ban,"National sales ban (covid), Verbond van Verzekeraars"
+2022/23,110,sold,"BPN via nieuws.nl/ANP, 30 Dec 2023 (Hart van Nederland, 31 Dec 2024, says about 115)"
+2023/24,105,sold,"BPN via nieuws.nl/ANP, 30 Dec 2023"
+2024/25,118,sold,"BPN via Hart van Nederland, 31 Dec 2024"
+2025/26,129,sold,"BPN via Hart van Nederland, 31 Dec 2025 (record; last season before the ban)"
+2026/27,0,national consumer ban,"Rijksoverheid, 1 Jul 2026: ban in force from 1 Aug 2026"

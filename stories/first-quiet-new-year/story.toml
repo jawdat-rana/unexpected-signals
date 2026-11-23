@@ -1,0 +1,54 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "The first quiet New Year?"
+dek = "The Netherlands banned consumer fireworks this New Year. Fourteen years of hourly air measurements show what the ban did to the midnight smoke, why the wind matters as much as the fireworks, and why the climate never noticed."
+date = 2027-01-04
+section = "Air"
+series = ""
+status = "draft"
+# Filled in from the fetch run on 3 January 2027 (gh workflow run fetch -f name=fireworks).
+open = ["Add the 2026/27 night: run the fireworks fetch on 3 Jan, rerun prepare.py, fill the ⟨…⟩ marks"]
+after = ""
+tags = ["rivm", "knmi", "air-quality", "fireworks", "new-year"]
+image = ""
+analysis = "analysis/fireworks-air"
+
+[[sources]]
+name = "RIVM Luchtmeetnet: hourly measurements (bulk files and open API)"
+url = "https://data.rivm.nl/data/luchtmeetnet/"
+licence = "Open data (bron: RIVM Luchtmeetnet)"
+
+[[sources]]
+name = "KNMI hourly observations (uurgegevens)"
+url = "https://www.daggegevens.knmi.nl/"
+licence = "CC0 (bron: KNMI)"
+
+[[sources]]
+name = "Umweltbundesamt air data API (Germany)"
+url = "https://www.umweltbundesamt.de/daten/luft/luftdaten"
+licence = "Open data (Quelle: Umweltbundesamt)"
+
+[[sources]]
+name = "RIVM: Milieulast van vuurwerk (memo, 30 September 2020)"
+url = "https://zoek.officielebekendmakingen.nl/blg-981345.pdf"
+licence = "Public government document"
+
+[[sources]]
+name = "Umweltbundesamt: Fireworks produce 2,050 tonnes of particulate matter per year"
+url = "https://umweltbundesamt.de/en/node/84860"
+licence = "Cited"
+
+[[sources]]
+name = "CBS: Increase in greenhouse gas emissions in 2025"
+url = "https://www.cbs.nl/en-gb/news/2026/11/increase-in-greenhouse-gas-emissions-in-2025"
+licence = "CC BY 4.0"
+
+[[sources]]
+name = "Rijksoverheid: landelijk vuurwerkverbod voor consumenten dit jaar van kracht (1 July 2026)"
+url = "https://www.rijksoverheid.nl/actueel/nieuws/2026/07/01/landelijk-vuurwerkverbod-voor-consumenten-dit-jaar-van-kracht"
+licence = "Cited"
+
+[[sources]]
+name = "Fireworks sales (BPN) via Hart van Nederland and ANP/nieuws.nl, 2019–2025"
+url = "https://www.hartvannederland.nl/entertainment/evenementen/artikelen/nederland-knalt-record-de-lucht-in-129-miljoen-euro"
+licence = "Cited"
