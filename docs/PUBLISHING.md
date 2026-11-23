@@ -71,6 +71,19 @@ python newsroom/build.py schedule                    # what goes live when, and 
 python newsroom/build.py build --today 2026-12-01    # the site as it will look on that day
 ```
 
+## Updating a published story
+
+Keep `date` as the day it first went live. Add `updated` with the day of the
+change and, if readers should know what changed, `update_note`:
+
+```toml
+updated = 2026-12-14
+update_note = "Final 2026 numbers from the post-general FEC reports."
+```
+
+The byline then reads "Updated 14 December 2026", and the note sits in a box
+above the text.
+
 ## Shortcodes
 
 Each goes on its own line in `story.md`. All attributes are optional except

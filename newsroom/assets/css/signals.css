@@ -421,6 +421,13 @@ figcaption,
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+.update-note {
+  margin: 0 0 1.5rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--paper-2);
+  border-left: 3px solid var(--signal);
+  font-size: 0.95rem;
+}
 
 .story-body > p:first-of-type::first-letter {
   float: left;

@@ -68,6 +68,8 @@ class Story:
     url: str = ""
     open: list[str] = field(default_factory=list)
     after: str = ""
+    updated: dt.date | None = None
+    update_note: str = ""
 
     @property
     def minutes(self) -> int:
@@ -85,6 +87,9 @@ def load_story(folder: Path, url: str | None = None) -> Story:
     date = meta["date"]
     if not isinstance(date, dt.date):
         raise ValueError(f"{folder}/story.toml: date must be a TOML date, like 2026-11-17")
+    updated = meta.get("updated")
+    if updated is not None and not isinstance(updated, dt.date):
+        raise ValueError(f"{folder}/story.toml: updated must be a TOML date, like 2026-12-14")
     return Story(
         slug=folder.name,
         folder=folder,
@@ -102,6 +107,8 @@ def load_story(folder: Path, url: str | None = None) -> Story:
         url=url or f"stories/{folder.name}/",
         open=list(meta.get("open", [])),
         after=meta.get("after", ""),
+        updated=updated,
+        update_note=meta.get("update_note", ""),
     )
 
 
@@ -326,8 +333,21 @@ def story_html(config: dict, story: Story, *, root: str) -> str:
         if story.status == "draft"
         else ""
     )
+    updated = ""
+    if story.updated:
+        updated = (
+            f' · Updated <time datetime="{story.updated.isoformat()}">'
+            f"{long_date(story.updated)}</time>"
+        )
+    note = (
+        f'<aside class="update-note"><strong>Update, {long_date(story.updated)}:</strong> '
+        f"{inline_md(story.update_note)}</aside>\n"
+        if story.updated and story.update_note
+        else ""
+    )
     return template("story.html").substitute(
         banner=banner,
+        updated=updated,
         section=esc(story.section),
         series=series,
         title=inline_md(story.title),
@@ -337,7 +357,7 @@ def story_html(config: dict, story: Story, *, root: str) -> str:
         date=long_date(story.date),
         minutes=story.minutes,
         issue=issue,
-        body=render_body(story.body_md),
+        body=note + render_body(story.body_md),
         sources=sources,
         code=code + story_src,
         root=root,

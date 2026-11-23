@@ -148,3 +148,24 @@ def test_after_chains_follow_the_dates(tmp_path, monkeypatch):
     monkeypatch.setattr(newsroom, "STORIES", stories)
     status = {s.slug: s.status for s in newsroom.load_stories(dt.date(2026, 12, 8))}
     assert status == {"first": "published", "second": "published"}
+
+
+def test_updated_date_shows_in_byline_and_note(tmp_path, monkeypatch):
+    import datetime as dt
+
+    stories = tmp_path / "stories"
+    _story(
+        stories,
+        "money",
+        "2026-11-06",
+        status="published",
+        extra='updated = 2026-12-14\nupdate_note = "Final *2026* numbers."\n',
+        body="First paragraph.",
+    )
+    monkeypatch.setattr(newsroom, "STORIES", stories)
+    out = tmp_path / "_site"
+    newsroom.build(out, today=dt.date(2026, 12, 14))
+    page = (out / "stories/money/index.html").read_text()
+    assert 'Updated <time datetime="2026-12-14">14 December 2026</time>' in page
+    assert '<aside class="update-note"><strong>Update, 14 December 2026:</strong>' in page
+    assert "<em>2026</em>" in page
