@@ -1,3 +1,6 @@
 # CBS StatLine table IDs to download (one per line)
 82900NED  # Dwellings by ownership and landlord type, by region, 2012 onwards
-84809NED  # Non-EU/EFTA immigrants by migration motive
+86379NED  # Household wealth by region (indeling 2026), incl. millionaire households
+86160NED  # Household wealth by region (indeling 2025)
+84809NED  # Non-EU/EFTA immigrants by migration motive (national)
+85451NED  # Immigration and emigration by nationality, by region
