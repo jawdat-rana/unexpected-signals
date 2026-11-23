@@ -1,8 +1,8 @@
-In the middle of November the internet seemed to fall over every other day. Microsoft 365 went down for a day, US airspace closed for hours, AWS stumbled, and Chase and United had bad afternoons. People suspected an attack. Every company involved said it wasn't one. Microsoft and Apple pointed to their own updates, the FAA to new network hardware, Chase to a bug in on-site hardware. AWS and United haven't published a cause.
+In the middle of November the internet seemed to fall over every other day. Microsoft 365 went down for a day, flights across the US were grounded for hours, AWS stumbled, and Chase and United had bad afternoons. People suspected an attack. Every company involved said it wasn't one. Microsoft and Apple pointed to their own updates, the FAA to a newly installed network router (still under investigation), Chase to a bug in on-site hardware. AWS and United haven't given a detailed cause.
 
 That came straight after what security people call "Black October": a month of big flaws in PHP, Linux, GitLab and Oracle, several found with the help of AI, a poisoned AI library on PyPI, and a record Microsoft update. So the question is simple. Is there more danger out there, or just more to fix?
 
-This story started with a [short by ZAUEY](https://youtube.com/shorts/3cVrXgG2rYA) arguing that the outages came from patching, not hackers: AI got good at finding bugs, companies are racing to fix them, and rushed fixes break things. I checked that against the public records of every software flaw published since 2019. The data backs half of it.
+This story started with a [short by ZAUEY](https://youtube.com/shorts/3cVrXgG2rYA) arguing that the outages came from patching, not hackers: AI got good at finding bugs, companies are racing to fix them, and rushed fixes break things. I checked that against the public records of every software flaw published since 2019. The data backs most of it, and adds one twist.
 
 {{ signal value="4×" label="as many software security flaws were published in October 2026 as in October 2025: 17,050 against 4,274. The number added to the US list of flaws attackers are known to use went from 31 to 36." }}
 
@@ -22,7 +22,7 @@ CVE records can credit who found the flaw. Since the summer, more of them name a
 
 {{ chart src="charts/ai.js" data="data/monthly.csv" title="Flaws credited to AI went from a handful to hundreds a month" subtitle="Published CVEs whose credits name an AI system or AI research team, per month, January 2025 to October 2026" source="CVE List, own text match on the credits field" note="A floor, not a total: most CVE records don't say how a flaw was found." }}
 
-That is still under 2% of all flaws, so AI credits alone don't explain a fourfold rise. The rise comes from almost every direction at once. VulnCheck, which assigns numbers for many smaller projects, went from 158 in October 2025 to 2,473. GitHub's advisories went from 272 to 1,536, Oracle from 78 to 1,078. Many of these teams now run AI tools over code without always saying so in the credits. So AI is part of the story, but the credits don't show it is most of it.
+That is still under 2% of all flaws, so AI credits alone don't explain a fourfold rise. The rise comes from almost every direction at once. VulnCheck, which assigns numbers for many smaller projects, went from 158 in October 2025 to 2,473. GitHub's advisories went from 272 to 1,536, Oracle from 78 to 1,078. Some of that may be AI-assisted work the credits don't mention. The records can't tell. So AI is part of the story, but the credits don't show it is most of it.
 
 ## Microsoft: eight times the fixes, the same number of attacks
 
@@ -34,17 +34,17 @@ Microsoft also marks which flaws were already under attack when it shipped the f
 
 ## What did change: the time to patch
 
-The attacks that do happen come fast. Of the flaws CISA added in 2026, 60% were added within 30 days of the flaw being published, the highest share in four years. 132 were added within a week, against 97 in the whole of 2025.
+The attacks that do happen come fast. Of the flaws CISA added in 2026, 60% were added within 30 days of the flaw being published, the highest of the four years I looked at. 132 were added within a week, against 97 in the whole of 2025.
 
 {{ chart src="charts/speed.js" data="data/exploit_speed.csv" title="Six in ten exploited flaws are now used within a month" subtitle="Share of flaws added to CISA's catalogue within 30 days of their CVE being published, by year added" source="CVE List; CISA Known Exploited Vulnerabilities catalogue" note="* 2026 up to 20 November. 2021 and 2022 left out: CISA was then adding years of older flaws in bulk." }}
 
-That is the squeeze IT teams are in. There are four times as many fixes to install, and the few that matter have to go in within days. A company can't test thousands of changes a month the way it tested hundreds. Installing them fast means more changes that go wrong. Installing them slowly means a window for the few flaws that attackers jump on. Microsoft's own outage on 12 November was traced to a defect in an update to its network gateways, made back in July.
+That is the squeeze IT teams are in. There are four times as many fixes to install, and the few that matter have to go in within days. A company can't test thousands of changes a month the way it tested hundreds. Installing them fast means more changes that go wrong. Installing them slowly means a window for the few flaws that attackers jump on. Microsoft's own outage on 12 November was traced to a defect in an update to its network gateways, rolled out from July. Microsoft says AI tooling wasn't involved.
 
 But the choice is narrower than "patch fast or get hacked". Exploited flaws grew far more slowly than published ones, and Microsoft's count of flaws already under attack didn't grow at all. The flaws that need to go in within days are a small, listed set: CISA publishes them, about 30 a month. Everything else can be tested at a normal pace.
 
 ## In the Netherlands
 
-The NCSC, the Dutch national cyber security centre, groups flaws per product into advisories. It published 65 in October 2026, against 43 a year earlier. That is a rise of half, not four times, because one advisory can cover dozens of flaws. Its PHP advisory came out on 21 October, the day of the PHP2Shell fix. Dutch, Belgian and Finnish government sites were reportedly taken offline as a precaution while they patched.
+The NCSC, the Dutch national cyber security centre, groups flaws per product into advisories. It published 65 in October 2026, against 43 a year earlier. That is a rise of half, not four times, because one advisory can cover dozens of flaws. Its PHP advisory came out on 21 October, the day of the PHP2Shell fix. Government sites in Germany, France, Belgium, the Netherlands and Finland were taken offline as a precaution while they patched.
 
 ## What the data can't tell you
 
