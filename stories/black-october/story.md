@@ -40,7 +40,7 @@ The attacks that do happen come fast. Of the flaws CISA added in 2026, 60% were 
 
 That is the squeeze IT teams are in. There are four times as many fixes to install, and the few that matter have to go in within days. A company can't test thousands of changes a month the way it tested hundreds. Installing them fast means more changes that go wrong. Installing them slowly means a window for the few flaws that attackers jump on. Microsoft's own outage on 12 November was traced to a defect in an update to its network gateways, made back in July.
 
-But the choice is narrower than "patch fast or get hacked". Exploited flaws grew far more slowly than published ones, and Microsoft's count of flaws already under attack didn't grow at all. The flaws that need to go in within days are a small, listed set: CISA publishes them, and most security teams already track that list. Everything else can be tested at a normal pace.
+But the choice is narrower than "patch fast or get hacked". Exploited flaws grew far more slowly than published ones, and Microsoft's count of flaws already under attack didn't grow at all. The flaws that need to go in within days are a small, listed set: CISA publishes them, about 30 a month. Everything else can be tested at a normal pace.
 
 ## In the Netherlands
 
