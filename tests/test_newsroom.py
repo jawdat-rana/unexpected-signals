@@ -169,3 +169,18 @@ def test_updated_date_shows_in_byline_and_note(tmp_path, monkeypatch):
     assert 'Updated <time datetime="2026-12-14">14 December 2026</time>' in page
     assert '<aside class="update-note"><strong>Update, 14 December 2026:</strong>' in page
     assert "<em>2026</em>" in page
+
+
+def test_site_pages_build_and_are_linked(tmp_path, monkeypatch):
+    import datetime as dt
+
+    stories = tmp_path / "stories"
+    _story(stories, "money", "2026-11-06", status="published", body="First paragraph.")
+    monkeypatch.setattr(newsroom, "STORIES", stories)
+    out = tmp_path / "_site"
+    newsroom.build(out, today=dt.date(2026, 12, 14))
+    page = (out / "how-this-is-made/index.html").read_text()
+    assert "<h1>How this is made</h1>" in page
+    assert '<meta name="description" content="Yes, this site is made with AI' in page
+    story = (out / "stories/money/index.html").read_text()
+    assert '<a href="../../how-this-is-made/">How this is made</a></p>' in story
