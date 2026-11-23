@@ -1,9 +1,9 @@
 title = "Black October: four times the flaws, not four times the attacks"
-dek = "Software makers published four times as many security flaws in October 2026 as a year earlier, many found with AI. The number of flaws attackers actually used barely moved. The patching did, and that is what broke things in November."
+dek = "Software makers published four times as many security flaws in October 2026 as a year earlier, some of them found with AI. The number of flaws attackers actually used rose far less. What grew was the pressure to patch fast."
 date = 2026-11-23
 section = "Tech"
 series = ""
-status = "draft"
+status = "published"
 tags = ["cybersecurity", "cve", "ai"]
 image = ""
 analysis = "analysis/software-flaws"
