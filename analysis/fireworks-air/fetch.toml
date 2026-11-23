@@ -4,9 +4,7 @@
 
 [[fetch]]
 name = "fireworks"
-run = "python -u analysis/fireworks-air/fetch_raw.py raw"
-watch = ["analysis/fireworks-air/fetch_raw.py"]
-# Keep earlier years; the script only refetches unfinished or newest years.
+run = "python -u analysis/fireworks-air/explore.py"
+watch = ["analysis/fireworks-air/fetch_raw.py", "analysis/fireworks-air/explore.py"]
 keep = true
-timeout = 90
-summary = "manifest.csv"
+timeout = 10
