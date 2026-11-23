@@ -1,6 +1,8 @@
 title = "Black October: four times the flaws, not four times the attacks"
 dek = "Software makers published four times as many security flaws in October 2026 as a year earlier, some of them found with AI. The number of flaws attackers actually used rose far less. What grew was the pressure to patch fast."
 date = 2026-11-23
+updated = 2026-11-23
+update_note = "Outage causes stated more precisely (FAA, Microsoft, AWS, United), PHP2Shell countries named, one unsourced sentence removed."
 section = "Tech"
 series = ""
 status = "published"
