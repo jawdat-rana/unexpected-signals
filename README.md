@@ -30,7 +30,7 @@ feeds from [NDW](https://opendata.ndw.nu/), the Dutch national road traffic data
 | Traffic sites | Speed and flow for the measurement sites you choose in `config.toml` | `data/traffic_sites/YYYY/MM/YYYY-MM-DD.csv` |
 | Site catalogue | Every measurement site with its road, lanes and location, refreshed weekly | `data/traffic_sites_catalogue.csv` |
 
-Since November 2026 it also saves five other live feeds that only ever show "now":
+Since November 2026 it also saves four other live feeds that only ever show "now":
 
 | Dataset | What is stored | How often | Where |
 | --- | --- | --- | --- |
@@ -38,7 +38,6 @@ Since November 2026 it also saves five other live feeds that only ever show "now
 | Apple charts | App Store top 100 free apps and Apple Music top 100 songs, for NL, BE, DE, GB and US | 3 hours | `data/apple_charts/YYYY/MM/YYYY-MM-DD.csv` |
 | Google Trends "Trending now" | One row per trending search (country, title, start time, traffic band, top news link), with first and last time seen | 1 hour | `data/google_trending/YYYY/MM/YYYY-MM-DD.csv` |
 | OV-fiets | Bikes available per pick-up point (~300). A row is stored only when the count changed. | 10 min | `data/ovfiets/YYYY/MM/YYYY-MM-DD.csv`, `data/ovfiets_catalogue.csv` |
-| Netflix Top 10 | The latest week of the global and per-country lists. Netflix keeps the full history itself; this is a backup. | daily | `data/netflix_top10/{global,countries}/<week>.csv` |
 
 For the "changed only" feeds, carry the last row forward to get the value at any moment.
 `data/_state/` holds when each feed last ran and the last values seen.
@@ -103,7 +102,7 @@ and attribution is appreciated. The code is MIT licensed.
   places API. The data is NS's; credit NS. Some pop-up locations have stale counts (see `feed_time`).
 - Apple chart feeds and Google Trends have no open licence. Quote ranks and
   titles as facts with a credit, and don't republish app icons or artwork.
-- Netflix Top 10 data: credit Netflix (netflix.com/tudum/top10).
+- Netflix Top 10 is not collected: Netflix publishes its full weekly history at netflix.com/tudum/top10.
 - Spotify is not collected: its charts need a login and its API no longer
   serves Spotify's own playlists. Apple Music stands in for "the hits".
 

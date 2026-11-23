@@ -13,7 +13,7 @@ from dataclasses import asdict
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
-from . import bridges, charts, netflix, ovfiets, parking, sites, state, storage, traffic, trends
+from . import bridges, charts, ovfiets, parking, sites, state, storage, traffic, trends
 from .fetch import download
 
 
@@ -239,23 +239,6 @@ def collect_ovfiets(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
     )
 
 
-def collect_netflix(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
-    notes, failed = [], []
-    for kind, url in cfg.get("files", {}).items():
-        try:
-            raw = download(url, retries=cfg.get("retries", 3), allow_partial=True)
-            week, columns, rows = netflix.latest_week(raw)
-        except Exception as exc:
-            failed.append(f"{kind}: {exc!r}")
-            continue
-        if week:
-            storage.write_rows(out / "netflix_top10" / kind / f"{week}.csv", columns, rows)
-        notes.append(f"{kind} week {week or '?'} ({len(rows)} rows)")
-    if failed:
-        raise RuntimeError(f"saved {notes}, but these failed: {failed}")
-    return "netflix top 10: " + ", ".join(notes)
-
-
 COLLECTORS = {
     "bridges": collect_bridges,
     "traffic": collect_traffic,
@@ -263,7 +246,6 @@ COLLECTORS = {
     "apple_charts": collect_charts,
     "google_trending": collect_trends,
     "ovfiets": collect_ovfiets,
-    "netflix_top10": collect_netflix,
 }
 
 
