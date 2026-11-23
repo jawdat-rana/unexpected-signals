@@ -1,5 +1,5 @@
 source,status,rows,note,fetched_utc
-cisa-kev,ok,1790,https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json (catalog 2026.11.20),2026-11-23T10:42Z
-msrc-cvrf,ok,40022,218 monthly guides,2026-11-23T10:45Z
-ncsc-nl-csaf,ok,1198,https://advisories.ncsc.nl/csaf/v2,2026-11-23T10:53Z
-cvelistV5,ok,411365,2026-11-23_all_CVEs_at_midnight.zip.zip,2026-11-23T10:54Z
+cisa-kev,ok,1790,https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json (catalog 2026.11.20),2026-11-23T10:56Z
+msrc-cvrf,ok,40022,218 monthly guides,2026-11-23T10:57Z
+ncsc-nl-csaf,ok,1200,https://advisories.ncsc.nl/csaf/v2,2026-11-23T11:05Z
+cvelistV5,ok,411365,2026-11-23_all_CVEs_at_midnight.zip.zip,2026-11-23T11:06Z
