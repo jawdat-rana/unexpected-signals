@@ -239,3 +239,40 @@ def test_shazam_refetch_replaces_rows(tmp_path: Path):
     for _ in range(2):
         assert cli.main(["collect", "--config", str(config), "--out", str(out)]) == 0
     assert len(lines(out / "shazam/2026/11/2026-11-23.csv")) == 3
+
+
+def test_partly_failed_feed_warns_and_waits_for_its_next_slot(tmp_path: Path, monkeypatch, capsys):
+    src = tmp_path / "src"
+    apple = write(
+        src / "nl/apps/top-free/2/apps.json",
+        {"feed": {"results": [{"id": "1", "name": "A"}, {"id": "2", "name": "B"}]}},
+    )
+    config = tmp_path / "config.toml"
+    config.write_text(f"""
+[apple_charts]
+enabled = true
+every_minutes = 180
+retries = 1
+base = "{apple.split("nl/apps/")[0]}"
+countries = ["nl", "be"]
+charts = ["apps-free"]
+size = 2
+""")
+    out = tmp_path / "data"
+    stamps = iter(["2026-11-24T10:40:00Z", "2026-11-24T10:45:00Z"])
+    monkeypatch.setattr(cli, "now_iso", lambda: next(stamps))
+    for _ in range(2):
+        assert cli.main(["collect", "--config", str(config), "--out", str(out)]) == 0
+
+    # "be" is missing: nl is saved once and the feed is not re-fetched 5 min later.
+    assert len(lines(out / "apple_charts/2026/11/2026-11-24.csv")) == 3
+    assert state.load(out, "schedule")["apple_charts"] == "2026-11-24T10:40:00Z"
+    assert "::warning title=apple_charts partly failed::" in capsys.readouterr().err
+
+
+def test_fully_failed_feed_still_fails_the_run(tmp_path: Path):
+    config = tmp_path / "config.toml"
+    config.write_text(
+        '[apple_charts]\nenabled = true\nretries = 1\nbase = "file:///nope/"\ncountries = ["nl"]\n'
+    )
+    assert cli.main(["collect", "--config", str(config), "--out", str(tmp_path / "d")]) == 1

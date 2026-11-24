@@ -22,4 +22,4 @@ def download(url: str, retries: int = 3, timeout: int = 60) -> bytes:
             last_error = exc
             if attempt < retries - 1:
                 time.sleep(2 ** (attempt + 1))
-    raise RuntimeError(f"Failed to download {url}") from last_error
+    raise RuntimeError(f"Failed to download {url}: {last_error!r}") from last_error
