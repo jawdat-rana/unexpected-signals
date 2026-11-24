@@ -187,6 +187,14 @@ def collect_parking(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | No
     )
 
 
+class PartialFailure(RuntimeError):
+    """Some parts of a feed failed, but the rest was saved.
+
+    The feed counts as collected, so it waits for its next slot instead of
+    being re-fetched (and re-saved) on every run until all parts succeed.
+    """
+
+
 def collect_charts(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
     # Apple answers each chart slowly (5-10 s), so they are fetched in parallel.
     jobs = [
@@ -208,7 +216,9 @@ def collect_charts(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | Non
     failed = [r for r in results if isinstance(r, str)]
     storage.append_rows(storage.day_path(out, "apple_charts", fetched_at), charts.COLUMNS, rows)
     if failed:
-        raise RuntimeError(f"{len(rows)} rows saved, but these failed: {failed}")
+        if not rows:
+            raise RuntimeError(f"every chart failed: {failed}")
+        raise PartialFailure(f"{len(rows)} rows saved, but these failed: {failed}")
     return f"apple charts: {len(rows)} rows"
 
 
@@ -229,7 +239,9 @@ def collect_trends(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | Non
         path = storage.day_path(out, "google_trending", day)
         storage.write_rows(path, trends.COLUMNS, trends.merge(storage.read_rows(path), day_rows))
     if failed:
-        raise RuntimeError(f"{len(rows)} trends saved, but these failed: {failed}")
+        if not rows:
+            raise RuntimeError(f"every country failed: {failed}")
+        raise PartialFailure(f"{len(rows)} trends saved, but these failed: {failed}")
     return f"google trending: {len(rows)} trends across {len(cfg.get('geos', ['NL']))} countries"
 
 
@@ -268,7 +280,9 @@ def collect_shazam(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | Non
         )
         notes.append(f"{chart} {chart_date} ({len(rows)})")
     if failed:
-        raise RuntimeError(f"saved {notes}, but these failed: {failed}")
+        if not notes:
+            raise RuntimeError(f"every chart failed: {failed}")
+        raise PartialFailure(f"saved {notes}, but these failed: {failed}")
     return "shazam: " + ", ".join(notes)
 
 
@@ -330,6 +344,10 @@ def main(argv: list[str] | None = None) -> int:
         try:
             print(collector(feed, args.out, fetched_at, args.sample_dir))
             schedule[name] = fetched_at
+        except PartialFailure as exc:
+            # Shown as a warning on the run page; the run itself stays green.
+            schedule[name] = fetched_at
+            print(f"::warning title={name} partly failed::{name}: {exc}", file=sys.stderr)
         except Exception as exc:  # one broken feed should not stop the others
             failures += 1
             print(f"{name}: FAILED: {exc!r}", file=sys.stderr)
