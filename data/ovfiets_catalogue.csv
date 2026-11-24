@@ -158,7 +158,7 @@ hgv003,HGV,Hoogeveen,Hoogeveen,52.73309,6.47358
 hil001,HIL,Hillegom,Hillegom,52.302857,4.566106
 hk001,HK,Heemskerk,Heemskerk,52.494358,4.685522
 hks001,HKS,Hoogkarspel,Hoogkarspel,52.690376,5.182278
-hlm002,HLM,Haarlem Fiets Inn,Haarlem,52.38763,4.63832
+hlm002,HLM,OV-fiets Haarlem Fiets Inn,Haarlem,52.38763,4.63832
 hlms001,HLMS,Haarlem Spaarnwoude,Haarlem,52.38213,4.670836
 hlo001,HLO,Heiloo,Heiloo,52.600105,4.700795
 hm001,HM,Helmond,Helmond,51.4761,5.661
@@ -260,7 +260,7 @@ ut021,UT,Utrecht Centraal Knoop,Utrecht,52.087374,5.109469
 ut901,BSLC,IJsselstijn UT,IJsselstein,52.01661,5.03918
 ut903,BSLC,Utrecht Rijnsweerd,Utrecht,52.092506,5.152792
 ut904,BSLC,Utrecht P+R Papendorp,Utrecht,52.07164,5.07869
-ut905,BSLC,Vianen OV-fiets ,Vianen,51.9891,5.08497
+ut905,BSLC,OV-fiets - Vianen  ,Vianen,51.9891,5.08497
 ut906,BSLC,P + R Utrecht Science Park (De Uithof),Utrecht,52.08481,5.17314
 utg001,UTG,Uitgeest,Uitgeest,52.521939,4.702788
 utl001,UTLN,Utrecht Lunetten,Utrecht,52.06604,5.143176
