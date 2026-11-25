@@ -4699,3 +4699,803 @@ fetched_at,country,chart,rank,id,name,artist,genre,released
 2026-11-25T14:00:53Z,us,songs,98,1770160814,weren't for the wind,Ella Langley,Country,2024-10-04
 2026-11-25T14:00:53Z,us,songs,99,1471264095,"Bitch, Don’t Kill My Vibe",Kendrick Lamar,Hip-Hop/Rap,2012-10-22
 2026-11-25T14:00:53Z,us,songs,100,1150135924,goosebumps,Travis Scott,Hip-Hop/Rap,2016-09-02
+2026-11-25T17:00:59Z,nl,apps-free,1,1217507712,McDonald's,McDonald's Global Markets LLC,,2018-08-15
+2026-11-25T17:00:59Z,nl,apps-free,2,1223471316,"Shop: volg, betaal, ontdek",Shopify Inc.,,2019-10-08
+2026-11-25T17:00:59Z,nl,apps-free,3,6473753684,Claude by Anthropic,Anthropic PBC,,2024-05-13
+2026-11-25T17:00:59Z,nl,apps-free,4,1605760107,Woolsocks: The money app,Woolsocks AG,,2022-06-29
+2026-11-25T17:00:59Z,nl,apps-free,5,6740224837,"Joybuy-Don't just buy, Joybuy!",Joybuy,,2025-03-10
+2026-11-25T17:00:59Z,nl,apps-free,6,6473259774,Visma Authenticator,Visma,,2024-09-05
+2026-11-25T17:00:59Z,nl,apps-free,7,6448311069,ChatGPT,"OpenAI OpCo, LLC",,2023-05-30
+2026-11-25T17:00:59Z,nl,apps-free,8,834465911,H&M,H&M,,2017-01-24
+2026-11-25T17:00:59Z,nl,apps-free,9,932002377,Lootjestrekken.nl | Drawnames,Meetrix Online,,2021-10-04
+2026-11-25T17:00:59Z,nl,apps-free,10,1530944632,Mijn DHL,DHL eCommerce (Netherlands) B.V.,,2021-01-20
+2026-11-25T17:00:59Z,nl,apps-free,11,983156458,Microsoft Authenticator,Microsoft Corporation,Productiviteit,2015-05-30
+2026-11-25T17:00:59Z,nl,apps-free,12,6829249859,THE STING.,The Sting Holding bv,Winkelen,2026-11-18
+2026-11-25T17:00:59Z,nl,apps-free,13,1238611143,Lidl Plus,Lidl Digital International GmbH & Co. KG,Winkelen,2019-10-07
+2026-11-25T17:00:59Z,nl,apps-free,14,513218878,PostNL,PostNL Holding B.V.,Lifestyle,2012-04-04
+2026-11-25T17:00:59Z,nl,apps-free,15,1113153706,Microsoft Teams,Microsoft Corporation,Zakelijk,2016-11-02
+2026-11-25T17:00:59Z,nl,apps-free,16,395524977,Praxis,Maxeda DIY,Winkelen,2010-10-19
+2026-11-25T17:00:59Z,nl,apps-free,17,388497605,Google Authenticator,Google,Diensten,2010-09-20
+2026-11-25T17:00:59Z,nl,apps-free,18,6444912481,UK ETA,Home Office,Diensten,2023-10-23
+2026-11-25T17:00:59Z,nl,apps-free,19,1531860284,Action,Action Service & Distributie BV.,Winkelen,2021-04-06
+2026-11-25T17:00:59Z,nl,apps-free,20,904894760,bol,bol.com,Winkelen,2014-09-10
+2026-11-25T17:00:59Z,nl,apps-free,21,6747258162,My Jewellery,My Jewellery B.V.,Winkelen,2026-04-16
+2026-11-25T17:00:59Z,nl,apps-free,22,6477489729,Google Gemini,Google,Productiviteit,2024-11-13
+2026-11-25T17:00:59Z,nl,apps-free,23,586447913,Microsoft Word,Microsoft Corporation,Productiviteit,2014-03-27
+2026-11-25T17:00:59Z,nl,apps-free,24,531631058,Kruidvat app,Kruidvat Retail BV,Winkelen,2012-06-12
+2026-11-25T17:00:59Z,nl,apps-free,25,1115120118,Klarna: Slimmer met je geld,Klarna Bank AB,Financiën,2016-06-22
+2026-11-25T17:00:59Z,nl,apps-free,26,1571987104,myDPD,GEOPOST,Productiviteit,2022-01-24
+2026-11-25T17:00:59Z,nl,apps-free,27,1130881210,BeterDichtbij,BeterDichtbij,Geneeskunde,2016-09-27
+2026-11-25T17:00:59Z,nl,apps-free,28,936150402,Jumbo,Jumbo Supermarkten,Eten en drinken,2014-12-17
+2026-11-25T17:00:59Z,nl,apps-free,29,1028433924,AFAS Pocket,AFAS Software BV,Zakelijk,2016-04-15
+2026-11-25T17:00:59Z,nl,apps-free,30,535886823,Google Chrome,Google,Diensten,2012-06-28
+2026-11-25T17:00:59Z,nl,apps-free,31,1462636376,C&A - Fashion Shopping Online,C&A Mode GmbH & Co. KG,Winkelen,2021-01-19
+2026-11-25T17:00:59Z,nl,apps-free,32,1208460960,DigiD,Rijksoverheid,Productiviteit,2017-03-28
+2026-11-25T17:00:59Z,nl,apps-free,33,1112935685,Tikkie,ABN AMRO Bank N.V.,Financiën,2016-06-22
+2026-11-25T17:00:59Z,nl,apps-free,34,284815942,Google,Google,Diensten,2019-02-12
+2026-11-25T17:00:59Z,nl,apps-free,35,496189385,Vodafone & Ziggo,Vodafone Libertel B.V.,Lifestyle,2012-02-28
+2026-11-25T17:00:59Z,nl,apps-free,36,335187483,Amazon Shopping,Amazon,Winkelen,2011-01-03
+2026-11-25T17:00:59Z,nl,apps-free,37,327535329,Albert Heijn supermarkt,Albert Heijn,Winkelen,2009-11-12
+2026-11-25T17:00:59Z,nl,apps-free,38,632064380,Vinted: tweedehandsplatform,Vinted Limited,Winkelen,2013-04-11
+2026-11-25T17:00:59Z,nl,apps-free,39,922561759,Nmbrs Payroll - Medewerker,Nmbrs BV,Zakelijk,2014-11-13
+2026-11-25T17:00:59Z,nl,apps-free,40,951937596,Microsoft Outlook,Microsoft Corporation,Productiviteit,2015-01-29
+2026-11-25T17:00:59Z,nl,apps-free,41,541164041,Microsoft Copilot,Microsoft Corporation,Productiviteit,2013-06-18
+2026-11-25T17:00:59Z,nl,apps-free,42,585629514,Zalando – Online shopping,Zalando SE,Winkelen,2014-06-12
+2026-11-25T17:00:59Z,nl,apps-free,43,556557690,9292 reisplanner OV + e-ticket,9292,Reizen,2012-09-06
+2026-11-25T17:00:59Z,nl,apps-free,44,6478014710,ParkBee - Parkeer in de stad,ParkBee B.V.,Reizen,2024-04-21
+2026-11-25T17:00:59Z,nl,apps-free,45,660294353,HEMA,HEMA B.V.,Winkelen,2013-06-20
+2026-11-25T17:00:59Z,nl,apps-free,46,1288723196,Microsoft Edge,Microsoft Corporation,Diensten,2018-06-11
+2026-11-25T17:00:59Z,nl,apps-free,47,410896080,PlayStation App,PlayStation Mobile Inc.,Amusement,2011-01-11
+2026-11-25T17:00:59Z,nl,apps-free,48,1542164084,OVpay,Trans Link Systems B.V.,Reizen,2023-01-03
+2026-11-25T17:00:59Z,nl,apps-free,49,573907448,MediaMarkt Nederland,MMS E-Commerce GmbH,Winkelen,2012-12-21
+2026-11-25T17:00:59Z,nl,apps-free,50,288429040,LinkedIn: carrière en netwerk,LinkedIn Corporation,Zakelijk,2019-02-03
+2026-11-25T17:00:59Z,nl,apps-free,51,588680863,Afvalkalender Cyclus,Opzet BV,Diensten,2013-01-03
+2026-11-25T17:00:59Z,nl,apps-free,52,1500855883,CapCut: Video & Photo Editor,Bytedance Pte. Ltd,Foto en video,2020-04-14
+2026-11-25T17:00:59Z,nl,apps-free,53,422689480,Gmail - E-mail van Google,Google,Productiviteit,2011-11-02
+2026-11-25T17:00:59Z,nl,apps-free,54,501658692,ANWB Onderweg & Wegenwacht,ANWB,Navigatie,2012-08-01
+2026-11-25T17:00:59Z,nl,apps-free,55,585027354,Google Maps,Google,Navigatie,2012-12-13
+2026-11-25T17:00:59Z,nl,apps-free,56,370362301,NS,NS Reizigers B.V.,Reizen,2010-05-03
+2026-11-25T17:00:59Z,nl,apps-free,57,570060128,Duolingo - Taallessen,Duolingo,Onderwijs,2012-11-13
+2026-11-25T17:00:59Z,nl,apps-free,58,932493382,Revolut — Meer dan een bank,Revolut Ltd,Financiën,2015-03-01
+2026-11-25T17:00:59Z,nl,apps-free,59,6743859258,Postcode Loterij,Postcode Loterij N.V.,Amusement,2025-06-17
+2026-11-25T17:00:59Z,nl,apps-free,60,368677368,Uber - Vraag een rit aan,"Uber Technologies, Inc.",Reizen,2010-05-21
+2026-11-25T17:00:59Z,nl,apps-free,61,6447962551,HealthTrain,HealthTrain B.V.,Gezondheid en fitness,2023-11-20
+2026-11-25T17:00:59Z,nl,apps-free,62,881910771,EVENTIM NL/BE,CTS Eventim Nederland B.V.,Amusement,2014-06-23
+2026-11-25T17:00:59Z,nl,apps-free,63,796436476,Uw Zorg online,Pharmeon B.V.,Geneeskunde,2014-02-25
+2026-11-25T17:00:59Z,nl,apps-free,64,1563021861,MedGemak,PharmaPartners B.V.,Geneeskunde,2022-06-20
+2026-11-25T17:00:59Z,nl,apps-free,65,1605109373,HiX Patiënt,ChipSoft B.V.,Geneeskunde,2023-05-08
+2026-11-25T17:00:59Z,nl,apps-free,66,373963365,Marktplaats - koop en verkoop,Marktplaats BV,Winkelen,2010-06-03
+2026-11-25T17:00:59Z,nl,apps-free,67,6747118174,Alphabet App,Alphabet,Zakelijk,2026-10-25
+2026-11-25T17:00:59Z,nl,apps-free,68,1222822904,SmartThings,"Samsung Electronics Co., Ltd.",Lifestyle,2017-06-20
+2026-11-25T17:00:59Z,nl,apps-free,69,1159220609,Ockto,Ockto B.V.,Financiën,2016-10-06
+2026-11-25T17:00:59Z,nl,apps-free,70,6446425595,Green SM: Electric Mobility,GSM GREEN AND SMART MOBILITY JOINT STOCK COMPANY,Reizen,2023-04-30
+2026-11-25T17:00:59Z,nl,apps-free,71,1452164827,IKEA,Inter IKEA Systems B.V.,Winkelen,2019-07-04
+2026-11-25T17:00:59Z,nl,apps-free,72,6446901002,Threads,"Instagram, Inc.",Sociaal netwerken,2023-12-14
+2026-11-25T17:00:59Z,nl,apps-free,73,6813433370,Laposta,Laposta B.V.,Zakelijk,2026-11-18
+2026-11-25T17:00:59Z,nl,apps-free,74,1570110927,Takko Friends,Takko Holding GmbH,Winkelen,2023-09-11
+2026-11-25T17:00:59Z,nl,apps-free,75,932970330,KopieID,Rijksoverheid,Diensten,2014-11-03
+2026-11-25T17:00:59Z,nl,apps-free,76,383091814,EasyPark x Parkmobile,EasyPark B.V,Reizen,2010-08-02
+2026-11-25T17:00:59Z,nl,apps-free,77,500003565,Ticketmaster - Koop tickets,Ticketmaster,Amusement,2025-05-05
+2026-11-25T17:00:59Z,nl,apps-free,78,1477955834,Q-Park,Q-Park Operations,Reizen,2019-12-09
+2026-11-25T17:00:59Z,nl,apps-free,79,6480136315,"Suno - AI Songs, Music, Lyrics","Suno, Inc.",Muziek,2024-10-27
+2026-11-25T17:00:59Z,nl,apps-free,80,521093471,MijnKPN,KPN B.V.,Diensten,2012-05-10
+2026-11-25T17:00:59Z,nl,apps-free,81,336377331,UPS,UPS,Zakelijk,2009-10-29
+2026-11-25T17:00:59Z,nl,apps-free,82,309735670,Indeed Vacatures Zoeken,Indeed Inc.,Zakelijk,2010-01-28
+2026-11-25T17:00:59Z,nl,apps-free,83,1444115456,112NL,Politie,Diensten,2022-01-12
+2026-11-25T17:00:59Z,nl,apps-free,84,586683407,Microsoft Excel,Microsoft Corporation,Productiviteit,2014-03-27
+2026-11-25T17:00:59Z,nl,apps-free,85,1011193821,Nationale-Nederlanden,Nationale Nederlanden,Financiën,2015-08-03
+2026-11-25T17:00:59Z,nl,apps-free,86,6503727839,UNIQLO - LifeWear,"UNIQLO CO., LTD.",Winkelen,2024-09-18
+2026-11-25T17:00:59Z,nl,apps-free,87,675033630,Bolt: een rit aanvragen,BOLT TECHNOLOGY OU,Reizen,2013-07-24
+2026-11-25T17:00:59Z,nl,apps-free,88,874139669,Signal Messenger,"Signal Messenger, LLC",Sociaal netwerken,2014-07-29
+2026-11-25T17:00:59Z,nl,apps-free,89,1569379048,WeTransfer: Bestanden delen,Wetransfer B.V.,Productiviteit,2021-10-06
+2026-11-25T17:00:59Z,nl,apps-free,90,547951480,ZARA,"Industria de Diseno Textil, S.A.",Winkelen,2012-08-01
+2026-11-25T17:00:59Z,nl,apps-free,91,367003839,Booking.com Reisdeals,Booking.com,Reizen,2010-04-14
+2026-11-25T17:00:59Z,nl,apps-free,92,947925763,Polarsteps,Polarsteps B.V.,Reizen,2015-03-23
+2026-11-25T17:00:59Z,nl,apps-free,93,1156417365,Ziggo GO,Liberty Global Technology Services B.V.,Amusement,2016-11-09
+2026-11-25T17:00:59Z,nl,apps-free,94,6831559120,G.S.R. ‘Aegir’,Youmie B.V.,Sociaal netwerken,2026-11-18
+2026-11-25T17:00:59Z,nl,apps-free,95,1620308285,MijnDELTA,DELTA Fiber Nederland B.V.,Diensten,2022-11-03
+2026-11-25T17:00:59Z,nl,apps-free,96,354936286,Flitsmeister,Flitsmeister B.V.,Navigatie,2010-02-14
+2026-11-25T17:00:59Z,nl,apps-free,97,1558240027,Meta AI,"Meta Platforms, Inc.",Productiviteit,2024-04-11
+2026-11-25T17:00:59Z,nl,apps-free,98,1605170923,GoWish,Onskeskyen ApS,Lifestyle,2023-04-03
+2026-11-25T17:00:59Z,nl,apps-free,99,507874739,Google Drive - online bestands,Google,Productiviteit,2012-06-28
+2026-11-25T17:00:59Z,nl,apps-free,100,897446215,Canva: foto en video bewerken,Canva,Foto en video,2014-10-15
+2026-11-25T17:00:59Z,nl,songs,1,6819802968,Flower In A Hurricane [From GTAVI: Original Score],"Justice, Tame Impala, SZA & King Gizzard & The Lizard Wizard",Alternative,2026-10-15
+2026-11-25T17:00:59Z,nl,songs,2,6822497774,Housewife,Tate McRae,Pop,2026-10-15
+2026-11-25T17:00:59Z,nl,songs,3,6795697687,Stop The Wedding!,Ashe,Pop,2026-08-07
+2026-11-25T17:00:59Z,nl,songs,4,6812477282,Go Easy,Dua Lipa,Pop,2026-11-20
+2026-11-25T17:00:59Z,nl,songs,5,6794168373,Babydoll,Jamie Miller,Pop,2026-08-07
+2026-11-25T17:00:59Z,nl,songs,6,6834007065,Mijn Mo (feat. Henkie T),Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,7,202117984,Last Christmas (Single Version),Wham!,Feestdagen,1984-12-01
+2026-11-25T17:00:59Z,nl,songs,8,6834007068,Rook (feat. Willem),Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,9,6834007067,Raadsel,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,10,6834007071,Belangrijk,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,11,1889992123,the cure,Olivia Rodrigo,Pop,2026-05-22
+2026-11-25T17:00:59Z,nl,songs,12,6769552411,Great Expectation,SIENNA SPIRO,Pop,2026-07-02
+2026-11-25T17:00:59Z,nl,songs,13,6819742169,Spijt Komt Later,Isabèl Usher & Kraantje Pappie,Pop,2026-10-30
+2026-11-25T17:00:59Z,nl,songs,14,6834007069,Monogaam (feat. Milolaathetlukken),Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,15,6834007270,Wildeburg,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,16,6834007272,Op Tilt (2015) [Bonus Track],Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,17,6796864754,BbY WOW,"KAROL G, Judeline & rusowsky",Muziek,2026-08-05
+2026-11-25T17:00:59Z,nl,songs,18,6834007070,Amazonico,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,19,1889992115,stupid song,Olivia Rodrigo,Pop,2026-06-12
+2026-11-25T17:00:59Z,nl,songs,20,1844932150,Choosin' Texas,Ella Langley,Country,2025-10-17
+2026-11-25T17:00:59Z,nl,songs,21,1817609509,Man I Need,Olivia Dean,Pop,2025-09-26
+2026-11-25T17:00:59Z,nl,songs,22,669854831,It's Beginning To Look a Lot Like Christmas,Michael Bublé,Feestdagen,2011-10-14
+2026-11-25T17:00:59Z,nl,songs,23,6813491235,Pijnstiller,Suzan & Freek,Pop,2026-10-01
+2026-11-25T17:00:59Z,nl,songs,24,6812476962,Starting From Zero (feat. Michael McDonald),Justice,Soundtrack,2026-11-20
+2026-11-25T17:00:59Z,nl,songs,25,6834007073,Niks Persoonlijks,Kevin,Muziek,2026-03-19
+2026-11-25T17:00:59Z,nl,songs,26,6792884101,Ain't In LA,ADÉLA,Pop,2026-07-23
+2026-11-25T17:00:59Z,nl,songs,27,6812477290,Last Thing You Need,Morgan Wallen,Country,2026-09-17
+2026-11-25T17:00:59Z,nl,songs,28,6792884088,Nicole Kidman,ADÉLA,Pop,2026-09-04
+2026-11-25T17:00:59Z,nl,songs,29,1440098017,Snowman,Sia,Feestdagen,2017-11-09
+2026-11-25T17:00:59Z,nl,songs,30,585972803,All I Want for Christmas Is You,Mariah Carey,Muziek,1994-10-28
+2026-11-25T17:00:59Z,nl,songs,31,6837508830,Burn This Shit Down (from GTAVI: The Album),Travis Scott,Hiphop/Rap,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,32,6834007268,Lijken (feat. Qlas),Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,33,1817609507,So Easy (To Fall In Love),Olivia Dean,Pop,2026-09-26
+2026-11-25T17:00:59Z,nl,songs,34,6834007074,Achteruitkijkspiegel (feat. Faberyayo),Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,35,6834007078,AA Meeting,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,36,6809508003,100 Tranen,"Qlas, Antoon & Boef",Hiphop/Rap,2026-09-17
+2026-11-25T17:00:59Z,nl,songs,37,185717604,Africa,Toto,Rock,1982-04-08
+2026-11-25T17:00:59Z,nl,songs,38,6769070199,Movin' To The Sun,"HUGEL, Imael Angel & Ultra Naté",Elektronisch,2026-05-22
+2026-11-25T17:00:59Z,nl,songs,39,6763656876,hate that i made you love me,Ariana Grande,Pop,2026-05-28
+2026-11-25T17:00:59Z,nl,songs,40,6834007262,Spits,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,41,6812477319,Crazy For You,Lana Del Rey,Alternative,2026-11-20
+2026-11-25T17:00:59Z,nl,songs,42,6834007261,Perfect,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,43,6834007271,Moeie Knakker,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,44,6814997425,Patient Zero,Taylor Swift,Pop,2026-09-24
+2026-11-25T17:00:59Z,nl,songs,45,6834007263,Vervreemd (feat. Bente),Kevin,Muziek,2026-02-05
+2026-11-25T17:00:59Z,nl,songs,46,6834007267,Pistache (feat. JoeyAK),Kevin,Muziek,2026-09-17
+2026-11-25T17:00:59Z,nl,songs,47,269573364,Billie Jean,Michael Jackson,Pop,1982-11-29
+2026-11-25T17:00:59Z,nl,songs,48,1793663645,Ordinary,Alex Warren,Pop,2024-09-26
+2026-11-25T17:00:59Z,nl,songs,49,1820918468,Rein Me In,Sam Fender & Olivia Dean,Alternative,2025-10-17
+2026-11-25T17:00:59Z,nl,songs,50,6834007269,Op Dreef (feat. Jordan & KA),Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,51,6834007260,Jij Hebt Mij (feat. Roxy Dekker),Kevin,Pop,2026-04-30
+2026-11-25T17:00:59Z,nl,songs,52,1309544023,Driving Home for Christmas,Chris Rea,Pop,1986-01-01
+2026-11-25T17:00:59Z,nl,songs,53,6812477269,Sexy Magic,"CA7RIEL & Paco Amoroso, PinkPantheress, Etienne de Crécy & Fred again..",Pop,2026-09-17
+2026-11-25T17:00:59Z,nl,songs,54,596834669,Another Love,Tom Odell,Muziek,2012-10-15
+2026-11-25T17:00:59Z,nl,songs,55,6768469976,Dai Dai,Shakira & Burna Boy,Pop,2026-05-14
+2026-11-25T17:00:59Z,nl,songs,56,6812477266,AHH YEA,Playboi Carti,Soundtrack,2026-11-20
+2026-11-25T17:00:59Z,nl,songs,57,6834007264,SRRY (feat. Idaly),Kevin,Muziek,2026-10-22
+2026-11-25T17:00:59Z,nl,songs,58,6834007266,Handy,Kevin,Muziek,2026-11-19
+2026-11-25T17:00:59Z,nl,songs,59,1833328840,The Fate of Ophelia,Taylor Swift,Pop,2025-10-03
+2026-11-25T17:00:59Z,nl,songs,60,1537216368,Underneath the Tree,Kelly Clarkson,Feestdagen,2013-10-25
+2026-11-25T17:00:59Z,nl,songs,61,1525933490,Wonderwall (Remastered),Oasis,Muziek,1995-10-02
+2026-11-25T17:00:59Z,nl,songs,62,576949282,Just Give Me a Reason (feat. Nate Ruess),P!nk,Pop,2012-09-14
+2026-11-25T17:00:59Z,nl,songs,63,6781074080,My Body Isn't Ready,sombr,Pop,2026-06-25
+2026-11-25T17:00:59Z,nl,songs,64,6812477268,RHYNO,Travis Scott,Hiphop/Rap,2026-09-17
+2026-11-25T17:00:59Z,nl,songs,65,1494108727,Het Is Al Laat Toch,Racoon,Pop,2020-01-22
+2026-11-25T17:00:59Z,nl,songs,66,1526194192,Mr. Brightside,The Killers,Rock,2003-09-29
+2026-11-25T17:00:59Z,nl,songs,67,1193701400,Perfect,Ed Sheeran,Pop,2017-03-03
+2026-11-25T17:00:59Z,nl,songs,68,6817013133,Schijn je licht op mij,Ronnie Flex & ADF Samski,R&B/Soul,2026-10-09
+2026-11-25T17:00:59Z,nl,songs,69,202272624,Dreams,Fleetwood Mac,Rock,1987-04-14
+2026-11-25T17:00:59Z,nl,songs,70,1762656732,Die With A Smile,Lady Gaga & Bruno Mars,Pop,2024-08-16
+2026-11-25T17:00:59Z,nl,songs,71,1884403093,Boston,STELLA LEFTY,Country,2026-03-27
+2026-11-25T17:00:59Z,nl,songs,72,1201058113,Lush Life,Zara Larsson,Pop,2017-03-17
+2026-11-25T17:00:59Z,nl,songs,73,1097862231,Creep,Radiohead,Alternative,1992-09-21
+2026-11-25T17:00:59Z,nl,songs,74,1444319982,Santa Tell Me,Ariana Grande,Feestdagen,2013-12-13
+2026-11-25T17:00:59Z,nl,songs,75,6828537514,Shotta's.,Season 25,R&B/Soul,2026-09-20
+2026-11-25T17:00:59Z,nl,songs,76,6835745589,DAT ENE,JoeyAK,Hiphop/Rap,2026-11-20
+2026-11-25T17:00:59Z,nl,songs,77,1488408568,Blinding Lights,The Weeknd,R&B/Soul,2019-11-29
+2026-11-25T17:00:59Z,nl,songs,78,1826530261,UNETHICAL,Faouzia,Pop,2025-08-01
+2026-11-25T17:00:59Z,nl,songs,79,1358462132,Jingle Bell Rock,Bobby Helms,Feestdagen,1957-12-02
+2026-11-25T17:00:59Z,nl,songs,80,1889361602,Mr. Know It All,Teddy Swims,Pop,2026-09-18
+2026-11-25T17:00:59Z,nl,songs,81,1226034393,Sign of the Times,Harry Styles,Pop,2017-04-07
+2026-11-25T17:00:59Z,nl,songs,82,1377826892,Sweet Child O' Mine,Guns N' Roses,Rock,1987-07-21
+2026-11-25T17:00:59Z,nl,songs,83,1228739609,New Rules,Dua Lipa,Pop,2017-07-07
+2026-11-25T17:00:59Z,nl,songs,84,171434594,It's the Most Wonderful Time of the Year,Andy Williams,Muziek,1963-10-14
+2026-11-25T17:00:59Z,nl,songs,85,1870984045,Coming Up Roses,Harry Styles,Pop,2026-03-06
+2026-11-25T17:00:59Z,nl,songs,86,1838737598,WHERE IS MY HUSBAND!,RAYE,Pop,2025-09-19
+2026-11-25T17:00:59Z,nl,songs,87,1545270163,Into You,Ariana Grande,Pop,2016-05-06
+2026-11-25T17:00:59Z,nl,songs,88,1691699836,Lose Control,Teddy Swims,Pop,2005-09-15
+2026-11-25T17:00:59Z,nl,songs,89,267537169,Iris,The Goo Goo Dolls,Rock,1998-03-31
+2026-11-25T17:00:59Z,nl,songs,90,1847992612,Raindance,Dave & Tems,Hiphop/Rap,2025-10-24
+2026-11-25T17:00:59Z,nl,songs,91,1122773680,Viva La Vida,Coldplay,Alternative,2008-05-25
+2026-11-25T17:00:59Z,nl,songs,92,1544324124,no tears left to cry,Ariana Grande,Pop,2018-04-20
+2026-11-25T17:00:59Z,nl,songs,93,6812477313,Fast Emotion,Zara Larsson,Pop,2026-11-20
+2026-11-25T17:00:59Z,nl,songs,94,6827357439,Lost in It,Gracie Abrams,Pop,2026-11-20
+2026-11-25T17:00:59Z,nl,songs,95,6812476964,That's It (feat. Future & Metro Boomin),Yung Lean,Hiphop/Rap,2026-09-17
+2026-11-25T17:00:59Z,nl,songs,96,1871595253,Homewrecker,sombr,Pop,2026-02-05
+2026-11-25T17:00:59Z,nl,songs,97,651880157,Go Your Own Way,Fleetwood Mac,Rock,1977-02-04
+2026-11-25T17:00:59Z,nl,songs,98,6783576167,bloodstream,Alyssa Grace,Muziek,2026-07-10
+2026-11-25T17:00:59Z,nl,songs,99,1440899467,ocean eyes,Billie Eilish,Alternative,2016-05-18
+2026-11-25T17:00:59Z,nl,songs,100,1889992113,drop dead,Olivia Rodrigo,Pop,2026-04-16
+2026-11-25T17:00:59Z,be,apps-free,1,449594317,EasyPark - Parking made easy,Easy Park AS,,2011-07-25
+2026-11-25T17:00:59Z,be,apps-free,2,6473753684,Claude by Anthropic,Anthropic PBC,,2024-05-13
+2026-11-25T17:00:59Z,be,apps-free,3,1223471316,"Shop: Track, Pay, Discover",Shopify Inc.,,2019-10-08
+2026-11-25T17:00:59Z,be,apps-free,4,983156458,Microsoft Authenticator,Microsoft Corporation,,2015-05-30
+2026-11-25T17:00:59Z,be,apps-free,5,932002377,Drawnames | Secret Santa app,Meetrix Online,,2021-12-13
+2026-11-25T17:00:59Z,be,apps-free,6,1531860284,Action,Action Service & Distributie BV.,,2022-10-18
+2026-11-25T17:00:59Z,be,apps-free,7,1279683771,My bpost,bpost,,2018-12-17
+2026-11-25T17:00:59Z,be,apps-free,8,6477489729,Google Gemini,Google,,2024-11-13
+2026-11-25T17:00:59Z,be,apps-free,9,6448311069,ChatGPT,"OpenAI OpCo, LLC",,2023-05-30
+2026-11-25T17:00:59Z,be,apps-free,10,1605760107,Woolsocks: The money app,Woolsocks AG,,2022-07-14
+2026-11-25T17:00:59Z,be,apps-free,11,1629511999,MyGov.be,Belgium,Utilities,2024-05-13
+2026-11-25T17:00:59Z,be,apps-free,12,1217507712,McDonald's,McDonald's Global Markets LLC,Food & Drink,2018-10-24
+2026-11-25T17:00:59Z,be,apps-free,13,1113153706,Microsoft Teams,Microsoft Corporation,Business,2016-11-02
+2026-11-25T17:00:59Z,be,apps-free,14,834465911,H&M,H&M,Shopping,2015-04-20
+2026-11-25T17:00:59Z,be,apps-free,15,6740224837,"Joybuy-Don't just buy, Joybuy!",Joybuy,Shopping,2025-03-10
+2026-11-25T17:00:59Z,be,apps-free,16,1151434781,Kruidvat,Kruidvat Retail BV,Shopping,2016-09-16
+2026-11-25T17:00:59Z,be,apps-free,17,335187483,Amazon Shopping,Amazon,Shopping,2011-01-03
+2026-11-25T17:00:59Z,be,apps-free,18,6504407951,Pluxee,Pluxee International,Lifestyle,2025-07-30
+2026-11-25T17:00:59Z,be,apps-free,19,1181309300,itsme,Belgian Mobile ID SA,Utilities,2017-05-29
+2026-11-25T17:00:59Z,be,apps-free,20,632064380,Vinted: Shop & sell pre-loved,Vinted Limited,Shopping,2013-04-11
+2026-11-25T17:00:59Z,be,apps-free,21,1364967778,ING Banking,ING BELGIUM,Finance,2019-12-09
+2026-11-25T17:00:59Z,be,apps-free,22,1462636376,C&A Fashion Online Shop,C&A Mode GmbH & Co. KG,Shopping,2019-05-08
+2026-11-25T17:00:59Z,be,apps-free,23,1238611143,Lidl Plus,Lidl Digital International GmbH & Co. KG,Shopping,2020-01-28
+2026-11-25T17:00:59Z,be,apps-free,24,970053203,Doccle,Doccle,Productivity,2015-06-17
+2026-11-25T17:00:59Z,be,apps-free,25,904894760,bol,bol.com,Shopping,2014-09-10
+2026-11-25T17:00:59Z,be,apps-free,26,284815942,Google - More ways to search,Google,Utilities,2019-02-12
+2026-11-25T17:00:59Z,be,apps-free,27,6764878003,Kinepolis Belgium,Kinepolis Group N.V.,Entertainment,2026-10-26
+2026-11-25T17:00:59Z,be,apps-free,28,586447913,Microsoft Word,Microsoft Corporation,Productivity,2014-03-27
+2026-11-25T17:00:59Z,be,apps-free,29,585629514,Zalando – fashion & clothing,Zalando SE,Shopping,2014-06-12
+2026-11-25T17:00:59Z,be,apps-free,30,535886823,Google Chrome,Google,Utilities,2012-06-28
+2026-11-25T17:00:59Z,be,apps-free,31,1504870215,SNCB/NMBS: Timetable & tickets,NMBS / SNCB,Travel,2020-09-08
+2026-11-25T17:00:59Z,be,apps-free,32,773081156,ALDI België,ALDI Einkauf SE & Co. oHG,Shopping,2014-03-11
+2026-11-25T17:00:59Z,be,apps-free,33,1118862745,Xtra,Colruyt Group Services,Shopping,2017-03-31
+2026-11-25T17:00:59Z,be,apps-free,34,932493382,Revolut — Mobile Finance,Revolut Ltd,Finance,2015-03-01
+2026-11-25T17:00:59Z,be,apps-free,35,1564419343,Dreamehome,"Dreame Innovation Technology (Suzhou) Co., Ltd.",Utilities,2021-10-21
+2026-11-25T17:00:59Z,be,apps-free,36,1633026645,ABOUT YOU Outlet,ABOUT YOU AG & Co. KG,Shopping,2022-11-02
+2026-11-25T17:00:59Z,be,apps-free,37,388497605,Google Authenticator,Google,Utilities,2010-09-20
+2026-11-25T17:00:59Z,be,apps-free,38,1562119194,ENGIE Smart App,Electrabel,Utilities,2021-06-16
+2026-11-25T17:00:59Z,be,apps-free,39,1500855883,CapCut: Video & Photo Editor,Bytedance Pte. Ltd,Photo & Video,2020-04-14
+2026-11-25T17:00:59Z,be,apps-free,40,951937596,Microsoft Outlook,Microsoft Corporation,Productivity,2015-01-29
+2026-11-25T17:00:59Z,be,apps-free,41,1558240027,Meta AI,"Meta Platforms, Inc.",Productivity,2022-02-25
+2026-11-25T17:00:59Z,be,apps-free,42,6742833029,Myhealth BE,RIZIV-INAMI,Health & Fitness,2026-03-02
+2026-11-25T17:00:59Z,be,apps-free,43,6742539138,Daenens,Daenens IT,Business,2025-12-03
+2026-11-25T17:00:59Z,be,apps-free,44,1463175036,My Delhaize,Delhaize Group,Shopping,2019-05-28
+2026-11-25T17:00:59Z,be,apps-free,45,1115120118,Klarna: Smarter everyday money,Klarna Bank AB,Finance,2016-06-22
+2026-11-25T17:00:59Z,be,apps-free,46,6446901002,Threads,"Instagram, Inc.",Social Networking,2023-12-14
+2026-11-25T17:00:59Z,be,apps-free,47,958993034,MediaMarkt België,MMS E-Commerce GmbH,Shopping,2015-06-01
+2026-11-25T17:00:59Z,be,apps-free,48,541164041,Microsoft Copilot,Microsoft Corporation,Productivity,2013-06-18
+2026-11-25T17:00:59Z,be,apps-free,49,6751962066,My AG,AG Insurance,Finance,2026-08-30
+2026-11-25T17:00:59Z,be,apps-free,50,1261812151,Notino: perfumes and cosmetics,Notino,Shopping,2023-09-04
+2026-11-25T17:00:59Z,be,apps-free,51,570060128,Duolingo: Language & Chess,Duolingo,Education,2012-11-13
+2026-11-25T17:00:59Z,be,apps-free,52,422689480,Gmail - Email by Google,Google,Productivity,2011-11-02
+2026-11-25T17:00:59Z,be,apps-free,53,1641486558,Temu: Shop Like a Billionaire,Temu,Shopping,2022-08-31
+2026-11-25T17:00:59Z,be,apps-free,54,6444912481,UK ETA,Home Office,Utilities,2023-10-23
+2026-11-25T17:00:59Z,be,apps-free,55,309735670,Indeed Job Search,Indeed Inc.,Business,2010-01-28
+2026-11-25T17:00:59Z,be,apps-free,56,410896080,PlayStation App,PlayStation Mobile Inc.,Entertainment,2011-03-10
+2026-11-25T17:00:59Z,be,apps-free,57,1058959277,Uber Eats: Food & Groceries,"Uber Technologies, Inc.",Food & Drink,2016-06-06
+2026-11-25T17:00:59Z,be,apps-free,58,368677368,"Uber: Rides, eats, and more","Uber Technologies, Inc.",Travel,2010-05-21
+2026-11-25T17:00:59Z,be,apps-free,59,1673567402,Freecash - Earn Money,Freecash - Get Paid Real Money,Entertainment,2025-11-03
+2026-11-25T17:00:59Z,be,apps-free,60,1249304307,112 BE,Federale Overheidsdienst Binnenlandse Zaken,Medical,2017-06-20
+2026-11-25T17:00:59Z,be,apps-free,61,897446215,Canva: AI Video & Photo Editor,Canva,Photo & Video,2014-10-15
+2026-11-25T17:00:59Z,be,apps-free,62,1571987104,myDPD,GEOPOST,Productivity,2022-01-24
+2026-11-25T17:00:59Z,be,apps-free,63,545519333,Amazon Prime Video,AMZN Mobile LLC,Entertainment,2016-12-14
+2026-11-25T17:00:59Z,be,apps-free,64,1452164827,IKEA,Inter IKEA Systems B.V.,Shopping,2021-04-26
+2026-11-25T17:00:59Z,be,apps-free,65,6815606199,PharmaInfo BE,FAGG - AFMPS,Health & Fitness,2026-11-17
+2026-11-25T17:00:59Z,be,apps-free,66,585027354,Google Maps,Google,Navigation,2012-12-13
+2026-11-25T17:00:59Z,be,apps-free,67,503451073,Alibaba.com B2B Trade App,ALIBABA.COM GLOBAL SUPPLIER SERVICES PTE. LTD.,Shopping,2012-02-24
+2026-11-25T17:00:59Z,be,apps-free,68,686449807,Telegram Messenger,Telegram FZ-LLC,Social Networking,2013-08-14
+2026-11-25T17:00:59Z,be,apps-free,69,547951480,ZARA,"Industria de Diseno Textil, S.A.",Shopping,2012-08-01
+2026-11-25T17:00:59Z,be,apps-free,70,1488269261,"Whatnot: Shop, Sell, Connect",Whatnot Inc.,Shopping,2019-12-06
+2026-11-25T17:00:59Z,be,apps-free,71,1288723196,Microsoft Edge,Microsoft Corporation,Utilities,2018-01-10
+2026-11-25T17:00:59Z,be,apps-free,72,507874739,Google Drive – online backup,Google,Productivity,2012-06-28
+2026-11-25T17:00:59Z,be,apps-free,73,1631513561,Helena,HealthConnect,Health & Fitness,2022-09-07
+2026-11-25T17:00:59Z,be,apps-free,74,456910787,De Lijn,De Lijn,Travel,2011-09-14
+2026-11-25T17:00:59Z,be,apps-free,75,1618910770,Pickx,Proximus,Entertainment,2023-12-12
+2026-11-25T17:00:59Z,be,apps-free,76,288429040,LinkedIn: Community & Career,LinkedIn Corporation,Business,2019-02-03
+2026-11-25T17:00:59Z,be,apps-free,77,6811329112,Yuma: Weekly Meal Planner,Adrien Long,Food & Drink,2026-09-23
+2026-11-25T17:00:59Z,be,apps-free,78,869919405,Affluences,Affluences,Utilities,2014-07-06
+2026-11-25T17:00:59Z,be,apps-free,79,1372019222,mySDWorx,SD Worx Belgium NV,Business,2019-04-04
+2026-11-25T17:00:59Z,be,apps-free,80,1294194004,MyEdenred Belgium,Edenred Belgium,Utilities,2018-10-29
+2026-11-25T17:00:59Z,be,apps-free,81,513218878,PostNL,PostNL Holding B.V.,Lifestyle,2012-04-04
+2026-11-25T17:00:59Z,be,apps-free,82,6480136315,Suno: Songs & Music Maker,"Suno, Inc.",Music,2024-10-27
+2026-11-25T17:00:59Z,be,apps-free,83,324684580,Spotify: Music and Podcasts,Spotify,Music,2011-11-15
+2026-11-25T17:00:59Z,be,apps-free,84,323229106,Waze Navigation & Live Traffic,Waze Inc.,Navigation,2009-08-01
+2026-11-25T17:00:59Z,be,apps-free,85,6503727839,UNIQLO - LifeWear,"UNIQLO CO., LTD.",Shopping,2024-09-18
+2026-11-25T17:00:59Z,be,apps-free,86,1616653156,Burgerprofiel,Vlaamse overheid,Productivity,2022-07-07
+2026-11-25T17:00:59Z,be,apps-free,87,327535329,Albert Heijn supermarkt,Albert Heijn,Shopping,2009-11-12
+2026-11-25T17:00:59Z,be,apps-free,88,1402508907,corporate benefits Benelux,corporate benefits International GmbH,Shopping,2018-10-20
+2026-11-25T17:00:59Z,be,apps-free,89,675033630,Bolt: Request a Ride,BOLT TECHNOLOGY OU,Travel,2013-07-24
+2026-11-25T17:00:59Z,be,apps-free,90,626702792,My Orange BE,Orange BE,Utilities,2013-04-16
+2026-11-25T17:00:59Z,be,apps-free,91,1588263601,Basic-Fit,Basic-Fit,Health & Fitness,2021-10-18
+2026-11-25T17:00:59Z,be,apps-free,92,458066754,KBC Mobile,KBC Global Services NV,Finance,2011-09-16
+2026-11-25T17:00:59Z,be,apps-free,93,6738967378,Edits: Video Editor,"Instagram, Inc.",Photo & Video,2025-04-22
+2026-11-25T17:00:59Z,be,apps-free,94,567722021,2dehands,2dehands.be 2ememain.be,Shopping,2012-11-02
+2026-11-25T17:00:59Z,be,apps-free,95,1536598997,Mijn CM,Mutualites Chretiennes - Christelijke Mutualiteiten,Health & Fitness,2020-12-21
+2026-11-25T17:00:59Z,be,apps-free,96,6742086933,Authenticator App ∞,Rushdata Limited,Productivity,2025-02-26
+2026-11-25T17:00:59Z,be,apps-free,97,6747258162,My Jewellery,My Jewellery B.V.,Shopping,2026-04-16
+2026-11-25T17:00:59Z,be,apps-free,98,835599320,"TikTok - Videos, Music & LIVE",TikTok Ltd.,Entertainment,2014-04-02
+2026-11-25T17:00:59Z,be,apps-free,99,1168607403,Decathlon Shopping App,Decathlon,Shopping,2019-03-25
+2026-11-25T17:00:59Z,be,apps-free,100,1222822904,SmartThings,"Samsung Electronics Co., Ltd.",Lifestyle,2017-06-20
+2026-11-25T17:00:59Z,de,apps-free,1,6737608605,AOK Ident,AOK Mein Leben GbR,,2025-01-15
+2026-11-25T17:00:59Z,de,apps-free,2,1331065474,Nect Wallet,Nect,,2018-10-08
+2026-11-25T17:00:59Z,de,apps-free,3,6473753684,Claude by Anthropic,Anthropic PBC,,2024-05-13
+2026-11-25T17:00:59Z,de,apps-free,4,1223471316,"Shop: Tracken, Zahlen, Finden",Shopify Inc.,,2019-10-08
+2026-11-25T17:00:59Z,de,apps-free,5,1462636376,C&A Mode Online Shop,C&A Mode GmbH & Co. KG,,2019-09-04
+2026-11-25T17:00:59Z,de,apps-free,6,329315203,Post & DHL,Deutsche Post AG,,2009-11-20
+2026-11-25T17:00:59Z,de,apps-free,7,6448311069,ChatGPT,"OpenAI OpCo, LLC",,2023-05-24
+2026-11-25T17:00:59Z,de,apps-free,8,1625279562,"CouponBirds: Deals, Gutscheine",CouponBirds Inc,,2022-05-26
+2026-11-25T17:00:59Z,de,apps-free,9,6477489729,Google Gemini,Google,,2024-11-13
+2026-11-25T17:00:59Z,de,apps-free,10,404844644,OTTO - Online Shopping & Möbel,Otto GmbH & Co. KGaA,,2010-11-30
+2026-11-25T17:00:59Z,de,apps-free,11,925339063,Doctolib - Die Gesundheits-App,Doctolib,Medizin,2017-03-07
+2026-11-25T17:00:59Z,de,apps-free,12,983156458,Microsoft Authenticator,Microsoft Corporation,Produktivität,2015-05-30
+2026-11-25T17:00:59Z,de,apps-free,13,948660805,AusweisApp Bund,Governikus Service GmbH,Dienst­programme,2019-09-26
+2026-11-25T17:00:59Z,de,apps-free,14,1476536126,flaconi: Der Beauty-Onlineshop,Flaconi GMBH,Shopping,2020-12-14
+2026-11-25T17:00:59Z,de,apps-free,15,6759037657,BA-Secure,Bundesagentur für Arbeit,Dienst­programme,2026-04-13
+2026-11-25T17:00:59Z,de,apps-free,16,1238611143,Lidl Plus,Lidl Digital International GmbH & Co. KG,Shopping,2019-06-12
+2026-11-25T17:00:59Z,de,apps-free,17,632064380,Vinted: Secondhand-Marktplatz,Vinted Limited,Shopping,2013-04-11
+2026-11-25T17:00:59Z,de,apps-free,18,348712880,Amazon,Amazon,Shopping,2010-01-13
+2026-11-25T17:00:59Z,de,apps-free,19,563488727,S-pushTAN,Star Finanz GmbH,Finanzen,2012-10-23
+2026-11-25T17:00:59Z,de,apps-free,20,1113153706,Microsoft Teams,Microsoft Corporation,Wirtschaft,2016-11-02
+2026-11-25T17:00:59Z,de,apps-free,21,834465911,H&M,H&M,Shopping,2019-01-24
+2026-11-25T17:00:59Z,de,apps-free,22,1531860284,Action,Action Service & Distributie BV.,Shopping,2023-09-04
+2026-11-25T17:00:59Z,de,apps-free,23,284815942,Google,Google,Dienst­programme,2019-02-12
+2026-11-25T17:00:59Z,de,apps-free,24,1523036280,Reserved,LPP SA,Shopping,2022-01-26
+2026-11-25T17:00:59Z,de,apps-free,25,386304604,MediaMarkt Deutschland,MMS E-Commerce GmbH,Shopping,2010-08-11
+2026-11-25T17:00:59Z,de,apps-free,26,1034309353,Rossmann,Dirk Rossmann GmbH - Drogerie,Lifestyle,2015-09-13
+2026-11-25T17:00:59Z,de,apps-free,27,283646709,"PayPal: Geld senden, verwalten","PayPal, Inc.",Finanzen,2019-02-03
+2026-11-25T17:00:59Z,de,apps-free,28,388497605,Google Authenticator,Google,Dienst­programme,2010-09-20
+2026-11-25T17:00:59Z,de,apps-free,29,6742321547,i-Kfz,Kraftfahrt-Bundesamt,Dienst­programme,2025-11-05
+2026-11-25T17:00:59Z,de,apps-free,30,1500855883,CapCut: Video- und Fotoeditor,Bytedance Pte. Ltd,Foto und Video,2020-04-14
+2026-11-25T17:00:59Z,de,apps-free,31,1115120118,Klarna: Verwalte Geld smarter,Klarna Bank AB,Finanzen,2016-06-22
+2026-11-25T17:00:59Z,de,apps-free,32,454415640,idealo: Preisvergleich Online,idealo internet GmbH,Shopping,2011-09-06
+2026-11-25T17:00:59Z,de,apps-free,33,1272688648,EDEKA,EDEKA ZENTRALE Stiftung & Co. KG,Essen und Trinken,2017-10-26
+2026-11-25T17:00:59Z,de,apps-free,34,407932476,MeinMagenta: Handy & Festnetz,Telekom Deutschland GmbH,Dienst­programme,2010-12-15
+2026-11-25T17:00:59Z,de,apps-free,35,449594317,EasyPark parken - Park App,Easy Park AS,Reisen,2011-07-25
+2026-11-25T17:00:59Z,de,apps-free,36,585027354,Google Maps,Google,Navigation,2012-12-13
+2026-11-25T17:00:59Z,de,apps-free,37,535886823,Google Chrome,Google,Dienst­programme,2012-06-28
+2026-11-25T17:00:59Z,de,apps-free,38,6782911844,EcoTrend 2.0,ista SE,Dienst­programme,2026-07-23
+2026-11-25T17:00:59Z,de,apps-free,39,1186271926,Mein dm,dm-drogerie markt GmbH + Co. KG,Shopping,2019-11-10
+2026-11-25T17:00:59Z,de,apps-free,40,368677368,Uber: Ride-Hailing & Taxis,"Uber Technologies, Inc.",Reisen,2010-05-21
+2026-11-25T17:00:59Z,de,apps-free,41,1087780386,Kaufland: deine XTRA Vorteile,Schwarz Digits IT KG,Shopping,2016-04-05
+2026-11-25T17:00:59Z,de,apps-free,42,570060128,Duolingo: Sprachen und Schach,Duolingo,Bildung,2012-11-13
+2026-11-25T17:00:59Z,de,apps-free,43,1570110927,Takko Friends,Takko Holding GmbH,Shopping,2021-10-20
+2026-11-25T17:00:59Z,de,apps-free,44,1488269261,"Whatnot: Shop, Sell, Connect",Whatnot Inc.,Shopping,2019-12-06
+2026-11-25T17:00:59Z,de,apps-free,45,585629514,Zalando Mode & Fashion online,Zalando SE,Shopping,2012-12-15
+2026-11-25T17:00:59Z,de,apps-free,46,1484296272,Knowunity: KI-Lern-App,Knowunity GmbH,Bildung,2020-09-10
+2026-11-25T17:00:59Z,de,apps-free,47,6740224837,"Joybuy-Don't just buy, Joybuy!",Joybuy,Shopping,2025-03-10
+2026-11-25T17:00:59Z,de,apps-free,48,382596778,Kleinanzeigen: Dein Marktplatz,Marktplaats BV,Shopping,2010-08-12
+2026-11-25T17:00:59Z,de,apps-free,49,408601891,EVENTIM DE: Tickets für Events,CTS EVENTIM AG,Unterhaltung,2010-12-15
+2026-11-25T17:00:59Z,de,apps-free,50,6446901002,Threads,"Instagram, Inc.",Soziale Netze,2023-12-14
+2026-11-25T17:00:59Z,de,apps-free,51,1462875428,Roborock,"Beijing Roborock Technology Co., Ltd.",Lifestyle,2019-06-18
+2026-11-25T17:00:59Z,de,apps-free,52,1238117425,corporate benefits,corporate benefits International GmbH,Shopping,2017-05-29
+2026-11-25T17:00:59Z,de,apps-free,53,634957574,DEICHMANN Schuhe,Deichmann SE,Shopping,2013-05-31
+2026-11-25T17:00:59Z,de,apps-free,54,320599923,Sparkasse Ihre mobile Filiale,Star Finanz GmbH,Finanzen,2009-07-28
+2026-11-25T17:00:59Z,de,apps-free,55,363126964,PAYBACK - Karte und Coupons,PAYBACK GmbH,Shopping,2010-04-29
+2026-11-25T17:00:59Z,de,apps-free,56,1410703839,Trade Republic: Broker & Bank,Trade Republic Bank GmbH,Finanzen,2018-08-04
+2026-11-25T17:00:59Z,de,apps-free,57,1579060331,ElsterSecure,Bayerisches Landesamt fuer Steuern,Finanzen,2022-11-26
+2026-11-25T17:00:59Z,de,apps-free,58,422689480,Gmail – E-Mail von Google,Google,Produktivität,2011-12-20
+2026-11-25T17:00:59Z,de,apps-free,59,343555245,DB Navigator,Deutsche Bahn,Reisen,2009-12-15
+2026-11-25T17:00:59Z,de,apps-free,60,714121079,REWE - Supermarkt,REWE Markt GmbH,Essen und Trinken,2013-10-01
+2026-11-25T17:00:59Z,de,apps-free,61,999762739,POSTIDENT,Deutsche Post AG,Wirtschaft,2015-06-23
+2026-11-25T17:00:59Z,de,apps-free,62,309735670,Indeed Jobs,Indeed Inc.,Wirtschaft,2010-01-28
+2026-11-25T17:00:59Z,de,apps-free,63,1096204041,PENNY Coupons & Angebote,PENNY Markt GmbH,Lifestyle,2016-03-30
+2026-11-25T17:00:59Z,de,apps-free,64,1406830270,Meine AOK,AOK Mein Leben GbR,Gesundheit und Fitness,2018-11-07
+2026-11-25T17:00:59Z,de,apps-free,65,719610089,CHECK24,CHECK24,Finanzen,2013-10-10
+2026-11-25T17:00:59Z,de,apps-free,66,932493382,Revolut — Mehr als eine Bank,Revolut Ltd,Finanzen,2015-03-01
+2026-11-25T17:00:59Z,de,apps-free,67,1516484066,Müller,Mueller Handels GmbH & Co. KG,Shopping,2020-06-25
+2026-11-25T17:00:59Z,de,apps-free,68,835599320,"TikTok - Videos, Shop und LIVE",TikTok Ltd.,Unterhaltung,2014-04-02
+2026-11-25T17:00:59Z,de,apps-free,69,1452164827,IKEA,Inter IKEA Systems B.V.,Shopping,2020-06-01
+2026-11-25T17:00:59Z,de,apps-free,70,410896080,PlayStation App,PlayStation Mobile Inc.,Unterhaltung,2011-01-11
+2026-11-25T17:00:59Z,de,apps-free,71,6480136315,Suno - Musik Machen mit KI,"Suno, Inc.",Musik,2024-10-27
+2026-11-25T17:00:59Z,de,apps-free,72,951937596,Microsoft Outlook,Microsoft Corporation,Produktivität,2015-01-29
+2026-11-25T17:00:59Z,de,apps-free,73,524943492,McDonald’s Deutschland,McDonald's Deutschland LLC,Essen und Trinken,2012-05-15
+2026-11-25T17:00:59Z,de,apps-free,74,394685685,Douglas - Beauty & Parfüm,Parfümerie Douglas GmbH,Shopping,2010-10-05
+2026-11-25T17:00:59Z,de,apps-free,75,897446215,Canva: KI-Foto- & Video-Editor,Canva,Foto und Video,2014-10-15
+2026-11-25T17:00:59Z,de,apps-free,76,686449807,Telegram Messenger,Telegram FZ-LLC,Soziale Netze,2013-08-14
+2026-11-25T17:00:59Z,de,apps-free,77,378563358,mobile.de: Autos kaufen & mehr,mobile.de GmbH,Produktivität,2010-06-28
+2026-11-25T17:00:59Z,de,apps-free,78,6741329871,S-Vorteilswelt,S-Markt & Mehrwert GmbH & Co. KG,Finanzen,2025-04-14
+2026-11-25T17:00:59Z,de,apps-free,79,874139669,Signal – Sicherer Messenger,"Signal Messenger, LLC",Soziale Netze,2014-07-29
+2026-11-25T17:00:59Z,de,apps-free,80,324684580,Spotify Musik und Podcasts,Spotify,Musik,2012-03-13
+2026-11-25T17:00:59Z,de,apps-free,81,586447913,Microsoft Word,Microsoft Corporation,Produktivität,2014-03-27
+2026-11-25T17:00:59Z,de,apps-free,82,943870921,DATEV SmartLogin,DATEV eG,Produktivität,2015-04-10
+2026-11-25T17:00:59Z,de,apps-free,83,389801252,Instagram,"Instagram, Inc.",Foto und Video,2010-10-06
+2026-11-25T17:00:59Z,de,apps-free,84,1104967519,Shop Apotheke: E-Rezept & mehr,Shop-Apotheke Service B.V.,Medizin,2016-05-12
+2026-11-25T17:00:59Z,de,apps-free,85,943905271,Wolt - Essen Bestellen & mehr,Wolt Oy,Essen und Trinken,2015-06-24
+2026-11-25T17:00:59Z,de,apps-free,86,379404334,Netto plus,Netto Marken-Discount Stiftung & Co. KG,Lifestyle,2010-07-14
+2026-11-25T17:00:59Z,de,apps-free,87,1641486558,Temu: Shoppe wie Milliardäre,Temu,Shopping,2022-08-31
+2026-11-25T17:00:59Z,de,apps-free,88,282614216,eBay: kaufen & verkaufen,eBay Inc.,Shopping,2019-01-31
+2026-11-25T17:00:59Z,de,apps-free,89,1456365043,My WebID,WebID Solutions GmbH,Finanzen,2019-06-12
+2026-11-25T17:00:59Z,de,apps-free,90,541164041,Microsoft Copilot,Microsoft Corporation,Produktivität,2013-06-18
+2026-11-25T17:00:59Z,de,apps-free,91,546505307,Zoom Workplace,"Zoom Communications, Inc.",Wirtschaft,2012-08-15
+2026-11-25T17:00:59Z,de,apps-free,92,547951480,ZARA,"Industria de Diseno Textil, S.A.",Shopping,2012-08-01
+2026-11-25T17:00:59Z,de,apps-free,93,429047995,Pinterest,"Pinterest, Inc.",Lifestyle,2011-04-28
+2026-11-25T17:00:59Z,de,apps-free,94,1224607890,ARD Sounds,"Sudwestrundfunk, Anstalt des offentlichen Rechts",Unterhaltung,2017-10-13
+2026-11-25T17:00:59Z,de,apps-free,95,391120743,NEW YORKER - Mode & Lifestyle,New Yorker,Lifestyle,2010-10-06
+2026-11-25T17:00:59Z,de,apps-free,96,1550747895,BA-mobil,Bundesagentur für Arbeit,Wirtschaft,2021-02-02
+2026-11-25T17:00:59Z,de,apps-free,97,367003839,Booking.com: Hotel Angebote,Booking.com,Reisen,2010-04-14
+2026-11-25T17:00:59Z,de,apps-free,98,1564419343,Dreamehome,"Dreame Innovation Technology (Suzhou) Co., Ltd.",Dienst­programme,2021-10-21
+2026-11-25T17:00:59Z,de,apps-free,99,284882215,Facebook,"Meta Platforms, Inc.",Soziale Netze,2019-02-05
+2026-11-25T17:00:59Z,de,apps-free,100,288429040,LinkedIn: Business-Netzwerk,LinkedIn Corporation,Wirtschaft,2019-02-03
+2026-11-25T17:00:59Z,de,songs,1,6819802968,Flower In A Hurricane [From GTAVI: Original Score],"Justice, Tame Impala, SZA & King Gizzard & The Lizard Wizard",Alternative,2026-10-15
+2026-11-25T17:00:59Z,de,songs,2,585972803,All I Want for Christmas Is You,Mariah Carey,Musik,1994-10-28
+2026-11-25T17:00:59Z,de,songs,3,6822497774,Housewife,Tate McRae,Pop,2026-10-15
+2026-11-25T17:00:59Z,de,songs,4,347010852,Merry Christmas Everyone,Shakin' Stevens,Musik,1985-01-01
+2026-11-25T17:00:59Z,de,songs,5,6831647702,365,Sampagne,Musik,2026-11-12
+2026-11-25T17:00:59Z,de,songs,6,282658482,Last Christmas,Wham!,Pop,1984-01-01
+2026-11-25T17:00:59Z,de,songs,7,1440098017,Snowman,Sia,Musik,2017-11-09
+2026-11-25T17:00:59Z,de,songs,8,1444319982,Santa Tell Me,Ariana Grande,Musik,2013-12-13
+2026-11-25T17:00:59Z,de,songs,9,669854831,It's Beginning To Look a Lot Like Christmas,Michael Bublé,Musik,2011-10-14
+2026-11-25T17:00:59Z,de,songs,10,6795697687,Stop The Wedding!,Ashe,Pop,2026-08-07
+2026-11-25T17:00:59Z,de,songs,11,6824513842,WAS HAST DU MIT MIR GEMACHT,Helene Fischer,Schlager,
+2026-11-25T17:00:59Z,de,songs,12,6769070199,Movin' To The Sun,"HUGEL, Imael Angel & Ultra Naté",Electronic,2026-05-22
+2026-11-25T17:00:59Z,de,songs,13,1446856966,Wonderful Dream (Holidays Are Coming),Melanie Thornton,Pop,2001-05-07
+2026-11-25T17:00:59Z,de,songs,14,6832621534,BLACK,"Bantu Nation, Nu51, G-Mac, Des, Jazeek, Luciano, reezy & THIZZY52",Musik,2026-11-12
+2026-11-25T17:00:59Z,de,songs,15,1526194192,Mr. Brightside,The Killers,Rock,2003-09-29
+2026-11-25T17:00:59Z,de,songs,16,6801468864,ISSA,Sido,Hip-Hop/Rap,2026-08-20
+2026-11-25T17:00:59Z,de,songs,17,1537216368,Underneath the Tree,Kelly Clarkson,Musik,2013-10-25
+2026-11-25T17:00:59Z,de,songs,18,6837508830,Burn This Shit Down (from GTAVI: The Album),Travis Scott,Hip-Hop/Rap,2026-11-19
+2026-11-25T17:00:59Z,de,songs,19,6796864754,BbY WOW,"KAROL G, Judeline & rusowsky",Musik,2026-08-05
+2026-11-25T17:00:59Z,de,songs,20,6812477282,Go Easy,Dua Lipa,Pop,2026-11-20
+2026-11-25T17:00:59Z,de,songs,21,6828537514,Shotta's.,Season 25,R&B/Soul,2026-09-20
+2026-11-25T17:00:59Z,de,songs,22,1586039529,"Santa, Can't You Hear Me",Kelly Clarkson & Ariana Grande,Musik,2021-10-15
+2026-11-25T17:00:59Z,de,songs,23,1852298517,Happy Christmas,Rea Garvey,Musik,2025-11-14
+2026-11-25T17:00:59Z,de,songs,24,6814997425,Patient Zero,Taylor Swift,Pop,2026-09-24
+2026-11-25T17:00:59Z,de,songs,25,6792884101,Ain't In LA,ADÉLA,Pop,2026-07-23
+2026-11-25T17:00:59Z,de,songs,26,1889992123,the cure,Olivia Rodrigo,Pop,2026-05-22
+2026-11-25T17:00:59Z,de,songs,27,202117984,Last Christmas (Single Version),Wham!,Musik,1984-12-01
+2026-11-25T17:00:59Z,de,songs,28,1485796558,Like It's Christmas,Jonas Brothers,Musik,2019-11-08
+2026-11-25T17:00:59Z,de,songs,29,255615879,Feliz Navidad,José Feliciano,Musik,1970-11-01
+2026-11-25T17:00:59Z,de,songs,30,669854837,Holly Jolly Christmas,Michael Bublé,Musik,2011-10-14
+2026-11-25T17:00:59Z,de,songs,31,1877803360,Self Aware,Temper City,Alternative,2026-02-15
+2026-11-25T17:00:59Z,de,songs,32,6818133454,FLÜGEL,Sido,Musik,
+2026-11-25T17:00:59Z,de,songs,33,6768469976,Dai Dai,Shakira & Burna Boy,Pop,2026-05-14
+2026-11-25T17:00:59Z,de,songs,34,1309544023,Driving Home for Christmas,Chris Rea,Pop,1986-01-01
+2026-11-25T17:00:59Z,de,songs,35,576949282,Just Give Me a Reason (feat. Nate Ruess),P!nk,Pop,2012-09-14
+2026-11-25T17:00:59Z,de,songs,36,1440797564,In der Weihnachtsbäckerei,Rolf Zuckowski und seine Freunde,Musik für Kinder,1987-01-01
+2026-11-25T17:00:59Z,de,songs,37,1597450885,Merry Christmas,Ed Sheeran & Elton John,Musik,2021-12-03
+2026-11-25T17:00:59Z,de,songs,38,1440650961,Beauty and a Beat (feat. Nicki Minaj),Justin Bieber,Pop,2012-06-15
+2026-11-25T17:00:59Z,de,songs,39,1440667795,Mistletoe,Justin Bieber,Musik,2011-10-17
+2026-11-25T17:00:59Z,de,songs,40,6812476962,Starting From Zero (feat. Michael McDonald),Justice,Soundtracks,2026-11-20
+2026-11-25T17:00:59Z,de,songs,41,1889992115,stupid song,Olivia Rodrigo,Pop,2026-06-12
+2026-11-25T17:00:59Z,de,songs,42,6792884088,Nicole Kidman,ADÉLA,Pop,2026-09-04
+2026-11-25T17:00:59Z,de,songs,43,6781238591,Merry Xmas Everybody,Slade,Rock,1973-12-07
+2026-11-25T17:00:59Z,de,songs,44,1711473978,Dear Santa,OneRepublic,Musik,2023-10-20
+2026-11-25T17:00:59Z,de,songs,45,590431785,In the End,LINKIN PARK,Alternative,2000-10-24
+2026-11-25T17:00:59Z,de,songs,46,1201058113,Lush Life,Zara Larsson,Pop,2017-03-17
+2026-11-25T17:00:59Z,de,songs,47,1833328840,The Fate of Ophelia,Taylor Swift,Pop,2025-10-03
+2026-11-25T17:00:59Z,de,songs,48,1876509654,KILLY MANJARO,Summer Cem & BILLA JOE,Hip-Hop/Rap,2026-05-22
+2026-11-25T17:00:59Z,de,songs,49,1537659110,My Only Wish (This Year),Britney Spears,Musik,2000-11-14
+2026-11-25T17:00:59Z,de,songs,50,6812477268,RHYNO,Travis Scott,Hip-Hop/Rap,2026-09-17
+2026-11-25T17:00:59Z,de,songs,51,6812477266,AHH YEA,Playboi Carti,Soundtracks,2026-11-20
+2026-11-25T17:00:59Z,de,songs,52,716341216,The One That Got Away,Katy Perry,Musik,2010-08-24
+2026-11-25T17:00:59Z,de,songs,53,1444400808,Do They Know It's Christmas? (1984 Version),Band Aid,Rock,1984-12-03
+2026-11-25T17:00:59Z,de,songs,54,1535473482,Christmas Without You,Ava Max,Musik,2020-01-01
+2026-11-25T17:00:59Z,de,songs,55,6818133736,PROPAGANDA,Sido & Fler,Musik,
+2026-11-25T17:00:59Z,de,songs,56,1817609507,So Easy (To Fall In Love),Olivia Dean,Pop,2026-09-26
+2026-11-25T17:00:59Z,de,songs,57,1793663645,Ordinary,Alex Warren,Pop,2024-09-26
+2026-11-25T17:00:59Z,de,songs,58,6812477290,Last Thing You Need,Morgan Wallen,Musik,2026-09-17
+2026-11-25T17:00:59Z,de,songs,59,6820114211,Verschwommen,Ski Aggu & Ericson,Musik,2026-10-09
+2026-11-25T17:00:59Z,de,songs,60,1490369895,Christmas Tree Farm,Taylor Swift,Pop,2019-12-06
+2026-11-25T17:00:59Z,de,songs,61,6799924340,Inundauswendig,makko & The Chainsmokers,Pop,2026-08-21
+2026-11-25T17:00:59Z,de,songs,62,1810796703,Just Keep Watching,Tate McRae,Pop,2025-05-29
+2026-11-25T17:00:59Z,de,songs,63,1878015314,New Religion,Bebe Rexha & Faithless,Dance,2026-03-06
+2026-11-25T17:00:59Z,de,songs,64,6812888327,Babydoll,Jamie Miller & Antonio Cipriano,Pop,2026-09-18
+2026-11-25T17:00:59Z,de,songs,65,1766137051,The Emptiness Machine,LINKIN PARK,Alternative,2024-09-07
+2026-11-25T17:00:59Z,de,songs,66,169003415,Don't Stop Believin' (2024 Remaster),Journey,Rock,1981-06-03
+2026-11-25T17:00:59Z,de,songs,67,1891779776,Animal,KATSEYE,Pop,2026-07-24
+2026-11-25T17:00:59Z,de,songs,68,1358462132,Jingle Bell Rock,Bobby Helms,Musik,1957-12-02
+2026-11-25T17:00:59Z,de,songs,69,1434774881,Rockin' Around the Christmas Tree (Single Version),Brenda Lee,Musik,1991-08-27
+2026-11-25T17:00:59Z,de,songs,70,635016640,Sweater Weather,The Neighbourhood,Alternative,2012-12-03
+2026-11-25T17:00:59Z,de,songs,71,6763656876,hate that i made you love me,Ariana Grande,Pop,2026-05-28
+2026-11-25T17:00:59Z,de,songs,72,1440830243,Let It Snow! Let It Snow! Let It Snow!,Dean Martin,Musik,1959-11-16
+2026-11-25T17:00:59Z,de,songs,73,1525933490,Wonderwall (Remastered),Oasis,Musik,1995-10-02
+2026-11-25T17:00:59Z,de,songs,74,1870984036,American Girls,Harry Styles,Pop,2026-03-06
+2026-11-25T17:00:59Z,de,songs,75,6790739380,Augenblick,Pashanim,Hip-Hop/Rap,2026-07-16
+2026-11-25T17:00:59Z,de,songs,76,1876509430,MO' MONEY MO' HATERS,Summer Cem & Shirin David,Hip-Hop/Rap,2026-08-14
+2026-11-25T17:00:59Z,de,songs,77,1889361602,Mr. Know It All,Teddy Swims,Pop,2026-09-18
+2026-11-25T17:00:59Z,de,songs,78,1883679876,Jamaican (Bam Bam),HUGEL & SOLTO (FR),Musik,2025-11-07
+2026-11-25T17:00:59Z,de,songs,79,6823600155,Mama (Remix),Symba,Hip-Hop/Rap,2026-10-16
+2026-11-25T17:00:59Z,de,songs,80,669854833,Santa Claus Is Coming To Town,Michael Bublé,Musik,2011-10-14
+2026-11-25T17:00:59Z,de,songs,81,6812477269,Sexy Magic,"CA7RIEL & Paco Amoroso, PinkPantheress, Etienne de Crécy & Fred again..",Pop,2026-09-17
+2026-11-25T17:00:59Z,de,songs,82,590423552,Numb,LINKIN PARK,Musik,2003-03-25
+2026-11-25T17:00:59Z,de,songs,83,6812476964,That's It (feat. Future & Metro Boomin),Yung Lean,Hip-Hop/Rap,2026-09-17
+2026-11-25T17:00:59Z,de,songs,84,269573364,Billie Jean,Michael Jackson,Pop,1982-11-29
+2026-11-25T17:00:59Z,de,songs,85,1889992113,drop dead,Olivia Rodrigo,Pop,2026-04-16
+2026-11-25T17:00:59Z,de,songs,86,6793589261,GAUNA SPORT,PAPKE,Hip-Hop/Rap,2026-08-07
+2026-11-25T17:00:59Z,de,songs,87,6812477319,Crazy For You,Lana Del Rey,Alternative,2026-11-20
+2026-11-25T17:00:59Z,de,songs,88,6833488054,arm um mich,CEDDO,Pop,2026-10-15
+2026-11-25T17:00:59Z,de,songs,89,1440783625,Smells Like Teen Spirit,Nirvana,Rock,1991-09-10
+2026-11-25T17:00:59Z,de,songs,90,1838737598,WHERE IS MY HUSBAND!,RAYE,Pop,2025-09-19
+2026-11-25T17:00:59Z,de,songs,91,1797785856,AKON,Jazeek,Hip-Hop/Rap,2025-03-28
+2026-11-25T17:00:59Z,de,songs,92,1440895995,S&M,Rihanna,Pop,2010-11-12
+2026-11-25T17:00:59Z,de,songs,93,723380341,Von hier an blind,Wir sind Helden,Pop,2005-01-01
+2026-11-25T17:00:59Z,de,songs,94,6781461599,Thank God It's Christmas,Queen,Rock,1984-02-27
+2026-11-25T17:00:59Z,de,songs,95,731437257,Winter Wonderland,Leona Lewis,Musik,2013-11-29
+2026-11-25T17:00:59Z,de,songs,96,6818133754,PUZZLETEIL,Sido & Montez,Musik,
+2026-11-25T17:00:59Z,de,songs,97,596834669,Another Love,Tom Odell,Musik,2012-10-15
+2026-11-25T17:00:59Z,de,songs,98,6820201970,IMPULSIVE,Thekidszn,Pop,2026-02-18
+2026-11-25T17:00:59Z,de,songs,99,506650076,Disparate Youth,Santigold,Alternative,2012-02-14
+2026-11-25T17:00:59Z,de,songs,100,1193700923,Shape of You,Ed Sheeran,Pop,2017-01-06
+2026-11-25T17:00:59Z,gb,apps-free,1,6760173601,Muse from Meta,"Meta Platforms, Inc.",,2026-11-23
+2026-11-25T17:00:59Z,gb,apps-free,2,6737119425,GOV.UK One Login,Government Digital Service,,2025-06-09
+2026-11-25T17:00:59Z,gb,apps-free,3,1631584032,PLAYFUL REWARDS: Earn Rewards,Playful Rewards,,2024-07-01
+2026-11-25T17:00:59Z,gb,apps-free,4,1591214233,InPost UK,InPost UK Ltd,,2021-11-23
+2026-11-25T17:00:59Z,gb,apps-free,5,6448311069,ChatGPT,"OpenAI OpCo, LLC",,2023-05-24
+2026-11-25T17:00:59Z,gb,apps-free,6,6473753684,Claude by Anthropic,Anthropic PBC,,2024-05-01
+2026-11-25T17:00:59Z,gb,apps-free,7,1223471316,"Shop: Track, Pay, Discover",Shopify Inc.,,2018-09-23
+2026-11-25T17:00:59Z,gb,apps-free,8,983156458,Microsoft Authenticator,Microsoft Corporation,,2015-05-30
+2026-11-25T17:00:59Z,gb,apps-free,9,1064977107,DPD,DPDgroup,,2016-05-14
+2026-11-25T17:00:59Z,gb,apps-free,10,1488269261,"Whatnot: Shop, Sell, Connect",Whatnot Inc.,,2019-12-06
+2026-11-25T17:00:59Z,gb,apps-free,11,6762010774,CrownCards - Trading Cards,CrownCards,Shopping,2026-06-03
+2026-11-25T17:00:59Z,gb,apps-free,12,1435168829,Royal Mail,Royal Mail Group Ltd,Lifestyle,2018-09-14
+2026-11-25T17:00:59Z,gb,apps-free,13,514561561,HMRC,HMRC,Finance,2012-05-28
+2026-11-25T17:00:59Z,gb,apps-free,14,6477489729,Google Gemini,Google,Productivity,2024-11-13
+2026-11-25T17:00:59Z,gb,apps-free,15,469964520,Lloyds Mobile Banking,Lloyds Banking Group,Finance,2011-10-10
+2026-11-25T17:00:59Z,gb,apps-free,16,1113153706,Microsoft Teams,Microsoft Corporation,Business,2016-11-02
+2026-11-25T17:00:59Z,gb,apps-free,17,1388411277,NHS App,NHS Digital,Medical,2018-12-31
+2026-11-25T17:00:59Z,gb,apps-free,18,335187483,Amazon Shopping,Amazon,Shopping,2009-10-24
+2026-11-25T17:00:59Z,gb,apps-free,19,284815942,Google - More ways to search,Google,Utilities,2019-02-12
+2026-11-25T17:00:59Z,gb,apps-free,20,683336616,Five Guys: Order Ahead,Five Guys JV Ltd,Food & Drink,2013-08-29
+2026-11-25T17:00:59Z,gb,apps-free,21,1098233626,Greggs App - Food & Drink,Greggs,Food & Drink,2016-05-11
+2026-11-25T17:00:59Z,gb,apps-free,22,880993267,Boots: Beauty & Pharmacy,Boots,Shopping,2014-06-22
+2026-11-25T17:00:59Z,gb,apps-free,23,632064380,Vinted: Shop & sell pre-loved,Vinted Limited,Shopping,2013-04-11
+2026-11-25T17:00:59Z,gb,apps-free,24,1093452209,Octopus Energy,Octopus Energy,Utilities,2016-07-07
+2026-11-25T17:00:59Z,gb,apps-free,25,389581236,Tesco Grocery & Clubcard,Tesco,Shopping,2010-09-09
+2026-11-25T17:00:59Z,gb,apps-free,26,1500855883,CapCut: Video & Photo Editor,Bytedance Pte. Ltd,Photo & Video,2020-04-14
+2026-11-25T17:00:59Z,gb,apps-free,27,935325621,Uswitch,Uswitch Ltd,Utilities,2015-05-11
+2026-11-25T17:00:59Z,gb,apps-free,28,1115120118,Klarna: Smarter everyday money,Klarna Bank AB,Finance,2016-06-22
+2026-11-25T17:00:59Z,gb,apps-free,29,586447913,Microsoft Word,Microsoft Corporation,Productivity,2014-03-27
+2026-11-25T17:00:59Z,gb,apps-free,30,6502527552,Flying Tiger Copenhagen Club,Flying Tiger Copenhagen,Shopping,2024-10-28
+2026-11-25T17:00:59Z,gb,apps-free,31,932493382,Revolut — Mobile Finance,Revolut Ltd,Finance,2015-03-01
+2026-11-25T17:00:59Z,gb,apps-free,32,535886823,Google Chrome,Google,Utilities,2012-06-28
+2026-11-25T17:00:59Z,gb,apps-free,33,1666653815,HBO Max: Watch Movies & TV,"WarnerMedia Global Digital Services, LLC",Entertainment,2026-03-26
+2026-11-25T17:00:59Z,gb,apps-free,34,1618056244,Fuse Energy,FUSE ENERGY SUPPLY LIMITED,Utilities,2023-06-12
+2026-11-25T17:00:59Z,gb,apps-free,35,422689480,Gmail - Email by Google,Google,Productivity,2011-11-02
+2026-11-25T17:00:59Z,gb,apps-free,36,1238611143,Lidl Plus,Lidl Digital International GmbH & Co. KG,Shopping,2020-08-04
+2026-11-25T17:00:59Z,gb,apps-free,37,1445703716,Zable - Mobile Finance,Lendable Operations Ltd,Finance,2020-07-02
+2026-11-25T17:00:59Z,gb,apps-free,38,585027354,Google Maps,Google,Navigation,2012-12-13
+2026-11-25T17:00:59Z,gb,apps-free,39,1052238659,Monzo Bank - Mobile Banking,Monzo Bank Limited,Finance,2016-02-04
+2026-11-25T17:00:59Z,gb,apps-free,40,1064216828,Reddit,"REDDIT, INC.",News,2016-04-07
+2026-11-25T17:00:59Z,gb,apps-free,41,368677368,"Uber: Rides, eats, and more","Uber Technologies, Inc.",Travel,2010-05-21
+2026-11-25T17:00:59Z,gb,apps-free,42,686449807,Telegram Messenger,Telegram FZ-LLC,Social Networking,2013-08-14
+2026-11-25T17:00:59Z,gb,apps-free,43,6446901002,Threads,"Instagram, Inc.",Social Networking,2023-07-05
+2026-11-25T17:00:59Z,gb,apps-free,44,385266473,Nectar: Shop & Collect Points,Nectar 360 Ltd,Shopping,2010-08-16
+2026-11-25T17:00:59Z,gb,apps-free,45,6778126199,Whipp: Meal Planner & Recipes,EVOY LTD,Food & Drink,2026-06-12
+2026-11-25T17:00:59Z,gb,apps-free,46,1590502794,MoneySavingExpert,MoneySavingExpert.com,Finance,2022-05-10
+2026-11-25T17:00:59Z,gb,apps-free,47,566325832,Trading 212,Trading 212,Finance,2012-10-09
+2026-11-25T17:00:59Z,gb,apps-free,48,370371087,"Argos - Shop Tech, Toys & More",Argos Ltd.,Shopping,2010-05-22
+2026-11-25T17:00:59Z,gb,apps-free,49,1587003570,Debenhams,DBZ MARKETPLACE LIMITED,Shopping,2021-11-09
+2026-11-25T17:00:59Z,gb,apps-free,50,309735670,Indeed Job Search,Indeed Inc.,Business,2010-01-28
+2026-11-25T17:00:59Z,gb,apps-free,51,538410698,"M&S - Fashion, Food & Homeware",Marks and Spencer plc,Shopping,2012-07-03
+2026-11-25T17:00:59Z,gb,apps-free,52,1502431233,Scottish Widows,Scottish Widows Group Limited,Finance,2020-11-02
+2026-11-25T17:00:59Z,gb,apps-free,53,951937596,Microsoft Outlook,Microsoft Corporation,Productivity,2015-01-29
+2026-11-25T17:00:59Z,gb,apps-free,54,1641486558,Temu: Shop Like a Billionaire,Temu,Shopping,2022-08-31
+2026-11-25T17:00:59Z,gb,apps-free,55,288429040,LinkedIn: Community & Career,LinkedIn Corporation,Business,2019-02-03
+2026-11-25T17:00:59Z,gb,apps-free,56,1060683933,Too Good To Go: End Food Waste,Too Good To Go,Food & Drink,2015-12-08
+2026-11-25T17:00:59Z,gb,apps-free,57,835599320,"TikTok - Videos, Music & LIVE",TikTok Ltd.,Entertainment,2014-04-02
+2026-11-25T17:00:59Z,gb,apps-free,58,500003565,"Ticketmaster－Buy, Sell Tickets",Ticketmaster,Entertainment,2024-10-14
+2026-11-25T17:00:59Z,gb,apps-free,59,310633997,WhatsApp Messenger,WhatsApp Inc.,Social Networking,2009-05-04
+2026-11-25T17:00:59Z,gb,apps-free,60,690602681,JD Sports: Clothing & Shoes,JD Sports Fashion Plc,Shopping,2013-10-01
+2026-11-25T17:00:59Z,gb,apps-free,61,1605170923,GoWish - Your Digital Wishlist,Onskeskyen ApS,Lifestyle,2023-04-03
+2026-11-25T17:00:59Z,gb,apps-free,62,388497605,Google Authenticator,Google,Utilities,2010-09-20
+2026-11-25T17:00:59Z,gb,apps-free,63,926252661,Ring - Always Home,Ring.com,Lifestyle,2014-11-19
+2026-11-25T17:00:59Z,gb,apps-free,64,6751544303,Space NK | Beauty,Space NK,Shopping,2025-11-06
+2026-11-25T17:00:59Z,gb,apps-free,65,342898717,RingGo: Mobile Car Parking App,RingGo Ltd,Travel,2009-12-17
+2026-11-25T17:00:59Z,gb,apps-free,66,681752345,"Trip.com: Flight, Hotel, Train",Trip.com Travel Singapore Pte. Ltd.,Travel,2013-08-05
+2026-11-25T17:00:59Z,gb,apps-free,67,6740224837,"Joybuy-Don't just buy, Joybuy!",Joybuy,Shopping,2025-02-19
+2026-11-25T17:00:59Z,gb,apps-free,68,1411737922,TrainPal: Cheap train tickets,Trainpal B.V.,Travel,2018-08-04
+2026-11-25T17:00:59Z,gb,apps-free,69,689970073,Blue Light Card,Blue Light Card Ltd,Shopping,2013-08-23
+2026-11-25T17:00:59Z,gb,apps-free,70,1288723196,Microsoft Edge,Microsoft Corporation,Utilities,2017-11-30
+2026-11-25T17:00:59Z,gb,apps-free,71,1629050566,GOV.UK ID Check,Government Digital Service,Utilities,2022-08-01
+2026-11-25T17:00:59Z,gb,apps-free,72,323229106,Waze Navigation & Live Traffic,Waze Inc.,Navigation,2009-08-01
+2026-11-25T17:00:59Z,gb,apps-free,73,578627826,Costa Coffee Club,Costa Coffee,Food & Drink,2012-12-06
+2026-11-25T17:00:59Z,gb,apps-free,74,6449736895,JD STATUS,JD Sports Fashion Plc,Shopping,2023-08-15
+2026-11-25T17:00:59Z,gb,apps-free,75,541164041,Microsoft Copilot,Microsoft Corporation,Productivity,2013-06-18
+2026-11-25T17:00:59Z,gb,apps-free,76,1673567402,Freecash - Earn Money,Freecash - Get Paid Real Money,Entertainment,2024-04-13
+2026-11-25T17:00:59Z,gb,apps-free,77,675033630,Bolt: Request a Ride,BOLT TECHNOLOGY OU,Travel,2013-07-24
+2026-11-25T17:00:59Z,gb,apps-free,78,1082476620,McDonald’s U.K.,McDonald's Restaurants,Food & Drink,2017-03-14
+2026-11-25T17:00:59Z,gb,apps-free,79,1095459556,Nike: Engineered for Athletes,"Nike, Inc",Shopping,2017-07-19
+2026-11-25T17:00:59Z,gb,apps-free,80,334235181,Trainline: Train & Bus Tickets,thetrainline,Travel,2009-10-15
+2026-11-25T17:00:59Z,gb,apps-free,81,436672029,AliExpress Shopping App,Alibaba,Shopping,2011-05-27
+2026-11-25T17:00:59Z,gb,apps-free,82,6745568862,Primark,Primark Information Services U.K. Limited,Shopping,2026-01-26
+2026-11-25T17:00:59Z,gb,apps-free,83,6444340959,Creation Finance,Creation Consumer Finance Limited,Finance,2023-01-10
+2026-11-25T17:00:59Z,gb,apps-free,84,932002377,Drawnames | Secret Santa app,Meetrix Online,Lifestyle,2021-10-04
+2026-11-25T17:00:59Z,gb,apps-free,85,389801252,Instagram,"Instagram, Inc.",Photo & Video,2010-10-06
+2026-11-25T17:00:59Z,gb,apps-free,86,283646709,"PayPal - Send, Manage, Pay","PayPal, Inc.",Finance,2019-02-03
+2026-11-25T17:00:59Z,gb,apps-free,87,284882215,Facebook,"Meta Platforms, Inc.",Social Networking,2019-02-05
+2026-11-25T17:00:59Z,gb,apps-free,88,519652671,JustPark Parking,JustPark Parking Ltd,Travel,2012-04-23
+2026-11-25T17:00:59Z,gb,apps-free,89,6792294152,Online Home Shop,ONLINE HOME SHOP LIMITED,Shopping,2026-09-04
+2026-11-25T17:00:59Z,gb,apps-free,90,1086056964,Sainsbury's,Sainsbury's,Shopping,2016-05-12
+2026-11-25T17:00:59Z,gb,apps-free,91,507874739,Google Drive – online backup,Google,Productivity,2012-06-28
+2026-11-25T17:00:59Z,gb,apps-free,92,1558240027,Meta AI,"Meta Platforms, Inc.",Productivity,2021-09-09
+2026-11-25T17:00:59Z,gb,apps-free,93,6749264780,UK IEC,Syrenis,Reference,2026-08-25
+2026-11-25T17:00:59Z,gb,apps-free,94,6451431247,Dola: Smart AI Assistant,SPRING(SG)PTE.LTD.,Productivity,2024-08-15
+2026-11-25T17:00:59Z,gb,apps-free,95,333903271,X,X Corp.,News,2009-10-09
+2026-11-25T17:00:59Z,gb,apps-free,96,282614216,eBay marketplace: shopping app,eBay Inc.,Shopping,2019-01-31
+2026-11-25T17:00:59Z,gb,apps-free,97,410896080,PlayStation App,PlayStation Mobile Inc.,Entertainment,2011-01-11
+2026-11-25T17:00:59Z,gb,apps-free,98,384830320,Life360: Family Safety & GPS,Life360,Social Networking,2010-08-10
+2026-11-25T17:00:59Z,gb,apps-free,99,566347057,Just Eat: Food and Shops,Just-Eat.com,Food & Drink,2012-11-01
+2026-11-25T17:00:59Z,gb,apps-free,100,324684580,Spotify: Music and Podcasts,Spotify,Music,2009-09-07
+2026-11-25T17:00:59Z,gb,songs,1,6794168373,Babydoll,Jamie Miller,Pop,2026-08-07
+2026-11-25T17:00:59Z,gb,songs,2,6819802968,Flower In A Hurricane [From GTAVI: Original Score],"Justice, Tame Impala, SZA & King Gizzard & The Lizard Wizard",Alternative,2026-10-15
+2026-11-25T17:00:59Z,gb,songs,3,6795697687,Stop The Wedding!,Ashe,Pop,2026-08-07
+2026-11-25T17:00:59Z,gb,songs,4,202117984,Last Christmas (Single Version),Wham!,Music,1984-12-01
+2026-11-25T17:00:59Z,gb,songs,5,6822497774,Housewife,Tate McRae,Pop,2026-10-15
+2026-11-25T17:00:59Z,gb,songs,6,6769552411,Great Expectation,SIENNA SPIRO,Pop,2026-07-02
+2026-11-25T17:00:59Z,gb,songs,7,6769070199,Movin' To The Sun,"HUGEL, Imael Angel & Ultra Naté",Electronic,2026-05-22
+2026-11-25T17:00:59Z,gb,songs,8,347010852,Merry Christmas Everyone,Shakin' Stevens,Music,1985-01-01
+2026-11-25T17:00:59Z,gb,songs,9,1820918468,Rein Me In,Sam Fender & Olivia Dean,Alternative,2025-10-17
+2026-11-25T17:00:59Z,gb,songs,10,1817609509,Man I Need,Olivia Dean,Pop,2025-09-26
+2026-11-25T17:00:59Z,gb,songs,11,1844932150,Choosin' Texas,Ella Langley,Country,2025-10-17
+2026-11-25T17:00:59Z,gb,songs,12,52576042,Fairytale of New York (feat. Kirsty MacColl),The Pogues,Music,1987-11-23
+2026-11-25T17:00:59Z,gb,songs,13,6781074080,My Body Isn't Ready,sombr,Pop,2026-06-25
+2026-11-25T17:00:59Z,gb,songs,14,585972803,All I Want for Christmas Is You,Mariah Carey,Music,1994-10-28
+2026-11-25T17:00:59Z,gb,songs,15,1889992115,stupid song,Olivia Rodrigo,Pop,2026-06-12
+2026-11-25T17:00:59Z,gb,songs,16,1537216368,Underneath the Tree,Kelly Clarkson,Music,2013-10-25
+2026-11-25T17:00:59Z,gb,songs,17,1484999360,Step into Christmas,Elton John,Pop,1973-10-05
+2026-11-25T17:00:59Z,gb,songs,18,6812477282,Go Easy,Dua Lipa,Pop,2026-11-20
+2026-11-25T17:00:59Z,gb,songs,19,1889992123,the cure,Olivia Rodrigo,Pop,2026-05-22
+2026-11-25T17:00:59Z,gb,songs,20,731437256,One More Sleep,Leona Lewis,Music,2013-11-29
+2026-11-25T17:00:59Z,gb,songs,21,1884403093,Boston,STELLA LEFTY,Country,2026-03-27
+2026-11-25T17:00:59Z,gb,songs,22,6812888327,Babydoll,Jamie Miller & Antonio Cipriano,Pop,2026-09-18
+2026-11-25T17:00:59Z,gb,songs,23,6792884088,Nicole Kidman,ADÉLA,Pop,2026-09-04
+2026-11-25T17:00:59Z,gb,songs,24,6822944296,Lies (feat. Lana Del Rey),Zach Bryan & Lana Del Rey,Country,2026-10-15
+2026-11-25T17:00:59Z,gb,songs,25,1444319982,Santa Tell Me,Ariana Grande,Music,2013-12-13
+2026-11-25T17:00:59Z,gb,songs,26,6768830564,The Sun Will Never Settle,Kingfishr,Alternative,2026-05-26
+2026-11-25T17:00:59Z,gb,songs,27,1833371780,Run Away With Me,Carly Rae Jepsen,Pop,2015-06-24
+2026-11-25T17:00:59Z,gb,songs,28,6762757738,Willing and Able,Noah Kahan,Alternative,2026-04-24
+2026-11-25T17:00:59Z,gb,songs,29,1793663645,Ordinary,Alex Warren,Pop,2024-09-26
+2026-11-25T17:00:59Z,gb,songs,30,171434594,It's the Most Wonderful Time of the Year,Andy Williams,Music,1963-10-14
+2026-11-25T17:00:59Z,gb,songs,31,1444400808,Do They Know It's Christmas? (1984 Version),Band Aid,Rock,1984-12-03
+2026-11-25T17:00:59Z,gb,songs,32,669854831,It's Beginning To Look a Lot Like Christmas,Michael Bublé,Music,2011-10-14
+2026-11-25T17:00:59Z,gb,songs,33,6814997425,Patient Zero,Taylor Swift,Pop,2026-09-24
+2026-11-25T17:00:59Z,gb,songs,34,1526194192,Mr. Brightside,The Killers,Rock,2003-09-29
+2026-11-25T17:00:59Z,gb,songs,35,1597450885,Merry Christmas,Ed Sheeran & Elton John,Music,2021-12-03
+2026-11-25T17:00:59Z,gb,songs,36,1847992612,Raindance,Dave & Tems,Hip-Hop/Rap,2025-10-24
+2026-11-25T17:00:59Z,gb,songs,37,1309544023,Driving Home for Christmas,Chris Rea,Pop,1986-01-01
+2026-11-25T17:00:59Z,gb,songs,38,1737990264,Starburster,Fontaines D.C.,Alternative,2024-04-17
+2026-11-25T17:00:59Z,gb,songs,39,1871595253,Homewrecker,sombr,Pop,2026-02-05
+2026-11-25T17:00:59Z,gb,songs,40,6812477290,Last Thing You Need,Morgan Wallen,Country,2026-09-17
+2026-11-25T17:00:59Z,gb,songs,41,6837508830,Burn This Shit Down (from GTAVI: The Album),Travis Scott,Hip-Hop/Rap,2026-11-19
+2026-11-25T17:00:59Z,gb,songs,42,6762757958,Orbiter,Noah Kahan,Alternative,2026-04-25
+2026-11-25T17:00:59Z,gb,songs,43,6828537514,Shotta's.,Season 25,R&B/Soul,2026-09-20
+2026-11-25T17:00:59Z,gb,songs,44,1440667795,Mistletoe,Justin Bieber,Music,2011-10-17
+2026-11-25T17:00:59Z,gb,songs,45,1817609507,So Easy (To Fall In Love),Olivia Dean,Pop,2026-09-26
+2026-11-25T17:00:59Z,gb,songs,46,1870984045,Coming Up Roses,Harry Styles,Pop,2026-03-06
+2026-11-25T17:00:59Z,gb,songs,47,6829976181,take me home (4 christmas),Olivia Rodrigo,Pop,2026-11-05
+2026-11-25T17:00:59Z,gb,songs,48,1440098017,Snowman,Sia,Music,2017-11-09
+2026-11-25T17:00:59Z,gb,songs,49,267537169,Iris,The Goo Goo Dolls,Rock,1998-03-31
+2026-11-25T17:00:59Z,gb,songs,50,1884730735,Free Your Mind,"Prospa, Sybil & Cloonee",Dance,2026-03-27
+2026-11-25T17:00:59Z,gb,songs,51,1838737598,WHERE IS MY HUSBAND!,RAYE,Pop,2025-09-19
+2026-11-25T17:00:59Z,gb,songs,52,6781238591,Merry Xmas Everybody,Slade,Rock,1973-12-07
+2026-11-25T17:00:59Z,gb,songs,53,6792085056,Marianne,Fontaines D.C.,Alternative,2026-08-18
+2026-11-25T17:00:59Z,gb,songs,54,1193683175,Perfect,Ed Sheeran,Pop,2017-03-03
+2026-11-25T17:00:59Z,gb,songs,55,6763656876,hate that i made you love me,Ariana Grande,Pop,2026-05-28
+2026-11-25T17:00:59Z,gb,songs,56,6812477319,Crazy For You,Lana Del Rey,Alternative,2026-11-20
+2026-11-25T17:00:59Z,gb,songs,57,1841769602,Die On This Hill,SIENNA SPIRO,Pop,2025-10-10
+2026-11-25T17:00:59Z,gb,songs,58,1525933490,Wonderwall (Remastered),Oasis,Music,1995-10-02
+2026-11-25T17:00:59Z,gb,songs,59,1814620247,Nice To Each Other,Olivia Dean,Pop,2025-05-30
+2026-11-25T17:00:59Z,gb,songs,60,1879983789,FEVER DREAM,Alex Warren,Pop,2026-06-05
+2026-11-25T17:00:59Z,gb,songs,61,1632285403,Stick Season,Noah Kahan,Alternative,2022-07-08
+2026-11-25T17:00:59Z,gb,songs,62,6822390426,expectations,Olivia Rodrigo & Chappell Roan,Pop,2026-10-16
+2026-11-25T17:00:59Z,gb,songs,63,6792884101,Ain't In LA,ADÉLA,Pop,2026-07-23
+2026-11-25T17:00:59Z,gb,songs,64,370852475,White Noise For Babies,White Noise,Music,2010-06-01
+2026-11-25T17:00:59Z,gb,songs,65,1226021297,Sign of the Times,Harry Styles,Pop,2017-04-07
+2026-11-25T17:00:59Z,gb,songs,66,1833328840,The Fate of Ophelia,Taylor Swift,Pop,2025-10-03
+2026-11-25T17:00:59Z,gb,songs,67,1867034427,iloveitiloveitiloveit,Bella Kay,Alternative,2026-06-17
+2026-11-25T17:00:59Z,gb,songs,68,6768469976,Dai Dai,Shakira & Burna Boy,Pop,2026-05-14
+2026-11-25T17:00:59Z,gb,songs,69,202272624,Dreams,Fleetwood Mac,Rock,1987-04-14
+2026-11-25T17:00:59Z,gb,songs,70,1440873033,"Hold On, We're Going Home",Drake & Majid Jordan,Hip-Hop/Rap,2013-08-07
+2026-11-25T17:00:59Z,gb,songs,71,1724488124,Beautiful Things,Benson Boone,Pop,2024-01-18
+2026-11-25T17:00:59Z,gb,songs,72,1228739609,New Rules,Dua Lipa,Pop,2017-07-07
+2026-11-25T17:00:59Z,gb,songs,73,1878015314,New Religion,Bebe Rexha & Faithless,Dance,2026-03-06
+2026-11-25T17:00:59Z,gb,songs,74,663097965,Do I Wanna Know?,Arctic Monkeys,Alternative,2013-06-19
+2026-11-25T17:00:59Z,gb,songs,75,336037344,Christmas (Baby Please Come Home),Darlene Love,Music,1963-11-22
+2026-11-25T17:00:59Z,gb,songs,76,190859558,Feliz Navidad,José Feliciano,Music,1970-11-01
+2026-11-25T17:00:59Z,gb,songs,77,336037282,Sleigh Ride,The Ronettes,Music,1963-11-22
+2026-11-25T17:00:59Z,gb,songs,78,1870514330,Talk To You (feat. 54 Ultra),ANOTR,Dance,2026-03-06
+2026-11-25T17:00:59Z,gb,songs,79,1773474483,That’s So True,Gracie Abrams,Pop,2024-10-18
+2026-11-25T17:00:59Z,gb,songs,80,1440830243,Let It Snow! Let It Snow! Let It Snow!,Dean Martin,Music,1959-11-16
+2026-11-25T17:00:59Z,gb,songs,81,1754238414,Angel Of My Dreams,JADE,Pop,2024-07-19
+2026-11-25T17:00:59Z,gb,songs,82,6814871229,Draw You Out,Noah Kahan & The Hunger Games,Alternative,2026-10-02
+2026-11-25T17:00:59Z,gb,songs,83,651880159,The Chain,Fleetwood Mac,Rock,1977-02-04
+2026-11-25T17:00:59Z,gb,songs,84,1545270163,Into You,Ariana Grande,Pop,2016-05-06
+2026-11-25T17:00:59Z,gb,songs,85,1122773680,Viva La Vida,Coldplay,Alternative,2008-05-25
+2026-11-25T17:00:59Z,gb,songs,86,1870984036,American Girls,Harry Styles,Pop,2026-03-06
+2026-11-25T17:00:59Z,gb,songs,87,1193683109,Castle on the Hill,Ed Sheeran,Pop,2017-01-06
+2026-11-25T17:00:59Z,gb,songs,88,1828036635,12 to 12,sombr,Music,2025-07-24
+2026-11-25T17:00:59Z,gb,songs,89,1440899467,ocean eyes,Billie Eilish,Alternative,2016-05-18
+2026-11-25T17:00:59Z,gb,songs,90,1434774881,Rockin' Around the Christmas Tree (Single Version),Brenda Lee,Music,1991-08-27
+2026-11-25T17:00:59Z,gb,songs,91,1691699836,Lose Control,Teddy Swims,Pop,2005-09-15
+2026-11-25T17:00:59Z,gb,songs,92,6769552686,Pure,SIENNA SPIRO,Pop,2026-07-02
+2026-11-25T17:00:59Z,gb,songs,93,1525933492,Don't Look Back in Anger (Remastered),Oasis,Music,1995-10-02
+2026-11-25T17:00:59Z,gb,songs,94,1193683174,Shape of You,Ed Sheeran,Pop,2017-01-06
+2026-11-25T17:00:59Z,gb,songs,95,6769568596,Janice STFU,Drake,Hip-Hop/Rap,2026-05-15
+2026-11-25T17:00:59Z,gb,songs,96,1441539154,Someone You Loved,Lewis Capaldi,Alternative,2018-11-08
+2026-11-25T17:00:59Z,gb,songs,97,1201169649,Lush Life,Zara Larsson,Pop,2015-06-05
+2026-11-25T17:00:59Z,gb,songs,98,1820264150,Golden,"HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",K-Pop,2025-06-19
+2026-11-25T17:00:59Z,gb,songs,99,1440650961,Beauty and a Beat (feat. Nicki Minaj),Justin Bieber,Pop,2012-06-15
+2026-11-25T17:00:59Z,gb,songs,100,1365040125,Stop the Cavalry,Jona Lewie,Rock,1982-06-01
+2026-11-25T17:00:59Z,us,songs,1,1844932150,Choosin' Texas,Ella Langley,Country,2025-10-17
+2026-11-25T17:00:59Z,us,songs,2,585972803,All I Want for Christmas Is You,Mariah Carey,Music,1994-10-28
+2026-11-25T17:00:59Z,us,songs,3,6812477290,Last Thing You Need,Morgan Wallen,Country,2026-09-17
+2026-11-25T17:00:59Z,us,songs,4,6819802968,Flower In A Hurricane [From GTAVI: Original Score],"Justice, Tame Impala, SZA & King Gizzard & The Lizard Wizard",Alternative,2026-10-15
+2026-11-25T17:00:59Z,us,songs,5,6796864754,BbY WOW,"KAROL G, Judeline & rusowsky",Music,2026-08-05
+2026-11-25T17:00:59Z,us,songs,6,6792676860,Been By Now,Morgan Wallen,Country,2026-07-24
+2026-11-25T17:00:59Z,us,songs,7,6822497774,Housewife,Tate McRae,Pop,2026-10-15
+2026-11-25T17:00:59Z,us,songs,8,6769568596,Janice STFU,Drake,Hip-Hop/Rap,2026-05-15
+2026-11-25T17:00:59Z,us,songs,9,1648587330,In A Minute,Lil Baby,Hip-Hop/Rap,2022-04-08
+2026-11-25T17:00:59Z,us,songs,10,1440929293,Freestyle,Lil Baby,Hip-Hop/Rap,2017-12-01
+2026-11-25T17:00:59Z,us,songs,11,720861445,Underneath the Tree,Kelly Clarkson,Holiday,2013-10-25
+2026-11-25T17:00:59Z,us,songs,12,1889992115,stupid song,Olivia Rodrigo,Pop,2026-06-12
+2026-11-25T17:00:59Z,us,songs,13,1889992123,the cure,Olivia Rodrigo,Pop,2026-05-22
+2026-11-25T17:00:59Z,us,songs,14,1621119447,WAIT FOR U (feat. Drake & Tems),Future,Hip-Hop/Rap,2022-04-29
+2026-11-25T17:00:59Z,us,songs,15,1452017954,Best I Ever Had,Drake,Hip-Hop/Rap,2009-02-13
+2026-11-25T17:00:59Z,us,songs,16,1358462132,Jingle Bell Rock,Bobby Helms,Holiday,1957-12-02
+2026-11-25T17:00:59Z,us,songs,17,1621803969,LIKE ME (feat. 42 Dugg & Lil Baby),Future,Hip-Hop/Rap,2022-05-02
+2026-11-25T17:00:59Z,us,songs,18,6795697687,Stop The Wedding!,Ashe,Pop,2026-08-07
+2026-11-25T17:00:59Z,us,songs,19,6818209989,Solar Eclipse,Drake & Don Toliver,R&B/Soul,2026-10-02
+2026-11-25T17:00:59Z,us,songs,20,6822944296,Lies (feat. Lana Del Rey),Zach Bryan & Lana Del Rey,Country,2026-10-15
+2026-11-25T17:00:59Z,us,songs,21,1869436845,Be Her,Ella Langley,Country,2026-02-13
+2026-11-25T17:00:59Z,us,songs,22,1440642743,Marvins Room,Drake,Hip-Hop/Rap,2011-06-28
+2026-11-25T17:00:59Z,us,songs,23,1621207921,Frozen,Lil Baby,Hip-Hop/Rap,2022-04-29
+2026-11-25T17:00:59Z,us,songs,24,6792884088,Nicole Kidman,ADÉLA,Pop,2026-09-04
+2026-11-25T17:00:59Z,us,songs,25,6790569133,Dead Fresh,Lil Baby,Hip-Hop/Rap,2026-07-17
+2026-11-25T17:00:59Z,us,songs,26,1506297772,March Madness,Future,Hip-Hop/Rap,2015-03-21
+2026-11-25T17:00:59Z,us,songs,27,1556670532,Wants and Needs (feat. Lil Baby),Drake,Hip-Hop/Rap,2021-03-05
+2026-11-25T17:00:59Z,us,songs,28,6763091996,I Can't Love You Anymore,Ella Langley & Morgan Wallen,Country,2026-04-24
+2026-11-25T17:00:59Z,us,songs,29,1621119426,I'M DAT N***A,Future,Hip-Hop/Rap,2022-04-29
+2026-11-25T17:00:59Z,us,songs,30,1530123009,Kacey Talk,YoungBoy Never Broke Again,Hip-Hop/Rap,2020-08-13
+2026-11-25T17:00:59Z,us,songs,31,1529510489,Power Trip (feat. Miguel),J. Cole,Hip-Hop/Rap,2013-02-14
+2026-11-25T17:00:59Z,us,songs,32,1802103970,I'm The Problem,Morgan Wallen,Country,2025-01-31
+2026-11-25T17:00:59Z,us,songs,33,1438765134,Girls Need Love,Summer Walker,R&B/Soul,2018-07-26
+2026-11-25T17:00:59Z,us,songs,34,1534816484,Sum 2 Prove,Lil Baby,Hip-Hop/Rap,2020-01-10
+2026-11-25T17:00:59Z,us,songs,35,1714908987,Wicked Games,The Weeknd,R&B/Soul,2011-03-21
+2026-11-25T17:00:59Z,us,songs,36,1584281787,Knife Talk (feat. 21 Savage & Project Pat),Drake,Hip-Hop/Rap,2021-09-03
+2026-11-25T17:00:59Z,us,songs,37,1017055092,Stick Talk,Future,Music,2015-07-17
+2026-11-25T17:00:59Z,us,songs,38,1657869492,Snooze,SZA,R&B/Soul,2022-12-08
+2026-11-25T17:00:59Z,us,songs,39,1813021660,Broken Window Serenade,Whiskey Myers,Country,2011-04-26
+2026-11-25T17:00:59Z,us,songs,40,1618153473,Right On,Lil Baby,Hip-Hop/Rap,2022-04-08
+2026-11-25T17:00:59Z,us,songs,41,6834596541,I just realized. (feat. Future),YFN Lucci & Rod Wave,Hip-Hop/Rap,2026-11-19
+2026-11-25T17:00:59Z,us,songs,42,6810716062,So Good (feat. Kendrick Lamar),Jhené Aiko,R&B/Soul,2026-09-11
+2026-11-25T17:00:59Z,us,songs,43,6818209990,Quebec,Drake,R&B/Soul,2026-10-02
+2026-11-25T17:00:59Z,us,songs,44,1818424212,Last Night,Morgan Wallen,Country,2023-02-02
+2026-11-25T17:00:59Z,us,songs,45,336037282,Sleigh Ride,The Ronettes,Music,1963-11-22
+2026-11-25T17:00:59Z,us,songs,46,1713814120,Now Who,YoungBoy Never Broke Again,Hip-Hop/Rap,2023-10-26
+2026-11-25T17:00:59Z,us,songs,47,1468618077,Money In The Grave (feat. Rick Ross),Drake,Hip-Hop/Rap,2019-06-15
+2026-11-25T17:00:59Z,us,songs,48,1560735548,deja vu,Olivia Rodrigo,Pop,2021-04-01
+2026-11-25T17:00:59Z,us,songs,49,1802104400,Don't We,Morgan Wallen,Country,2025-05-16
+2026-11-25T17:00:59Z,us,songs,50,1239976610,Broken Clocks,SZA,R&B/Soul,2017-06-02
+2026-11-25T17:00:59Z,us,songs,51,1884403093,Boston,STELLA LEFTY,Country,2026-03-27
+2026-11-25T17:00:59Z,us,songs,52,1056384020,No Flockin,Kodak Black,Music,2014-07-06
+2026-11-25T17:00:59Z,us,songs,53,202117984,Last Christmas (Single Version),Wham!,Holiday,1984-12-01
+2026-11-25T17:00:59Z,us,songs,54,1418213269,God's Plan,Drake,Hip-Hop/Rap,2018-01-19
+2026-11-25T17:00:59Z,us,songs,55,1796270267,30 For 30 (with Kendrick Lamar),SZA,R&B/Soul,2025-02-08
+2026-11-25T17:00:59Z,us,songs,56,1802103977,Just In Case,Morgan Wallen,Country,2025-03-21
+2026-11-25T17:00:59Z,us,songs,57,6762757738,Willing and Able,Noah Kahan,Alternative,2026-04-24
+2026-11-25T17:00:59Z,us,songs,58,1818469738,Wasted On You,Morgan Wallen,Country,2021-01-08
+2026-11-25T17:00:59Z,us,songs,59,6762757958,Orbiter,Noah Kahan,Alternative,2026-04-25
+2026-11-25T17:00:59Z,us,songs,60,1031354882,Don't,Bryson Tiller,R&B/Soul,2015-05-20
+2026-11-25T17:00:59Z,us,songs,61,1818425528,Thinkin’ Bout Me,Morgan Wallen,Country,2023-03-03
+2026-11-25T17:00:59Z,us,songs,62,1617171238,Vette Motors,YoungBoy Never Broke Again,Hip-Hop/Rap,2021-08-05
+2026-11-25T17:00:59Z,us,songs,63,1534816500,Low Down,Lil Baby,Hip-Hop/Rap,2020-05-01
+2026-11-25T17:00:59Z,us,songs,64,1737150439,Like That,"Future, Metro Boomin & Kendrick Lamar",Hip-Hop/Rap,2024-03-22
+2026-11-25T17:00:59Z,us,songs,65,1569712108,How It Feels,Lil Baby & Lil Durk,Hip-Hop/Rap,2021-06-04
+2026-11-25T17:00:59Z,us,songs,66,1818426110,Cowgirls (feat. ERNEST),Morgan Wallen,Country,2023-03-03
+2026-11-25T17:00:59Z,us,songs,67,6814871229,Draw You Out,Noah Kahan & The Hunger Games,Alternative,2026-10-02
+2026-11-25T17:00:59Z,us,songs,68,1871258330,E85,Don Toliver,Hip-Hop/Rap,2026-01-22
+2026-11-25T17:00:59Z,us,songs,69,1817609514,A Couple Minutes,Olivia Dean,Pop,2025-09-26
+2026-11-25T17:00:59Z,us,songs,70,1440891494,Passionfruit,Drake,Hip-Hop/Rap,2017-03-18
+2026-11-25T17:00:59Z,us,songs,71,1440760661,Leave You Alone (feat. Ne-Yo),Jeezy,Hip-Hop/Rap,2011-12-20
+2026-11-25T17:00:59Z,us,songs,72,1440841382,Controlla,Drake,Hip-Hop/Rap,2016-04-29
+2026-11-25T17:00:59Z,us,songs,73,6834597339,LAKEHOUSE. (feat. Future),YFN Lucci,Hip-Hop/Rap,2026-11-12
+2026-11-25T17:00:59Z,us,songs,74,1817609507,So Easy (To Fall In Love),Olivia Dean,Pop,2026-09-26
+2026-11-25T17:00:59Z,us,songs,75,1137966332,Cinderella (feat. Ty Dolla $ign),Mac Miller,Music,2016-09-16
+2026-11-25T17:00:59Z,us,songs,76,1744776167,Not Like Us,Kendrick Lamar,Hip-Hop/Rap,2024-05-04
+2026-11-25T17:00:59Z,us,songs,77,1481606158,Body,Summer Walker,R&B/Soul,2019-10-04
+2026-11-25T17:00:59Z,us,songs,78,1802103975,What I Want,Morgan Wallen & Tate McRae,Country,2025-05-16
+2026-11-25T17:00:59Z,us,songs,79,6769552411,Great Expectation,SIENNA SPIRO,Pop,2026-07-02
+2026-11-25T17:00:59Z,us,songs,80,1526194192,Mr. Brightside,The Killers,Rock,2003-09-29
+2026-11-25T17:00:59Z,us,songs,81,6837508830,Burn This Shit Down (from GTAVI: The Album),Travis Scott,Hip-Hop/Rap,2026-11-19
+2026-11-25T17:00:59Z,us,songs,82,1435551062,The Christmas Song (Merry Christmas to You),"Nat ""King"" Cole",Holiday,1955-11-15
+2026-11-25T17:00:59Z,us,songs,83,1440827492,Tennessee Whiskey,Chris Stapleton,Country,2015-04-23
+2026-11-25T17:00:59Z,us,songs,84,6769551476,I’m Spent,Drake & Loe Shimmy,R&B/Soul,2026-05-15
+2026-11-25T17:00:59Z,us,songs,85,6834597356,LUV DAT.,"YFN Lucci, Belly Gang Kushington & Breskii",Hip-Hop/Rap,2026-11-19
+2026-11-25T17:00:59Z,us,songs,86,1744439049,I Had Some Help (feat. Morgan Wallen),Post Malone,Country,2024-05-10
+2026-11-25T17:00:59Z,us,songs,87,1817609509,Man I Need,Olivia Dean,Pop,2025-09-26
+2026-11-25T17:00:59Z,us,songs,88,6779378648,WTF GOIN,Belly Gang Kushington & 21 Savage,Music,2026-06-19
+2026-11-25T17:00:59Z,us,songs,89,1440818972,Poetic Justice (feat. Drake),Kendrick Lamar,Hip-Hop/Rap,2012-10-22
+2026-11-25T17:00:59Z,us,songs,90,1266332375,Untouchable,YoungBoy Never Broke Again,Hip-Hop/Rap,2016-10-28
+2026-11-25T17:00:59Z,us,songs,91,1570323056,Yonaguni,Bad Bunny,Music,2021-06-04
+2026-11-25T17:00:59Z,us,songs,92,1471264095,"Bitch, Don’t Kill My Vibe",Kendrick Lamar,Hip-Hop/Rap,2012-10-22
+2026-11-25T17:00:59Z,us,songs,93,1620419734,Something in the Orange,Zach Bryan,Country,2022-04-22
+2026-11-25T17:00:59Z,us,songs,94,1150135924,goosebumps,Travis Scott,Hip-Hop/Rap,2016-09-02
+2026-11-25T17:00:59Z,us,songs,95,171434594,It's the Most Wonderful Time of the Year,Andy Williams,Music,1963-10-14
+2026-11-25T17:00:59Z,us,songs,96,6812477298,Suzuki,Fuerza Regida,Latin,2026-10-08
+2026-11-25T17:00:59Z,us,songs,97,6773775304,nothing,Steve Lacy,Pop,2026-07-17
+2026-11-25T17:00:59Z,us,songs,98,1869436847,Loving Life Again,Ella Langley,Country,2026-03-20
+2026-11-25T17:00:59Z,us,songs,99,1244230126,Wild Thoughts (feat. Rihanna & Bryson Tiller),DJ Khaled,Hip-Hop/Rap,2017-06-16
+2026-11-25T17:00:59Z,us,songs,100,1447442333,Valuable Pain,YoungBoy Never Broke Again,Hip-Hop/Rap,2018-12-10
