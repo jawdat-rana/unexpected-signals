@@ -12,6 +12,10 @@ Uses two KNMI definitions, nothing home-made:
 
 Plus ice days (daily maximum below zero), the standard KNMI count.
 
+And how cold November has been so far: the mean daily temperature in De Bilt
+from 1 November to the last day KNMI has published for the latest November,
+for every year, next to the Hellmann sum of the winter that followed.
+
     python analysis/natural-ice/prepare.py RAW_DIR
 
 RAW_DIR is a checkout of the `raw-ice` branch (see fetch_raw.py).
@@ -127,6 +131,24 @@ def main(raw: Path) -> None:
         )
     write(STORY / "debilt_periods.csv", blocks)
 
+    # November so far in De Bilt, every year, with the winter that followed
+    novembers = november_to_date(raw / "daily" / f"{DE_BILT}.csv")
+    last = max(novembers)
+    days = novembers[last][1]
+    write(
+        STORY / "debilt_november.csv",
+        [
+            {
+                "year": year,
+                "days": days,
+                "mean": round(mean, 2),
+                "winter_hellmann": bilt[year + 1]["hellmann"] if year + 1 in bilt else "",
+            }
+            for year, (mean, n) in sorted(novembers.items())
+            if n == days
+        ],
+    )
+
     # Every station with enough winters in both periods
     table = []
     for stn, winters in results.items():
@@ -162,6 +184,27 @@ def main(raw: Path) -> None:
     for winter, knmi in [(1947, 342.5), (1963, 337.2)]:
         print(f"De Bilt {winter}: ours {bilt[winter]['hellmann']}, KNMI {knmi}")
     print(f"{len(rows)} De Bilt winters, {len(table)} stations on the map")
+    colder = sorted(y for y, (m, n) in novembers.items() if n == days and m < novembers[last][0])
+    print(
+        f"November {last}, 1-{days}: {novembers[last][0]:.2f} C, "
+        f"{len(colder)} colder years, the latest {colder[-3:]}"
+    )
+
+
+def november_to_date(path: Path) -> dict[int, tuple[float, int]]:
+    """Mean daily temperature from 1 November up to the day the latest November
+    has reached, per year, with the number of days used."""
+    temps = defaultdict(dict)
+    with open(path, newline="") as handle:
+        for row in csv.DictReader(handle):
+            if row["tg"] and row["date"][5:7] == "11":
+                temps[int(row["date"][:4])][int(row["date"][8:])] = float(row["tg"])
+    reached = max(temps[max(temps)])
+    result = {}
+    for year, days in temps.items():
+        values = [days[d] for d in range(1, reached + 1) if d in days]
+        result[year] = (sum(values) / len(values), len(values))
+    return result
 
 
 def write(path: Path, rows: list[dict]) -> None:
