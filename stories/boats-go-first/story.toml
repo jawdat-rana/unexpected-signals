@@ -9,7 +9,6 @@ status = "draft"
 open = [
   "Fill the live-data numbers from the week 23–29 November (analysis/ndw-bridges/live.py)",
   "Re-run analysis/ndw-bridges/replay.py for Mon 23 to Fri 27 November and update the replay numbers",
-  "Optional: add the Botlekbrug parallel-lane sensors (collected from PR #35 on) to the replay once a few days are in",
 ]
 tags = ["ndw", "bridges", "shipping", "explainer", "maps"]
 image = ""
