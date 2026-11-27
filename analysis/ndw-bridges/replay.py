@@ -86,7 +86,9 @@ def snapshots(data: Path, day: date) -> dict[datetime, dict[str, tuple[float, fl
                 if at.astimezone(AMS).date() != day:
                     continue
                 out.setdefault(at, {})[row["site_id"]] = (
-                    float(row["speed_kmh"] or 0), float(row["flow_veh_h"] or 0))
+                    float(row["speed_kmh"] or 0),
+                    float(row["flow_veh_h"] or 0),
+                )
     return out
 
 
@@ -112,20 +114,23 @@ def main(argv: list[str]) -> int:
             a15 = [sensors[s] for s in A15 if s in sensors]
             a15_flow = sum(f for _, f in a15) if a15 else ""
             # Speed weighted by flow, so an empty direction doesn't pull it down.
-            a15_speed = (round(sum(s * f for s, f in a15) / a15_flow, 1)
-                         if a15 and a15_flow else "")
-            rows.append({
-                "day": f"{local:%a} {local.day} {local:%b}",
-                "time": f"{local:%H:%M}",
-                "spijkenisserbrug_open": is_open(spans["spijkenisserbrug"], at),
-                "botlekbrug_open": is_open(spans["botlekbrug"], at),
-                "groene_kruisweg_flow": round(gk[1]) if gk else "",
-                "groene_kruisweg_speed": round(gk[0], 1) if gk else "",
-                "a15_flow": round(a15_flow) if a15 else "",
-                "a15_speed": a15_speed,
-            })
-        opened = {name: sum(1 for s, _ in v if s.astimezone(AMS).date() == day)
-                  for name, v in spans.items()}
+            a15_speed = round(sum(s * f for s, f in a15) / a15_flow, 1) if a15 and a15_flow else ""
+            rows.append(
+                {
+                    "day": f"{local:%a} {local.day} {local:%b}",
+                    "time": f"{local:%H:%M}",
+                    "spijkenisserbrug_open": is_open(spans["spijkenisserbrug"], at),
+                    "botlekbrug_open": is_open(spans["botlekbrug"], at),
+                    "groene_kruisweg_flow": round(gk[1]) if gk else "",
+                    "groene_kruisweg_speed": round(gk[0], 1) if gk else "",
+                    "a15_flow": round(a15_flow) if a15 else "",
+                    "a15_speed": a15_speed,
+                }
+            )
+        opened = {
+            name: sum(1 for s, _ in v if s.astimezone(AMS).date() == day)
+            for name, v in spans.items()
+        }
         print(f"{day}: {len(snaps)} snapshots, openings {opened}")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
