@@ -1,0 +1,2 @@
+situation_id,record_id,version,record_type,management_type,validity_status,probability,start_time,end_time,version_time,latitude,longitude,first_seen,last_seen
+BMS01_NLDHR002350463600013_758057430,BMS01_NLDHR002350463600013_758057430_01,1,GeneralNetworkManagement,bridgeSwingInOperation,definedByValidityTimeSpec,riskOf,2026-11-28T00:12:00Z,2026-11-28T00:18:00Z,2026-11-24T10:41:06.850585Z,52.954823,4.779886,2026-11-27T00:15:31Z,2026-11-27T00:15:31Z
