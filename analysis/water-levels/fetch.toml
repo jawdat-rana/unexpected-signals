@@ -1,0 +1,10 @@
+# Raw-data fetches for the water replay, run by the `fetch` workflow
+# (see .github/scripts/fetch_plan.py). Re-run by hand:
+# gh workflow run fetch -f name=water
+
+[[fetch]]
+name = "water"
+run = "python -u analysis/water-levels/fetch_raw.py raw"
+watch = ["analysis/water-levels/fetch_raw.py"]
+timeout = 30
+summary = "log.md"
