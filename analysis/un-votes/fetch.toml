@@ -5,5 +5,5 @@
 name = "un-votes"
 run = "python -u analysis/un-votes/fetch_raw.py raw"
 watch = ["analysis/un-votes/fetch_raw.py"]
-timeout = 90
+timeout = 180
 summary = "manifest.csv"

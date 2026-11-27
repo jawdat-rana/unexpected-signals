@@ -25,7 +25,6 @@ from __future__ import annotations
 import csv
 import gzip
 import json
-import re
 import sys
 import time
 import urllib.parse
@@ -38,7 +37,8 @@ DATAVERSE = "https://dataverse.harvard.edu"
 VOETEN_DOI = "doi:10.7910/DVN/LEJUQZ"
 VETO_URL = "https://research.un.org/en/docs/sc/quick/veto"
 PAGE = 200
-MAX_FILE = 90_000_000
+MAX_FILE = 5_000_000  # ideal points and codebooks; agreement scores are rebuilt from the votes
+MAX_PAGES = 400
 
 manifest: list[dict] = []
 
@@ -64,9 +64,8 @@ def log(source: str, item: str, status: str, detail: str = "") -> None:
 def digital_library(out: Path) -> None:
     folder = out / "records"
     folder.mkdir(parents=True, exist_ok=True)
-    total = None
     start = 1
-    while True:
+    for _ in range(MAX_PAGES):
         query = urllib.parse.urlencode(
             {"cc": "Voting Data", "ln": "en", "of": "xm", "rg": PAGE, "jrec": start,
              "sf": "latest first", "so": "d"}
@@ -77,10 +76,6 @@ def digital_library(out: Path) -> None:
             log("dl", f"page from {start}", "failed", str(e)[:200])
             return
         text = body.decode("utf-8", "replace")
-        if total is None:
-            m = re.search(r"Search-Engine-Total-Number-Of-Results:\s*(\d+)", text)
-            total = int(m.group(1)) if m else None
-            log("dl", "total", "info", str(total))
         n = text.count("<record")
         if n == 0:
             log("dl", f"page from {start}", "empty", text[:200].replace("\n", " "))
@@ -88,7 +83,7 @@ def digital_library(out: Path) -> None:
         (folder / f"{start:06d}.xml.gz").write_bytes(gzip.compress(body))
         log("dl", f"page from {start}", "ok", f"{n} records")
         start += PAGE
-        if n < PAGE or (total and start > total):
+        if n < PAGE:
             break
         time.sleep(2)
 
