@@ -1,18 +1,16 @@
-"""Download UN voting records for the UN votes stories.
+"""Download the UN's bulk voting datasets for the UN votes stories.
 
-Three sources, each optional (a failure is logged in manifest.csv and the rest
-still run):
-
-1. UN Digital Library, "Voting Data" collection: every recorded vote in the
-   General Assembly and Security Council, including vetoed Security Council
-   drafts, as MARC XML. We page through the whole collection and keep one row
-   per resolution/draft (votes.csv-like tables are built later by prepare.py).
-       records/<page>.xml.gz
-2. Erik Voeten's UNGA voting dataset (Harvard Dataverse, doi:10.7910/DVN/LEJUQZ):
-   the file list, and every file under 90 MB.
+1. UN Digital Library "Datasets" collection: the Dag Hammarskjöld Library
+   publishes every recorded vote as CSV, refreshed a few times a year:
+   General Assembly votes (record 4060887), General Assembly outcomes
+   (4060945, including resolutions adopted without a vote) and Security
+   Council votes (4055387). We look the records up by search, so a new
+   release with new file names is picked up, and keep every CSV and its
+   Markdown notes, gzipped.
+       dl/<file>.gz, dl/records.xml
+2. Erik Voeten's UNGA ideal points (Harvard Dataverse, doi:10.7910/DVN/LEJUQZ,
+   CC0): the file list and the files under 5 MB.
        voeten/files.json, voeten/<file>
-3. Dag Hammarskjöld Library list of Security Council vetoes (HTML page).
-       vetoes.html
 
 Standard library only. Runs in GitHub Actions (these hosts are not reachable
 from every environment):
@@ -25,6 +23,7 @@ from __future__ import annotations
 import csv
 import gzip
 import json
+import re
 import sys
 import time
 import urllib.parse
@@ -33,17 +32,15 @@ from pathlib import Path
 
 HEADERS = {"User-Agent": "unexpected-signals (github.com/jawdat-rana/unexpected-signals)"}
 DL_SEARCH = "https://digitallibrary.un.org/search"
+DL_QUERY = {"ln": "en", "p": "voting data", "c": "Datasets", "of": "xm", "rg": 50}
 DATAVERSE = "https://dataverse.harvard.edu"
 VOETEN_DOI = "doi:10.7910/DVN/LEJUQZ"
-VETO_URL = "https://research.un.org/en/docs/sc/quick/veto"
-PAGE = 200
-MAX_FILE = 5_000_000  # ideal points and codebooks; agreement scores are rebuilt from the votes
-MAX_PAGES = 400
+MAX_FILE = 5_000_000
 
 manifest: list[dict] = []
 
 
-def get(url: str, timeout: int = 120, tries: int = 4) -> bytes:
+def get(url: str, timeout: int = 600, tries: int = 4) -> bytes:
     last = None
     for attempt in range(tries):
         try:
@@ -58,34 +55,30 @@ def get(url: str, timeout: int = 120, tries: int = 4) -> bytes:
 
 def log(source: str, item: str, status: str, detail: str = "") -> None:
     manifest.append({"source": source, "item": item, "status": status, "detail": detail})
-    print(f"{source:10} {item:40} {status} {detail}", flush=True)
+    print(f"{source:8} {item:45} {status} {detail}", flush=True)
 
 
 def digital_library(out: Path) -> None:
-    folder = out / "records"
+    folder = out / "dl"
     folder.mkdir(parents=True, exist_ok=True)
-    start = 1
-    for _ in range(MAX_PAGES):
-        query = urllib.parse.urlencode(
-            {"cc": "Voting Data", "ln": "en", "of": "xm", "rg": PAGE, "jrec": start,
-             "sf": "latest first", "so": "d"}
-        )
+    try:
+        xml = get(f"{DL_SEARCH}?{urllib.parse.urlencode(DL_QUERY)}")
+    except Exception as e:  # noqa: BLE001
+        log("dl", "search", "failed", str(e)[:200])
+        return
+    (folder / "records.xml").write_bytes(xml)
+    urls = sorted(set(re.findall(r'<subfield code="u">(https://digitallibrary\.un\.org/record/\d+/files/[^<]+\.(?:csv|md))</subfield>',
+                                 xml.decode("utf-8", "replace"))))
+    log("dl", "search", "ok", f"{len(urls)} files")
+    for url in urls:
+        name = url.rsplit("/", 1)[-1]
         try:
-            body = get(f"{DL_SEARCH}?{query}")
+            data = get(url)
+            (folder / f"{name}.gz").write_bytes(gzip.compress(data, 6))
+            rows = data.count(b"\n") if name.endswith(".csv") else ""
+            log("dl", name, "ok", f"{len(data)} bytes {rows} lines")
         except Exception as e:  # noqa: BLE001
-            log("dl", f"page from {start}", "failed", str(e)[:200])
-            return
-        text = body.decode("utf-8", "replace")
-        n = text.count("<record")
-        if n == 0:
-            log("dl", f"page from {start}", "empty", text[:200].replace("\n", " "))
-            break
-        (folder / f"{start:06d}.xml.gz").write_bytes(gzip.compress(body))
-        log("dl", f"page from {start}", "ok", f"{n} records")
-        start += PAGE
-        if n < PAGE:
-            break
-        time.sleep(2)
+            log("dl", name, "failed", str(e)[:200])
 
 
 def voeten(out: Path) -> None:
@@ -100,8 +93,6 @@ def voeten(out: Path) -> None:
     latest = meta["data"]["latestVersion"]
     log("voeten", "version", "info",
         f"{latest.get('versionNumber')}.{latest.get('versionMinorNumber')} {latest.get('releaseTime')}")
-    lic = latest.get("license") or latest.get("termsOfUse")
-    log("voeten", "licence", "info", json.dumps(lic)[:200])
     for f in latest["files"]:
         df = f["dataFile"]
         name, size, fid = df.get("filename"), df.get("filesize", 0), df["id"]
@@ -109,28 +100,18 @@ def voeten(out: Path) -> None:
             log("voeten", name, "skipped", f"{size} bytes")
             continue
         try:
-            data = get(f"{DATAVERSE}/api/access/datafile/{fid}?format=original", timeout=600)
+            data = get(f"{DATAVERSE}/api/access/datafile/{fid}?format=original")
             (folder / name).write_bytes(data)
             log("voeten", name, "ok", f"{len(data)} bytes")
         except Exception as e:  # noqa: BLE001
             log("voeten", name, "failed", str(e)[:200])
 
 
-def vetoes(out: Path) -> None:
-    try:
-        data = get(VETO_URL)
-        (out / "vetoes.html").write_bytes(data)
-        log("vetoes", "page", "ok", f"{len(data)} bytes")
-    except Exception as e:  # noqa: BLE001
-        log("vetoes", "page", "failed", str(e)[:200])
-
-
 def main() -> None:
     out = Path(sys.argv[1])
     out.mkdir(parents=True, exist_ok=True)
-    vetoes(out)
-    voeten(out)
     digital_library(out)
+    voeten(out)
     with open(out / "manifest.csv", "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=["source", "item", "status", "detail"])
         w.writeheader()
