@@ -173,9 +173,12 @@ in Actions and land on a `raw-<name>` branch, never on `main`.
   `gh workflow run probe -f url=https://...` (method, body and headers are
   optional). The status, headers and first lines go to the run summary; the
   full reply is kept for 7 days. No temporary workflows on `main`.
-- **health.** Every Monday morning, a report on each collector: last success,
-  rows per day and gaps between runs. If a feed has gone quiet, it opens an
-  issue labelled `collector-health`, or comments on the open one.
+- **health.** Every Monday morning, a report in the run summary: each
+  collector's last success, rows per day and gaps between runs; failed runs of
+  every workflow; and PRs open for more than a week. When something needs a
+  look (a quiet feed, a workflow whose latest run on `main` failed, or a PR
+  untouched for two weeks), it opens an issue labelled `repo-health`, or
+  comments on the open one. Run it any time with `gh workflow run health`.
 
 ## Repo layout
 

@@ -26,7 +26,7 @@ from . import (
     traffic,
     trends,
 )
-from .fetch import download
+from .fetch import download, download_json
 
 
 def load_config(path: Path) -> dict:
@@ -139,7 +139,7 @@ def _is_stale(stamp: str | None, fetched_at: str, days: float) -> bool:
 
 def collect_parking(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
     retries = cfg.get("retries", 3)
-    index = json.loads(download(cfg["url"], retries=retries))
+    index = download_json(cfg["url"], retries=retries)
     live = parking.live_facilities(index)
     if not cfg.get("include_limited_access", False):
         # These answer 401 without an RDW account.
@@ -205,7 +205,7 @@ def collect_charts(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | Non
         country, chart = job
         url = charts.url(country, chart, cfg.get("size", 100), cfg.get("base", charts.BASE))
         try:
-            payload = json.loads(download(url, retries=cfg.get("retries", 3)))
+            payload = download_json(url, retries=cfg.get("retries", 3))
         except Exception as exc:
             return f"{country}/{chart}: {exc!r}"
         return charts.parse(payload, country, chart, fetched_at)
@@ -246,8 +246,8 @@ def collect_trends(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | Non
 
 
 def collect_ovfiets(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
-    raw = download(cfg["url"], retries=cfg.get("retries", 3))
-    rows, catalogue = ovfiets.parse(json.loads(raw), fetched_at)
+    payload = download_json(cfg["url"], retries=cfg.get("retries", 3))
+    rows, catalogue = ovfiets.parse(payload, fetched_at)
     if not rows:
         raise RuntimeError("OV-fiets feed listed no locations")
     memory = state.load(out, "ovfiets")
@@ -305,23 +305,27 @@ def main(argv: list[str] | None = None) -> int:
     col.add_argument("--out", type=Path, default=Path("data"))
     col.add_argument("--only", choices=sorted(COLLECTORS), action="append")
     col.add_argument("--sample-dir", type=Path, help="also save raw responses here, for debugging")
-    hl = sub.add_parser("health", help="report when each feed last succeeded")
+    hl = sub.add_parser("health", help="weekly report on feeds, workflow runs and open PRs")
     hl.add_argument("--config", type=Path, default=Path("config.toml"))
     hl.add_argument("--data", type=Path, default=Path("data"))
     hl.add_argument("--runs", type=Path, help="collect workflow runs as JSON, from the API")
+    hl.add_argument("--workflow-runs", type=Path, help="runs of every workflow, as JSON")
+    hl.add_argument("--pulls", type=Path, help="open pull requests, as JSON")
     hl.add_argument("--days", type=int, default=7)
     args = parser.parse_args(argv)
 
     if args.command == "health":
-        text, quiet = health.report(
+        text, alerts = health.report(
             load_config(args.config),
             args.data,
             health.now_utc(),
             health.load_runs(args.runs),
             args.days,
+            health.load_runs(args.workflow_runs),
+            health.load_pulls(args.pulls),
         )
         print(text, end="")
-        return 2 if quiet else 0
+        return 2 if alerts else 0
 
     config = load_config(args.config)
     fetched_at = now_iso()
