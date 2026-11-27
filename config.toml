@@ -55,6 +55,10 @@ sites = [
   "GEO0C_Z_RWSTI356703",
   "PGR08_G185_Rijksweg_O_HTN2234",
   "PGR08_G185_Rijksweg_W_HTN2234",
+  # A15 parallel carriageway over the Botlekbrug itself; the main lanes above
+  # run through the Botlektunnel.
+  "RWS01_MONIBAS_0150vwx0468ra",
+  "RWS01_MONIBAS_0150vwy0469ra",
   "RWS01_MONIBAS_0151hrl0466ra",
   "RWS01_MONIBAS_0151hrr0466ra",
   "RWS01_MONIBAS_0151hrl0467ra",

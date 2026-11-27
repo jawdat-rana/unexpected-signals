@@ -89,3 +89,5 @@ RWS01_MONIBAS_0041hrr2441ra,border,A4 Hoogerheide (BE),A4,mainCarriageway,3157,5
 RWS01_MONIBAS_0041hrl2480ra,border,A4 Hoogerheide (BE),A4,mainCarriageway,3485,51.39479,4.29015
 GRT02_MORO_2085_2,bridge_manual,Spijkenisserbrug (Groene Kruisweg),,mainCarriageway,740,51.86216,4.34997
 GRT02_MORO_2092_2,bridge_manual,Spijkenisserbrug (Groene Kruisweg),,mainCarriageway,590,51.856483,4.333123
+RWS01_MONIBAS_0150vwx0468ra,bridge_manual,Botlekbrug (A15 parallel carriageway),A15,parallelCarriageway,,51.87171,4.3335
+RWS01_MONIBAS_0150vwy0469ra,bridge_manual,Botlekbrug (A15 parallel carriageway),A15,parallelCarriageway,,51.87222,4.33569

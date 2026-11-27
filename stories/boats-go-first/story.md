@@ -28,12 +28,24 @@ The boats really do go first in the rush hour. ⟨N⟩ of the openings fell in t
 
 {{ chart src="charts/live-hours.js" data="data/live_hours.csv" title="Bridges keep opening in the rush hours" subtitle="Live bridge openings per hour of the day, all bridges, average of ⟨23 to 29 November 2026⟩." source="NDW open data, bridge openings (CC0)" }}
 
+## Replay a day at the Spijkenisserbrug
+
+Back to where this started. Next to the Spijkenisserbrug, a traffic sensor on the Groene Kruisweg counts the vehicles going past. Put its readings next to the live openings and you can watch the bridge stop the road.
+
+Press play to run a whole day in about half a minute. When the bridge lifts, the count on the Groene Kruisweg drops, often to zero, and comes back once the deck is down. Between 6 in the morning and 8 at night, the sensor counted about ⟨1,100⟩ vehicles an hour while the bridge was open and ⟨1,950⟩ while it was down. In ⟨37%⟩ of the snapshots with the bridge open it counted no traffic at all.
+
+{{ chart src="charts/replay.js" data="data/replay.csv" title="Watch the Spijkenisserbrug stop the Groene Kruisweg" subtitle="Vehicles an hour measured next to the Spijkenisserbrug and on the A15 at the Botlek, every 5 minutes, with live bridge openings in red. ⟨Monday 23 to Thursday 26 November 2026⟩." source="NDW open data, bridge openings and traffic speed (CC0)" note="Press play, or click or drag on the timeline to jump to a moment. Pick a day with the buttons." size="wide" }}
+
+The two bridges usually open together, because the ships that pass one pass the other a few minutes later: in ⟨71%⟩ of the 5-minute steps when the Spijkenisserbrug was open, the Botlekbrug was open too. The A15 main road barely notices. Its sensors at the Botlek counted about the same traffic with the Botlekbrug open as with it down, ⟨6,000⟩ vehicles an hour. The A15's main lanes cross the Oude Maas through the Botlektunnel, so the boats only hold up the roads that use the bridges.
+
 ## What the data can't tell you
 
 | Limit | What it means here |
 | --- | --- |
 | Only bridges that report live | NDW's live feed covers ⟨N⟩ bridges. Many smaller bridges don't report, so the national total is higher. |
-| Openings, not delay | The feed says a bridge opened, not how many cars waited. A follow-up will use traffic sensors next to the Botlekbrug and the Spijkenisserbrug to measure that. |
+| Openings, not delay | The feed says a bridge opened, not how many cars waited. The replay shows fewer vehicles passing, not how long each driver lost. A follow-up will measure the delay. |
+| One sensor at Spijkenisse | The replay rests on a single sensor on the Groene Kruisweg, and NDW doesn't say which direction it counts. A second sensor near the bridge reported no traffic at all and is left out. |
+| Traffic counted in snapshots | Each 5-minute snapshot holds the sensor's latest reading, not an average of the 5 minutes, so a short dip or peak between snapshots can be missed. |
 | Snapshots every 5 minutes | Openings are seen in snapshots taken every 5 minutes, so a very short opening between two snapshots can be missed. |
 | One week in late November | Summer brings recreational boats and many more openings on some waterways. |
 
@@ -43,4 +55,4 @@ NDW publishes bridge openings in a [DATEX II feed](https://opendata.ndw.nu/) (CC
 
 The background comes from Rijkswaterstaat's [article on the Spijkenisserbrug](https://www.rijkswaterstaat.nl/nieuws/archief/2025/10/een-schip-kan-je-niet-zomaar-even-stilzetten) (October 2025), [AutoRAI's interview with Rijkswaterstaat](https://autorai.nl/daarom-gaan-bruggen-open-tijdens-spits/) (November 2017), and [CBS figures on inland shipping](https://www.cbs.nl/nl-nl/nieuws/2025/20/binnenvaart-vervoert-meer-goederen-in-2024) for 2024.
 
-The analysis is in [`analysis/ndw-bridges/live.py`](https://github.com/jawdat-rana/unexpected-signals/blob/main/analysis/ndw-bridges/live.py).
+The analysis is in [`analysis/ndw-bridges/live.py`](https://github.com/jawdat-rana/unexpected-signals/blob/main/analysis/ndw-bridges/live.py). The replay comes from [`analysis/ndw-bridges/replay.py`](https://github.com/jawdat-rana/unexpected-signals/blob/main/analysis/ndw-bridges/replay.py), which lines up the live openings of the two bridges with NDW's traffic speed feed for the nearest sensors.
