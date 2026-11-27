@@ -1,0 +1,67 @@
+# Water levels 2023-12-18 to 2024-01-09
+
+- catalogue on ddapi20: ok, keys AquoMetadataLijst, AquoMetadataLocatieLijst, BemonsteringshoogteLijst, LocatieLijst, OpdrachtgevendeInstantieLijst, ReferentievlakLijst, StatuswaardeLijst, Succesvol
+- sample location: {"Locatie_MessageID": 10603, "Code": "4epetroleumhaven", "Coordinatenstelsel": "ETRS89", "Lat": 51.953524, "Lon": 4.140491, "Naam": "4e Petroleumhaven", "Omschrijving": "4e Petroleumhaven"}
+- 708 locations measure WATHTE in OW (of 2494)
+- vlissingen: Vlissingen (vlissingen), 3169 values, 3 s
+- westkapelle: Westkapelle (westkapelle), 3169 values, 3 s
+- roompot-buiten: Oosterschelde Roompotsluis buiten (oosterschelde.roompotsluis.buiten), 3169 values, 3 s
+- roompot-binnen: Oosterschelde Roompotsluis binnen (oosterschelde.roompotsluis.binnen), 3169 values, 3 s
+- haringvliet-buiten: Stellendam, buitenhaven (stellendam.buitenhaven), 3169 values, 4 s
+- hoek-van-holland: Hoek van Holland (hoekvanholland), 3169 values, 3 s
+- scheveningen: Scheveningen (scheveningen), 3169 values, 3 s
+- ijmuiden: IJmuiden, buitenhaven (ijmuiden.buitenhaven), 3169 values, 3 s
+- petten: Petten (petten), 0 values, 2 s
+- den-helder: Den Helder, Marsdiep (denhelder.marsdiep), 3169 values, 3 s
+- oudeschild: Texel, Oudeschild (texel.oudeschild), 3169 values, 3 s
+- den-oever: Den Oever, Waddenzee voorhaven (denoever.waddenzee.voorhaven), 3169 values, 3 s
+- kornwerderzand: Kornwerderzand Waddenzee buitenhaven (kornwerderzand.waddenzee.buitenhaven), 3169 values, 3 s
+- harlingen: Harlingen, Waddenzee (harlingen.waddenzee), 3169 values, 3 s
+- vlieland: Vlieland, haven (vlieland.haven), 3169 values, 3 s
+- terschelling: Terschelling, west (terschelling.west), 3169 values, 3 s
+- nes: Ameland, Nes (ameland.nes), 3169 values, 3 s
+- schiermonnikoog: Schiermonnikoog, Waddenzee (schiermonnikoog.waddenzee), 3169 values, 3 s
+- lauwersoog: Lauwersoog, Waddenzee (lauwersoog.waddenzee), 3169 values, 3 s
+- eemshaven: Eemshaven, haven (eemshaven.haven), 3169 values, 2 s
+- delfzijl: Delfzijl (delfzijl), 3169 values, 2 s
+- nieuwe-statenzijl: Nieuwe Statenzijl, Dollard (nieuwestatenzijl.dollard), 3169 values, 3 s
+- terneuzen: Terneuzen (terneuzen), 3169 values, 2 s
+- hansweert: Hansweert (hansweert), 3169 values, 3 s
+- bath: Rilland, Bath (rilland.bath), 3169 values, 3 s
+- maeslant-sea: Hoek van Holland Maeslantkering beneden (hoekvanholland.maeslantkering.beneden), 0 values, 1 s
+- maeslant-river: Hoek van Holland Maeslantkering boven (hoekvanholland.maeslantkering.boven), 0 values, 1 s
+- maassluis: Maassluis (maassluis), 3169 values, 3 s
+- vlaardingen: Vlaardingen (vlaardingen), 3169 values, 3 s
+- rotterdam: Rotterdam Kuip (rotterdam.kuip), 3169 values, 2 s
+- brienenoord: Rotterdam, Brienenoordbrug (rotterdam.brienenoordbrug), 0 values, 1 s
+- spijkenisse: Spijkenisse, Oude Maas (spijkenisse.oudemaas), 3169 values, 3 s
+- krimpen: Krimpen aan de IJssel, Hollandsche IJssel (krimpenaandeijssel.hollandscheijssel), 3169 values, 2 s
+- dordrecht: Dordrecht Oude Maas, Beneden Merwede (dordrecht.oudemaas.benedenmerwede), 3169 values, 3 s
+- moerdijk: Moerdijk (moerdijk), 3169 values, 3 s
+- goidschalxoord: Heinenoord, Goidschalxoord (heinenoord.goidschalxoord), 3169 values, 3 s
+- lobith: Lobith, Bovenrijn, haven (lobith.bovenrijn.haven), 3117 values, 2 s
+- pannerdense-kop: Millingen a/d Rijn Pannerdense Kop (millingenaanderijn.pannerdensekop), 3169 values, 2 s
+- nijmegen: Nijmegen, Waal (nijmegen.waal), 3167 values, 2 s
+- tiel: Tiel Sluis, Waal (tiel.sluis.waal), 3167 values, 4 s
+- zaltbommel: Zaltbommel (zaltbommel), 3169 values, 2 s
+- gorinchem: Gorinchem (gorinchem), 0 values, 1 s
+- arnhem: Arnhem, Nederrijn (arnhem.nederrijn), 3155 values, 2 s
+- driel: Driel, boven (driel.boven), 3167 values, 2 s
+- amerongen: Amerongen, boven (amerongen.boven), 3169 values, 2 s
+- hagestein: Hagestein, boven (hagestein.boven), 3169 values, 2 s
+- schoonhoven: Schoonhoven (schoonhoven), 3169 values, 3 s
+- westervoort: Westervoort, 2 (westervoort.2), 3167 values, 2 s
+- zutphen: Zutphen, IJssel (zutphen.ijssel), 3167 values, 3 s
+- deventer: Deventer (deventer), 3167 values, 2 s
+- olst: Olst (olst), 3169 values, 2 s
+- kampen: Kampen, IJssel (kampen.ijssel), 3169 values, 2 s
+- eijsden: Eijsden, grens (eijsden.grens), 3169 values, 3 s
+- maastricht: Sint Pieter Noord (maastricht.sintpieter), 3169 values, 3 s
+- roermond: Roermond, boven (roermond.boven), 3169 values, 2 s
+- venlo: Venlo (venlo), 3169 values, 2 s
+- grave: Grave, boven (grave.boven), 3169 values, 2 s
+- lith: Lith, boven (lith.boven), 3169 values, 2 s
+- heesbeen: Heesbeen (heesbeen), 3169 values, 3 s
+- keizersveer: Keizersveer (hank.bergschemaas), 3169 values, 3 s
+
+Host: ddapi20. Fetched 55 of 60 stations.

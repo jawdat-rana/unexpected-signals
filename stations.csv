@@ -1,0 +1,56 @@
+key,code,name,lat,lon,rows
+vlissingen,vlissingen,Vlissingen,51.44200,3.60000,3169
+westkapelle,westkapelle,Westkapelle,51.52145,3.44003,3169
+roompot-buiten,oosterschelde.roompotsluis.buiten,Oosterschelde Roompotsluis buiten,51.61900,3.68000,3169
+roompot-binnen,oosterschelde.roompotsluis.binnen,Oosterschelde Roompotsluis binnen,51.61800,3.68800,3169
+haringvliet-buiten,stellendam.buitenhaven,"Stellendam, buitenhaven",51.82703,4.03345,3169
+hoek-van-holland,hoekvanholland,Hoek van Holland,51.97690,4.11983,3169
+scheveningen,scheveningen,Scheveningen,52.09904,4.26356,3169
+ijmuiden,ijmuiden.buitenhaven,"IJmuiden, buitenhaven",52.46300,4.55500,3169
+den-helder,denhelder.marsdiep,"Den Helder, Marsdiep",52.96436,4.74499,3169
+oudeschild,texel.oudeschild,"Texel, Oudeschild",53.03883,4.85019,3169
+den-oever,denoever.waddenzee.voorhaven,"Den Oever, Waddenzee voorhaven",52.93154,5.04560,3169
+kornwerderzand,kornwerderzand.waddenzee.buitenhaven,Kornwerderzand Waddenzee buitenhaven,53.07459,5.33476,3169
+harlingen,harlingen.waddenzee,"Harlingen, Waddenzee",53.17563,5.40934,3169
+vlieland,vlieland.haven,"Vlieland, haven",53.29613,5.09146,3169
+terschelling,terschelling.west,"Terschelling, west",53.36304,5.22003,3169
+nes,ameland.nes,"Ameland, Nes",53.42977,5.75945,3169
+schiermonnikoog,schiermonnikoog.waddenzee,"Schiermonnikoog, Waddenzee",53.46894,6.20291,3169
+lauwersoog,lauwersoog.waddenzee,"Lauwersoog, Waddenzee",53.40833,6.19605,3169
+eemshaven,eemshaven.haven,"Eemshaven, haven",53.44870,6.82839,3169
+delfzijl,delfzijl,Delfzijl,53.32800,6.93100,3169
+nieuwe-statenzijl,nieuwestatenzijl.dollard,"Nieuwe Statenzijl, Dollard",53.23156,7.20742,3169
+terneuzen,terneuzen,Terneuzen,51.33621,3.81981,3169
+hansweert,hansweert,Hansweert,51.44567,3.99744,3169
+bath,rilland.bath,"Rilland, Bath",51.39878,4.21014,3169
+maassluis,maassluis,Maassluis,51.91751,4.24979,3169
+vlaardingen,vlaardingen,Vlaardingen,51.89964,4.34905,3169
+rotterdam,rotterdam.kuip,Rotterdam Kuip,51.89947,4.51837,3169
+spijkenisse,spijkenisse.oudemaas,"Spijkenisse, Oude Maas",51.86166,4.33395,3169
+krimpen,krimpenaandeijssel.hollandscheijssel,"Krimpen aan de IJssel, Hollandsche IJssel",51.91650,4.57900,3169
+dordrecht,dordrecht.oudemaas.benedenmerwede,"Dordrecht Oude Maas, Beneden Merwede",51.82000,4.67100,3169
+moerdijk,moerdijk,Moerdijk,51.71200,4.61500,3169
+goidschalxoord,heinenoord.goidschalxoord,"Heinenoord, Goidschalxoord",51.83030,4.45162,3169
+lobith,lobith.bovenrijn.haven,"Lobith, Bovenrijn, haven",51.85751,6.08365,3117
+pannerdense-kop,millingenaanderijn.pannerdensekop,Millingen a/d Rijn Pannerdense Kop,51.87200,6.04170,3169
+nijmegen,nijmegen.waal,"Nijmegen, Waal",51.85300,5.85400,3167
+tiel,tiel.sluis.waal,"Tiel Sluis, Waal",51.89900,5.45600,3167
+zaltbommel,zaltbommel,Zaltbommel,51.81515,5.24465,3169
+arnhem,arnhem.nederrijn,"Arnhem, Nederrijn",51.97541,5.91202,3155
+driel,driel.boven,"Driel, boven",51.96584,5.81064,3167
+amerongen,amerongen.boven,"Amerongen, boven",51.97530,5.41250,3169
+hagestein,hagestein.boven,"Hagestein, boven",51.98950,5.13520,3169
+schoonhoven,schoonhoven,Schoonhoven,51.94200,4.85000,3169
+westervoort,westervoort.2,"Westervoort, 2",51.97050,5.96200,3167
+zutphen,zutphen.ijssel,"Zutphen, IJssel",52.15400,6.18200,3167
+deventer,deventer,Deventer,52.25119,6.15325,3167
+olst,olst,Olst,52.34201,6.10448,3169
+kampen,kampen.ijssel,"Kampen, IJssel",52.55200,5.92640,3169
+eijsden,eijsden.grens,"Eijsden, grens",50.75800,5.68200,3169
+maastricht,maastricht.sintpieter,Sint Pieter Noord,50.83029,5.69732,3169
+roermond,roermond.boven,"Roermond, boven",51.20050,5.98150,3169
+venlo,venlo,Venlo,51.36739,6.15941,3169
+grave,grave.boven,"Grave, boven",51.76100,5.74300,3169
+lith,lith.boven,"Lith, boven",51.81000,5.45500,3169
+heesbeen,heesbeen,Heesbeen,51.73585,5.12474,3169
+keizersveer,hank.bergschemaas,Keizersveer,51.71910,4.89400,3169
