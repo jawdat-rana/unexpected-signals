@@ -37,6 +37,9 @@ import markdown
 ROOT = Path(__file__).resolve().parent.parent
 NEWSROOM = ROOT / "newsroom"
 STORIES = ROOT / "stories"
+# Replays: animations to play with, built at /replays/<slug>/. Same folder layout
+# and statuses as a story, but their own page look (see `.replay-page` in the CSS).
+REPLAYS = ROOT / "replays"
 TEMPLATES = ROOT / "templates"
 # Site-wide pages, like "How this is made": one Markdown file each, built at /<name>/.
 PAGES = NEWSROOM / "pages"
@@ -135,6 +138,16 @@ def go_live(stories: list[Story], today: dt.date) -> None:
         if story.status == "ready" and story.date <= today and not blockers(story, live):
             story.status = "published"
             live.add(story.slug)
+
+
+def load_replays(today: dt.date | None = None) -> list[Story]:
+    replays = [
+        load_story(folder, url=f"replays/{folder.name}/")
+        for folder in sorted(REPLAYS.iterdir() if REPLAYS.exists() else [])
+        if folder.is_dir() and (folder / "story.toml").exists()
+    ]
+    go_live(replays, today or dt.date.today())
+    return sorted(replays, key=lambda s: s.date, reverse=True)
 
 
 def load_stories(today: dt.date | None = None) -> list[Story]:
@@ -268,7 +281,7 @@ def long_date(day: dt.date) -> str:
 
 
 def page(config: dict, *, root: str, title: str, description: str, body: str, path: str,
-         image: str = "", kind: str = "website") -> str:  # fmt: skip
+         image: str = "", kind: str = "website", body_class: str = "") -> str:  # fmt: skip
     base_url = config["base_url"].rstrip("/") + "/"
     image_url = base_url + (image or "assets/img/card.png")
     return template("base.html").substitute(
@@ -288,6 +301,7 @@ def page(config: dict, *, root: str, title: str, description: str, body: str, pa
             f'<a href="{esc(config["linkedin"])}">LinkedIn</a> · ' if config.get("linkedin") else ""
         ),
         analytics=analytics(config),
+        body_class=esc(body_class),
         body=body,
     )
 
@@ -397,6 +411,22 @@ def card(story: Story, *, root: str, lead: bool = False) -> str:
     )
 
 
+def replays_html(replays: list[Story]) -> str:
+    """The /replays/ index: every replay as a card."""
+    cards = "".join(card(r, root="../", lead=True) for r in replays) or (
+        '<article class="card"><p class="kicker">Coming soon</p>'
+        "<h2>The first replay is being built.</h2></article>"
+    )
+    return (
+        '<article class="story page replays-index"><header class="story-head">'
+        "<h1>Replays</h1>"
+        '<p class="dek">Open data, played back. Press play, scrub, zoom in: each replay '
+        "shows a day, a storm or a season as it happened, with the data and code to check it.</p>"
+        f'</header><div class="replay-cards">{cards}</div>'
+        '<p class="back"><a href="../index.html">← All signals</a></p></article>'
+    )
+
+
 def front_html(config: dict, shown: list[Story], upcoming: list[Story]) -> str:
     root = ""
     if shown:
@@ -455,6 +485,7 @@ def build(out: Path = OUT, drafts: bool = False, today: dt.date | None = None) -
     stories = load_stories(today)
     shown = [s for s in stories if s.status == "published" or drafts]
     upcoming = [s for s in stories if s.status != "published" and not drafts]
+    replays = [r for r in load_replays(today) if r.status == "published" or drafts]
 
     if out.exists():
         shutil.rmtree(out)
@@ -485,6 +516,36 @@ def build(out: Path = OUT, drafts: bool = False, today: dt.date | None = None) -
                 kind="article",
             ),  # fmt: skip
         )
+
+    for replay in replays:
+        root = "../../"
+        copy_assets(replay.folder, out / replay.url)
+        write(
+            replay.url + "index.html",
+            page(
+                config,
+                root=root,
+                title=f"{replay.title} · Replays · {config['title']}",
+                description=replay.dek,
+                body=story_html(config, replay, root=root),
+                path=replay.url,
+                image=replay.url + replay.image if replay.image else "",
+                kind="article",
+                body_class="replay-page",
+            ),  # fmt: skip
+        )
+    write(
+        "replays/index.html",
+        page(
+            config,
+            root="../",
+            title=f"Replays · {config['title']}",
+            description="Open data, played back: days, storms and seasons as they happened.",
+            body=replays_html(replays),
+            path="replays/",
+            body_class="replay-page",
+        ),  # fmt: skip
+    )
 
     # The story template is also the style guide: it uses every component, so
     # building it proves the template works and shows what each piece looks like.

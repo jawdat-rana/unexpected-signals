@@ -6,5 +6,5 @@
 name = "water"
 run = "python -u analysis/water-levels/fetch_raw.py raw"
 watch = ["analysis/water-levels/fetch_raw.py"]
-timeout = 30
+timeout = 45
 summary = "log.md"

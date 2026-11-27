@@ -34,6 +34,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 HOSTS = [
@@ -59,8 +60,10 @@ HEADERS = {
 # New Year 2024 high water on the Rhine and Meuse.
 START = dt.datetime(2023, 12, 18, tzinfo=dt.UTC)
 END = dt.datetime(2024, 1, 9, tzinfo=dt.UTC)
-# Requests are split into chunks so none hits the service's size limit.
-CHUNK = dt.timedelta(days=4)
+# Requests are split into chunks so none hits the service's size limit
+# (3,300 values of 10 minutes is well under it).
+CHUNK = dt.timedelta(days=23)
+WORKERS = 6
 
 # key: name patterns tried in order against catalogue names (case-insensitive,
 # whole-name match first, then substring). Keys are what the page uses.
@@ -68,9 +71,9 @@ STATIONS = {
     # Coast, south to north and east
     "vlissingen": ["Vlissingen"],
     "westkapelle": ["Westkapelle"],
-    "roompot-buiten": ["Roompot buiten"],
-    "roompot-binnen": ["Roompot binnen"],
-    "haringvliet-buiten": ["Haringvlietsluizen buiten", "Haringvliet 10", "Haringvliet"],
+    "roompot-buiten": ["Roompot buiten", "Roompot"],
+    "roompot-binnen": ["Roompot binnen", "Oosterschelde binnen", "Stavenisse", "Marollegat"],
+    "haringvliet-buiten": ["Haringvlietsluizen buiten", "Haringvliet 10", "Stellendam buiten"],
     "hoek-van-holland": ["Hoek van Holland"],
     "scheveningen": ["Scheveningen"],
     "ijmuiden": ["IJmuiden buitenhaven", "IJmuiden"],
@@ -145,15 +148,17 @@ def post(url: str, body: dict, tries: int = 4) -> dict:
     for attempt in range(tries):
         request = urllib.request.Request(url, data=data, headers=HEADERS, method="POST")
         try:
-            with urllib.request.urlopen(request, timeout=120) as response:
-                return json.loads(response.read().decode("utf-8"))
+            with urllib.request.urlopen(request, timeout=90) as response:
+                text = response.read().decode("utf-8")
+                # An empty reply (HTTP 204) means "no data", not a hiccup.
+                return json.loads(text) if text.strip() else {}
         except urllib.error.HTTPError as exc:
             text = exc.read().decode("utf-8", "replace")[:500]
             # 204 / 4xx with a message usually means "no data", not a hiccup.
             if exc.code < 500:
                 raise RuntimeError(f"HTTP {exc.code}: {text}") from exc
             error: Exception = RuntimeError(f"HTTP {exc.code}: {text}")
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, OSError) as exc:
             error = exc
         time.sleep(2 * (attempt + 1))
     raise RuntimeError(f"{url}: {error}")
@@ -351,15 +356,22 @@ def main(argv: list[str]) -> int:
                 f"{lat:.5f}" if lat is not None else "", f"{lon:.5f}" if lon is not None else "",
             ])  # fmt: skip
 
-    rows = []
-    for key, patterns in STATIONS.items():
+    def fetch(item: tuple[str, list[str]]) -> tuple[str, dict | None, dict, float]:
+        key, patterns = item
         loc = match(stations, patterns)
+        began = time.monotonic()
+        values = measurements(obs, loc) if loc else {}
+        return key, loc, values, time.monotonic() - began
+
+    rows = []
+    with ThreadPoolExecutor(WORKERS) as pool:
+        results = list(pool.map(fetch, STATIONS.items()))
+    for key, loc, values, seconds in results:
         if not loc:
-            log(f"- {key}: no station named like {patterns}")
+            log(f"- {key}: no station named like {STATIONS[key]}")
             continue
-        values = measurements(obs, loc)
         lat, lon = latlon(loc)
-        log(f"- {key}: {loc.get('Naam')} ({loc.get('Code')}), {len(values)} values")
+        log(f"- {key}: {loc.get('Naam')} ({loc.get('Code')}), {len(values)} values, {seconds:.0f} s")
         if not values:
             continue
         with (out / "levels" / f"{key}.csv").open("w", newline="", encoding="utf-8") as f:
