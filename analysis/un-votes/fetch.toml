@@ -7,3 +7,10 @@ run = "python -u analysis/un-votes/fetch_raw.py raw"
 watch = ["analysis/un-votes/fetch_raw.py"]
 timeout = 180
 summary = "manifest.csv"
+
+[[fetch]]
+name = "un-vetoes"
+run = "python -u analysis/un-votes/fetch_vetoes.py raw"
+watch = ["analysis/un-votes/fetch_vetoes.py"]
+timeout = 15
+summary = "manifest.csv"
