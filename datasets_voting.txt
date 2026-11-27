@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Search-Engine-Total-Number-Of-Results: 3 -->
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <controlfield tag="000">00000nam a2200025#a ||||</controlfield>
+  <controlfield tag="001">4055387</controlfield>
+  <controlfield tag="005">20261016084449.0</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DHL)1412907</subfield>
+  </datafield>
+  <datafield tag="039" ind1=" " ind2=" ">
+    <subfield code="a">DHU</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">NNUN</subfield>
+  </datafield>
+  <datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="049" ind1=" " ind2=" ">
+    <subfield code="a">usa</subfield>
+  </datafield>
+  <datafield tag="089" ind1=" " ind2=" ">
+    <subfield code="b">B32</subfield>
+  </datafield>
+  <datafield tag="091" ind1=" " ind2=" ">
+    <subfield code="a">GEN</subfield>
+  </datafield>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="b">ST/DGC</subfield>
+    <subfield code="0">(DHLAUTH)908130</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">United Nations Security Council voting data :</subfield>
+    <subfield code="b">resolution 1 (24 January 1946) to resolution 2829 (29 September 2026) \</subfield>
+    <subfield code="c">United Nations Dag Hammarskjöld Library</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">New York:</subfield>
+    <subfield code="b">UN,</subfield>
+    <subfield code="c">2024-</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">2026-10-16</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">This dataset is a compilation of the voting data of the Security Council until 29 September 2026. It is derived from the UN Digital Library voting records and provides information on Member States' votes related to adopted resolutions up to resolution 2829 (2026) adopted on 29 September 2026. Votes on paragraphs of draft resolutions or drafts that failed to be adopted are not included. The dataset comprises 41559 entries, representing the vote of one Member State for a particular draft resolution.</subfield>
+  </datafield>
+  <datafield tag="546" ind1=" " ind2=" ">
+    <subfield code="a">Copyright, United Nations; Non commercial use, with attribution.</subfield>
+  </datafield>
+  <datafield tag="610" ind1=" " ind2=" ">
+    <subfield code="a">UN. Security Council</subfield>
+    <subfield code="0">(DHLAUTH)50557</subfield>
+  </datafield>
+  <datafield tag="610" ind1=" " ind2=" ">
+    <subfield code="a">UN. Security Council</subfield>
+    <subfield code="g">Resolutions and decisions</subfield>
+    <subfield code="0">(DHLAUTH)307416</subfield>
+  </datafield>
+  <datafield tag="610" ind1=" " ind2=" ">
+    <subfield code="a">UN. Security Council</subfield>
+    <subfield code="g">Members</subfield>
+    <subfield code="0">(DHLAUTH)314224</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">VOTING</subfield>
+    <subfield code="0">(DHLAUTH)268349</subfield>
+  </datafield>
+  <datafield tag="710" ind1=" " ind2=" ">
+    <subfield code="a">UN. Dag Hammarskjöld Library</subfield>
+    <subfield code="0">(DHLAUTH)20601</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">https://digitallibrary.un.org/record/4055387/files/2026_10_16_sc_votes.csv</subfield>
+    <subfield code="y">Dataset (Version 7, October 2026)</subfield>
+    <subfield code="9">e7efccba-601c-4e63-bcd6-9f3f77120231</subfield>
+    <subfield code="s">15561944</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">https://digitallibrary.un.org/record/4055387/files/2026_10_16_sc_voting_md.md</subfield>
+    <subfield code="y">Metadata (Version 7, October 2026)</subfield>
+    <subfield code="9">c7b7b22e-0118-407b-af31-344d65b01f5f</subfield>
+    <subfield code="s">3805</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="a">DTA</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">BIB</subfield>
+  </datafield>
+  <datafield tag="981" ind1=" " ind2=" ">
+    <subfield code="a">Secretariat</subfield>
+  </datafield>
+  <datafield tag="989" ind1=" " ind2=" ">
+    <subfield code="a">Datasets</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsc20240730</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsu20260206</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">aru20251125</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">aru20251209</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsu20261016</subfield>
+  </datafield>
+</record>
+<record>
+  <controlfield tag="000">00000nam a2200025#a ||||</controlfield>
+  <controlfield tag="001">4060945</controlfield>
+  <controlfield tag="005">20261015042120.0</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DHL)1415427</subfield>
+  </datafield>
+  <datafield tag="039" ind1=" " ind2=" ">
+    <subfield code="a">DHU</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">NNUN</subfield>
+  </datafield>
+  <datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="049" ind1=" " ind2=" ">
+    <subfield code="a">usa</subfield>
+  </datafield>
+  <datafield tag="089" ind1=" " ind2=" ">
+    <subfield code="b">B32</subfield>
+  </datafield>
+  <datafield tag="091" ind1=" " ind2=" ">
+    <subfield code="a">GEN</subfield>
+  </datafield>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="b">ST/DGC</subfield>
+    <subfield code="0">(DHLAUTH)908130</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">United Nations General Assembly resolutions :</subfield>
+    <subfield code="b">resolutions 1 (11 December 1946) to 81/1 (17 September 2026) /</subfield>
+    <subfield code="c">United Nations Dag Hammarskjöld Library</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">New York:</subfield>
+    <subfield code="b">UN,</subfield>
+    <subfield code="c">2024-</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">2026-10-15</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">This dataset is a compilation of the voting data related to the resolutions adopted by the General Assembly at its regular, special, emergency special sessions from its inception until resolution 81/1 adopted on 17 September 2026. It is derived from the UN Digital Library voting records and provides information on the outcome of each resolution, including its modality of adoption and, where applicable, the recorded vote count. The dataset comprises 20,834 entries, with each entry representing one adopted resolution.</subfield>
+  </datafield>
+  <datafield tag="546" ind1=" " ind2=" ">
+    <subfield code="a">Copyright, United Nations; Non commercial use, with attribution.</subfield>
+  </datafield>
+  <datafield tag="610" ind1=" " ind2=" ">
+    <subfield code="a">UN. General Assembly</subfield>
+    <subfield code="0">(DHLAUTH)20655</subfield>
+  </datafield>
+  <datafield tag="610" ind1=" " ind2=" ">
+    <subfield code="a">UN. General Assembly</subfield>
+    <subfield code="g">Resolutions and decisions</subfield>
+    <subfield code="0">(DHLAUTH)298253</subfield>
+  </datafield>
+  <datafield tag="710" ind1=" " ind2=" ">
+    <subfield code="a">UN. Dag Hammarskjöld Library</subfield>
+    <subfield code="0">(DHLAUTH)20601</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">https://digitallibrary.un.org/record/4060945/files/2026_10_15_outcomes_ga.csv</subfield>
+    <subfield code="y">Dataset, version 6 (October 2026)</subfield>
+    <subfield code="9">6225b1f5-2f4f-4f7f-9a42-1fc76af31e69</subfield>
+    <subfield code="s">7523446</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">https://digitallibrary.un.org/record/4060945/files/2026_10_15_ga_outcomes.md</subfield>
+    <subfield code="y">Metadata, version 6 (October 2026)</subfield>
+    <subfield code="9">3385c1dd-664e-4261-88af-10bec211fe0a</subfield>
+    <subfield code="s">4347</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="a">DTA</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">BIB</subfield>
+  </datafield>
+  <datafield tag="981" ind1=" " ind2=" ">
+    <subfield code="a">Secretariat</subfield>
+  </datafield>
+  <datafield tag="989" ind1=" " ind2=" ">
+    <subfield code="a">Datasets</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsc20241012</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsu20260206</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsu20261015</subfield>
+  </datafield>
+</record>
+<record>
+  <controlfield tag="000">00000nam a2200025#a ||||</controlfield>
+  <controlfield tag="001">4060887</controlfield>
+  <controlfield tag="005">20261016041107.0</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DHL)1415426</subfield>
+  </datafield>
+  <datafield tag="039" ind1=" " ind2=" ">
+    <subfield code="a">DHU</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">NNUN</subfield>
+  </datafield>
+  <datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="049" ind1=" " ind2=" ">
+    <subfield code="a">usa</subfield>
+  </datafield>
+  <datafield tag="089" ind1=" " ind2=" ">
+    <subfield code="b">B32</subfield>
+  </datafield>
+  <datafield tag="091" ind1=" " ind2=" ">
+    <subfield code="a">GEN</subfield>
+  </datafield>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="b">ST/DGC</subfield>
+    <subfield code="0">(DHLAUTH)908130</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">United Nations General Assembly voting data :</subfield>
+    <subfield code="b">resolutions 1 (11 December 1946) to 81/1 (17 September 2026) /</subfield>
+    <subfield code="c">United Nations Dag Hammarskjöld Library</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">New York:</subfield>
+    <subfield code="b">UN,</subfield>
+    <subfield code="c">2024-</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">2026-10-15</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">This dataset is a compilation of the voting data related to the resolutions adopted by the General Assembly at its regular, special, emergency special sessions from its inception until resolution 81/1 adopted on 17 September 2026. It is derived from the UN Digital Library voting records and provides information on Member States' votes related to resolutions adopted through a recorded vote. Votes on individual paragraphs of draft resolutions or drafts that failed to be adopted are not included. The dataset comprises 954,382 entries, with each entry representing the vote of one Member State on a particular resolution.</subfield>
+  </datafield>
+  <datafield tag="546" ind1=" " ind2=" ">
+    <subfield code="a">Copyright, United Nations; Non commercial use, with attribution.</subfield>
+  </datafield>
+  <datafield tag="610" ind1=" " ind2=" ">
+    <subfield code="a">UN. General Assembly</subfield>
+    <subfield code="0">(DHLAUTH)20655</subfield>
+  </datafield>
+  <datafield tag="610" ind1=" " ind2=" ">
+    <subfield code="a">UN. General Assembly</subfield>
+    <subfield code="g">Resolutions and decisions</subfield>
+    <subfield code="0">(DHLAUTH)298253</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">VOTING</subfield>
+    <subfield code="0">(DHLAUTH)268349</subfield>
+  </datafield>
+  <datafield tag="710" ind1=" " ind2=" ">
+    <subfield code="a">UN. Dag Hammarskjöld Library</subfield>
+    <subfield code="0">(DHLAUTH)20601</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">https://digitallibrary.un.org/record/4060887/files/2026_10_15_votes_ga.csv</subfield>
+    <subfield code="y">Dataset, version 6 (October 2026)</subfield>
+    <subfield code="9">590bbb27-ab30-4571-97d2-28dd837e915d</subfield>
+    <subfield code="s">368130256</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="u">https://digitallibrary.un.org/record/4060887/files/2026_10_15_votes_ga_1.md</subfield>
+    <subfield code="y">Metadata, version 6 (October 2026)</subfield>
+    <subfield code="9">5719b81b-8d7a-45da-9007-cdc36c10361d</subfield>
+    <subfield code="s">4074</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="a">DTA</subfield>
+  </datafield>
+  <datafield tag="980" ind1=" " ind2=" ">
+    <subfield code="a">BIB</subfield>
+  </datafield>
+  <datafield tag="981" ind1=" " ind2=" ">
+    <subfield code="a">Secretariat</subfield>
+  </datafield>
+  <datafield tag="989" ind1=" " ind2=" ">
+    <subfield code="a">Datasets</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsc20240912</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsu20260206</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="a">jsu20261015</subfield>
+  </datafield>
+</record>
+</collection>
