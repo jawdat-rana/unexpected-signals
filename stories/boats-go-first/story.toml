@@ -6,13 +6,17 @@ date = 2026-12-03
 section = "Bridges"
 series = "Bridges and roads"
 status = "draft"
-open = ["Fill the live-data numbers from the week 23–29 November (analysis/ndw-bridges/live.py)"]
+open = [
+  "Fill the live-data numbers from the week 23–29 November (analysis/ndw-bridges/live.py)",
+  "Re-run analysis/ndw-bridges/replay.py for Mon 23 to Fri 27 November and update the replay numbers",
+  "Jawdat to confirm the A15 sensors at the Botlek are the tunnel (main lanes), not the bridge",
+]
 tags = ["ndw", "bridges", "shipping", "explainer", "maps"]
 image = ""
 analysis = "analysis/ndw-bridges"
 
 [[sources]]
-name = "NDW open data: bridge openings"
+name = "NDW open data: bridge openings and traffic speed"
 url = "https://opendata.ndw.nu/"
 licence = "CC0"
 
