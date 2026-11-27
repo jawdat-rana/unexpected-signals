@@ -65,19 +65,20 @@ END = dt.datetime(2024, 1, 9, tzinfo=dt.UTC)
 CHUNK = dt.timedelta(days=23)
 WORKERS = 6
 
-# key: name patterns tried in order against catalogue names (case-insensitive,
-# whole-name match first, then substring). Keys are what the page uses.
+# key: candidates tried in order until one has data. A candidate is a catalogue
+# location code (like "hoekvanholland") or a name (case-insensitive, whole name
+# first, then substring). Keys are what the page uses.
 STATIONS = {
     # Coast, south to north and east
     "vlissingen": ["Vlissingen"],
     "westkapelle": ["Westkapelle"],
-    "roompot-buiten": ["Roompot buiten", "Roompot"],
-    "roompot-binnen": ["Roompot binnen", "Oosterschelde binnen", "Stavenisse", "Marollegat"],
-    "haringvliet-buiten": ["Haringvlietsluizen buiten", "Haringvliet 10", "Stellendam buiten"],
+    "roompot-buiten": ["oosterschelde.roompotsluis.buiten", "roompot.buiten"],
+    "roompot-binnen": ["oosterschelde.roompotsluis.binnen", "stavenisse"],
+    "haringvliet-buiten": ["haringvlietsluizen.buiten", "stellendam.buitenhaven", "haringvlietmond"],
     "hoek-van-holland": ["Hoek van Holland"],
     "scheveningen": ["Scheveningen"],
-    "ijmuiden": ["IJmuiden buitenhaven", "IJmuiden"],
-    "petten": ["Petten zuid", "Petten"],
+    "ijmuiden": ["ijmuiden.buitenhaven", "ijmuiden.havenhoofd.zuid"],
+    "petten": ["petten.zuid", "Petten"],
     "den-helder": ["Den Helder"],
     "oudeschild": ["Oudeschild"],
     "den-oever": ["Den Oever buiten", "Den Oever"],
@@ -96,21 +97,24 @@ STATIONS = {
     "hansweert": ["Hansweert"],
     "bath": ["Bath"],
     # Rotterdam and the rivers' mouths
+    "maeslant-sea": ["hoekvanholland.maeslantkering.beneden"],
+    "maeslant-river": ["hoekvanholland.maeslantkering.boven"],
     "maassluis": ["Maassluis"],
     "vlaardingen": ["Vlaardingen"],
-    "rotterdam": ["Rotterdam"],
+    "rotterdam": ["rotterdam.kuip", "Rotterdam"],
+    "brienenoord": ["rotterdam.brienenoordbrug"],
     "spijkenisse": ["Spijkenisse"],
-    "krimpen": ["Krimpen a/d IJssel", "Krimpen aan de IJssel", "Krimpen"],
-    "dordrecht": ["Dordrecht"],
+    "krimpen": ["krimpenaandeijssel.hollandscheijssel", "krimpenaandelek.lek"],
+    "dordrecht": ["dordrecht", "dordrecht.oudemaas.benedenmerwede", "dordrecht.dordtschekil"],
     "moerdijk": ["Moerdijk"],
     "goidschalxoord": ["Goidschalxoord"],
     # Rhine and Waal
     "lobith": ["Lobith"],
     "pannerdense-kop": ["Pannerdense Kop", "Pannerden"],
-    "nijmegen": ["Nijmegen haven", "Nijmegen"],
-    "tiel": ["Tiel Waal", "Tiel"],
+    "nijmegen": ["nijmegen.waal", "nijmegen.haven", "nijmegen"],
+    "tiel": ["tiel.waal", "tiel.haven", "tiel.sluis.waal"],
     "zaltbommel": ["Zaltbommel"],
-    "vuren": ["Vuren"],
+    "gorinchem": ["gorinchem.waal", "Gorinchem", "vuren"],
     # Nederrijn and Lek
     "arnhem": ["Arnhem"],
     "driel": ["Driel boven", "Driel"],
@@ -119,13 +123,13 @@ STATIONS = {
     "schoonhoven": ["Schoonhoven"],
     # IJssel
     "westervoort": ["Westervoort"],
-    "zutphen": ["Zutphen"],
+    "zutphen": ["zutphen", "zutphen.ijssel"],
     "deventer": ["Deventer"],
     "olst": ["Olst"],
-    "kampen": ["Kampen"],
+    "kampen": ["kampen", "kampen.ijssel", "kampen.keteldiep"],
     # Meuse
-    "eijsden": ["Eijsden grens", "Eijsden"],
-    "maastricht": ["Sint Pieter", "Maastricht"],
+    "eijsden": ["eijsden.grens", "eijsden.dorp"],
+    "maastricht": ["maastricht.sintpieter", "maastricht.borgharen.maas.beneden", "borgharen.beneden", "maastricht"],
     "roermond": ["Roermond boven", "Roermond"],
     "venlo": ["Venlo"],
     "grave": ["Grave beneden", "Grave"],
@@ -269,23 +273,21 @@ def catalogue() -> tuple[str, str, list[dict]]:
     raise SystemExit("No Rijkswaterstaat host answered the catalogue request.")
 
 
-def match(stations: list[dict], patterns: list[str]) -> dict | None:
+def match(stations: list[dict], pattern: str) -> dict | None:
+    """The catalogue location for one candidate: a code, or else a name."""
+
     def norm(text: str) -> str:
         return re.sub(r"\s+", " ", str(text or "")).strip().lower()
 
-    for pattern in patterns:
-        p = norm(pattern)
-        exact = [s for s in stations if norm(s.get("Naam")) == p]
+    p = norm(pattern)
+    for field in ("Code", "Naam"):
+        exact = [s for s in stations if norm(s.get(field)) == p]
         if exact:
             return exact[0]
-    for pattern in patterns:
-        p = norm(pattern)
-        partial = sorted(
-            (s for s in stations if p in norm(s.get("Naam"))), key=lambda s: len(s.get("Naam", ""))
-        )
-        if partial:
-            return partial[0]
-    return None
+    partial = sorted(
+        (s for s in stations if p in norm(s.get("Naam"))), key=lambda s: len(s.get("Naam", ""))
+    )
+    return partial[0] if partial else None
 
 
 # --- Observations ------------------------------------------------------------------
@@ -358,9 +360,15 @@ def main(argv: list[str]) -> int:
 
     def fetch(item: tuple[str, list[str]]) -> tuple[str, dict | None, dict, float]:
         key, patterns = item
-        loc = match(stations, patterns)
         began = time.monotonic()
-        values = measurements(obs, loc) if loc else {}
+        loc, values = None, {}
+        for pattern in patterns:
+            found = match(stations, pattern)
+            if not found:
+                continue
+            loc, values = found, measurements(obs, found)
+            if values:
+                break
         return key, loc, values, time.monotonic() - began
 
     rows = []

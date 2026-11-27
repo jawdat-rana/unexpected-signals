@@ -38,10 +38,10 @@ GROUPS = {
     "behind-barrier": ["roompot-binnen"],
     "scheldt": ["terneuzen", "hansweert", "bath"],
     "rotterdam": [
-        "maassluis", "vlaardingen", "rotterdam", "spijkenisse", "krimpen", "dordrecht",
+        "maeslant-sea", "maeslant-river", "brienenoord", "maassluis", "vlaardingen", "rotterdam", "spijkenisse", "krimpen", "dordrecht",
         "moerdijk", "goidschalxoord",
     ],
-    "rhine": ["lobith", "pannerdense-kop", "nijmegen", "tiel", "zaltbommel", "vuren"],
+    "rhine": ["lobith", "pannerdense-kop", "nijmegen", "tiel", "zaltbommel", "gorinchem"],
     "lek": ["arnhem", "driel", "amerongen", "hagestein", "schoonhoven"],
     "ijssel": ["westervoort", "zutphen", "deventer", "olst", "kampen"],
     "meuse": ["eijsden", "maastricht", "roermond", "venlo", "grave", "lith", "heesbeen", "keizersveer"],
@@ -53,6 +53,8 @@ LABELS = {
     "roompot-binnen": "Roompot (Oosterschelde)", "haringvliet-buiten": "Haringvliet (sea)",
     "den-helder": "Den Helder", "den-oever": "Den Oever", "nieuwe-statenzijl": "Nieuwe Statenzijl",
     "pannerdense-kop": "Pannerdense Kop", "ijmuiden": "IJmuiden", "krimpen": "Krimpen a/d IJssel",
+    "maeslant-sea": "Maeslantkering (sea side)", "maeslant-river": "Maeslantkering (river side)",
+    "brienenoord": "Brienenoordbrug",
 }  # fmt: skip
 
 
@@ -169,7 +171,7 @@ def main(argv: list[str]) -> int:
 
     barriers = []
     for name, sea, inside, threshold in (
-        ("Maeslantkering", "hoek-van-holland", "maassluis", 50),
+        ("Maeslantkering", "maeslant-sea", "maeslant-river", 50),
         ("Oosterscheldekering", "roompot-buiten", "roompot-binnen", 80),
     ):
         if sea in grid and inside in grid:

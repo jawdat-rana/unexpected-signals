@@ -1,0 +1,21 @@
+# Replay metadata. Same fields as a story; the build puts it under /replays/.
+
+title = "A country that breathes water"
+dek = "Every 10 minutes, every big gauge in the Netherlands: the tide running up the coast, storm Pia pushing the sea in, the barriers shutting, and the Christmas flood wave on the Rhine and Maas."
+date = 2026-12-10
+section = "Water"
+status = "draft"
+open = ["Check the moments and the inferred barrier closures against Rijkswaterstaat's own reports"]
+tags = ["rijkswaterstaat", "water", "tide", "storm", "replay", "maps"]
+image = ""
+analysis = "analysis/water-levels"
+
+[[sources]]
+name = "Rijkswaterstaat waterwebservices: measured water heights (WATHTE), 10-minute values"
+url = "https://waterinfo.rws.nl/"
+licence = "CC0"
+
+[[sources]]
+name = "Natural Earth: country, lake and river outlines"
+url = "https://www.naturalearthdata.com/"
+licence = "Public domain"
