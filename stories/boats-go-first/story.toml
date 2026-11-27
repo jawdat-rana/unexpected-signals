@@ -9,7 +9,7 @@ status = "draft"
 open = [
   "Fill the live-data numbers from the week 23–29 November (analysis/ndw-bridges/live.py)",
   "Re-run analysis/ndw-bridges/replay.py for Mon 23 to Fri 27 November and update the replay numbers",
-  "Jawdat to confirm the A15 sensors at the Botlek are the tunnel (main lanes), not the bridge",
+  "Optional: add the Botlekbrug parallel-lane sensors (collected from PR #35 on) to the replay once a few days are in",
 ]
 tags = ["ndw", "bridges", "shipping", "explainer", "maps"]
 image = ""
@@ -44,3 +44,8 @@ licence = "Public"
 name = "Natural Earth: country and lake outlines"
 url = "https://www.naturalearthdata.com/"
 licence = "Public domain"
+
+[[sources]]
+name = "Rijkswaterstaat: Botlektunnel A15 and A15 Botlekbrug project pages"
+url = "https://www.rijkswaterstaat.nl/wegen/wegenoverzicht/a15/botlektunnel-a15"
+licence = "Facts cited with attribution"
