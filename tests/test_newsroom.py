@@ -184,3 +184,30 @@ def test_site_pages_build_and_are_linked(tmp_path, monkeypatch):
     assert '<meta name="description" content="Yes, this site is made with AI' in page
     story = (out / "stories/money/index.html").read_text()
     assert '<a href="../../how-this-is-made/">How this is made</a></p>' in story
+
+
+def test_replays_build_on_their_own_pages(tmp_path, monkeypatch):
+    import datetime as dt
+
+    stories = tmp_path / "stories"
+    _story(stories, "money", "2026-11-06", status="published")
+    replays = tmp_path / "replays"
+    _story(replays, "water", "2026-12-01", status="published", body="Press play.")
+    _story(replays, "ships", "2026-12-01", status="draft")
+    monkeypatch.setattr(newsroom, "STORIES", stories)
+    monkeypatch.setattr(newsroom, "REPLAYS", replays)
+    out = tmp_path / "_site"
+
+    shown = newsroom.build(out, today=dt.date(2026, 12, 14))
+
+    # Replays are not stories: not on the front page list or in the feed.
+    assert [s.slug for s in shown] == ["money"]
+    assert "water" not in (out / "feed.xml").read_text()
+    page = (out / "replays/water/index.html").read_text()
+    assert '<body class="replay-page">' in page
+    assert "Press play." in page
+    assert not (out / "replays/ships").exists()
+    index = (out / "replays/index.html").read_text()
+    assert 'href="../replays/water/"' in index and "ships" not in index
+    story = (out / "stories/money/index.html").read_text()
+    assert '<body class="">' in story and '<a href="../../replays/">Replays</a>' in story

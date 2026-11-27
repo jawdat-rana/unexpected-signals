@@ -21,6 +21,21 @@ const BARRIERS = {
   Maeslantkering: [4.163, 51.956],
   Oosterscheldekering: [3.69, 51.645],
 };
+// Waterways as chains of gauges, upstream to downstream (or along the coast of
+// an estuary). Drawn as straight glowing lines between neighbouring gauges,
+// coloured from one gauge's level to the next, so a flood wave visibly flows.
+const WATERWAYS = [
+  ["lobith", "pannerdense-kop", "nijmegen", "tiel", "zaltbommel", "dordrecht"],
+  ["pannerdense-kop", "arnhem", "driel", "amerongen", "hagestein", "schoonhoven", "krimpen",
+    "rotterdam"],
+  ["pannerdense-kop", "westervoort", "zutphen", "deventer", "olst", "kampen"],
+  ["eijsden", "maastricht", "roermond", "venlo", "grave", "lith", "heesbeen", "keizersveer",
+    "moerdijk"],
+  ["hoek-van-holland", "maassluis", "vlaardingen", "rotterdam"],
+  ["vlaardingen", "spijkenisse", "goidschalxoord", "dordrecht"],
+  ["vlissingen", "terneuzen", "hansweert", "bath"],
+];
+
 // Labelled in the national view; the Rotterdam view labels every station there.
 const NATIONAL_LABELS = new Set(["vlissingen", "hoek-van-holland", "den-helder", "harlingen",
   "delfzijl", "lobith", "venlo", "kampen", "rotterdam"]);
@@ -116,7 +131,7 @@ export default function draw({ data, width, d3, theme, table, el }) {
   const defs = svg.append("defs");
   const glow = defs.append("filter").attr("id", "water-glow").attr("x", "-100%").attr("y", "-100%")
     .attr("width", "300%").attr("height", "300%");
-  glow.append("feGaussianBlur").attr("stdDeviation", 3).attr("result", "b");
+  const blur = glow.append("feGaussianBlur").attr("stdDeviation", 3).attr("result", "b");
   const merge = glow.append("feMerge");
   merge.append("feMergeNode").attr("in", "b");
   merge.append("feMergeNode").attr("in", "SourceGraphic");
@@ -129,8 +144,27 @@ export default function draw({ data, width, d3, theme, table, el }) {
     .attr("fill", (d) => (d.properties.kind === "land" ? S.land : S.bg))
     .attr("stroke", S.coast).attr("stroke-width", 0.8).attr("vector-effect", "non-scaling-stroke");
   world.append("g").selectAll("path").data(rivers.features).join("path")
-    .attr("d", path).attr("fill", "none").attr("stroke", S.coast).attr("stroke-width", 1.2)
+    .attr("d", path).attr("fill", "none").attr("stroke", S.coast).attr("stroke-width", 1)
+    .attr("opacity", 0.6)
     .attr("vector-effect", "non-scaling-stroke");
+
+  // Gauge-to-gauge links, each with its own two-stop gradient.
+  const links = WATERWAYS.flatMap((chain) => chain.filter((k) => byKey.has(k))
+    .map((k, j, kept) => (j ? [kept[j - 1], k] : null)).filter(Boolean))
+    .map(([a, b], j) => {
+      const [x1, y1] = projection([byKey.get(a).lon, byKey.get(a).lat]);
+      const [x2, y2] = projection([byKey.get(b).lon, byKey.get(b).lat]);
+      return { a, b, id: `water-link-${j}`, x1, y1, x2, y2 };
+    });
+  const grads = defs.selectAll("linearGradient").data(links).join("linearGradient")
+    .attr("id", (d) => d.id).attr("gradientUnits", "userSpaceOnUse")
+    .attr("x1", (d) => d.x1).attr("y1", (d) => d.y1).attr("x2", (d) => d.x2).attr("y2", (d) => d.y2);
+  const stopA = grads.append("stop").attr("offset", 0);
+  const stopB = grads.append("stop").attr("offset", 1);
+  world.append("g").attr("filter", "url(#water-glow)").selectAll("line").data(links).join("line")
+    .attr("x1", (d) => d.x1).attr("y1", (d) => d.y1).attr("x2", (d) => d.x2).attr("y2", (d) => d.y2)
+    .attr("stroke", (d) => `url(#${d.id})`).attr("stroke-width", narrow ? 2.5 : 3.5)
+    .attr("stroke-linecap", "round").attr("vector-effect", "non-scaling-stroke");
 
   const barrierG = world.append("g");
   const barrierMarks = Object.entries(BARRIERS).map(([name, lonlat]) => {
@@ -161,10 +195,14 @@ export default function draw({ data, width, d3, theme, table, el }) {
   };
   function placeLabels() {
     const zoomed = state.view === "rdam";
+    // The glow is drawn in map units, so shrink it as the map zooms in.
+    blur.attr("stdDeviation", 3 / k);
     dots.attr("transform", (d) => `translate(${projection([d.lon, d.lat])}) scale(${1 / k})`);
     labels.attr("transform", (d) => `translate(${projection([d.lon, d.lat])}) scale(${1 / k})`)
       .attr("display", (d) => (zoomed ? (d.group === "rotterdam" || d.key === "hoek-van-holland")
-        : NATIONAL_LABELS.has(d.key)) ? null : "none");
+        : NATIONAL_LABELS.has(d.key)) ? null : "none")
+      .attr("x", (d) => (labelLeft(d) ? -9 : 9))
+      .attr("text-anchor", (d) => (labelLeft(d) ? "end" : "start"));
     barrierMarks.forEach((b) => {
       const [x, y] = projection(BARRIERS[b.name]);
       b.g.attr("transform", `translate(${x},${y}) scale(${1 / k})`);
@@ -197,7 +235,7 @@ export default function draw({ data, width, d3, theme, table, el }) {
   const stops = [-150, 0, 100, 200, 300];
   const gradient = `linear-gradient(90deg, ${stops.map((v, i) =>
     `${colour(v)} ${(i / (stops.length - 1)) * 100}%`).join(",")})`;
-  legend.innerHTML = `<span>Water level against each gauge's normal</span>
+  legend.innerHTML = `<span>Water level against each gauge's normal (18–19 Dec)</span>
     <span style="display:inline-flex;align-items:center;gap:6px">−1.5 m
       <span style="display:inline-block;width:${narrow ? 120 : 180}px;height:8px;border-radius:4px;
         background:${gradient}"></span>+3 m</span>
@@ -261,16 +299,27 @@ export default function draw({ data, width, d3, theme, table, el }) {
   });
 
   // --- Playback -------------------------------------------------------------------
+  // Labels near the right edge go on the left of their dot.
+  function labelLeft(d) {
+    const [px] = projection([d.lon, d.lat]);
+    const tx = +(world.attr("data-x") ?? 0);
+    return px * k + tx > mapWidth * 0.72;
+  }
+
   function update() {
     const i = state.i;
     const t = times[i];
     clock.textContent = clockFmt.format(t);
     day.textContent = when.format(t);
+    const hue = (key) => (anomaly(key, i) === null ? S.grid : colour(anomaly(key, i)));
+    stopA.attr("stop-color", (d) => hue(d.a));
+    stopB.attr("stop-color", (d) => hue(d.b));
     dots.attr("r", (d) => radius(anomaly(d.key, i)))
       .attr("fill", (d) => (anomaly(d.key, i) === null ? S.grid : colour(anomaly(d.key, i))));
     labels.attr("fill", S.ink)
       .text((d) => `${d.name} ${metres(anomaly(d.key, i))}`)
-      .attr("x", 9).attr("y", 4);
+      // Vlaardingen sits between Maassluis and Rotterdam: its label goes below.
+      .attr("y", (d) => (d.key === "vlaardingen" ? 18 : 4));
     for (const b of barrierMarks) {
       const shut = barriers.some((s) => s.name === b.name && +t >= +new Date(s.from) && +t <= +new Date(s.to));
       b.bar.attr("fill", shut ? S.alert : S.muted);

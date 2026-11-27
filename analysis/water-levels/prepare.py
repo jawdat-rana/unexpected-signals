@@ -38,13 +38,16 @@ GROUPS = {
     "behind-barrier": ["roompot-binnen"],
     "scheldt": ["terneuzen", "hansweert", "bath"],
     "rotterdam": [
-        "maeslant-sea", "maeslant-river", "brienenoord", "maassluis", "vlaardingen", "rotterdam", "spijkenisse", "krimpen", "dordrecht",
+        "maeslant-sea", "maeslant-river", "brienenoord", "maassluis", "vlaardingen", "rotterdam",
+        "spijkenisse", "krimpen", "dordrecht",
         "moerdijk", "goidschalxoord",
     ],
     "rhine": ["lobith", "pannerdense-kop", "nijmegen", "tiel", "zaltbommel", "gorinchem"],
     "lek": ["arnhem", "driel", "amerongen", "hagestein", "schoonhoven"],
     "ijssel": ["westervoort", "zutphen", "deventer", "olst", "kampen"],
-    "meuse": ["eijsden", "maastricht", "roermond", "venlo", "grave", "lith", "heesbeen", "keizersveer"],
+    "meuse": [
+        "eijsden", "maastricht", "roermond", "venlo", "grave", "lith", "heesbeen", "keizersveer",
+    ],
 }  # fmt: skip
 GROUP_OF = {key: group for group, keys in GROUPS.items() for key in keys}
 # Short names for labels.
@@ -54,7 +57,8 @@ LABELS = {
     "den-helder": "Den Helder", "den-oever": "Den Oever", "nieuwe-statenzijl": "Nieuwe Statenzijl",
     "pannerdense-kop": "Pannerdense Kop", "ijmuiden": "IJmuiden", "krimpen": "Krimpen a/d IJssel",
     "maeslant-sea": "Maeslantkering (sea side)", "maeslant-river": "Maeslantkering (river side)",
-    "brienenoord": "Brienenoordbrug",
+    "brienenoord": "Brienenoordbrug", "rotterdam": "Rotterdam", "nes": "Ameland",
+    "oudeschild": "Texel", "goidschalxoord": "Heinenoord", "bath": "Bath",
 }  # fmt: skip
 
 
@@ -90,18 +94,18 @@ def on_grid(values: dict[dt.datetime, float], times: list[dt.datetime]) -> list[
 
 def closed_spells(sea: list, inside: list, times: list, threshold: float) -> list[tuple]:
     """Spells where the water inside a barrier stayed far below the sea: the
-    barrier was shut. Needs the gap for an hour or more."""
+    barrier was shut. Needs the gap for two hours or more."""
     spells, start = [], None
-    for i, t in enumerate(times):
+    for i in range(len(times)):
         gap = None if sea[i] is None or inside[i] is None else sea[i] - inside[i]
         shut = gap is not None and gap > threshold
         if shut and start is None:
             start = i
         if not shut and start is not None:
-            if i - start >= 6:
+            if i - start >= 12:
                 spells.append((times[start], times[i - 1]))
             start = None
-    if start is not None and len(times) - start >= 6:
+    if start is not None and len(times) - start >= 12:
         spells.append((times[start], times[-1]))
     return spells
 
@@ -134,18 +138,20 @@ def main(argv: list[str]) -> int:
             writer.writerow([t.strftime("%Y-%m-%dT%H:%MZ"),
                              *["" if v is None else round(v) for v in cells]])  # fmt: skip
 
+    # "Normal" is each gauge's median over the first two days, 18 and 19
+    # December: before the storm and before the river flood waves arrived.
+    calm = [i for i, t in enumerate(times) if t < times[0] + dt.timedelta(days=2)]
     meta = []
     for s in keep:
         values = [v for v in grid[s["key"]] if v is not None]
+        calm_values = [grid[s["key"]][i] for i in calm if grid[s["key"]][i] is not None]
         meta.append({
             "key": s["key"],
-            "name": LABELS.get(s["key"], s["name"]),
+            "name": LABELS.get(s["key"], s["name"].split(",")[0].strip()),
             "group": GROUP_OF.get(s["key"], "other"),
             "lat": round(float(s["lat"]), 4),
             "lon": round(float(s["lon"]), 4),
-            # "Normal" is the median over the window; the replay colours each
-            # station by how far it is above or below that.
-            "normal": round(statistics.median(values)),
+            "normal": round(statistics.median(calm_values or values)),
             "low": round(min(values)),
             "high": round(max(values)),
         })  # fmt: skip
@@ -156,12 +162,13 @@ def main(argv: list[str]) -> int:
         if key not in grid:
             return None
         pairs = [(v, times[i]) for i, v in enumerate(grid[key]) if v is not None]
-        value, when = max(pairs)
-        return when, value
+        value = max(v for v, _ in pairs)
+        # The first time it reached its highest level.
+        return next(t for v, t in pairs if v == value), value
 
     for key, label in (("hoek-van-holland", "Storm surge at Hoek van Holland"),
                        ("lobith", "The Rhine peaks at Lobith"),
-                       ("venlo", "The Maas peaks at Venlo")):  # fmt: skip
+                       ("eijsden", "The Maas flood wave enters at Eijsden")):  # fmt: skip
         found = peak(key)
         if found:
             when, value = found
@@ -170,11 +177,18 @@ def main(argv: list[str]) -> int:
             print(f"{label}: {value:.0f} cm NAP at {when:%Y-%m-%d %H:%M} UTC")
 
     barriers = []
-    for name, sea, inside, threshold in (
+    # Gauges on either side of each barrier, best pair first. The gauges at the
+    # Maeslantkering itself had no data for this window, so Hoek van Holland
+    # (sea) and Maassluis (behind it) stand in.
+    pairs = (
         ("Maeslantkering", "maeslant-sea", "maeslant-river", 50),
-        ("Oosterscheldekering", "roompot-buiten", "roompot-binnen", 80),
-    ):
-        if sea in grid and inside in grid:
+        ("Maeslantkering", "hoek-van-holland", "maassluis", 50),
+        ("Oosterscheldekering", "roompot-buiten", "roompot-binnen", 120),
+    )
+    done = set()
+    for name, sea, inside, threshold in pairs:
+        if name not in done and sea in grid and inside in grid:
+            done.add(name)
             for start, end in closed_spells(grid[sea], grid[inside], times, threshold):
                 barriers.append({"name": name, "from": start.strftime("%Y-%m-%dT%H:%MZ"),
                                  "to": end.strftime("%Y-%m-%dT%H:%MZ")})  # fmt: skip

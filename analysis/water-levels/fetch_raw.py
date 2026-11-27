@@ -74,7 +74,11 @@ STATIONS = {
     "westkapelle": ["Westkapelle"],
     "roompot-buiten": ["oosterschelde.roompotsluis.buiten", "roompot.buiten"],
     "roompot-binnen": ["oosterschelde.roompotsluis.binnen", "stavenisse"],
-    "haringvliet-buiten": ["haringvlietsluizen.buiten", "stellendam.buitenhaven", "haringvlietmond"],
+    "haringvliet-buiten": [
+        "haringvlietsluizen.buiten",
+        "stellendam.buitenhaven",
+        "haringvlietmond",
+    ],
     "hoek-van-holland": ["Hoek van Holland"],
     "scheveningen": ["Scheveningen"],
     "ijmuiden": ["ijmuiden.buitenhaven", "ijmuiden.havenhoofd.zuid"],
@@ -129,7 +133,12 @@ STATIONS = {
     "kampen": ["kampen", "kampen.ijssel", "kampen.keteldiep"],
     # Meuse
     "eijsden": ["eijsden.grens", "eijsden.dorp"],
-    "maastricht": ["maastricht.sintpieter", "maastricht.borgharen.maas.beneden", "borgharen.beneden", "maastricht"],
+    "maastricht": [
+        "maastricht.sintpieter",
+        "maastricht.borgharen.maas.beneden",
+        "borgharen.beneden",
+        "maastricht",
+    ],
     "roermond": ["Roermond boven", "Roermond"],
     "venlo": ["Venlo"],
     "grave": ["Grave beneden", "Grave"],
@@ -257,7 +266,9 @@ def catalogue() -> tuple[str, str, list[dict]]:
             log(f"- sample location: {json.dumps(sample)[:400]}")
         wanted = set()
         for link in links:
-            meta_item = aquo.get(link.get("AquoMetaData_MessageID", link.get("AquoMetadata_MessageID")))
+            meta_item = aquo.get(
+                link.get("AquoMetaData_MessageID", link.get("AquoMetadata_MessageID"))
+            )
             if not meta_item:
                 continue
             grootheid = (meta_item.get("Grootheid") or {}).get("Code")
@@ -379,7 +390,9 @@ def main(argv: list[str]) -> int:
             log(f"- {key}: no station named like {STATIONS[key]}")
             continue
         lat, lon = latlon(loc)
-        log(f"- {key}: {loc.get('Naam')} ({loc.get('Code')}), {len(values)} values, {seconds:.0f} s")
+        log(
+            f"- {key}: {loc.get('Naam')} ({loc.get('Code')}), {len(values)} values, {seconds:.0f} s"
+        )
         if not values:
             continue
         with (out / "levels" / f"{key}.csv").open("w", newline="", encoding="utf-8") as f:
