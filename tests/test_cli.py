@@ -58,3 +58,26 @@ def test_a_broken_feed_returns_non_zero(tmp_path: Path):
         '[bridges]\nenabled = true\nretries = 1\nurl = "file:///does/not/exist.xml"\n'
     )
     assert cli.main(["collect", "--config", str(config), "--out", str(tmp_path)]) == 1
+
+
+def test_cut_off_json_is_fetched_again(monkeypatch):
+    from unexpected_signals import fetch
+
+    bodies = iter([b'{"locaties": {"a": "unterminated', b'{"locaties": {}}'])
+
+    class Response:
+        def __init__(self):
+            self.body = next(bodies)
+
+        def read(self):
+            return self.body
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+    monkeypatch.setattr(fetch.urllib.request, "urlopen", lambda request, timeout: Response())
+    monkeypatch.setattr(fetch.time, "sleep", lambda seconds: None)
+    assert fetch.download_json("http://example.test/feed.json", retries=2) == {"locaties": {}}

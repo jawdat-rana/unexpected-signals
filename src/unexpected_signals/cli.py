@@ -26,7 +26,7 @@ from . import (
     traffic,
     trends,
 )
-from .fetch import download
+from .fetch import download, download_json
 
 
 def load_config(path: Path) -> dict:
@@ -139,7 +139,7 @@ def _is_stale(stamp: str | None, fetched_at: str, days: float) -> bool:
 
 def collect_parking(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
     retries = cfg.get("retries", 3)
-    index = json.loads(download(cfg["url"], retries=retries))
+    index = download_json(cfg["url"], retries=retries)
     live = parking.live_facilities(index)
     if not cfg.get("include_limited_access", False):
         # These answer 401 without an RDW account.
@@ -205,7 +205,7 @@ def collect_charts(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | Non
         country, chart = job
         url = charts.url(country, chart, cfg.get("size", 100), cfg.get("base", charts.BASE))
         try:
-            payload = json.loads(download(url, retries=cfg.get("retries", 3)))
+            payload = download_json(url, retries=cfg.get("retries", 3))
         except Exception as exc:
             return f"{country}/{chart}: {exc!r}"
         return charts.parse(payload, country, chart, fetched_at)
@@ -246,8 +246,8 @@ def collect_trends(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | Non
 
 
 def collect_ovfiets(cfg: dict, out: Path, fetched_at: str, sample_dir: Path | None) -> str:
-    raw = download(cfg["url"], retries=cfg.get("retries", 3))
-    rows, catalogue = ovfiets.parse(json.loads(raw), fetched_at)
+    payload = download_json(cfg["url"], retries=cfg.get("retries", 3))
+    rows, catalogue = ovfiets.parse(payload, fetched_at)
     if not rows:
         raise RuntimeError("OV-fiets feed listed no locations")
     memory = state.load(out, "ovfiets")
