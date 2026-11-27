@@ -305,23 +305,27 @@ def main(argv: list[str] | None = None) -> int:
     col.add_argument("--out", type=Path, default=Path("data"))
     col.add_argument("--only", choices=sorted(COLLECTORS), action="append")
     col.add_argument("--sample-dir", type=Path, help="also save raw responses here, for debugging")
-    hl = sub.add_parser("health", help="report when each feed last succeeded")
+    hl = sub.add_parser("health", help="weekly report on feeds, workflow runs and open PRs")
     hl.add_argument("--config", type=Path, default=Path("config.toml"))
     hl.add_argument("--data", type=Path, default=Path("data"))
     hl.add_argument("--runs", type=Path, help="collect workflow runs as JSON, from the API")
+    hl.add_argument("--workflow-runs", type=Path, help="runs of every workflow, as JSON")
+    hl.add_argument("--pulls", type=Path, help="open pull requests, as JSON")
     hl.add_argument("--days", type=int, default=7)
     args = parser.parse_args(argv)
 
     if args.command == "health":
-        text, quiet = health.report(
+        text, alerts = health.report(
             load_config(args.config),
             args.data,
             health.now_utc(),
             health.load_runs(args.runs),
             args.days,
+            health.load_runs(args.workflow_runs),
+            health.load_pulls(args.pulls),
         )
         print(text, end="")
-        return 2 if quiet else 0
+        return 2 if alerts else 0
 
     config = load_config(args.config)
     fetched_at = now_iso()

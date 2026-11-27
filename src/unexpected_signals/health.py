@@ -1,12 +1,20 @@
-"""Weekly health report for the collectors.
+"""Weekly health report for the repo.
 
-Reads the `data` branch and, optionally, the collect workflow's recent runs, and
-writes a Markdown report: when each feed last succeeded, rows stored per day for
-the last week, and the longest gap between workflow runs. A feed counts as
-quiet when its last success is older than three of its intervals and at least
-six hours, so one slow GitHub schedule doesn't raise an alarm.
+Reads the `data` branch and, optionally, recent workflow runs and open pull
+requests from the API, and writes a Markdown report:
 
-    python -m unexpected_signals health --data data-branch/data --runs runs.json
+- collectors: when each feed last succeeded, rows stored per day for the last
+  week, and the longest gap between collect runs. A feed counts as quiet when
+  its last success is older than three of its intervals and at least six
+  hours, so one slow GitHub schedule doesn't raise an alarm.
+- workflows: failed runs per workflow this week. A workflow needs a look when
+  its latest run on `main` failed, so a failure that has since recovered
+  (a feed hiccup, a re-run) is listed but doesn't raise an alarm.
+- pull requests: open ones older than a week. One needs a look when nobody has
+  touched it for two weeks.
+
+    python -m unexpected_signals health --data data-branch/data --runs runs.json \
+        --workflow-runs workflow_runs.json --pulls pulls.json
 """
 
 from __future__ import annotations
@@ -30,6 +38,8 @@ FOLDERS = {
 }
 WORKFLOW_MINUTES = 5  # how often cron-job.org fires the collect workflow
 MIN_QUIET = timedelta(hours=6)
+PR_OLD = timedelta(days=7)  # listed in the report
+PR_STALE = timedelta(days=14)  # no updates for this long: needs a look
 
 
 @dataclass
@@ -91,15 +101,91 @@ def hours(delta: timedelta) -> str:
     return f"{total:.1f} h" if total < 48 else f"{total / 24:.1f} days"
 
 
+def workflow_failures(runs: list[dict], since: datetime) -> list[dict]:
+    """Per workflow with failures since `since`: count, latest failure, still broken."""
+    by_name: dict[str, list[dict]] = {}
+    for run in runs:
+        if state.parse_time(run["created_at"]) >= since:
+            by_name.setdefault(run.get("name") or run.get("path", "?"), []).append(run)
+    result = []
+    for name, group in sorted(by_name.items()):
+        group.sort(key=lambda r: r["created_at"])
+        failed = [r for r in group if r.get("conclusion") == "failure"]
+        if not failed:
+            continue
+        on_main = [r for r in group if r.get("head_branch") == "main" and r.get("conclusion")]
+        broken = bool(on_main) and on_main[-1].get("conclusion") == "failure"
+        result.append({"name": name, "failed": len(failed), "latest": failed[-1], "broken": broken})
+    return result
+
+
+def old_pulls(pulls: list[dict], now: datetime) -> list[dict]:
+    """Open pull requests older than a week, oldest first, with `stale` set."""
+    result = []
+    for pr in pulls:
+        opened = state.parse_time(pr["created_at"])
+        if now - opened < PR_OLD:
+            continue
+        updated = state.parse_time(pr.get("updated_at") or pr["created_at"])
+        result.append({**pr, "age": now - opened, "stale": now - updated >= PR_STALE})
+    return sorted(result, key=lambda p: p["created_at"])
+
+
 def report(
-    config: dict, data: Path, now: datetime, runs: list[dict] | None = None, days: int = 7
+    config: dict,
+    data: Path,
+    now: datetime,
+    runs: list[dict] | None = None,
+    days: int = 7,
+    workflow_runs: list[dict] | None = None,
+    pulls: list[dict] | None = None,
 ) -> tuple[str, list[str]]:
-    """The Markdown report and the names of quiet feeds."""
+    """The Markdown report and what needs a look (quiet feeds first)."""
     day_list = [(now - timedelta(days=n)).date() for n in range(days, 0, -1)]
     feeds = feed_health(config, data, day_list)
     quiet = [f.name for f in feeds if f.quiet(now)]
+    failures = workflow_failures(workflow_runs or [], now - timedelta(days=days))
+    pull_list = old_pulls(pulls or [], now)
+    alerts = list(quiet)
+    alerts += [f"workflow {w['name']} is failing on main" for w in failures if w["broken"]]
+    alerts += [f"PR #{p['number']} untouched for 2+ weeks" for p in pull_list if p["stale"]]
 
-    lines = [f"## Collector health, {now:%Y-%m-%d %H:%M} UTC", ""]
+    lines = [f"## Repo health, {now:%Y-%m-%d %H:%M} UTC", ""]
+    if alerts:
+        lines += ["**Needs a look:**", ""] + [f"- {a}" for a in alerts] + [""]
+    else:
+        lines += ["Nothing needs a look this week.", ""]
+
+    if workflow_runs is not None:
+        lines += [f"### Workflows, last {days} days", ""]
+        if failures:
+            lines += ["| Workflow | Failed runs | Latest failure | Latest run on main |"]
+            lines.append("| --- | ---: | --- | --- |")
+            for w in failures:
+                latest = w["latest"]
+                when = f"{state.parse_time(latest['created_at']):%a %d %b %H:%M}"
+                link = f"[{when}]({latest['html_url']})" if latest.get("html_url") else when
+                status = "failed ⚠️" if w["broken"] else "ok"
+                lines.append(f"| {w['name']} | {w['failed']} | {link} | {status} |")
+        else:
+            lines.append("No failed runs.")
+        lines.append("")
+
+    if pulls is not None:
+        lines += ["### Pull requests open for more than a week", ""]
+        if pull_list:
+            for p in pull_list:
+                draft = " (draft)" if p.get("draft") else ""
+                flag = " ⚠️ untouched for 2+ weeks" if p["stale"] else ""
+                lines.append(
+                    f"- [#{p['number']} {p['title']}]({p.get('html_url', '')}){draft}, "
+                    f"open {p['age'].days} days{flag}"
+                )
+        else:
+            lines.append("None.")
+        lines.append("")
+
+    lines += ["### Collectors", ""]
     if quiet:
         lines += [f"**Quiet feeds:** {', '.join(quiet)}", ""]
     else:
@@ -127,7 +213,17 @@ def report(
             f"Collect workflow, last {days} days: {count} runs, {failed} failed, "
             f"longest gap between runs {hours(gap) if gap else '-'}.",
         ]
-    return "\n".join(lines) + "\n", quiet
+    return "\n".join(lines) + "\n", alerts
+
+
+def load_pulls(path: Path | None) -> list[dict] | None:
+    """Open pull requests, as one API reply or a list of pages."""
+    if path is None or not path.exists():
+        return None
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    if raw and isinstance(raw[0], list):
+        return [pr for page in raw for pr in page]
+    return raw
 
 
 def load_runs(path: Path | None) -> list[dict] | None:

@@ -1,9 +1,11 @@
 name: health
 
-# Weekly check that every collector still delivers. Writes a report to the run
-# summary (last success per feed, rows per day, gaps between collect runs) and
-# opens an issue labelled `collector-health` when a feed has gone quiet, or
-# comments on the open one. Also runs on demand.
+# Weekly repo check. Writes a report to the run summary: last success per feed,
+# rows per day, gaps between collect runs, failed runs of every workflow, and
+# PRs open for more than a week. Opens an issue labelled `repo-health` (or
+# comments on the open one) only when something needs a look: a quiet feed, a
+# workflow whose latest run on main failed, or a PR untouched for two weeks.
+# Also runs on demand.
 
 on:
   schedule:
@@ -14,6 +16,7 @@ permissions:
   contents: read
   actions: read
   issues: write
+  pull-requests: read
 
 jobs:
   health:
@@ -32,22 +35,54 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          since=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          # The API returns at most 1,000 runs per query (collect runs ~2,000
+          # times a week), so ask one day at a time.
           echo "[" > runs.json
-          for page in $(seq 1 30); do
-            gh api "repos/${{ github.repository }}/actions/workflows/collect.yml/runs?per_page=100&page=$page&created=>=$since" > page.json
-            [ "$page" -gt 1 ] && echo "," >> runs.json
-            cat page.json >> runs.json
-            [ "$(jq '.workflow_runs | length' page.json)" -lt 100 ] && break
+          first=1
+          for day in 7 6 5 4 3 2 1 0; do
+            from=$(date -u -d "$day days ago" +%Y-%m-%dT%H:%M:%SZ)
+            to=$(date -u -d "$day days ago + 1 day" +%Y-%m-%dT%H:%M:%SZ)
+            [ "$day" = 7 ] || from=$(date -u -d "$day days ago" +%Y-%m-%dT00:00:00Z)
+            [ "$day" = 0 ] || to=$(date -u -d "$((day - 1)) days ago" +%Y-%m-%dT00:00:00Z)
+            for page in $(seq 1 10); do
+              gh api "repos/${{ github.repository }}/actions/workflows/collect.yml/runs?per_page=100&page=$page&created=$from..$to" > page.json
+              [ "$first" = 1 ] || echo "," >> runs.json
+              first=0
+              cat page.json >> runs.json
+              [ "$(jq '.workflow_runs | length' page.json)" -lt 100 ] && break
+            done
           done
           echo "]" >> runs.json
+      - name: List other workflows' runs and open PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          echo "[" > workflow_runs.json
+          first=1
+          for path in $(gh api "repos/${{ github.repository }}/actions/workflows?per_page=100" --jq '.workflows[].path'); do
+            file=$(basename "$path")
+            [ "$file" = "collect.yml" ] && continue
+            [ "$first" = 1 ] || echo "," >> workflow_runs.json
+            first=0
+            gh api "repos/${{ github.repository }}/actions/workflows/$file/runs?per_page=100&created=>=$since" >> workflow_runs.json
+          done
+          # collect's own runs were fetched above; add them so its failures are listed too.
+          jq -c '.[]' runs.json | while read -r page; do
+            [ "$first" = 1 ] || echo "," >> workflow_runs.json
+            first=0
+            echo "$page" >> workflow_runs.json
+          done
+          echo "]" >> workflow_runs.json
+          gh api "repos/${{ github.repository }}/pulls?state=open&per_page=100" > pulls.json
       - name: Report
         id: report
         env:
           PYTHONPATH: src
         run: |
           set +e
-          python -m unexpected_signals health --data data-branch/data --runs runs.json > report.md
+          python -m unexpected_signals health --data data-branch/data --runs runs.json \
+            --workflow-runs workflow_runs.json --pulls pulls.json > report.md
           echo "status=$?" >> "$GITHUB_OUTPUT"
           cat report.md >> "$GITHUB_STEP_SUMMARY"
       - name: Open or update the health issue
@@ -55,12 +90,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh label create collector-health --color d6452b --description "A collector went quiet" 2>/dev/null || true
-          number=$(gh issue list --label collector-health --state open --json number --jq '.[0].number')
+          gh label create repo-health --color d6452b --description "The weekly health check found something" 2>/dev/null || true
+          number=$(gh issue list --label repo-health --state open --json number --jq '.[0].number')
           if [ -n "$number" ]; then
             gh issue comment "$number" --body-file report.md
           else
-            gh issue create --title "Collector went quiet" --label collector-health --body-file report.md
+            gh issue create --title "Weekly health check: something needs a look" --label repo-health --body-file report.md
           fi
       - name: Fail on other errors
         if: steps.report.outputs.status != '0' && steps.report.outputs.status != '2'
