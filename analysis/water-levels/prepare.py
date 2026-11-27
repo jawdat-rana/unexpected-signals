@@ -176,31 +176,39 @@ def main(argv: list[str]) -> int:
                             "station": key, "cm": round(value)})  # fmt: skip
             print(f"{label}: {value:.0f} cm NAP at {when:%Y-%m-%d %H:%M} UTC")
 
-    barriers = []
-    # Gauges on either side of each barrier, best pair first. The gauges at the
-    # Maeslantkering itself had no data for this window, so Hoek van Holland
-    # (sea) and Maassluis (behind it) stand in.
-    pairs = (
-        ("Maeslantkering", "maeslant-sea", "maeslant-river", 50),
+    # Barrier closures from Rijkswaterstaat's own reports (times in UTC; local
+    # time is UTC+1). Maeslantkering: sailed out to close at 20:10 local on 21
+    # Dec (storm surge report SR101, section 6.1), reopened and shipping resumed
+    # at 04:45 local on 22 Dec (RWS storm Pia news page). Oosterscheldekering:
+    # reopened around 02:30 local (RWS news page); its closing time is not in
+    # the reports we read, so it is taken from the water levels (below).
+    barriers = [
+        {"name": "Maeslantkering", "from": "2023-12-21T19:10Z", "to": "2023-12-22T03:45Z",
+         "basis": "Rijkswaterstaat"},
+    ]  # fmt: skip
+    # Check against the water levels: when the sea side stands far above the
+    # water behind a barrier for two hours or more, it is shut.
+    checks = (
         ("Maeslantkering", "hoek-van-holland", "maassluis", 50),
         ("Oosterscheldekering", "roompot-buiten", "roompot-binnen", 120),
     )
-    done = set()
-    for name, sea, inside, threshold in pairs:
-        if name not in done and sea in grid and inside in grid:
-            done.add(name)
-            for start, end in closed_spells(grid[sea], grid[inside], times, threshold):
+    for name, sea, inside, threshold in checks:
+        if sea not in grid or inside not in grid:
+            continue
+        for start, end in closed_spells(grid[sea], grid[inside], times, threshold):
+            print(f"{name} shut by the levels: {start:%Y-%m-%d %H:%M} to {end:%Y-%m-%d %H:%M} UTC")
+            if name == "Oosterscheldekering" and start.date() == dt.date(2023, 12, 21):
+                basis = "closing from water levels, reopening Rijkswaterstaat"
                 barriers.append({"name": name, "from": start.strftime("%Y-%m-%dT%H:%MZ"),
-                                 "to": end.strftime("%Y-%m-%dT%H:%MZ")})  # fmt: skip
-                print(f"{name} shut (inferred): {start:%Y-%m-%d %H:%M} to {end:%Y-%m-%d %H:%M} UTC")
+                                 "to": "2023-12-22T01:30Z", "basis": basis})  # fmt: skip
 
     (OUT / "charts" / "meta.js").write_text(
         "// Stations, moments and barrier closures for the water replay.\n"
         "// Made by analysis/water-levels/prepare.py from Rijkswaterstaat data.\n"
         f"export const stations = {json.dumps(meta, indent=1)};\n"
         f"export const moments = {json.dumps(moments, indent=1)};\n"
-        "// Spells when the water behind a storm barrier stayed far below the sea,\n"
-        "// so the barrier was shut. Inferred from the levels, not from RWS logs.\n"
+        "// Storm barrier closures: Rijkswaterstaat's reported times where we have\n"
+        "// them, otherwise read from the water levels (see `basis`).\n"
         f"export const barriers = {json.dumps(barriers, indent=1)};\n",
         encoding="utf-8",
     )

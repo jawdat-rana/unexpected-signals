@@ -572,17 +572,19 @@ export const moments = [
   "cm": 4809
  }
 ];
-// Spells when the water behind a storm barrier stayed far below the sea,
-// so the barrier was shut. Inferred from the levels, not from RWS logs.
+// Storm barrier closures: Rijkswaterstaat's reported times where we have
+// them, otherwise read from the water levels (see `basis`).
 export const barriers = [
  {
   "name": "Maeslantkering",
-  "from": "2023-12-21T20:20Z",
-  "to": "2023-12-22T00:00Z"
+  "from": "2023-12-21T19:10Z",
+  "to": "2023-12-22T03:45Z",
+  "basis": "Rijkswaterstaat"
  },
  {
   "name": "Oosterscheldekering",
   "from": "2023-12-21T17:40Z",
-  "to": "2023-12-21T23:00Z"
+  "to": "2023-12-22T01:30Z",
+  "basis": "closing from water levels, reopening Rijkswaterstaat"
  }
 ];
