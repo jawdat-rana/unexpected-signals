@@ -597,12 +597,17 @@ def build(out: Path = OUT, drafts: bool = False, today: dt.date | None = None) -
 
 
 def schedule(today: dt.date | None = None) -> str:
-    """The newsroom list as a Markdown table, soonest first."""
+    """The newsroom list as a Markdown table, soonest first. Replays are
+    listed too, with "Replay:" before their title."""
     today = today or dt.date.today()
     stories = load_stories(today)
-    live = {s.slug for s in stories if s.status == "published"}
+    replays = load_replays(today)
+    for replay in replays:
+        replay.title = f"Replay: {replay.title}"
+    live = {s.slug for s in stories + replays if s.status == "published"}
     rows = ["| Date | Story | Status | What's left |", "| --- | --- | --- | --- |"]
-    for s in sorted(stories, key=lambda s: (s.status == "published", s.date)):
+    everything = stories + replays
+    for s in sorted(everything, key=lambda s: (s.status == "published", s.date)):
         left = blockers(s, live) if s.status != "published" else []
         if s.status == "draft":
             left = ["status is draft: set ready once it's signed off", *left]

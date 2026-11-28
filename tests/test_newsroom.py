@@ -211,3 +211,20 @@ def test_replays_build_on_their_own_pages(tmp_path, monkeypatch):
     assert 'href="../replays/water/"' in index and "ships" not in index
     story = (out / "stories/money/index.html").read_text()
     assert '<body class="">' in story and '<a href="../../replays/">Replays</a>' in story
+
+
+def test_schedule_lists_replays(tmp_path, monkeypatch):
+    import datetime as dt
+
+    stories = tmp_path / "stories"
+    _story(stories, "ice", "2026-12-01")
+    replays = tmp_path / "replays"
+    _story(replays, "water", "2026-12-21", status="draft")
+    monkeypatch.setattr(newsroom, "STORIES", stories)
+    monkeypatch.setattr(newsroom, "REPLAYS", replays)
+
+    table = newsroom.schedule(dt.date(2026, 11, 28))
+
+    lines = [line for line in table.splitlines() if line.startswith("| 2026")]
+    assert lines[0].startswith("| 2026-12-01 | Title ice |")
+    assert lines[1].startswith("| 2026-12-21 | Replay: Title water | draft |")
