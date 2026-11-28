@@ -1,0 +1,25 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "The year the UN stopped agreeing"
+dek = "For 35 years, three in four UN resolutions passed without a vote. In the session that ended in September 2026, most went to a vote, including International Coffee Day. The US voted no 173 times, and almost nobody followed, not even its most loyal Pacific allies."
+date = 2026-12-10
+section = "UN votes"
+series = "UN votes, part 1"
+status = "draft"
+open = [
+  "Jawdat: pick the publish date (10 Dec is a placeholder)",
+]
+after = ""
+tags = ["united-nations", "general-assembly", "voting", "united-states"]
+image = ""
+analysis = "analysis/un-votes"
+
+[[sources]]
+name = "UN Dag Hammarskjöld Library: United Nations General Assembly Voting Data, version 6 (15 Oct 2026)"
+url = "https://digitallibrary.un.org/record/4060887"
+licence = "Copyright United Nations; non-commercial use with attribution"
+
+[[sources]]
+name = "UN Dag Hammarskjöld Library: General Assembly resolutions and how they were adopted (15 Oct 2026)"
+url = "https://digitallibrary.un.org/record/4060945"
+licence = "Copyright United Nations; non-commercial use with attribution"

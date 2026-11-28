@@ -1,0 +1,31 @@
+# Story metadata. The build reads this file; it is not published.
+
+title = "Alone against the world"
+dek = "Every year, a few UN votes end 180 to 1. The lone no isn't always the US or Israel. Türkiye has voted against the Law of the Sea for 42 years, and India has been the only no on one Pakistan-backed resolution 29 times. Kashmir itself hasn't been voted on since 1971."
+date = 2026-12-17
+section = "UN votes"
+series = "UN votes, part 2"
+status = "draft"
+open = [
+  "Jawdat: pick the publish date (17 Dec is a placeholder)",
+  "Check that Pakistan is the main sponsor of the regional conventional arms control resolution in recent years (draft records on the UN Digital Library)",
+]
+after = "the-year-the-un-stopped-agreeing"
+tags = ["united-nations", "general-assembly", "voting", "turkiye", "india", "pakistan", "kashmir"]
+image = ""
+analysis = "analysis/un-votes"
+
+[[sources]]
+name = "UN Dag Hammarskjöld Library: United Nations General Assembly Voting Data, version 6 (15 Oct 2026)"
+url = "https://digitallibrary.un.org/record/4060887"
+licence = "Copyright United Nations; non-commercial use with attribution"
+
+[[sources]]
+name = "UN Dag Hammarskjöld Library: Security Council Voting Data, version 7 (Oct 2026)"
+url = "https://digitallibrary.un.org/record/4055387"
+licence = "Copyright United Nations; non-commercial use with attribution"
+
+[[sources]]
+name = "UN Dag Hammarskjöld Library: Security Council veto list"
+url = "https://research.un.org/en/docs/sc/quick/veto"
+licence = "Copyright United Nations; non-commercial use with attribution"

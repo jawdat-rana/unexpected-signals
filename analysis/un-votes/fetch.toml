@@ -1,0 +1,17 @@
+# Raw-data fetches for this dataset, run by the `fetch` workflow
+# (see .github/scripts/fetch_plan.py). Re-run by hand: gh workflow run fetch -f name=un-votes
+
+[[fetch]]
+name = "un-votes"
+run = "python -u analysis/un-votes/fetch_raw.py raw"
+watch = ["analysis/un-votes/fetch_raw.py"]
+timeout = 60
+summary = "manifest.csv"
+
+[[fetch]]
+name = "un-vetoes"
+run = "python -u analysis/un-votes/fetch_vetoes.py raw"
+watch = ["analysis/un-votes/fetch_vetoes.py"]
+timeout = 15
+summary = "manifest.csv"
+

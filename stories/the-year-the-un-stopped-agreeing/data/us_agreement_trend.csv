@@ -1,0 +1,89 @@
+session,start_year,code,country,agree,votes
+70,2015,FSM,Micronesia,82.1,56
+70,2015,MHL,Marshall Islands,61.5,65
+70,2015,PLW,Palau,71.7,53
+70,2015,ISR,Israel,86.7,75
+70,2015,ARG,Argentina,26.7,75
+70,2015,HUN,Hungary,50.7,75
+70,2015,GBR,United Kingdom,62.7,75
+70,2015,NLD,Netherlands,48.0,75
+71,2016,FSM,Micronesia,78.8,66
+71,2016,MHL,Marshall Islands,63.9,72
+71,2016,PLW,Palau,62.5,80
+71,2016,ISR,Israel,87.5,80
+71,2016,ARG,Argentina,28.9,83
+71,2016,HUN,Hungary,53.0,83
+71,2016,GBR,United Kingdom,62.7,83
+71,2016,NLD,Netherlands,48.8,82
+72,2017,FSM,Micronesia,64.0,75
+72,2017,MHL,Marshall Islands,55.7,79
+72,2017,PLW,Palau,43.8,64
+72,2017,ISR,Israel,86.7,90
+72,2017,ARG,Argentina,18.9,95
+72,2017,HUN,Hungary,38.9,95
+72,2017,GBR,United Kingdom,48.9,94
+72,2017,NLD,Netherlands,37.6,93
+73,2018,FSM,Micronesia,61.8,76
+73,2018,MHL,Marshall Islands,50.0,88
+73,2018,PLW,Palau,20.5,78
+73,2018,ISR,Israel,89.4,104
+73,2018,ARG,Argentina,18.2,110
+73,2018,HUN,Hungary,46.4,110
+73,2018,GBR,United Kingdom,49.1,110
+73,2018,NLD,Netherlands,37.6,109
+74,2019,FSM,Micronesia,65.7,70
+74,2019,MHL,Marshall Islands,59.5,74
+74,2019,PLW,Palau,17.1,76
+74,2019,ISR,Israel,93.6,94
+74,2019,ARG,Argentina,19.8,96
+74,2019,HUN,Hungary,45.8,96
+74,2019,GBR,United Kingdom,55.2,96
+74,2019,NLD,Netherlands,43.8,96
+75,2020,FSM,Micronesia,67.7,62
+75,2020,MHL,Marshall Islands,55.1,78
+75,2020,PLW,Palau,27.0,74
+75,2020,ISR,Israel,88.2,102
+75,2020,ARG,Argentina,23.3,103
+75,2020,HUN,Hungary,49.5,103
+75,2020,GBR,United Kingdom,52.4,103
+75,2020,NLD,Netherlands,45.6,103
+76,2021,FSM,Micronesia,75.0,60
+76,2021,MHL,Marshall Islands,62.7,67
+76,2021,PLW,Palau,48.4,64
+76,2021,ISR,Israel,85.7,77
+76,2021,ARG,Argentina,24.1,79
+76,2021,HUN,Hungary,53.2,79
+76,2021,GBR,United Kingdom,67.1,79
+76,2021,NLD,Netherlands,51.9,79
+77,2022,FSM,Micronesia,81.2,64
+77,2022,MHL,Marshall Islands,72.0,75
+77,2022,PLW,Palau,62.3,69
+77,2022,ISR,Israel,88.2,85
+77,2022,ARG,Argentina,36.4,88
+77,2022,HUN,Hungary,69.3,88
+77,2022,GBR,United Kingdom,71.3,87
+77,2022,NLD,Netherlands,63.2,87
+78,2023,FSM,Micronesia,80.3,66
+78,2023,MHL,Marshall Islands,66.1,62
+78,2023,PLW,Palau,52.5,80
+78,2023,ISR,Israel,88.0,83
+78,2023,ARG,Argentina,35.3,85
+78,2023,HUN,Hungary,65.9,85
+78,2023,GBR,United Kingdom,72.9,85
+78,2023,NLD,Netherlands,58.8,85
+79,2024,FSM,Micronesia,61.9,84
+79,2024,MHL,Marshall Islands,38.5,104
+79,2024,PLW,Palau,43.3,104
+79,2024,ISR,Israel,81.6,98
+79,2024,ARG,Argentina,70.5,95
+79,2024,HUN,Hungary,53.6,112
+79,2024,GBR,United Kingdom,56.2,112
+79,2024,NLD,Netherlands,49.5,111
+80,2025,FSM,Micronesia,22.9,153
+80,2025,MHL,Marshall Islands,10.3,175
+80,2025,PLW,Palau,17.8,169
+80,2025,ISR,Israel,78.1,146
+80,2025,ARG,Argentina,63.1,160
+80,2025,HUN,Hungary,21.9,192
+80,2025,GBR,United Kingdom,20.8,192
+80,2025,NLD,Netherlands,14.2,190
