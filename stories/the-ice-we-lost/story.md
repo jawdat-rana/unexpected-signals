@@ -1,6 +1,16 @@
-Every Dutch winter starts with the same question: will we skate this year? On 22 November 2026, KNMI's cold counter for this winter stood at 0.0. That's normal for November. What isn't normal is how the last few winters ended, and the 125 winters of KNMI data behind them show why the question keeps getting the same answer.
+Every Dutch winter starts with the same question: will we skate this year? This year the question came early. On 23 November 2026 De Bilt had its first day with a mean temperature below zero, and KNMI's cold counter for this winter moved off zero, to 0.4. The first 23 days of November averaged 5.5 °C, two degrees below normal and the coldest start to November since 1998.
+
+Does that mean a cold winter is coming? The 125 winters of KNMI data behind this story say it helps a little, and they show why the question has kept getting the same answer for almost 30 years.
 
 {{ signal value="29 winters" label="since De Bilt last had a cold winter, in 1997. Before that, the longest wait since 1902 was 10 winters." }}
+
+## This November: the coldest start since 1998
+
+{{ chart src="charts/november.js" data="data/debilt_november.csv" title="The coldest start to November since 1998" subtitle="Mean daily temperature in De Bilt from 1 to 23 November, every year since 1901. Red: 2026. Below the dashed line: colder than this year." source="KNMI daily data, De Bilt (CC0)" note="KNMI publishes daily data a few days late; 23 November is the latest day available. Hover or tap a dot for the winter that followed." size="wide" }}
+
+Since 1990, only 1993 and 1998 started November colder. Over the whole record it's less special: 39 years since 1901 had a colder first three weeks, most of them before 1990. The five long-running stations from Den Helder to Maastricht tell the same story, with 1998 the last colder start.
+
+A cold November is a weak signal for the winter. Of the 20 coldest starts to November since 1901, 9 were followed by a cold winter, against about 1 in 5 for all years. The two most recent ones didn't deliver: after November 1993 the winter scored 63, after November 1998 it scored 48. Both mild.
 
 ## How to measure a winter
 
@@ -49,6 +59,6 @@ The last winter cold enough by this rule was 2012, 14 winters ago. In 2019 KNMI 
 
 ## How I did it
 
-KNMI publishes daily weather for every station through its [daggegevens service](https://www.daggegevens.knmi.nl/) (CC0, bron: KNMI). A GitHub Actions workflow downloads the daily mean, minimum and maximum temperature for 50 stations. De Bilt goes back to 1901. For each winter (1 November to 31 March) I computed the [Hellmann cold sum](https://www.knmi.nl/nederland-nu/klimatologie/lijsten/hellmann), the number of ice days and the coldest 15-day mean, and kept winters with at least 145 days of data. The Elfstedentocht rule comes from KNMI's [2019 analysis](https://www.knmi.nl/kennis-en-datacentrum/achtergrond/kans-op-elfstedentocht-in-een-veranderend-klimaat) by Van Oldenborgh, Visser, Brandsma and De Vries. The station map uses the 14 stations with at least 25 complete winters in both periods.
+KNMI publishes daily weather for every station through its [daggegevens service](https://www.daggegevens.knmi.nl/) (CC0, bron: KNMI). A GitHub Actions workflow downloads the daily mean, minimum and maximum temperature for 50 stations. De Bilt goes back to 1901. For each winter (1 November to 31 March) I computed the [Hellmann cold sum](https://www.knmi.nl/nederland-nu/klimatologie/lijsten/hellmann), the number of ice days and the coldest 15-day mean, and kept winters with at least 145 days of data. For November I averaged the daily mean in De Bilt over the same days of every year, up to the latest day KNMI has published. The Elfstedentocht rule comes from KNMI's [2019 analysis](https://www.knmi.nl/kennis-en-datacentrum/achtergrond/kans-op-elfstedentocht-in-een-veranderend-klimaat) by Van Oldenborgh, Visser, Brandsma and De Vries. The station map uses the 14 stations with at least 25 complete winters in both periods.
 
 KNMI is not involved in this analysis and doesn't necessarily endorse it. The code is in [`analysis/natural-ice`](https://github.com/jawdat-rana/unexpected-signals/tree/main/analysis/natural-ice).

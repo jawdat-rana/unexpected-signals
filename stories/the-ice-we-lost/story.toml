@@ -5,7 +5,8 @@ dek = "De Bilt hasn't had a cold winter in 29 years. Before 1997 the longest wai
 date = 2026-12-01
 section = "Winter"
 series = ""
-status = "ready"
+status = "draft"
+open = ["Refresh November numbers once KNMI publishes 30 November (expected 1 or 2 Dec): re-run fetch -f name=ice and prepare.py, then update the November section"]
 tags = ["knmi", "climate", "skating", "elfstedentocht", "maps"]
 image = ""
 analysis = "analysis/natural-ice"
