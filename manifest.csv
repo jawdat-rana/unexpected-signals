@@ -1,0 +1,19 @@
+source,item,status,detail
+dl,search,ok,6 files
+dl,2026_10_16_sc_votes.csv,ok,15561944 bytes 41560 lines
+dl,2026_10_16_sc_voting_md.md,ok,3805 bytes  lines
+dl,2026_10_15_votes_ga.csv,ok,368130256 bytes 954383 lines
+dl,2026_10_15_votes_ga_1.md,ok,4074 bytes  lines
+dl,2026_10_15_ga_outcomes.md,ok,4347 bytes  lines
+dl,2026_10_15_outcomes_ga.csv,ok,7523446 bytes 20835 lines
+voeten,version,info,39.0 2026-07-30T15:57:56Z
+voeten,AgreementScoresAll_Jun2024.csv,skipped,142732102 bytes
+voeten,AgreementScoresAll_Jun2024.Rdata,skipped,20816518 bytes
+voeten,AgreementScores.csv,skipped,145439690 bytes
+voeten,AgreementScores.Rdata,skipped,21654613 bytes
+voeten,Codebook_IdealPointEstimates1946-2025.txt,ok,5032 bytes
+voeten,Codebook United Nations General Assembly Ideal Points.docx,ok,17957 bytes
+voeten,IdealPointDyads1946-2025.tab,skipped,72990808 bytes
+voeten,IdealpointestimatesAll_Jun2024.csv,ok,1932704 bytes
+voeten,IdealpointestimatesFP_2026FP.csv,ok,1419867 bytes
+voeten,IdealpointsJuly2025.tab,ok,1331515 bytes
