@@ -702,3 +702,55 @@ figcaption,
     display: none;
   }
 }
+
+/* --- Replays -------------------------------------------------------------
+ *
+ * Replays (/replays/) keep the site's frame: masthead, type, sources and
+ * footer. Only the stage changes: a dark panel, the same in both editions,
+ * where bright marks can move. Its colours are tokens too, so chart modules
+ * read them as theme.stage (see signals.js). A replay may override them on
+ * its own figure (style="--stage-high: ...") when its data needs other colours.
+ */
+
+:root {
+  --stage-bg: #0b1016;
+  --stage-panel: #121a23;
+  --stage-ink: #e6edf3;
+  --stage-muted: #8b9aab;
+  --stage-grid: #223040;
+  --stage-land: #17212c;
+  --stage-coast: #34465a;
+  --stage-low: #5b7cfa;
+  --stage-mid: #26394b;
+  --stage-high: #3ad6e8;
+  --stage-peak: #f4f1c9;
+  --stage-alert: #ff7a45;
+}
+
+.story-body > .fig-stage {
+  max-width: 72rem;
+  margin: 2.5rem auto;
+}
+.fig-stage .chart {
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: var(--stage-bg);
+  color: var(--stage-ink);
+}
+.fig-stage .chart text {
+  fill: var(--stage-muted);
+}
+.replay-page .story-head .kicker::after {
+  content: " · Replay";
+}
+.replay-cards {
+  display: grid;
+  gap: 1.5rem;
+  max-width: var(--wide);
+  margin: 2rem auto 0;
+}
+@media (min-width: 40rem) {
+  .replay-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,31 @@
+# Replay metadata. Same fields as a story; the build puts it under /replays/.
+
+title = "A country that breathes water"
+dek = "Every 10 minutes, every big gauge in the Netherlands: the tide running up the coast, storm Pia pushing the sea in, the barriers shutting, and the Christmas flood wave on the Rhine and Maas."
+date = 2026-12-21
+section = "Water"
+status = "draft"
+open = ["Pick a publish date (suggested: Mon 21 December 2026, three years after storm Pia)"]
+tags = ["rijkswaterstaat", "water", "tide", "storm", "replay", "maps"]
+image = ""
+analysis = "analysis/water-levels"
+
+[[sources]]
+name = "Rijkswaterstaat waterwebservices: measured water heights (WATHTE), 10-minute values"
+url = "https://waterinfo.rws.nl/"
+licence = "CC0"
+
+[[sources]]
+name = "Rijkswaterstaat: storm surge report SR101, storm Pia, 21 and 22 December 2023"
+url = "https://open.rws.nl/publish/pages/195559/stormvloedrapport_101_van_21_en_22_december_2023_storm_pia_.pdf"
+licence = "Facts cited with attribution"
+
+[[sources]]
+name = "Rijkswaterstaat: news updates on storm Pia (barrier closures and reopenings)"
+url = "https://www.rijkswaterstaat.nl/nieuws/archief/2023/12/storm-pia"
+licence = "Facts cited with attribution"
+
+[[sources]]
+name = "Natural Earth: country, lake and river outlines"
+url = "https://www.naturalearthdata.com/"
+licence = "Public domain"

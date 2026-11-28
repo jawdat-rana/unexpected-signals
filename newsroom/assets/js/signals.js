@@ -20,11 +20,17 @@ const Plot = window.Plot;
 const TOKENS = ["paper", "paper-2", "ink", "ink-2", "muted", "rule", "grid", "signal", "context",
   "cat-1", "cat-2", "cat-3"];
 
+const STAGE = ["bg", "panel", "ink", "muted", "grid", "land", "coast", "low", "mid", "high", "peak",
+  "alert"];
+
 export function theme() {
   const style = getComputedStyle(document.documentElement);
   const t = Object.fromEntries(TOKENS.map((k) => [k.replace(/-(\w)/g, (_, c) => c.toUpperCase()),
     style.getPropertyValue(`--${k}`).trim()]));
   t.categorical = [t.cat1, t.cat2, t.cat3];
+  // The replay stage: dark in both editions (see "Replays" in signals.css).
+  t.stage = Object.fromEntries(STAGE.map((k) => [k.replace(/-(\w)/g, (_, c) => c.toUpperCase()),
+    style.getPropertyValue(`--stage-${k}`).trim()]));
   t.font = getComputedStyle(document.body).getPropertyValue("--sans").trim() || "sans-serif";
   // Defaults for Observable Plot, so Plot charts match the D3 ones.
   t.plot = {

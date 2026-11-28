@@ -141,6 +141,26 @@ Colours for Datawrapper (paste into the custom colour field):
 The full component set is on the [style guide page](https://jawdat-rana.github.io/unexpected-signals/style/),
 which is built from `templates/story/`, so the template and the guide can't drift apart.
 
+## Replays
+
+A replay is data played back: a day, a storm or a season as it happened, with
+play, scrub and zoom. It lives in `replays/<slug>/`, with the same files and
+statuses as a story (`story.toml`, `story.md`, `charts/`, `data/`), and is
+built at `/replays/<slug>/`, listed on `/replays/` and linked from the footer.
+Replays stay off the front page and out of the feed, so stories can link to
+them.
+
+The frame stays the same: masthead, type, sources and footer. Only the stage
+changes. Place the replay with `size="stage"` on the chart shortcode: a wide,
+dark panel, the same in both editions, where bright marks can move. Chart
+modules read its colours as `theme.stage` (`bg`, `panel`, `ink`, `muted`,
+`grid`, `land`, `coast`, `low`, `mid`, `high`, `peak`, `alert`), set as
+`--stage-*` tokens in `signals.css`. A replay whose data needs other colours
+can override them on its own figure.
+
+Use D3 with SVG for up to a few hundred moving marks. For thousands (every
+ship, bus or bird), keep D3 for scales and projections and draw on a canvas.
+
 ## Page views
 
 GitHub Pages has no visitor statistics. The site can count page views with
