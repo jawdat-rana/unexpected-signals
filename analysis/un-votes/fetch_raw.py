@@ -67,8 +67,14 @@ def digital_library(out: Path) -> None:
         log("dl", "search", "failed", str(e)[:200])
         return
     (folder / "records.xml").write_bytes(xml)
-    urls = sorted(set(re.findall(r'<subfield code="u">(https://digitallibrary\.un\.org/record/\d+/files/[^<]+\.(?:csv|md))</subfield>',
-                                 xml.decode("utf-8", "replace"))))
+    urls = sorted(
+        set(
+            re.findall(
+                r'<subfield code="u">(https://digitallibrary\.un\.org/record/\d+/files/[^<]+\.(?:csv|md))</subfield>',
+                xml.decode("utf-8", "replace"),
+            )
+        )
+    )
     log("dl", "search", "ok", f"{len(urls)} files")
     for url in urls:
         name = url.rsplit("/", 1)[-1]
@@ -91,8 +97,13 @@ def voeten(out: Path) -> None:
         return
     (folder / "files.json").write_text(json.dumps(meta, indent=1))
     latest = meta["data"]["latestVersion"]
-    log("voeten", "version", "info",
-        f"{latest.get('versionNumber')}.{latest.get('versionMinorNumber')} {latest.get('releaseTime')}")
+    log(
+        "voeten",
+        "version",
+        "info",
+        f"{latest.get('versionNumber')}.{latest.get('versionMinorNumber')} "
+        f"{latest.get('releaseTime')}",
+    )
     for f in latest["files"]:
         df = f["dataFile"]
         name, size, fid = df.get("filename"), df.get("filesize", 0), df["id"]

@@ -1,0 +1,186 @@
+code,country,agree_79,agree_80,votes_79,votes_80,change
+ISR,Israel,81.6,78.1,98,146,-3.5
+ARG,Argentina,70.5,63.1,95,160,-7.4
+NRU,Nauru,40.4,33.3,47,51,-7.1
+FSM,Micronesia,61.9,22.9,84,153,-39.0
+HUN,Hungary,53.6,21.9,112,192,-31.7
+GBR,United Kingdom,56.2,20.8,112,192,-35.4
+PRY,Paraguay,29.7,20.4,111,191,-9.3
+FRA,France,50.9,19.3,112,192,-31.6
+MKD,North Macedonia,47.6,18.4,105,190,-29.2
+UKR,Ukraine,47.7,18.1,111,188,-29.6
+CZE,Czechia,51.8,17.8,112,191,-34.0
+PLW,Palau,43.3,17.8,104,169,-25.5
+LVA,Latvia,50.0,17.7,112,192,-32.3
+POL,Poland,50.0,17.7,112,192,-32.3
+LTU,Lithuania,50.9,17.3,112,191,-33.6
+SVK,Slovakia,50.0,17.3,112,191,-32.7
+ROU,Romania,49.1,17.2,112,192,-31.9
+DEU,Germany,50.5,16.8,111,190,-33.7
+EST,Estonia,50.9,16.8,112,191,-34.1
+HRV,Croatia,49.1,16.8,112,191,-32.3
+FIN,Finland,50.0,16.7,112,192,-33.3
+ALB,Albania,48.6,16.3,111,190,-32.3
+BGR,Bulgaria,49.1,16.2,112,191,-32.9
+CAN,Canada,50.0,16.2,112,191,-33.8
+KOR,Republic of Korea,50.5,16.2,111,191,-34.3
+ITA,Italy,49.1,16.1,112,192,-33.0
+MCO,Monaco,48.2,15.9,110,189,-32.3
+BEL,Belgium,49.1,15.7,112,191,-33.4
+AUS,Australia,50.0,15.6,112,192,-34.4
+DNK,Denmark,50.9,15.6,112,192,-35.3
+GRC,Greece,48.2,15.6,112,192,-32.6
+LUX,Luxembourg,48.2,15.6,112,192,-32.6
+MNE,Montenegro,47.3,15.6,112,192,-31.7
+PRT,Portugal,45.9,15.6,111,192,-30.3
+SVN,Slovenia,46.4,15.6,112,192,-30.8
+SWE,Sweden,50.0,15.6,112,192,-34.4
+ESP,Spain,47.3,15.1,112,192,-32.2
+ISL,Iceland,45.5,14.6,112,185,-30.9
+NLD,Netherlands,49.5,14.2,111,190,-35.3
+NOR,Norway,45.5,14.1,112,192,-31.4
+RUS,Russia,15.2,14.1,112,192,-1.1
+PNG,Papua New Guinea,40.6,14.0,101,186,-26.6
+NZL,New Zealand,42.9,13.6,112,191,-29.3
+AUT,Austria,43.8,13.5,112,192,-30.3
+BIH,Bosnia and Herzegovina,43.2,13.5,111,192,-29.7
+TUR,Türkiye,38.2,13.3,110,188,-24.9
+KIR,Kiribati,26.8,12.8,97,47,-14.0
+MDA,Republic of Moldova,41.4,12.6,111,191,-28.8
+CYP,Cyprus,41.1,12.5,112,192,-28.6
+IRL,Ireland,42.0,12.5,112,192,-29.5
+MLT,Malta,41.1,12.5,112,192,-28.6
+LIE,Liechtenstein,39.3,12.0,112,191,-27.3
+SMR,San Marino,42.0,12.0,112,192,-30.0
+AND,Andorra,41.3,11.7,109,188,-29.6
+JPN,Japan,42.0,11.5,112,191,-30.5
+CHE,Switzerland,38.4,10.4,112,192,-28.0
+GEO,Georgia,38.5,10.4,109,183,-28.1
+MHL,Marshall Islands,38.5,10.3,104,175,-28.2
+TON,Tonga,33.0,10.3,88,165,-22.7
+FJI,Fiji,22.7,9.7,97,185,-13.0
+PRK,North Korea,9.7,9.6,103,178,-0.1
+SYR,Syria,8.4,7.0,83,86,-1.4
+CRI,Costa Rica,25.0,6.8,112,192,-18.2
+MMR,Myanmar,25.7,6.3,109,190,-19.4
+SAU,Saudi Arabia,18.2,6.3,110,191,-11.9
+PAK,Pakistan,20.2,6.2,109,192,-14.0
+SRB,Serbia,27.4,6.0,95,167,-21.4
+LBR,Liberia,29.3,5.9,82,169,-23.4
+CHL,Chile,25.9,5.8,112,190,-20.1
+DOM,Dominican Republic,25.5,5.8,110,191,-19.7
+PAN,Panama,27.7,5.8,112,191,-21.9
+TUV,Tuvalu,31.8,5.8,66,139,-26.0
+URY,Uruguay,25.0,5.8,112,190,-19.2
+COL,Colombia,23.2,5.7,112,192,-17.5
+GTM,Guatemala,25.0,5.7,112,192,-19.3
+IND,India,20.5,5.7,112,192,-14.8
+YEM,Yemen,19.6,5.7,112,192,-13.9
+ZAF,South Africa,21.4,5.7,112,192,-15.7
+BDI,Burundi,17.7,5.6,96,160,-12.1
+MWI,Malawi,26.8,5.4,82,148,-21.4
+JAM,Jamaica,25.7,5.3,105,189,-20.4
+PER,Peru,24.1,5.3,112,190,-18.8
+SUR,Suriname,25.7,5.3,109,187,-20.4
+VUT,Vanuatu,25.0,5.3,104,169,-19.7
+BHS,Bahamas (The),26.4,5.2,106,191,-21.2
+BLR,Belarus,10.8,5.2,111,191,-5.6
+MDV,Maldives,23.2,5.2,112,192,-18.0
+MEX,Mexico,23.2,5.2,112,192,-18.0
+ECU,Ecuador,25.0,4.9,112,183,-20.1
+LBY,Libya,15.6,4.9,109,184,-10.7
+NGA,Nigeria,17.2,4.9,99,162,-12.3
+SDN,Sudan,16.5,4.9,109,185,-11.6
+TLS,Timor-Leste,22.9,4.9,109,185,-18.0
+CAF,Central African Republic,19.0,4.8,79,165,-14.2
+CIV,Côte D'Ivoire,21.5,4.8,107,189,-16.7
+MAR,Morocco,21.7,4.8,106,186,-16.9
+SLV,El Salvador,23.8,4.8,105,186,-19.0
+ATG,Antigua and Barbuda,25.7,4.7,101,169,-21.0
+BRA,Brazil,19.8,4.7,111,192,-15.1
+CHN,China,13.5,4.7,111,192,-8.8
+EGY,Egypt,17.0,4.7,112,190,-12.3
+GUY,Guyana,24.1,4.7,112,192,-19.4
+HND,Honduras,28.1,4.7,96,172,-23.4
+IDN,Indonesia,16.1,4.7,112,192,-11.4
+MYS,Malaysia,18.8,4.7,112,191,-14.1
+CPV,Cabo Verde,24.0,4.6,96,174,-19.4
+HTI,Haiti,25.6,4.6,90,174,-21.0
+SYC,Seychelles,25.8,4.5,89,176,-21.3
+ARM,Armenia,23.6,4.4,106,182,-19.2
+KEN,Kenya,20.6,4.4,107,181,-16.2
+BTN,Bhutan,22.1,4.3,104,186,-17.8
+COM,Comoros,27.8,4.3,72,162,-23.5
+CUB,Cuba,12.6,4.3,111,188,-8.3
+MRT,Mauritania,19.0,4.3,105,188,-14.7
+BGD,Bangladesh,20.9,4.2,110,191,-16.7
+DZA,Algeria,14.3,4.2,112,192,-10.1
+ETH,Ethiopia,14.7,4.2,109,189,-10.5
+IRQ,Iraq,18.2,4.2,110,190,-14.0
+JOR,Jordan,19.6,4.2,112,190,-15.4
+KWT,Kuwait,20.5,4.2,112,192,-16.3
+NPL,Nepal,23.1,4.2,108,189,-18.9
+OMN,Oman,16.2,4.2,111,192,-12.0
+PHL,Philippines,23.2,4.2,112,190,-19.0
+SGP,Singapore,23.2,4.2,112,192,-19.0
+BFA,Burkina Faso,19.6,4.1,92,172,-15.5
+BRB,Barbados,26.7,4.1,105,148,-22.6
+GMB,Gambia,21.9,4.0,96,173,-17.9
+NER,Niger,18.2,4.0,99,174,-14.2
+BEN,Benin,17.7,3.8,62,80,-13.9
+BLZ,Belize,24.5,3.8,98,186,-20.7
+BWA,Botswana,30.3,3.8,76,158,-26.5
+DJI,Djibouti,21.4,3.8,103,182,-17.6
+KNA,Saint Kitts and Nevis,17.4,3.8,92,182,-13.6
+SLE,Sierra Leone,23.7,3.8,97,182,-19.9
+TCD,Chad,22.2,3.8,108,183,-18.4
+TTO,Trinidad and Tobago,24.3,3.8,111,186,-20.5
+AGO,Angola,19.8,3.7,111,187,-16.1
+ARE,United Arab Emirates,18.0,3.7,111,191,-14.3
+GAB,Gabon,23.2,3.7,95,163,-19.5
+KHM,Cambodia,21.1,3.7,109,190,-17.4
+MUS,Mauritius,22.2,3.7,108,188,-18.5
+SEN,Senegal,17.6,3.7,102,188,-13.9
+SLB,Solomon Islands,16.9,3.7,83,162,-13.2
+BHR,Bahrain,21.4,3.6,112,192,-17.8
+BRN,Brunei Darussalam,19.6,3.6,112,192,-16.0
+COD,Democratic Republic of the Congo,25.6,3.6,86,137,-22.0
+LBN,Lebanon,14.3,3.6,112,192,-10.7
+LKA,Sri Lanka,17.9,3.6,112,192,-14.3
+QAT,Qatar,20.5,3.6,112,192,-16.9
+THA,Thailand,22.3,3.6,112,192,-18.7
+ZMB,Zambia,20.2,3.6,84,165,-16.6
+LCA,Saint Lucia,25.8,3.5,97,172,-22.3
+GHA,Ghana,22.9,3.4,96,174,-19.5
+LSO,Lesotho,21.9,3.4,105,176,-18.5
+NIC,Nicaragua,10.5,3.4,105,176,-7.1
+COG,Congo,23.4,3.2,94,158,-20.2
+TGO,Togo,19.4,3.2,108,190,-16.2
+TUN,Tunisia,18.0,3.2,111,190,-14.8
+VNM,Viet Nam,20.2,3.2,109,187,-17.0
+AZE,Azerbaijan,16.9,3.1,83,161,-13.8
+CMR,Cameroon,19.6,2.9,97,171,-16.7
+GIN,Guinea,20.7,2.9,92,174,-17.8
+GNB,Guinea-Bissau,17.3,2.9,81,170,-14.4
+TZA,United Republic of Tanzania,22.2,2.9,90,174,-19.3
+ERI,Eritrea,20.0,2.8,105,177,-17.2
+RWA,Rwanda,18.3,2.8,93,178,-15.5
+IRN,Iran,11.1,2.7,108,182,-8.4
+LAO,Lao People'S Democratic Republic,18.2,2.7,110,186,-15.5
+MOZ,Mozambique,16.0,2.7,100,187,-13.3
+NAM,Namibia,20.0,2.7,100,183,-17.3
+WSM,Samoa,31.3,2.7,67,148,-28.6
+GNQ,Equatorial Guinea,17.6,2.6,85,153,-15.0
+MNG,Mongolia,20.7,2.6,111,191,-18.1
+BOL,Bolivia (Plurinational State Of),18.3,2.4,82,41,-15.9
+UZB,Uzbekistan,21.5,2.3,93,175,-19.2
+GRD,Grenada,25.3,2.2,75,93,-23.1
+KAZ,Kazakhstan,20.2,2.2,109,185,-18.0
+KGZ,Kyrgyzstan,15.1,2.2,106,178,-12.9
+MLI,Mali,15.1,2.2,106,178,-12.9
+TJK,Tajikistan,17.2,2.2,99,181,-15.0
+ZWE,Zimbabwe,15.0,2.2,107,178,-12.8
+UGA,Uganda,21.2,2.1,99,188,-19.1
+SOM,Somalia,18.9,1.5,74,137,-17.4
+TKM,Turkmenistan,12.9,1.5,62,136,-11.4
+SWZ,Eswatini,25.4,1.0,59,98,-24.4

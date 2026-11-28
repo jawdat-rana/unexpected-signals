@@ -31,7 +31,9 @@ def get(url: str) -> bytes:
     last = None
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=120) as r:
+            with urllib.request.urlopen(
+                urllib.request.Request(url, headers=HEADERS), timeout=120
+            ) as r:
                 return r.read()
         except Exception as e:  # noqa: BLE001
             last = e
@@ -57,10 +59,18 @@ def main() -> None:
             continue
         if name != "dataset.html":
             continue
-        links = set(re.findall(r'href="([^"]+\.(?:csv|xlsx|json)(?:\?[^"]*)?)"', data.decode("utf-8", "replace"), re.I))
+        links = set(
+            re.findall(
+                r'href="([^"]+\.(?:csv|xlsx|json)(?:\?[^"]*)?)"',
+                data.decode("utf-8", "replace"),
+                re.I,
+            )
+        )
         for link in sorted(links):
             full = urllib.parse.urljoin(url, link)
-            fname = re.sub(r"[^A-Za-z0-9._-]", "_", urllib.parse.urlparse(full).path.rsplit("/", 1)[-1])
+            fname = re.sub(
+                r"[^A-Za-z0-9._-]", "_", urllib.parse.urlparse(full).path.rsplit("/", 1)[-1]
+            )
             try:
                 blob = get(full)
                 (out / fname).write_bytes(blob)
